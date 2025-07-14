@@ -7,6 +7,6 @@ assignees: ''
 
 ---
 
-## Mod's Name here as it appears on CurseForge
-<CurseForge link to the mod>
-Brief description of the mod in your own words.
+## Mod Name Here
+Replace this line with a CurseForge link to the mod.
+Replace this line with a brief description of the mod in your own words.
