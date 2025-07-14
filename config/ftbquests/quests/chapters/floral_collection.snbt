@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "floral_collection"
+	group: "22E2861D9475E7CD"
+	icon: "botania:marimorphosis"
+	id: "589F85A0234A5D3C"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "Floral Collection"
+}

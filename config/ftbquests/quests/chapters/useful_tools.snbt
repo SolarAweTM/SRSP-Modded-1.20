@@ -1,0 +1,1319 @@
+{
+	autofocus_id: "695654EE3BCBE110"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "useful_tools"
+	group: ""
+	icon: {
+		Count: 1
+		id: "botania:elementium_pickaxe"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "4721D3AFD8CBEEAC"
+	images: [{
+		click: "https://github.com/SilentChaos512/Silent-Gear/wiki/Starlight-Charger"
+		dependency: "14979D4649381A40"
+		height: 1.0d
+		hover: [
+			"Starlight Charger Guide"
+			"Click me!"
+		]
+		image: "everycomp:block/abnww/architects_palette/twisted_beehive_end"
+		rotation: 0.0d
+		width: 1.0d
+		x: -5.5d
+		y: -3.5d
+	}]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["12223F6E3BB28753"]
+			dependency_requirement: "one_started"
+			description: ["This quest chapter covers a handful of things you may find useful."]
+			id: "695654EE3BCBE110"
+			size: 2.0d
+			subtitle: "Tools of the Trade"
+			tasks: [{
+				id: "68C58319F6DFDA3B"
+				title: "Let's get started!"
+				type: "checkmark"
+			}]
+			title: "Useful Tools"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["695654EE3BCBE110"]
+			description: [
+				"One of the major changes in this pack is how tools work."
+				""
+				"While you can craft vanilla tools, it's MUCH more powerful to turn them into tools using &9Silent Gear&f."
+				""
+				"To convert most vanilla tools into Silent tools, you can &6just put them into your crafting grid&r."
+				""
+				"Silent tools are modular, and so you can build them generally however you like, while still being able to enchant them as if they were vanilla tools."
+			]
+			id: "580D1F89AD25FB5C"
+			subtitle: "Not actually silent."
+			tasks: [{
+				id: "1216D8F4FE54C4D2"
+				item: {
+					Count: 1
+					id: "silentgear:pickaxe"
+					tag: {
+						Damage: 0
+						SGear_Data: {
+							Construction: {
+								Parts: [
+									{
+										ID: "silentgear:pickaxe_head"
+										Item: {
+											Count: 1b
+											id: "silentgear:pickaxe_head"
+											tag: {
+												Damage: 0
+												Materials: [{
+													ID: "silentgear:wood"
+												}]
+											}
+										}
+									}
+									{
+										ID: "silentgear:rod"
+										Item: {
+											Count: 1b
+											id: "silentgear:rod"
+											tag: {
+												Materials: [{
+													ID: "silentgear:wood"
+												}]
+											}
+										}
+									}
+								]
+							}
+							Properties: {
+								HarvestTier: "minecraft:wood"
+								LockStats: 0b
+								ModVersion: "3.6.6"
+								Stats: {
+									"silentgear:attack_reach": 3.0f
+									"silentgear:attack_speed": -2.8f
+									"silentgear:charging_value": 0.6f
+									"silentgear:durability": 59.0f
+									"silentgear:enchantment_value": 15.0f
+									"silentgear:harvest_speed": 2.0f
+									"silentgear:melee_damage": 1.0f
+									"silentgear:rarity": 1.0f
+									"silentgear:repair_efficiency": 1.0f
+								}
+								Traits: [
+									{
+										Level: 1b
+										Name: "silentgear:flammable"
+									}
+									{
+										Level: 1b
+										Name: "silentgear:jagged"
+									}
+									{
+										Level: 2b
+										Name: "silentgear:flexible"
+									}
+								]
+							}
+							Rendering: {
+								Model: 2
+								ModelKey: "pickaxe:pickaxe_head{wood},rod{wood},"
+							}
+						}
+						SGear_UUID: [I;
+							-1045439454
+							796673094
+							-1715049959
+							1637290680
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Silent Gear"
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["580D1F89AD25FB5C"]
+			description: [
+				"In order to get started with making custom Silent Gear tools, you'll need a way to make parts first."
+				""
+				"The most basic way to get parts is though templates. Put &6flint together with a log in a crafting grid&f to make some templates."
+				""
+				"Templates are &csingle-use&r, meaning that break after you make something with them. Generally, you can make the template for a tool by crafting the tool normally, but with the template boards as the main material. You can use JEI to view recipes for templates as well."
+				""
+				"Start by making a pickaxe template, so you can upgrade your pickaxe."
+			]
+			icon: "silentgear:template_board"
+			id: "3EC6B4CE2CBDA962"
+			subtitle: "Template board, palette, same thing..."
+			tasks: [
+				{
+					id: "06C5C47BBEA7E609"
+					item: "silentgear:template_board"
+					type: "item"
+				}
+				{
+					id: "38FD503B6B7511F0"
+					item: "silentgear:pickaxe_template"
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3EC6B4CE2CBDA962"]
+			description: [
+				"In order to craft a tool part, you need to craft it with materials."
+				""
+				"In order to figure out how to craft specific parts with a template, you can use JEI to find uses for the template, and then click on the \"Gear Crafting\" tab at the top."
+				""
+				"In order to replace a part on a Silent tool, simply &6craft the tool with the new part together&r. You'll also get the old part back."
+				""
+				"Try upgrading your pickaxe from wood to stone."
+			]
+			icon: {
+				Count: 1
+				id: "silentgear:pickaxe"
+				tag: {
+					Damage: 0
+					SGear_Data: {
+						Construction: {
+							Parts: [
+								{
+									ID: "silentgear:pickaxe_head"
+									Item: {
+										Count: 1b
+										id: "silentgear:pickaxe_head"
+										tag: {
+											CraftedCount: 1
+											Damage: 0
+											Materials: [{
+												Count: 3b
+												ID: "silentgear:stone"
+												Item: {
+													Count: 1b
+													id: "minecraft:cobblestone"
+												}
+											}]
+										}
+									}
+								}
+								{
+									ID: "silentgear:rod"
+									Item: {
+										Count: 1b
+										id: "silentgear:rod"
+										tag: {
+											Materials: [{
+												ID: "silentgear:wood"
+											}]
+										}
+									}
+								}
+							]
+						}
+						Properties: {
+							HarvestTier: "minecraft:stone"
+							LockStats: 0b
+							ModVersion: "3.6.6"
+							Stats: {
+								"silentgear:attack_reach": 3.0f
+								"silentgear:attack_speed": -2.8f
+								"silentgear:charging_value": 0.5f
+								"silentgear:durability": 131.0f
+								"silentgear:enchantment_value": 5.0f
+								"silentgear:harvest_speed": 4.0f
+								"silentgear:melee_damage": 2.0f
+								"silentgear:rarity": 4.0f
+								"silentgear:repair_efficiency": 1.0f
+							}
+							Traits: [
+								{
+									Level: 1b
+									Name: "silentgear:ancient"
+								}
+								{
+									Level: 2b
+									Name: "silentgear:flexible"
+								}
+							]
+						}
+						Rendering: {
+							Model: 2
+							ModelKey: "pickaxe:pickaxe_head{stone,stone,stone},rod{wood},"
+						}
+					}
+					SGear_UUID: [I;
+						-1045439454
+						796673094
+						-1715049959
+						1637290680
+					]
+				}
+			}
+			id: "16FDF737D9DBF2A6"
+			subtitle: "World's most original quest name!"
+			tasks: [
+				{
+					id: "5AC26CAABB779A8A"
+					item: {
+						Count: 1
+						id: "silentgear:pickaxe_head"
+						tag: {
+							CraftedCount: 1
+							Damage: 0
+							Materials: [{
+								Count: 3b
+								ID: "silentgear:stone"
+								Item: {
+									Count: 1b
+									id: "minecraft:cobblestone"
+								}
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7F5065822400F793"
+					item: {
+						Count: 1
+						id: "silentgear:pickaxe"
+						tag: {
+							Damage: 0
+							SGear_Data: {
+								Construction: {
+									Parts: [
+										{
+											ID: "silentgear:pickaxe_head"
+											Item: {
+												Count: 1b
+												id: "silentgear:pickaxe_head"
+												tag: {
+													CraftedCount: 1
+													Damage: 0
+													Materials: [{
+														Count: 3b
+														ID: "silentgear:stone"
+														Item: {
+															Count: 1b
+															id: "minecraft:cobblestone"
+														}
+													}]
+												}
+											}
+										}
+										{
+											ID: "silentgear:rod"
+											Item: {
+												Count: 1b
+												id: "silentgear:rod"
+												tag: {
+													Materials: [{
+														ID: "silentgear:wood"
+													}]
+												}
+											}
+										}
+									]
+								}
+								Properties: {
+									HarvestTier: "minecraft:stone"
+									LockStats: 0b
+									ModVersion: "3.6.6"
+									Stats: {
+										"silentgear:attack_reach": 3.0f
+										"silentgear:attack_speed": -2.8f
+										"silentgear:charging_value": 0.5f
+										"silentgear:durability": 131.0f
+										"silentgear:enchantment_value": 5.0f
+										"silentgear:harvest_speed": 4.0f
+										"silentgear:melee_damage": 2.0f
+										"silentgear:rarity": 4.0f
+										"silentgear:repair_efficiency": 1.0f
+									}
+									Traits: [
+										{
+											Level: 1b
+											Name: "silentgear:ancient"
+										}
+										{
+											Level: 2b
+											Name: "silentgear:flexible"
+										}
+									]
+								}
+								Rendering: {
+									Model: 2
+									ModelKey: "pickaxe:pickaxe_head{stone,stone,stone},rod{wood},"
+								}
+							}
+							SGear_UUID: [I;
+								-1045439454
+								796673094
+								-1715049959
+								1637290680
+							]
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Getting an Upgrade!"
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["695654EE3BCBE110"]
+			description: [
+				"The &aEccentric Tome&r is a book that can contain other books."
+				""
+				"The reward from this quest will give you an Eccentric Tome that has all the current guidebooks from other mods within, including a quest book, so you can get rid of the one you got from the start!"
+				""
+				"Use the Tome to bring up a menu to select your book. &6Punch the air with a selected book to return to the Tome.&r"
+				""
+				"In order to put a book IN the Tome, &6craft the Eccentric Tome with the book of your choice&r."
+				""
+				"In order to take a book OUT of the Tome, &6select the book from the Tome, and then press SHIFT + <your drop key>&r to detach the book from the Tome."
+				""
+				"If by chance you lose your Tome, you can craft a blank one by crafting a vanilla book with a bookshelf. You'll have to use JEI to get the recipes for other mods' books if that happens, though."
+			]
+			icon: {
+				Count: 1
+				id: "eccentrictome:tome"
+				tag: {
+					"eccentrictome:mods": { }
+				}
+			}
+			id: "580C9EFE799877FB"
+			rewards: [
+				{
+					id: "69E9B6CE478634A0"
+					item: {
+						Count: 1
+						id: "eccentrictome:tome"
+						tag: {
+							Enchantments: [ ]
+							"eccentrictome:mods": {
+								apotheosis: {
+									0: {
+										Count: 1b
+										id: "patchouli:guide_book"
+										tag: {
+											"patchouli:book": "apotheosis:apoth_chronicle"
+										}
+									}
+								}
+								ars_nouveau: {
+									0: {
+										Count: 1b
+										id: "ars_nouveau:worn_notebook"
+										tag: {
+											Enchantments: [ ]
+										}
+									}
+								}
+								botania: {
+									0: {
+										Count: 1b
+										id: "botania:lexicon"
+									}
+								}
+								ftbquests: {
+									0: {
+										Count: 1b
+										id: "ftbquests:book"
+									}
+								}
+							}
+							"eccentrictome:version": 1
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0841444B7A2CDB03"
+					item: {
+						Count: 1
+						id: "minecraft:written_book"
+						tag: {
+							Enchantments: [ ]
+							author: "SolarAweTM"
+							filtered_title: "*ANY* Book"
+							pages: ["{\"text\":\"To remove a book from the Eccentric Tome, select the book, and then hold SHIFT + your drop key to detach the book from the tome.\"}"]
+							resolved: 1b
+							title: "*ANY* Book"
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "circle"
+			subtitle: "All your docs in one place!"
+			tasks: [{
+				id: "26BD9BB54F943205"
+				title: "Click here."
+				type: "checkmark"
+			}]
+			title: "Eccentric Tome"
+			x: -0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["16FDF737D9DBF2A6"]
+			description: ["Now that you know the general basics of how Silent Gear works, the mod has a handful of machines you can use to make your tools extremely powerful. Read the quests after this to discover what they do."]
+			id: "062D537F9C1E5551"
+			tasks: [{
+				id: "579B1200D79BC1D0"
+				title: "I have read the description."
+				type: "checkmark"
+			}]
+			title: "The Rest of Silent Gear"
+			x: -2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["062D537F9C1E5551"]
+			description: [
+				"The &aMaterial Grader&r is a machine used to grade materials. Graded materials get a small boost to their stats when used in crafting Silent Gear tools."
+				""
+				"The following grades are available: "
+				"&6E, D, C, B, A, S, SS, SSS,&r and &6MAX&r."
+				""
+				"In order to use the Material Grader, you will need a material and a &6grader catalyst&r."
+				"To see all the available grader catalysts, use the following JEI search query:"
+				"&o&7#grader catalyst"
+				"&8(Don't know what this means? Find out more in the JEI quest in this quest chapter!)&r"
+				""
+				"If you get a grade you don't want, you can &6regrade&r the material by just putting it in again. Note that you will need another catalyst to regrade. Regrading will always &6give a chance to improve the grade, as it will never decrease the grade&r."
+			]
+			icon: "silentgear:material_grader"
+			id: "2CD2DE72C19ED643"
+			subtitle: "SSX+ ULTRA MAX PERFECT"
+			tasks: [
+				{
+					id: "7868E5300F6F53E4"
+					item: "silentgear:material_grader"
+					type: "item"
+				}
+				{
+					id: "113C01C0E2CFAF2D"
+					item: "silentgear:glowing_dust"
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["695654EE3BCBE110"]
+			description: [
+				"JEI &7(Just Enough Items)&r is a mod that adds the following:"
+				""
+				"- A &alist of items&r with a search bar to easily find things you need"
+				"- A &arecipe viewer&r, which can entirely replace the vanilla recipe book"
+				"- The ability to &apin/bookmark items and recipes&r"
+				""
+				"Knowing how to use JEI can be &n&6extremely useful&r, especially with its search and bookmark capabilities."
+				"&7Also: You can toggle JEI with Ctrl + O (default keybind)&r"
+				""
+				"Click the next page button in the bottom right corner of this window to learn more."
+				"{@pagebreak}"
+				"First, let's begin with searching items."
+				""
+				"Depending on your configuration, when you open your inventory, the search bar will either be in the &abottom middle or bottom right&r of your screen."
+				""
+				"This search bar allows you to search for almost any item loaded, and provides a handful of &afilters&r to help you refine your search."
+				"Here's a list of the search filters you can use:"
+				"&6@query&r - Matches &amod name&r. Works best with the ID, so for something like Ars Nouveau, you'd use &o&7@ars_nouveau&r"
+				"&6#query&r - Match &atext in tooltips&r. Examples include &o&7#starbuncle&r to only show items with Starbuncle in their tooltip (case-insensitive)"
+				"&6$query&r - Match &atext by tag&r. Tags are how Minecraft internally sorts items and allows you to use things like any planks for a chest. Examples include &o&7$ingots&r to only show things classified as an ingot."
+				""
+				"Go to the next page to learn more about these filters."
+				"{@pagebreak}"
+				"One more thing you can do with filters is &acombine them&r. If you wanted to get a list only containing logs from Oh The Biomes We've Gone, you'd use the following filter:"
+				"&7&o@biomeswevegone $logs&r"
+				""
+				"You can also combine searches, using the | character. If you wanted to see only logs and ingots, you'd use the following filter:"
+				"&7&o$logs | $ingots&r"
+				""
+				"Suggested search queries for other quests will be written in this format."
+				""
+				"Go to the next page to learn about &arecipes and the recipe viewer&r."
+				"{@pagebreak}"
+				"In this pack, the JEI recipe viewer completely replaces the functionality of the vanilla recipe book. &cDon't try to use the vanilla recipe book. It's gone.&r"
+				""
+				"While hovering over an item in the JEI item list, you can either &aleft click or press R&r &7(default keybinds)&r to view recipes for the item (i.e. how to get it)."
+				"You may also use either &aright click or press U&r &7(default keybinds)&r to view uses for the item (i.e. what recipes use this item)."
+				""
+				"The keybinds &7(R and U)&r can also be used on items within any interface."
+				""
+				"While in the recipe viewer, you'll see &atabs on top of the UI&r. Those represent each recipe method that can be used to perform the desired function (recipe or uses). This is useful if you need to find a specific way to get an item. You'll also see &atwo selectors&r below the tabs. One shows the &acurrent tab's name&r that you're on, and the other is the &apage number&r for recipes within that tab."
+				""
+				"Go to the next page to learn more about the recipe viewer."
+				"{@pagebreak}"
+				"When you're ready to craft a recipe, you can click the &a+ button&r &7(labeled Move Items)&r near the bottom left corner of a recipe in the viewer to &aautomatically put the items&r into a crafting grid or whatever machine is being used. It'll be grayed out if you don't have the items needed, and &ahovering over it will show you what you're missing&r. "
+				""
+				"You can also press &aShift&r while clicking the More Items button to move the maximum possible amount that you can afford."
+				""
+				"Go to the next page to learn about &abookmarking recipes&r."
+				"{@pagebreak}"
+				"If you wish to save a recipe for later or otherwise give yourself a reminder for an item or recipe, you can bookmark it by pressing &aA&r &7(default keybind)&r over the item."
+				""
+				"This will put it in a &aseparate, new list&r on the opposite side of the screen from the normal JEI item list. You can then press A over items in that list to &aremove them&r from your bookmarks."
+				""
+				"You can also &abookmark recipes&r by clicking the bookmark button on a recipe in the viewer."
+				"{@pagebreak}"
+				"Now that you've learned about JEI, you should be able to figure out how to craft or otherwise produce most items, which will prove extremely useful the more you play."
+			]
+			id: "61390B566B4EC1FE"
+			subtitle: "Do you like to read? Read this!"
+			tasks: [
+				{
+					id: "77D627CCAEFDEF35"
+					title: "I've read it all."
+					type: "checkmark"
+				}
+				{
+					id: "7776AAE09D175019"
+					optional_task: true
+					title: "not reading allat"
+					type: "checkmark"
+				}
+			]
+			title: "JEI 101"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["062D537F9C1E5551"]
+			description: [
+				"The &aSalvager&r turns tools and/or parts back into some of their components."
+				""
+				"Yes, it's that simple."
+			]
+			id: "2C252EEFD106DE76"
+			subtitle: "Become back your money!"
+			tasks: [{
+				id: "0953ECD9937EF890"
+				item: "silentgear:salvager"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["062D537F9C1E5551"]
+			description: [
+				"The &aMetal Alloyer&r is a machine that can take metal ingots and combine them into alloys. "
+				""
+				"These alloys will have a &6synergy&r value attached to them, which is dictated by how close the metals are to each other in rarity. "
+				""
+				"For best results, pick different materials that are within &6a similar tier and rarity&r."
+				""
+				"For gems, you want to use the &aRecrystallizer&r."
+			]
+			id: "28ABA808715EA423"
+			subtitle: "Alloyer? I hardly know her!"
+			tasks: [{
+				id: "55CAAFDB5A5CFC18"
+				item: "silentgear:metal_alloyer"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2CD2DE72C19ED643"]
+			description: [
+				"The mechanics of the &aStarlight Charger&r are quite complex to go over in this quest, so instead, please take a look at the official Silent Gear documentation on the Charger."
+				""
+				"&6The link will appear next to this quest when completed, and looks like this:&r"
+				"{image:everycomp:block/abnww/architects_palette/twisted_beehive_end width:25 height:25 align:left}"
+			]
+			icon: "silentgear:starlight_charger"
+			id: "14979D4649381A40"
+			subtitle: "Celestial tools"
+			tasks: [
+				{
+					id: "60F9C4E921754FBA"
+					item: "silentgear:starlight_charger"
+					type: "item"
+				}
+				{
+					id: "66F8630A8DA4A70F"
+					title: "I have read the description."
+					type: "checkmark"
+				}
+			]
+			x: -4.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["062D537F9C1E5551"]
+			description: ["Blueprints are templates that can be used infinitely."]
+			icon: "silentgear:blueprint_paper"
+			id: "202AAEBE11F779C8"
+			subtitle: "\"its a reusable template. have a nice day\" - Boom"
+			tasks: [
+				{
+					id: "385801C875E4AE85"
+					item: "silentgear:blueprint_paper"
+					type: "item"
+				}
+				{
+					id: "49E2EFDB42F2F6A4"
+					item: "silentgear:pickaxe_blueprint"
+					type: "item"
+				}
+			]
+			title: "Blueprints"
+			x: -3.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["062D537F9C1E5551"]
+			description: [
+				"&aTip upgrades&r are addons you can put on your tools to give them stat boosts and enhancements."
+				""
+				"For example, the tip this quest asks you to get is one that can give your tool innate Silk Touch."
+				""
+				"Craft tips with a &6tip upgrade template or blueprint&r - use JEI to find the recipes."
+			]
+			id: "6B8A9B1E251B05B5"
+			subtitle: "Tip of the iceberg"
+			tasks: [{
+				id: "0FE79F0BAB4EF5FE"
+				item: {
+					Count: 1
+					id: "silentgear:tip"
+					tag: {
+						CraftedCount: 1
+						Materials: [{
+							ID: "silentgear:amethyst"
+							Item: {
+								Count: 1b
+								id: "minecraft:amethyst_shard"
+							}
+						}]
+					}
+				}
+				type: "item"
+			}]
+			title: "Tip Upgrades"
+			x: -3.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6B8A9B1E251B05B5"]
+			description: [
+				"&aCoatings&r, like tips, are another way to enhance your gear. In addition, coatings are the &6only way to apply Netherite&r to tools."
+				""
+				"You can use a &6coating template or blueprint&r to create a coating, and then craft it with the tool to apply it."
+			]
+			id: "4B590AF98B23947E"
+			subtitle: "A fresh coat of paint"
+			tasks: [{
+				id: "6C24A170ED8CBFAE"
+				item: {
+					Count: 1
+					id: "silentgear:coating"
+					tag: {
+						CraftedCount: 1
+						Materials: [{
+							ID: "silentgear:netherite"
+							Item: {
+								Count: 1b
+								id: "minecraft:netherite_ingot"
+							}
+						}]
+					}
+				}
+				type: "item"
+			}]
+			title: "Coating Upgrades"
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["695654EE3BCBE110"]
+			description: [
+				"&aSophisticated Backpacks&r adds backpacks that you can upgrade in various ways, such as capacity, tanks, and many other features."
+				"They can also be placed down."
+				""
+				"&6HIGHLY recommended for exploring.&r"
+				"See JEI to find out how you can upgrade your backpack's capacity."
+			]
+			id: "00EE131DB547C2F4"
+			subtitle: "Sophisticated, but also modular!"
+			tasks: [{
+				id: "51B05C04675EAA7F"
+				item: "sophisticatedbackpacks:backpack"
+				type: "item"
+			}]
+			title: "Sophisticated Backpacks"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["695654EE3BCBE110"]
+			description: [
+				"The &aNature's Compass&r is a handy compass that can be used to find any biome."
+				""
+				"&6Right click&r to open its interface, and from there, you can search for a biome, then hit &6Start Search&r."
+				""
+				"Info will display in the top left corner of your screen, showing you if the biome was found, where it is, and how far you are from it."
+			]
+			id: "0584E441D6EE02FF"
+			subtitle: "Where do you want to go today?"
+			tasks: [{
+				id: "638796295B4DD7F6"
+				item: {
+					Count: 1
+					id: "naturescompass:naturescompass"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["695654EE3BCBE110"]
+			description: [
+				"&aWaystones&r are magical stones that can appear in many places in the world, from randomly finding them to appearing in a village."
+				""
+				"&aRight clicking&r a Waystone will mark it as discovered for you, and from there, you can teleport to &aany other Waystone&r that you have discovered. If the distance between Waystones is large enough, there will also be an &aXP cost&r associated with the destination."
+				""
+				"&6Waystones work across dimensions&r, and you can pick up and move Waystones as long as you have a pickaxe on hand."
+			]
+			icon: "waystones:waystone"
+			id: "6517E4D6916B6A4F"
+			subtitle: "Get from point A to point C and then point B"
+			tasks: [{
+				id: "72AA66B4EAFAD7BF"
+				title: "Click here."
+				type: "checkmark"
+			}]
+			title: "Waystones"
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["695654EE3BCBE110"]
+			description: [
+				"&aChisels \\& Bits&r is a chisel mod that's quite different from &aChipped&r."
+				""
+				"For one, it doesn't introduce any special textures for blocks."
+				""
+				"However, it allows you to split blocks into &abits&r &7(1/16th the dimensions of a normal block)&r and build with those, which can be used to add depth to individual blocks, make signs or displays, pixel art, and much more."
+			]
+			id: "6B1B776A24339D89"
+			subtitle: "64 bits, 32 bits, 16 bits, 4 BITS, 2 BITS, ONE BIT"
+			tasks: [{
+				advancement: "chiselsandbits:chiselsandbits/root"
+				criterion: ""
+				id: "6FA54708F228A3D8"
+				title: "Obtain a Chisel."
+				type: "advancement"
+			}]
+			title: "Chisels \\& Bits"
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["695654EE3BCBE110"]
+			description: ["&aChipped&r is a mod that adds various stations that &6change the texturing of a variety of blocks&r. You can use this to discover MANY different block textures to work with, from pillars to tiles and anything in between."]
+			icon: {
+				Count: 1
+				id: "chiselsandbits:chisel_netherite"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "367A6AEAB981335D"
+			subtitle: "But if you close your eyes"
+			tasks: [{
+				id: "11C55F59A595391B"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Chipped Workstation\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "chipped:botanist_workbench"
+							}
+							{
+								Count: 1b
+								id: "chipped:glassblower"
+							}
+							{
+								Count: 1b
+								id: "chipped:carpenters_table"
+							}
+							{
+								Count: 1b
+								id: "chipped:loom_table"
+							}
+							{
+								Count: 1b
+								id: "chipped:mason_table"
+							}
+							{
+								Count: 1b
+								id: "chipped:alchemy_bench"
+							}
+							{
+								Count: 1b
+								id: "chipped:tinkering_table"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Chipped"
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["695654EE3BCBE110"]
+			description: [
+				"&aRunic Etching&r can be used to apply or remove an enchanted glint effect &7(visual only)&r from enchanted items."
+				""
+				"Use a &6Smithing Table&r with it, just as you would any smithing template."
+				""
+				"&6Blaze Powder&r can be used to give the item a rainbow glint."
+				""
+				"The etching can be duplicated using &6Corundum and Cobblestone&r."
+				""
+				"This is a feature from &aQuark&r, a mod by Vazkii."
+			]
+			id: "2AD39CD26D6605B6"
+			subtitle: "Enchantment glint galore"
+			tasks: [{
+				id: "37B82B4DEFCFBAD1"
+				item: "quark:smithing_template_rune"
+				type: "item"
+			}]
+			title: "Runic Etching"
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["695654EE3BCBE110"]
+			description: [
+				"Simply press &6SHIFT + <your chat key>&r while hovering over an item to show it in chat."
+				""
+				"This is a feature from &aQuark&r, a mod by Vazkii."
+			]
+			icon: "create:clipboard"
+			id: "451D71520AC8BE6B"
+			subtitle: "Show off your special stuff!"
+			tasks: [{
+				id: "34C2F1E76326C3E0"
+				title: "Items in Chat"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["695654EE3BCBE110"]
+			description: [
+				"The &6Trowel&r is a tool that can be used to randomly place blocks from your hotbar."
+				"Great for making paths!"
+				""
+				"This is a feature from &aQuark&r, a mod by Vazkii."
+			]
+			id: "10C9E14777AD1E49"
+			subtitle: "needs more variety"
+			tasks: [{
+				id: "07604A1F20A2D7FA"
+				item: "quark:trowel"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6B1B776A24339D89"]
+			description: [
+				"&aSimple Chisel Patterns&r can be used to copy something made from bits."
+				""
+				"Hover over the Quill in the tasks above to learn how to make a pattern."
+				""
+				"&cNOTE: These patterns are single use. Continue this questline to learn how you can make them permanent.&r"
+			]
+			icon: {
+				Count: 1
+				id: "chiselsandbits:pattern_single_use"
+				tag: { }
+			}
+			id: "794FC867B6758318"
+			subtitle: "Not to be confused with AE2 patterns"
+			tasks: [
+				{
+					id: "7DA1A86AAC8FF742"
+					item: {
+						Count: 1
+						id: "chiselsandbits:quill"
+						tag: { }
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "5EB7D4A5D61B0F96"
+					item: {
+						Count: 1
+						id: "chiselsandbits:pattern_single_use"
+						tag: { }
+					}
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "Chisel Patterns"
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["794FC867B6758318"]
+			description: [
+				"&aSealed Patterns&r carry the same functions as a Chisel Pattern, but are infinitely reusable."
+				""
+				"Hover over the Sealant in the tasks above to learn more."
+			]
+			icon: {
+				Count: 1
+				id: "chiselsandbits:pattern_multi_use"
+				tag: { }
+			}
+			id: "79A460F865C118A7"
+			subtitle: "A permanent bond"
+			tasks: [
+				{
+					id: "5CB18CC398CDD515"
+					item: {
+						Count: 1
+						id: "chiselsandbits:sealant"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "489C3175C5AA9A17"
+					item: {
+						Count: 1
+						id: "chiselsandbits:pattern_multi_use"
+						tag: { }
+					}
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "Sealed Patterns"
+			x: 4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"367A6AEAB981335D"
+				"5AE9F88949F6EF44"
+			]
+			description: ["These upgrades offer the functionality of Chipped's various stations in a Sophisticated Storage &7(or backpack)&r upgrade."]
+			icon: "sophisticatedstorage:chipped/tinkering_table_upgrade"
+			id: "1888166D9C751DBD"
+			subtitle: "Reduce clutter"
+			tasks: [{
+				id: "5D4370226E107E6F"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Sophisticated Chipped Upgrade\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "sophisticatedstorage:chipped/botanist_workbench_upgrade"
+							}
+							{
+								Count: 1b
+								id: "sophisticatedstorage:chipped/glassblower_upgrade"
+							}
+							{
+								Count: 1b
+								id: "sophisticatedstorage:chipped/carpenters_table_upgrade"
+							}
+							{
+								Count: 1b
+								id: "sophisticatedstorage:chipped/loom_table_upgrade"
+							}
+							{
+								Count: 1b
+								id: "sophisticatedstorage:chipped/mason_table_upgrade"
+							}
+							{
+								Count: 1b
+								id: "sophisticatedstorage:chipped/alchemy_bench_upgrade"
+							}
+							{
+								Count: 1b
+								id: "sophisticatedstorage:chipped/tinkering_table_upgrade"
+							}
+							{
+								Count: 1b
+								id: "sophisticatedbackpacks:chipped/glassblower_upgrade"
+							}
+							{
+								Count: 1b
+								id: "sophisticatedbackpacks:chipped/carpenters_table_upgrade"
+							}
+							{
+								Count: 1b
+								id: "sophisticatedbackpacks:chipped/loom_table_upgrade"
+							}
+							{
+								Count: 1b
+								id: "sophisticatedbackpacks:chipped/mason_table_upgrade"
+							}
+							{
+								Count: 1b
+								id: "sophisticatedbackpacks:chipped/alchemy_bench_upgrade"
+							}
+							{
+								Count: 1b
+								id: "sophisticatedbackpacks:chipped/tinkering_table_upgrade"
+							}
+							{
+								Count: 1b
+								id: "sophisticatedbackpacks:chipped/botanist_workbench_upgrade"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Sophisticated Chipped Upgrades"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["00EE131DB547C2F4"]
+			description: [
+				"&aSophisticated Storage&r adds upgradeable chests in the exact same style as backpacks. As such, the mechanics are generally similar."
+				""
+				"It's worth noting that breaking these chests will &cstill cause them to drop their items&r."
+				""
+				"There are also dedicated upgrade items that will increase the capacity/tier of the chest by simply right clicking on them."
+			]
+			id: "106BE9BA38F303F6"
+			subtitle: "Backbacks but static!"
+			tasks: [{
+				id: "60859AC59E507BA3"
+				item: {
+					Count: 1
+					id: "sophisticatedstorage:chest"
+					tag: {
+						woodType: "oak"
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			title: "Sophisticated Storage"
+			x: 2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["00EE131DB547C2F4"]
+			description: [
+				"Backpack upgrades are very useful."
+				""
+				"The more you upgrade your backpack's capacity, the &6more upgrade slots&r it can get."
+				""
+				"You can also &6toggle certain upgrade effects&r on or off."
+				""
+				"Click the next page button at the bottom right corner of this window to learn about some &7(but not all)&r useful upgrades."
+				"{@pagebreak}"
+				"The &6Crafting Upgrade&r literally just adds a crafting table tab to the backpack. "
+				""
+				"The &6Smelting Upgrade&r does the same, but for a furnace. There are also upgrades for a blast furnace and smoker."
+				""
+				"The &6Stack Upgrade&r increases the max stack size of items in the backpack. &cYou can only have up to three stack upgrades in a backpack.&r"
+				""
+				"The &6Everlasting Upgrade&r makes the backpack invincible. Not even a cactus can damage it, nor will it despawn."
+				""
+				"Go to the next page to learn about more upgrades."
+				"{@pagebreak}"
+				"The &6Jukebox Upgrade&r adds a jukebox tab to your backpack. Budget MP3 player."
+				""
+				"The &6Void Upgrade&r allows you to immediately void specific items that you pick up."
+				""
+				"The &6Smithing Upgrade&r adds a smithing table tab, for when you need to upgrade on the go."
+				""
+				"The &6Tool Swapper Upgrade&r allows the backpack to automatically swap your held tool to one of the correct effectiveness for what you're mining, provided the tools are in the backpack."
+				""
+				"Go to the next page to learn some more info about upgrades."
+				"{@pagebreak}"
+				"Some upgrades have an &6advanced variant&r that offers more functions such as filtering, which could be useful if you don't want certain things affected by backpack upgrades."
+				""
+				"There are more upgrades than just what's listed here - use the following JEI search query to get a list of all backpack upgrades:"
+				"&7&o@backpack upgrade&r"
+				"&8(Don't know what this means? Find out more in the JEI quest in this quest chapter!)&r"
+			]
+			id: "4C0823B13BC79982"
+			subtitle: "Backpacks aka All-In-One Portable Storage"
+			tasks: [{
+				id: "7F3F70D7F2C7ED3F"
+				item: "sophisticatedbackpacks:upgrade_base"
+				type: "item"
+			}]
+			title: "Backpack Upgrades"
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["106BE9BA38F303F6"]
+			description: [
+				"Many chest upgrades are the same as their backpack counterpart, but there are still a couple new ones to look out for:"
+				""
+				"The &6Compression Upgrade&r automatically compresses compatible items when necessary. Examples include things like iron ingots. Useful for making a compacting drawer!"
+				""
+				"The &6Hopper Upgrade&r allows the chest to behave like a hopper, pulling items in from the top, and pushing from the bottom."
+				""
+				"There are more upgrades than just what's listed here - use the following JEI search query to get a list of all backpack upgrades:"
+				"&7&o@storage upgrade&r"
+				"&8(Don't know what this means? Find out more in the JEI quest in this quest chapter!)&r"
+			]
+			id: "5AE9F88949F6EF44"
+			subtitle: "The REAL All-In-One Storage"
+			tasks: [{
+				id: "4EC55375A8BDA8C7"
+				item: "sophisticatedstorage:upgrade_base"
+				type: "item"
+			}]
+			title: "Chest Upgrades"
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6B1B776A24339D89"]
+			description: [
+				"The &aTape Measure&r can be used to measure a distance or a volume between two points. You can measure distance in blocks, or volume in bits or blocks."
+				""
+				"Hover over the item and check its tooltip to learn more."
+			]
+			id: "774914553E120A14"
+			subtitle: "Who's the shortest?"
+			tasks: [{
+				id: "4D9FAE5ABECD376B"
+				item: {
+					Count: 1
+					id: "chiselsandbits:measuring_tape"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6B1B776A24339D89"]
+			description: ["The &aChiseled Bit Bag&r can be used to store bits so they don't clog up your inventory. You can place bits directly from it, and patterns can use bits from the bag."]
+			id: "2B534AF72D62B045"
+			subtitle: "We have this in the bag."
+			tasks: [{
+				id: "7C2771F55532D67C"
+				item: {
+					Count: 1
+					id: "chiselsandbits:bit_bag"
+					tag: {
+						Inventory: { }
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["106BE9BA38F303F6"]
+			description: [
+				"&aSophisticated Storage&r introduces drawers &7(actually called limited barrels but I changed that)&r that can generally only hold &aone item per drawer&r they contain, but can contain &aa lot more than a single chest&r with just that item. They can also be upgraded."
+				""
+				"&aRight click to put an item in&r. Afterward, double right clicking with a different item will put all of the items in your inventory that can go in the drawer into the drawer."
+				""
+				"&aLeft click to take items out&r. Hold &aShift&r while doing so to take out an entire stack."
+				""
+				"&aRight clicking any side that isn't the side with the items&r will open a menu with more detailed info about how many items are in the drawer block, and a space for upgrades."
+				""
+				"&6These drawers use the same upgrades as the chests from this mod.&r"
+			]
+			id: "159CCB61C39CD22F"
+			subtitle: "god i love the limited 3D they used for this game, its so charming"
+			tasks: [{
+				id: "69F3CF1D8093A4E3"
+				item: {
+					Count: 1
+					id: "sophisticatedstorage:limited_barrel_1"
+					tag: {
+						woodType: "oak"
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			title: "Limited Barrels (Drawers)"
+			x: 2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["106BE9BA38F303F6"]
+			description: [
+				"&6Packing Tape&r can be used to \"pack\" a chest or barrel, allowing it to be &apicked up without spitting its contents everywhere&r. "
+				""
+				"This can be very useful if you need to move things around in a base, and it even works with double chests."
+			]
+			id: "3C2027B8CEE96ECA"
+			subtitle: "No more items going everywhere!"
+			tasks: [{
+				id: "77BEF995BA7791C8"
+				item: {
+					Count: 1
+					id: "sophisticatedstorage:packing_tape"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.5d
+		}
+	]
+	title: "Useful Tools"
+}

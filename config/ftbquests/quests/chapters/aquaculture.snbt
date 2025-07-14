@@ -1,0 +1,265 @@
+{
+	autofocus_id: "284D2FA3BE428AB8"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "aquaculture"
+	group: "7C52BACF3A6137F7"
+	icon: {
+		Count: 1
+		id: "aquaculture:neptunium_fishing_rod"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "687A5AED0282EE3C"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["&aAquaculture 2&r is a mod all about expanding the fishing experience. You'll be able to upgrade your fishing rod and use additional accessories to catch many different fish and get some new gear."]
+			icon: {
+				Count: 1
+				id: "aquaculture:neptunium_fishing_rod"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "284D2FA3BE428AB8"
+			size: 2.0d
+			subtitle: "FISH!"
+			tasks: [{
+				id: "30C86A49C7E427E5"
+				title: "Click here."
+				type: "checkmark"
+			}]
+			title: "Aquaculture"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["284D2FA3BE428AB8"]
+			description: [
+				"This is your standard fishing rod. It works as you'd expect. "
+				""
+				"Note that there are over 30+ new fish to find in different climates."
+			]
+			id: "3049D8F58AC32157"
+			subtitle: "Where it all begins"
+			tasks: [{
+				id: "5C55FA136250BC5F"
+				item: {
+					Count: 1
+					id: "minecraft:fishing_rod"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3049D8F58AC32157"]
+			description: [
+				"The Iron Fishing Rod is the first rod that Aquaculture adds."
+				""
+				"It just has more durability, and so does every rod after this except for the final one."
+			]
+			id: "46BCC279DE4AAF0E"
+			subtitle: "Acquire Hardware"
+			tasks: [{
+				id: "10E76EF47A0FDCD4"
+				item: {
+					Count: 1
+					id: "aquaculture:iron_fishing_rod"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["46BCC279DE4AAF0E"]
+			description: [
+				"The &6Tackle Box&r is where you'll be modifying your fishing rods with special items that can help improve your fishing experience."
+				""
+				"It can also store these special items within itself."
+			]
+			id: "64B7E7E392B035B4"
+			subtitle: "The Workstation"
+			tasks: [{
+				id: "10FCCF69018EF723"
+				item: "aquaculture:tackle_box"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["64B7E7E392B035B4"]
+			description: [
+				"&6Bait&r comes in three varieties: &aworms, leeches, and minnows&r."
+				""
+				"Using bait on a fishing rod will make fish more likely to bite."
+				""
+				"&6Worms&r can be obtained from a &6Worm Farm&r, which works simililarly to a Composter. You can right click the farm at any time when it has stuff in it to harvest worms."
+				""
+				"&6Leeches and Minnows&r can be fished for."
+			]
+			icon: {
+				Count: 1
+				id: "aquaculture:worm"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "474430CA7E6FDBD4"
+			subtitle: "Don't fall for it!"
+			tasks: [
+				{
+					id: "6368C1551A96D58B"
+					item: "aquaculture:worm_farm"
+					type: "item"
+				}
+				{
+					id: "5828FCAE5EAD1365"
+					item: {
+						Count: 1
+						id: "aquaculture:worm"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Bait"
+			x: -1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["64B7E7E392B035B4"]
+			description: [
+				"&aHooks&r offer special effects when fishing. Here's a list of them:"
+				""
+				"- &6Iron and Diamond&r: chance to not consume durability"
+				"- &6Gold&r: increased luck"
+				"- &6Heavy&r: shorter length casts"
+				"- &6Light&r: longer length casts"
+				"- &6Double&r: 10% chance to catch two fish"
+				"- &6Redstone&r: longer window to reel in a fish"
+				"- &6Note&r: audible sound effect on bite"
+				"- &6Netherstar&r: combined effects of Gold and Diamond"
+			]
+			id: "5DB1CB1C751A1F15"
+			subtitle: "ON the Hook this time"
+			tasks: [{
+				id: "7DEE80404C900D7E"
+				item: "aquaculture:iron_hook"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["64B7E7E392B035B4"]
+			description: ["&aBobbers&r are cosmetics that can be applied to your fishing rod, and can be dyed like leather armor."]
+			id: "76D2E35BBD6707C9"
+			subtitle: "the thing that floats"
+			tasks: [{
+				id: "385C8B3BA99CC092"
+				item: "aquaculture:bobber"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["64B7E7E392B035B4"]
+			description: [
+				"&aFishing Lines&r are cosmetic items that change the color of your fishing line. Talk about self-explanatory!"
+				""
+				"They can be dyed like leather armor."
+			]
+			id: "6B8B673B6D86D246"
+			subtitle: "A Link to the Water"
+			tasks: [{
+				id: "451D243C12DD55FD"
+				item: "aquaculture:fishing_line"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["64B7E7E392B035B4"]
+			description: ["It has more durability than the last."]
+			id: "018158DD30109436"
+			tasks: [{
+				id: "150D2E0B00D0959A"
+				item: {
+					Count: 1
+					id: "aquaculture:diamond_fishing_rod"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["018158DD30109436"]
+			description: [
+				"&aNeptunium&r can be found in a number of ways:"
+				""
+				"- Very rarely as nuggets through &6fishing&r"
+				"- Very rarely through fishing up &6Neptune's Bounty&r chests &7(these can also straight up contain Neptunium gear!!)&r"
+				"- Uncommonly in &6buried treasure&r"
+				"- Rarely as nuggets in &6small underwater ruins&r"
+			]
+			id: "495528CEE2EA6DC4"
+			subtitle: "Water Ingot"
+			tasks: [{
+				id: "25BD588338265A39"
+				item: "aquaculture:neptunium_ingot"
+				type: "item"
+			}]
+			title: "Neptunium"
+			x: 0.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["495528CEE2EA6DC4"]
+			description: ["If you want to upgrade to &aNeptunium gear&r directly, you'll need to find a &6Smithing Template&r for it. These can commonly be found in &6buried treasure&r, and can then be duplicated using nuggets and gravel."]
+			id: "4BF13F4D9B10F6F7"
+			subtitle: "Wow, another upgrade for Netherite!"
+			tasks: [{
+				id: "5A077FCDE247EC79"
+				item: "kubejs:neptunium_upgrade_smithing_template"
+				type: "item"
+			}]
+			title: "Neptunium Gear"
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["4BF13F4D9B10F6F7"]
+			id: "59E69CDAF6392A9B"
+			subtitle: "Absolutely essential to your fishing experience."
+			tasks: [{
+				id: "57B4B6F1CB121D37"
+				item: "handcrafted:salmon_trophy"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -11.5d
+		}
+	]
+	title: "Mod Progression"
+}

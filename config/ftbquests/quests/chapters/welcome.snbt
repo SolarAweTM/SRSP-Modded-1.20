@@ -1,0 +1,212 @@
+{
+	autofocus_id: "4711FC6D3224F5F9"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "welcome"
+	group: ""
+	icon: "biomesoplenty:bop_icon"
+	id: "12223F6E3BB28753"
+	images: [{
+		click: "http://gist.github.com/SolarAweTM/21a9ee83a29275204dbc989e75e9f761"
+		dependency: "2E61EA3C4ABA133B"
+		height: 1.0d
+		hover: [
+			"Vanilla Changes"
+			"Click me!"
+		]
+		image: "everycomp:block/abnww/architects_palette/twisted_beehive_end"
+		rotation: 0.0d
+		width: 1.0d
+		x: 0.5d
+		y: -3.0d
+	}]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Welcome to SRS+ Modern Modded!"
+				""
+				"Please note that this modpack will be released in a \"phase system\", where content is added over time."
+				""
+				"What this means is that the modpack is &cnot in a finished state &fat the moment, but it is playable. &6Use this as an opportunity to suggest changes and mods for future phases!&r"
+			]
+			id: "4711FC6D3224F5F9"
+			rewards: [{
+				auto: "no_toast"
+				id: "790BDDBA9C3DEAAB"
+				item: "ftbquests:book"
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [{
+				dimension: "minecraft:overworld"
+				icon: "biomesoplenty:bop_icon"
+				id: "4C429B8C090F152E"
+				title: "Welcome!"
+				type: "dimension"
+			}]
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["343033073CECDF2A"]
+			description: [
+				"Quality of Life is abundant in this modpack. A lot of things have been made easier, so here's some of the mods that add these changes:"
+				""
+				"- Mouse Tweaks &7(You can now do a lot more with the mouse, such as dragging to transfer items!)&f"
+				"- Lootr &7(Everyone gets their own loot from a dungeon/structure!)&f"
+				"- Sophisticated Backpacks \\& Storage &7(Powerful, upgradeable storage options)&f"
+				"- Every Compat Wood \\& Stone &7(Complete wood sets for each mod!)&f"
+				"- Waystones &7(Teleport between them with XP!)&f"
+				"- AppleSkin &7(Shows you your saturation)&f"
+				"- Embeddium &7(A LOT of performance improvements. Generally recommended over Optifine. Fork of Sodium.)&f"
+			]
+			id: "53DE820EE74EC24D"
+			tasks: [{
+				id: "74ED40BA18D907CF"
+				title: "Overview: Quality of Life"
+				type: "checkmark"
+			}]
+			title: "Overview: Quality of Life [Phase I]"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["343033073CECDF2A"]
+			description: [
+				"For the first phase, I decided to keep things relatively simple, and not get into any heavy machinery just yet. The following is a list of some of the major content mods present in this phase:"
+				""
+				"- Create &7(Tech mod themed around steampunk machinery)&r"
+				"- Ars Nouveau &7(Magic mod themed around spells and wizardry)&r"
+				"- Botania &7(Magitech mod themed around plants)&r"
+				"- Apotheosis &7(General content mod themed around expanding vanilla content)&r"
+				"- Silent Gear &7(Modular tools that behave like vanilla tools)&r"
+				"- Quark &7(Lots of little things that add up)&r"
+				"- Aquaculture 2 &7(Fishing overhaul, and you know what that means)&r"
+			]
+			id: "668616E5C2E4049F"
+			tasks: [{
+				id: "356C0A6B5B97F5B0"
+				title: "Overview: Content Mods [Phase I]"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["343033073CECDF2A"]
+			description: ["Click the image above this quest &a(after you complete it)&f to view a list of impactful vanilla changes."]
+			id: "2E61EA3C4ABA133B"
+			tasks: [{
+				id: "767846BBCDD4F75F"
+				title: "Overview: Vanilla Changes"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4711FC6D3224F5F9"]
+			description: [
+				"&7(if this covers your screen, know that you can scroll this window!)&f"
+				""
+				"Quests (glorified advancements) will be the main way I incentivize progression in this pack, and I'm sure many of you don't know how this works."
+				""
+				"Generally they work very similar to advancements; you gotta complete a goal. However, some tasks (like the ones on this page) are just checkmark tasks, labeled with a checkmark. To complete these, simply just click the checkmark under the Tasks section."
+				""
+				"To claim any potential rewards, you can click on each item listed under the Rewards section to immediately recieve the listed reward."
+				""
+				"You should know that &amost, if not all quests in this pack are optional.&f These quests are designed to help guide players newer to modded Minecraft (especially 1.20.1 modded), and you're able to access all of this pack's content without needing to complete quests."
+			]
+			icon: "ftbquests:book"
+			id: "343033073CECDF2A"
+			shape: "gear"
+			subtitle: "Get to know your new favorite questing system!"
+			tasks: [{
+				id: "6077FF4AD49CCED6"
+				title: "FTB Quests How-To"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["343033073CECDF2A"]
+			description: [
+				"Another thing you might be interested in is the ability to group up and complete quests together."
+				""
+				"To do this, we will be using &aFTB Teams&r."
+				""
+				"From your inventory, you should see a button with 3 people labeled \"My Team\". It looks like this:"
+				"{image:ftbteams:textures/teams.png width:25 height:25 align:left}"
+				"Click the next page button in the bottom right corner of this window to continue."
+				"{@pagebreak}"
+				"On the screen that shows up when you click the My Team button, you should see a sidebar with a bunch of player or team names, and the \"&aCreate a Party&r\" button. Give it a name, add initial members, and hit that \"&aCreate a Party&r\" button to finish!"
+				"Go to the next page to figure out how to manage your team."
+				"{@pagebreak}"
+				"Now that you've created your party, the next step is &mworld domination&r managing it."
+				""
+				"Going to the &aMy Team Menu&r will now show you a screen with a few more options, mostly in the &atop right corner&r. Let's go over each of these functions."
+				"{image:ftblibrary:icons/friends width:25 height:25 align:left}"
+				"This button takes you to &aAlly Management&r. Allies are pseudo-members of your party that only have some permissions that proper members do."
+				"{image:ftblibrary:icons/add width:25 height:25 align:left}"
+				"This button takes you to the &aInvite Menu&r. Here, you can invite players to your team. Players must then accept the invite to join your team."
+				"{image:ftblibrary:icons/settings width:25 height:25 align:left}"
+				"This button takes you to your &aTeam Settings&r. Here, you can adjust a ton of stuff, like basic info about your team, but more importantly, permissions such as what allies are allowed to do in your team's area."
+			]
+			icon: "minecraft:oak_door"
+			id: "437B61FE6F8707DD"
+			shape: "gear"
+			subtitle: "Quest together! Base together!"
+			tasks: [{
+				id: "0575732859DC06F7"
+				title: "FTB Teams How-To"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["343033073CECDF2A"]
+			description: [
+				"Naturally, you'll want to make sure people don't take things without your permission, or otherwise modify your land. You can use &aFTB Chunks&r for this."
+				""
+				"&7Note that FTB Chunks functions alongside FTB Teams, so claimed chunks will belong to your team, and not just you. Find out more in the "
+				"{ \"text\": \"quest for FTB Teams.\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"437B61FE6F8707DD\" } }"
+				""
+				"Click the next page button in the bottom right corner to find out more about FTB Chunks."
+				"{@pagebreak}"
+				"Know that FTB Chunks is not only the mod being used for claiming chunks, but is also used for having a map in general."
+				""
+				"As a result, you can find &6two buttons in the top left corner&r of your inventory menu: the former for opening the map, and the latter (the blue tinted one) for managing claimed chunks."
+				"{image:ftblibrary:icons/map width:25 height:25 align:left}"
+				"Clicking the button for the Claim Manager will take you to a smaller map window that has sections separated by chunks. Go to the next page to find out how to claim chunks."
+				"{@pagebreak}"
+				"Obviously, you cannot claim chunks over an existing claim. "
+				""
+				"In order to claim chunks, &6left click&r an available chunk. Your claims do not have to be connected. You may also drag to select multiple chunks."
+				""
+				"To remove your claims, &6use right click&r. You can also drag for this."
+				""
+				"In order to force load a claimed chunk, you can use &6SHIFT&r with the above controls to enable force loading. In addition, if you use the scroll wheel over a force loaded chunk, you can &6set how long the chunk will be force loaded for&r."
+				""
+				"&cPlease be mindful when force loading chunks. Loading too many chunks will drastically affect server performance.&r"
+				""
+				"You are given a set number of chunks you can claim, and a smaller number that you can force load. This increases additvely with each team member, if you're in a team."
+			]
+			icon: "minecraft:map"
+			id: "7973837E4C34CB4D"
+			shape: "gear"
+			subtitle: "Make sure nobody else messes with your stuff!"
+			tasks: [{
+				id: "6D47087C3DBE5774"
+				title: "FTB Chunks How-To"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 0.5d
+		}
+	]
+	title: "Welcome"
+}

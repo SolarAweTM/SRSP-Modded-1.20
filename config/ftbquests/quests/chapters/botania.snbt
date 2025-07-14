@@ -1,0 +1,707 @@
+{
+	autofocus_id: "40F38B864E509197"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "botania"
+	group: "22E2861D9475E7CD"
+	icon: {
+		Count: 1
+		id: "botania:lexicon"
+		tag: {
+			"botania:elven_unlock": 1b
+		}
+	}
+	id: "753CA3481336EF83"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&aBotania&r is a mod about flowers. It may seem like a magic mod, but it's really a tech mod in a trench coat."
+				"&7Don't let this turn you away from the mod! It's cool, I promise!&r"
+				""
+				"To get started, it's recommended to follow this questline with a &aLexica Botania&r in tow. You can get one within an Eccentric Tome obtained from"
+				"its quest, or by crafting a book with a sapling."
+				"{ \"text\": \"[Eccentric Tome Quest]\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"580C9EFE799877FB\" } }"
+				""
+				"Please note that this quest line is &6not a comprehensive overview&r of all that Botania provides, and you are expected to &6explore some parts on your own&r to make certain parts easier. &6Some mechanics are not explained&r such as Mana Tablets, you are expected to read from the &6Lexica Botania&r to gain an understanding of these mechanics."
+				""
+				"&cA word of warning: Because this modpack alters some recipes, sometimes, recipes will fail to show in the Lexica Botania. It's recommended to follow this questline for that reason.&r"
+				""
+				"By the way, you can rename the Lexica Botania in an anvil and the name will show up on the book's model."
+			]
+			icon: "botania:lexicon"
+			id: "40F38B864E509197"
+			size: 2.0d
+			subtitle: "Not as difficult as you might expect! I promise!"
+			tasks: [
+				{
+					id: "30D66537F2AEB94B"
+					title: "Botania"
+					type: "checkmark"
+				}
+				{
+					id: "770C5E16016DFD28"
+					item: "botania:lexicon"
+					match_nbt: false
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["40F38B864E509197"]
+			description: [
+				"Before we begin, it's important to know some things that will be useful as you progress through the mod."
+				""
+				"- &aMana in Botania is&r &cnot&r &athe same as Mana in Ars Nouveau.&r In this questline, any reference to \"Mana\" should be explicitly treated as Botania's mana unless otherwise stated."
+				"- &aMana is generally not given to you as a numerical value.&r In order to view the mana stored in a block (like a pool or spreader), you'll need a &6Wand of the Forest&r. For items that can store mana, simply hover over the item and a mana bar will appear on top of the tooltip."
+				"- &aFlowers are split into two categories: Generating Flora and Functional Flora.&r Generating Flora are primarily used to generate Mana, and Functional Flora actually do things, usually using Mana."
+			]
+			id: "5D7E00B16CA1AB0D"
+			subtitle: "Health \\& Safety Information"
+			tasks: [{
+				id: "3DE5335E1852081C"
+				title: "Key Concepts"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5D7E00B16CA1AB0D"]
+			description: [
+				"&aMystical Flowers&r are extremely important in Botania, as they are the building blocks that every flower in the mod is made from."
+				""
+				"You'll be able to find them scattered throughout the world, but if necessary &7(or lazy)&r, you can use Floral Fertilizer &7(find it in JEI!)&r to summon some Mystical Flowers like you would use bonemeal on grass."
+			]
+			id: "3818137BD58DC608"
+			subtitle: "No, it's not weed."
+			tasks: [{
+				advancement: "botania:main/flower_pickup"
+				criterion: ""
+				id: "03B7D58BA8118603"
+				title: "Obtain a Mystical Flower."
+				type: "advancement"
+			}]
+			title: "Mystical Flowers"
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3818137BD58DC608"]
+			description: [
+				"&aMystical Petals&r can be crafted from putting mystical flowers in a crafting grid alone. You'll get 2 per flower."
+				""
+				"Need more? You can &6plant these in the ground&r to make particles, and then you can &6use bonemeal on them&r to make tall flowers. These tall flowers can &conly be harvested with shears&r, but they give you &64 petals per flower&r. Use this to farm a ton of petals!"
+				""
+				"You can also then put the petals alone in a crafting grid to turn them into dye."
+			]
+			icon: "botania:white_petal"
+			id: "2ACD3DDCD503F19F"
+			subtitle: "I SWEAR its not weed."
+			tasks: [{
+				id: "0915ABC43F299796"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Mystical Petal\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "botania:white_petal"
+							}
+							{
+								Count: 1b
+								id: "botania:light_gray_petal"
+							}
+							{
+								Count: 1b
+								id: "botania:gray_petal"
+							}
+							{
+								Count: 1b
+								id: "botania:black_petal"
+							}
+							{
+								Count: 1b
+								id: "botania:brown_petal"
+							}
+							{
+								Count: 1b
+								id: "botania:red_petal"
+							}
+							{
+								Count: 1b
+								id: "botania:orange_petal"
+							}
+							{
+								Count: 1b
+								id: "botania:yellow_petal"
+							}
+							{
+								Count: 1b
+								id: "botania:lime_petal"
+							}
+							{
+								Count: 1b
+								id: "botania:green_petal"
+							}
+							{
+								Count: 1b
+								id: "botania:cyan_petal"
+							}
+							{
+								Count: 1b
+								id: "botania:light_blue_petal"
+							}
+							{
+								Count: 1b
+								id: "botania:blue_petal"
+							}
+							{
+								Count: 1b
+								id: "botania:purple_petal"
+							}
+							{
+								Count: 1b
+								id: "botania:magenta_petal"
+							}
+							{
+								Count: 1b
+								id: "botania:pink_petal"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Mystical Petals"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2ACD3DDCD503F19F"]
+			description: [
+				"The &aPetal Apothecary&r is a major part of Botania, as it's what you'll be using to make every flower in the mod."
+				""
+				"In order to start using the Apothecary, you'll need to &6give it water&r. Just a single bucket will do. After that, you'll want to &6toss the petals and other materials&r required to make a flower. Once that's done, all you need to do is &6throw in some wheat seeds&r to finish the process."
+				""
+				"&aTry putting 4 mystical white petals into the Apothecary and seeing what it makes.&r"
+				""
+				"&6Pro tip!&r After completing a recipe, if there is water in the Apothecary, you can right click with an empty hand to re-populate the recipe you just completed, provided you have the materials."
+			]
+			icon: "botania:apothecary_default"
+			id: "28FE5F4EA27528C3"
+			subtitle: "It's NOT weed, I promise!"
+			tasks: [{
+				id: "586E7E90E0CF972D"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Basic Petal Apothecary\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "botania:apothecary_default"
+							}
+							{
+								Count: 1b
+								id: "botania:apothecary_deepslate"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Petal Apothecary"
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["28FE5F4EA27528C3"]
+			description: [
+				"The &aPure Daisy&r is the first functional flower you'll make in Botania. The flower will, given some time, &6transform certain blocks placed in its 8 adjacent tiles&r into a different form."
+				""
+				"The most common uses are to turn &6Logs into Livingwood&r, and &6Stone into Livingrock&r, both of which are used by Botania."
+				""
+				"The Pure Daisy can also transform a bunch of &6other things&r as well, listed below:"
+				""
+				"- Netherrack into Cobblestone"
+				"- Ice into Packed Ice"
+				"- Packed Ice into Blue Ice"
+				"- Water sources into Snow Blocks"
+				"- End Stone into Cobbled Deepslate"
+				"- Soul Sand into Sand"
+				"- Blaze Meshes into Obsidian"
+			]
+			id: "23444D61BF3C5D76"
+			subtitle: "See? Not weed!"
+			tasks: [{
+				id: "7B01B9FF5BAC5790"
+				item: "botania:pure_daisy"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["23444D61BF3C5D76"]
+			description: [
+				"As you should've read in the previous quest, &aLivingwood and Livingrock&r are used in Botania, specifically as a crafting material."
+				""
+				"&6Pro tip!&r You can hold CTRL while hovering over most Botania items with a Lexica Botania in your inventory to open the Lexica to a relevant entry."
+			]
+			icon: "botania:livingwood_log"
+			id: "4BED5850AA2AEC5B"
+			subtitle: "Mother Nature but actually alive"
+			tasks: [
+				{
+					id: "5EB99F3A89799E93"
+					item: "botania:livingwood_log"
+					type: "item"
+				}
+				{
+					id: "1910B94E6EDAE752"
+					item: "botania:livingrock"
+					type: "item"
+				}
+			]
+			title: "Livingwood and Livingrock"
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4BED5850AA2AEC5B"]
+			description: [
+				"The &aMana Pool&r is quite possibly the most important part of Botania, as it serves as a place for generated mana to be stored, and a place that mana can be used from. It is also used to &6infuse items with mana&r for future crafting."
+				""
+				"Mana Pools come in two flavors: &6Normal and Diluted&r. While the diluted pool is cheaper, it stores significantly less. A normal Mana Pool can store &6over 50x as much&r as a diluted pool!"
+			]
+			icon: "botania:mana_pool"
+			id: "6066C7319021E6F4"
+			subtitle: "Bringing mana into the equation"
+			tasks: [{
+				id: "03B09D969AA26625"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Basic Mana Pool\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "botania:mana_pool"
+							}
+							{
+								Count: 1b
+								id: "botania:diluted_pool"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "The Mana Pool"
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6066C7319021E6F4"]
+			description: [
+				"The first generating flora you'll likely make can be either the &aEndoflame&r, or the &aHydroangeas&r. Both have relatively simple conditions to generating mana:"
+				""
+				"- The &aEndoflame&r simply takes &6any furnace fuel dropped onto it&r, and turns it into constant mana generation based on the burn time of the fuel."
+				"- &aHydroangeas&r will passively generate mana by &6absorbing water source blocks&r within its 8 surrounding blocks. They also function slightly better in the rain."
+				""
+				"While the above explanation may make Hydroangeas seem like a no-brainer, the big drawback to them is that &cHydroangeas will decay after roughly an hour&r."
+				""
+				"Continue on in the quest line to find out how to actually get this generated mana into a pool."
+			]
+			icon: "botania:endoflame"
+			id: "0AE2DF9FD2DFA95D"
+			subtitle: "\"Power\""
+			tasks: [{
+				id: "39A713A393FAB309"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Endoflame or Hydroangeas\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "botania:endoflame"
+							}
+							{
+								Count: 1b
+								id: "botania:hydroangeas"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Basic Generating Flora"
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0AE2DF9FD2DFA95D"]
+			description: [
+				"The &aMana Spreader&r is what you will be using to get your mana where you want it: likely your mana pool for now."
+				""
+				"When placed, if it is pointed toward something that can store mana (such as a mana pool), it will fire a &6Mana Burst&r at it, thus transferring mana."
+				""
+				"You should &6place this before your generating flora&r for now, as &6generating flora will automatically bind&r to a nearby spreader when placed."
+				""
+				"In order to better control where your mana goes, look to the &6next quest&r."
+				""
+				"For more info on the Mana Spreader, read its entry in the &6Lexica Botania&r."
+			]
+			id: "24BE318B3D980C3D"
+			subtitle: "Getting your Mana from point A to point B"
+			tasks: [{
+				id: "69B0BDF5ED129FCA"
+				item: "botania:mana_spreader"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["24BE318B3D980C3D"]
+			description: [
+				"The &aWand of the Forest&r is effectively your wrench for Botania. It allows you to do things such as have better control over Mana Spreaders, direct them in any direction, bind generating flora to a specific Mana Spreader, and much more."
+				""
+				"The Wand has 2 modes: &6Bind Mode and Function Mode&r. You can &6swap between them by sneak-right-clicking the air&r while holding the Wand."
+				""
+				"In Bind Mode, you can &6sneak-right-click a compatible block&r (like a Mana Spreader) and then sneak-right-click again to its destination to bind it to the destination."
+				""
+				"In Function Mode, it doesn't do what Bind Mode does. Instead, it will &6function like a standard wrench&r, rotating compatible blocks around when you sneak-right-click."
+				""
+				"For more info, please check its page in the &6Lexica Botania&r."
+			]
+			id: "3677152197E09665"
+			subtitle: "It's not magic, though. More like a wrench."
+			tasks: [{
+				id: "5126767CECC47DC2"
+				item: {
+					Count: 1
+					id: "botania:twig_wand"
+					tag: {
+						color1: 0
+						color2: 0
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			title: "Wand of the Forest"
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3677152197E09665"]
+			description: [
+				"&aMana Infusion&r is the act of simply throwing compatible items in a Mana Pool."
+				""
+				"Materials made this way are crucial to crafting in Botania, especially things like &6Manasteel, Mana Diamonds, and Mana Pearls&r."
+				""
+				"There are many things you can make with Mana Infusion, so &6check JEI&r for how you can use it by viewing recipe uses for your Mana Pool."
+			]
+			id: "10723C5FB5536B8E"
+			subtitle: "Everyone gets mana!"
+			tasks: [{
+				id: "1539219DA4E066AD"
+				item: "botania:manasteel_ingot"
+				type: "item"
+			}]
+			title: "Mana Infusion"
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["10723C5FB5536B8E"]
+			description: [
+				"&aManasteel equipment&r, crafted from Manasteel, is &6functionally similar to Iron&r, but has the added benefit of being able to &6repair itself with mana present&r in the user's inventory (via a Mana Tablet or otherwise), and is more enchantable."
+				""
+				"They also come with &6certain other benefits&r, such as the Pickaxe being able to place a torch with a right-click, and for the Axe, a sapling."
+				""
+				"Read its entry in the &6Lexica Botania&r for more info."
+			]
+			icon: {
+				Count: 1
+				id: "botania:manasteel_pick"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2869DE031EA28798"
+			subtitle: "Repaired like magic!"
+			tasks: [{
+				id: "22895B2BDD55B35B"
+				item: {
+					Count: 1
+					id: "botania:manasteel_pick"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Manasteel Equipment"
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["10723C5FB5536B8E"]
+			description: [
+				"The &aRunic Altar&r is another important object in Botania, as it's used to make runes."
+				""
+				"Runes are used in &6many, many applications&r from making flowers in the Petal Apothecary to making powerful gear, and everything in between."
+				""
+				"The mechanics of this are a little complex to include in a single quest, so it's &6highly advised&r to read its entry in the &6Lexica Botania&r."
+			]
+			id: "319BA915C441C223"
+			subtitle: "It makes runes, what did you expect?"
+			tasks: [{
+				id: "471FA4784EF6ECED"
+				item: "botania:runic_altar"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["319BA915C441C223"]
+			description: [
+				"The &aTerrestrial Agglomeration Plate (or TAP from here on)&r is a device solely used to make &6Terrasteel&r, one of the strongest materials in Botania."
+				""
+				"Using the TAP requires you to &6build a structure outlined in the Lexica Botania&r. Once that's set up, you can initiate the crafting process by dropping a &6Manasteel Ingot, Mana Diamond, and Mana Pearl&r onto it. From there, it will be able to take mana. &cA LOT of mana.&r"
+				""
+				"Making Terrasteel requires &6exactly half of a normal mana pool&r &7(for the nerds, that's 500k mana units)&r, and if any of its items are picked up during the process, &call the mana is lost&r."
+				""
+				"For more info, read its entry in the &6Lexica Botania&r."
+			]
+			id: "00D9A71246D7CFB0"
+			subtitle: "or the TAP, T.A. Plate, or Terrasteel Thingy"
+			tasks: [{
+				id: "3D639A2CBC508AB7"
+				item: "botania:terra_plate"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["00D9A71246D7CFB0"]
+			description: [
+				"Now that you've gotten your hands on &aTerrasteel&r, it's time to make some really powerful stuff."
+				""
+				"Look to the quests branching from this one to learn more."
+			]
+			id: "6FBAFAE394225917"
+			subtitle: "green bar"
+			tasks: [{
+				id: "7BD3BCFF2A9127D7"
+				item: "botania:terrasteel_ingot"
+				type: "item"
+			}]
+			title: "Terrasteel"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6FBAFAE394225917"]
+			description: [
+				"So, what's the next step after making Terrasteel? Naturally, it's to &acontact the elves in Alfheim&r."
+				""
+				"You'll need to make an &6Elven Gateway Core&r with a tiny bit of Terrasteel, and some Natura Pylons."
+				""
+				"Follow the Elven Gateway Core's entry in the &6Lexica Botania&r to learn how to build and activate the portal."
+				""
+				"&c&lNOTE: BEFORE YOU THROW YOUR LEXICA BOTANIA IN, REMOVE IT FROM YOUR ECCENTRIC TOME FIRST IF IT IS IN ONE, OR ELSE YOU WILL LOSE EVERY OTHER BOOK IN THE TOME.&r"
+				""
+				"&c&oYou won't be able to visit Alfheim yourself just yet...&r"
+			]
+			id: "70A3F4DDACAB6609"
+			subtitle: "Not yet..."
+			tasks: [{
+				id: "0EBC0AF67FD81368"
+				item: "botania:alfheim_portal"
+				type: "item"
+			}]
+			title: "The Portal to Alfheim"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6FBAFAE394225917"]
+			description: [
+				"&aTerrasteel Equipment&r is a little different in this pack. &cThe Lexica Botania won't be of much help here.&r This is because Terrasteel equipment is extremely powerful, and so it needs a little extra work to get to."
+				""
+				"To get started, you'll need to make a &6Terrasteel Upgrade Smithing Template&r. The recipe for this uses &6Ars Nouveau's Enchanting Apparatus&r, so you'll need to figure that out in its quest line to continue. After that, you can &6duplicate&r the smithing template like any other using &6Terrasteel Ingots and Livingwood&r."
+				""
+				"You'll need something from a &6later quest&r in order to actually use the template, though..."
+				""
+				"&cNote: It is currently not possible to make Terrasteel armor in this phase. Its recipes will be added in a future phase.&r"
+			]
+			icon: {
+				Count: 1
+				id: "botania:terra_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "342834A5909FF7E7"
+			subtitle: "Terraria"
+			tasks: [{
+				id: "02E4E7D7A6B81058"
+				item: "kubejs:terrasteel_upgrade_smithing_template"
+				type: "item"
+			}]
+			title: "Terrasteel Equipment"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["70A3F4DDACAB6609"]
+			description: [
+				"You've discovered that you can &athrow certain things into the Elven Gateway&r in order to get different things back!"
+				"Alernatively, if you throw anything else in, you can consider the Elven Gateway a trash can."
+				""
+				"Some &6important trades&r you may want to know:"
+				"- 2 Manasteel Ingots -> 1 &aElementium Ingot&r"
+				"- Livingwood -> &aDreamwood&r"
+				"- Mana Diamond -> &aDragonstone&r"
+				"- Mana Pearl -> &aPixie Dust&r"
+			]
+			id: "355B931936D3465C"
+			subtitle: "Trade offer:"
+			tasks: [{
+				id: "1DD1479E8CC37E19"
+				item: "botania:elementium_ingot"
+				type: "item"
+			}]
+			title: "Elven Trade"
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["355B931936D3465C"]
+			description: [
+				"&aElementium Equipment&r, like Manasteel, can repair itself with Mana, but also has its own suite of abilities."
+				""
+				"For more info, please check their respective entries in the &6Lexica Botania&r."
+			]
+			id: "4A5239322BFED050"
+			subtitle: "yeah i got nothing for this one"
+			tasks: [{
+				id: "1AB2A3A8A2C6E6C7"
+				item: {
+					Count: 1
+					id: "botania:elementium_shovel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Elementium Equipment"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["355B931936D3465C"]
+			description: [
+				"&aThe Ritual of Gaia&r is considered to be one of the hardest things to accomplish in Botania, but it comes with &6huge rewards&r."
+				""
+				"To start, you'll need to &6build a structure described in the newly enhanced Lexica Botania&r. Then, sneak-right-click the beacon while holding a Terrasteel Ingot to summon the &6Guardian of Gaia&r."
+				""
+				"&cYou'll want to be well prepared for this.&r Use either Elementium, Netherite, or Neptunium armor. &cThis boss will scale in difficulty to the amount of players fighting it at once.&r"
+			]
+			icon: "botania:gaia_head"
+			id: "63DD8C0BAD9C09BF"
+			tasks: [{
+				id: "04E0C9F899F6AA0B"
+				item: "botania:gaia_pylon"
+				type: "item"
+			}]
+			title: "The Ritual of Gaia"
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["63DD8C0BAD9C09BF"]
+			description: [
+				"Defeating the spawned &6Guardian of Gaia&r will award you with some &aGaia Spirits&r. Good job!"
+				""
+				"These can be used to make some pretty powerful things. &6Use JEI&r to see what you can make with them."
+				""
+				"&7&oNote: You can now craft Gaia Spirit Ingots. You may now use them to craft Terrasteel equipment, following its quest:&r"
+				"{ \"text\": \"[Terrasteel Equipment]\", \"underlined\": \"true\", \"italic\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"342834A5909FF7E7\" } }"
+			]
+			id: "0E581E1B7B1B83C9"
+			tasks: [{
+				id: "4DF954AF426782E8"
+				item: "botania:life_essence"
+				type: "item"
+			}]
+			title: "The Spirit of Gaia"
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0E581E1B7B1B83C9"]
+			description: [
+				"What if I told you there was &aa stronger version of the Gaia Guardian&r that netted even more rewards?"
+				""
+				"Follow the same steps to summon the normal Gaia Guardian, but use a &6Gaia Spirit Ingot&r instead."
+				""
+				"&cGood luck. This boss is intended to be extremely difficult; you'll want to prepare extremely well for this.&r"
+				""
+				"If you succeed in battle, read the &6Lexica Botania&r for info on its rewards."
+				""
+				"I think you should give &6this quest's reward item&r to the Elves of Alfheim."
+				"&7&oYou're given two so you have one to keep as a trophy.&r"
+			]
+			hide_until_deps_complete: true
+			id: "0DAD8125A26D512A"
+			rewards: [{
+				count: 2
+				id: "7C3F0E39594289F9"
+				item: "kubejs:skibidi_hawk_tuah"
+				type: "item"
+			}]
+			size: 2.0d
+			subtitle: "The final boss."
+			tasks: [{
+				id: "67FF912CFC34C847"
+				item: "botania:dice"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "The Ritual of Gaia II"
+			x: 0.0d
+			y: -5.0d
+		}
+	]
+	title: "Core Progression"
+}

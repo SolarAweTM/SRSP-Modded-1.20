@@ -1,0 +1,96 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "basics"
+	group: "6196AA2FACEE0C19"
+	icon: "create:wrench"
+	id: "23612C56C9E4BD04"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&aCreate&r is a steampunk-themed tech mod all about building contraptions and gadgets to aid you in almost every way."
+				""
+				"This mod is massive, so I've split its quests into four separate chapters, which you can see to the side."
+				""
+				"To start, you'll need &aAndesite Alloy&r. This is one of the basic materials used all over the mod."
+			]
+			id: "05C90BF60E59F2F3"
+			subtitle: "Making cool stuff with the power of rotation."
+			tasks: [{
+				id: "2438C44A61654F14"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			title: "Welcome to Create"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["05C90BF60E59F2F3"]
+			description: [
+				"Create also introduces a (VERY well-written) documentation platform it calls &aPonder&r."
+				""
+				"&6While hovering over supported items in an inventory&r, hold W &7(default keybind)&r to open a &avisual guide&r explaining the item."
+				""
+				"Some Ponder tutorials have &amultiple pages&r, which you can switch between by &6clicking the arrow buttons at the bottom&r."
+				""
+				"If the text moves too fast for you, you can &6click the button in the bottom-right corner to turn on Comfy Reading&r, &aslowing down the scene&r whenever text is on screen."
+			]
+			id: "5BE5AD125B412D5E"
+			tasks: [{
+				id: "607D8C6E471FA678"
+				title: "A Moment to Ponder"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5BE5AD125B412D5E"]
+			icon: "create:hand_crank"
+			id: "5937D8D676C5CDBA"
+			tasks: [{
+				id: "13DF81EC5C412C3E"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Kinetic Source\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "create:hand_crank"
+							}
+							{
+								Count: 1b
+								id: "create:windmill_bearing"
+							}
+							{
+								Count: 1b
+								id: "create:water_wheel"
+							}
+							{
+								Count: 1b
+								id: "create:large_water_wheel"
+							}
+							{
+								Count: 1b
+								id: "create:steam_engine"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Kinetic Sources"
+			x: 0.0d
+			y: -2.5d
+		}
+	]
+	title: "Basics"
+}

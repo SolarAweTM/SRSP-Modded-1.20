@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "all_the_fish"
+	group: "7C52BACF3A6137F7"
+	icon: "aquaculture:smallmouth_bass"
+	id: "59A9D955FA15455A"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "All The Fish"
+}
