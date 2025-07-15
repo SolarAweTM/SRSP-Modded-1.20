@@ -1044,6 +1044,8 @@
 				"- Ancient Debris"
 				""
 				"Note that the flower &amust still be placed on Grass&r."
+				""
+				"&cLike its Overworld counterpart, this flower is equally loud.&r"
 			]
 			id: "488EE27736624A5D"
 			rewards: [{
