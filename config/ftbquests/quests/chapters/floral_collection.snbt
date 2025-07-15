@@ -1,4 +1,5 @@
 {
+	autofocus_id: "60ADFBCB9A4E9BF7"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "floral_collection"
@@ -533,6 +534,7 @@
 			]
 			id: "0BE994ABFAE08B88"
 			rewards: [{
+				count: 4
 				id: "6AAC95182FF288E1"
 				item: "minecraft:white_wool"
 				type: "item"
@@ -558,6 +560,7 @@
 			]
 			id: "26D25C205C2C03CE"
 			rewards: [{
+				count: 4
 				id: "3283F6304541D5F2"
 				item: "botania:cell_block"
 				type: "item"
@@ -610,7 +613,19 @@
 			y: -6.5d
 		}
 		{
+			description: [
+				"The &6Hopperhock&r will &apick up nearby items and deposit them&r in adjacent inventories &7(like chests)&r."
+				""
+				"The &aHopperhock can be filtered&r by placing an &6Item Frame&r on the inventory. Container items placed in a &6Glow Item Frame&r, like a Flower Pouch, will &afilter by the contents&r of the container item."
+				""
+				"This flower &adoes not require Mana&r, but providing it with Mana will increase its range."
+			]
 			id: "7595C584347ED8A7"
+			rewards: [{
+				id: "739C2749F4D68C02"
+				item: "minecraft:hopper"
+				type: "item"
+			}]
 			subtitle: "It all funnels into it"
 			tasks: [{
 				id: "0C0A89441A61F377"
@@ -621,6 +636,15 @@
 			y: -0.5d
 		}
 		{
+			description: [
+				"The &6Rannuncarpus&r will pick up dropped placeable items, and &aplace them in the world&r."
+				""
+				"The flower will only place blocks on top of &aone specific type of block&r, dictated by &athe block below the soil&r the flower is on."
+				""
+				"The items the flower picks up &acan be filtered using an Item Frame&r on the block below the soil the flower is on."
+				""
+				"This flower &adoes not consume Mana&r, but providing it with Mana will increase its range."
+			]
 			id: "391AA4E896E4FB44"
 			subtitle: "That's handy"
 			tasks: [{
@@ -632,7 +656,13 @@
 			y: 0.5d
 		}
 		{
+			description: ["The &6Hyacidus&r will take Mana from a nearby pool, and &aapply Poison&r to nearby mobs."]
 			id: "7FF414EB24FFCAFE"
+			rewards: [{
+				id: "441B5EC04AC911CB"
+				item: "minecraft:pufferfish"
+				type: "item"
+			}]
 			subtitle: "If you don't walk, it doesn't hurt"
 			tasks: [{
 				id: "6C8C3BDC2B2889D8"
@@ -643,7 +673,22 @@
 			y: -1.5d
 		}
 		{
+			description: [
+				"The &6Pollidisiac&r will take Mana from a nearby pool, and &apick up nearby animal food&r and &afeed it to nearby animals&r."
+				""
+				"&6Sneak-right clicking&r on a Pollidisiac with a &aWand of the Forest in Function Mode&r will toggle its behaviour between three states:"
+				""
+				"- All animals"
+				"- Adults only"
+				"- Babies only"
+			]
 			id: "6951F6B4CE286FE6"
+			rewards: [{
+				count: 4
+				id: "7681271C04E5CD54"
+				item: "minecraft:wheat"
+				type: "item"
+			}]
 			subtitle: "Birds and bees"
 			tasks: [{
 				id: "27CA73D6E566CDF2"
@@ -654,7 +699,14 @@
 			y: -2.0d
 		}
 		{
+			description: ["The &6Clayconia&r will take Mana from a nearby pool, and &aturn nearby Sand into Clay&r."]
 			id: "149AE40CC9291C24"
+			rewards: [{
+				count: 4
+				id: "698044E23004A94A"
+				item: "minecraft:sand"
+				type: "item"
+			}]
 			subtitle: "Rupees not included"
 			tasks: [{
 				id: "26554B61617BFC79"
@@ -665,6 +717,13 @@
 			y: -1.0d
 		}
 		{
+			description: [
+				"The &6Loonium&r will take a modest amount of Mana from a nearby pool, and &asummon empowered hostile mobs&r holding special loot."
+				""
+				"The loot in question, by default, comes from the &aDungeon loot table&r. However, the &6Loonium will react accordingly to various structures&r it's placed in."
+				""
+				"Note that there are some items that the Loonium &ccannot create&r."
+			]
 			id: "72639B4844CC27BE"
 			subtitle: "Hold it up above your head"
 			tasks: [{
@@ -676,7 +735,17 @@
 			y: 0.0d
 		}
 		{
+			description: [
+				"The &6Daffomill&r will take Mana from a nearby pool, and use it to &acreate a wind that can push items&r in a specified direction."
+				""
+				"&6Sneak-right clicking&r with a &aWand of the Forest in Function Mode&r will change its orientation."
+			]
 			id: "21F1675DDC9C8DD0"
+			rewards: [{
+				id: "47CA5ED8555F43C3"
+				item: "create:propeller"
+				type: "item"
+			}]
 			subtitle: "Cook's Assistant"
 			tasks: [{
 				id: "5F3937BA7DB7F475"
@@ -687,7 +756,13 @@
 			y: 1.0d
 		}
 		{
+			description: ["The &6Vinculotus&r will take Mana from a nearby pool, and use it to &aforce nearby Endermen to teleport&r to its position."]
 			id: "4ACA48C40A3D9B89"
+			rewards: [{
+				id: "6A5512F8E84E326A"
+				item: "minecraft:ender_pearl"
+				type: "item"
+			}]
 			subtitle: "Totally an Extra Utils ripoff"
 			tasks: [{
 				id: "4DA0616318084B90"
@@ -698,6 +773,13 @@
 			y: -3.0d
 		}
 		{
+			description: [
+				"The &6Spectrantheum&r will take Mana from a nearby pool, and &ateleport nearby dropped items&r to a set destination."
+				""
+				"The destination can be set by &6sneak-right clicking&r with a &aWand of the Forest in Bind Mode&r."
+				""
+				"The Mana cost per teleport is based on the distance traveled."
+			]
 			id: "3CC6A4DFDDAE313D"
 			subtitle: "In the shell"
 			tasks: [{
@@ -709,6 +791,7 @@
 			y: -2.0d
 		}
 		{
+			description: ["The &6Jiyuulia&r will take Mana from a nearby pool, and create a circular area in which &amobs are not able to enter&r."]
 			id: "022FAE1AF127AC8B"
 			subtitle: "Flügel der Freiheit"
 			tasks: [{
@@ -720,6 +803,7 @@
 			y: -1.0d
 		}
 		{
+			description: ["The &6Bellethorne&r will take Mana from a nearby pool, and &adeal damage to non-player entities&r in its area."]
 			id: "46714A68CD3F37A5"
 			subtitle: "Kiss from a rose"
 			tasks: [{
@@ -731,6 +815,7 @@
 			y: 0.0d
 		}
 		{
+			description: ["The &6Dreadthorne&r will take Mana from a nearby pool, and &aonly deal damage to adult animals&r in its area."]
 			id: "1911901BCAE5EE31"
 			subtitle: "Just a prick"
 			tasks: [{
@@ -742,6 +827,7 @@
 			y: 1.0d
 		}
 		{
+			description: ["The &6Heisei Dream&r will take Mana from a nearby pool to make &anearby mobs target one another&r."]
 			id: "6368A20DA1DFA84B"
 			subtitle: "Heisei heisei"
 			tasks: [{
@@ -753,7 +839,14 @@
 			y: 0.0d
 		}
 		{
+			description: ["The &6Tigerseye&r will take Mana from a nearby pool, and create a field where &aCreepers will not explode&r, and will &aflee from players&r."]
 			id: "6F78AEC58756D5E9"
+			rewards: [{
+				count: 4
+				id: "407CF0F01C84C84A"
+				item: "minecraft:gunpowder"
+				type: "item"
+			}]
 			subtitle: "The palmtop tiger"
 			tasks: [{
 				id: "2244E34A4F25AFC9"
@@ -764,7 +857,13 @@
 			y: -1.0d
 		}
 		{
+			description: ["The &6Jaded Amaranthus&r will take Mana from a nearby pool, and &acreate Mystical Flowers&r in its area."]
 			id: "16534ED08BC26BE4"
+			rewards: [{
+				id: "32E0598230E0ECF4"
+				item: "botania:white_mystical_flower"
+				type: "item"
+			}]
 			subtitle: "A couple died for this"
 			tasks: [{
 				id: "1332DE89503F9598"
@@ -775,7 +874,22 @@
 			y: 2.0d
 		}
 		{
+			description: [
+				"The &6Orechid&r will take a modest amount of Mana and turn &anearby Stone or Deepslate into vanilla ores&r."
+				""
+				"The ore it creates is random, but &ararer ores are less common&r than stuff like Coal or Iron."
+				""
+				"It appears that &6Deepslate&r will offer a higher chance of rarer ores."
+				""
+				"&cThis flower is also quite loud.&r"
+			]
 			id: "2290024D35A43224"
+			rewards: [{
+				count: 4
+				id: "30683ACCA1BC3179"
+				item: "minecraft:deepslate"
+				type: "item"
+			}]
 			subtitle: "I seed what you did there"
 			tasks: [{
 				id: "52EE9FDA4491B3DA"
@@ -786,6 +900,7 @@
 			y: 0.5d
 		}
 		{
+			description: ["The &6Fallen Kanade&r will take Mana from a nearby pool, and &aapply Regeneration III&r to nearby players and tamed pets."]
 			id: "2D6378F11FA47631"
 			subtitle: "I'm not an Angel"
 			tasks: [{
@@ -797,7 +912,18 @@
 			y: 1.0d
 		}
 		{
+			description: [
+				"The &6Exoflame&r takes Mana from a nearby pool, and turns it into &afurnace fuel&r given wirelessly to nearby Furnaces."
+				""
+				"It also gives affected Furnaces a &aspeed boost&r."
+			]
 			id: "6CD901733D1C2169"
+			rewards: [{
+				count: 4
+				id: "0442010E7933C3BF"
+				item: "minecraft:coal"
+				type: "item"
+			}]
 			subtitle: "Exothermically reactive"
 			tasks: [{
 				id: "4CF11005832DD708"
@@ -808,7 +934,14 @@
 			y: -2.0d
 		}
 		{
+			description: ["The &6Agricarnation&r will take Mana from a nearby pool, and use it to &aboost the growth of nearby crops&r."]
 			id: "3E0CC283409A44F1"
+			rewards: [{
+				count: 4
+				id: "279E3EA2A522EEEF"
+				item: "minecraft:wheat_seeds"
+				type: "item"
+			}]
 			subtitle: "Wear on the 25th of April"
 			tasks: [{
 				id: "593D3E78E3C21044"
@@ -819,6 +952,11 @@
 			y: -1.5d
 		}
 		{
+			description: [
+				"The &6Tangleberrie&r will take Mana from a nearby pool, and create a circular area in which &amobs are not able to escape&r."
+				""
+				"The area is a circle with a &aradius of 6 blocks&r."
+			]
 			id: "6AFE91F3D5950CB2"
 			subtitle: "No frying pans allowed"
 			tasks: [{
@@ -830,6 +968,7 @@
 			y: -1.0d
 		}
 		{
+			description: ["The &6Medumone&r will take Mana from a nearby pool, and create a slowing field capable of &acompletely stopping any mob from moving&r."]
 			id: "163030DF7FB16CEA"
 			subtitle: "Solid as a rock"
 			tasks: [{
@@ -841,7 +980,20 @@
 			y: -3.0d
 		}
 		{
+			description: [
+				"The &6Marimorphosis&r will take Mana from a nearby pool and use it to &atransform nearby Stone&r into a different, &a&ocooler&r type of stone. "
+				""
+				"The flower can turn Stone into &a8 different decorative rocks&r, and the odds of each depend on &athe biome the flower is in&r."
+				""
+				"For more info, see this flower's entry in the &6Lexica Botania&r."
+			]
 			id: "05717C3CD2BAFF80"
+			rewards: [{
+				count: 4
+				id: "34021570FBDA0A6B"
+				item: "minecraft:stone"
+				type: "item"
+			}]
 			subtitle: "Good Morning, World!"
 			tasks: [{
 				id: "54B1DA45009E1175"
@@ -852,6 +1004,11 @@
 			y: -0.5d
 		}
 		{
+			description: [
+				"The &6Bubbell&r will take Mana from a nearby pool, and create a spherical &afield that dispels Water&r."
+				""
+				"The spherical field has a &aradius of around 12 blocks&r, and requires a &cconstant supply of Mana&r to maintain the field."
+			]
 			id: "58208F9899AEB4B9"
 			subtitle: "And whistle"
 			tasks: [{
@@ -863,6 +1020,11 @@
 			y: 0.0d
 		}
 		{
+			description: [
+				"The &6Solegnolia&r will prevent dropped items in its area from being affected by &amagnet effects&r such as the &aRings of Magnetization&r, and will &aprevent the rings from working&r if the ringbearer is in its area."
+				""
+				"This flower &6does not consume Mana&r."
+			]
 			id: "1B81E36ECD79ED9C"
 			subtitle: "All your magnets are belong to us"
 			tasks: [{
@@ -874,7 +1036,22 @@
 			y: -2.0d
 		}
 		{
+			description: [
+				"The &6Orechid Ignem&r works similarly to the &aOrechid, but for Netherrack&r. It can create the following ores:"
+				""
+				"- Nether Quartz Ore"
+				"- Nether Gold Ore"
+				"- Ancient Debris"
+				""
+				"Note that the flower &amust still be placed on Grass&r."
+			]
 			id: "488EE27736624A5D"
+			rewards: [{
+				count: 4
+				id: "3BC05F34C0E43D72"
+				item: "minecraft:netherrack"
+				type: "item"
+			}]
 			subtitle: "Red like roses"
 			tasks: [{
 				id: "3B5384C41B3C70D1"
@@ -885,7 +1062,13 @@
 			y: 2.0d
 		}
 		{
+			description: ["The &6Labellia&r will take a modest amount of Mana from a nearby pool, and &aapply dropped Name Tags&r to all entities and items within a 5x5 area centered on itself."]
 			id: "5464934ABCB1F679"
+			rewards: [{
+				id: "40A5CECD22E0808B"
+				item: "minecraft:name_tag"
+				type: "item"
+			}]
 			subtitle: "The engineer's second hardest problem"
 			tasks: [{
 				id: "7CD5F916AA1F974D"
