@@ -820,6 +820,10 @@
 				"For one, it doesn't introduce any special textures for blocks."
 				""
 				"However, it allows you to split blocks into &abits&r &7(1/16th the dimensions of a normal block)&r and build with those, which can be used to add depth to individual blocks, make signs or displays, pixel art, and much more."
+				""
+				"While holding a chisel or bit, you can &6Left Click&r to chisel out a portion of a block, and &6Right Click while holding a bit&r to place the bit."
+				""
+				"You can also open a &6radial menu&r with R &7(default keybind)&r to get more options for chiseling and placement."
 			]
 			id: "6B1B776A24339D89"
 			subtitle: "64 bits, 32 bits, 16 bits, 4 BITS, 2 BITS, ONE BIT"
@@ -1242,7 +1246,13 @@
 		}
 		{
 			dependencies: ["6B1B776A24339D89"]
-			description: ["The &aChiseled Bit Bag&r can be used to store bits so they don't clog up your inventory. You can place bits directly from it, and patterns can use bits from the bag."]
+			description: [
+				"The &aChiseled Bit Bag&r can be used to store bits so they don't clog up your inventory. "
+				""
+				"With the bag in your inventory, &6bits collected will automatically go into the bag&r, save for one which you can use to place from the bag."
+				""
+				"Patterns are also able to use bits directly from the bag."
+			]
 			id: "2B534AF72D62B045"
 			subtitle: "We have this in the bag."
 			tasks: [{
