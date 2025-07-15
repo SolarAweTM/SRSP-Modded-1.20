@@ -5,8 +5,896 @@
 	group: "22E2861D9475E7CD"
 	icon: "botania:marimorphosis"
 	id: "589F85A0234A5D3C"
+	images: [{
+		click: "https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life"
+		height: 1.0d
+		hover: [
+			"Dandelifeon Mechanic Explanation"
+			"Click me!"
+		]
+		image: "everycomp:block/abnww/architects_palette/twisted_beehive_end"
+		rotation: 0.0d
+		width: 1.0d
+		x: 3.5d
+		y: -4.5d
+	}]
 	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			id: "60ADFBCB9A4E9BF7"
+			tasks: [
+				{
+					id: "71526A840B4E7B74"
+					item: "botania:white_mystical_flower"
+					type: "item"
+				}
+				{
+					id: "13771EBBC6E7C334"
+					item: "botania:light_gray_mystical_flower"
+					type: "item"
+				}
+				{
+					id: "12B6E735561BF1E7"
+					item: "botania:gray_mystical_flower"
+					type: "item"
+				}
+				{
+					id: "67307352BAE52258"
+					item: "botania:black_mystical_flower"
+					type: "item"
+				}
+				{
+					id: "3B0D2A8A7336F537"
+					item: "botania:brown_mystical_flower"
+					type: "item"
+				}
+				{
+					id: "27983C61779891B8"
+					item: "botania:red_mystical_flower"
+					type: "item"
+				}
+				{
+					id: "64016B28AB3B91A8"
+					item: "botania:orange_mystical_flower"
+					type: "item"
+				}
+				{
+					id: "2A4931E61F824C1B"
+					item: "botania:yellow_mystical_flower"
+					type: "item"
+				}
+				{
+					id: "63CC25D5E582E45D"
+					item: "botania:lime_mystical_flower"
+					type: "item"
+				}
+				{
+					id: "26A14D423C0EF318"
+					item: "botania:green_mystical_flower"
+					type: "item"
+				}
+				{
+					id: "47CBAFFA676784CA"
+					item: "botania:cyan_mystical_flower"
+					type: "item"
+				}
+				{
+					id: "574005AD6A9B5381"
+					item: "botania:light_blue_mystical_flower"
+					type: "item"
+				}
+				{
+					id: "50CC5C7F170791B3"
+					item: "botania:blue_mystical_flower"
+					type: "item"
+				}
+				{
+					id: "14930E3985B61CF9"
+					item: "botania:purple_mystical_flower"
+					type: "item"
+				}
+				{
+					id: "5FFBD078AAF97385"
+					item: "botania:magenta_mystical_flower"
+					type: "item"
+				}
+				{
+					id: "3433ACD4297D3C81"
+					item: "botania:pink_mystical_flower"
+					type: "item"
+				}
+			]
+			title: "All the Mystical Flowers"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "75824A52BA632F9B"
+			tasks: [
+				{
+					id: "4109910B6C7186D8"
+					item: "botania:white_double_flower"
+					type: "item"
+				}
+				{
+					id: "7B5F73949F4B05FD"
+					item: "botania:light_gray_double_flower"
+					type: "item"
+				}
+				{
+					id: "669E520E2890D746"
+					item: "botania:gray_double_flower"
+					type: "item"
+				}
+				{
+					id: "20D23C8486586B4B"
+					item: "botania:black_double_flower"
+					type: "item"
+				}
+				{
+					id: "7942C44AFD90FD41"
+					item: "botania:brown_double_flower"
+					type: "item"
+				}
+				{
+					id: "661351B4A38526DC"
+					item: "botania:red_double_flower"
+					type: "item"
+				}
+				{
+					id: "523D190F6A2C92AE"
+					item: "botania:orange_double_flower"
+					type: "item"
+				}
+				{
+					id: "4477CD5F4163B316"
+					item: "botania:yellow_double_flower"
+					type: "item"
+				}
+				{
+					id: "415907A9E1C7D0E4"
+					item: "botania:lime_double_flower"
+					type: "item"
+				}
+				{
+					id: "5974E2B606D6B6DB"
+					item: "botania:green_double_flower"
+					type: "item"
+				}
+				{
+					id: "0C5344EECA21E133"
+					item: "botania:cyan_double_flower"
+					type: "item"
+				}
+				{
+					id: "5EEB9FAA9B5739A2"
+					item: "botania:light_blue_double_flower"
+					type: "item"
+				}
+				{
+					id: "23B2F4952ACF0BE4"
+					item: "botania:blue_double_flower"
+					type: "item"
+				}
+				{
+					id: "5D9962B9C5455861"
+					item: "botania:purple_double_flower"
+					type: "item"
+				}
+				{
+					id: "724D334FC955DF68"
+					item: "botania:magenta_double_flower"
+					type: "item"
+				}
+				{
+					id: "16EECB0C434779A3"
+					item: "botania:pink_double_flower"
+					type: "item"
+				}
+			]
+			title: "All the Tall Mystical Flowers"
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			id: "61C7E065C5C5894F"
+			tasks: [
+				{
+					id: "04503C4E89D1EA02"
+					item: "botania:white_mushroom"
+					type: "item"
+				}
+				{
+					id: "3AC1847190A1D185"
+					item: "botania:light_gray_mushroom"
+					type: "item"
+				}
+				{
+					id: "5DB6540CAE35C10D"
+					item: "botania:gray_mushroom"
+					type: "item"
+				}
+				{
+					id: "55778BCF98F2C42B"
+					item: "botania:black_mushroom"
+					type: "item"
+				}
+				{
+					id: "4F2AC88894782129"
+					item: "botania:brown_mushroom"
+					type: "item"
+				}
+				{
+					id: "5077A76FDB77914C"
+					item: "botania:red_mushroom"
+					type: "item"
+				}
+				{
+					id: "7D092D6D33563C00"
+					item: "botania:orange_mushroom"
+					type: "item"
+				}
+				{
+					id: "57F351359FFF6891"
+					item: "botania:yellow_mushroom"
+					type: "item"
+				}
+				{
+					id: "6308A26F1C5E2CB1"
+					item: "botania:lime_mushroom"
+					type: "item"
+				}
+				{
+					id: "07BF369E7C79EDF5"
+					item: "botania:green_mushroom"
+					type: "item"
+				}
+				{
+					id: "4E56FE9FF2B049B8"
+					item: "botania:cyan_mushroom"
+					type: "item"
+				}
+				{
+					id: "57FCE2F123DC3777"
+					item: "botania:light_blue_mushroom"
+					type: "item"
+				}
+				{
+					id: "128EDD99D119C7C0"
+					item: "botania:blue_mushroom"
+					type: "item"
+				}
+				{
+					id: "4847E9F8D1FD682B"
+					item: "botania:purple_mushroom"
+					type: "item"
+				}
+				{
+					id: "2EBDFA9DBBDB61D9"
+					item: "botania:magenta_mushroom"
+					type: "item"
+				}
+				{
+					id: "2BD5D1EBD38457DE"
+					item: "botania:pink_mushroom"
+					type: "item"
+				}
+			]
+			title: "All the Shimmering Mushrooms"
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			description: [
+				"The &6Pure Daisy&r takes things placed in the 8 blocks surrounding it, and over about a minute, transforms them into something else."
+				""
+				"Use JEI to see recipes."
+			]
+			id: "211D879A87677820"
+			subtitle: "What color do you want to be?"
+			tasks: [{
+				id: "6474762331871F68"
+				item: "botania:pure_daisy"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			description: [
+				"The &6Manastar&r, when placed next to a Mana Pool, will show the overall gain or loss of mana, updating every few seconds."
+				""
+				"The flower shines &cred&r if there is a loss of Mana, and &9blue&r if there is a gain."
+			]
+			id: "7E200039E850DD34"
+			subtitle: "Wish upon a star"
+			tasks: [{
+				id: "4AF92C93BD828760"
+				item: "botania:manastar"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			description: [
+				"The &6Bergamute&r will &asuppress sounds&r in its area. It also prevents horns and drums from destroying blocks."
+				""
+				"The volume of sounds is reduced by &aaround half&r, and it can stack with nearby Bergamute. &6Vibrations are also muffled near a Bergamute.&r"
+			]
+			id: "640846D0F074F2AD"
+			rewards: [{
+				id: "6364E78A749E0E17"
+				item: "botania:cacophonium"
+				type: "item"
+			}]
+			subtitle: "My lips are sealed"
+			tasks: [{
+				id: "5F730B68C00201B3"
+				item: "botania:bergamute"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			description: [
+				"The &6Endoflame&r takes &afurnace fuels&r &7(except Lava Buckets)&r and burns them into Mana, one at a time. The amount generated is dictated by the item's burn time."
+				""
+				"The Endoflame can only handle &aup to two coal blocks&r worth of burn time &7(fuel that smelts up to 160 items)&r. If a stronger fuel is given, the &cdifference in burn time is lost&r."
+				""
+				"The burn speed of the Endoflame is roughly double that of a Furnace."
+			]
+			id: "35C83016225CE19E"
+			subtitle: "Endothermically reactive"
+			tasks: [{
+				id: "3A84E312151EDE0E"
+				item: "botania:endoflame"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.5d
+		}
+		{
+			description: [
+				"The &6Hydroangeas&r will passively &aabsorb water source blocks&r in its 8 surrounding blocks, and turn them into small amounts of Mana."
+				""
+				"The flower &cdecays after 1 real hour&r."
+			]
+			id: "6B866DE33C2294DF"
+			subtitle: "Just friendly crustaceans"
+			tasks: [{
+				id: "7F261E9570E7AD3E"
+				item: "botania:hydroangeas"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -3.5d
+		}
+		{
+			description: [
+				"The &6Thermalily&r will &aabsorb lava source blocks&r in its 8 surrounding blocks to generate a steady amount of Mana for 30 seconds."
+				""
+				"After generating Mana, the Thermalily enters a &acooldown state&r, which lasts a random time from 20 seconds to 5 minutes. &cAny lava given to it during its cooldown period will reset the cooldown.&r"
+				""
+				"A Thermalily's cooldown can be read with a &aRedstone Comparator&r &7(1 power per 20 seconds on cooldown)&r."
+			]
+			id: "488DA685AD59C261"
+			subtitle: "Not advised for blood mages"
+			tasks: [{
+				id: "2D084A6E4894D746"
+				item: "botania:thermalily"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -3.5d
+		}
+		{
+			description: [
+				"The &6Rosa Arcana&r will &atake the XP of players close by&r, &adisenchant any enchanted item dropped&r in its vicinity, or &apick up nearby XP orbs&r and turn it into Mana."
+				""
+				"&cBe careful with your gear around this; it's effectively a mana grindstone.&r"
+			]
+			id: "65A4DFC0B63E2CF0"
+			rewards: [{
+				count: 4
+				id: "590C0EF306050AEC"
+				item: "minecraft:experience_bottle"
+				type: "item"
+			}]
+			subtitle: "Ten blue orbs in the corner"
+			tasks: [{
+				id: "1FA12ECA3B8C9D4F"
+				item: "botania:rosa_arcana"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			description: [
+				"The &6Munchdew&r will &aconsume any placed leaves&r within its area and turn them into Mana, dropping nothing in the process."
+				""
+				"After eating roughly a tree's worth of leaves, it will enter a &aminute-long cooldown&r."
+			]
+			id: "0DFAB107441DDDE2"
+			rewards: [{
+				id: "1AA1190C67D18AAD"
+				item: "minecraft:oak_sapling"
+				type: "item"
+			}]
+			subtitle: "Does this count as cannibalism?"
+			tasks: [{
+				id: "5048570C259EE286"
+				item: "botania:munchdew"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -4.5d
+		}
+		{
+			description: [
+				"The &6Entropinnyum&r will &afully absorb TNT explosions&r and turn them into &alarge amounts&r of Mana."
+				""
+				"&cEntropinnyum will only absorb an explosion if its internal buffer is completely empty, otherwise the explosion will occur as normal.&r"
+				""
+				"Entropinnyum will generate significantly less mana if duplicated TNT is used."
+			]
+			id: "6E9791FD493A385C"
+			rewards: [{
+				id: "7091B4F24834A980"
+				item: "minecraft:tnt"
+				type: "item"
+			}]
+			subtitle: "Handle with care"
+			tasks: [{
+				id: "158AF4B4FB66EB5F"
+				item: "botania:entropinnyum"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.5d
+		}
+		{
+			description: [
+				"The &6Kekimurus&r turns &aplaced Cake&r in an 11x11x11 volume centered on itself into Mana."
+				""
+				"That's all."
+			]
+			id: "2783A93924D9EC81"
+			rewards: [{
+				id: "1CC68464B2353B1A"
+				item: "minecraft:cake"
+				type: "item"
+			}]
+			subtitle: "This flower is a lie"
+			tasks: [{
+				id: "733F4C7BA0CE8270"
+				item: "botania:kekimurus"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -4.5d
+		}
+		{
+			description: [
+				"The &6Gourmaryllis&r is a flower that &aeats food and turns it into Mana&r."
+				""
+				"It can only eat &cone thing at a time&r, and any food given to it during its cooldown will be wasted. "
+				""
+				"Mana output and cooldown time is dicatated by the &aamount of food the item gives&r &7(TL;DR Steak gives more mana than Apple)&r. "
+				""
+				"Giving the Gourmaryllis &aa variety of foods&r will improve Mana generation, but repeatedly giving it the same food will yield &cdiminishing returns&r. Its mood can be gauged by its sounds."
+			]
+			id: "089407B4EC4F4FB4"
+			rewards: [{
+				count: 4
+				id: "620C68FD23EE0F30"
+				item: "minecraft:cooked_beef"
+				type: "item"
+			}]
+			subtitle: "How unpleasant"
+			tasks: [{
+				id: "3A50A9D94B9A82C9"
+				item: "botania:gourmaryllis"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.5d
+		}
+		{
+			description: [
+				"The &6Narslimmus&r will &akill any naturally spawned Slimes&r in its vicinity and turn them into Mana, dropping nothing in the process."
+				""
+				"The &asize of the Slime&r dictates the amount of Mana generated."
+			]
+			id: "17CE3C5371E63163"
+			rewards: [{
+				count: 4
+				id: "48252164E766EF5E"
+				item: "minecraft:slime_ball"
+				type: "item"
+			}]
+			subtitle: "What's this? It's all sticky"
+			tasks: [{
+				id: "41B4E63E3C4410FF"
+				item: "botania:narslimmus"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.5d
+		}
+		{
+			description: [
+				"The &6Spectrolus&r will take &aWool&r, and turn it into Mana. However, it will only yield Mana if the Wool provided is the &acolor it expects&r."
+				""
+				"The color starts at White, and then &acycles through the spectrum&r. The expected color can be viewed using a &aWand of the Forest&r."
+			]
+			id: "0BE994ABFAE08B88"
+			rewards: [{
+				id: "6AAC95182FF288E1"
+				item: "minecraft:white_wool"
+				type: "item"
+			}]
+			subtitle: "Profiting off Hate"
+			tasks: [{
+				id: "4FD18FBCB7EF8FE4"
+				item: "botania:spectrolus"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -5.5d
+		}
+		{
+			description: [
+				"The &6Dandelifeon&r is an &aextremely complex flower&r. It uses &aCellular Blocks&r in its area to start &aConway's Game of Life&r when powered by Redstone."
+				""
+				"Through the process of the Game, any &aCellular Blocks that enter the 8 surrounding tiles&r of the flower will be turned into Mana, with varying amounts depending on the &aage of the Cellular Block&r."
+				""
+				"&6If you don't know what any of that means, please see the link to the right of this quest; it looks like this:&r"
+				"{image:everycomp:block/abnww/architects_palette/twisted_beehive_end width:25 height:25 align:left}"
+				"&6Alternatively, read this flower's entry in the Lexica Botania.&r"
+			]
+			id: "26D25C205C2C03CE"
+			rewards: [{
+				id: "3283F6304541D5F2"
+				item: "botania:cell_block"
+				type: "item"
+			}]
+			subtitle: "C'est la vie"
+			tasks: [{
+				id: "572504E6AB58B19A"
+				item: "botania:dandelifeon"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -4.5d
+		}
+		{
+			description: [
+				"The &6Rafflowsia&r will &aconsume any flower produced from the Petal Apothecary&r &7(so, most Botania flowers)&r in the area, and turn them into Mana. &cMake sure to space this one well!&r"
+				""
+				"The Rafflowsia will generate more Mana if given &aa variety of flowers&r to consume, and will have &cdiminishing returns&r if the same flowers are given."
+			]
+			id: "7476E0BA5A41E61F"
+			subtitle: "Trap Hole Nightmare"
+			tasks: [{
+				id: "69C25A0ED8ADB050"
+				item: "botania:rafflowsia"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -5.5d
+		}
+		{
+			description: [
+				"The &6Shulk Me Not&r will take &aa Shulker&r, and any other entity, and given that the Shulker &amakes the entity levitate&r, both the &aentity and Shulker are killed&r and turned into &alarge amounts&r of Mana, dropping nothing in the process."
+				""
+				"The Shulk Me Not will only function if its &ainternal buffer&r is completely empty."
+			]
+			id: "2B376F3F9F85303B"
+			rewards: [{
+				count: 4
+				id: "06CB68E542C944AA"
+				item: "minecraft:ender_pearl"
+				type: "item"
+			}]
+			subtitle: "Really feeling it"
+			tasks: [{
+				id: "0785E6126C53E342"
+				item: "botania:shulk_me_not"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.5d
+		}
+		{
+			id: "7595C584347ED8A7"
+			subtitle: "It all funnels into it"
+			tasks: [{
+				id: "0C0A89441A61F377"
+				item: "botania:hopperhock"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			id: "391AA4E896E4FB44"
+			subtitle: "That's handy"
+			tasks: [{
+				id: "7988154035027581"
+				item: "botania:rannuncarpus"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			id: "7FF414EB24FFCAFE"
+			subtitle: "If you don't walk, it doesn't hurt"
+			tasks: [{
+				id: "6C8C3BDC2B2889D8"
+				item: "botania:hyacidus"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			id: "6951F6B4CE286FE6"
+			subtitle: "Birds and bees"
+			tasks: [{
+				id: "27CA73D6E566CDF2"
+				item: "botania:pollidisiac"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			id: "149AE40CC9291C24"
+			subtitle: "Rupees not included"
+			tasks: [{
+				id: "26554B61617BFC79"
+				item: "botania:clayconia"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			id: "72639B4844CC27BE"
+			subtitle: "Hold it up above your head"
+			tasks: [{
+				id: "1E295AA7ADDB77DD"
+				item: "botania:loonium"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			id: "21F1675DDC9C8DD0"
+			subtitle: "Cook's Assistant"
+			tasks: [{
+				id: "5F3937BA7DB7F475"
+				item: "botania:daffomill"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			id: "4ACA48C40A3D9B89"
+			subtitle: "Totally an Extra Utils ripoff"
+			tasks: [{
+				id: "4DA0616318084B90"
+				item: "botania:vinculotus"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			id: "3CC6A4DFDDAE313D"
+			subtitle: "In the shell"
+			tasks: [{
+				id: "12D980D047C6E981"
+				item: "botania:spectranthemum"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			id: "022FAE1AF127AC8B"
+			subtitle: "Flügel der Freiheit"
+			tasks: [{
+				id: "45F38CBEFAA1E344"
+				item: "botania:jiyuulia"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			id: "46714A68CD3F37A5"
+			subtitle: "Kiss from a rose"
+			tasks: [{
+				id: "58E754974B117A87"
+				item: "botania:bellethorn"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			id: "1911901BCAE5EE31"
+			subtitle: "Just a prick"
+			tasks: [{
+				id: "24AFA8CE0E22E720"
+				item: "botania:dreadthorn"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			id: "6368A20DA1DFA84B"
+			subtitle: "Heisei heisei"
+			tasks: [{
+				id: "6913E0E78262FBEE"
+				item: "botania:heisei_dream"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			id: "6F78AEC58756D5E9"
+			subtitle: "The palmtop tiger"
+			tasks: [{
+				id: "2244E34A4F25AFC9"
+				item: "botania:tigerseye"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -1.0d
+		}
+		{
+			id: "16534ED08BC26BE4"
+			subtitle: "A couple died for this"
+			tasks: [{
+				id: "1332DE89503F9598"
+				item: "botania:jaded_amaranthus"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			id: "2290024D35A43224"
+			subtitle: "I seed what you did there"
+			tasks: [{
+				id: "52EE9FDA4491B3DA"
+				item: "botania:orechid"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			id: "2D6378F11FA47631"
+			subtitle: "I'm not an Angel"
+			tasks: [{
+				id: "765A92F82F31B727"
+				item: "botania:fallen_kanade"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			id: "6CD901733D1C2169"
+			subtitle: "Exothermically reactive"
+			tasks: [{
+				id: "4CF11005832DD708"
+				item: "botania:exoflame"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			id: "3E0CC283409A44F1"
+			subtitle: "Wear on the 25th of April"
+			tasks: [{
+				id: "593D3E78E3C21044"
+				item: "botania:agricarnation"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			id: "6AFE91F3D5950CB2"
+			subtitle: "No frying pans allowed"
+			tasks: [{
+				id: "7E66C23977AB621C"
+				item: "botania:tangleberrie"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			id: "163030DF7FB16CEA"
+			subtitle: "Solid as a rock"
+			tasks: [{
+				id: "39E73DCF6B4AC413"
+				item: "botania:medumone"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -3.0d
+		}
+		{
+			id: "05717C3CD2BAFF80"
+			subtitle: "Good Morning, World!"
+			tasks: [{
+				id: "54B1DA45009E1175"
+				item: "botania:marimorphosis"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -0.5d
+		}
+		{
+			id: "58208F9899AEB4B9"
+			subtitle: "And whistle"
+			tasks: [{
+				id: "362F4E57073AA3B0"
+				item: "botania:bubbell"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			id: "1B81E36ECD79ED9C"
+			subtitle: "All your magnets are belong to us"
+			tasks: [{
+				id: "4EABD9DBF0F77383"
+				item: "botania:solegnolia"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			id: "488EE27736624A5D"
+			subtitle: "Red like roses"
+			tasks: [{
+				id: "3B5384C41B3C70D1"
+				item: "botania:orechid_ignem"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			id: "5464934ABCB1F679"
+			subtitle: "The engineer's second hardest problem"
+			tasks: [{
+				id: "7CD5F916AA1F974D"
+				item: "botania:labellia"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.0d
+		}
+	]
 	title: "Floral Collection"
 }
