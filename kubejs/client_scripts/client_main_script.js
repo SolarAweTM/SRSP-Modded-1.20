@@ -82,7 +82,9 @@ ItemEvents.tooltip(event => {
 	'botania:terrasteel_helmet',
 	'botania:terrasteel_chestplate',
 	'botania:terrasteel_leggings',
-	'botania:terrasteel_boots'
+	'botania:terrasteel_boots',
+	'ars_nouveau:thread_life_drain',
+	'ars_nouveau:thread_magic_capacity'
 	]
 	disabled_items.forEach(item => {
 		event.add(item, [

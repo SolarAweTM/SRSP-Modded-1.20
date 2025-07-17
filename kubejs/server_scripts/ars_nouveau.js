@@ -201,11 +201,35 @@ ServerEvents.recipes(event => {
 		25 //xp cost in levels
 	)
 	*/
-	event.remove({id:'ars_nouveau:shapers_focus'})
+	
+	event.remove({id:'ars_nouveau:shapers_focus'}) //make shapers focus harder to obtain
 	event.recipes.ars_nouveau.enchanting_apparatus(
 		['minecraft:netherite_block', 'botania:manasteel_block', 'crittersandcompanions:sea_bunny_slime_block', 'minecraft:piston'], //reagents
 		'ars_nouveau:manipulation_essence', //input item
 		'ars_nouveau:shapers_focus', //output item
+		1000, //source cost
+		false //keep nbt of input item?
+	)
+	
+	event.remove({id:'ars_nouveau:thread_life_drain'}) //remove the thread of life drain
+	event.remove({id:'ars_nouveau:thread_magic_capacity'}) //remove the thread of magic capacity
+	
+	event.remove({id:'ars_nouveau:thread_spellpower'})
+	event.recipes.ars_nouveau.enchanting_apparatus(
+		['ars_nouveau:fire_essence', 
+		'ars_nouveau:conjuration_essence', 
+		'ars_nouveau:earth_essence', 
+		'ars_nouveau:air_essence', 
+		'ars_nouveau:abjuration_essence', 
+		'ars_nouveau:water_essence', 
+		'ars_nouveau:manipulation_essence', 
+		'ars_nouveau:magebloom', 
+		'ars_nouveau:glyph_harm', 
+		'ars_nouveau:glyph_hex',
+		'ars_nouveau:experience_gem',
+		'ars_nouveau:experience_gem'], //reagents
+		'ars_nouveau:blank_thread', //input item
+		'ars_nouveau:thread_spellpower', //output item
 		1000, //source cost
 		false //keep nbt of input item?
 	)
