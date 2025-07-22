@@ -73,9 +73,11 @@ ItemEvents.tooltip(event => {
 	})
 	
 	//notify of focus adjustment
+	/* TODO: FUTURE PHASE
 	event.addAdvanced('ars_nouveau:shapers_focus', (item, advanced, text) => {
 		text.add(2, Text.red('Recipe altered for balance.'))
 	})
+	*/
 	
 	//tooltip for stuff disabled in this phase
 	let disabled_items = [
@@ -84,7 +86,8 @@ ItemEvents.tooltip(event => {
 	'botania:terrasteel_leggings',
 	'botania:terrasteel_boots',
 	'ars_nouveau:thread_life_drain',
-	'ars_nouveau:thread_magic_capacity'
+	'ars_nouveau:thread_magic_capacity',
+	'ars_nouveau:shapers_focus'
 	]
 	disabled_items.forEach(item => {
 		event.add(item, [

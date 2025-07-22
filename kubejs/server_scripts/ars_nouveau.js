@@ -202,7 +202,8 @@ ServerEvents.recipes(event => {
 	)
 	*/
 	
-	event.remove({id:'ars_nouveau:shapers_focus'}) //make shapers focus harder to obtain
+	event.remove({id:'ars_nouveau:shapers_focus'}) //make shapers focus harder to obtain (actually in a later phase)
+	/* TODO: FUTURE PHASE
 	event.recipes.ars_nouveau.enchanting_apparatus(
 		['minecraft:netherite_block', 'botania:manasteel_block', 'crittersandcompanions:sea_bunny_slime_block', 'minecraft:piston'], //reagents
 		'ars_nouveau:manipulation_essence', //input item
@@ -210,10 +211,12 @@ ServerEvents.recipes(event => {
 		1000, //source cost
 		false //keep nbt of input item?
 	)
+	*/
 	
 	event.remove({id:'ars_nouveau:thread_life_drain'}) //remove the thread of life drain
 	event.remove({id:'ars_nouveau:thread_magic_capacity'}) //remove the thread of magic capacity
 	
+	/* scrapped
 	event.remove({id:'ars_nouveau:thread_spellpower'})
 	event.recipes.ars_nouveau.enchanting_apparatus(
 		['ars_nouveau:fire_essence', 
@@ -233,4 +236,5 @@ ServerEvents.recipes(event => {
 		1000, //source cost
 		false //keep nbt of input item?
 	)
+	*/
 })
