@@ -10,7 +10,7 @@
 	quests: [
 		{
 			description: [
-				"&aCreate&r is a steampunk-themed tech mod all about building contraptions and gadgets to aid you in almost every way."
+				"&aCreate&r is a steampunk-themed tech mod all about &6building contraptions and gadgets&r to aid you in almost every way."
 				""
 				"This mod is massive, so I've split its quests into four separate chapters, which you can see to the side."
 				""
@@ -49,8 +49,10 @@
 		}
 		{
 			dependencies: ["5BE5AD125B412D5E"]
+			description: ["&aKinetic Sources&r are the main way you'll get stuff to work in Create. They generate &6Rotational Force&r through various means, some better, some worse. Pretty much any contraption you make will have &6at least one of these&r connected to it in some way."]
 			icon: "create:hand_crank"
 			id: "5937D8D676C5CDBA"
+			subtitle: "speen"
 			tasks: [{
 				id: "13DF81EC5C412C3E"
 				item: {
@@ -68,10 +70,6 @@
 							}
 							{
 								Count: 1b
-								id: "create:windmill_bearing"
-							}
-							{
-								Count: 1b
 								id: "create:water_wheel"
 							}
 							{
@@ -80,7 +78,15 @@
 							}
 							{
 								Count: 1b
+								id: "create:windmill_bearing"
+							}
+							{
+								Count: 1b
 								id: "create:steam_engine"
+							}
+							{
+								Count: 1b
+								id: "createaddition:electric_motor"
 							}
 						]
 					}
@@ -90,6 +96,39 @@
 			title: "Kinetic Sources"
 			x: 0.0d
 			y: -2.5d
+		}
+		{
+			dependencies: ["5937D8D676C5CDBA"]
+			description: [
+				"In order to make use of Rotational Force, you'll need to get it to things powered by it. This can be achieved by using &aShafts, Cogwheels, and Large Cogwheels&r to start with. "
+				""
+				"When placing these, you may notice that Create shows a &6small placment guide&r that lets you easily place parts that connect."
+				""
+				"Note that these behave just like &6gears in real life&r; connecting two cogwheels together will &6reverse the direction&r of rotation."
+			]
+			icon: "create:cogwheel"
+			id: "3C924B08AD3A43C0"
+			subtitle: "Getting your rotational force from point A to point B"
+			tasks: [
+				{
+					id: "0C23B3E2B9C54D65"
+					item: "create:shaft"
+					type: "item"
+				}
+				{
+					id: "470A6E22CF7EFD18"
+					item: "create:cogwheel"
+					type: "item"
+				}
+				{
+					id: "7DAA37D2621C1C78"
+					item: "create:large_cogwheel"
+					type: "item"
+				}
+			]
+			title: "Rotational Logistics"
+			x: 0.0d
+			y: -3.5d
 		}
 	]
 	title: "Basics"
