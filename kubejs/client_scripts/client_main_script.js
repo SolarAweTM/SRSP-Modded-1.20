@@ -107,6 +107,13 @@ ItemEvents.tooltip(event => {
 		Text.green("Buffed to match the stats of Netherite.")
 		])
 	})
+	
+	//tooltip for ender air bottle
+	event.addAdvanced('botania:ender_air_bottle', (item, advanced, text) => {
+		text.add(1, Text.gray('Obtained by using a glass bottle in The End.'))
+		text.add(2, Text.darkGray('May cause issues when attempting to'))
+		text.add(3, Text.darkGray('gather Dragon\'s Breath'))
+	})
 })
 
 JEIEvents.hideItems(event => {
