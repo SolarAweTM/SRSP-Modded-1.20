@@ -270,6 +270,7 @@
 				item: "create:brass_ingot"
 				type: "item"
 			}]
+			title: "The Brass Age"
 			x: 0.0d
 			y: -7.5d
 		}
