@@ -1080,6 +1080,76 @@
 			x: -3.0d
 			y: 1.0d
 		}
+		{
+			dependencies: [
+				"60ADFBCB9A4E9BF7"
+				"61C7E065C5C5894F"
+				"75824A52BA632F9B"
+				"3E0CC283409A44F1"
+				"46714A68CD3F37A5"
+				"640846D0F074F2AD"
+				"58208F9899AEB4B9"
+				"149AE40CC9291C24"
+				"21F1675DDC9C8DD0"
+				"26D25C205C2C03CE"
+				"1911901BCAE5EE31"
+				"35C83016225CE19E"
+				"6E9791FD493A385C"
+				"6CD901733D1C2169"
+				"2D6378F11FA47631"
+				"089407B4EC4F4FB4"
+				"6368A20DA1DFA84B"
+				"7595C584347ED8A7"
+				"7FF414EB24FFCAFE"
+				"6B866DE33C2294DF"
+				"16534ED08BC26BE4"
+				"022FAE1AF127AC8B"
+				"2783A93924D9EC81"
+				"5464934ABCB1F679"
+				"72639B4844CC27BE"
+				"7E200039E850DD34"
+				"05717C3CD2BAFF80"
+				"163030DF7FB16CEA"
+				"0DFAB107441DDDE2"
+				"17CE3C5371E63163"
+				"2290024D35A43224"
+				"488EE27736624A5D"
+				"6951F6B4CE286FE6"
+				"211D879A87677820"
+				"7476E0BA5A41E61F"
+				"391AA4E896E4FB44"
+				"65A4DFC0B63E2CF0"
+				"2B376F3F9F85303B"
+				"1B81E36ECD79ED9C"
+				"3CC6A4DFDDAE313D"
+				"0BE994ABFAE08B88"
+				"6AFE91F3D5950CB2"
+				"488DA685AD59C261"
+				"6F78AEC58756D5E9"
+				"4ACA48C40A3D9B89"
+			]
+			description: ["&dCollect every flower there is to experience in Botania.&r"]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "botania:lexicon"
+				tag: {
+					"botania:elven_unlock": 1b
+				}
+			}
+			id: "13B8662F6C7CCC5F"
+			size: 3.0d
+			tasks: [{
+				dimension: "minecraft:overworld"
+				icon: "botania:lens_paint"
+				id: "25A7DEF93615A9DB"
+				title: "Complete all Dependency Quests"
+				type: "dimension"
+			}]
+			title: "A Complete Floral Collection"
+			x: 0.0d
+			y: 3.0d
+		}
 	]
 	title: "Floral Collection"
 }
