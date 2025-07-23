@@ -49,7 +49,11 @@
 		}
 		{
 			dependencies: ["5BE5AD125B412D5E"]
-			description: ["&aKinetic Sources&r are the main way you'll get stuff to work in Create. They generate &6Rotational Force&r through various means, some better, some worse. Pretty much any contraption you make will have &6at least one of these&r connected to it in some way."]
+			description: [
+				"&aKinetic Sources&r are the main way you'll get stuff to work in Create. They generate &6Rotational Force&r."
+				""
+				"&6Ponder&r your desired kinetic source to learn how to power it."
+			]
 			icon: "create:hand_crank"
 			id: "5937D8D676C5CDBA"
 			subtitle: "speen"
@@ -61,7 +65,7 @@
 					tag: {
 						RepairCost: 0
 						display: {
-							Name: "{\"text\":\"Any Kinetic Source\"}"
+							Name: "{\"text\":\"Any Basic Kinetic Source\"}"
 						}
 						items: [
 							{
@@ -75,18 +79,6 @@
 							{
 								Count: 1b
 								id: "create:large_water_wheel"
-							}
-							{
-								Count: 1b
-								id: "create:windmill_bearing"
-							}
-							{
-								Count: 1b
-								id: "create:steam_engine"
-							}
-							{
-								Count: 1b
-								id: "createaddition:electric_motor"
 							}
 						]
 					}
@@ -104,7 +96,7 @@
 				""
 				"When placing these, you may notice that Create shows a &6small placment guide&r that lets you easily place parts that connect."
 				""
-				"Note that these behave just like &6gears in real life&r; connecting two cogwheels together will &6reverse the direction&r of rotation."
+				"&6Ponder&r these items to learn more about them."
 			]
 			icon: "create:cogwheel"
 			id: "3C924B08AD3A43C0"
@@ -129,6 +121,157 @@
 			title: "Rotational Logistics"
 			x: 0.0d
 			y: -3.5d
+		}
+		{
+			dependencies: ["3C924B08AD3A43C0"]
+			description: [
+				"&aBelts&r are a handy way to move items around in an orderly fashion."
+				""
+				"&6Ponder&r this item to learn how to use this item."
+			]
+			id: "75465F72D3FADC01"
+			subtitle: "Getting your items from point A to point B, with rotational force"
+			tasks: [{
+				id: "4255D75A3D2E5B78"
+				item: "create:belt_connector"
+				type: "item"
+			}]
+			title: "Belts"
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["75465F72D3FADC01"]
+			description: [
+				"&aFunnels&r can be used to &6insert and extract items&r from the container they're attached to. They can also connect to &6Mechanical Belts&r."
+				""
+				"&6Ponder&r this item to learn more."
+				""
+				"&o&7Note: The Andesite Funnel only performs operations 1 item at a time. The Brass Funnel can perform operations of up to 1 stack, and can filter items.&r"
+			]
+			id: "1FFBEDA1B43C6354"
+			subtitle: "Getting your items INTO points A and B"
+			tasks: [{
+				id: "0CD69C8814AB2407"
+				item: "create:andesite_funnel"
+				type: "item"
+			}]
+			title: "Funnels"
+			x: 0.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3C924B08AD3A43C0"]
+			id: "5A36F0409C36879A"
+			tasks: [{
+				id: "50EF1B66D4744B93"
+				item: "create:millstone"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["36430316693F14AF"]
+			icon: "create:mechanical_press"
+			id: "252E8705B9375A6F"
+			tasks: [{
+				id: "67187359B7FF8B3E"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any of the following\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "create:mechanical_press"
+							}
+							{
+								Count: 1b
+								id: "create:mechanical_mixer"
+							}
+							{
+								Count: 1b
+								id: "create:deployer"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Factory Processing"
+			x: -1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5A36F0409C36879A"]
+			id: "35DD7D47B32B1FDD"
+			tasks: [{
+				id: "319D553FCD97FC6B"
+				item: "create:crushing_wheel"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3C924B08AD3A43C0"]
+			icon: "create:depot"
+			id: "36430316693F14AF"
+			tasks: [{
+				id: "0FDC0AE40D9CAC71"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any of the following\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "create:depot"
+							}
+							{
+								Count: 1b
+								id: "create:basin"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Holding Items"
+			x: -1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["252E8705B9375A6F"]
+			id: "4F21D70BC00FFA8A"
+			tasks: [{
+				id: "40B2F1F827FF744E"
+				item: "create:empty_blaze_burner"
+				type: "item"
+			}]
+			title: "Heated Processing"
+			x: -1.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["4F21D70BC00FFA8A"]
+			id: "2F1BDB52441FCA5A"
+			tasks: [{
+				id: "25BDA7FA82A34D3A"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -7.5d
 		}
 	]
 	title: "Basics"
