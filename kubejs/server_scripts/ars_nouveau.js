@@ -237,4 +237,32 @@ ServerEvents.recipes(event => {
 		false //keep nbt of input item?
 	)
 	*/
+	
+	event.remove({id:'ars_nouveau:upgrade_2'}) //rewrite armor upgrade recipes
+	event.custom({
+		type: 'ars_nouveau:armor_upgrade',
+		pedestalItems: [
+			{item:{item:'ars_nouveau:wilden_tribute'}},
+			{item:{item:'botania:ender_air_bottle'}},
+			{item:{item:'ars_nouveau:blue_archwood_sapling'}},
+			{item:{item:'ars_nouveau:red_archwood_sapling'}},
+			{item:{item:'ars_nouveau:green_archwood_sapling'}},
+			{item:{item:'ars_nouveau:purple_archwood_sapling'}}
+		],
+		sourceCost: 5000,
+		tier: 2
+	})
+	
+	event.remove({id:'ars_nouveau:upgrade_1'})
+	event.custom({
+		type: 'ars_nouveau:armor_upgrade',
+		pedestalItems: [
+			{item:{item:'ars_nouveau:starbuncle_shards'}},
+			{item:{item:'ars_nouveau:whirlisprig_shards'}},
+			{item:{item:'ars_nouveau:drygmy_shard'}},
+			{item:{item:'ars_nouveau:source_gem'}}
+		],
+		sourceCost: 2500,
+		tier: 1
+	})
 })
