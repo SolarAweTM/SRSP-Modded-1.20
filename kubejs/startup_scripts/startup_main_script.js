@@ -14,6 +14,10 @@ StartupEvents.registry('item', event => {
 	event.create('terrasteel_upgrade_smithing_template').texture('srsp:item/terrasteel_upgrade_smithing_template')
 	// generic unobtainable item because apotheosis doesnt let you outright remove its spawner mods
 	event.create('intentionally_unobtainable').texture('minecraft:item/barrier')
+	//new crushed raw ores
+	event.create('crushed_raw_crimson_iron').texture('srsp:item/crushed_raw_crimson_iron')
+	event.create('crushed_raw_azure_silver').texture('srsp:item/crushed_raw_azure_silver')
+	event.create('crushed_raw_cobalt').texture('srsp:item/crushed_raw_cobalt')
 })
 
 ItemEvents.modification(event => {
