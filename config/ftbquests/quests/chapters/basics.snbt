@@ -194,16 +194,12 @@
 								Count: 1b
 								id: "create:mechanical_mixer"
 							}
-							{
-								Count: 1b
-								id: "create:deployer"
-							}
 						]
 					}
 				}
 				type: "item"
 			}]
-			title: "Factory Processing"
+			title: "Mechanical Processing"
 			x: -1.0d
 			y: -5.5d
 		}
@@ -273,6 +269,50 @@
 			title: "The Brass Age"
 			x: 0.0d
 			y: -7.5d
+		}
+		{
+			dependencies: ["2F1BDB52441FCA5A"]
+			id: "7C140D80711A3674"
+			tasks: [{
+				id: "28E1FD8E01DE7DB2"
+				item: "create:deployer"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["7C140D80711A3674"]
+			id: "0B200FC34835FD43"
+			tasks: [{
+				id: "722F091F1C2FDD6C"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["0B200FC34835FD43"]
+			id: "3AA46C67E835763B"
+			tasks: [{
+				id: "651311965D881E24"
+				item: "create:rotation_speed_controller"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["0B200FC34835FD43"]
+			id: "7E5E335541331112"
+			tasks: [{
+				id: "34BE1585992AB19F"
+				item: "create:mechanical_arm"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -11.0d
 		}
 	]
 	title: "Basics"
