@@ -74,8 +74,8 @@ ServerEvents.recipes(event => {
 	}
 	//new processing for the new crushed ores
 	//bulk washing
-	event.recipes.create.splashing(['9x silentgear:crimson_iron_nugget', Item.of('silentgear:crimson_iron_nugget').withChance(0.25)], 'kubejs:crushed_raw_crimson_iron')
-	event.recipes.create.splashing(['9x silentgear:azure_silver_nugget', Item.of('silentgear:azure_silver_nugget').withChance(0.25)], 'kubejs:crushed_raw_azure_silver')
+	event.recipes.create.splashing(['9x silentgear:crimson_iron_nugget', Item.of('silentgear:crimson_iron_nugget').withChance(0.25), Item.of('minecraft:quartz').withChance(0.1)], 'kubejs:crushed_raw_crimson_iron')
+	event.recipes.create.splashing(['9x silentgear:azure_silver_nugget', Item.of('silentgear:azure_silver_nugget').withChance(0.25), Item.of('minecraft:chorus_fruit').withChance(0.05)], 'kubejs:crushed_raw_azure_silver')
 	event.recipes.create.splashing(['9x tconstruct:cobalt_nugget', Item.of('tconstruct:cobalt_nugget').withChance(0.25)], 'kubejs:crushed_raw_cobalt')
 	//smelting
 	event.smelting('silentgear:crimson_iron_ingot', 'kubejs:crushed_raw_crimson_iron').xp(0.1).cookingTime(200)
