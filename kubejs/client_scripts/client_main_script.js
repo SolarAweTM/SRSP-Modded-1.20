@@ -114,6 +114,11 @@ ItemEvents.tooltip(event => {
 		text.add(2, Text.darkGray('May cause issues when attempting to'))
 		text.add(3, Text.darkGray('gather Dragon\'s Breath'))
 	})
+	
+	//tooltip for tinker's anvils
+	event.addAdvanced('tconstruct:tinkers_anvil', (item, advanced, text) => {
+		text.add(2, Text.red('Mostly useless in this pack. Kept in as decoration.'))
+	})
 })
 
 JEIEvents.hideItems(event => {
@@ -189,7 +194,51 @@ JEIEvents.hideItems(event => {
 		'tconstruct:helmet_plating_dummy',
 		'tconstruct:chestplate_plating_dummy',
 		'tconstruct:leggings_plating_dummy',
-		'tconstruct:boots_plating_dummy'
+		'tconstruct:boots_plating_dummy',
+		'tconstruct:battlesign',
+		'tconstruct:broad_axe',
+		'tconstruct:cleaver',
+		'tconstruct:crossbow',
+		'tconstruct:dagger',
+		'tconstruct:earth_staff',
+		'tconstruct:ender_staff',
+		'tconstruct:excavator',
+		'tconstruct:flint_and_brick',
+		'tconstruct:hand_axe',
+		'tconstruct:ichor_staff',
+		'tconstruct:kama',
+		'tconstruct:longbow',
+		'tconstruct:mattock',
+		'tconstruct:melting_pan',
+		'tconstruct:pickadze',
+		'tconstruct:pickaxe',
+		'tconstruct:plate_boots',
+		'tconstruct:plate_chestplate',
+		'tconstruct:plate_helmet',
+		'tconstruct:plate_leggings',
+		'tconstruct:plate_shield',
+		'tconstruct:scythe',
+		'tconstruct:sky_staff',
+		'tconstruct:sledge_hammer',
+		'tconstruct:slime_boots',
+		'tconstruct:slime_chestplate',
+		'tconstruct:slime_helmet',
+		'tconstruct:slime_leggings',
+		'tconstruct:swasher',
+		'tconstruct:sword',
+		'tconstruct:travelers_boots',
+		'tconstruct:travelers_chestplate',
+		'tconstruct:travelers_helmet',
+		'tconstruct:travelers_leggings',
+		'tconstruct:travelers_shield',
+		'tconstruct:vein_hammer',
+		'tconstruct:war_pick',
+		'tconstruct:part_builder',
+		'tconstruct:tinker_station',
+		'tconstruct:modifier_worktable',
+		'tconstruct:tinkers_chest',
+		'tconstruct:part_chest',
+		'tconstruct:modifier_crystal'
 	]
 	hidden_items.forEach(item => {
 		event.hide(item) // noted: this also removes them from creative menus
