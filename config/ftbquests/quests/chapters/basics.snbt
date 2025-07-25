@@ -314,6 +314,17 @@
 			x: 1.0d
 			y: -11.0d
 		}
+		{
+			dependencies: ["1FFBEDA1B43C6354"]
+			id: "68C536FFD816AE69"
+			tasks: [{
+				id: "509081B48A0379FE"
+				item: "create:chute"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.5d
+		}
 	]
 	title: "Basics"
 }
