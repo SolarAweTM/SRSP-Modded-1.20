@@ -117,7 +117,10 @@ ItemEvents.tooltip(event => {
 	
 	//tooltip for tinker's anvils
 	event.addAdvanced('tconstruct:tinkers_anvil', (item, advanced, text) => {
-		text.add(2, Text.red('Mostly useless in this pack. Kept in as decoration.'))
+		text.add(1, Text.red('Mostly useless in this pack. Kept in as decoration.'))
+	})
+	event.addAdvanced('tconstruct:scorched_anvil', (item, advanced, text) => {
+		text.add(1, Text.red('Mostly useless in this pack. Kept in as decoration.'))
 	})
 })
 
@@ -243,4 +246,8 @@ JEIEvents.hideItems(event => {
 	hidden_items.forEach(item => {
 		event.hide(item) // noted: this also removes them from creative menus
 	})
+})
+
+JEIEvents.removeCategories(event => {
+	event.remove('tconstruct:tools/severing')
 })
