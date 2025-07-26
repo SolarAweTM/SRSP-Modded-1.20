@@ -20,6 +20,28 @@ StartupEvents.registry('item', event => {
 	event.create('crushed_raw_cobalt').texture('srsp:item/crushed_raw_cobalt')
 })
 
+StartupEvents.registry('fluid', event => { //molten fluids for tconstruct/silent gear
+	event.create('molten_crimson_iron')
+	.thickTexture(0xEF446C)
+	.bucketColor(0xEF446C)
+	.displayName('Molten Crimson Iron')
+	
+	event.create('molten_crimson_steel')
+	.thickTexture(0xD9143B)
+	.bucketColor(0xD9143B)
+	.displayName('Molten Crimson Steel')
+	
+	event.create('molten_azure_silver')
+	.thickTexture(0x9C77E9)
+	.bucketColor(0x9C77E9)
+	.displayName('Molten Azure Silver')
+	
+	event.create('molten_azure_electrum')
+	.thickTexture(0x4474E0)
+	.bucketColor(0x4474E0)
+	.displayName('Molten Azure Electrum')
+})
+
 ItemEvents.modification(event => {
 	//buff the stats of ars nouveau battlemage gear to match netherite
 	event.modify('ars_nouveau:battlemage_hood', item => {

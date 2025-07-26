@@ -16,7 +16,7 @@ ServerEvents.recipes(event => {
 		temperature: 950,
 		time: 64
 	})
-	let obliterated_items = [
+	let obliterated_items = [ //make tconstruct tools and other related items inaccessible
 		'tconstruct:repair_kit',
 		'tconstruct:pick_head',
 		'tconstruct:small_axe_head',
@@ -89,6 +89,100 @@ ServerEvents.recipes(event => {
 		'tconstruct:modifier_crystal'
 	]
 	obliterated_items.forEach(item => {
-		event.remove({id:item})
+		event.remove({output:item})
 	})
+	
+	event.custom({ //crimson steel tconstruct alloying recipe
+		type: 'tconstruct:alloy',
+		inputs: [
+			{
+				amount: 360,
+				fluid: 'kubejs:molten_crimson_iron'
+			},
+			{
+				amount: 200,
+				fluid: 'tconstruct:blazing_blood'
+			},
+			{
+				amount: 250,
+				fluid: 'tconstruct:magma'
+			}
+		],
+		result: {
+			amount: 90,
+			fluid: 'kubejs:molten_crimson_steel'
+		},
+		temperature: 950
+	})
+	
+	event.custom({ //crimson iron and steel casting recipes
+		type: 'tconstruct:casting_table',
+		cast: {tag:'tconstruct:casts/multi_use/ingot'},
+		cooling_time: 60,
+		fluid: {
+			amount: 90,
+			fluid: 'kubejs:molten_crimson_iron'
+		},
+		result: {
+			tag: 'forge:ingots/crimson_iron'
+		}
+	})
+	event.custom({
+		type: 'tconstruct:casting_table',
+		cast: {tag:'tconstruct:casts/single_use/ingot'},
+		cooling_time: 60,
+		fluid: {
+			amount: 90,
+			fluid: 'kubejs:molten_crimson_iron'
+		},
+		result: {
+			tag: 'forge:ingots/crimson_iron'
+		}
+	})
+	event.custom({ //nuggets
+		type: 'tconstruct:casting_table',
+		cast: {tag:'tconstruct:casts/multi_use/nugget'},
+		cooling_time: 20,
+		fluid: {
+			amount: 10,
+			fluid: 'kubejs:molten_crimson_iron'
+		},
+		result: {
+			tag: 'forge:nuggets/crimson_iron'
+		}
+	})
+	event.custom({
+		type: 'tconstruct:casting_table',
+		cast: {tag:'tconstruct:casts/single_use/nugget'},
+		cooling_time: 20,
+		fluid: {
+			amount: 10,
+			fluid: 'kubejs:molten_crimson_iron'
+		},
+		result: {
+			tag: 'forge:nuggets/crimson_iron'
+		}
+	})
+	event.custom({ //blocks
+		type: 'tconstruct:casting_basin',
+		cooling_time: 180,
+		fluid: {
+			amount: 810,
+			fluid: 'kubejs:molten_crimson_iron'
+		},
+		result: {
+			tag: 'forge:storage_blocks/crimson_iron'
+		}
+	})
+	event.custom({
+		type: 'tconstruct:casting_basin',
+		cooling_time: 180,
+		fluid: {
+			amount: 810,
+			fluid: 'kubejs:molten_crimson_iron'
+		},
+		result: {
+			tag: 'forge:storage_blocks/crimson_iron'
+		}
+	}) //TODO: tell tconstruct how to relate fluid to ingot amounts
 })
