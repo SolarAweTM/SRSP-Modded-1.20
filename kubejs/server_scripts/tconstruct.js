@@ -174,15 +174,205 @@ ServerEvents.recipes(event => {
 			tag: 'forge:storage_blocks/crimson_iron'
 		}
 	})
+	event.custom({ //crimson steel
+		type: 'tconstruct:casting_table',
+		cast: {tag:'tconstruct:casts/multi_use/ingot'},
+		cooling_time: 60,
+		fluid: {
+			amount: 90,
+			fluid: 'kubejs:molten_crimson_steel'
+		},
+		result: {
+			tag: 'forge:ingots/crimson_steel'
+		}
+	})
 	event.custom({
+		type: 'tconstruct:casting_table',
+		cast: {tag:'tconstruct:casts/single_use/ingot'},
+		cooling_time: 60,
+		fluid: {
+			amount: 90,
+			fluid: 'kubejs:molten_crimson_steel'
+		},
+		result: {
+			tag: 'forge:ingots/crimson_steel'
+		}
+	})
+	event.custom({ //nuggets
+		type: 'tconstruct:casting_table',
+		cast: {tag:'tconstruct:casts/multi_use/nugget'},
+		cooling_time: 20,
+		fluid: {
+			amount: 10,
+			fluid: 'kubejs:molten_crimson_steel'
+		},
+		result: {
+			tag: 'forge:nuggets/crimson_steel'
+		}
+	})
+	event.custom({
+		type: 'tconstruct:casting_table',
+		cast: {tag:'tconstruct:casts/single_use/nugget'},
+		cooling_time: 20,
+		fluid: {
+			amount: 10,
+			fluid: 'kubejs:molten_crimson_steel'
+		},
+		result: {
+			tag: 'forge:nuggets/crimson_steel'
+		}
+	})
+	event.custom({ //blocks
 		type: 'tconstruct:casting_basin',
 		cooling_time: 180,
 		fluid: {
 			amount: 810,
-			fluid: 'kubejs:molten_crimson_iron'
+			fluid: 'kubejs:molten_crimson_steel'
 		},
 		result: {
-			tag: 'forge:storage_blocks/crimson_iron'
+			tag: 'forge:storage_blocks/crimson_steel'
+		}
+	})
+	
+	event.custom({ //azure electrum tconstruct alloying recipe
+		type: 'tconstruct:alloy',
+		inputs: [
+			{
+				amount: 360,
+				fluid: 'kubejs:molten_azure_silver'
+			},
+			{
+				amount: 180,
+				tag: 'forge:molten_gold'
+			},
+			{
+				amount: 250,
+				tag: 'forge:ender'
+			}
+		],
+		result: {
+			amount: 90,
+			fluid: 'kubejs:molten_azure_electrum'
+		},
+		temperature: 1000
+	})
+	
+	event.custom({ //crimson iron and steel casting recipes
+		type: 'tconstruct:casting_table',
+		cast: {tag:'tconstruct:casts/multi_use/ingot'},
+		cooling_time: 60,
+		fluid: {
+			amount: 90,
+			fluid: 'kubejs:molten_azure_silver'
+		},
+		result: {
+			tag: 'forge:ingots/azure_silver'
+		}
+	})
+	event.custom({
+		type: 'tconstruct:casting_table',
+		cast: {tag:'tconstruct:casts/single_use/ingot'},
+		cooling_time: 60,
+		fluid: {
+			amount: 90,
+			fluid: 'kubejs:molten_azure_silver'
+		},
+		result: {
+			tag: 'forge:ingots/azure_silver'
+		}
+	})
+	event.custom({ //nuggets
+		type: 'tconstruct:casting_table',
+		cast: {tag:'tconstruct:casts/multi_use/nugget'},
+		cooling_time: 20,
+		fluid: {
+			amount: 10,
+			fluid: 'kubejs:molten_azure_silver'
+		},
+		result: {
+			tag: 'forge:nuggets/azure_silver'
+		}
+	})
+	event.custom({
+		type: 'tconstruct:casting_table',
+		cast: {tag:'tconstruct:casts/single_use/nugget'},
+		cooling_time: 20,
+		fluid: {
+			amount: 10,
+			fluid: 'kubejs:molten_azure_silver'
+		},
+		result: {
+			tag: 'forge:nuggets/azure_silver'
+		}
+	})
+	event.custom({ //blocks
+		type: 'tconstruct:casting_basin',
+		cooling_time: 180,
+		fluid: {
+			amount: 810,
+			fluid: 'kubejs:molten_azure_silver'
+		},
+		result: {
+			tag: 'forge:storage_blocks/azure_silver'
+		}
+	})
+	event.custom({ //crimson steel
+		type: 'tconstruct:casting_table',
+		cast: {tag:'tconstruct:casts/multi_use/ingot'},
+		cooling_time: 60,
+		fluid: {
+			amount: 90,
+			fluid: 'kubejs:molten_azure_electrum'
+		},
+		result: {
+			tag: 'forge:ingots/azure_electrum'
+		}
+	})
+	event.custom({
+		type: 'tconstruct:casting_table',
+		cast: {tag:'tconstruct:casts/single_use/ingot'},
+		cooling_time: 60,
+		fluid: {
+			amount: 90,
+			fluid: 'kubejs:molten_azure_electrum'
+		},
+		result: {
+			tag: 'forge:ingots/azure_electrum'
+		}
+	})
+	event.custom({ //nuggets
+		type: 'tconstruct:casting_table',
+		cast: {tag:'tconstruct:casts/multi_use/nugget'},
+		cooling_time: 20,
+		fluid: {
+			amount: 10,
+			fluid: 'kubejs:molten_azure_electrum'
+		},
+		result: {
+			tag: 'forge:nuggets/azure_electrum'
+		}
+	})
+	event.custom({
+		type: 'tconstruct:casting_table',
+		cast: {tag:'tconstruct:casts/single_use/nugget'},
+		cooling_time: 20,
+		fluid: {
+			amount: 10,
+			fluid: 'kubejs:molten_azure_electrum'
+		},
+		result: {
+			tag: 'forge:nuggets/azure_electrum'
+		}
+	})
+	event.custom({ //blocks
+		type: 'tconstruct:casting_basin',
+		cooling_time: 180,
+		fluid: {
+			amount: 810,
+			fluid: 'kubejs:molten_azure_electrum'
+		},
+		result: {
+			tag: 'forge:storage_blocks/azure_electrum'
 		}
 	})
 })
