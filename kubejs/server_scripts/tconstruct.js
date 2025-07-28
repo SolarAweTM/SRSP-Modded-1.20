@@ -375,6 +375,113 @@ ServerEvents.recipes(event => {
 			tag: 'forge:storage_blocks/azure_electrum'
 		}
 	})
+	
+	//melting recipes for silent gear metals
+	event.custom({ //raw crimson iron
+		type: 'tconstruct:ore_melting',
+		byproducts: [],
+		ingredient: {tag: 'forge:raw_materials/crimson_iron'},
+		rate: 'metal',
+		result: {
+			amount: 90,
+			fluid: 'kubejs:molten_crimson_iron'
+		},
+		temperature: 900,
+		time: 90
+	})
+	event.custom({ //crimson iron ingot
+		type: 'tconstruct:melting',
+		ingredient: {tag: 'forge:ingots/crimson_iron'},
+		result: {
+			amount: 90,
+			fluid: 'kubejs:molten_crimson_iron'
+		},
+		temperature: 900,
+		time: 60
+	})
+	event.custom({ //crimson iron nugget
+		type: 'tconstruct:melting',
+		ingredient: {tag: 'forge:nuggets/crimson_iron'},
+		result: {
+			amount: 10,
+			fluid: 'kubejs:molten_crimson_iron'
+		},
+		temperature: 900,
+		time: 20
+	})
+	event.custom({ //crimson steel ingot
+		type: 'tconstruct:melting',
+		ingredient: {tag: 'forge:ingots/crimson_steel'},
+		result: {
+			amount: 90,
+			fluid: 'kubejs:molten_crimson_steel'
+		},
+		temperature: 950,
+		time: 60
+	})
+	event.custom({ //crimson steel nugget
+		type: 'tconstruct:melting',
+		ingredient: {tag: 'forge:nuggets/crimson_steel'},
+		result: {
+			amount: 10,
+			fluid: 'kubejs:molten_crimson_steel'
+		},
+		temperature: 950,
+		time: 20
+	})
+	event.custom({ //raw azure silver
+		type: 'tconstruct:ore_melting',
+		byproducts: [],
+		ingredient: {tag: 'forge:raw_materials/azure_silver'},
+		rate: 'metal',
+		result: {
+			amount: 90,
+			fluid: 'kubejs:molten_azure_silver'
+		},
+		temperature: 950,
+		time: 90
+	})
+	event.custom({ //azure silver ingot
+		type: 'tconstruct:melting',
+		ingredient: {tag: 'forge:ingots/azure_silver'},
+		result: {
+			amount: 90,
+			fluid: 'kubejs:molten_azure_silver'
+		},
+		temperature: 950,
+		time: 60
+	})
+	event.custom({ //azure silver nugget
+		type: 'tconstruct:melting',
+		ingredient: {tag: 'forge:nuggets/azure_silver'},
+		result: {
+			amount: 10,
+			fluid: 'kubejs:molten_azure_silver'
+		},
+		temperature: 950,
+		time: 20
+	})
+	event.custom({ //azure electrum ingot
+		type: 'tconstruct:melting',
+		ingredient: {tag: 'forge:ingots/azure_electrum'},
+		result: {
+			amount: 90,
+			fluid: 'kubejs:molten_azure_electrum'
+		},
+		temperature: 1000,
+		time: 60
+	})
+	event.custom({ //azure electrum nugget
+		type: 'tconstruct:melting',
+		ingredient: {tag: 'forge:nuggets/azure_electrum'},
+		result: {
+			amount: 10,
+			fluid: 'kubejs:molten_azure_electrum'
+		},
+		temperature: 1000,
+		time: 20
+	})
+	//TODO: blaze gold and tyrian steel
 })
 
 ServerEvents.tags('fluid', event => { //tag fluids as metal, gem, or other material for unit conversions (i.e. 90mb -> 1 ingot)
