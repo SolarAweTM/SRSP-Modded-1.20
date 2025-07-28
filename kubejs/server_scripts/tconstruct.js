@@ -184,5 +184,17 @@ ServerEvents.recipes(event => {
 		result: {
 			tag: 'forge:storage_blocks/crimson_iron'
 		}
-	}) //TODO: tell tconstruct how to relate fluid to ingot amounts
+	})
+})
+
+ServerEvents.tags('fluid', event => { //tag fluids as metal, gem, or other material for unit conversions (i.e. 90mb -> 1 ingot)
+	const metalFluids = [
+		'kubejs:molten_crimson_iron',
+		'kubejs:molten_crimson_steel',
+		'kubejs:molten_azure_silver',
+		'kubejs:molten_azure_electrum'
+	]
+	metalFluids.forEach(item => {
+		event.add('tconstruct:tooltips/metal', item)
+	})
 })
