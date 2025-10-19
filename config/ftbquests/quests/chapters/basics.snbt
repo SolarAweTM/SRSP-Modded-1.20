@@ -44,8 +44,8 @@
 				title: "A Moment to Ponder"
 				type: "checkmark"
 			}]
-			x: 0.0d
-			y: -1.0d
+			x: 1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["5BE5AD125B412D5E"]
@@ -86,8 +86,8 @@
 				type: "item"
 			}]
 			title: "Kinetic Sources"
-			x: 0.0d
-			y: -2.5d
+			x: 2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["5937D8D676C5CDBA"]
@@ -119,8 +119,8 @@
 				}
 			]
 			title: "Rotational Logistics"
-			x: 0.0d
-			y: -3.5d
+			x: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["3C924B08AD3A43C0"]
@@ -137,8 +137,8 @@
 				type: "item"
 			}]
 			title: "Belts"
-			x: 0.0d
-			y: -4.5d
+			x: 4.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["75465F72D3FADC01"]
@@ -147,7 +147,7 @@
 				""
 				"&6Ponder&r this item to learn more."
 				""
-				"&o&7Note: The Andesite Funnel only performs operations 1 item at a time. The Brass Funnel can perform operations of up to 1 stack, and can filter items.&r"
+				"&o&7Note: The Andesite Funnel only performs operations 1 item at a time. There is a funnel that can remedy this.&r"
 			]
 			id: "1FFBEDA1B43C6354"
 			subtitle: "Getting your items INTO points A and B"
@@ -157,8 +157,8 @@
 				type: "item"
 			}]
 			title: "Funnels"
-			x: 0.0d
-			y: -5.5d
+			x: 5.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["3C924B08AD3A43C0"]
@@ -168,8 +168,8 @@
 				item: "create:millstone"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -4.5d
+			x: 4.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["36430316693F14AF"]
@@ -200,8 +200,8 @@
 				type: "item"
 			}]
 			title: "Mechanical Processing"
-			x: -1.0d
-			y: -5.5d
+			x: 6.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["5A36F0409C36879A"]
@@ -211,13 +211,21 @@
 				item: "create:crushing_wheel"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -5.5d
+			x: 5.0d
+			y: 1.5d
 		}
 		{
-			dependencies: ["3C924B08AD3A43C0"]
+			dependencies: ["75465F72D3FADC01"]
+			description: [
+				"Sometimes, you don't need (or want) to use a &aBelt&r for processing things."
+				""
+				"This is where the &aDepot and Basin&r come in, allowing you to &6keep ingredients in one place&r while they're being processed. Very useful for making an assembly line!"
+				""
+				"&6Ponder&r these items to learn more about them."
+			]
 			icon: "create:depot"
 			id: "36430316693F14AF"
+			subtitle: "Security checkpoint"
 			tasks: [{
 				id: "0FDC0AE40D9CAC71"
 				item: {
@@ -243,8 +251,8 @@
 				type: "item"
 			}]
 			title: "Holding Items"
-			x: -1.0d
-			y: -4.5d
+			x: 5.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["252E8705B9375A6F"]
@@ -255,8 +263,8 @@
 				type: "item"
 			}]
 			title: "Heated Processing"
-			x: -1.0d
-			y: -6.5d
+			x: 7.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["4F21D70BC00FFA8A"]
@@ -267,8 +275,8 @@
 				type: "item"
 			}]
 			title: "The Brass Age"
-			x: 0.0d
-			y: -7.5d
+			x: 8.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["2F1BDB52441FCA5A"]
@@ -278,8 +286,8 @@
 				item: "create:deployer"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -9.0d
+			x: 10.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["7C140D80711A3674"]
@@ -289,8 +297,8 @@
 				item: "create:precision_mechanism"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -10.0d
+			x: 11.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["0B200FC34835FD43"]
@@ -300,8 +308,8 @@
 				item: "create:rotation_speed_controller"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -11.0d
+			x: 12.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["0B200FC34835FD43"]
@@ -311,8 +319,8 @@
 				item: "create:mechanical_arm"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -11.0d
+			x: 12.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["1FFBEDA1B43C6354"]
@@ -322,9 +330,49 @@
 				item: "create:chute"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -6.5d
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1FFBEDA1B43C6354"]
+			description: [
+				"An &aAndesite Tunnel&r will take incoming item stacks coming into it from a Belt, and send exactly 1 item off the stack to each Belt moving out of the Tunnel."
+				""
+				"&6Ponder&r this item to learn more about it."
+			]
+			id: "5B929E949A764616"
+			subtitle: "Splitting along the belt"
+			tasks: [{
+				id: "1AD7F8B1DC6FBAC5"
+				item: "create:andesite_tunnel"
+				type: "item"
+			}]
+			title: "Tunnels"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5B929E949A764616"
+				"2F1BDB52441FCA5A"
+			]
+			id: "2C44491A6129FA54"
+			tasks: [
+				{
+					id: "53083518214082E9"
+					item: "create:brass_funnel"
+					type: "item"
+				}
+				{
+					id: "21509B09C97E5215"
+					item: "create:brass_tunnel"
+					type: "item"
+				}
+			]
+			title: "Brass Logistics"
+			x: 9.0d
+			y: 0.0d
 		}
 	]
-	title: "Basics"
+	title: "Core Progression"
 }
