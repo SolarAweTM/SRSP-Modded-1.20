@@ -30,7 +30,7 @@
 		{
 			dependencies: ["05C90BF60E59F2F3"]
 			description: [
-				"Create also introduces a (VERY well-written) documentation platform it calls &aPonder&r."
+				"Create also introduces a (VERY well-written) documentation platform called &aPonder&r."
 				""
 				"&6While hovering over supported items in an inventory&r, hold W &7(default keybind)&r to open a &avisual guide&r explaining the item."
 				""
@@ -56,7 +56,7 @@
 			]
 			icon: "create:hand_crank"
 			id: "5937D8D676C5CDBA"
-			subtitle: "speen"
+			subtitle: "speeeeeen"
 			tasks: [{
 				id: "13DF81EC5C412C3E"
 				item: {
@@ -147,7 +147,7 @@
 				""
 				"&6Ponder&r this item to learn more."
 				""
-				"&o&7Note: The Andesite Funnel only performs operations 1 item at a time. There is a funnel that can remedy this.&r"
+				"&o&7Note: The Andesite Funnel only performs operations 1 item at a time. There is a funnel that can remedy this, and let it filter items.&r"
 			]
 			id: "1FFBEDA1B43C6354"
 			subtitle: "Getting your items INTO points A and B"
@@ -162,7 +162,16 @@
 		}
 		{
 			dependencies: ["3C924B08AD3A43C0"]
+			description: [
+				"The &aMillstone&r is a small device that can grind items into useful resources."
+				""
+				"It might even help you get a &6bit more out of each ore&r you mine!"
+				""
+				"&6Ponder&r this item to learn more about it."
+				"You can also use &6JEI&r to view recipes for the Millstone."
+			]
 			id: "5A36F0409C36879A"
+			subtitle: "The grind begins"
 			tasks: [{
 				id: "50EF1B66D4744B93"
 				item: "create:millstone"
@@ -173,8 +182,19 @@
 		}
 		{
 			dependencies: ["36430316693F14AF"]
+			description: [
+				"In order to craft some resources used for other contraptions in &6Create&r, you'll need some more advanced processing."
+				""
+				"The &aMechanical Press&r can be used to, well, &6press items into compacted forms&r, such as Plates, or Blocks."
+				""
+				"The &aMechanical Mixer&r can be used to &6mix items&r together. It can also &6craft any shapeless recipe&r, and later on, can &6brew potions&r."
+				""
+				"&6Ponder&r these items to learn more about them."
+				"You can also use &6JEI&r to find recipes for these items."
+			]
 			icon: "create:mechanical_press"
 			id: "252E8705B9375A6F"
+			subtitle: "Taking a hammer to things"
 			tasks: [{
 				id: "67187359B7FF8B3E"
 				item: {
@@ -309,7 +329,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: -2.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["0B200FC34835FD43"]
@@ -320,11 +340,17 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: -0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1FFBEDA1B43C6354"]
+			description: [
+				"The &aChute&r can be used to &6move items vertically&r between containers."
+				""
+				"&6Ponder&r this item to learn more about it."
+			]
 			id: "68C536FFD816AE69"
+			subtitle: "The cooler Hopper"
 			tasks: [{
 				id: "509081B48A0379FE"
 				item: "create:chute"
@@ -356,7 +382,18 @@
 				"5B929E949A764616"
 				"2F1BDB52441FCA5A"
 			]
+			description: [
+				"Now that you have access to &6Brass&r, you can make your Funnels and Tunnels much better!"
+				""
+				"&aBrass Funnels&r allow you to transfer up to 1 stack per operation, and can filter items."
+				""
+				"&aBrass Tunnels&r are a lot more advanced than their Andesite counterpart."
+				""
+				"&6Ponder&r these items to learn more about them."
+			]
+			icon: "create:brass_funnel"
 			id: "2C44491A6129FA54"
+			subtitle: "Getting what you WANT, WHERE you want it"
 			tasks: [
 				{
 					id: "53083518214082E9"
@@ -372,6 +409,17 @@
 			title: "Brass Logistics"
 			x: 9.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["2F1BDB52441FCA5A"]
+			id: "4EDF209588667ED8"
+			tasks: [{
+				id: "7640ACA5A11D779B"
+				item: "create:brass_casing"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -3.0d
 		}
 	]
 	title: "Core Progression"
