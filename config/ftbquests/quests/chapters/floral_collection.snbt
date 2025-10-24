@@ -554,7 +554,7 @@
 				""
 				"Through the process of the Game, any &aCellular Blocks that enter the 8 surrounding tiles&r of the flower will be turned into Mana, with varying amounts depending on the &aage of the Cellular Block&r."
 				""
-				"&6If you don't know what any of that means, please see the link to the right of this quest; it looks like this:&r"
+				"&6If you don't know what Conway's Game of Life is, please see the link to the right of this quest; it looks like this:&r"
 				"{image:everycomp:block/abnww/architects_palette/twisted_beehive_end width:25 height:25 align:left}"
 				"&6Alternatively, read this flower's entry in the Lexica Botania.&r"
 			]
@@ -1043,7 +1043,7 @@
 				"- Nether Gold Ore"
 				"- Ancient Debris"
 				""
-				"Note that the flower &amust still be placed on Grass&r."
+				"Note that the flower &amust still be placed on Grass&r, and only functions within the Nether."
 				""
 				"&cLike its Overworld counterpart, this flower is equally loud.&r"
 			]
