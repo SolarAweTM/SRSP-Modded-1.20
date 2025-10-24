@@ -125,7 +125,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["3C924B08AD3A43C0"]
+			dependencies: ["318F6B4FE91596C4"]
 			description: [
 				"&aBelts&r are a handy way to move items around in an orderly fashion."
 				""
@@ -141,7 +141,7 @@
 				type: "item"
 			}]
 			title: "Belts"
-			x: 4.0d
+			x: 5.0d
 			y: 0.0d
 		}
 		{
@@ -161,11 +161,11 @@
 				type: "item"
 			}]
 			title: "Funnels"
-			x: 5.0d
+			x: 6.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["3C924B08AD3A43C0"]
+			dependencies: ["318F6B4FE91596C4"]
 			description: [
 				"The &aMillstone&r is a small device that can grind items into useful resources."
 				""
@@ -181,7 +181,7 @@
 				item: "create:millstone"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 5.0d
 			y: 1.5d
 		}
 		{
@@ -245,11 +245,11 @@
 				item: "create:crushing_wheel"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 6.0d
 			y: 1.5d
 		}
 		{
-			dependencies: ["75465F72D3FADC01"]
+			dependencies: ["318F6B4FE91596C4"]
 			description: [
 				"Sometimes, you don't need (or want) to use a &aBelt&r for processing things."
 				""
@@ -404,7 +404,7 @@
 				item: "create:chute"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 7.0d
 			y: 1.5d
 		}
 		{
@@ -422,7 +422,7 @@
 				type: "item"
 			}]
 			title: "Tunnels"
-			x: 6.0d
+			x: 7.0d
 			y: 0.0d
 		}
 		{
@@ -460,7 +460,15 @@
 		}
 		{
 			dependencies: ["2F1BDB52441FCA5A"]
+			description: [
+				"Much like its Andesite counterpart, &aBrass Casing&r is created by &6right-clicking a Brass Ingot onto a Stripped Log&r (or Wood)."
+				""
+				"Also like its Andesite counterpart, it can be &6used as decoration&r and in Create's many contraptions."
+				""
+				"&6Ponder&r this item to learn more about it."
+			]
 			id: "4EDF209588667ED8"
+			subtitle: "Open and shut case"
 			tasks: [{
 				id: "7640ACA5A11D779B"
 				item: "create:brass_casing"
@@ -470,10 +478,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: [
-				"36430316693F14AF"
-				"28FEAB05A72D3920"
-			]
+			dependencies: ["28FEAB05A72D3920"]
 			description: [
 				"The &aSpout&r can be used alongside a Depot or Belt to &6fill items with liquids&r."
 				""
@@ -546,7 +551,7 @@
 				item: "create:hose_pulley"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 5.0d
 			y: -4.0d
 		}
 		{
@@ -621,6 +626,25 @@
 			title: "Sandpaper"
 			x: 11.0d
 			y: -3.0d
+		}
+		{
+			dependencies: ["3C924B08AD3A43C0"]
+			description: [
+				"By &6right clicking Andesite Alloy onto a Stripped Log&r (or Wood), you can create &aAndesite Casing&r, which can be used to craft many of Create's contraptions."
+				""
+				"It can also be &6used for decoration&r and more!"
+				""
+				"&6Ponder&r this item to learn more about it."
+			]
+			id: "318F6B4FE91596C4"
+			subtitle: "Case closed"
+			tasks: [{
+				id: "1E30B13D0A62742B"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
 		}
 	]
 	title: "Core Progression"
