@@ -1,4 +1,5 @@
 {
+	autofocus_id: "05C90BF60E59F2F3"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "basics"
@@ -17,6 +18,7 @@
 				"To start, you'll need &aAndesite Alloy&r. This is one of the basic materials used all over the mod."
 			]
 			id: "05C90BF60E59F2F3"
+			size: 2.0d
 			subtitle: "Making cool stuff with the power of rotation."
 			tasks: [{
 				id: "2438C44A61654F14"
@@ -24,7 +26,7 @@
 				type: "item"
 			}]
 			title: "Welcome to Create"
-			x: 0.0d
+			x: -1.0d
 			y: 0.0d
 		}
 		{
@@ -127,6 +129,8 @@
 			description: [
 				"&aBelts&r are a handy way to move items around in an orderly fashion."
 				""
+				"Processing machines will automatically hold items on a Belt in order to process them."
+				""
 				"&6Ponder&r this item to learn how to use this item."
 			]
 			id: "75465F72D3FADC01"
@@ -225,7 +229,17 @@
 		}
 		{
 			dependencies: ["5A36F0409C36879A"]
+			description: [
+				"The &aCrushing Wheels&r are a big step up from the Millstone, in &6more ways than one&r."
+				""
+				"It's able to &6process items much faster&r, and has some recipes exclusive to it."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+				""
+				"&cBe careful! It also possesses the ability to crush entities, including you.&r"
+			]
 			id: "35DD7D47B32B1FDD"
+			subtitle: "If Millstone is so good, why isn't there a-"
 			tasks: [{
 				id: "319D553FCD97FC6B"
 				item: "create:crushing_wheel"
@@ -276,26 +290,60 @@
 		}
 		{
 			dependencies: ["252E8705B9375A6F"]
+			description: [
+				"In order to process some things, you'll need more heat than fire (or lava). This is where the &aBlaze Burner&r comes in handy!"
+				""
+				"To start, you'll need to craft an &aEmpty Blaze Burner&r, and then &6capture a Blaze from the Nether by right clicking one&r (or a spawner) while holding the Burner."
+				""
+				"When given a &6Straw&r, the Blaze Burner will be able to accept &6liquid fuels&r."
+				""
+				"By default, the Burner provides little heat, but it can &6generate more&r when given fuel. &6Any Furnace fuel&r will do for now."
+				""
+				"Sometimes, you'll need &6more heat&r than that. That is where the &6Blaze Cake&r comes in, making a Burner &6superheated&r."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+				"You can also use &6JEI&r to learn how to craft a Blaze Cake."
+			]
+			icon: "create:blaze_burner"
 			id: "4F21D70BC00FFA8A"
-			tasks: [{
-				id: "40B2F1F827FF744E"
-				item: "create:empty_blaze_burner"
-				type: "item"
-			}]
+			subtitle: "Hang on, this is kinda heat"
+			tasks: [
+				{
+					id: "40B2F1F827FF744E"
+					item: "create:empty_blaze_burner"
+					type: "item"
+				}
+				{
+					id: "7D5F8F6FAB996F29"
+					item: "create:blaze_burner"
+					type: "item"
+				}
+			]
 			title: "Heated Processing"
 			x: 7.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["4F21D70BC00FFA8A"]
+			description: [
+				"Now that you can heat things up, you're able to make &aBronze&r."
+				""
+				"To do that, you can put &6Copper and Zinc&r in a Basin with a Mixer, and &6provide heat&r."
+				""
+				"You can use Bronze to make more &6advanced machines&r and &6improve your logistics&r."
+				""
+				"It can also be used for &6Silent Gear&r as a material."
+			]
 			id: "2F1BDB52441FCA5A"
+			size: 2.0d
+			subtitle: "Not to be confused with LeBron James"
 			tasks: [{
 				id: "25BDA7FA82A34D3A"
 				item: "create:brass_ingot"
 				type: "item"
 			}]
 			title: "The Brass Age"
-			x: 8.0d
+			x: 8.5d
 			y: -1.5d
 		}
 		{
@@ -317,7 +365,7 @@
 				item: "create:precision_mechanism"
 				type: "item"
 			}]
-			x: 11.0d
+			x: 12.0d
 			y: -1.5d
 		}
 		{
@@ -328,7 +376,7 @@
 				item: "create:rotation_speed_controller"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 13.0d
 			y: -3.0d
 		}
 		{
@@ -339,7 +387,7 @@
 				item: "create:mechanical_arm"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 13.0d
 			y: 0.0d
 		}
 		{
@@ -407,7 +455,7 @@
 				}
 			]
 			title: "Brass Logistics"
-			x: 9.0d
+			x: 9.5d
 			y: 0.0d
 		}
 		{
@@ -418,7 +466,160 @@
 				item: "create:brass_casing"
 				type: "item"
 			}]
-			x: 9.0d
+			x: 9.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"36430316693F14AF"
+				"28FEAB05A72D3920"
+			]
+			description: [
+				"The &aSpout&r can be used alongside a Depot or Belt to &6fill items with liquids&r."
+				""
+				"Spouts can only accept fluids that are &6pumped directly into it&r, you cannot use buckets."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+				"You can also use &6JEI&r to find recipes for this item."
+			]
+			id: "464DA75FA33C2760"
+			subtitle: "How Honey is Made"
+			tasks: [{
+				id: "66343A94FDCFB58F"
+				item: "create:spout"
+				type: "item"
+			}]
+			title: "Fluid Injection"
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3C924B08AD3A43C0"]
+			description: [
+				"Now that you know how to get your rotational force places, it's time you learned about how to get your &6liquids into places&r too."
+				""
+				"In order to use &aFluid Pipes&r, you have to &6pump them in a direction&r with the &aMechanical Pump&r, which is powered by &6rotational force&r."
+				""
+				"As for &aFluid Tanks&r, know that you &ccannot use buckets&r to interact with them - they must be piped into and out of."
+				""
+				"You can &6Ponder&r these items to learn more about them."
+			]
+			icon: "create:fluid_pipe"
+			id: "28FEAB05A72D3920"
+			subtitle: "metal pipe falling sound effect"
+			tasks: [
+				{
+					id: "7BFA9B26BA9654E6"
+					item: "create:fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "2DB40056AE01830E"
+					item: "create:mechanical_pump"
+					type: "item"
+				}
+				{
+					id: "461FDCB55DB8E422"
+					item: "create:fluid_tank"
+					type: "item"
+				}
+			]
+			title: "Fluid Logistics"
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["28FEAB05A72D3920"]
+			description: [
+				"Want an easy, automated way to get your contraptions access to &6infinite water&r? Then the &aHose Pulley&r is perfect for you!"
+				""
+				"When connected to a &6large enough body of liquid&r, it is able to &6pull fluids infinitely&r."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+				""
+				"&aPro tip:&r Try this in the Nether!"
+			]
+			id: "2717D9AC9583B0D8"
+			subtitle: "Infinite water source? The ocean."
+			tasks: [{
+				id: "6D7E3DE4E35940E7"
+				item: "create:hose_pulley"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["464DA75FA33C2760"]
+			description: [
+				"If you can fill items with Create, surely you're also able to drain them, too."
+				""
+				"The &aItem Drain&r is able to &6drain fluid containers&r and other items of their fluids, and those fluids can then be pumped elsewhere."
+				""
+				"You can use a bucket to &6put fluids in&r, but not to take fluids out."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			id: "3ECC860840DE7B9C"
+			subtitle: "How to Un-Make Honey"
+			tasks: [{
+				id: "5575017F99E8835D"
+				item: "create:item_drain"
+				type: "item"
+			}]
+			title: "Fluid Drainage"
+			x: 7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7C140D80711A3674"]
+			icon: {
+				Count: 1
+				id: "create:sand_paper"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1A299549A8E82947"
+			tasks: [{
+				id: "438E164AE57993C6"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any of the following\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "create:sand_paper"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "create:red_sand_paper"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "createaddition:diamond_grit_sandpaper"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Sandpaper"
+			x: 11.0d
 			y: -3.0d
 		}
 	]
