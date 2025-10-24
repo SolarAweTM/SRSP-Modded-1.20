@@ -83,6 +83,24 @@ ServerEvents.recipes(event => {
 	//blasting
 	event.blasting('silentgear:crimson_iron_ingot', 'kubejs:crushed_raw_crimson_iron').xp(0.1).cookingTime(100)
 	event.blasting('silentgear:azure_silver_ingot', 'kubejs:crushed_raw_azure_silver').xp(0.1).cookingTime(100)
+	//recreate the precision mechanism recipe with one that doesnt fail
+	event.remove({id:'create:sequenced_assembly/precision_mechanism'})
+	event.recipes.create.sequenced_assembly(
+		//outputs
+		[
+			Item.of('create:precision_mechanism').withChance(130), //output(s)
+		],
+		//input
+		'create:golden_sheet', 
+		//sequence
+		[
+			event.recipes.create.deploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', 'create:cogwheel',]),
+			event.recipes.create.deploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', 'create:large_cogwheel',]),
+			event.recipes.create.deploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', 'minecraft:iron_nugget',]),
+		]
+    )
+    .transitionalItem('create:incomplete_precision_mechanism') //transitional item
+    .loops(5) //loop count
 })
 
 ServerEvents.tags('item', event => {
