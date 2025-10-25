@@ -1,6 +1,6 @@
 // priority: 0
 
-console.info('-KubeJS- Ars Nouveau Enchanting Apparatus server script loaded.')
+console.info('-KubeJS- Ars Nouveau server script loaded.')
 // requires: kubejsarsnouveau
 ServerEvents.recipes(event => {
   //holy shit ars nouveau PLEASE group your recipes - these are for the enchanting apparatus
@@ -152,6 +152,7 @@ ServerEvents.recipes(event => {
         100,
         []
     )
+	/* // may add back at a later time idk
 	event.recipes.ars_nouveau.enchanting_apparatus(
         ['minecraft:iron_ingot'], // input items
         'ars_nouveau:source_gem', // reagent
@@ -159,6 +160,7 @@ ServerEvents.recipes(event => {
         1000, // source cost
         true // keep nbt of reagent
     )
+	*/
 	// replace the battlemage armor recipe with a netherite equivalent
 	event.remove({id:'ars_nouveau:battlemage_hood'})
 	event.remove({id:'ars_nouveau:battlemage_robes'})

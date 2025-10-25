@@ -6,7 +6,9 @@ console.info('-KubeJS- Main startup script loaded.')
 
 StartupEvents.registry('item', event => {
 	// Create the source ingot
+	/* Uncreate the source ingot
 	event.create('source_ingot').texture('srsp:item/source_ingot').tag('ingots/source').tooltip("§8yep, it's an ingot now.")
+	*/
 	// 
 	event.create('skibidi_hawk_tuah').texture('kubejs:item/example_item')
 	// Smithing templates
