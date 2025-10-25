@@ -1,4 +1,5 @@
 {
+	autofocus_id: "50FF774BEF232E50"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "misc"
@@ -7,6 +8,35 @@
 	id: "4AB877F055889DB4"
 	order_index: 3
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["50FF774BEF232E50"]
+			id: "7E5E335541331112"
+			tasks: [{
+				id: "34BE1585992AB19F"
+				item: "create:mechanical_arm"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["05C90BF60E59F2F3"]
+			description: [
+				"This chapter of quests about Create covers things that &6aren't particularly necssary&r, but &6could prove useful&r with enough thinking."
+				""
+				"This chapter is intended to &6supplement the Core Progression&r chapter, so it won't adhere to any progression itself."
+			]
+			id: "50FF774BEF232E50"
+			size: 2.0d
+			tasks: [{
+				id: "4FBF73CD2ED0B900"
+				title: "Create: Misc"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+	]
 	title: "Misc"
 }
