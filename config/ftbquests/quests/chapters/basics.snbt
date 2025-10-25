@@ -191,7 +191,7 @@
 				""
 				"The &aMechanical Press&r can be used to, well, &6press items into compacted forms&r, such as Plates, or Blocks."
 				""
-				"The &aMechanical Mixer&r can be used to &6mix items&r together. It can also &6craft any shapeless recipe&r, and later on, can &6brew potions&r."
+				"The &aMechanical Mixer&r can be used to &6mix items in a Basin&r together. It can also &6craft any shapeless recipe&r, and later on, can &6brew potions&r."
 				""
 				"&6Ponder&r these items to learn more about them."
 				"You can also use &6JEI&r to find recipes for these items."
@@ -348,46 +348,57 @@
 		}
 		{
 			dependencies: ["2F1BDB52441FCA5A"]
+			description: [
+				"The &aDeployer&r is able to &6mimic player right- and left-click actions&r, and can be filtered."
+				""
+				"&6Right click the hand&r to put an item into it, acting as the held item."
+				""
+				"&6Right click the hand while holding a Wrench&r &7(from Create)&r to toggle its behaviour. By default, it mimics a right-click action."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
 			id: "7C140D80711A3674"
+			subtitle: "Poking the bear"
 			tasks: [{
 				id: "28E1FD8E01DE7DB2"
 				item: "create:deployer"
 				type: "item"
 			}]
-			x: 10.0d
-			y: -1.5d
+			x: 10.5d
+			y: 0.0d
 		}
 		{
-			dependencies: ["7C140D80711A3674"]
+			dependencies: ["3B7819CB4710211B"]
+			description: [
+				"As you learned from the &6previous quest&r, the &aPrecision Mechanism&r requires the use of &6Sequenced Assembly&r to obtain."
+				""
+				"From the work put into it, you can make a couple &6really useful blocks and items&r to help."
+			]
 			id: "0B200FC34835FD43"
+			subtitle: "this thing is probably just a pocket watch"
 			tasks: [{
 				id: "722F091F1C2FDD6C"
 				item: "create:precision_mechanism"
 				type: "item"
 			}]
-			x: 12.0d
-			y: -1.5d
+			x: 13.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["0B200FC34835FD43"]
+			description: [
+				"With a &aRotation Speed Controller&r, you can &6manually set the speed&r of Rotational Force by using a &6Large Cogwheel&r."
+				""
+				"&cNote that while the speed can increase, the stress capacity does not.&r"
+			]
 			id: "3AA46C67E835763B"
+			subtitle: "Fast"
 			tasks: [{
 				id: "651311965D881E24"
 				item: "create:rotation_speed_controller"
 				type: "item"
 			}]
-			x: 13.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["0B200FC34835FD43"]
-			id: "7E5E335541331112"
-			tasks: [{
-				id: "34BE1585992AB19F"
-				item: "create:mechanical_arm"
-				type: "item"
-			}]
-			x: 13.0d
+			x: 15.0d
 			y: 0.0d
 		}
 		{
@@ -455,7 +466,7 @@
 				}
 			]
 			title: "Brass Logistics"
-			x: 9.5d
+			x: 9.0d
 			y: 0.0d
 		}
 		{
@@ -577,57 +588,6 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["7C140D80711A3674"]
-			icon: {
-				Count: 1
-				id: "create:sand_paper"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "1A299549A8E82947"
-			tasks: [{
-				id: "438E164AE57993C6"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						RepairCost: 0
-						display: {
-							Name: "{\"text\":\"Any of the following\"}"
-						}
-						items: [
-							{
-								Count: 1b
-								id: "create:sand_paper"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "create:red_sand_paper"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "createaddition:diamond_grit_sandpaper"
-								tag: {
-									Damage: 0
-								}
-							}
-						]
-					}
-				}
-				type: "item"
-			}]
-			title: "Sandpaper"
-			x: 11.0d
-			y: -3.0d
-		}
-		{
 			dependencies: ["3C924B08AD3A43C0"]
 			description: [
 				"By &6right clicking Andesite Alloy onto a Stripped Log&r (or Wood), you can create &aAndesite Casing&r, which can be used to craft many of Create's contraptions."
@@ -645,6 +605,147 @@
 			}]
 			x: 4.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["7C140D80711A3674"]
+			description: [
+				"Now that you've built some machines to process things, it's time to use them in tandem to &6make even greater things&r."
+				""
+				"&aSequenced Assembly&r involves starting a &6process&r, and then &6continuing to apply items&r through various machines to eventually &6reach a result&r."
+				""
+				"For example, let's look at the recipe for the &6Precision Mechanism&r, for the next quest, on the next page."
+				"{@pagebreak}"
+				"{image:srsp:textures/ftbquests/precision_mechanism_recipe.png width:200 height:135 align:center}"
+				""
+				"&61.&r This is the input item which you will start the sequence with."
+				""
+				"&62.&r This is the end result of the sequence."
+				""
+				"&63.&r These are the items required for the sequence, in the order the recipe expects."
+				""
+				"&64.&r These are the processes required to apply with the aforementioned items. You can hover over these to see the steps."
+				""
+				"&65.&r This is how many times this process has to be looped in order to get the result item."
+				"If no loop count is provided, it only has to be done once."
+				""
+				"Continue onto the next page for more info."
+				"{@pagebreak}"
+				"A &aSequenced Assembly&r can be done &6on a Belt, or done manually&r by putting items on Depots. As long as the item gets processed in the correct order, how it gets to the next step doesn't matter."
+				""
+				"These are &6both valid setups&r for a &6single loop&r of the Precision Mechanism recipe."
+				"{image:srsp:textures/ftbquests/precision_mechanism_belt_demo.png width:192 height:108 align:center}"
+				"{image:srsp:textures/ftbquests/precision_mechanism_depot_demo.png width:192 height:108 align:center}"
+				""
+				"Continue onto the next page to see some more info."
+				"{@pagebreak}"
+				"Ideally, the &6first photo&r would have its process loop, so that it can &6complete the entire recipe&r automatically."
+				""
+				"In the &6second photo&r, you would manually use a &6Hand Crank on the Deployer&r, and &6change out its item&r according to the recipe. This is probably the &6minimum setup&r required to build a Precision Mechanism."
+			]
+			id: "3B7819CB4710211B"
+			subtitle: "A long read, but this is important!"
+			tasks: [{
+				id: "5B4F2E44A5643A2A"
+				title: "Read all the pages!"
+				type: "checkmark"
+			}]
+			title: "Sequenced Assembly"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5937D8D676C5CDBA"]
+			description: [
+				"As you experiment with &6Rotational Force&r, you'll need to understand &6two key concepts&r that will come in handy."
+				""
+				"&6Stress&r is treated as the &6\"maximum capacity\"&r of Rotational Force, measured in &6su&r &7(stress units)&r. If you exceed this by connecting too many kinetic appliances, &cyour kinetic source will lock up&r."
+				""
+				"&6Speed&r is well, the speed of Rotational Force, measured in &6RPM&r &7(revolutions per minute)&r. Generally, the &6higher Speed&r that a kinetic appliance runs at, the &6more Stress&r it will cause on your kinetic source."
+				""
+				"In order to better measure this, you can use &aEngineer's Goggles&r to directly view these stats while looking at compatible kinetic devices."
+				"If you want it in block form, you can also try using &aSpeedometers and Stressometers&r."
+			]
+			icon: "create:goggles"
+			id: "0A32F6B649916373"
+			tasks: [
+				{
+					id: "60515A522E00F875"
+					item: "create:goggles"
+					type: "item"
+				}
+				{
+					id: "7306092F2D144C65"
+					item: "create:speedometer"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5787C3C9E367AF92"
+					item: "create:stressometer"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Speed and Stress"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2F1BDB52441FCA5A"]
+			description: [
+				"The &aMechanical Crafter&r can be used to &6automatically craft&r any crafting recipe."
+				""
+				"It can also be used to make &6recipes that wouldn't normally fit&r in a crafting grid; just arrange them in the &6correct shape&r!"
+				""
+				"You can &6Ponder&r this item to learn more about it. &cI highly recommend reading all of the Ponder pages for this one.&r"
+			]
+			id: "1CBEC7914DA3FCB2"
+			subtitle: "The cooler autocrafting"
+			tasks: [{
+				id: "7CBF7E5FBA2111D3"
+				item: "create:mechanical_crafter"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5937D8D676C5CDBA"]
+			description: ["These are some &aKinetic Sources&r that may take &6a bit more effort&r to get to or to set up, but often provide &6increased stress capacity&r."]
+			icon: "create:windmill_bearing"
+			id: "3763D2B2C1E42024"
+			subtitle: "Better speeeeeen"
+			tasks: [{
+				id: "1087B93EB545819C"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Advanced Kinetic Source\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "create:windmill_bearing"
+							}
+							{
+								Count: 1b
+								id: "create:steam_engine"
+							}
+							{
+								Count: 1b
+								id: "createaddition:electric_motor"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Advanced Kinetic Sources"
+			x: 3.0d
+			y: -1.5d
 		}
 	]
 	title: "Core Progression"
