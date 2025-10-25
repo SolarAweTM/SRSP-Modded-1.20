@@ -18,6 +18,12 @@
 				"To start, you'll need &aAndesite Alloy&r. This is one of the basic materials used all over the mod."
 			]
 			id: "05C90BF60E59F2F3"
+			rewards: [{
+				count: 4
+				id: "04C1E588D3DB3F80"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
 			size: 2.0d
 			subtitle: "Making cool stuff with the power of rotation."
 			tasks: [{
@@ -102,6 +108,20 @@
 			]
 			icon: "create:cogwheel"
 			id: "3C924B08AD3A43C0"
+			rewards: [
+				{
+					count: 4
+					id: "18C0C2EC1CAABE88"
+					item: "create:shaft"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "14D0D0D77B9C6075"
+					item: "create:cogwheel"
+					type: "item"
+				}
+			]
 			subtitle: "Getting your rotational force from point A to point B"
 			tasks: [
 				{
@@ -129,11 +149,17 @@
 			description: [
 				"&aBelts&r are a handy way to move items around in an orderly fashion."
 				""
-				"Processing machines will automatically hold items on a Belt in order to process them."
+				"Processing machines will automatically &6hold items on a Belt&r in order to process them."
 				""
 				"&6Ponder&r this item to learn how to use this item."
 			]
 			id: "75465F72D3FADC01"
+			rewards: [{
+				count: 2
+				id: "125005221324C6A7"
+				item: "create:belt_connector"
+				type: "item"
+			}]
 			subtitle: "Getting your items from point A to point B, with rotational force"
 			tasks: [{
 				id: "4255D75A3D2E5B78"
@@ -306,6 +332,12 @@
 			]
 			icon: "create:blaze_burner"
 			id: "4F21D70BC00FFA8A"
+			rewards: [{
+				count: 2
+				id: "7CB3E386C613766D"
+				item: "create:blaze_cake"
+				type: "item"
+			}]
 			subtitle: "Hang on, this is kinda heat"
 			tasks: [
 				{
@@ -597,6 +629,12 @@
 				"&6Ponder&r this item to learn more about it."
 			]
 			id: "318F6B4FE91596C4"
+			rewards: [{
+				count: 4
+				id: "3F6F4BFBE8DB2760"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
 			subtitle: "Case closed"
 			tasks: [{
 				id: "1E30B13D0A62742B"
@@ -746,6 +784,26 @@
 			title: "Advanced Kinetic Sources"
 			x: 3.0d
 			y: -1.5d
+		}
+		{
+			dependencies: [
+				"28FEAB05A72D3920"
+				"2F1BDB52441FCA5A"
+			]
+			description: [
+				"The &aSmart Fluid Pipe&r has the &6ability to filter&r which fluids can pass through it."
+				""
+				"&6Ponder&r this item to learn more about it."
+			]
+			id: "183530ECAAA33879"
+			subtitle: "Now you're thinking with pipes"
+			tasks: [{
+				id: "573B9D5EEAF8C663"
+				item: "create:smart_fluid_pipe"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -4.0d
 		}
 	]
 	title: "Core Progression"

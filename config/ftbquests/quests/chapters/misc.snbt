@@ -11,7 +11,13 @@
 	quests: [
 		{
 			dependencies: ["50FF774BEF232E50"]
+			description: [
+				"The &aMechanical Arm&r can be used as an alternative to traditional logistics like Belts."
+				""
+				"&6Ponder&r this item to learn how to use it."
+			]
 			id: "7E5E335541331112"
+			subtitle: "Ultra Hand, Extendo Grip, etc."
 			tasks: [{
 				id: "34BE1585992AB19F"
 				item: "create:mechanical_arm"
@@ -36,6 +42,394 @@
 			}]
 			x: -1.0d
 			y: -1.0d
+		}
+		{
+			dependencies: ["50FF774BEF232E50"]
+			description: [
+				"&aSuper Glue&r is an &6essential component&r in creating moving contraptions, as it &6allows blocks to be connected&r to one another."
+				""
+				"&6Ponder&r this item to learn how to use it."
+			]
+			id: "294BBFFDC374897D"
+			rewards: [{
+				id: "1ACD76F6EAD1CDE0"
+				item: {
+					Count: 1
+					id: "create:super_glue"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2962A3A9AA72EED5"
+				item: {
+					Count: 1
+					id: "create:super_glue"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["294BBFFDC374897D"]
+			description: [
+				"&aMoving Contraptions&r can be made a variety of ways with Create. It effectively turns &6blocks into entities&r, while retaining some functions."
+				""
+				"Generally, moving contraptions can only be &6modified when they are stationary&r and have been converted back into block form."
+				""
+				"Compatible &6inventories&r &7(like vanilla Chests)&r &6will act as storage&r for the contraption, and kinetic appliances attached to the contraption &6will pull from and push into&r that storage."
+				""
+				"In order to move, most blocks must be attacked to a contraption using &6Super Glue&r."
+			]
+			id: "5083CEA54727E68D"
+			tasks: [{
+				id: "135AF6E71333B0A4"
+				title: "Checkmark"
+				type: "checkmark"
+			}]
+			title: "Intro to Moving Contraptions"
+			x: 1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5083CEA54727E68D"]
+			description: [
+				"The &aMechanical Drill&r will, on its own, &6drill through the block directly in front of it&r. Faster RPM means &6more mining speed&r."
+				""
+				"However, as part of a moving contraption, it can &6mine blocks in its path&r."
+				""
+				"If storage is available, it will put the drops into storage."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			id: "2050D598FF07536A"
+			tasks: [{
+				id: "64D315E9EB26C654"
+				item: "create:mechanical_drill"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5083CEA54727E68D"]
+			description: [
+				"In addition to having uses as a processing machine, the &aMechanical Saw&r can &6cut down trees&r directly in front of it."
+				""
+				"When part of a moving contraption, it will &6cut down trees in its path&r."
+				""
+				"If storage is available, it will put the resulting items into storage."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			id: "304270E80B04E5A2"
+			tasks: [{
+				id: "666969A94F09E498"
+				item: "create:mechanical_saw"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5083CEA54727E68D"]
+			description: [
+				"The &aMechanical Harvester&r, when part of a moving contraption, will &6harvest and replant mature crops&r in its path."
+				""
+				"If storage is available, it will put the drops into storage."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			id: "087F3AD7686DEDAB"
+			tasks: [{
+				id: "4E259085FC89E708"
+				item: "create:mechanical_harvester"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5083CEA54727E68D"]
+			description: [
+				"&aMechanical Pistons&r can &6push blocks&r. Crazy, I know."
+				""
+				"By default, they &6won't be able to push anything&r due to not having any extensions. &6Attaching extensions to the back&r allows it to push blocks &6as far as how many extensions&r are attached."
+				""
+				"Naturally, Mechanical Sticky Pistons can &6push and pull&r."
+				""
+				"When being affected by a Mechanical Piston, &6affected blocks are turned into a moving contraption&r."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			icon: "create:mechanical_piston"
+			id: "542CE5D3801CB0C2"
+			tasks: [
+				{
+					id: "550190F3F71681A2"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any of the following\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "create:mechanical_piston"
+								}
+								{
+									Count: 1b
+									id: "create:sticky_mechanical_piston"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "70793D438E419F71"
+					item: "create:piston_extension_pole"
+					type: "item"
+				}
+			]
+			title: "Mechanical Pistons"
+			x: 3.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5083CEA54727E68D"]
+			description: [
+				"&aGantry Shafts and Carriages&r can be used to move things around &6along one or more axes&r."
+				""
+				"You can &6Ponder&r these items to learn how to use them."
+			]
+			icon: "create:gantry_shaft"
+			id: "79873CDEF9B67320"
+			tasks: [
+				{
+					id: "1D28A82A2E4F07C1"
+					item: "create:gantry_carriage"
+					type: "item"
+				}
+				{
+					id: "7AD4907681B41D14"
+					item: "create:gantry_shaft"
+					type: "item"
+				}
+			]
+			title: "Gantry Shaft \\& Carriage"
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5083CEA54727E68D"]
+			description: [
+				"The &aPortable Interfaces&r allow automation &6access to a moving contraption's inventories, tanks, and batteries&r."
+				""
+				"&6Ponder&r these items to learn how to use it."
+			]
+			icon: "create:portable_storage_interface"
+			id: "0D2248AC5E7A98AE"
+			subtitle: "a portable portable portable device"
+			tasks: [{
+				id: "483ABEF0407C92FD"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any of the following\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "create:portable_storage_interface"
+							}
+							{
+								Count: 1b
+								id: "create:portable_fluid_interface"
+							}
+							{
+								Count: 1b
+								id: "createaddition:portable_energy_interface"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Portable Interfaces"
+			x: 2.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["5083CEA54727E68D"]
+			description: [
+				"The &aRope Pulley&r can move blocks vertically."
+				""
+				"&6Multiple Pulleys&r lined up over one connected set of blocks will &6aesthetically and automatically attach&r to the set of blocks once one of the pulleys attaches."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			id: "75172BDEAC2BD2F8"
+			tasks: [{
+				id: "5A2FAA4AFAAA81BB"
+				item: "create:rope_pulley"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["5083CEA54727E68D"]
+			description: [
+				"The &aElevator Pulley&r is used to construct and operate elevators."
+				""
+				"You can &6Ponder&r this item to learn how to use it."
+			]
+			id: "6572F2E7AAE79744"
+			tasks: [{
+				id: "33FC217D882A0DD7"
+				item: "create:elevator_pulley"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5083CEA54727E68D"]
+			description: [
+				"The &aMechanical Bearing&r will take attached blocks, and, given Rotational Force, &6turn them into a moving contraption&r."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			id: "4A681CF9970E071D"
+			tasks: [{
+				id: "7D423EBBB2113770"
+				item: "create:mechanical_bearing"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5083CEA54727E68D"]
+			description: [
+				"The &aClockwork Bearing&r will take attached blocks, and given Rotational Force, &6turn them into a moving contraption&r."
+				""
+				"This is different from the &6Mechanical Bearing&r, because the moving contraption will always be &6turned according to the current in-game hour&r."
+				""
+				"You can &6Ponder&r this item to learn more about it, including how to have it &6show minutes&r as well."
+			]
+			id: "6A2827A5A933A556"
+			tasks: [{
+				id: "5D7280A7785D9E3D"
+				item: "create:clockwork_bearing"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5083CEA54727E68D"]
+			description: [
+				"The &aCart Assembler&r will take an attached block or set of blocks, and &6attach them as a moving contraption to a Minecart&r that happens to pass through it &6when given a Redstone signal&r."
+				""
+				"&6Without a signal&r, the Assembler will &6instead detach a moving contraption&r that is on a Minecart."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			id: "12DB2B6A13DB813F"
+			tasks: [{
+				id: "01F8ADC08A2ED1A4"
+				item: "create:cart_assembler"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5083CEA54727E68D"]
+			description: [
+				"The &aLinear and Radial Chassis&r are blocks that can attach to other Chassis of the &6exact same type and direction&r without the need of Super Glue."
+				""
+				"You can use a &6Slimeball&r to &6toggle stickiness&r on an open face."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			icon: "create:linear_chassis"
+			id: "1F10C6443A9C1A79"
+			tasks: [{
+				id: "50C1EEC2034BDDF7"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any of the following\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "create:linear_chassis"
+							}
+							{
+								Count: 1b
+								id: "create:secondary_linear_chassis"
+							}
+							{
+								Count: 1b
+								id: "create:radial_chassis"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Linear \\& Radial Chassis"
+			x: 3.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["5083CEA54727E68D"]
+			description: ["The Sticker, when given a Redstone signal, will attach the block right in front of it to itself."]
+			id: "0040A3CA218EBE2D"
+			tasks: [{
+				id: "0CBED0AABA34302F"
+				item: "create:sticker"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["5083CEA54727E68D"]
+			description: [
+				"&aContraption Controls&r can be used in a moving contraption to &6toggle behaviours of attached devices&r, such as drills and harvesters."
+				""
+				"They can also be used alongside an &6Elevator Pulley&r to select a floor."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			id: "58D967380B2A45C9"
+			tasks: [{
+				id: "4248C1932CF1B7DF"
+				item: "create:contraption_controls"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -6.5d
 		}
 	]
 	title: "Misc"
