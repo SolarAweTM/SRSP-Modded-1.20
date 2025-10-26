@@ -32,6 +32,8 @@
 				"This chapter of quests about Create covers things that &6aren't particularly necssary&r, but &6could prove useful&r with enough thinking."
 				""
 				"This chapter is intended to &6supplement the Core Progression&r chapter, so it won't adhere to any progression itself."
+				""
+				"&eCheck back often to see if there's anything interesting you can make!&r"
 			]
 			id: "50FF774BEF232E50"
 			size: 2.0d
@@ -403,7 +405,15 @@
 		}
 		{
 			dependencies: ["5083CEA54727E68D"]
-			description: ["The Sticker, when given a Redstone signal, will attach the block right in front of it to itself."]
+			description: [
+				"The &aSticker&r, when given a Redstone pulse, will &6attach the block&r right in front of it to itself."
+				""
+				"The &6next time it is given a Redstone pulse&r, it will &6detach&r the block."
+				""
+				"This can be used to &6move a contraption&r."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
 			id: "0040A3CA218EBE2D"
 			tasks: [{
 				id: "0CBED0AABA34302F"
