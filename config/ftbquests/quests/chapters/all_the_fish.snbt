@@ -1,4 +1,5 @@
 {
+	autofocus_id: "731FDD0F1538B688"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "all_the_fish"
@@ -7,6 +8,945 @@
 	id: "59A9D955FA15455A"
 	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			id: "3C035697E9D834CB"
+			tasks: [
+				{
+					disable_toast: true
+					id: "3D3A692C514B463C"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Raw Cod\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "minecraft:cod_bucket"
+								}
+								{
+									Count: 1b
+									id: "minecraft:cod"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "1FF9396F9A26945E"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Raw Salmon\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "minecraft:salmon_bucket"
+								}
+								{
+									Count: 1b
+									id: "minecraft:salmon"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "6D102A16368BDE0D"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Tropical Fish\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "minecraft:tropical_fish_bucket"
+								}
+								{
+									Count: 1b
+									id: "minecraft:tropical_fish"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "12DCC541FEF3672E"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Pufferfish\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "minecraft:pufferfish_bucket"
+								}
+								{
+									Count: 1b
+									id: "minecraft:pufferfish"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "441BCB43F45BE9BB"
+					item: "minecraft:axolotl_bucket"
+					type: "item"
+				}
+			]
+			title: "All the Vanilla Fish"
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			id: "5963903B7964EA37"
+			tasks: [
+				{
+					disable_toast: true
+					id: "5F8AFC919121CEB7"
+					item: "fintastic:artemia_bucket"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "32608B2A9314B692"
+					item: "fintastic:minnow_bucket"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "480C6282577C0DB5"
+					item: "fintastic:catfish_bucket"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "37A76FB2D0E15D03"
+					item: "fintastic:daphnia_bucket"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "6FD83B380C78FF90"
+					item: "fintastic:featherback_bucket"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "345A84861F06ED57"
+					item: "fintastic:freshwater_shark_bucket"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "7804ED37621B1D76"
+					item: "fintastic:guppy_bucket"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "2EC68BD3494C5573"
+					item: "fintastic:pleco_bucket"
+					type: "item"
+				}
+			]
+			title: "All the Fintastic Fish"
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			id: "6501A7C3F0271F41"
+			tasks: [
+				{
+					disable_toast: true
+					id: "31D7E2E31FB50320"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Koi Fish\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "crittersandcompanions:koi_fish_bucket"
+								}
+								{
+									Count: 1b
+									id: "crittersandcompanions:koi_fish"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "44E3F6B8F86266FA"
+					item: "crittersandcompanions:dumbo_octopus_bucket"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "74D54AFD75E30F6A"
+					item: "crittersandcompanions:sea_bunny_bucket"
+					type: "item"
+				}
+			]
+			title: "All the Critters \\& Companions Fish"
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			id: "731FDD0F1538B688"
+			size: 2.0d
+			tasks: [
+				{
+					id: "404990776FC91430"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Arapaima\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "aquaculture:arapaima_bucket"
+								}
+								{
+									Count: 1b
+									id: "aquaculture:arapaima"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1E4C1E72E23A40F7"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Piranha\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "aquaculture:piranha_bucket"
+								}
+								{
+									Count: 1b
+									id: "aquaculture:piranha"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0CCC53C8B8826A2D"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Tambaqui\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "aquaculture:tambaqui_bucket"
+								}
+								{
+									Count: 1b
+									id: "aquaculture:tambaqui"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "402C1F90F0542009"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Brown Shrooma\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "aquaculture:brown_shrooma_bucket"
+								}
+								{
+									Count: 1b
+									id: "aquaculture:brown_shrooma"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "30654717301A7722"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Red Shrooma\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "aquaculture:red_shrooma_bucket"
+								}
+								{
+									Count: 1b
+									id: "aquaculture:red_shrooma"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "04C4771398ED2851"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Red Grouper\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "aquaculture:red_grouper_bucket"
+								}
+								{
+									Count: 1b
+									id: "aquaculture:red_grouper"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "553EDB115BF280F4"
+					item: "aquaculture:jellyfish_bucket"
+					type: "item"
+				}
+				{
+					id: "1A77BA419C9F7F5D"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Tuna\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "aquaculture:tuna_bucket"
+								}
+								{
+									Count: 1b
+									id: "aquaculture:tuna"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0BCD0913782FCEC5"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Atlantic Cod\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "aquaculture:atlantic_cod_bucket"
+								}
+								{
+									Count: 1b
+									id: "aquaculture:atlantic_cod"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5A67424300D41AD4"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Blackfish\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "aquaculture:blackfish_bucket"
+								}
+								{
+									Count: 1b
+									id: "aquaculture:blackfish"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "75ABB0BCFC8206D5"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Pacific Halibut\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "aquaculture:pacific_halibut_bucket"
+								}
+								{
+									Count: 1b
+									id: "aquaculture:pacific_halibut"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2400DCC9CEDE6B19"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Atlantic Halibut\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "aquaculture:atlantic_halibut_bucket"
+								}
+								{
+									Count: 1b
+									id: "aquaculture:atlantic_halibut"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "245B090B616EE4E3"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Atlantic Herring\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "aquaculture:atlantic_herring_bucket"
+								}
+								{
+									Count: 1b
+									id: "aquaculture:atlantic_herring"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5FDDC3B481220426"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Pink Salmon\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "aquaculture:pink_salmon_bucket"
+								}
+								{
+									Count: 1b
+									id: "aquaculture:pink_salmon"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2860CE29812D865D"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Pollock\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "aquaculture:pollock_bucket"
+								}
+								{
+									Count: 1b
+									id: "aquaculture:pollock"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5262B18716D69151"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Rainbow Trout\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "aquaculture:rainbow_trout_bucket"
+								}
+								{
+									Count: 1b
+									id: "aquaculture:rainbow_trout"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3304D8E46EE7E880"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Bayad\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "aquaculture:bayad_bucket"
+								}
+								{
+									Count: 1b
+									id: "aquaculture:bayad"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6940F1BE657E747D"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Boulti\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "aquaculture:boulti_bucket"
+								}
+								{
+									Count: 1b
+									id: "aquaculture:boulti"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7DA96F0A17BCACF5"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Capitane\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "aquaculture:capitaine_bucket"
+								}
+								{
+									Count: 1b
+									id: "aquaculture:capitaine"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "59EA9AF55668AC03"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Syodontis\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "aquaculture:synodontis_bucket"
+								}
+								{
+									Count: 1b
+									id: "aquaculture:synodontis"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3954B42CA7EF12B2"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Smallmouth Bass\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "aquaculture:smallmouth_bass_bucket"
+								}
+								{
+									Count: 1b
+									id: "aquaculture:smallmouth_bass"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "49AACEBA6933AB5E"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Bluegill\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "aquaculture:bluegill_bucket"
+								}
+								{
+									Count: 1b
+									id: "aquaculture:bluegill"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2969807C6B4FCC2A"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Brown Trout\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "aquaculture:brown_trout_bucket"
+								}
+								{
+									Count: 1b
+									id: "aquaculture:brown_trout"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4B3B64D2E18A6D68"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Carp\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "aquaculture:carp_bucket"
+								}
+								{
+									Count: 1b
+									id: "aquaculture:carp"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "621F9A902B751A25"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Catfish\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "aquaculture:catfish_bucket"
+								}
+								{
+									Count: 1b
+									id: "aquaculture:catfish"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "77F725A2CBF70F88"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Gar\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "aquaculture:gar_bucket"
+								}
+								{
+									Count: 1b
+									id: "aquaculture:gar"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3EF9E284F8B9225C"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Minnow\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "aquaculture:minnow_bucket"
+								}
+								{
+									Count: 1b
+									id: "aquaculture:minnow"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6682D49E0A3C0498"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Muskellunge\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "aquaculture:muskellunge_bucket"
+								}
+								{
+									Count: 1b
+									id: "aquaculture:muskellunge"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "29F5A9B51B3F8B28"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Perch\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "aquaculture:perch_bucket"
+								}
+								{
+									Count: 1b
+									id: "aquaculture:perch"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "All of Aquaculture"
+			x: 0.5d
+			y: -2.0d
+		}
+		{
+			id: "76B3E1391452ED28"
+			tasks: [{
+				id: "44F82FB8A573C22C"
+				item: "quark:crab_bucket"
+				type: "item"
+			}]
+			title: "Crab"
+			x: 0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"3C035697E9D834CB"
+				"5963903B7964EA37"
+				"6501A7C3F0271F41"
+				"731FDD0F1538B688"
+				"76B3E1391452ED28"
+			]
+			description: ["&dCollect or catch every kind of fish in this world.&r"]
+			hide_dependency_lines: true
+			id: "0C168363A74CED35"
+			size: 3.0d
+			tasks: [{
+				dimension: "minecraft:overworld"
+				icon: "aquaculture:neptunes_bounty"
+				id: "05623C3D9225B5F7"
+				title: "Complete all Dependency Quests"
+				type: "dimension"
+			}]
+			title: "All The Fish"
+			x: 0.5d
+			y: -5.5d
+		}
+	]
 	title: "All The Fish"
 }

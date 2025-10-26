@@ -56,7 +56,7 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
+			x: 1.5d
 			y: -1.5d
 		}
 		{
@@ -64,7 +64,7 @@
 			description: [
 				"The Iron Fishing Rod is the first rod that Aquaculture adds."
 				""
-				"It just has more durability, and so does every rod after this except for the final one."
+				"It has more durability, and so does every rod after this except for the final one."
 			]
 			id: "46BCC279DE4AAF0E"
 			subtitle: "Acquire Hardware"
@@ -79,7 +79,7 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
+			x: 2.5d
 			y: -2.5d
 		}
 		{
@@ -96,7 +96,7 @@
 				item: "aquaculture:tackle_box"
 				type: "item"
 			}]
-			x: 0.0d
+			x: 3.5d
 			y: -3.5d
 		}
 		{
@@ -138,8 +138,8 @@
 				}
 			]
 			title: "Bait"
-			x: -1.0d
-			y: -3.5d
+			x: 2.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["64B7E7E392B035B4"]
@@ -156,14 +156,14 @@
 				"- &6Netherstar&r: combined effects of Gold and Diamond"
 			]
 			id: "5DB1CB1C751A1F15"
-			subtitle: "ON the Hook this time"
+			subtitle: "ON the Hook"
 			tasks: [{
 				id: "7DEE80404C900D7E"
 				item: "aquaculture:iron_hook"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -4.5d
+			x: 4.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["64B7E7E392B035B4"]
@@ -175,8 +175,8 @@
 				item: "aquaculture:bobber"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -4.5d
+			x: 5.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["64B7E7E392B035B4"]
@@ -192,8 +192,8 @@
 				item: "aquaculture:fishing_line"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -3.5d
+			x: 4.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["64B7E7E392B035B4"]
@@ -210,7 +210,7 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
+			x: 5.5d
 			y: -5.5d
 		}
 		{
@@ -231,34 +231,36 @@
 				type: "item"
 			}]
 			title: "Neptunium"
-			x: 0.0d
+			x: 6.5d
 			y: -6.5d
 		}
 		{
 			dependencies: ["495528CEE2EA6DC4"]
 			description: ["If you want to upgrade to &aNeptunium gear&r directly, you'll need to find a &6Smithing Template&r for it. These can commonly be found in &6buried treasure&r, and can then be duplicated using nuggets and gravel."]
 			id: "4BF13F4D9B10F6F7"
-			subtitle: "Wow, another upgrade for Netherite!"
+			subtitle: "Wow, another upgrade from Netherite!"
 			tasks: [{
 				id: "5A077FCDE247EC79"
 				item: "kubejs:neptunium_upgrade_smithing_template"
 				type: "item"
 			}]
 			title: "Neptunium Gear"
-			x: 0.0d
+			x: 7.5d
 			y: -7.5d
 		}
 		{
 			dependencies: ["4BF13F4D9B10F6F7"]
+			hide_until_deps_complete: true
 			id: "59E69CDAF6392A9B"
+			size: 2.0d
 			subtitle: "Absolutely essential to your fishing experience."
 			tasks: [{
 				id: "57B4B6F1CB121D37"
 				item: "handcrafted:salmon_trophy"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -11.5d
+			x: 7.5d
+			y: 0.0d
 		}
 	]
 	title: "Mod Progression"
