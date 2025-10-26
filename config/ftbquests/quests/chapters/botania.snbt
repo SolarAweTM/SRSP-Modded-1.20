@@ -32,6 +32,7 @@
 			]
 			icon: "botania:lexicon"
 			id: "40F38B864E509197"
+			min_width: 300
 			size: 2.0d
 			subtitle: "Not as difficult as you might expect! I promise!"
 			tasks: [
@@ -399,6 +400,7 @@
 				"For more info, please check its page in the &6Lexica Botania&r."
 			]
 			id: "3677152197E09665"
+			min_width: 300
 			subtitle: "It's not magic, though. More like a wrench."
 			tasks: [{
 				id: "5126767CECC47DC2"

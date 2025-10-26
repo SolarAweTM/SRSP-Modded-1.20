@@ -121,6 +121,7 @@
 			]
 			icon: "ftbquests:book"
 			id: "343033073CECDF2A"
+			min_width: 300
 			shape: "gear"
 			subtitle: "Get to know your new favorite questing system!"
 			tasks: [{
@@ -157,6 +158,7 @@
 			]
 			icon: "minecraft:oak_door"
 			id: "437B61FE6F8707DD"
+			min_width: 300
 			shape: "gear"
 			subtitle: "Quest together! Base together!"
 			tasks: [{
@@ -197,6 +199,7 @@
 			]
 			icon: "minecraft:map"
 			id: "7973837E4C34CB4D"
+			min_width: 300
 			shape: "gear"
 			subtitle: "Make sure nobody else messes with your stuff!"
 			tasks: [{

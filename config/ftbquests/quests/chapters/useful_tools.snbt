@@ -502,6 +502,7 @@
 			]
 			icon: "silentgear:material_grader"
 			id: "2CD2DE72C19ED643"
+			min_width: 300
 			subtitle: "SSX+ ULTRA MAX PERFECT"
 			tasks: [
 				{
@@ -580,6 +581,7 @@
 				"Now that you've learned about JEI, you should be able to figure out how to craft or otherwise produce most items, which will prove extremely useful the more you play."
 			]
 			id: "61390B566B4EC1FE"
+			min_width: 300
 			subtitle: "Do you like to read? Read this!"
 			tasks: [
 				{
@@ -1213,6 +1215,7 @@
 				"&8(Don't know what this means? Find out more in the JEI quest in this quest chapter!)&r"
 			]
 			id: "5AE9F88949F6EF44"
+			min_width: 300
 			subtitle: "The REAL All-In-One Storage"
 			tasks: [{
 				id: "4EC55375A8BDA8C7"
@@ -1284,6 +1287,7 @@
 				"&6These drawers use the same upgrades as the chests from this mod.&r"
 			]
 			id: "159CCB61C39CD22F"
+			min_width: 300
 			subtitle: "god i love the limited 3D they used for this game, its so charming"
 			tasks: [{
 				id: "69F3CF1D8093A4E3"

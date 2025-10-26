@@ -332,6 +332,7 @@
 			]
 			icon: "create:blaze_burner"
 			id: "4F21D70BC00FFA8A"
+			min_width: 300
 			rewards: [{
 				count: 2
 				id: "7CB3E386C613766D"
@@ -652,6 +653,8 @@
 				"&aSequenced Assembly&r involves starting a &6process&r, and then &6continuing to apply items&r through various machines to eventually &6reach a result&r."
 				""
 				"For example, let's look at the recipe for the &6Precision Mechanism&r, for the next quest, on the next page."
+				""
+				"&o&7Reminder: these quest windows can be scrolled!&r"
 				"{@pagebreak}"
 				"{image:srsp:textures/ftbquests/precision_mechanism_recipe.png width:200 height:135 align:center}"
 				""
@@ -681,6 +684,7 @@
 				"In the &6second photo&r, you would manually use a &6Hand Crank on the Deployer&r, and &6change out its item&r according to the recipe. This is probably the &6minimum setup&r required to build a Precision Mechanism."
 			]
 			id: "3B7819CB4710211B"
+			min_width: 500
 			subtitle: "A long read, but this is important!"
 			tasks: [{
 				id: "5B4F2E44A5643A2A"
