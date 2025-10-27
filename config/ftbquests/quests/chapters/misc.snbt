@@ -17,7 +17,7 @@
 				"&6Ponder&r this item to learn how to use it."
 			]
 			id: "7E5E335541331112"
-			subtitle: "Ultra Hand, Extendo Grip, etc."
+			subtitle: "Ultra Hand"
 			tasks: [{
 				id: "34BE1585992AB19F"
 				item: "create:mechanical_arm"
@@ -64,6 +64,7 @@
 				}
 				type: "item"
 			}]
+			subtitle: "Sticky Situation"
 			tasks: [{
 				id: "2962A3A9AA72EED5"
 				item: {
@@ -440,6 +441,307 @@
 			}]
 			x: 4.5d
 			y: -6.5d
+		}
+		{
+			dependencies: ["589512E0702C8A66"]
+			description: [
+				"Create offers &adiving gear&r, which allows you to &6breathe for longer&r periods underwater, and &6can even be upgraded to Netherite&r."
+				""
+				"To make use of the breathing boosts, &6you'll need a backtank&r, which can be &6charged by giving it Rotational Force&r from the top."
+				""
+				"The &6backtanks can be placed as a block&r to recharge them, and &6right-clicking&r them will try to &6auto-equip&r them into your &6chestplate slot&r."
+			]
+			icon: {
+				Count: 1
+				id: "create:copper_diving_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "431C5804C31CEA21"
+			tasks: [
+				{
+					id: "230DD7F82103B3F5"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Diving Helmet\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "create:copper_diving_helmet"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "create:netherite_diving_helmet"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "4E7F9BFEFD4D175C"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Diving Boots\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "create:copper_diving_boots"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "create:netherite_diving_boots"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "3244CCF4FCE8EF34"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Backtank\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "create:copper_backtank"
+									tag: { }
+								}
+								{
+									Count: 1b
+									id: "create:netherite_backtank"
+									tag: { }
+								}
+							]
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "Diving Gear"
+			x: -3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["431C5804C31CEA21"]
+			description: [
+				"&aJetpacks&r are one of the many options you have in this pack for &6flight beyond an Elytra&r."
+				""
+				"These jetpacks function just &6like a Backtank&r, but can now also &6use the stored air to allow you to fly&r."
+				""
+				"Hold &6CTRL&r &7(default keybind)&r to view a list of controls."
+			]
+			icon: {
+				Count: 1
+				id: "create_jetpack:jetpack"
+				tag: {
+					Air: 900
+				}
+			}
+			id: "10EFD21E7A036C62"
+			tasks: [{
+				id: "36BFE5AEB4785009"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Create Jetpack\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "create_jetpack:jetpack"
+							}
+							{
+								Count: 1b
+								id: "create_jetpack:netherite_jetpack"
+							}
+						]
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			title: "Jetpacks"
+			x: -4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["50FF774BEF232E50"]
+			description: [
+				"&aCreate&r also has a handful of various &6tools, weapons, and gear&r that you can use in your adventures."
+				""
+				"The following quests will cover most of what Create has for this category."
+			]
+			id: "589512E0702C8A66"
+			tasks: [{
+				id: "32FBBE2A35718122"
+				title: "Checkmark"
+				type: "checkmark"
+			}]
+			title: "Create's Arsenal"
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["589512E0702C8A66"]
+			description: [
+				"The &aPotato Cannon&r is a ranged weapon capable of &6launching various fruits and veggies at your foes&r."
+				""
+				"If you have a &6Backtank&r equipped, it can &6use pressurized air from that instead of durability&r."
+				""
+				"It can also be &6enchanted&r. Have fun!"
+				""
+				"For a list of valid ammo, see the &6next page&r."
+				"{@pagebreak}"
+				"The &aPotato Cannon&r accepts the following as Ammo:"
+				""
+				"- Apples"
+				"- Beetroots"
+				"- Blaze Cakes &7(sets the enemy on fire)&r"
+				"- Cakes"
+				"- Carrots &7(can plant onto Farmland)&r"
+				"- Chocolate Glazed Berries"
+				"- Chocolate Cakes"
+				"- Honey Cakes"
+				"- Chorus Fruit &7(teleports the hit target elsewhere)&r"
+				"- Enchanted Golden Apples &7(applies its effects to hit targets, try hitting your friends!)&r"
+				"- Golden Apples &7(see above)&r"
+				""
+				"More on the &6next page&r."
+				"{@pagebreak}"
+				"- Cod, raw and cooked"
+				"- Salmon, raw and cooked"
+				"- Tropical Fish"
+				"- Glistering Melon Slices &7(applies Glowing)&r"
+				"- Glow Berries &7(also applies Glowing)&r"
+				"- Golden Carrots"
+				"- Honeyed Apples &7(applies Slowness II)&r"
+				"- Melon Blocks &7(will place the melon on the ground)&r"
+				"- Melon Slices"
+				"- Poisonous Potatoes &7(applies Poison)&r"
+				"- Potatoes &7(can plant onto Farmland)&r"
+				"- Baked Potatoes &7(sets the enemy on fire)&r"
+				"- Pufferfish &7(applies Poison II, Nausea, and Hunger III)&r"
+				"- Pumpkins &7(will place the pumpkin on the ground)&r"
+				"- Pumpkin Pies"
+				"- Suspicious Stews &7(applies the stew's effect to the hit target)&r"
+				"- Sweet Berries"
+			]
+			id: "5F42613670468210"
+			rewards: [
+				{
+					count: 4
+					id: "716F481BA5D271F9"
+					item: "minecraft:potato"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4716EE788B7304A2"
+					item: "minecraft:baked_potato"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "783E614BB6713786"
+					item: "minecraft:poisonous_potato"
+					type: "item"
+				}
+			]
+			subtitle: "Spud Launcher"
+			tasks: [{
+				id: "7F54E571698045D8"
+				item: {
+					Count: 1
+					id: "create:potato_cannon"
+					tag: {
+						Damage: 0
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["589512E0702C8A66"]
+			description: [
+				"The &aExtendo Grip&r increases your reach distance when it is &6held in your offhand&r."
+				""
+				"With a &6Backtank&r equipped, it will &6use pressurized air from that instead of durability&r."
+				""
+				"It can also be &6enchanted&r."
+			]
+			id: "0460BA7CA69B8F3F"
+			tasks: [{
+				id: "3B049D863CACCCB1"
+				item: {
+					Count: 1
+					id: "create:extendo_grip"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["589512E0702C8A66"]
+			description: [
+				"The &aWand of Symmetry&r is a handy tool you can use for building."
+				""
+				"You can &6shift-right-click&r to open its &6configuration interface&r."
+				""
+				"&6Right-click a surface&r to &6place a mirror&r on it, which will mirror block placements &6according to the configuration&r as long as the Wand is in your hotbar."
+				""
+				"&6Right-click the air&r to &6remove&r any of your mirrors."
+			]
+			id: "7AC377CC83C4415D"
+			tasks: [{
+				id: "5C8FF19C469A3458"
+				item: "create:wand_of_symmetry"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 1.5d
 		}
 	]
 	title: "Misc"
