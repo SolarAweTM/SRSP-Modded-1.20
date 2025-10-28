@@ -11,10 +11,17 @@ ServerEvents.recipes(event => {
 	event.remove({ mod: 'itemfilters' })
 	//elytra is kil (NEVERMIND)
 	// event.remove({ output: 'minecraft:elytra' })
+	event.shapeless(
+		'minecraft:crafting_table', //result
+		[
+			'#biomeswevegone:crafting_tables' //inputs
+		]
+	)
 })
 
 ServerEvents.tags('block', event => {
 	event.add('framedblocks:frameable', 'ars_nouveau:source_gem_block')
+	event.add('forge:workbenches', '#biomeswevegone:crafting_tables')
 })
 
 ServerEvents.tags('item', event => {
@@ -63,4 +70,5 @@ ServerEvents.tags('item', event => {
 	removeFromCurioSlot.forEach(item => {
 		event.remove('curios:curio', item) // remove botania cosmetics ability to be in any curio slot (they have their own slots now and it bloated the tooltip)
 	})
+	event.add('forge:workbenches', '#biomeswevegone:crafting_tables')
 })

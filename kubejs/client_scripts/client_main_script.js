@@ -133,6 +133,11 @@ ItemEvents.tooltip(event => {
 			text.add(1, Text.red('This is not a storage block! You cannot get the items back from this!'))
 		})
 	})
+	
+	//tooltip for BWG crafting table to vanilla crafting table recipe 
+	event.addAdvanced('#biomeswevegone:crafting_tables', (item, advanced, text) => {
+		text.add(1, Text.gray('Can be converted to a vanilla Crafting Table in a crafting grid.'))
+	})
 })
 
 JEIEvents.hideItems(event => {
