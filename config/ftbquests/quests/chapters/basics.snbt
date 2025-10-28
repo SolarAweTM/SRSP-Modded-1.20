@@ -61,6 +61,9 @@
 				"&aKinetic Sources&r are the main way you'll get stuff to work in Create. They generate &6Rotational Force&r."
 				""
 				"&6Ponder&r your desired kinetic source to learn how to power it."
+				""
+				"&6Pro tip:&r Check out the &6Create: Misc&r Questline to find out about some other things you can accomplish with Create! Link below:"
+				"{ \"text\": \"Create: Misc Questline\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"50FF774BEF232E50\" } }"
 			]
 			icon: "create:hand_crank"
 			id: "5937D8D676C5CDBA"
@@ -709,6 +712,7 @@
 			]
 			icon: "create:goggles"
 			id: "0A32F6B649916373"
+			subtitle: "Stress and You"
 			tasks: [
 				{
 					id: "60515A522E00F875"
@@ -827,6 +831,87 @@
 				type: "item"
 			}]
 			x: 9.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3C924B08AD3A43C0"]
+			description: [
+				"There are a &afew more ways&r you can control &6Rotational Force&r."
+				""
+				"You can &6Ponder&r each of these items to learn more about them."
+			]
+			icon: "create:adjustable_chain_gearshift"
+			id: "2965BBE297B3B25A"
+			subtitle: "A to B, but with style"
+			tasks: [{
+				id: "432610BA225354A2"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any of the following:\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "create:encased_chain_drive"
+							}
+							{
+								Count: 1b
+								id: "create:gearbox"
+							}
+							{
+								Count: 1b
+								id: "create:vertical_gearbox"
+							}
+							{
+								Count: 1b
+								id: "create:gearshift"
+							}
+							{
+								Count: 1b
+								id: "create:adjustable_chain_gearshift"
+							}
+							{
+								Count: 1b
+								id: "create:clutch"
+							}
+							{
+								Count: 1b
+								id: "create:sequenced_gearshift"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "More Rotational Logistics"
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5937D8D676C5CDBA"]
+			description: [
+				"The &aCopper Valve Handle&r can be used to provide &6a precise amount of Rotational Force&r."
+				""
+				"You can adjust the amount rotated from &6the middle of the Handle&r."
+				""
+				"&6Right-click&r to turn it the specified amount once, and &6hold Shift while doing so&r to go the other direction."
+				""
+				"It can also be &6dyed&r."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			id: "37F457EBDA875D92"
+			subtitle: "spee-"
+			tasks: [{
+				id: "3B1D1816E9E75006"
+				item: "create:copper_valve_handle"
+				type: "item"
+			}]
+			x: 2.0d
 			y: 1.5d
 		}
 	]

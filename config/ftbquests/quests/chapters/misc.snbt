@@ -640,9 +640,11 @@
 				""
 				"- Apples"
 				"- Beetroots"
+				"- Bricks"
 				"- Blaze Cakes &7(sets the enemy on fire)&r"
 				"- Cakes"
 				"- Carrots &7(can plant onto Farmland)&r"
+				"- Tomatoes &7(can plant onto Farmland)&r"
 				"- Chocolate Glazed Berries"
 				"- Chocolate Cakes"
 				"- Honey Cakes"
@@ -1089,6 +1091,18 @@
 			}]
 			x: -4.5d
 			y: -5.5d
+		}
+		{
+			dependencies: ["50FF774BEF232E50"]
+			id: "3C78507EA5143D05"
+			subtitle: "Microcrafting-B-Gone"
+			tasks: [{
+				id: "7735E41E28758CF2"
+				item: "create:crafting_blueprint"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.0d
 		}
 	]
 	title: "Misc"
