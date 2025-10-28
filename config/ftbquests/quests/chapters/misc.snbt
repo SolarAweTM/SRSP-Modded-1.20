@@ -1094,7 +1094,20 @@
 		}
 		{
 			dependencies: ["50FF774BEF232E50"]
+			description: [
+				"The &aCrafting Blueprint&r can be placed on a wall, like a painting, and can have a crafting recipe set."
+				""
+				"After setting the recipe, &6right-clicking the Blueprint&r will automatically process the recipe &6if you have the materials&r on you."
+				"&6Holding Shift&r will craft up to a stack of the recipe, and &6left-clicking&r will clear the recipe."
+				""
+				"If &6placed on a wall with at least 3x3 space&r centered on itself, it fills that space and &6can store up to 9 recipes&r instead of just 1."
+			]
 			id: "3C78507EA5143D05"
+			rewards: [{
+				id: "33C09B45D848C206"
+				item: "create:crafting_blueprint"
+				type: "item"
+			}]
 			subtitle: "Microcrafting-B-Gone"
 			tasks: [{
 				id: "7735E41E28758CF2"
