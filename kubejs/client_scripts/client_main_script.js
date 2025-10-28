@@ -267,3 +267,9 @@ JEIEvents.hideItems(event => {
 JEIEvents.removeCategories(event => {
 	event.remove('tconstruct:tools/severing')
 })
+
+ClientEvents.loggedIn(event => {
+	//this took like an hour to find because the only solution i could find was on a discord server
+	//can we stop using discord as a knowledge base now
+	event.player.tell('§eFTB Chunks: §rPress [§b' + Text.keybind('key.ftbchunks.map').getString() + '§r]')
+})
