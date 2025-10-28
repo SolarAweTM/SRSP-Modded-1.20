@@ -976,6 +976,13 @@
 		}
 		{
 			dependencies: ["4F77A11667048B2F"]
+			description: [
+				"The &aRedstone Contact&r emits a signal when it is &6facing another Redstone Contact&r's face."
+				""
+				"This applies &6even on moving contraptions&r."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
 			id: "42466EE936C53C62"
 			tasks: [{
 				id: "5AAA4CBE9FB36C59"
@@ -984,6 +991,104 @@
 			}]
 			x: -4.5d
 			y: -3.5d
+		}
+		{
+			dependencies: ["4F77A11667048B2F"]
+			description: [
+				"&aRose Quartz Lamps&r, in addition to their decorative uses, can also &6emit a Redstone signal while activated&r, along with some &6other interesting behaviours&r."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			id: "35427D377B13E97E"
+			tasks: [{
+				id: "557564FFBE9A11B7"
+				item: "create:rose_quartz_lamp"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4F77A11667048B2F"]
+			description: [
+				"The &aPulse Repeater&r, when given a Redstone signal, will send a single pulse &6after a specified delay&r."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			id: "1F7CA198D5C6A7A5"
+			tasks: [{
+				id: "6EB7F75AE0523260"
+				item: "create:pulse_repeater"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4F77A11667048B2F"]
+			description: [
+				"The &aPulse Extender&r will behave similarly to a Redstone Repeater, but can be configured to &6hold a signal for longer&r."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			id: "64F1F912BC5D0696"
+			tasks: [{
+				id: "653580301126FAA1"
+				item: "create:pulse_extender"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4F77A11667048B2F"]
+			description: [
+				"The &aPulse Timer&r will send out a Redstone signal &6based on the configured interval&r."
+				""
+				"&6Powering it will pause it&r, and the output side can be &6right-clicked&r to invert the signal."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			id: "44084514B5082514"
+			tasks: [{
+				id: "0E9A24EDE24A2A24"
+				item: "create:pulse_timer"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["4F77A11667048B2F"]
+			description: [
+				"&aPowered Latches&r are levers which can be &6controlled by Redstone&r."
+				""
+				"You can &6Ponder&r this item to learn how to use it."
+			]
+			id: "4C1E8CA1FC955EC4"
+			tasks: [{
+				id: "3750E78EAE0818AF"
+				item: "create:powered_latch"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4F77A11667048B2F"]
+			description: [
+				"&aPowered Toggle Latches&r are levers which can be &6controlled by Redstone&r."
+				""
+				"You can &6Ponder&r this item to learn how to use it."
+			]
+			id: "316F6828D4E9FFEB"
+			tasks: [{
+				id: "1764A10825DD47C5"
+				item: "create:powered_toggle_latch"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -5.5d
 		}
 	]
 	title: "Misc"

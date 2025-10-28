@@ -397,7 +397,7 @@
 				item: "create:deployer"
 				type: "item"
 			}]
-			x: 10.5d
+			x: 10.0d
 			y: 0.0d
 		}
 		{
@@ -414,7 +414,7 @@
 				item: "create:precision_mechanism"
 				type: "item"
 			}]
-			x: 13.5d
+			x: 13.0d
 			y: 0.0d
 		}
 		{
@@ -431,7 +431,7 @@
 				item: "create:rotation_speed_controller"
 				type: "item"
 			}]
-			x: 15.0d
+			x: 14.5d
 			y: 0.0d
 		}
 		{
@@ -499,7 +499,7 @@
 				}
 			]
 			title: "Brass Logistics"
-			x: 9.0d
+			x: 8.5d
 			y: 0.0d
 		}
 		{
@@ -692,7 +692,7 @@
 				type: "checkmark"
 			}]
 			title: "Sequenced Assembly"
-			x: 12.0d
+			x: 11.5d
 			y: 0.0d
 		}
 		{
@@ -808,6 +808,26 @@
 			}]
 			x: 8.5d
 			y: -4.0d
+		}
+		{
+			dependencies: [
+				"68C536FFD816AE69"
+				"2F1BDB52441FCA5A"
+			]
+			description: [
+				"The &aSmart Chute&r is able to &6filter items&r, and can &6specify an amount&r of items to extract per operation."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			id: "71E30FB99120BB07"
+			subtitle: "The cooler Chute"
+			tasks: [{
+				id: "003196C9F2BFF14F"
+				item: "create:smart_chute"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 1.5d
 		}
 	]
 	title: "Core Progression"
