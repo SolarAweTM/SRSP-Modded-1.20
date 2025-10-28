@@ -138,6 +138,14 @@ ItemEvents.tooltip(event => {
 	event.addAdvanced('#biomeswevegone:crafting_tables', (item, advanced, text) => {
 		text.add(1, Text.gray('Can be converted to a vanilla Crafting Table in a crafting grid.'))
 	})
+	
+	//tooltip for everycomp/quark chests to vanilla chest recipe 
+	event.addAdvanced('#quark:revertable_chests', (item, advanced, text) => {
+		text.add(1, Text.gray('Can be converted to a vanilla Chest in a crafting grid.'))
+	})
+	event.addAdvanced('#quark:revertable_trapped_chests', (item, advanced, text) => {
+		text.add(1, Text.gray('Can be converted to a vanilla Trapped Chest in a crafting grid.'))
+	})
 })
 
 JEIEvents.hideItems(event => {
