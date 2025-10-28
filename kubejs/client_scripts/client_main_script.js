@@ -122,6 +122,17 @@ ItemEvents.tooltip(event => {
 	event.addAdvanced('tconstruct:scorched_anvil', (item, advanced, text) => {
 		text.add(1, Text.red('Mostly useless in this pack. Kept in as decoration.'))
 	})
+	
+	//tooltip for things that look like storage blocks but aren't actually
+	let decoration_blocks = [
+		'biomesoplenty:rose_quartz_block',
+		'create:rose_quartz_block'
+	]
+	decoration_blocks.forEach(block => {
+		event.addAdvanced(block, (item, advanced, text) => {
+			text.add(1, Text.red('This is not a storage block! You cannot get the items back from this!'))
+		})
+	})
 })
 
 JEIEvents.hideItems(event => {
