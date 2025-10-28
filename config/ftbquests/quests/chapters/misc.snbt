@@ -23,7 +23,7 @@
 				item: "create:mechanical_arm"
 				type: "item"
 			}]
-			x: 1.0d
+			x: -3.0d
 			y: -1.0d
 		}
 		{
@@ -90,6 +90,7 @@
 				""
 				"In order to move, most blocks must be attacked to a contraption using &6Super Glue&r."
 			]
+			icon: "create:cogwheel"
 			id: "5083CEA54727E68D"
 			tasks: [{
 				id: "135AF6E71333B0A4"
@@ -118,7 +119,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: -5.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["5083CEA54727E68D"]
@@ -230,7 +231,7 @@
 				}
 			]
 			title: "Gantry Shaft \\& Carriage"
-			x: 3.5d
+			x: 3.0d
 			y: -3.5d
 		}
 		{
@@ -607,6 +608,13 @@
 				""
 				"The following quests will cover most of what Create has for this category."
 			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "589512E0702C8A66"
 			tasks: [{
 				id: "32FBBE2A35718122"
@@ -742,6 +750,240 @@
 			}]
 			x: -4.5d
 			y: 1.5d
+		}
+		{
+			dependencies: ["589512E0702C8A66"]
+			description: [
+				"&aCardboard armor&r doesn't provide much protection, but it is &6very stylish&r."
+				""
+				"With a full set equipped, you can &6sneak to transform&r into a box."
+			]
+			icon: {
+				Count: 1
+				id: "create:cardboard_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6C9D2577A291C1AB"
+			subtitle: "Snake? Snake?! SNAAAAAAKE!!"
+			tasks: [
+				{
+					id: "0006B0F333A48249"
+					item: {
+						Count: 1
+						id: "create:cardboard_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "44F0B0BA653808F7"
+					item: {
+						Count: 1
+						id: "create:cardboard_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0BC7F2A1F8EECDFE"
+					item: {
+						Count: 1
+						id: "create:cardboard_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1659F2091F606C15"
+					item: {
+						Count: 1
+						id: "create:cardboard_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Cardboard Armor"
+			x: -3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0911EA1339458D20"]
+			description: [
+				"The &aDisplay Link&r is a gadget you can attach to compatible blocks that can &6transmit various information&r about the block to a &6Display&r."
+				""
+				"Valid &6Displays&r include:"
+				""
+				"- Display Boards"
+				"- Signs"
+				"- Nixie Tubes"
+				"- Lecterns &7(with a book)&r"
+				""
+				"You can &6Ponder&r this item to learn more about it."
+				"When doing so, you can also check out the possible Targets and Sources for Display Links in the &6top left corner of the Ponder screen&r."
+			]
+			id: "5FE954AD928F1637"
+			tasks: [{
+				id: "330FA86DE82D3C5B"
+				item: "create:display_link"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["50FF774BEF232E50"]
+			description: [
+				"&aCreate&r offers some useful ways to &6display text and other info&r beyond what vanilla Minecraft can provide."
+				""
+				"The following quests will cover what Create has in store for this category."
+			]
+			icon: "create:empty_schematic"
+			id: "0911EA1339458D20"
+			tasks: [{
+				id: "48C3D95366FAC386"
+				type: "checkmark"
+			}]
+			title: "Display Technology"
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0911EA1339458D20"]
+			description: [
+				"&aDisplay Boards&r can be used to &6display text&r. They require &6Rotational Force&r to operate."
+				""
+				"Using a &6Clipboard&r with writing on it, you can &6right-click a line on the Display Board&r to put that writing on the Board."
+				""
+				"You can also &6use Dye to change the color&r of a line of text."
+				""
+				"&6Right-click with an empty hand&r to clear a line."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			id: "76F550EF7613360A"
+			rewards: [{
+				count: 3
+				id: "12218EFF6DE70959"
+				item: "create:display_board"
+				type: "item"
+			}]
+			tasks: [{
+				id: "323CB4CF99E6C4F6"
+				item: "create:display_board"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0911EA1339458D20"]
+			description: [
+				"&aNixie Tubes&r can be used to &6display text&r."
+				""
+				"When &6powered by Redstone&r, they will display the &6signal power&r."
+				""
+				"You can use a &6written Clipboard&r to apply text to it."
+				""
+				"&6Use Dyes to change the color&r of the text."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			id: "7C7B44E1255FD59E"
+			tasks: [{
+				id: "4FCE035E11144108"
+				item: "create:nixie_tube"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["50FF774BEF232E50"]
+			description: [
+				"&aCreate&r also offers many ways for both you and the mod to interact with &6Redstone&r."
+				""
+				"The following quests will cover what Create has in store for this category."
+			]
+			icon: "minecraft:redstone"
+			id: "4F77A11667048B2F"
+			tasks: [{
+				id: "3178F219B28A8772"
+				type: "checkmark"
+			}]
+			title: "Logic Components"
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4F77A11667048B2F"]
+			description: [
+				"&aRedstone Links&r are Create's answer to &6wireless Redstone&r."
+				""
+				"You can &6Ponder&r this item to learn how to use it."
+			]
+			id: "0C3E40AB5E0C8D8A"
+			tasks: [{
+				id: "7E7971BF177CEAEC"
+				item: "create:redstone_link"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4F77A11667048B2F"]
+			description: [
+				"&aAnalog Levers&r allow you to specify the signal strength provided."
+				""
+				"&6Hold right-click&r to increase strength; &6additionally hold Shift&r to reduce strength."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			id: "7499340272FFD37F"
+			subtitle: "hello I would like 4.999999999997 apples please"
+			tasks: [{
+				id: "4D418466E7C0D4D6"
+				item: "create:analog_lever"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4F77A11667048B2F"]
+			id: "485B1623287E60A5"
+			subtitle: "This is an Xbox."
+			tasks: [{
+				id: "56EE3CED19BA8738"
+				item: "create:linked_controller"
+				match_nbt: false
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4F77A11667048B2F"]
+			id: "42466EE936C53C62"
+			tasks: [{
+				id: "5AAA4CBE9FB36C59"
+				item: "create:redstone_contact"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -3.5d
 		}
 	]
 	title: "Misc"
