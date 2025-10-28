@@ -1,0 +1,11 @@
+{
+  "damage": 10,
+  "items": "minecraft:brick",
+  "knockback": 0.3,
+  "reload_ticks": 100,
+  "render_mode": {
+    "type": "create:tumble"
+  },
+  "sound_pitch": 1.5,
+  "velocity_multiplier": 1.0
+}
