@@ -374,6 +374,17 @@
         "value": 1
       }
     },
+    "tconstruct:generic.safe_fall_distance": {
+      "enabled": false,
+      "min": {
+        "default": -10,
+        "value": -10
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "minecraft:generic.armor": {
       "enabled": true,
       "min": {

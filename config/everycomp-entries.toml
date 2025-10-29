@@ -13,8 +13,6 @@
 			windswept_sandstone = true
 			red_rock = true
 			dacite = true
-			mossy_stone = true
-			rocky_stone = true
 
 		[types.stone_type.create]
 			limestone = true
@@ -30,25 +28,27 @@
 
 		[types.stone_type.quark]
 			soul_sandstone = true
-			midori = true
-			duskbound = true
 			limestone = true
 			jasper = true
 			shale = true
 			myalite = true
 			permafrost = true
-			shingles = true
 
 		[types.stone_type.biomesoplenty]
 			brimstone = true
+			black_sandstone = true
+			orange_sandstone = true
+			white_sandstone = true
 
 		[types.stone_type.botania]
 			livingrock = true
-			shimmerrock = true
 
 		[types.stone_type.tconstruct]
 			seared_stone = true
 			scorched_stone = true
+
+		[types.stone_type.fintastic]
+			stromatolite = true
 
 	[types.wood_type]
 
@@ -322,6 +322,82 @@
 			pillar = true
 			vertical_slab = true
 
+		[entries.stone_type.chipped]
+			tiled_column = true
+			pillar = true
+			checkered_tiles = true
+			cracked_flat_tiles = true
+			eroded = true
+			weathered = true
+			tiled_bordered = true
+			simple_pillar = true
+			scales = true
+			smooth_column = true
+			vertical_disordered_bricks = true
+			fine_pillar = true
+			sad = true
+			brick_bordered = true
+			glad = true
+			smooth_inlayed = true
+			unamused = true
+			bordered = true
+			cut_column = true
+			edged_bricks = true
+			cobbled = true
+			smoothed_double_inlayed = true
+			rounded_bricks = true
+			overlapping_tiles = true
+			pillar_top = true
+			rough = true
+			tiny_layered_bricks = true
+			loded = true
+			bricks = true
+			massive_bricks = true
+			layed_bricks = true
+			spider_carving = true
+			thick_inlayed = true
+			tiny_brick_bordered = true
+			pointed_dripstone = true
+			sanded = true
+			engraved = true
+			offset_bricks = true
+			small_bricks = true
+			duh = true
+			mini_tiles = true
+			angry = true
+			vertical_cut = true
+			crying = true
+			smooth_ringed = true
+			runic_carved = true
+			curly_pillar = true
+			etched_bricks = true
+			stacked_bricks = true
+			spiraled = true
+			inscribed = true
+			polished = true
+			cut_blank = true
+			blank_carving = true
+			prismal_remnants = true
+			tiny_layered_slabs = true
+			tiny_bricks = true
+			flat_tiles = true
+			inlayed = true
+			trodden = true
+			tiled = true
+			creeper_carving = true
+			cracked_bricks = true
+			pillar_bricks = true
+			cracked_disordered_bricks = true
+			carved = true
+			ornate_pillar = true
+
+		[entries.stone_type.handcrafted]
+			corner_trim = true
+			pillar_trim = true
+
+		[entries.stone_type.waystones]
+			waystone = true
+
 	[entries.mud_type]
 
 		[entries.mud_type.quark]
@@ -485,6 +561,22 @@
 			damaged_log = true
 			golden_barred_trapdoor = true
 			nailed_log = true
+			edged_stripped_log = true
+			f_sign_stripped_log = true
+			wise_stripped_log = true
+			layered_stripped_log = true
+			lumpy_stripped_log = true
+			chipped_stripped_log = true
+			patient_stripped_log = true
+			k_sign_stripped_log = true
+			sign_stripped_log = true
+			knotted_stripped_log = true
+			l_sign_stripped_log = true
+			reinforced_stripped_log = true
+			stern_stripped_log = true
+			carved_stripped_log = true
+			i_sign_stripped_log = true
+			d_sign_stripped_log = true
 
 		[entries.wood_type.handcrafted]
 			counter = true
