@@ -45,8 +45,11 @@
 				"Some Ponder tutorials have &amultiple pages&r, which you can switch between by &6clicking the arrow buttons at the bottom&r."
 				""
 				"If the text moves too fast for you, you can &6click the button in the bottom-right corner to turn on Comfy Reading&r, &aslowing down the scene&r whenever text is on screen."
+				""
+				"Want a visual guide? &6Check the quest directly below this one!&r"
 			]
 			id: "5BE5AD125B412D5E"
+			min_width: 300
 			tasks: [{
 				id: "607D8C6E471FA678"
 				title: "A Moment to Ponder"
@@ -912,6 +915,49 @@
 				type: "item"
 			}]
 			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5BE5AD125B412D5E"]
+			description: [
+				"If you want a visual guide to Ponder, you've come to the right place."
+				""
+				"{image:srsp:textures/ftbquests/ponder_visual_guide.png width:288 height:162 align:center}"
+				""
+				"Head to the &6next page&r for an overview."
+				"{@pagebreak}"
+				"&61.&r This is the Ponder scene itself. This is where things are explained."
+				""
+				"&62.&r This is a progress bar, showing how much you have left in the scene. Section markers are also provided if you need to view a specific section."
+				""
+				"&63.&r This is the title of the Ponder scene you are looking at."
+				""
+				"&64.&r These are buttons that go to some related Ponder topics. Helpful if you want a rabbit hole to go down."
+				""
+				"&65.&r The exit button. Closes the Ponder window."
+				""
+				"&66.&r Identify Mode. Pauses the scene, and allows you to hover over blocks in the scene to Ponder further, or to view descriptions."
+				""
+				"The &6next page&r has some more points to explain."
+				"{@pagebreak}"
+				""
+				"&67.&r Next/Previous Scene. These buttons move you forward and backward in the Ponder scene. Be wary of these, as &6going through all the scenes for an item will help you learn everything about it!&r"
+				""
+				"&68.&r Replay the scene from the beginning."
+				""
+				"&69.&r Think Back. If you were previously in a Ponder scene or menu before your current scene, this button will take you back to that instead of just exiting entirely."
+				""
+				"&610.&r Comfy Reading. This slows down the scene whenever text is on screen."
+			]
+			id: "6CD45F103E5EFD65"
+			min_width: 300
+			optional: true
+			tasks: [{
+				id: "7CF5E89C06095DB8"
+				type: "checkmark"
+			}]
+			title: "Ponder Visual Guide"
+			x: 1.0d
 			y: 1.5d
 		}
 	]

@@ -16,6 +16,7 @@
 				""
 				"&6Ponder&r this item to learn how to use it."
 			]
+			hide_dependency_lines: true
 			id: "7E5E335541331112"
 			subtitle: "Ultra Hand"
 			tasks: [{
@@ -92,6 +93,7 @@
 			]
 			icon: "create:cogwheel"
 			id: "5083CEA54727E68D"
+			min_width: 300
 			tasks: [{
 				id: "135AF6E71333B0A4"
 				title: "Checkmark"
@@ -552,8 +554,8 @@
 				}
 			]
 			title: "Diving Gear"
-			x: -3.5d
-			y: 1.5d
+			x: -4.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["431C5804C31CEA21"]
@@ -598,8 +600,8 @@
 				type: "item"
 			}]
 			title: "Jetpacks"
-			x: -4.5d
-			y: 2.5d
+			x: -5.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["50FF774BEF232E50"]
@@ -622,8 +624,8 @@
 				type: "checkmark"
 			}]
 			title: "Create's Arsenal"
-			x: -2.5d
-			y: 0.5d
+			x: -3.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["589512E0702C8A66"]
@@ -706,8 +708,8 @@
 				match_nbt: false
 				type: "item"
 			}]
-			x: -2.5d
-			y: 2.0d
+			x: -3.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["589512E0702C8A66"]
@@ -730,8 +732,8 @@
 				}
 				type: "item"
 			}]
-			x: -4.0d
-			y: 0.5d
+			x: -5.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["589512E0702C8A66"]
@@ -750,8 +752,8 @@
 				item: "create:wand_of_symmetry"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 1.5d
+			x: -5.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["589512E0702C8A66"]
@@ -817,8 +819,8 @@
 				}
 			]
 			title: "Cardboard Armor"
-			x: -3.5d
-			y: 2.5d
+			x: -4.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["0911EA1339458D20"]
@@ -841,8 +843,8 @@
 				item: "create:display_link"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 1.5d
+			x: 2.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["50FF774BEF232E50"]
@@ -858,8 +860,8 @@
 				type: "checkmark"
 			}]
 			title: "Display Technology"
-			x: 0.5d
-			y: 0.5d
+			x: 1.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["0911EA1339458D20"]
@@ -886,8 +888,8 @@
 				item: "create:display_board"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 0.5d
+			x: 3.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["0911EA1339458D20"]
@@ -908,8 +910,8 @@
 				item: "create:nixie_tube"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 2.0d
+			x: 1.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["50FF774BEF232E50"]
@@ -925,8 +927,8 @@
 				type: "checkmark"
 			}]
 			title: "Logic Components"
-			x: -2.5d
-			y: -2.5d
+			x: -3.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["4F77A11667048B2F"]
@@ -941,8 +943,8 @@
 				item: "create:redstone_link"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -3.5d
+			x: -4.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["4F77A11667048B2F"]
@@ -960,8 +962,8 @@
 				item: "create:analog_lever"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -4.0d
+			x: -3.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["4F77A11667048B2F"]
@@ -973,8 +975,8 @@
 				match_nbt: false
 				type: "item"
 			}]
-			x: -4.0d
-			y: -2.5d
+			x: -5.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["4F77A11667048B2F"]
@@ -991,8 +993,8 @@
 				item: "create:redstone_contact"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -3.5d
+			x: -5.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["4F77A11667048B2F"]
@@ -1007,8 +1009,8 @@
 				item: "create:rose_quartz_lamp"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -4.5d
+			x: -4.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["4F77A11667048B2F"]
@@ -1023,8 +1025,8 @@
 				item: "create:pulse_repeater"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -4.5d
+			x: -5.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["4F77A11667048B2F"]
@@ -1039,8 +1041,8 @@
 				item: "create:pulse_extender"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -3.5d
+			x: -6.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["4F77A11667048B2F"]
@@ -1057,8 +1059,8 @@
 				item: "create:pulse_timer"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -5.5d
+			x: -4.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["4F77A11667048B2F"]
@@ -1073,8 +1075,8 @@
 				item: "create:powered_latch"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -4.5d
+			x: -6.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["4F77A11667048B2F"]
@@ -1089,8 +1091,8 @@
 				item: "create:powered_toggle_latch"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -5.5d
+			x: -5.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["50FF774BEF232E50"]
@@ -1100,9 +1102,11 @@
 				"After setting the recipe, &6right-clicking the Blueprint&r will automatically process the recipe &6if you have the materials&r on you."
 				"&6Holding Shift&r will craft up to a stack of the recipe, and &6left-clicking&r will clear the recipe."
 				""
-				"If &6placed on a wall with at least 3x3 space&r centered on itself, it fills that space and &6can store up to 9 recipes&r instead of just 1."
+				"If &6placed on a wall with at least 2x2 space&r centered on itself, it fills that space and &6can store up to 4 or 9 recipes&r instead of just 1."
 			]
+			hide_dependency_lines: true
 			id: "3C78507EA5143D05"
+			min_width: 300
 			rewards: [{
 				id: "33C09B45D848C206"
 				item: "create:crafting_blueprint"
@@ -1116,6 +1120,570 @@
 			}]
 			x: 1.0d
 			y: -1.0d
+		}
+		{
+			dependencies: ["50FF774BEF232E50"]
+			description: [
+				"The &aClipboard&r can be used to &6keep track of things&r, be placed, and be used to configure and get data from certain blocks."
+				""
+				"Hold &6Shift&r on the item to learn more."
+			]
+			hide_dependency_lines: true
+			id: "79C7CA4745D572B9"
+			subtitle: "Write that down, write that down!"
+			tasks: [{
+				id: "4F1948DE8B5E6E01"
+				item: "create:clipboard"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["50FF774BEF232E50"]
+			description: [
+				"&aToolboxes&r are a handy block that can &6store things for quick access&r."
+				""
+				"If you have the '&6Access Nearby Toolboxes&r' key bound, you can use that to &6access a Toolbox that is in range&r."
+				""
+				"Toolboxes have 8 slots, and &6each slot has 4x max stack size&r."
+			]
+			hide_dependency_lines: true
+			icon: "create:brown_toolbox"
+			id: "6FD0AFB0B59A720C"
+			tasks: [{
+				id: "60241C7042F6D427"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Create Toolbox\"}"
+						}
+						value: "create:toolboxes"
+					}
+				}
+				type: "item"
+			}]
+			title: "Toolboxes"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["50FF774BEF232E50"]
+			description: [
+				"&6Schematics&r are an easy way to &6save your builds and contraptions as a file&r on your computer and place them elsewhere."
+				""
+				"To start, get your hands on a &aSchematic and Quill, an Empty Schematic, and a Schematic Table&r."
+				""
+				"&6Holding Shift&r on each of these items will show you their &6controls and descriptions&r."
+				""
+				"Saved schematics are put in your &6.minecraft/schematics&r folder."
+				""
+				"To get your schematic as an item, use the &6Schematic Table&r to select a Schematic from your own files, and then &6place your Empty Schematic in the first slot&r. The data for the schematic will then be &6uploaded to the server&r, and give you the resulting Schematic to place in the world."
+			]
+			hide_dependency_lines: true
+			icon: "create:schematic_and_quill"
+			id: "4FD3306CB3609D91"
+			min_width: 300
+			tasks: [
+				{
+					id: "19CF5FD054BCAE19"
+					item: "create:empty_schematic"
+					type: "item"
+				}
+				{
+					id: "263B4FE8B603C3F9"
+					item: "create:schematic_and_quill"
+					type: "item"
+				}
+				{
+					id: "43D246243CA431BD"
+					item: "create:schematic_table"
+					type: "item"
+				}
+			]
+			title: "Schematics"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4FD3306CB3609D91"]
+			description: [
+				"The &aSchematicannon&r can be used to effectively &6place a schematic into the world&r."
+				""
+				"It will need &6Gunpowder to fuel itself&r, as well as the &6necessary blocks to build the schematic&r, in a container adjacent to it."
+				""
+				"&cMake sure your schematic has its preview set in the world before putting it into the Schematicannon.&r"
+				""
+				"You can also put a &6Clipboard&r in the top-right slot, and it will fill out the Clipboard with &6a list of materials&r a schematic needs."
+			]
+			id: "1694DF04334EC46B"
+			tasks: [{
+				id: "22DEE1BE3C56A636"
+				item: "create:schematicannon"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["50FF774BEF232E50"]
+			description: [
+				"When given &6Rotational Force&r from the bottom, it &6spins&r."
+				""
+				"If you're on top of it, &6you spin&r."
+			]
+			hide_dependency_lines: true
+			id: "63B2EB9DEB3B28A4"
+			tasks: [{
+				id: "73E0EF5092E0A9DF"
+				item: "create:turntable"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["50FF774BEF232E50"]
+			description: [
+				"The &aCuckoo Clock&r, when given &6Rotational Force&r from behind, &6tells the time&r."
+				""
+				"It makes a &6sound twice a day&r."
+				""
+				"&8(Crafting it with 4 Gunpowder will make it explode the next time it sounds.)&r"
+			]
+			hide_dependency_lines: true
+			id: "68ACFF26EA418F69"
+			tasks: [{
+				id: "459384822F6609E3"
+				item: "create:cuckoo_clock"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["50FF774BEF232E50"]
+			description: [
+				"When this imposing &6&lWheel of Brass&r is given &6Rotational Force&r, it &6spins&r."
+				""
+				"Beyond that, it functions identically to a &6Shaft&r."
+			]
+			hide_dependency_lines: true
+			id: "44BAEB31101C6175"
+			tasks: [{
+				id: "2B1358DC1D92DEC4"
+				item: "create:flywheel"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["50FF774BEF232E50"]
+			description: [
+				"The &aWeighted Ejector&r can &6launch things&r."
+				""
+				"&6Before placement&r, you have to &6configure its destination&r by sneak-right-clicking a block."
+				""
+				"It can also &6launch entities&r, including players."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			hide_dependency_lines: true
+			id: "35E291663BFBCDCB"
+			tasks: [{
+				id: "3BDB4AC41E445994"
+				item: "create:weighted_ejector"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["50FF774BEF232E50"]
+			description: ["&aTree Fertilizer&r will &6instantly grow a Sapling&r when used on one, &6ignoring any space constraints&r."]
+			hide_dependency_lines: true
+			id: "3039BCF6D40C5A47"
+			tasks: [{
+				id: "07848EA6617BAF5F"
+				item: "create:tree_fertilizer"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["50FF774BEF232E50"]
+			description: [
+				"The &aEncased Fan&r can be used to &6push things with air&r, and also do a bunch of &6other processing tasks&r."
+				""
+				"Behind &6Lava&r, it can perform &6Bulk Blasting&r, and process things like a Furnace. &cFood, however, will be incinerated this way.&r"
+				""
+				"Behind &6Fire&r, it can perform &6Bulk Smoking&r, and process things like a Smoker, such as Food."
+				""
+				"Behind &6Water&r, it can perform &6Bulk Washing&r, which can wash things."
+				""
+				"Behind &6Soul Fire&r, it can perform &6Bulk Haunting&r, which can convert things to a different form."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+				"You can also use &6JEI&r to find recipes for this item."
+			]
+			hide_dependency_lines: true
+			id: "7B7F91A0C9DFBCB5"
+			min_width: 300
+			tasks: [{
+				id: "541F4F81568DCCFD"
+				item: "create:encased_fan"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7B7F91A0C9DFBCB5"]
+			description: [
+				"The &aNozzle&r allows the Encased Fan to &6operate in all directions at once&r, save for its back."
+				""
+				"Note that doing this &cprevents it from interacting with items&r for processing."
+			]
+			id: "41B6B91267416F33"
+			tasks: [{
+				id: "1ADFDD3A36DC6FE2"
+				item: "create:nozzle"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["50FF774BEF232E50"]
+			description: [
+				"&aFluid Valves&r can &6control the flow of fluids&r through a Copper Pipe."
+				""
+				"You can &6Ponder&r this item to learn how to use it."
+			]
+			hide_dependency_lines: true
+			id: "73031CC9DC0E269A"
+			tasks: [{
+				id: "2B921C3FD4B92D5B"
+				item: "create:fluid_valve"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["50FF774BEF232E50"]
+			description: ["The &aMinecart Coupling&r attaches two Minecarts together."]
+			hide_dependency_lines: true
+			id: "7B8C4521D63C221F"
+			tasks: [{
+				id: "1D9F809CF61886A5"
+				item: "create:minecart_coupling"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["50FF774BEF232E50"]
+			description: [
+				"&aChain Conveyors&r can &6relay Rotational Force&r to each other, and can &6carry players&r."
+				""
+				"To start, you'll need to &6attach two of them together&r using a Chain."
+				""
+				"&6Right-click the chain with a Wrench&r to mount the Conveyor."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			hide_dependency_lines: true
+			id: "0B82DB6962C63107"
+			tasks: [{
+				id: "3B6C63278C32C449"
+				item: "create:chain_conveyor"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["50FF774BEF232E50"]
+			description: [
+				"The &aController Rail&r works similarly to a &6Powered Rail&r, but &6only functions in one direction&r."
+				""
+				"Its &6speed can also be set&r with a varying amounts of Redstone power."
+			]
+			hide_dependency_lines: true
+			id: "526A784034FE77C4"
+			tasks: [{
+				id: "7EF63A1CB0930C0D"
+				item: "create:controller_rail"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["50FF774BEF232E50"]
+			description: [
+				"The &aList Filter&r allows you to set a filter on the item using its interface. "
+				""
+				"This Filter can then be put into &6Create's filter slots&r to &6allow multiple items to be filtered&r."
+				""
+				"You can also nest these Filters within each other."
+			]
+			hide_dependency_lines: true
+			id: "1CA0BBEA87485EE9"
+			tasks: [{
+				id: "13BC427E6FCAD48D"
+				item: "create:filter"
+				match_nbt: false
+				type: "item"
+			}]
+			x: -6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["50FF774BEF232E50"]
+			description: [
+				"The &aAttribute Filter&r can be used to filter by a &6specific attribute or category&r, and can then be used in &6Create's filter slots&r."
+				""
+				"This filter uses &6Item NBT data&r to pull its filters from."
+				""
+				"&6NBT&r is what Minecraft internally uses to keep track of item data, such as enchantments, mod source, tags, and more."
+				"&7(Fun fact: In future versions, this is replaced with the Data Component system)&r"
+			]
+			hide_dependency_lines: true
+			id: "7A70F3FAECDA1879"
+			tasks: [{
+				id: "3187017652103D5E"
+				item: "create:attribute_filter"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["50FF774BEF232E50"]
+			description: [
+				"&aCreate Crafts \\& Additions&r is a &6add-on for Create&r that brings &6applications for Energy&r into Create."
+				""
+				"The quests in this category will cover items added by this add-on."
+			]
+			hide_dependency_lines: true
+			icon: "createaddition:digital_adapter"
+			id: "4F671D2881E44A55"
+			subtitle: "Now you're playing with Power"
+			tasks: [{
+				id: "0C22972189CFC084"
+				type: "checkmark"
+			}]
+			title: "Create Crafts \\& Additions"
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4F671D2881E44A55"]
+			description: [
+				"The &aRolling Mill&r can take various metals, and &6turn them into Rods&r, given &6Rotational Force&r."
+				""
+				"It can also turn &6various plates into Wire&r."
+				""
+				"It can also turn &6Bamboo into Straws&r."
+				""
+				"You can &6Ponder&r this item to learn how to use it."
+			]
+			id: "2D67AAFD3D827BB6"
+			tasks: [{
+				id: "6C884C25A1BC7CF5"
+				item: "createaddition:rolling_mill"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2D67AAFD3D827BB6"]
+			description: [
+				"&aSpools&r can be used to &6wire two Connectors&r together."
+				""
+				"&cGenerally, it is not recommended to connect low currents to high currents, and vice versa.&r"
+			]
+			icon: "createaddition:copper_spool"
+			id: "107FCEBB906016BE"
+			tasks: [{
+				id: "48B6F170872FCED2"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Create Spool\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "createaddition:copper_spool"
+							}
+							{
+								Count: 1b
+								id: "createaddition:gold_spool"
+							}
+							{
+								Count: 1b
+								id: "createaddition:electrum_spool"
+							}
+							{
+								Count: 1b
+								id: "createaddition:festive_spool"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Spools"
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2D67AAFD3D827BB6"]
+			description: [
+				"&aConnectors&r are what defines &6a node for energy&r in this add-on."
+				""
+				"&cGenerally, it is not recommended to connect low current to high current, and vice versa.&r"
+				""
+				"You can specify whether or not a Connector should push or pull power using a &6Wrench&r."
+				""
+				"&6Hold Shift&r to view a description of these items."
+			]
+			icon: "createaddition:connector"
+			id: "7AFB9EB850F66166"
+			tasks: [{
+				id: "1434204C6E815989"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Create Connector\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "createaddition:connector"
+							}
+							{
+								Count: 1b
+								id: "createaddition:small_light_connector"
+							}
+							{
+								Count: 1b
+								id: "createaddition:large_connector"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Connectors"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2D67AAFD3D827BB6"]
+			description: [
+				"The &aAccumulator&r is a &6multiblock device&r that can be used to &6store energy&r."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			id: "370213C881C0CDD2"
+			tasks: [{
+				id: "62D655DCB289CCF3"
+				item: "createaddition:modular_accumulator"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2D67AAFD3D827BB6"]
+			description: [
+				"The &aElectric Motor&r will &6generate Rotational Force&r when given &6Power&r."
+				""
+				"Using a &6panel on the back&r, you can &6specify how much&r Rotational Force to generate."
+				""
+				"The more Rotational Force generated, the more Power is required per tick."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			id: "5498E1A040886028"
+			tasks: [{
+				id: "410455B273805F0F"
+				item: "createaddition:electric_motor"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2D67AAFD3D827BB6"]
+			description: [
+				"The &aAlternator&r will &6take Rotational Force, and turn it into Power&r."
+				""
+				"To do this, it requires a &6minimum of 32 RPM&r."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			id: "46F4F55F8C4B55EF"
+			tasks: [{
+				id: "6F5BF1414DCAF92B"
+				item: "createaddition:alternator"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2D67AAFD3D827BB6"]
+			description: [
+				"The &aRedstone Relay&r will only allow Power to pass through it when given a Redstone Signal."
+				""
+				"This is a &6low current&r device."
+			]
+			id: "627233ADE5B787CD"
+			tasks: [{
+				id: "2D438C16827E2A1D"
+				item: "createaddition:redstone_relay"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2D67AAFD3D827BB6"]
+			description: [
+				"The &aTesla Coil&r can be used to &6charge any item&r on a Depot or Belt, &6as long as it accepts Forge Energy&r &7(FE)&r."
+				""
+				"Providing it with a &6Redstone Signal&r enables it to &6attack nearby mobs and players&r."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+				""
+				"&7(Theoretically, it should accept items that take Redstone Flux (RF) as well.)&r"
+			]
+			id: "4CA68872A82237F5"
+			tasks: [{
+				id: "04578389B73B4B97"
+				item: "createaddition:tesla_coil"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
 		}
 	]
 	title: "Misc"
