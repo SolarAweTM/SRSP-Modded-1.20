@@ -73,6 +73,10 @@
   "jadeaddons.lootr": {
     "info": true
   },
+  "fluiddrawerslegacy": {
+    "controller": true,
+    "fluiddrawer": true
+  },
   "jade": {
     "coordinates.rel": false,
     "distance": false,
@@ -91,5 +95,11 @@
   },
   "balm": {
     "jade": true
+  },
+  "storagedrawers": {
+    "display.stacklimit": true,
+    "main": true,
+    "display.content": true,
+    "display.status": true
   }
 }

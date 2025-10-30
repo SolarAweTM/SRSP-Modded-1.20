@@ -4,6 +4,8 @@
   "apotheosis:spawner": null,
   "ars_nouveau:mob_jar": null,
   "balm:jade": null,
+  "fluiddrawerslegacy:controller": null,
+  "fluiddrawerslegacy:fluiddrawer": null,
   "framedblocks:framed_item_frame": null,
   "jade:block_face": null,
   "jade:distance": null,
@@ -67,5 +69,6 @@
   "minecraft:villager_profession": null,
   "minecraft:waxed": null,
   "minecraft:zombie_villager": null,
+  "storagedrawers:main": null,
   "waystones:waystone": null
 }
