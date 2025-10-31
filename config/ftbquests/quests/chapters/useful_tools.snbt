@@ -1405,6 +1405,7 @@
 				"Search &6\"drawer upgrade\" &rin JEI to see a list of all Drawer Upgrades and what they do."
 			]
 			id: "1A2882743E00F3D7"
+			subtitle: "Upgrade Complete"
 			tasks: [{
 				id: "13D231A2E695511E"
 				item: "storagedrawers:upgrade_template"
@@ -1423,6 +1424,7 @@
 			]
 			icon: "storagedrawers:drawer_key"
 			id: "5C8303F341E8A124"
+			subtitle: "A key to your Drawer's heart"
 			tasks: [{
 				id: "02330E1C9C093278"
 				item: {
@@ -1469,6 +1471,38 @@
 			}]
 			title: "Drawer Keys"
 			x: -2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7BE1BB906139D39B"]
+			description: [
+				"&aDrawer Controllers&r can provide a way for &6multiple drawers to act as one&r inventory to work with automation."
+				""
+				"These have a &6range of 50 blocks&r, and only consider &6drawers that are physically attached&r."
+				""
+				"If you need more faces for automation to access the drawer network from, you can use the &6Drawer Controller IO&r block to attach another set of faces for interaction."
+				""
+				"You can also &6right-click&r with a valid item to insert it, and &6double right-click&r to insert all valid items at once."
+				""
+				"They can also be &6framed&r."
+			]
+			icon: "storagedrawers:controller"
+			id: "698DE10F206C017E"
+			min_width: 250
+			subtitle: "In CTRL"
+			tasks: [
+				{
+					id: "2B8F51C2E796C7E7"
+					item: "storagedrawers:controller"
+					type: "item"
+				}
+				{
+					id: "136E488DCA751077"
+					item: "storagedrawers:controller_slave"
+					type: "item"
+				}
+			]
+			x: -3.5d
 			y: 3.5d
 		}
 	]

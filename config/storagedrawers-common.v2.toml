@@ -179,7 +179,7 @@
 
 	# Allows the automatic conversion of same-type items based on configuration.
 	[Upgrades.Conversion]
-		enableUpgrade = true
+		enableUpgrade = false
 		# 
 		# Each type will be combined with each material to create a set of allow list entries.
 		# This is mainly a convenience for common ore-based materials.
@@ -285,7 +285,7 @@
 
 	# Allows drawers with contents to be freely carried when heavy drawers is enabled.
 	[Upgrades.Portability]
-		enableUpgrade = true
+		enableUpgrade = false
 
 	# Lets drawers emit redstone signals based on their fill level.
 	[Upgrades.Redstone]

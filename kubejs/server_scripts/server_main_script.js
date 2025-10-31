@@ -11,6 +11,7 @@ ServerEvents.recipes(event => {
 	event.remove({ mod: 'itemfilters' })
 	//elytra is kil (NEVERMIND)
 	// event.remove({ output: 'minecraft:elytra' })
+	//convert BWG crafting tables to vanilla crafting tables
 	event.shapeless(
 		'minecraft:crafting_table', //result
 		[
