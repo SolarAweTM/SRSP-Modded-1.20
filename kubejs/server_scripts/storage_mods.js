@@ -1,6 +1,6 @@
 // priority: 0
 
-console.info('-KubeJS- Sophisticated Storage server script loaded.')
+console.info('-KubeJS- Storage Mod server script loaded.')
 
 ServerEvents.recipes(event => {
 	let soph_drawers = [
