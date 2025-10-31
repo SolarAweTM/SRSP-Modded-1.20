@@ -1,4 +1,5 @@
 {
+	autofocus_id: "411797381601796A"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "locomotion"
@@ -7,6 +8,168 @@
 	id: "6ACB76689805C661"
 	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["05C90BF60E59F2F3"]
+			description: [
+				"&cNote: This quest chapter assumes you have completed the Core Progression questline up to at least the &aSequenced Assembly&r &cquest.&r"
+				""
+				"&6Create&r introduces a really cool way to &6get around your world&r: &aTrains&r!"
+				""
+				"This questline will help you understand how Create's trains work, and how to use them."
+				""
+				"To start, make some &aTrain Tracks&r via Sequenced Assembly. The recipe doesn't loop, so it should be relatively simple to automate. If you can, &6craft around 2 stacks&r."
+				""
+				"You can &6Ponder&r this item to learn more about it, such as &6how to place them&r."
+			]
+			id: "411797381601796A"
+			min_width: 300
+			rewards: [{
+				count: 128
+				id: "5A30B1FC13CB77E2"
+				item: "create:track"
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [{
+				id: "7E26449B80943F3C"
+				item: "create:track"
+				type: "item"
+			}]
+			title: "Create: Locomotion"
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["411797381601796A"]
+			description: [
+				"&aTrain Casing&r is important in making many &6important components&r related to trains."
+				""
+				"It also looks nice as a decoration block, especially on trains!"
+				""
+				"&6Sturdy Sheets&r can be obtained through Sequenced Assembly, and then &6right-clicked onto Brass Casing&r either manually or via Deployer to get &aTrain Casing&r."
+			]
+			id: "1B33EAEC3C53AA76"
+			rewards: [{
+				count: 16
+				id: "623E6A60215EE977"
+				item: "create:track"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6320FB8FC7CD2A31"
+				item: "create:railway_casing"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1B33EAEC3C53AA76"]
+			description: [
+				"&aTrain Stations&r are the main way you'll mark &6points of interest&r in your tracks, and they're also &6where you can build trains&r."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			id: "57683083D5BC4A7A"
+			rewards: [{
+				count: 16
+				id: "25BB1FD8E7AEA579"
+				item: "create:track"
+				type: "item"
+			}]
+			tasks: [{
+				id: "109F769B8EA9E96A"
+				item: "create:track_station"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1B33EAEC3C53AA76"]
+			description: [
+				"&aTrain Controls&r are very important, as one is &6required on each train&r."
+				""
+				"To control a train, you can &6use your movement controls&r, as you would on a mount."
+				""
+				"In order to properly approach and stop at a Train Station, you'll need to &6hold your jump key&r when prompted above your hotbar."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			id: "7CC9B63F917FE394"
+			rewards: [{
+				count: 16
+				id: "65BC4C82F2D99751"
+				item: "create:track"
+				type: "item"
+			}]
+			tasks: [{
+				id: "753AAD899E7A673A"
+				item: "create:controls"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"7CC9B63F917FE394"
+				"57683083D5BC4A7A"
+			]
+			description: [
+				"Now that you have the &6necessary components&r, it's time to make &ayour very own Train&r."
+				""
+				"By placing the &6Train Station&r properly, you can open its interface and click &6\"Create new Train\"&r:"
+				"{image:srsp:textures/ftbquests/players_first_train_1.png width:281 height:152 align:center}"
+				"After clicking that, you'll see the interface change to this screen."
+				"{image:srsp:textures/ftbquests/players_first_train_2.png width:271 height:198 align:center}"
+				"Head to the &6next page&r to continue."
+				"{@pagebreak}"
+				"You can now exit the interface and &6place a Train Casing on top of a highlighted track&r, which looks like this:"
+				"{image:srsp:textures/ftbquests/players_first_train_3.png width:192 height:108 align:center}"
+				"This will create a &6Bogey&r, and &6highlight other suitable tracks&r to place more Bogeys on:"
+				"{image:srsp:textures/ftbquests/players_first_train_4.png width:192 height:108 align:center}"
+				"You can also &6right-click the track you just placed&r the Bogey on to change its visual style."
+				""
+				"Note that &call Bogeys placed during this time will count toward a single train vehicle&r."
+				""
+				"Head to the &6next page&r to continue."
+				"{@pagebreak}"
+				"Now, you'll want to &6build your Train&r as you see fit. Try a simple shape to start out with:"
+				"{image:srsp:textures/ftbquests/players_first_train_5.png width:192 height:108 align:center}"
+				"At minimum, your Train should have &6at least one Seat&r, and &6at least one set of Train Controls&r."
+				"Make sure you use &6Super Glue&r to make sure your Train is &6actually attached to the Bogey&r:"
+				"{image:srsp:textures/ftbquests/players_first_train_6.png width:192 height:108 align:center}"
+				"Head to the &6next page&r to continue."
+				"{@pagebreak}"
+				"Now that you've finished building your Train, you can head &6back to the Station block&r, and &6confirm that the amount of Bogeys is correct&r for your Train, then click &6\"Assemble Train\"&r:"
+				"{image:srsp:textures/ftbquests/players_first_train_7.png width:270 height:193 align:center}"
+				"&6Congratulations!&r You've built your &6very first Train&r! You can &6now sit on a Seat&r like a mount, and then &6right-click the Train Controls&r to take control of the Train."
+				""
+				"&6Pro Tip:&r If you're having trouble reversing your train, try using &6F5&r to switch to &6Third Person Back View&r."
+			]
+			icon: "create:train_door"
+			id: "33CB67DFABED8A6D"
+			min_width: 300
+			rewards: [{
+				count: 64
+				id: "4DB7B7554E06E923"
+				item: "create:track"
+				type: "item"
+			}]
+			subtitle: "A reminder that you can scroll down on quest menus"
+			tasks: [{
+				advancement: "create:train"
+				criterion: ""
+				id: "475F99E5C9163ACE"
+				title: "Assemble your very first Train!"
+				type: "advancement"
+			}]
+			title: "Your First Train"
+			x: 5.5d
+			y: -0.5d
+		}
+	]
 	title: "Locomotion"
 }
