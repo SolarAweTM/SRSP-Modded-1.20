@@ -1276,38 +1276,6 @@
 		{
 			dependencies: ["106BE9BA38F303F6"]
 			description: [
-				"&aSophisticated Storage&r introduces drawers &7(actually called limited barrels but I changed that)&r that can generally only hold &aone item per drawer&r they contain, but can contain &aa lot more than a single chest&r with just that item. They can also be upgraded."
-				""
-				"&aRight click to put an item in&r. Afterward, double right clicking with a different item will put all of the items in your inventory that can go in the drawer into the drawer."
-				""
-				"&aLeft click to take items out&r. Hold &aShift&r while doing so to take out an entire stack."
-				""
-				"&aRight clicking any side that isn't the side with the items&r will open a menu with more detailed info about how many items are in the drawer block, and a space for upgrades."
-				""
-				"&6These drawers use the same upgrades as the chests from this mod.&r"
-			]
-			id: "159CCB61C39CD22F"
-			min_width: 300
-			subtitle: "god i love the limited 3D they used for this game, its so charming"
-			tasks: [{
-				id: "69F3CF1D8093A4E3"
-				item: {
-					Count: 1
-					id: "sophisticatedstorage:limited_barrel_1"
-					tag: {
-						woodType: "oak"
-					}
-				}
-				match_nbt: false
-				type: "item"
-			}]
-			title: "Limited Barrels (Drawers)"
-			x: 2.5d
-			y: 4.5d
-		}
-		{
-			dependencies: ["106BE9BA38F303F6"]
-			description: [
 				"&6Packing Tape&r can be used to \"pack\" a chest or barrel, allowing it to be &apicked up without spitting its contents everywhere&r. "
 				""
 				"This can be very useful if you need to move things around in a base, and it even works with double chests."
@@ -1327,6 +1295,181 @@
 			}]
 			x: 4.0d
 			y: 4.5d
+		}
+		{
+			dependencies: ["695654EE3BCBE110"]
+			description: [
+				"&aStorage Drawers&r are a handy way to &6store lots of items&r, and have it &6look good&r."
+				""
+				"This quest only asks you to obtain &oany&r drawer. The simplest one is a &61x1 drawer made from 6 planks and any wooden chest&r."
+				""
+				"&6Right-click&r while holding an item to put it in. &6Double right-click&r to put all of that item in your inventory into the drawer at once."
+				""
+				"&6Left-click&r to take out one item. &6Hold Sneak&r to take an entire stack."
+				""
+				"&6Sneak-right-click&r the drawer to open an interface where you can see more info, and &6insert upgrades&r."
+			]
+			icon: "storagedrawers:oak_full_drawers_4"
+			id: "7BE1BB906139D39B"
+			min_width: 250
+			subtitle: "god i love the limited 3D they used for this game, its so charming"
+			tasks: [{
+				id: "6B35C85C4F50FC47"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Storage Drawer\"}"
+						}
+						value: "storagedrawers:drawers"
+					}
+				}
+				type: "item"
+			}]
+			title: "Storage Drawers"
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7BE1BB906139D39B"]
+			description: [
+				"Drawers can also be &6customized&r with the texture of &6virtually any block&r."
+				""
+				"With a &aFraming Table&r, you can replace the &6inner, outer, and trim textures&r of drawers."
+			]
+			id: "119231B96C42D36D"
+			subtitle: "I've been framed!"
+			tasks: [{
+				id: "2F8975AF27E1F0EE"
+				item: "storagedrawers:framing_table"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7BE1BB906139D39B"]
+			description: [
+				"&aCompacting Drawers&r are useful for storing things that can be &6compressed and decompressed&r, such as ingots."
+				""
+				"If you put in &663 Iron Ingots&r, you can take out 7 Iron Blocks, or 567 Iron Nuggets. Or you can take the ingots back as is."
+			]
+			icon: "storagedrawers:compacting_drawers_3"
+			id: "4CC05CF2A84EC26D"
+			subtitle: "Drawer.zip"
+			tasks: [{
+				id: "36D3544B5609CC4C"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Compacting Drawer\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "storagedrawers:compacting_drawers_2"
+							}
+							{
+								Count: 1b
+								id: "storagedrawers:compacting_drawers_3"
+							}
+							{
+								Count: 1b
+								id: "storagedrawers:compacting_half_drawers_2"
+							}
+							{
+								Count: 1b
+								id: "storagedrawers:compacting_half_drawers_3"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Compacting Drawers"
+			x: -1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7BE1BB906139D39B"]
+			description: [
+				"&aDrawer Upgrades&r can add &6extra functionality&r to Drawers or &6increase their storage capacity&r."
+				""
+				"Storage Upgrades can &6stack&r."
+				""
+				"Search &6\"drawer upgrade\" &rin JEI to see a list of all Drawer Upgrades and what they do."
+			]
+			id: "1A2882743E00F3D7"
+			tasks: [{
+				id: "13D231A2E695511E"
+				item: "storagedrawers:upgrade_template"
+				type: "item"
+			}]
+			title: "Drawer Upgrades"
+			x: -3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7BE1BB906139D39B"]
+			description: [
+				"&aDrawer Keys&r can &6modify the behaviour of drawers&r in multiple ways."
+				""
+				"&6Hover over each key&r to find out what it does."
+			]
+			icon: "storagedrawers:drawer_key"
+			id: "5C8303F341E8A124"
+			tasks: [{
+				id: "02330E1C9C093278"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Drawer Key\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "storagedrawers:drawer_key"
+							}
+							{
+								Count: 1b
+								id: "storagedrawers:quantify_key"
+							}
+							{
+								Count: 1b
+								id: "storagedrawers:shroud_key"
+							}
+							{
+								Count: 1b
+								id: "storagedrawers:personal_key"
+							}
+							{
+								Count: 1b
+								id: "storagedrawers:suspend_key"
+							}
+							{
+								Count: 1b
+								id: "storagedrawers:priority_key"
+							}
+							{
+								Count: 1b
+								id: "storagedrawers:drawer_puller"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Drawer Keys"
+			x: -2.5d
+			y: 3.5d
 		}
 	]
 	title: "Useful Tools"
