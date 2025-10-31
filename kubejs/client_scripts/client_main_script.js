@@ -289,7 +289,29 @@ JEIEvents.hideItems(event => {
 		'sophisticatedstorage:limited_netherite_barrel_1',
 		'sophisticatedstorage:limited_netherite_barrel_2',
 		'sophisticatedstorage:limited_netherite_barrel_3',
-		'sophisticatedstorage:limited_netherite_barrel_4'
+		'sophisticatedstorage:limited_netherite_barrel_4',
+		'storagedrawers:conversion_upgrade',
+		'storagedrawers:portability_upgrade',
+		'storagedrawers:personal_key_cofh',
+		'storagedrawers:personal_key_ftb',
+		'storagedrawers:priority_key_p1',
+		'storagedrawers:priority_key_p2',
+		'storagedrawers:priority_key_n1',
+		'storagedrawers:priority_key_n2',
+		'storagedrawers:keyring_drawer',
+		'storagedrawers:keyring_quantify',
+		'storagedrawers:keyring_shroud',
+		'storagedrawers:keyring_personal',
+		'storagedrawers:keyring_personal_cofh',
+		'storagedrawers:keyring_personal_ftb',
+		'storagedrawers:keyring_personal_unlock',
+		'storagedrawers:keyring_suspend',
+		'storagedrawers:keyring_priority',
+		'storagedrawers:keyring_priority_p1',
+		'storagedrawers:keyring_priority_p2',
+		'storagedrawers:keyring_priority_n1',
+		'storagedrawers:keyring_priority_n2',
+		'storagedrawers:keyring_puller'
 	]
 	hidden_items.forEach(item => {
 		event.hide(item) // noted: this also removes them from creative menus

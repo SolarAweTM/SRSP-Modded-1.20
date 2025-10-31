@@ -33,4 +33,13 @@ ServerEvents.recipes(event => {
 	soph_drawers.forEach(item => {
 		event.remove({output: item})
 	})
+	
+	let disabled_storagedrawers_items = [
+		'storagedrawers:conversion_upgrade',
+		'storagedrawers:portability_upgrade',
+		'storagedrawers:personal_key_cofh'
+	]
+	disabled_storagedrawers_items.forEach(item => {
+		event.remove({output: item})
+	})
 })
