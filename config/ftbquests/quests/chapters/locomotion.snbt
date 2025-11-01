@@ -170,6 +170,133 @@
 			x: 5.5d
 			y: -0.5d
 		}
+		{
+			dependencies: ["33CB67DFABED8A6D"]
+			description: [
+				"The &aTrain Observer&r, when bound to a placed track and placed, will &6emit a Redstone Signal as a Train passes it&r."
+				""
+				"It can also be &6filtered&r, which will only emit a signal &6when certain cargo is on board&r while passing."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			id: "1D58B5D55698DB7C"
+			rewards: [{
+				count: 16
+				id: "3756010A1F73BA17"
+				item: "create:track"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4E463DC0979A9E7B"
+				item: "create:track_observer"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1CF428D3849A8D70"]
+			description: [
+				"The &aTrain Signal&r can be used to &6control the flow of Trains&r controlled by mobs."
+				""
+				"By default, a Signal will prevent mobs from driving a Train &6against the direction shown&r on the track."
+				""
+				"You can &6Ponder&r this item to learn more about it, including &6how to prevent crashes&r at an intersection."
+			]
+			id: "6309BE1D6B6943D4"
+			rewards: [{
+				count: 16
+				id: "0801E70561BC3A3F"
+				item: "create:track"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7472F78D78318D2D"
+				item: "create:track_signal"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["33CB67DFABED8A6D"]
+			description: [
+				"The &aTrain Schedule&r can be used to have a &6non-player mob control a Train&r."
+				""
+				"&6Right-click&r the Schedule in your hand in order to &6program it&r."
+				""
+				"Any &6Blaze Burner&r or &6Mob in a Seat&r next to &6Train Controls&r is able to control a Train via schedule."
+				""
+				"&6Right-click the mob&r while holding the Schedule to give it to the mob and start controlling the Train, and &6right-click again&r to take it back."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			id: "1CF428D3849A8D70"
+			rewards: [{
+				count: 16
+				id: "7E4559018B5A4588"
+				item: "create:track"
+				type: "item"
+			}]
+			tasks: [{
+				id: "707BE48038DE5B69"
+				item: "create:schedule"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["33CB67DFABED8A6D"]
+			description: [
+				"Trains can go through &aNether Portals&r. Yes, they still have to &6actually fit in the portal&r though."
+				""
+				"You'll also need to &6put Train Tracks on the other side&r."
+				""
+				"You can find more info in the &6Ponder&r pages for &6Train Tracks&r."
+			]
+			icon: "minecraft:netherrack"
+			id: "677430591605D694"
+			rewards: [{
+				count: 16
+				id: "752446B1365D7C46"
+				item: "create:track"
+				type: "item"
+			}]
+			subtitle: "Ticket to Hell"
+			tasks: [{
+				advancement: "create:train_portal"
+				criterion: ""
+				id: "0350E17877F786C1"
+				title: "Take a Train through a Nether Portal."
+				type: "advancement"
+			}]
+			title: "Dimensional Commuter"
+			x: 5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["33CB67DFABED8A6D"]
+			description: ["&aSteam Whistles&r, when put as part of a Train, can be &6activated manually regardless of heating&r by pressing your &6Sprint&r key &7(default is Left Control)&r."]
+			id: "12CABF1F0148B072"
+			rewards: [{
+				count: 16
+				id: "4D90F02C13D3A066"
+				item: "create:track"
+				type: "item"
+			}]
+			subtitle: "CHOO CHOO"
+			tasks: [{
+				advancement: "create:train_whistle"
+				criterion: ""
+				id: "166ADBD7EF2DE255"
+				title: "Sound a whistle on a Train."
+				type: "advancement"
+			}]
+			title: "Train Whistles"
+			x: 5.5d
+			y: 1.0d
+		}
 	]
 	title: "Locomotion"
 }

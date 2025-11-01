@@ -1444,7 +1444,7 @@
 				type: "item"
 			}]
 			x: -6.0d
-			y: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["50FF774BEF232E50"]
@@ -1464,7 +1464,7 @@
 				type: "item"
 			}]
 			x: -6.0d
-			y: -0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["50FF774BEF232E50"]
@@ -1684,6 +1684,24 @@
 			}]
 			x: 0.0d
 			y: 4.0d
+		}
+		{
+			dependencies: ["50FF774BEF232E50"]
+			description: [
+				"The &6Steam Whistle&r can play a note when &6placed on a Fluid Tank&r and when the &6Tank is given sufficient heat&r, and the whistle is provided with a &6Redstone Signal&r."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			hide_dependency_lines: true
+			id: "6077C30DC7A48964"
+			subtitle: "Make your boiler whistle"
+			tasks: [{
+				id: "7F3BDA4D1C2025A1"
+				item: "create:steam_whistle"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -1.0d
 		}
 	]
 	title: "Misc"
