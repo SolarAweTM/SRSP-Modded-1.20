@@ -19,6 +19,6 @@ usernamecache.json
 crash-reports/**
 .qmenu_opened.marker
 config/everycomp-hazardous.properties
-config/jei/world/local/Test_World/bookmarks.ini
+config/jei/world/**
 config/oculus.properties
 /schematics
