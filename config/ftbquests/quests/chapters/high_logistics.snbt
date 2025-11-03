@@ -1,4 +1,5 @@
 {
+	autofocus_id: "2358A02649D246B1"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "high_logistics"
@@ -11,6 +12,87 @@
 	id: "1A0FA341A81C0092"
 	order_index: 2
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["05C90BF60E59F2F3"]
+			description: [
+				"&cNote: This quest chapter assumes you have completed the Core Progression questline up to at least the &aMechanical Processing&r &cquest.&r"
+				""
+				"&6Create&r offers a way to &astreamline item transport&r, and provide some &6interesting logistics&r as well."
+				""
+				"The Packager, when &6attached to a container&r and &6given Redstone power&r, will take &6up to 9 item stacks&r and put them into a &6Cardboard Package&r."
+				""
+				"Inputting a Package into a Packager will attempt to &6unpack the contents&r of the Package into its attached container, &6if it has the space to do so&r."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			id: "2358A02649D246B1"
+			min_width: 300
+			size: 2.0d
+			subtitle: "Creating a warehouse"
+			tasks: [{
+				id: "0453E75D9F192ACE"
+				item: "create:packager"
+				type: "item"
+			}]
+			title: "Create: High Logistics"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2358A02649D246B1"]
+			description: [
+				"&aPackages&r, created by the &6Packager&r, are a &6collection of items put into one&r."
+				""
+				"On a Belt, you can &6use a Mechanical Saw to unpack&r a Package and have it &6output onto another Belt&r depending on the direction the Saw is spinning."
+				""
+				"You can also &6place one down&r, and then &6punch it to unpack&r it."
+			]
+			id: "63B4511F046172B4"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "create:cardboard_package_12x12"
+					tag: { }
+				}
+				id: "78DC2C4DA221E4D9"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Package\"}"
+						}
+						value: "create:packages"
+					}
+				}
+				type: "item"
+			}]
+			title: "Packages"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["63B4511F046172B4"]
+			description: [
+				"A &6Packager with a Sign attached to it&r will &6apply the Sign's text&r onto all of its own Packages as an &aAddress&r."
+				""
+				"This can be used to &6identify and sort&r Packages for processing."
+				""
+				"&6For example&r, if you only wanted packages addressed with &6\"Storage\"&r to go directly into your storage solution, you can use a &aPackage Filter&r to tell a Funnel or Tunnel to only &6allow Packages with that address&r to go directly to storage."
+			]
+			id: "75AC8472DB7C89BC"
+			subtitle: "127.0.0.1"
+			tasks: [{
+				id: "0A59AF04133B9DC1"
+				item: "create:package_filter"
+				type: "item"
+			}]
+			title: "Addressing"
+			x: 0.0d
+			y: -2.5d
+		}
+	]
 	title: "High Logistics"
 }

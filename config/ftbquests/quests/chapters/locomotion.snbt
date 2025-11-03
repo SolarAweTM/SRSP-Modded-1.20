@@ -31,6 +31,7 @@
 				type: "item"
 			}]
 			size: 2.0d
+			subtitle: "All Aboard!"
 			tasks: [{
 				id: "7E26449B80943F3C"
 				item: "create:track"
