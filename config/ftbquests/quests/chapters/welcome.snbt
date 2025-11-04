@@ -6,20 +6,6 @@
 	group: ""
 	icon: "biomesoplenty:bop_icon"
 	id: "12223F6E3BB28753"
-	images: [{
-		click: "http://gist.github.com/SolarAweTM/21a9ee83a29275204dbc989e75e9f761"
-		dependency: "2E61EA3C4ABA133B"
-		height: 1.0d
-		hover: [
-			"Vanilla Changes"
-			"Click me!"
-		]
-		image: "everycomp:block/abnww/architects_palette/twisted_beehive_end"
-		rotation: 0.0d
-		width: 1.0d
-		x: 0.5d
-		y: -3.0d
-	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
