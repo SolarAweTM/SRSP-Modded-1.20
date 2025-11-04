@@ -96,7 +96,11 @@
 		}
 		{
 			dependencies: ["343033073CECDF2A"]
-			description: ["Click the image above this quest &a(after you complete it)&f to view a list of impactful vanilla changes."]
+			description: [
+				"Click the link below to view a list of impactful vanilla changes."
+				""
+				"{ \"text\": \"[Vanilla Changes]\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"open_url\", \"value\": \"http://gist.github.com/SolarAweTM/21a9ee83a29275204dbc989e75e9f761\" } }"
+			]
 			id: "2E61EA3C4ABA133B"
 			tasks: [{
 				id: "767846BBCDD4F75F"

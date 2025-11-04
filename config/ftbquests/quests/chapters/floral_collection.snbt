@@ -6,19 +6,6 @@
 	group: "22E2861D9475E7CD"
 	icon: "botania:marimorphosis"
 	id: "589F85A0234A5D3C"
-	images: [{
-		click: "https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life"
-		height: 1.0d
-		hover: [
-			"Dandelifeon Mechanic Explanation"
-			"Click me!"
-		]
-		image: "everycomp:block/abnww/architects_palette/twisted_beehive_end"
-		rotation: 0.0d
-		width: 1.0d
-		x: 3.5d
-		y: -4.5d
-	}]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
@@ -554,8 +541,8 @@
 				""
 				"Through the process of the Game, any &aCellular Blocks that enter the 8 surrounding tiles&r of the flower will be turned into Mana, with varying amounts depending on the &aage of the Cellular Block&r."
 				""
-				"&6If you don't know what Conway's Game of Life is, please see the link to the right of this quest; it looks like this:&r"
-				"{image:everycomp:block/abnww/architects_palette/twisted_beehive_end width:25 height:25 align:left}"
+				"&6If you don't know what Conway's Game of Life is, please see the following link:&r"
+				"{ \"text\": \"[Conway's Game of Life]\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life\" } }"
 				"&6Alternatively, read this flower's entry in the Lexica Botania.&r"
 			]
 			id: "26D25C205C2C03CE"

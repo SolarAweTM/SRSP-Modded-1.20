@@ -12,20 +12,6 @@
 		}
 	}
 	id: "4721D3AFD8CBEEAC"
-	images: [{
-		click: "https://github.com/SilentChaos512/Silent-Gear/wiki/Starlight-Charger"
-		dependency: "14979D4649381A40"
-		height: 1.0d
-		hover: [
-			"Starlight Charger Guide"
-			"Click me!"
-		]
-		image: "everycomp:block/abnww/architects_palette/twisted_beehive_end"
-		rotation: 0.0d
-		width: 1.0d
-		x: -5.5d
-		y: -3.5d
-	}]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
@@ -643,8 +629,7 @@
 			description: [
 				"The mechanics of the &aStarlight Charger&r are quite complex to go over in this quest, so instead, please take a look at the official Silent Gear documentation on the Charger."
 				""
-				"&6The link will appear next to this quest when completed, and looks like this:&r"
-				"{image:everycomp:block/abnww/architects_palette/twisted_beehive_end width:25 height:25 align:left}"
+				"{ \"text\": \"[Starlight Charger Documentation]\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://github.com/SilentChaos512/Silent-Gear/wiki/Starlight-Charger\" } }"
 			]
 			icon: "silentgear:starlight_charger"
 			id: "14979D4649381A40"
