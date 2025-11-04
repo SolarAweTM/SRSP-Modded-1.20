@@ -545,7 +545,7 @@
 				type: "item"
 			}]
 			title: "Fluid Injection"
-			x: 6.0d
+			x: 4.0d
 			y: -3.0d
 		}
 		{
@@ -602,7 +602,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: -4.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["464DA75FA33C2760"]
@@ -623,8 +623,8 @@
 				type: "item"
 			}]
 			title: "Fluid Drainage"
-			x: 7.0d
-			y: -3.0d
+			x: 5.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["3C924B08AD3A43C0"]
@@ -814,7 +814,7 @@
 				type: "item"
 			}]
 			x: 8.5d
-			y: -4.0d
+			y: -5.0d
 		}
 		{
 			dependencies: [

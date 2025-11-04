@@ -49,6 +49,7 @@
 				"You can also &6place one down&r, and then &6punch it to unpack&r it."
 			]
 			id: "63B4511F046172B4"
+			subtitle: "You've got mail"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -71,7 +72,7 @@
 			}]
 			title: "Packages"
 			x: 0.0d
-			y: -1.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["63B4511F046172B4"]
@@ -90,8 +91,145 @@
 				type: "item"
 			}]
 			title: "Addressing"
-			x: 0.0d
-			y: -2.5d
+			x: -4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"63B4511F046172B4"
+				"74477F88A0D99D62"
+			]
+			description: [
+				"The &aStock Link&r can be used to &6automate the packaging of items&r for logistics."
+				""
+				"By default, placing one down as is will &6create a new stock network&r. You can then &6right-click&r an existing Stock Link &6while holding one in your hand&r to bind it to the existing (or newly created) network."
+				""
+				"A &6Stock Link on a Packager&r will allow other compatible objects bound to the stock network to &6request items&r from the Packager's attached inventory as needed."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			id: "6CFA51103EF4A2ED"
+			min_width: 300
+			tasks: [{
+				id: "6EBEA05B3E7F277D"
+				item: "create:stock_link"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2358A02649D246B1"]
+			description: [
+				"&aItem Vaults&r can be used to store &6up to 20 slots worth&r of items per block."
+				""
+				"They can also be &6combined as a multiblock&r: The Vault can be up to &63x3 blocks standing upright&r, and the depth can be &6up to three times the diameter&r."
+				"This means the largest possible Vault is 3x9x3."
+				""
+				"You also &ccannot directly interact with Vaults&r - they must be accessed via automation such as funnels or the like."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			id: "74477F88A0D99D62"
+			subtitle: "CASH DROP 54"
+			tasks: [{
+				id: "076BC3AE0D3E991B"
+				item: "create:item_vault"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6CFA51103EF4A2ED"]
+			description: [
+				"The &aStock Ticker&r, when operated by a &6Blaze Burner or seated mob&r, can be used to &6request items from a stock network&r."
+				""
+				"Before placement, you must &6right-click a Stock Link&r to bind it to a chosen stock network."
+				""
+				"In order to request items, you can &6right-click the seated mob or Blaze Burner&r."
+				"You can use the bottom of the interface to &6provide an address&r to the requested items."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			id: "29E8BB0D86B5DB08"
+			min_width: 250
+			tasks: [{
+				id: "466FF4044B51429F"
+				item: "create:stock_ticker"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"29E8BB0D86B5DB08"
+				"74477F88A0D99D62"
+			]
+			description: [
+				"The &aPackage Frogport&r can be used with &6Chain Conveyors&r in order to &6transport Packages&r."
+				""
+				"If you don't know what a &6Chain Conveyor&r is, you can find its quest in the &6Misc. category&r, or below:"
+				"{ \"text\": \"[Chain Conveyor Quest]\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"0B82DB6962C63107\" } }"
+				""
+				"A placed Frogport should have its &6Address set by right-clicking it&r."
+				""
+				"Packages that are given to the Frogport that &6do not match the set Address&r will cause the Frogport to &6place the Package onto the Chain Conveyor&r."
+				""
+				"Packages on a Chain Conveyor with &6an Address that matches a Frogport&r will be taken by the Frogport, and &6can then be output onto a Belt&r or other inventory."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			id: "6CF13F4EBFF12BE1"
+			min_width: 300
+			tasks: [{
+				id: "42D735514231A9FA"
+				item: "create:package_frogport"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"63B4511F046172B4"
+				"29E8BB0D86B5DB08"
+			]
+			description: [
+				"&aTable Cloths&r can be placed on any block, and can be used to &6display items&r."
+				""
+				"As part of a &6stock network&r, you can also use them to &6sell items&r."
+				""
+				"&6Right-click a Stock Ticker before placement&r to bind it to its stock network, then place an item."
+				""
+				"You can then &6set a price for the item on the side of the cloth&r. "
+				"Afterward, you and other players can &6right-click the shown item&r to create a &6Shopping List&r, which can be taken to the &6seated mob or Blaze Burner&r next to the Stock Ticker in order to complete the transaction."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			icon: "create:red_table_cloth"
+			id: "571796C1784081C4"
+			min_width: 300
+			subtitle: "Beginnings of a capitalist society"
+			tasks: [{
+				id: "5FB5FB1F97412DEB"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Table Cloth\"}"
+						}
+						value: "create:table_cloths"
+					}
+				}
+				type: "item"
+			}]
+			title: "Table Cloths"
+			x: 2.0d
+			y: -6.0d
 		}
 	]
 	title: "High Logistics"
