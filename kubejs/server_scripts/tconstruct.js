@@ -486,7 +486,7 @@ ServerEvents.recipes(event => {
 			amount: 360,
 			fluid: 'kubejs:molten_tyrian_steel'
 		},
-		temperature: 1000
+		temperature: 1200
 	})
 	event.custom({ //tyrian steel casting recipes
 		type: 'tconstruct:casting_table',
@@ -682,7 +682,7 @@ ServerEvents.recipes(event => {
 			amount: 90,
 			fluid: 'kubejs:molten_tyrian_steel'
 		},
-		temperature: 1000,
+		temperature: 1200,
 		time: 60
 	})
 	event.custom({ //tyrian steel nugget
@@ -692,7 +692,7 @@ ServerEvents.recipes(event => {
 			amount: 10,
 			fluid: 'kubejs:molten_tyrian_steel'
 		},
-		temperature: 1000,
+		temperature: 1200,
 		time: 20
 	})
 	//TODO: tyrian steel
