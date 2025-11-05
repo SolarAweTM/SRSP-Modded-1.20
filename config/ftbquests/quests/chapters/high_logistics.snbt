@@ -48,14 +48,14 @@
 				""
 				"You can also &6place one down&r, and then &6punch it to unpack&r it."
 			]
+			icon: {
+				Count: 1
+				id: "create:cardboard_package_12x12"
+				tag: { }
+			}
 			id: "63B4511F046172B4"
-			subtitle: "You've got mail"
+			subtitle: "Box Kingdom"
 			tasks: [{
-				icon: {
-					Count: 1
-					id: "create:cardboard_package_12x12"
-					tag: { }
-				}
 				id: "78DC2C4DA221E4D9"
 				item: {
 					Count: 1
@@ -110,6 +110,7 @@
 			]
 			id: "6CFA51103EF4A2ED"
 			min_width: 300
+			subtitle: "Networking 101"
 			tasks: [{
 				id: "6EBEA05B3E7F277D"
 				item: "create:stock_link"
@@ -154,6 +155,7 @@
 			]
 			id: "29E8BB0D86B5DB08"
 			min_width: 250
+			subtitle: "Networking 102"
 			tasks: [{
 				id: "466FF4044B51429F"
 				item: "create:stock_ticker"
@@ -230,6 +232,106 @@
 			title: "Table Cloths"
 			x: 2.0d
 			y: -6.0d
+		}
+		{
+			dependencies: [
+				"2358A02649D246B1"
+				"75AC8472DB7C89BC"
+			]
+			description: [
+				"&aPostboxes&r can be used to &6mail Packages via train&r."
+				"{ \"text\": \"[Click here to learn more about Trains.]\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"411797381601796A\" } }"
+				""
+				"In order to function properly, Postboxes &6must be bound to a Train Station&r. Do so before placement by &6right-clicking a Train Station&r with the Postbox in your hand. Then, place the Postbox &6within a 3-block radius of the Station&r."
+				""
+				"In order to send and recieve Packages, you will need to &6specify a set Address&r to match Packages with. You can do so by renaming the Postbox &6within its own interface&r, as seen below:"
+				"{image:srsp:textures/ftbquests/postbox-address.png width:280 height:56 align:center fit:true}"
+				"Afterward, any Package inserted that &6does not match the specified Address&r will cause it to deposit the Package onto the &6next available Train&r that has cargo space. "
+				""
+				"During this time, Packages on the train that &6match the specified Address&r will be placed &6into the Postbox&r."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			icon: "create:white_postbox"
+			id: "0D2FB3EF1D77F2B9"
+			min_width: 300
+			subtitle: "You've got mail"
+			tasks: [{
+				id: "684E8F568E42C7CF"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Postbox\"}"
+						}
+						value: "create:postboxes"
+					}
+				}
+				type: "item"
+			}]
+			title: "Postboxes"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["29E8BB0D86B5DB08"]
+			description: [
+				"The &aRedstone Requester&r functions similarly to a &6Stock Ticker&r, but must have its order &6set within its interface&r."
+				""
+				"Additionally, as the name suggests, when given a &6Redstone Signal&r, it will request the set order with the specified Address."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			id: "18FBF17D4F32EB07"
+			subtitle: "Networking 103"
+			tasks: [{
+				id: "6EA2D97A24F1DA9B"
+				item: "create:redstone_requester"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["75AC8472DB7C89BC"]
+			description: [
+				"Sometimes, a request may result in &6multiple Packages with the same Address&r being put out, which &6could cause issues&r when combined with Packages of a different Address."
+				""
+				"This is where the &aRe-Packager&r comes in handy, to &6combine multiple Packages with the same Address&r into one, and then send the resulting Package on its way."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			id: "163D77D9BC98FE78"
+			subtitle: "Putting more package per package in your package"
+			tasks: [{
+				id: "7FC1F8A374CC16B1"
+				item: "create:repackager"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["163D77D9BC98FE78"]
+			description: [
+				"Factory Gauges can be used to monitor the amount of items in a container, or on an entire stock network."
+				""
+				"As a result, it must first be bound to a stock network before placement."
+				""
+				"You can place the Factory Gauge on a Packager to monitor a specific item within the Packager's attached container, or you can place the Gauge on a wall to monitor a specific item across the entire stock network."
+				""
+				"Either way, you can also set the Factory Gauge to automatically send a request to restock the monitored item if it falls below a set threshold."
+			]
+			id: "454C2DBA1EFD82A0"
+			tasks: [{
+				id: "139CA806CA5F1BBB"
+				item: "create:factory_gauge"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -8.0d
 		}
 	]
 	title: "High Logistics"
