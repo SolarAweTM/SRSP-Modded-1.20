@@ -47,6 +47,11 @@ StartupEvents.registry('fluid', event => { //molten fluids for tconstruct/silent
 	.thickTexture(0xD51D0F)
 	.bucketColor(0xD51D0F)
 	.displayName('Molten Blaze Gold')
+	
+	event.create('molten_tyrian_steel')
+	.thickTexture(0xAE107E)
+	.bucketColor(0xAE107E)
+	.displayName('Molten Tyrian Steel')
 })
 
 ItemEvents.modification(event => {

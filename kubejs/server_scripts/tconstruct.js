@@ -462,6 +462,93 @@ ServerEvents.recipes(event => {
 			tag: 'forge:storage_blocks/blaze_gold'
 		}
 	})
+	event.custom({ //tyrian steel tconstruct alloying recipe
+		type: 'tconstruct:alloy',
+		inputs: [
+			{
+				amount: 90,
+				fluid: 'kubejs:molten_crimson_steel'
+			},
+			{
+				amount: 90,
+				fluid: 'kubejs:molten_azure_electrum'
+			},
+			{
+				amount: 250,
+				tag: 'forge:ender'
+			},
+			{
+				amount: 90,
+				tag: 'tconstruct:molten_debris'
+			}
+		],
+		result: {
+			amount: 360,
+			fluid: 'kubejs:molten_tyrian_steel'
+		},
+		temperature: 1000
+	})
+	event.custom({ //tyrian steel casting recipes
+		type: 'tconstruct:casting_table',
+		cast: {tag:'tconstruct:casts/multi_use/ingot'},
+		cooling_time: 60,
+		fluid: {
+			amount: 90,
+			fluid: 'kubejs:molten_tyrian_steel'
+		},
+		result: {
+			tag: 'forge:ingots/tyrian_steel'
+		}
+	})
+	event.custom({
+		type: 'tconstruct:casting_table',
+		cast: {tag:'tconstruct:casts/single_use/ingot'},
+		cast_consumed: true,
+		cooling_time: 60,
+		fluid: {
+			amount: 90,
+			fluid: 'kubejs:molten_tyrian_steel'
+		},
+		result: {
+			tag: 'forge:ingots/tyrian_steel'
+		}
+	})
+	event.custom({ //nuggets
+		type: 'tconstruct:casting_table',
+		cast: {tag:'tconstruct:casts/multi_use/nugget'},
+		cooling_time: 20,
+		fluid: {
+			amount: 10,
+			fluid: 'kubejs:molten_tyrian_steel'
+		},
+		result: {
+			tag: 'forge:nuggets/tyrian_steel'
+		}
+	})
+	event.custom({
+		type: 'tconstruct:casting_table',
+		cast: {tag:'tconstruct:casts/single_use/nugget'},
+		cast_consumed: true,
+		cooling_time: 20,
+		fluid: {
+			amount: 10,
+			fluid: 'kubejs:molten_tyrian_steel'
+		},
+		result: {
+			tag: 'forge:nuggets/tyrian_steel'
+		}
+	})
+	event.custom({ //blocks
+		type: 'tconstruct:casting_basin',
+		cooling_time: 180,
+		fluid: {
+			amount: 810,
+			fluid: 'kubejs:molten_tyrian_steel'
+		},
+		result: {
+			tag: 'forge:storage_blocks/tyrian_steel'
+		}
+	})
 	
 	//melting recipes for silent gear metals
 	event.custom({ //raw crimson iron
@@ -588,6 +675,26 @@ ServerEvents.recipes(event => {
 		temperature: 700,
 		time: 20
 	})
+	event.custom({ //tyrian steel ingot
+		type: 'tconstruct:melting',
+		ingredient: {tag: 'forge:ingots/tyrian_steel'},
+		result: {
+			amount: 90,
+			fluid: 'kubejs:molten_tyrian_steel'
+		},
+		temperature: 1000,
+		time: 60
+	})
+	event.custom({ //tyrian steel nugget
+		type: 'tconstruct:melting',
+		ingredient: {tag: 'forge:nuggets/tyrian_steel'},
+		result: {
+			amount: 10,
+			fluid: 'kubejs:molten_tyrian_steel'
+		},
+		temperature: 1000,
+		time: 20
+	})
 	//TODO: tyrian steel
 })
 
@@ -597,7 +704,8 @@ ServerEvents.tags('fluid', event => { //tag fluids as metal, gem, or other mater
 		'kubejs:molten_crimson_steel',
 		'kubejs:molten_azure_silver',
 		'kubejs:molten_azure_electrum',
-		'kubejs:molten_blaze_gold'
+		'kubejs:molten_blaze_gold',
+		'kubejs:molten_tyrian_steel'
 	]
 	metalFluids.forEach(item => {
 		event.add('tconstruct:tooltips/metal', item)
