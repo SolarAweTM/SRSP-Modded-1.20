@@ -961,6 +961,23 @@
 			x: 1.0d
 			y: 1.5d
 		}
+		{
+			dependencies: ["252E8705B9375A6F"]
+			description: [
+				"The &aWrench&r can be used for a &6wide variety of functions&r in Create."
+				""
+				"Hold &6Shift&r &7(default keybind)&r to view a short description."
+			]
+			id: "5239145D964A13CE"
+			subtitle: "Percussive Maintenance "
+			tasks: [{
+				id: "5F8EA782D15C3238"
+				item: "create:wrench"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -3.0d
+		}
 	]
 	title: "Core Progression"
 }

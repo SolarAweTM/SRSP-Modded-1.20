@@ -185,6 +185,7 @@
 			]
 			id: "6CF13F4EBFF12BE1"
 			min_width: 300
+			subtitle: "Tounge Lashing"
 			tasks: [{
 				id: "42D735514231A9FA"
 				item: "create:package_frogport"
@@ -316,15 +317,19 @@
 		{
 			dependencies: ["163D77D9BC98FE78"]
 			description: [
-				"Factory Gauges can be used to monitor the amount of items in a container, or on an entire stock network."
+				"&aFactory Gauges&r can be used to &6monitor the amount of items&r in a container, or on an entire stock network."
 				""
-				"As a result, it must first be bound to a stock network before placement."
+				"As a result, it &6must first be bound to a stock network&r before placement."
 				""
-				"You can place the Factory Gauge on a Packager to monitor a specific item within the Packager's attached container, or you can place the Gauge on a wall to monitor a specific item across the entire stock network."
+				"You can place the Factory Gauge &6on a Packager&r to monitor a specific item &6within the Packager's attached container&r, or you can place the Gauge &6on a wall&r to monitor a specific item &6across the entire stock network&r."
 				""
-				"Either way, you can also set the Factory Gauge to automatically send a request to restock the monitored item if it falls below a set threshold."
+				"Either way, you can also set the Factory Gauge to &6automatically send a request to restock&r the monitored item if it falls below a set threshold."
+				""
+				"You can &6Ponder&r this item to learn more about it."
 			]
 			id: "454C2DBA1EFD82A0"
+			min_width: 250
+			subtitle: "Budget Crafting CPU"
 			tasks: [{
 				id: "139CA806CA5F1BBB"
 				item: "create:factory_gauge"
