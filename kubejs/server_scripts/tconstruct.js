@@ -261,7 +261,7 @@ ServerEvents.recipes(event => {
 		temperature: 1000
 	})
 	
-	event.custom({ //crimson iron and steel casting recipes
+	event.custom({ //azure silver and electrum casting recipes
 		type: 'tconstruct:casting_table',
 		cast: {tag:'tconstruct:casts/multi_use/ingot'},
 		cooling_time: 60,
@@ -322,7 +322,7 @@ ServerEvents.recipes(event => {
 			tag: 'forge:storage_blocks/azure_silver'
 		}
 	})
-	event.custom({ //crimson steel
+	event.custom({ //azure electrum
 		type: 'tconstruct:casting_table',
 		cast: {tag:'tconstruct:casts/multi_use/ingot'},
 		cooling_time: 60,
@@ -381,6 +381,85 @@ ServerEvents.recipes(event => {
 		},
 		result: {
 			tag: 'forge:storage_blocks/azure_electrum'
+		}
+	})
+	event.custom({ //blaze gold tconstruct alloying recipe
+		type: 'tconstruct:alloy',
+		inputs: [
+			{
+				amount: 200,
+				fluid: 'tconstruct:blazing_blood'
+			},
+			{
+				amount: 90,
+				tag: 'forge:molten_gold'
+			}
+		],
+		result: {
+			amount: 90,
+			fluid: 'kubejs:molten_blaze_gold'
+		},
+		temperature: 700
+	})
+	event.custom({ //blaze gold casting recipes
+		type: 'tconstruct:casting_table',
+		cast: {tag:'tconstruct:casts/multi_use/ingot'},
+		cooling_time: 60,
+		fluid: {
+			amount: 90,
+			fluid: 'kubejs:molten_blaze_gold'
+		},
+		result: {
+			tag: 'forge:ingots/blaze_gold'
+		}
+	})
+	event.custom({
+		type: 'tconstruct:casting_table',
+		cast: {tag:'tconstruct:casts/single_use/ingot'},
+		cast_consumed: true,
+		cooling_time: 60,
+		fluid: {
+			amount: 90,
+			fluid: 'kubejs:molten_blaze_gold'
+		},
+		result: {
+			tag: 'forge:ingots/blaze_gold'
+		}
+	})
+	event.custom({ //nuggets
+		type: 'tconstruct:casting_table',
+		cast: {tag:'tconstruct:casts/multi_use/nugget'},
+		cooling_time: 20,
+		fluid: {
+			amount: 10,
+			fluid: 'kubejs:molten_blaze_gold'
+		},
+		result: {
+			tag: 'forge:nuggets/blaze_gold'
+		}
+	})
+	event.custom({
+		type: 'tconstruct:casting_table',
+		cast: {tag:'tconstruct:casts/single_use/nugget'},
+		cast_consumed: true,
+		cooling_time: 20,
+		fluid: {
+			amount: 10,
+			fluid: 'kubejs:molten_blaze_gold'
+		},
+		result: {
+			tag: 'forge:nuggets/blaze_gold'
+		}
+	})
+	event.custom({ //blocks
+		type: 'tconstruct:casting_basin',
+		cooling_time: 180,
+		fluid: {
+			amount: 810,
+			fluid: 'kubejs:molten_blaze_gold'
+		},
+		result: {
+			tag: 'forge:storage_blocks/blaze_gold'
 		}
 	})
 	
@@ -489,7 +568,27 @@ ServerEvents.recipes(event => {
 		temperature: 1000,
 		time: 20
 	})
-	//TODO: blaze gold and tyrian steel
+	event.custom({ //blaze gold ingot
+		type: 'tconstruct:melting',
+		ingredient: {tag: 'forge:ingots/blaze_gold'},
+		result: {
+			amount: 90,
+			fluid: 'kubejs:molten_blaze_gold'
+		},
+		temperature: 700,
+		time: 60
+	})
+	event.custom({ //blaze gold nugget
+		type: 'tconstruct:melting',
+		ingredient: {tag: 'forge:nuggets/blaze_gold'},
+		result: {
+			amount: 10,
+			fluid: 'kubejs:molten_blaze_gold'
+		},
+		temperature: 700,
+		time: 20
+	})
+	//TODO: tyrian steel
 })
 
 ServerEvents.tags('fluid', event => { //tag fluids as metal, gem, or other material for unit conversions (i.e. 90mb -> 1 ingot)
@@ -497,7 +596,8 @@ ServerEvents.tags('fluid', event => { //tag fluids as metal, gem, or other mater
 		'kubejs:molten_crimson_iron',
 		'kubejs:molten_crimson_steel',
 		'kubejs:molten_azure_silver',
-		'kubejs:molten_azure_electrum'
+		'kubejs:molten_azure_electrum',
+		'kubejs:molten_blaze_gold'
 	]
 	metalFluids.forEach(item => {
 		event.add('tconstruct:tooltips/metal', item)
