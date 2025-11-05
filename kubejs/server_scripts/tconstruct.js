@@ -130,6 +130,7 @@ ServerEvents.recipes(event => {
 	event.custom({
 		type: 'tconstruct:casting_table',
 		cast: {tag:'tconstruct:casts/single_use/ingot'},
+		cast_consumed: true,
 		cooling_time: 60,
 		fluid: {
 			amount: 90,
@@ -154,6 +155,7 @@ ServerEvents.recipes(event => {
 	event.custom({
 		type: 'tconstruct:casting_table',
 		cast: {tag:'tconstruct:casts/single_use/nugget'},
+		cast_consumed: true,
 		cooling_time: 20,
 		fluid: {
 			amount: 10,
@@ -189,6 +191,7 @@ ServerEvents.recipes(event => {
 	event.custom({
 		type: 'tconstruct:casting_table',
 		cast: {tag:'tconstruct:casts/single_use/ingot'},
+		cast_consumed: true,
 		cooling_time: 60,
 		fluid: {
 			amount: 90,
@@ -213,6 +216,7 @@ ServerEvents.recipes(event => {
 	event.custom({
 		type: 'tconstruct:casting_table',
 		cast: {tag:'tconstruct:casts/single_use/nugget'},
+		cast_consumed: true,
 		cooling_time: 20,
 		fluid: {
 			amount: 10,
@@ -272,6 +276,7 @@ ServerEvents.recipes(event => {
 	event.custom({
 		type: 'tconstruct:casting_table',
 		cast: {tag:'tconstruct:casts/single_use/ingot'},
+		cast_consumed: true,
 		cooling_time: 60,
 		fluid: {
 			amount: 90,
@@ -296,6 +301,7 @@ ServerEvents.recipes(event => {
 	event.custom({
 		type: 'tconstruct:casting_table',
 		cast: {tag:'tconstruct:casts/single_use/nugget'},
+		cast_consumed: true,
 		cooling_time: 20,
 		fluid: {
 			amount: 10,
@@ -331,6 +337,7 @@ ServerEvents.recipes(event => {
 	event.custom({
 		type: 'tconstruct:casting_table',
 		cast: {tag:'tconstruct:casts/single_use/ingot'},
+		cast_consumed: true,
 		cooling_time: 60,
 		fluid: {
 			amount: 90,
@@ -355,6 +362,7 @@ ServerEvents.recipes(event => {
 	event.custom({
 		type: 'tconstruct:casting_table',
 		cast: {tag:'tconstruct:casts/single_use/nugget'},
+		cast_consumed: true,
 		cooling_time: 20,
 		fluid: {
 			amount: 10,
