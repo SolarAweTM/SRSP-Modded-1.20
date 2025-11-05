@@ -78,11 +78,12 @@ ServerEvents.recipes(event => {
 	event.recipes.create.splashing(['9x silentgear:azure_silver_nugget', Item.of('silentgear:azure_silver_nugget').withChance(0.25), Item.of('minecraft:chorus_fruit').withChance(0.05)], 'kubejs:crushed_raw_azure_silver')
 	event.recipes.create.splashing(['9x tconstruct:cobalt_nugget', Item.of('tconstruct:cobalt_nugget').withChance(0.25)], 'kubejs:crushed_raw_cobalt')
 	//smelting
-	event.smelting('silentgear:crimson_iron_ingot', 'kubejs:crushed_raw_crimson_iron').xp(0.1).cookingTime(200)
-	event.smelting('silentgear:azure_silver_ingot', 'kubejs:crushed_raw_azure_silver').xp(0.1).cookingTime(200)
+	event.smelting('silentgear:crimson_iron_ingot', 'kubejs:crushed_raw_crimson_iron').xp(1.0).cookingTime(200)
+	event.smelting('silentgear:azure_silver_ingot', 'kubejs:crushed_raw_azure_silver').xp(1.5).cookingTime(200)
 	//blasting
-	event.blasting('silentgear:crimson_iron_ingot', 'kubejs:crushed_raw_crimson_iron').xp(0.1).cookingTime(100)
-	event.blasting('silentgear:azure_silver_ingot', 'kubejs:crushed_raw_azure_silver').xp(0.1).cookingTime(100)
+	event.blasting('silentgear:crimson_iron_ingot', 'kubejs:crushed_raw_crimson_iron').xp(1.0).cookingTime(100)
+	event.blasting('silentgear:azure_silver_ingot', 'kubejs:crushed_raw_azure_silver').xp(1.5).cookingTime(100)
+	event.blasting('tconstruct:cobalt_ingot','kubejs:crushed_raw_cobalt').xp(1.5).cookingTime(100)
 	//recreate the precision mechanism recipe with one that doesnt fail
 	event.remove({id:'create:sequenced_assembly/precision_mechanism'})
 	event.recipes.create.sequenced_assembly(
