@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "glyphs"
+	group: "7EAB5CB73AAD9328"
+	icon: "ars_nouveau:blank_glyph"
+	id: "4D6059D9524CA520"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "Glyphs"
+}

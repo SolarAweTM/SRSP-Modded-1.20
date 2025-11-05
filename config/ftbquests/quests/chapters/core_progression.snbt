@@ -1,0 +1,58 @@
+{
+	autofocus_id: "7BE4785AF2C9E03D"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "core_progression"
+	group: "7EAB5CB73AAD9328"
+	icon: "ars_nouveau:apprentice_spell_book"
+	id: "550C8ADC0D852DB8"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			icon: "ars_nouveau:novice_spell_book"
+			id: "7BE4785AF2C9E03D"
+			size: 2.0d
+			tasks: [{
+				id: "37BD7123EB1B4E73"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any of the following:\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "ars_nouveau:novice_spell_book"
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:worn_notebook"
+							}
+						]
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			title: "Ars Nouveau"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7BE4785AF2C9E03D"]
+			id: "6E6477BC6493DFB0"
+			tasks: [{
+				id: "191CFF98A2506E00"
+				type: "checkmark"
+			}]
+			title: "An Explainer on Mana"
+			x: 2.0d
+			y: 0.0d
+		}
+	]
+	title: "Core Progression"
+}

@@ -143,6 +143,7 @@
 			]
 			icon: "silentgear:template_board"
 			id: "3EC6B4CE2CBDA962"
+			min_width: 250
 			subtitle: "Template board, palette, same thing..."
 			tasks: [
 				{
@@ -385,6 +386,7 @@
 				}
 			}
 			id: "580C9EFE799877FB"
+			min_width: 300
 			rewards: [
 				{
 					id: "69E9B6CE478634A0"
