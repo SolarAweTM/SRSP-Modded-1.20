@@ -85,7 +85,7 @@
 	drop_dragon_Scales = true
 	#Weight of the ancient tool trade for the wandering trader. All traders randomly choose 1 rare trade, so this is roughly the chance the trade occurs compared to the vanilla options (of which there are 6).
 	#Range: 0 ~ 100
-	wanderer_ancient_tool_weight = 6
+	wanderer_ancient_tool_weight = 0
 
 #Features to use in debugging gameplay and mechanics, generally should not be enabled in packs
 [debug]
