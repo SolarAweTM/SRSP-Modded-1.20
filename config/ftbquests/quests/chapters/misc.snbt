@@ -1124,7 +1124,7 @@
 		{
 			dependencies: ["50FF774BEF232E50"]
 			description: [
-				"The &aClipboard&r can be used to &6keep track of things&r, be placed, and be used to configure and get data from certain blocks."
+				"The &aClipboard&r can be used to &6keep track of things&r, be placed, and be used to &6configure and get data&r from certain blocks."
 				""
 				"Hold &6Shift&r on the item to learn more."
 			]

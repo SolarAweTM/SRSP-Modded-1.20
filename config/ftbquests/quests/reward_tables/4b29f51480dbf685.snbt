@@ -1,0 +1,37 @@
+{
+	id: "4B29F51480DBF685"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{ count: 16, item: "railways:track_birch" }
+		{ count: 16, item: "railways:track_acacia" }
+		{ count: 16, item: "railways:track_dark_oak" }
+		{ count: 16, item: "railways:track_jungle" }
+		{ count: 16, item: "railways:track_oak" }
+		{ count: 16, item: "railways:track_spruce" }
+		{ count: 16, item: "railways:track_mangrove" }
+		{ count: 16, item: "railways:track_warped" }
+		{ count: 16, item: "railways:track_crimson" }
+		{ count: 16, item: "railways:track_blackstone" }
+		{ count: 16, item: "railways:track_ender" }
+		{ count: 16, item: "railways:track_tieless" }
+		{ count: 16, item: "railways:track_phantom" }
+		{ count: 16, item: "railways:track_cherry" }
+		{ count: 16, item: "railways:track_bamboo" }
+		{ count: 16, item: "railways:track_stripped_bamboo" }
+		{ count: 16, item: "railways:track_biomesoplenty_dead" }
+		{ count: 16, item: "railways:track_biomesoplenty_fir" }
+		{ count: 16, item: "railways:track_biomesoplenty_hellbark" }
+		{ count: 16, item: "railways:track_biomesoplenty_jacaranda" }
+		{ count: 16, item: "railways:track_biomesoplenty_magic" }
+		{ count: 16, item: "railways:track_biomesoplenty_mahogany" }
+		{ count: 16, item: "railways:track_biomesoplenty_palm" }
+		{ count: 16, item: "railways:track_biomesoplenty_redwood" }
+		{ count: 16, item: "railways:track_biomesoplenty_umbran" }
+		{ count: 16, item: "railways:track_biomesoplenty_willow" }
+		{ count: 16, item: "railways:track_quark_blossom" }
+		{ count: 16, item: "railways:track_quark_ancient" }
+		{ count: 16, item: "railways:track_quark_azalea" }
+	]
+	title: "Random Train Tracks x16"
+}
