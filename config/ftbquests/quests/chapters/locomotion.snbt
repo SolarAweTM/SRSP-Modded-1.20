@@ -339,6 +339,283 @@
 			x: 0.5d
 			y: -2.5d
 		}
+		{
+			dependencies: ["706B5AA50B8E32CF"]
+			id: "605FE418AE25A582"
+			tasks: [{
+				id: "1F789EC07178A1B4"
+				type: "checkmark"
+			}]
+			title: "Steam 'n' Rails Decoration"
+			x: -0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["706B5AA50B8E32CF"]
+			id: "230EECA40E2583F8"
+			tasks: [{
+				id: "2194B9128B828CB1"
+				type: "checkmark"
+			}]
+			title: "Steam 'n' Rails Components"
+			x: 1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["230EECA40E2583F8"]
+			id: "312B3E7EF4AD4B74"
+			tasks: [{
+				id: "624AFF62EF3DA418"
+				item: "railways:handcar"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["230EECA40E2583F8"]
+			id: "6CCBB6A0DA8A34EA"
+			tasks: [{
+				id: "27733B3E1EDF9E8E"
+				item: "railways:semaphore"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["230EECA40E2583F8"]
+			icon: "railways:track_switch_andesite"
+			id: "4B46556984959D0A"
+			tasks: [{
+				id: "2D004C3599484853"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Track Switch\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "railways:track_switch_andesite"
+							}
+							{
+								Count: 1b
+								id: "railways:track_switch_brass"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Track Switches"
+			x: 2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["230EECA40E2583F8"]
+			id: "4A325B7231E5B0A3"
+			tasks: [{
+				id: "10FE9B28142B8DA3"
+				item: "railways:fuel_tank"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["605FE418AE25A582"]
+			icon: "railways:smokestack_oilburner"
+			id: "027BFD1C523DCF15"
+			tasks: [{
+				id: "4C929C9F3B649F84"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Smokestack\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									RepairCost: 0
+									display: {
+										Name: "{\"text\":\"Caboose Smokestack\"}"
+									}
+									value: "railways:caboosestyle_stack"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									RepairCost: 0
+									display: {
+										Name: "{\"text\":\"Double Smokestacks\"}"
+									}
+									value: "railways:long_stack"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									RepairCost: 0
+									display: {
+										Name: "{\"text\":\"Coalburner Smokestacks\"}"
+									}
+									value: "railways:coalburner_stack"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									RepairCost: 0
+									display: {
+										Name: "{\"text\":\"Oilburner Smokestacks\"}"
+									}
+									value: "railways:oilburner_stack"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									RepairCost: 0
+									display: {
+										Name: "{\"text\":\"Streamlined Smokestacks\"}"
+									}
+									value: "railways:streamlined_stack"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									RepairCost: 0
+									display: {
+										Name: "{\"text\":\"Woodburner Smokestacks\"}"
+									}
+									value: "railways:woodburner_stack"
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Smokestacks"
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["605FE418AE25A582"]
+			icon: "railways:link_and_pin"
+			id: "631A2EF210D9E97A"
+			tasks: [{
+				id: "3F3F415A3E57F879"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Couplers or Buffers\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									RepairCost: 0
+									display: {
+										Name: "{\"text\":\"Any Coupler\"}"
+									}
+									value: "railways:deco_couplers"
+								}
+							}
+							{
+								Count: 1b
+								id: "railways:small_buffer"
+							}
+							{
+								Count: 1b
+								id: "railways:big_buffer"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Decorative Couplers \\& Buffers"
+			x: -1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["605FE418AE25A582"]
+			icon: "railways:wooden_headstock_link_and_pin"
+			id: "7977DECBC8EFFA20"
+			tasks: [{
+				id: "7F9C773B009E22C7"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Headstock\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									RepairCost: 0
+									display: {
+										Name: "{\"text\":\"Wooden Headstocks\"}"
+									}
+									value: "railways:wooden_headstocks"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									RepairCost: 0
+									display: {
+										Name: "{\"text\":\"Copycat Headstocks\"}"
+									}
+									value: "railways:copycat_headstocks"
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Headstocks"
+			x: -1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["605FE418AE25A582"]
+			id: "3E5F1D997E6FF496"
+			tasks: [{
+				id: "2231F9F783FB8FFA"
+				item: "railways:buffer"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.0d
+		}
 	]
 	title: "Locomotion"
 }
