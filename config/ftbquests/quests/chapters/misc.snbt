@@ -1703,6 +1703,35 @@
 			x: -6.0d
 			y: -1.0d
 		}
+		{
+			dependencies: ["4F77A11667048B2F"]
+			description: [
+				"&6Create: Steam 'n' Rails&r is an add-on that expands Train functionality. However, it also adds this &aneat little cap&r, which can allow you to &6remotely activate Redstone&r."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			id: "100FB5CF0BE1B8BF"
+			tasks: [{
+				icon: "railways:red_conductor_cap"
+				id: "5000A1A2BABA14C9"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Conductor Cap\"}"
+						}
+						value: "railways:conductor_caps"
+					}
+				}
+				title: "Any Conductor's Cap"
+				type: "item"
+			}]
+			title: "Conductor's Cap"
+			x: -6.5d
+			y: -6.5d
+		}
 	]
 	title: "Misc"
 }

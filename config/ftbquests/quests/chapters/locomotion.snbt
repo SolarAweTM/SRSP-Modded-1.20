@@ -341,6 +341,11 @@
 		}
 		{
 			dependencies: ["706B5AA50B8E32CF"]
+			description: [
+				"&6Steam 'n' Rails&r also adds a bunch of objects you can use to &avisually enhance your builds&r, although they're meant to be used on and for Trains."
+				""
+				"The following quests will cover decorative blocks."
+			]
 			id: "605FE418AE25A582"
 			tasks: [{
 				id: "1F789EC07178A1B4"
@@ -352,6 +357,11 @@
 		}
 		{
 			dependencies: ["706B5AA50B8E32CF"]
+			description: [
+				"&6Steam 'n' Rails&r also adds a number of items that &aexpand the possibilities of Trains&r."
+				""
+				"The following quests will cover this category of items."
+			]
 			id: "230EECA40E2583F8"
 			tasks: [{
 				id: "2194B9128B828CB1"
@@ -363,7 +373,13 @@
 		}
 		{
 			dependencies: ["230EECA40E2583F8"]
+			description: [
+				"The &aHandcar&r can be used on a &6normal-size Train Track&r to place a Handcar. You can &6right-click the Seat&r to mount it, and &6right-click the mechanism&r to start controlling."
+				""
+				"The Handcar can be &6removed&r from a Track &6using a Wrench&r."
+			]
 			id: "312B3E7EF4AD4B74"
+			subtitle: "the car of fullness"
 			tasks: [{
 				id: "624AFF62EF3DA418"
 				item: "railways:handcar"
@@ -374,6 +390,11 @@
 		}
 		{
 			dependencies: ["230EECA40E2583F8"]
+			description: [
+				"The &aSemaphore&r can be used to &6visually represent&r the status of a &6Train Signal&r."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
 			id: "6CCBB6A0DA8A34EA"
 			tasks: [{
 				id: "27733B3E1EDF9E8E"
@@ -385,6 +406,11 @@
 		}
 		{
 			dependencies: ["230EECA40E2583F8"]
+			description: [
+				"&aTrack Switches&r can be used to automatically &6define the behaviour of a forked path&r in a Train Track."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
 			icon: "railways:track_switch_andesite"
 			id: "4B46556984959D0A"
 			tasks: [{
@@ -417,6 +443,15 @@
 		}
 		{
 			dependencies: ["230EECA40E2583F8"]
+			description: [
+				"The &aFuel Tank&r is like a &6Fluid Tank&r, but can only accept &6valid Train Fuel&r."
+				""
+				"Currently, the only valid Train Fuel in this pack is &6Lava&r, so this is just a Tank that only stores Lava."
+				""
+				"Trains will be able to use this as fuel to speed up."
+				""
+				"You can also use the &6Portable Fuel Interface&r to automate the refueling of a Train."
+			]
 			id: "4A325B7231E5B0A3"
 			tasks: [{
 				id: "10FE9B28142B8DA3"
@@ -428,6 +463,13 @@
 		}
 		{
 			dependencies: ["605FE418AE25A582"]
+			description: [
+				"&aSmokestacks&r will billow out &6smoke&r."
+				""
+				"When part of a functioning &6Train&r, they will output &6less smoke&r when stationary, and &6more when moving&r."
+				""
+				"&6You can only directly craft the base variants.&r You can then &6switch between the other variants&r by &6holding Left Alt&r &7(default keybind)&r while holding the item, and then clicking the desired variant."
+			]
 			icon: "railways:smokestack_oilburner"
 			id: "027BFD1C523DCF15"
 			tasks: [{
@@ -518,6 +560,13 @@
 		}
 		{
 			dependencies: ["605FE418AE25A582"]
+			description: [
+				"You can only directly craft the &6Buffers&r, and the &6Link 'n Pin&r."
+				""
+				"The rest are &6variants&r of the Link 'n Pin."
+				""
+				"You can switch between variants by &6holding Left Alt&r &7(default keybind)&r while holding the item, and then &6clicking a variant&r to select it."
+			]
 			icon: "railways:link_and_pin"
 			id: "631A2EF210D9E97A"
 			tasks: [{
@@ -561,6 +610,13 @@
 		}
 		{
 			dependencies: ["605FE418AE25A582"]
+			description: [
+				"You can only directly craft the &6Link 'n Pin Headstocks&r. The rest are variants."
+				""
+				"You can switch between variants by &6holding Left Alt&r &7(default keybind)&r while holding the item, and then clicking to select a variant."
+				""
+				"&6Copycat Headstocks&r allow you to put &6any block texture&r as the base, by &6right-clicking with an applicable block&r &7(i.e. Block of Diamond, Birch Planks)&r."
+			]
 			icon: "railways:wooden_headstock_link_and_pin"
 			id: "7977DECBC8EFFA20"
 			tasks: [{
@@ -607,6 +663,13 @@
 		}
 		{
 			dependencies: ["605FE418AE25A582"]
+			description: [
+				"&aTrack Buffers&r will &6stop any Train&r that attempts to pass through them."
+				""
+				"This can be helpful to place at the abrupt &6end of a track&r."
+				""
+				"&6Hold Shift&r to learn more about this item."
+			]
 			id: "3E5F1D997E6FF496"
 			tasks: [{
 				id: "2231F9F783FB8FFA"
@@ -615,6 +678,26 @@
 			}]
 			x: -1.0d
 			y: -3.0d
+		}
+		{
+			dependencies: ["230EECA40E2583F8"]
+			description: [
+				"&aTrain Couplers&r can be used to &6separate Trains&r with multiple Bogeys, &6without disassembling them&r."
+				""
+				"Note: In order to function properly, the two points set by the Coupler must be &6exactly where a Bogey would be&r."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+				""
+				"Another note: &cCoupling and De-coupling a Train also modifies its name!&r"
+			]
+			id: "4BD64446BF499B52"
+			tasks: [{
+				id: "1EC673DAE940A7FF"
+				item: "railways:track_coupler"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -5.0d
 		}
 	]
 	title: "Locomotion"
