@@ -72,7 +72,7 @@
 			}]
 			title: "Packages"
 			x: 0.0d
-			y: -4.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["63B4511F046172B4"]
@@ -91,8 +91,8 @@
 				type: "item"
 			}]
 			title: "Addressing"
-			x: -4.0d
-			y: -4.0d
+			x: -2.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -116,8 +116,8 @@
 				item: "create:stock_link"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -4.0d
+			x: 2.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["2358A02649D246B1"]
@@ -138,7 +138,7 @@
 				item: "create:item_vault"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 2.0d
 			y: 0.0d
 		}
 		{
@@ -161,14 +161,11 @@
 				item: "create:stock_ticker"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -6.0d
+			x: 2.0d
+			y: -4.0d
 		}
 		{
-			dependencies: [
-				"29E8BB0D86B5DB08"
-				"74477F88A0D99D62"
-			]
+			dependencies: ["74477F88A0D99D62"]
 			description: [
 				"The &aPackage Frogport&r can be used with &6Chain Conveyors&r in order to &6transport Packages&r."
 				""
@@ -191,7 +188,7 @@
 				item: "create:package_frogport"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 4.0d
 			y: -2.0d
 		}
 		{
@@ -231,8 +228,8 @@
 				type: "item"
 			}]
 			title: "Table Cloths"
-			x: 2.0d
-			y: -6.0d
+			x: 0.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -273,7 +270,7 @@
 				type: "item"
 			}]
 			title: "Postboxes"
-			x: -4.0d
+			x: -2.0d
 			y: 0.0d
 		}
 		{
@@ -292,8 +289,8 @@
 				item: "create:redstone_requester"
 				type: "item"
 			}]
-			x: 8.0d
-			y: -8.0d
+			x: 4.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["75AC8472DB7C89BC"]
@@ -312,7 +309,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: -6.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["163D77D9BC98FE78"]
@@ -336,7 +333,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -8.0d
+			y: -6.0d
 		}
 	]
 	title: "High Logistics"

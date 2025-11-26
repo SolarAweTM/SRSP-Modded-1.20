@@ -98,8 +98,19 @@
 				type: "checkmark"
 			}]
 			title: "Viewing Mana"
-			x: 2.0d
+			x: 3.0d
 			y: 2.0d
+		}
+		{
+			dependencies: ["6E6477BC6493DFB0"]
+			id: "28FC5C865BF166F6"
+			tasks: [{
+				id: "251606E50B68070B"
+				type: "checkmark"
+			}]
+			title: "Casting Spells"
+			x: 1.0d
+			y: 4.0d
 		}
 	]
 	title: "Core Progression"
