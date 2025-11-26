@@ -10,8 +10,18 @@
 	quest_links: [ ]
 	quests: [
 		{
+			description: [
+				"&dArs Nouveau&r is a mod about &6magic&r, and using it to do cool stuff. That's a really basic explanation of the mod."
+				""
+				"You'll be able to &ado a lot of things&r with magic, including combat, mobility, transportation, farming, logistics, &dand much more!&r"
+				""
+				"This mod also contains its own guide, the &dWorn Notebook&r. Note that &asome recipes shown&r in the Worn Notebook may have been altered or removed, and as such &ado not display correctly&r in the Worn Notebook. In this case, you can &ause JEI&r to find the relevant recipe(s)."
+				""
+				"To get started, get your hands on a &dWorn Notebook&r, or if you don't need it right now, a &dNovice Spell Book&r."
+			]
 			icon: "ars_nouveau:novice_spell_book"
 			id: "7BE4785AF2C9E03D"
+			min_width: 250
 			size: 2.0d
 			tasks: [{
 				id: "37BD7123EB1B4E73"
@@ -44,14 +54,52 @@
 		}
 		{
 			dependencies: ["7BE4785AF2C9E03D"]
+			description: [
+				"&dMana&r is a resource in Ars Nouveau that is &aused to cast spells&r from a Spell Book."
+				""
+				"Mana &aregenerates over time&r."
+				""
+				"You can increase &dmax Mana&r and &dMana regeneration&r by wearing special armor from Ars Nouveau, or use the &dMana Boost&r and &dMana Regen&r enchantments. You can also increase these stats by unlocking &aGlyphs&r."
+			]
 			id: "6E6477BC6493DFB0"
 			tasks: [{
 				id: "191CFF98A2506E00"
 				type: "checkmark"
 			}]
 			title: "An Explainer on Mana"
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7BE4785AF2C9E03D"]
+			id: "2F41E0F3908A1910"
+			subtitle: "trust me bro"
+			tasks: [{
+				id: "3586AD20C5380388"
+				type: "checkmark"
+			}]
+			title: "An Explainer on Source"
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6E6477BC6493DFB0"]
+			description: [
+				"You can view your current Max Mana and Mana Regen by opening the Attributes screen from your inventory:"
+				"{image:srsp:textures/ftbquests/attribute_menu.png width:182 height:86 align:center}"
+				"You can then find the relevant stats in the bottom half of the list:"
+				"{image:srsp:textures/ftbquests/mana_attributes.png width:318 height:177 align:center}"
+			]
+			hide_until_deps_complete: true
+			id: "07BA10BA5AB897CF"
+			min_width: 350
+			tasks: [{
+				id: "6670CCD494986B50"
+				type: "checkmark"
+			}]
+			title: "Viewing Mana"
 			x: 2.0d
-			y: 0.0d
+			y: 2.0d
 		}
 	]
 	title: "Core Progression"
