@@ -17,6 +17,9 @@
 				""
 				"This mod also contains its own guide, the &dWorn Notebook&r. Note that &asome recipes shown&r in the Worn Notebook may have been altered or removed, and as such &ado not display correctly&r in the Worn Notebook. In this case, you can &ause JEI&r to find the relevant recipe(s)."
 				""
+				"If a Quest has &drelevant information within the Worn Notebook&r, it will be noted as such at &dthe top of the Quest&r:"
+				"&7&o(Worn Notebook: \"Name of Page\")&r"
+				""
 				"To get started, get your hands on a &dWorn Notebook&r, or if you don't need it right now, a &dNovice Spell Book&r."
 			]
 			icon: "ars_nouveau:novice_spell_book"
@@ -55,11 +58,13 @@
 		{
 			dependencies: ["7BE4785AF2C9E03D"]
 			description: [
-				"&dMana&r is a resource in Ars Nouveau that is &aused to cast spells&r from a Spell Book."
+				"&7&o(Worn Notebook: \"Spell Mana\")&r"
 				""
-				"Mana &aregenerates over time&r."
+				"&aMana&r is a resource in Ars Nouveau that is &dused to cast spells&r from a Spell Book."
 				""
-				"You can increase &dmax Mana&r and &dMana regeneration&r by wearing special armor from Ars Nouveau, or use the &dMana Boost&r and &dMana Regen&r enchantments. You can also increase these stats by unlocking &aGlyphs&r."
+				"Mana &dregenerates over time&r."
+				""
+				"You can increase &dmax Mana&r and &dMana regeneration&r by wearing &dspecial armor&r from Ars Nouveau, or use the &dMana Boost&r and &dMana Regen&r enchantments. You can also increase these stats by unlocking &aGlyphs&r."
 			]
 			id: "6E6477BC6493DFB0"
 			tasks: [{
@@ -72,6 +77,15 @@
 		}
 		{
 			dependencies: ["7BE4785AF2C9E03D"]
+			description: [
+				"&7&o(Worn Notebook: \"Source\")&r"
+				""
+				"&aSource&r is a resource that can be obtained from &dvarious in-world devices&r, and usually stored in jars."
+				""
+				"Devices that can use Source will &dautomatically pull Source&r from nearby Source Jars, and ones that can generate Source will &dautomatically put Source&r into nearby Jars."
+				""
+				"You can view the amount of Source stored in a Jar by simply &dlooking at it&r in the world."
+			]
 			id: "2F41E0F3908A1910"
 			subtitle: "trust me bro"
 			tasks: [{
@@ -85,9 +99,9 @@
 		{
 			dependencies: ["6E6477BC6493DFB0"]
 			description: [
-				"You can view your current Max Mana and Mana Regen by opening the Attributes screen from your inventory:"
+				"You can view your current &dMax Mana&r and &dMana Regen&r by opening the &aAttributes screen&r from your inventory:"
 				"{image:srsp:textures/ftbquests/attribute_menu.png width:182 height:86 align:center}"
-				"You can then find the relevant stats in the bottom half of the list:"
+				"You can then find the relevant stats in the &dbottom half of the list&r:"
 				"{image:srsp:textures/ftbquests/mana_attributes.png width:318 height:177 align:center}"
 			]
 			hide_until_deps_complete: true
@@ -103,7 +117,22 @@
 		}
 		{
 			dependencies: ["6E6477BC6493DFB0"]
+			description: [
+				"&o&7(Worn Notebook: \"Spell Casting\")&r"
+				""
+				"To cast &aSpells&r with your &dSpell Book&r, you'll need to know &dwhat a Spell consists of&r, and &dhow to open the Book&r."
+				""
+				"Open the Spell Book's interface with &dC&r &7(default keybind)&r."
+				"Spells are made with &aGlyphs&r, and to be valid, a Spell &drequires exactly one Form glyph&r."
+				""
+				"You can then add &dany number of Effect glyphs&r, and &doptionally, Augment glyphs&r, once unlocked."
+				"Click a glyph in the Spell's info at the bottom of the Book to remove the glyph, in case of mistakes."
+				""
+				"The &dMana bar&r at the bottom of the interface will show how much &dMana&r the spell will cost you, and will &dturn red if the cost exceeds&r your current Max Mana."
+			]
+			icon: "ars_nouveau:novice_spell_book"
 			id: "28FC5C865BF166F6"
+			min_width: 300
 			tasks: [{
 				id: "251606E50B68070B"
 				type: "checkmark"
@@ -111,6 +140,136 @@
 			title: "Casting Spells"
 			x: 1.0d
 			y: 4.0d
+		}
+		{
+			dependencies: ["2F41E0F3908A1910"]
+			description: [
+				"&7&o(Worn Notebook: \"Obtaining Source Gems\")&r"
+				""
+				"The &aImbuement Chamber&r is primarily used to create &dSource Gems&r, which are used &dall over Ars Nouveau&r."
+				"Note that the recipe explicitly requires Archwood."
+				""
+				"To make Source Gems, place &deither Lapis Lazuli&r or &dAmethyst Shards&r in. It can also pull Source from nearby Jars to speed up this process."
+				""
+				"It can also do a few other recipes, which may require the use of &dArcane Platforms&r or &dPedestals&r."
+			]
+			icon: "ars_nouveau:source_gem"
+			id: "3EDE2D3559B99C52"
+			tasks: [
+				{
+					id: "3A78DDD45E8CC491"
+					item: "ars_nouveau:imbuement_chamber"
+					type: "item"
+				}
+				{
+					id: "4304AB295E6C53A6"
+					item: "ars_nouveau:source_gem"
+					type: "item"
+				}
+			]
+			title: "Source Gems"
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3EDE2D3559B99C52"]
+			description: [
+				"&7&o(Worn Notebook: \"Source Jar\")&r"
+				""
+				"&dSource Jars&r are used to &dstore generated Source&r, and can &dprovide Source&r to nearby devices."
+			]
+			id: "462AD4FAE5BA7C8F"
+			tasks: [{
+				id: "2F400625DE87F94F"
+				item: "ars_nouveau:source_jar"
+				type: "item"
+			}]
+			title: "Source Jars"
+			x: -1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["28FC5C865BF166F6"]
+			id: "6943170F478360F2"
+			tasks: [{
+				id: "3F07B9F87084EF9F"
+				item: "ars_nouveau:scribes_table"
+				type: "item"
+			}]
+			title: "Making Glyphs"
+			x: 1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["462AD4FAE5BA7C8F"]
+			description: [
+				"&7&o(Worn Notebook: \"Agronomic Sourcelink\")&r"
+				""
+				"The &aAgronomic Sourcelink&r generates Source from the &dgrowth of nearby crops&r, and inserts it into &dnearby Source Jars&r."
+				""
+				"&cBone Meal will not produce Source when used.&r"
+			]
+			id: "17D20D8CD5E598CE"
+			tasks: [{
+				id: "349BE521F8EDBEC8"
+				item: "ars_nouveau:agronomic_sourcelink"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["462AD4FAE5BA7C8F"]
+			id: "3211FD66D6733C28"
+			tasks: [{
+				id: "54D374772B225987"
+				item: "ars_nouveau:mycelial_sourcelink"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["462AD4FAE5BA7C8F"]
+			description: [
+				"&7&o(Worn Notebook: \"Volcanic Sourcelink\")&r"
+				""
+				"The &aVolcanic Sourcelink&r generates Source by &dconsuming burnable items&r."
+				""
+				"Doing this will eventually turn the &dStone&r blocks in the &d3x3 area directly below it&r into &dMagma Blocks&r, and then into &dLava&r."
+				""
+				"After this process, it can then create &dLava Lilies&r, which can be used for decoration."
+			]
+			id: "0933BE0FAC8C1097"
+			tasks: [{
+				id: "7745095BB4FD8D26"
+				item: "ars_nouveau:volcanic_sourcelink"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["462AD4FAE5BA7C8F"]
+			id: "384081A7277B8A25"
+			tasks: [{
+				id: "3A754BEC165F0CB6"
+				item: "ars_nouveau:vitalic_sourcelink"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["462AD4FAE5BA7C8F"]
+			id: "6E8D863AF952CB99"
+			tasks: [{
+				id: "4D8CF0D2ABF4B081"
+				item: "ars_nouveau:alchemical_sourcelink"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 8.0d
 		}
 	]
 	title: "Core Progression"
