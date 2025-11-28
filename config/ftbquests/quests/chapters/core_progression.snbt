@@ -215,19 +215,26 @@
 				item: "ars_nouveau:agronomic_sourcelink"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 4.0d
+			x: -3.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["462AD4FAE5BA7C8F"]
+			description: [
+				"&7&o(Worn Notebook: \"Mycelial Sourcelink\")&r"
+				""
+				"The &aMycelial Sourcelink&r will &dturn nearby food into Source&r, and put it into nearby Source Jars."
+				""
+				"It will also turn &dGrass or Dirt blocks&r in the 3x3 area directly below it into &dMycelium&r, and start &dgrowing mushrooms&r."
+			]
 			id: "3211FD66D6733C28"
 			tasks: [{
 				id: "54D374772B225987"
 				item: "ars_nouveau:mycelial_sourcelink"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 6.0d
+			x: -3.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["462AD4FAE5BA7C8F"]
@@ -247,10 +254,17 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: 5.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["462AD4FAE5BA7C8F"]
+			description: [
+				"&7&o(Worn Notebook: \"Vitalic Sourcelink\")&r"
+				""
+				"The &aVitalic Sourcelink&r will generate Source from &dnearby mobs dying and animals growing&r, and put it into nearby Source Jars."
+				""
+				"It will also generate Source &dwhen baby animals are near&r and will &dspeed up their growth&r."
+			]
 			id: "384081A7277B8A25"
 			tasks: [{
 				id: "3A754BEC165F0CB6"
@@ -258,17 +272,17 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: 7.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["462AD4FAE5BA7C8F"]
-			id: "6E8D863AF952CB99"
+			id: "04B9E6FF29C31E6A"
 			tasks: [{
-				id: "4D8CF0D2ABF4B081"
-				item: "ars_nouveau:alchemical_sourcelink"
+				id: "60A3B7472197D592"
+				item: "ars_nouveau:enchanting_apparatus"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -1.0d
 			y: 8.0d
 		}
 	]
