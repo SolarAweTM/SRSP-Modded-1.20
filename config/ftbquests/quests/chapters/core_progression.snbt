@@ -238,7 +238,7 @@
 				item: "ars_nouveau:agronomic_sourcelink"
 				type: "item"
 			}]
-			x: -3.5d
+			x: -3.0d
 			y: 4.5d
 		}
 		{
@@ -262,7 +262,7 @@
 				item: "ars_nouveau:mycelial_sourcelink"
 				type: "item"
 			}]
-			x: -3.5d
+			x: -3.0d
 			y: 5.5d
 		}
 		{
@@ -288,7 +288,7 @@
 				item: "ars_nouveau:volcanic_sourcelink"
 				type: "item"
 			}]
-			x: -3.5d
+			x: -3.0d
 			y: 6.5d
 		}
 		{
@@ -312,7 +312,7 @@
 				item: "ars_nouveau:vitalic_sourcelink"
 				type: "item"
 			}]
-			x: -3.5d
+			x: -3.0d
 			y: 7.5d
 		}
 		{
@@ -372,7 +372,15 @@
 				"04B9E6FF29C31E6A"
 				"1312DBA1BBBD0602"
 			]
-			description: ["&7&o(Worn Notebook: \"Reactive\")&r"]
+			description: [
+				"&7&o(Worn Notebook: \"Reactive\")&r"
+				""
+				"Using a &dSpell Parchment&r and the &dEnchanting Apparatus&r, you can create Enchanted Books that contain the &aReactive enchantment&r."
+				""
+				"This enchantment will provide &da chance to automatically cast&r the Spell provided."
+				""
+				"The &dWorn Notebook&r will tell you &dhow to change the Spell&r after the fact."
+			]
 			id: "2CB797D4604D3091"
 			tasks: [{
 				icon: "minecraft:enchanted_book"
@@ -425,12 +433,20 @@
 				weak_nbt_match: true
 			}]
 			title: "Reactive Books"
-			x: 0.0d
+			x: 1.0d
 			y: 10.0d
 		}
 		{
 			dependencies: ["6943170F478360F2"]
-			description: ["&7&o(Worn Notebook: \"Scribe's Table\")&r"]
+			description: [
+				"&7&o(Worn Notebook: \"Scribe's Table\")&r"
+				""
+				"The &dScribe's Table&r can also be used to &ainscribe Spells onto Blank Parchment&r or Enchanter's tools."
+				""
+				"Start by &dright-clicking&r the item you want to inscribe the Spell to &donto the table&r."
+				""
+				"Then, with your Spell Book, &dsneak-right-click with the selected Spell&r to inscribe."
+			]
 			id: "1312DBA1BBBD0602"
 			tasks: [{
 				id: "29634891F1FA0922"
@@ -440,6 +456,44 @@
 			title: "Scribing Spells"
 			x: 1.0d
 			y: 8.0d
+		}
+		{
+			dependencies: ["04B9E6FF29C31E6A"]
+			id: "37F2F1E4A89C4CA9"
+			tasks: [{
+				id: "3557A0E097F0217D"
+				item: "ars_nouveau:ritual_brazier"
+				type: "item"
+			}]
+			title: "Rituals"
+			x: -1.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["04B9E6FF29C31E6A"]
+			description: [
+				"Now that you have an &dEnchanting Apparatus&r, you're able to &dupgrade your Spell Book&r."
+				""
+				"This will require you to take &da trip to the Nether&r, as in this pack, the recipe asks for the following:"
+				""
+				"- 1 Ancient Debris"
+				"- 2 Crimson Steel Ingots"
+				"- 3 Polished Rose Quartz"
+				"- 1 Source Gem"
+				"- 1500 Source (the resource)"
+				""
+				"The &aMage's Spell Book&r will allow you to create Spells with &dup to Tier 2 Glyphs&r."
+			]
+			id: "296EDF98C7269A35"
+			tasks: [{
+				id: "4C99A23FA2E15FB3"
+				item: "ars_nouveau:apprentice_spell_book"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "Upgrading Your Spell Book"
+			x: -3.0d
+			y: 10.0d
 		}
 	]
 	title: "Core Progression"
