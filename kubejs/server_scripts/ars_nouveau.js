@@ -95,7 +95,7 @@ ServerEvents.recipes(event => {
   // remove the default spell book upgrade recipe2 and throw them into the enchanting apparatus
   event.remove({ id: 'ars_nouveau:apprentice_spell_book_upgrade' })
   event.recipes.ars_nouveau.enchanting_apparatus(
-        ['minecraft:ancient_debris', 'create:polished_rose_quartz', 'create:polished_rose_quartz', 'create:polished_rose_quartz', "botania:manasteel_ingot", "botania:manasteel_ingot", "silentgear:crimson_steel_ingot", "silentgear:crimson_steel_ingot"], // input items
+        ['minecraft:ancient_debris', 'create:polished_rose_quartz', 'create:polished_rose_quartz', 'create:polished_rose_quartz', "ars_nouveau:source_gem", "ars_nouveau:fire_essence", "silentgear:crimson_steel_ingot", "silentgear:crimson_steel_ingot"], // input items
         'ars_nouveau:novice_spell_book', // reagent
         'ars_nouveau:apprentice_spell_book', // output
         1500, // source cost
@@ -152,15 +152,6 @@ ServerEvents.recipes(event => {
         100,
         []
     )
-	/* // may add back at a later time idk
-	event.recipes.ars_nouveau.enchanting_apparatus(
-        ['minecraft:iron_ingot'], // input items
-        'ars_nouveau:source_gem', // reagent
-        'kubejs:source_ingot', // output
-        1000, // source cost
-        true // keep nbt of reagent
-    )
-	*/
 	// replace the battlemage armor recipe with a netherite equivalent
 	event.remove({id:'ars_nouveau:battlemage_hood'})
 	event.remove({id:'ars_nouveau:battlemage_robes'})
