@@ -127,8 +127,11 @@
 				""
 				"You can then add &dany number of Effect glyphs&r, and &doptionally, Augment glyphs&r, once unlocked."
 				"Click a glyph in the Spell's info at the bottom of the Book to remove the glyph, in case of mistakes."
+				"Make sure you &dclick the Create button in the bottom-right corner&r to confirm the Spell!"
 				""
 				"The &dMana bar&r at the bottom of the interface will show how much &dMana&r the spell will cost you, and will &dturn red if the cost exceeds&r your current Max Mana."
+				""
+				"&dUp to 10 Spells&r can be stored in any given Spell Book, as shown by the &dtabs on the right side of the interface&r. You can use &dZ and X&r &7(default keybinds)&r in order to move between these Spells outside the interface. Hold &dV&r &7(default keybind)&r to get a radial menu instead."
 			]
 			icon: "ars_nouveau:novice_spell_book"
 			id: "28FC5C865BF166F6"
@@ -146,7 +149,7 @@
 			description: [
 				"&7&o(Worn Notebook: \"Obtaining Source Gems\")&r"
 				""
-				"The &aImbuement Chamber&r is primarily used to create &dSource Gems&r, which are used &dall over Ars Nouveau&r."
+				"The &aImbuement Chamber&r is primarily used to create &aSource Gems&r, which are used &dall over Ars Nouveau&r."
 				"Note that the recipe explicitly requires Archwood."
 				""
 				"To make Source Gems, place &deither Lapis Lazuli&r or &dAmethyst Shards&r in. It can also pull Source from nearby Jars to speed up this process."
@@ -176,7 +179,7 @@
 			description: [
 				"&7&o(Worn Notebook: \"Source Jar\")&r"
 				""
-				"&dSource Jars&r are used to &dstore generated Source&r, and can &dprovide Source&r to nearby devices."
+				"&aSource Jars&r are used to &dstore generated Source&r, and can &dprovide Source&r to nearby devices."
 			]
 			id: "462AD4FAE5BA7C8F"
 			tasks: [{
@@ -190,7 +193,21 @@
 		}
 		{
 			dependencies: ["28FC5C865BF166F6"]
+			description: [
+				"&7&o(Worn Notebook: \"New Glyphs\")&r"
+				""
+				"&aGlyphs&r are the main way you dictate the behaviour of a Spell, so let's &dmake some more&r."
+				""
+				"First, get your hands on a &aScribe's Table&r, and then &dright-click it while holding your Spell Book.&r This will open up an interface with a bunch of Glyphs."
+				""
+				"&dGlyphs which are fully visible&r are ones that you have already unlocked. You can &dhover over a Glyph&r to see what it does, and what is needed to create the Glyph."
+				""
+				"Note that &dGlyphs have tiers&r, which dictate which tier of Spell Book can use them. &cYour Novice Spell Book can only cast Tier 1 Glyphs for now&r, so it's recommended that you &duse the tabs on the right side&r of the interface to only show &aTier 1 Glyphs&r."
+				""
+				"&dLeft-click on a Glyph, and then click the \"Select\" button&r in the bottom-right corner to start crafting. &dThrow the necessary items onto the Scribe's Table&r in order to complete crafting. This will &dalso consume any necessary XP levels&r to craft. You can then &duse the Glyph from your hand to learn it&r."
+			]
 			id: "6943170F478360F2"
+			min_width: 300
 			tasks: [{
 				id: "3F07B9F87084EF9F"
 				item: "ars_nouveau:scribes_table"
@@ -210,6 +227,12 @@
 				"&cBone Meal will not produce Source when used.&r"
 			]
 			id: "17D20D8CD5E598CE"
+			rewards: [{
+				id: "5CC13DD79CE13553"
+				item: "ars_nouveau:source_jar"
+				type: "item"
+			}]
+			subtitle: "Source: touch grass"
 			tasks: [{
 				id: "349BE521F8EDBEC8"
 				item: "ars_nouveau:agronomic_sourcelink"
@@ -228,6 +251,12 @@
 				"It will also turn &dGrass or Dirt blocks&r in the 3x3 area directly below it into &dMycelium&r, and start &dgrowing mushrooms&r."
 			]
 			id: "3211FD66D6733C28"
+			rewards: [{
+				id: "77FC20B031C19A81"
+				item: "ars_nouveau:source_jar"
+				type: "item"
+			}]
+			subtitle: "Source: food"
 			tasks: [{
 				id: "54D374772B225987"
 				item: "ars_nouveau:mycelial_sourcelink"
@@ -248,6 +277,12 @@
 				"After this process, it can then create &dLava Lilies&r, which can be used for decoration."
 			]
 			id: "0933BE0FAC8C1097"
+			rewards: [{
+				id: "2CEE90E82BBB45EA"
+				item: "ars_nouveau:source_jar"
+				type: "item"
+			}]
+			subtitle: "Source: this is heat"
 			tasks: [{
 				id: "7745095BB4FD8D26"
 				item: "ars_nouveau:volcanic_sourcelink"
@@ -266,6 +301,12 @@
 				"It will also generate Source &dwhen baby animals are near&r and will &dspeed up their growth&r."
 			]
 			id: "384081A7277B8A25"
+			rewards: [{
+				id: "779DB5EAA42E3EAF"
+				item: "ars_nouveau:source_jar"
+				type: "item"
+			}]
+			subtitle: "Source: life and death"
 			tasks: [{
 				id: "3A754BEC165F0CB6"
 				item: "ars_nouveau:vitalic_sourcelink"
@@ -276,13 +317,128 @@
 		}
 		{
 			dependencies: ["462AD4FAE5BA7C8F"]
+			description: [
+				"&7&o(Worn Notebook: \"Enchanting Apparatus\")&r"
+				""
+				"The &aEnchanting Apparatus&r is a device that is &dused to create many items&r."
+				""
+				"In order to function, it &dneeds to be placed on top&r of an &aArcane Core&r, and additional items in its recipe need to be provided with &aArcane Pedestals or Platforms&r."
+				""
+				"Some recipes &dmay need Source&r, so be aware of that."
+			]
+			icon: "ars_nouveau:enchanting_apparatus"
 			id: "04B9E6FF29C31E6A"
+			tasks: [
+				{
+					id: "60A3B7472197D592"
+					item: "ars_nouveau:enchanting_apparatus"
+					type: "item"
+				}
+				{
+					id: "17F55E459C1E85C4"
+					item: "ars_nouveau:arcane_core"
+					type: "item"
+				}
+				{
+					id: "3B53AD60B0C8D9A3"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"One of the following:\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "ars_nouveau:arcane_pedestal"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:arcane_platform"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"04B9E6FF29C31E6A"
+				"1312DBA1BBBD0602"
+			]
+			description: ["&7&o(Worn Notebook: \"Reactive\")&r"]
+			id: "2CB797D4604D3091"
 			tasks: [{
-				id: "60A3B7472197D592"
-				item: "ars_nouveau:enchanting_apparatus"
+				icon: "minecraft:enchanted_book"
+				id: "5C542BC18F0C9574"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Reactive Enchanted Books\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "minecraft:enchanted_book"
+								tag: {
+									StoredEnchantments: [{
+										id: "ars_nouveau:reactive"
+										lvl: 1s
+									}]
+								}
+							}
+							{
+								Count: 1b
+								id: "minecraft:enchanted_book"
+								tag: {
+									StoredEnchantments: [{
+										id: "ars_nouveau:reactive"
+										lvl: 2s
+									}]
+								}
+							}
+							{
+								Count: 1b
+								id: "minecraft:enchanted_book"
+								tag: {
+									StoredEnchantments: [{
+										id: "ars_nouveau:reactive"
+										lvl: 3s
+									}]
+								}
+							}
+						]
+					}
+				}
+				match_nbt: true
+				title: "Any Reactive Book"
+				type: "item"
+				weak_nbt_match: true
+			}]
+			title: "Reactive Books"
+			x: 0.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["6943170F478360F2"]
+			description: ["&7&o(Worn Notebook: \"Scribe's Table\")&r"]
+			id: "1312DBA1BBBD0602"
+			tasks: [{
+				id: "29634891F1FA0922"
+				item: "ars_nouveau:blank_parchment"
 				type: "item"
 			}]
-			x: -1.0d
+			title: "Scribing Spells"
+			x: 1.0d
 			y: 8.0d
 		}
 	]
