@@ -72,4 +72,29 @@ ServerEvents.tags('item', event => {
 		event.remove('curios:curio', item) // remove botania cosmetics ability to be in any curio slot (they have their own slots now and it bloated the tooltip)
 	})
 	event.add('forge:workbenches', '#biomeswevegone:crafting_tables')
+	let ars_threads = [
+	"ars_nouveau:blank_thread",
+	"ars_nouveau:thread_depths",
+	"ars_nouveau:thread_heights",
+	"ars_nouveau:thread_whirlisprig",
+	"ars_nouveau:thread_drygmy",
+	"ars_nouveau:thread_high_step",
+	"ars_nouveau:thread_spellpower",
+	"ars_nouveau:thread_life_drain",
+	"ars_nouveau:thread_starbuncle",
+	"ars_nouveau:thread_chilling",
+	"ars_nouveau:thread_undying",
+	"ars_nouveau:thread_feather",
+	"ars_nouveau:thread_warding",
+	"ars_nouveau:thread_gliding",
+	"ars_nouveau:thread_immolation",
+	"ars_nouveau:thread_amethyst_golem",
+	"ars_nouveau:thread_magic_capacity",
+	"ars_nouveau:thread_kindling",
+	"ars_nouveau:thread_wixie",
+	"ars_nouveau:thread_repairing"
+	]
+	ars_threads.forEach(item => {
+		event.add('kubejs:ars_threads', item)
+	})
 })
