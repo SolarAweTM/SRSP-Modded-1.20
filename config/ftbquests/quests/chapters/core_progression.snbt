@@ -458,7 +458,8 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["04B9E6FF29C31E6A"]
+			dependencies: ["12538A7A93F646DC"]
+			description: ["(Worn Notebook: \"Performing Rituals\")"]
 			id: "37F2F1E4A89C4CA9"
 			tasks: [{
 				id: "3557A0E097F0217D"
@@ -466,8 +467,8 @@
 				type: "item"
 			}]
 			title: "Rituals"
-			x: -1.0d
-			y: 10.0d
+			x: 0.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["04B9E6FF29C31E6A"]
@@ -494,6 +495,316 @@
 			title: "Upgrading Your Spell Book"
 			x: -3.0d
 			y: 10.0d
+		}
+		{
+			dependencies: ["04B9E6FF29C31E6A"]
+			description: ["The &dEnchanting Apparatus&r can be used to &acreate many useful items&r. The quests following this one will elaborate more on what you can do."]
+			id: "12538A7A93F646DC"
+			subtitle: "this quest exists because theres SO MUCH you can make with this thing"
+			tasks: [{
+				id: "5E5454144762F5F8"
+				type: "checkmark"
+			}]
+			title: "Uses for the Enchanting Apparatus"
+			x: -1.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["12538A7A93F646DC"]
+			description: ["(Worn Notebook: search \"charm\" in the Entry Index)"]
+			icon: {
+				Count: 1
+				id: "ars_nouveau:starbuncle_charm"
+				tag: { }
+			}
+			id: "58200E0F6F2F6171"
+			tasks: [{
+				id: "28A4F8743D9628BB"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Magical Charm\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "ars_nouveau:bookwyrm_charm"
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:starbuncle_charm"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:whirlisprig_charm"
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:wixie_charm"
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:drygmy_charm"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Automation"
+			x: -1.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["12538A7A93F646DC"]
+			description: ["(Worn Notebook: search \"enchanter\" in the Entry Index)"]
+			icon: {
+				Count: 1
+				id: "ars_nouveau:enchanters_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "26A341CD7A3255B1"
+			tasks: [{
+				id: "455D5B4A359018C6"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Enchanter's Tool\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "ars_nouveau:wand"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:spell_bow"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:enchanters_sword"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:enchanters_shield"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:enchanters_mirror"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:spell_crossbow"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:enchanters_eye"
+								tag: { }
+							}
+						]
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			title: "Enchanter's Tools"
+			x: -2.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["12538A7A93F646DC"]
+			description: ["(Worn Notebook: \"Dominion Wand\")"]
+			id: "0905FA4B3385A6F6"
+			subtitle: "This is a wrench"
+			tasks: [{
+				id: "1D67E1A2FF50D105"
+				item: {
+					Count: 1
+					id: "ars_nouveau:dominion_wand"
+					tag: { }
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["12538A7A93F646DC"]
+			description: ["(Worn Notebook: \"Magical Armor\", \"Armor Upgrading\")"]
+			icon: {
+				Count: 1
+				id: "ars_nouveau:arcanist_hood"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "67748B8C5391293E"
+			tasks: [{
+				id: "4D8B6FE23C0E4665"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Magical Armor\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "ars_nouveau:sorcerer_hood"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:sorcerer_robes"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:sorcerer_leggings"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:sorcerer_boots"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:arcanist_hood"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:arcanist_robes"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:arcanist_leggings"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:arcanist_boots"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:battlemage_hood"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:battlemage_robes"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:battlemage_leggings"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:battlemage_boots"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Magical Armor"
+			x: -2.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["67748B8C5391293E"]
+			description: ["(Worn Notebook: \"Applying Threads\", \"Alteration Table\")"]
+			icon: "ars_nouveau:alteration_table"
+			id: "7B45ABA97A9CD25F"
+			tasks: [
+				{
+					id: "1CC33769A9CEA145"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Thread\"}"
+							}
+							value: "kubejs:ars_threads"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5A5EB377856DB5C4"
+					item: "ars_nouveau:alteration_table"
+					type: "item"
+				}
+			]
+			title: "Threads"
+			x: -3.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["58200E0F6F2F6171"]
+			description: ["(Worn Notebook: \"Storage Lectern\")"]
+			id: "2C424184DFC9523B"
+			tasks: [{
+				id: "0C8796562C538843"
+				item: "ars_nouveau:storage_lectern"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 15.0d
 		}
 	]
 	title: "Core Progression"
