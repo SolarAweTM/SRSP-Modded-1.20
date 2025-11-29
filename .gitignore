@@ -22,3 +22,4 @@ config/everycomp-hazardous.properties
 config/jei/world/**
 config/oculus.properties
 /schematics
+config/packetfixer.properties
