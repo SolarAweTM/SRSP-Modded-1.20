@@ -6,6 +6,14 @@
 	group: "6196AA2FACEE0C19"
 	icon: "create:wrench"
 	id: "23612C56C9E4BD04"
+	images: [{
+		height: 2.0d
+		image: "create:textures/gui/logo.png"
+		rotation: 0.0d
+		width: 2.0d
+		x: -1.0d
+		y: 0.0d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -24,6 +32,7 @@
 				item: "create:andesite_alloy"
 				type: "item"
 			}]
+			shape: "none"
 			size: 2.0d
 			subtitle: "Making cool stuff with the power of rotation."
 			tasks: [{
