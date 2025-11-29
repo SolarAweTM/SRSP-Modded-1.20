@@ -6,6 +6,14 @@
 	group: "7EAB5CB73AAD9328"
 	icon: "ars_nouveau:apprentice_spell_book"
 	id: "550C8ADC0D852DB8"
+	images: [{
+		height: 2.0d
+		image: "ars_nouveau:block/warp_portal"
+		rotation: 56.0d
+		width: 2.0d
+		x: 2.250000000000007d
+		y: 11.25d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -328,6 +336,7 @@
 			]
 			icon: "ars_nouveau:enchanting_apparatus"
 			id: "04B9E6FF29C31E6A"
+			size: 2.0d
 			tasks: [
 				{
 					id: "60A3B7472197D592"
@@ -467,8 +476,8 @@
 				type: "item"
 			}]
 			title: "Rituals"
-			x: 0.0d
-			y: 13.0d
+			x: 0.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["04B9E6FF29C31E6A"]
@@ -645,8 +654,8 @@
 				match_nbt: false
 				type: "item"
 			}]
-			x: 0.5d
-			y: 12.0d
+			x: 0.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["12538A7A93F646DC"]
@@ -805,6 +814,166 @@
 			}]
 			x: -1.0d
 			y: 15.0d
+		}
+		{
+			dependencies: ["58200E0F6F2F6171"]
+			id: "13624B70B1D19465"
+			tasks: [{
+				id: "6CA9861A48D79D1A"
+				item: "ars_nouveau:potion_jar"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["58200E0F6F2F6171"]
+			description: ["(Worn Notebook: \"Amethyst Golem Charm\")"]
+			icon: "ars_nouveau:amethyst_golem_charm"
+			id: "453AE16A21470002"
+			tasks: [
+				{
+					id: "2530BE4C18506B47"
+					item: "minecraft:amethyst_block"
+					type: "item"
+				}
+				{
+					id: "49DF481DF4C21954"
+					item: "ars_nouveau:amethyst_golem_charm"
+					type: "item"
+				}
+			]
+			title: "Farming Amethyst"
+			x: -2.0d
+			y: 15.0d
+		}
+		{
+			dependencies: [
+				"13624B70B1D19465"
+				"0905FA4B3385A6F6"
+			]
+			description: ["(Worn Notebook: \"Potion Melder\")"]
+			id: "5E0C4A2AACEF5477"
+			tasks: [{
+				id: "6E221DC915C25AE8"
+				item: "ars_nouveau:potion_melder"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 14.0d
+		}
+		{
+			dependencies: [
+				"5E0C4A2AACEF5477"
+				"13624B70B1D19465"
+			]
+			description: ["(Worn Notebook: \"Potion Diffuser\")"]
+			id: "7D50240721BBAE55"
+			tasks: [{
+				id: "0FECE140964AED51"
+				item: "ars_nouveau:potion_diffuser"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["1312DBA1BBBD0602"]
+			description: [
+				"&7&o(Worn Notebook: \"Warp Scroll\")&r"
+				""
+				"A &aWarp Scroll&r must be set before use, by &dsneak-right-clicking&r while holding it. This sets its position &dto the block you are standing on&r."
+				""
+				"You can then use the Warp Scroll to &dinstantly teleport&r to that position, &cconsuming the scroll&r in the process."
+				""
+				"This &cdoes not cross dimensions&r."
+			]
+			id: "2EF417E3247D1A96"
+			tasks: [{
+				id: "108ACAE334A58DAF"
+				item: {
+					Count: 1
+					id: "ars_nouveau:warp_scroll"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Warp Scrolls"
+			x: 2.5d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"2EF417E3247D1A96"
+				"12538A7A93F646DC"
+			]
+			description: [
+				"&7&o(Worn Notebook: \"Stabilized Warp Scroll\")&r"
+				""
+				"A &aStabilized Warp Scroll&r functions similarly to a normal &dWarp Scroll&r, except instead of instantly teleporting you, it will &dautomatically create a temporary 5x5 Warp Portal&r, if there is enough space. &dThis does NOT consume the scroll.&r"
+				""
+				"The Stabilized Warp Scroll is &dable to travel across dimensions&r."
+			]
+			id: "42DC89D938676D7A"
+			tasks: [{
+				id: "6E6311D192A4653E"
+				item: {
+					Count: 1
+					id: "ars_nouveau:stable_warp_scroll"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Stabilized Warps"
+			x: 1.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["2EF417E3247D1A96"]
+			description: [
+				"&7&o(Worn Notebook: \"Warp Portals\")&r"
+				""
+				"&aWarp Portals&r can be used to easily &dtravel across the world, instantly&r."
+				""
+				"Start by building a &dNether Portal-like structure&r up to 21x21, then place &da full Source Jar&r nearby."
+				""
+				"To activate, &dthrow a Warp Scroll into the portal's frame&r. If the Warp Scroll was &dgiven a name&r via Anvil, the Warp Portal will take that name. This will &dconsume Source&r from the Source Jar."
+				""
+				"Normal Warp Portals &ccannot cross dimensions&r, just like the Warp Scroll."
+			]
+			icon: "ars_nouveau:sourcestone"
+			id: "295EE49EA4D33A15"
+			tasks: [{
+				advancement: "ars_nouveau:create_portal"
+				criterion: ""
+				icon: "ars_nouveau:sourcestone"
+				id: "31E4A2A0BA301814"
+				title: "Create a Warp Portal."
+				type: "advancement"
+			}]
+			title: "Warp Portals"
+			x: 3.5d
+			y: 11.5d
+		}
+		{
+			dependencies: [
+				"42DC89D938676D7A"
+				"295EE49EA4D33A15"
+			]
+			description: [
+				"By using a &dStabilized Warp Scroll&r instead of a normal Warp Scroll, the Warp Portal can be &dmade cross-dimensional&r."
+				""
+				"Doing this &cwill consume the Stabilized Warp Scroll&r."
+			]
+			id: "4B35307F9085C96A"
+			tasks: [{
+				id: "72708D1EA0B20358"
+				type: "checkmark"
+			}]
+			title: "Cross-Dimensional Warp Portals"
+			x: 2.0d
+			y: 12.5d
 		}
 	]
 	title: "Core Progression"
