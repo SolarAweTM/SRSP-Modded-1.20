@@ -468,7 +468,15 @@
 		}
 		{
 			dependencies: ["12538A7A93F646DC"]
-			description: ["(Worn Notebook: \"Performing Rituals\")"]
+			description: [
+				"&7(Worn Notebook: \"Performing Rituals\")&r"
+				""
+				"In order to perform &dRituals&r, you will need a &aRitual Brazier&r, and &da Tablet for the ritual&r. "
+				""
+				"&dUse the Tablet on the Brazier&r to set the ritual. During this time, you can &dthrow items into the Brazier&r in order to augment the ritual, &dif desired&r. "
+				""
+				"To activate, &dright-click the Brazier with an empty hand&r. &cThis consumes the Tablet&r, and if Source is necessary, it will &dpull Source from Jars&r within 6 blocks."
+			]
 			id: "37F2F1E4A89C4CA9"
 			tasks: [{
 				id: "3557A0E097F0217D"
@@ -488,6 +496,7 @@
 				""
 				"- 1 Ancient Debris"
 				"- 2 Crimson Steel Ingots"
+				"- 1 Fire Essence"
 				"- 3 Polished Rose Quartz"
 				"- 1 Source Gem"
 				"- 1500 Source (the resource)"
@@ -686,7 +695,7 @@
 			y: 13.0d
 		}
 		{
-			dependencies: ["12538A7A93F646DC"]
+			dependencies: ["57E9A286A9D51FCB"]
 			description: [
 				"&7&o(Worn Notebook: \"Magical Armor\")&r"
 				""
@@ -873,6 +882,13 @@
 		}
 		{
 			dependencies: ["58200E0F6F2F6171"]
+			description: [
+				"&7&o(Worn Notebook: \"Potion Jar\")&r"
+				""
+				"The &aPotion Jar&r is a way to &dstore a large amount of Potions&r. Each Jar can store &dup to 100 bottles&r of a single type of Potion."
+				""
+				"You can &dsneak-right-click&r with a &dDominion Wand&r in order to &dlock the Potion Jar&r, only allowing it to recieve the Potion it was locked to."
+			]
 			id: "13624B70B1D19465"
 			tasks: [{
 				id: "6CA9861A48D79D1A"
@@ -919,8 +935,17 @@
 				"13624B70B1D19465"
 				"0905FA4B3385A6F6"
 			]
-			description: ["(Worn Notebook: \"Potion Melder\")"]
+			description: [
+				"&7&o(Worn Notebook: \"Potion Melder\")&r"
+				""
+				"The &aPotion Melder&r will take &dtwo Potion Jars&r with Potions inside, and with &dsome Source&r, it will use &dtwo bottles worth&r of each Potion Jar in order to &dmake one bottle of Potion that combines their effects&r, and put that into another Potion Jar."
+				""
+				"To start, &dplace down the Melder&r and have a Source Jar nearby. Then, &dplace the Potion Jar&r that you want to be set as &dthe output&r, and &dright-click the Melder&r with a &dDominion Wand&r, then &dright-click the output Potion Jar&r. From there, you can &dplace down your two input Jars&r, and then &duse the Dominion Wand on them&r, and then the Melder to set them as &dthe inputs&r."
+				""
+				"If the Melder has any issues, you can view them by &dlooking at the Melder&r. Any relevant information will be provided &dnext to your crosshair&r."
+			]
 			id: "5E0C4A2AACEF5477"
+			min_width: 300
 			tasks: [{
 				id: "6E221DC915C25AE8"
 				item: "ars_nouveau:potion_melder"
@@ -934,7 +959,15 @@
 				"5E0C4A2AACEF5477"
 				"13624B70B1D19465"
 			]
-			description: ["(Worn Notebook: \"Potion Diffuser\")"]
+			description: [
+				"&7&o(Worn Notebook: \"Potion Diffuser\")&r"
+				""
+				"The &aPotion Diffuser&r will take Potions from a bound Potion Jar, and &dgradually apply it to nearby entities&r, often greatly &dincreasing the overall duration&r."
+				""
+				"To start, &dplace down a Potion Jar&r with your desired effect, along with the &dDiffuser&r. Then, &dright-click the Jar&r with a &dDominion Wand&r, and then the &dDiffuser to bind the Jar&r to the Diffuser."
+				""
+				"The Diffuser will then use &d1 bottle of the Potion Jar&r in order to apply the effects every few seconds to nearby entities &dfor 10 minutes&r."
+			]
 			id: "7D50240721BBAE55"
 			tasks: [{
 				id: "0FECE140964AED51"
@@ -1078,6 +1111,492 @@
 			title: "Upgrading Armor"
 			x: -3.5d
 			y: 13.0d
+		}
+		{
+			dependencies: ["3EDE2D3559B99C52"]
+			description: [
+				"&7&o(The following is an excerpt from the Ars Nouveau source code, as the Worn Notebook's entry on this item is broken. Minor additions have been made.)&r"
+				"{ \"text\": \"[Link to original text]\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://github.com/baileyholl/Ars-Nouveau/blob/main/src/generated/resources/assets/ars_nouveau/lang/en_us.json#L957\" } }"
+				""
+				"A &aSourceberry Bush&r can be found in &dTaiga and Archwood Forest biomes&r, and produces &aSourceberries&r. A Sourceberry can be used to craft a &dPotion of Mana Regeneration&r or consumed &das food&r. You can plant a new Sourceberry Bush by &dplacing a Sourceberry on farmland&r."
+				""
+				"&dStarbuncles&r will automatically &dharvest fully grown Sourceberry Bushes&r, making them useful for early automation of the &dAgronomic Sourcelink&r. Sourceberry foods will also grant &dMana Regeneration&r."
+			]
+			id: "767238FA400CFD11"
+			min_width: 250
+			tasks: [{
+				id: "233EC8E86BD76DCF"
+				item: "ars_nouveau:sourceberry_bush"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["12538A7A93F646DC"]
+			description: [
+				"&7&o(Worn Notebook: \"Magebloom Seed\")&r"
+				""
+				"&aMagebloom&r is a plant that will prove useful in the mod, as it can be used to make &dPotions of Spell Damage&r, and they can be turned into &dMagebloom Fibers&r, which are instrumental in &dcreating magical armor&r, among other things."
+				""
+				"Magebloom as a crop will also &dprovide additional Source&r to an &dAgronomic Sourcelink&r."
+			]
+			icon: "ars_nouveau:magebloom"
+			id: "57E9A286A9D51FCB"
+			tasks: [{
+				id: "22FBB79B66B33049"
+				item: "ars_nouveau:magebloom_crop"
+				type: "item"
+			}]
+			title: "Magebloom"
+			x: -2.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["37F2F1E4A89C4CA9"]
+			description: ["The following quests will cover all the many &dTablets and Rituals&r that can be used with the &dRitual Brazier&r."]
+			hide_dependent_lines: true
+			id: "54BD1203D1E6EEF7"
+			subtitle: "yes, youre gonna be an iPad kid"
+			tasks: [{
+				id: "6E1A650BCA1CA322"
+				type: "checkmark"
+			}]
+			title: "Tablets"
+			x: 2.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["54BD1203D1E6EEF7"]
+			description: ["This Ritual will &asummon a variety of animals&r based on the biome the Ritual is activated in."]
+			id: "5A0374CBBD525F81"
+			tasks: [{
+				id: "640DD43B8ECC0585"
+				item: "ars_nouveau:ritual_animal_summon"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["54BD1203D1E6EEF7"]
+			description: [
+				"By default, this Ritual will &asummon a variety of Wilden creatures&r."
+				""
+				"If augmented with a &dWilden Wing, Spike, and Horn&r, it will instead summon the &dWilden Chimera&r, which &ccan destroy blocks&r, and proves &da formidable opponent&r."
+			]
+			id: "74619717E2016196"
+			tasks: [{
+				id: "5399C89785DE0265"
+				item: "ars_nouveau:ritual_wilden_summon"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 17.0d
+		}
+		{
+			dependencies: ["54BD1203D1E6EEF7"]
+			description: [
+				"This Ritual requires that you &daugment it with a set Warp Scroll first&r."
+				""
+				"On activation, it will &ateleport all nearby entities&r to the location of the given Warp Scroll."
+			]
+			id: "6B94E9A4AF0FC566"
+			tasks: [{
+				id: "7F2D5D093C823D88"
+				item: "ars_nouveau:ritual_warping"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["54BD1203D1E6EEF7"]
+			description: [
+				"This Ritual requires that you &daugment it with a block of your choice first&r."
+				""
+				"On activation, this Ritual will &dgrant you the Scrying effect&r, attuned to the given block. This allows you to &dsee the location of this block through other blocks&r."
+				""
+				"&bBlue particles&r indicate that you are &dfar away&r from that block."
+				"&aGreen particles&r indicate that you are &dgetting closer&r to the block."
+				"&7White particles&r show the &dexact position&r of the block."
+				""
+				"Additionally augmenting this Ritual with &dManipulation Essence&r will increase the effect duration to &d15 minutes&r."
+			]
+			id: "274A6AAA09F31418"
+			subtitle: "Spelunker Potion"
+			tasks: [{
+				id: "38A2D096699E2023"
+				item: "ars_nouveau:ritual_scrying"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["54BD1203D1E6EEF7"]
+			description: [
+				"&7&o(Worn Notebook: \"Familiars\")&r"
+				""
+				"This Ritual will &aturn nearby compatible entities into Bound Scripts&r, which can be used to &dcreate Familiars&r."
+			]
+			id: "3573089E12978A75"
+			tasks: [{
+				id: "46E3F8C3479CCBCE"
+				item: "ars_nouveau:ritual_binding"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["54BD1203D1E6EEF7"]
+			description: [
+				"This Ritual will &akill nearby hostile mobs&r, and turn them into &dExperience Gems&r, roughly equal to &ddouble their normal amount&r of experience. Mobs killed this way &cdo not drop items&r."
+				""
+				"&dSource will be consumed&r for each mob killed."
+			]
+			id: "438BF046D52F9E89"
+			tasks: [{
+				id: "6B1830256DECC162"
+				item: "ars_nouveau:ritual_disintegration"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["54BD1203D1E6EEF7"]
+			description: [
+				"This Ritual will &asummon a Raid&r when used in a village."
+				""
+				"Augmenting this Ritual with an &dEmerald&r causes the Raid to &dbecome max difficulty&r. This has no effect on Hard difficulty."
+			]
+			id: "4E84DCBC01F0049F"
+			tasks: [{
+				id: "342A23B77B85F4D9"
+				item: "ars_nouveau:ritual_challenge"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["54BD1203D1E6EEF7"]
+			description: [
+				"This Ritual will &aset the time to day&r."
+				""
+				"Good morning!"
+			]
+			id: "05C3C94249241A77"
+			tasks: [{
+				id: "4F5360CDFCBF74F3"
+				item: "ars_nouveau:ritual_sunrise"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 18.0d
+		}
+		{
+			dependencies: ["54BD1203D1E6EEF7"]
+			description: [
+				"This Ritual will &aset the time to night&r."
+				""
+				"Good night."
+			]
+			id: "7EFC673E78DC08DD"
+			tasks: [{
+				id: "6B21ABB55063B281"
+				item: "ars_nouveau:ritual_moonfall"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["54BD1203D1E6EEF7"]
+			description: [
+				"This Ritual will &atake nearby mobs within 3 blocks, and place them into Containment Jars&r placed within the same range of the Brazier."
+				""
+				"&dSource is necessary&r for any mobs beyond the first."
+			]
+			id: "6F2877E25852FAAE"
+			tasks: [{
+				id: "485D0D3FB52BBF31"
+				item: "ars_nouveau:ritual_containment"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 17.0d
+		}
+		{
+			dependencies: ["54BD1203D1E6EEF7"]
+			description: [
+				"This Ritual will &agive nearby players the Gravity effect&r, bringing them down to the ground, quickly."
+				""
+				"Each time this Ritual applies or refreshes Gravity, &dit will consume Source&r."
+			]
+			id: "6893F5334498A08B"
+			tasks: [{
+				id: "5EB705D8B214A0B8"
+				item: "ars_nouveau:ritual_gravity"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["54BD1203D1E6EEF7"]
+			description: [
+				"This Ritual will &agrant nearby players the Flight effect&r, allowing them to utilize &dcreative flight&r for a short time. If you already have Flight, approaching this Ritual &dwill refresh the effect's duration&r. "
+				""
+				"Each time this Ritual refreshes or grants Flight, &dit will consume Source&r."
+			]
+			id: "2982A11AC984A045"
+			tasks: [{
+				id: "3A2FE98753B2C2F0"
+				item: "ars_nouveau:ritual_flight"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["54BD1203D1E6EEF7"]
+			description: [
+				"This Ritual will &aprevent hostile mobs from spawning&r within a 32 block radius."
+				""
+				"Augmenting this Ritual with &dRotten Flesh&r will increase the radius &dby 1 block, up to 128&r."
+				""
+				"This Ritual &dwill consume Source for every minute&r that it blocks spawns."
+			]
+			id: "2A2F511E80D4E77F"
+			tasks: [{
+				id: "5EF708DCBDBDBCEC"
+				item: "ars_nouveau:ritual_sanctuary"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["54BD1203D1E6EEF7"]
+			description: [
+				"This Ritual will &aheal nearby entities over time&r, and &dharm undead&r."
+				""
+				"&dZombie Villagers&r nearby will be &dinstantly cured, and offer discounts&r if a player is nearby."
+				""
+				"&dSource is consumed&r while this Ritual is active."
+			]
+			id: "0E770BA3F9A66009"
+			tasks: [{
+				id: "49040CE53F3B65AA"
+				item: "ars_nouveau:ritual_restoration"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["54BD1203D1E6EEF7"]
+			description: ["This Ritual will &adig holes on the 4 adjacent blocks&r of the Brazier &ddown to Bedrock&r."]
+			id: "06487D42CF989C96"
+			tasks: [{
+				id: "22214D3405C0CECD"
+				item: "ars_nouveau:ritual_burrowing"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 17.0d
+		}
+		{
+			dependencies: ["54BD1203D1E6EEF7"]
+			description: [
+				"This Ritual will &aclear the weather&r."
+				""
+				"If &daugmented with Gunpowder&r, it will &acause it to rain&r. With &dLapis Lazuli&r, it &acauses a storm&r."
+			]
+			id: "5C8DD4EB8AD0F4C7"
+			tasks: [{
+				id: "271C3FEC40331821"
+				item: "ars_nouveau:ritual_cloudshaping"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 17.0d
+		}
+		{
+			dependencies: ["54BD1203D1E6EEF7"]
+			description: [
+				"This Ritual will &aspawn Oak and Birch Trees, and apply Bone Meal&r to a &d7x7 circular area&r."
+				""
+				"&dAugmenting the Ritual with Source Gems&r increases the radius by 1 per gem."
+				""
+				"&dAugmenting with a Brown Mushroom&r causes the Ritual to summon &dTaiga resources&r and &dturn the area into Podzol&r."
+				""
+				"&dAugmenting with Glow Berries&r causes the Ritual to summon &dJungle resources&r."
+			]
+			id: "0B7F90E4C9A708C3"
+			tasks: [{
+				id: "5E48A7DCC1097E4A"
+				item: "ars_nouveau:ritual_forestation"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 17.0d
+		}
+		{
+			dependencies: ["54BD1203D1E6EEF7"]
+			description: [
+				"This Ritual will &aawaken nearby Archwood Trees&r and turn them into &dWeald Walkers&r, and &aawaken nearby Budding Amethyst&r into &dAmethyst Golems&r."
+				""
+				"&dThe Ritual's description&r provides an explanation on how to use &dWeald Walkers&r."
+				""
+				"&dAugmenting&r this Ritual with a &dBook and Quill&r will create &dBookwyrm Charms&r."
+			]
+			id: "499E69AC8272E8CD"
+			tasks: [{
+				id: "45C1E055E530635E"
+				item: "ars_nouveau:ritual_awakening"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["54BD1203D1E6EEF7"]
+			description: [
+				"This Ritual will &acreate flowers and grass nearby&r."
+				""
+				"&dAugmenting&r this Ritual with &dSource Gems&r increases the radius &dby 1 for each gem&r."
+				""
+				"Augmenting with &dSand&r causes the Ritual to &dsummon Cacti and Dead Bushes&r instead."
+			]
+			id: "1CC4451F163D5315"
+			tasks: [{
+				id: "25982DBDBF8FED5B"
+				item: "ars_nouveau:ritual_flowering"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["54BD1203D1E6EEF7"]
+			description: [
+				"This Ritual will &acreate a circular island&r with a &ddiameter of 13 blocks&r, and &achange the biome of the island created to Plains&r."
+				""
+				"&dAugmenting&r this Ritual with &dSource Gems&r will increase the &dradius by 1 block for each gem&r."
+				""
+				"Augmenting with a &dFrostaya&r will cause the Ritual to &dcreate a Snow Plains biome&r instead."
+				""
+				"This Ritual &dwill consume Source for every block&r placed."
+			]
+			id: "6A5CDCF16CE6EDC1"
+			tasks: [{
+				id: "05F051183B4B44AD"
+				item: "ars_nouveau:ritual_conjure_island_plains"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 18.0d
+		}
+		{
+			dependencies: ["54BD1203D1E6EEF7"]
+			description: [
+				"This Ritual will &acreate a circular island&r with a &ddiameter of 13 blocks&r, and &achange the biome of the island created to Desert&r."
+				""
+				"&dAugmenting&r this Ritual with &dSource Gems&r will increase the &dradius by 1 block for each gem&r."
+				""
+				"Augmenting with &dTerracotta&r will cause the Ritual to &dcreate a Badlands biome&r instead."
+				""
+				"This Ritual &dwill consume Source for every block&r placed."
+			]
+			id: "3B26D0F5A850D95E"
+			tasks: [{
+				id: "640B0CB4D49745E1"
+				item: "ars_nouveau:ritual_conjure_island_desert"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["54BD1203D1E6EEF7"]
+			description: [
+				"This Ritual will &acause nearby animals to breed&r."
+				""
+				"This &dconsumes Source&r, and will &ddo nothing if there are 20 or more animals&r."
+			]
+			id: "3E9FEC1C5EBE4169"
+			tasks: [{
+				id: "6E53422D18CE97EB"
+				item: "ars_nouveau:ritual_fertility"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 18.0d
+		}
+		{
+			dependencies: ["54BD1203D1E6EEF7"]
+			description: [
+				"This Ritual will &aoccasionally apply Bone Meal&r to nearby blocks."
+				""
+				"&dAugmenting&r this Ritual with a &dBone Block&r will instead cause it to &dboost the growth of baby animals&r."
+				""
+				"This Ritual &dwill consume Source&r."
+			]
+			id: "27D05FC5F77AE673"
+			tasks: [{
+				id: "67B9A5D3A5567D55"
+				item: "ars_nouveau:ritual_overgrowth"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 18.0d
+		}
+		{
+			dependencies: ["54BD1203D1E6EEF7"]
+			description: [
+				"This Ritual will &aperiodically harvest crops&r. If an &dinventory is adjacent&r to the Brazier, it will attempt to &dplace the produce in the inventory&r."
+				""
+				"This &dconsumes Source for each set of crops&r harvested."
+			]
+			id: "14F5C0CC38F0B20E"
+			tasks: [{
+				id: "6971D893292E7EED"
+				item: "ars_nouveau:ritual_harvest"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 18.0d
+		}
+		{
+			dependencies: ["74619717E2016196"]
+			description: [
+				"With access to the &dRitual of Summon Wilden&r, you can now &ddefeat the Wilden Chimera&r, and obtain the &dWilden Tribute&r, which is necessary to &aupgrade your Spell Book&r to &dTier 3&r."
+				""
+				"This requires a &dtrip across the Deep Dark, Nether, and End&r, as the recipe asks for the following:"
+				""
+				"- 1 Nether Star"
+				"- 2 Warden Tendrils"
+				"- 2 Azure Electrum Ingots"
+				"- 2 Chorus Fruit"
+				"- 1 Wilden Tribute"
+				"- 5000 Source (the resource)"
+				""
+				"This is currently the &dhighest tier of Spell Book&r you can achieve."
+			]
+			id: "74C62281F9B31CF9"
+			tasks: [{
+				id: "22E9C38319609531"
+				item: "ars_nouveau:archmage_spell_book"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "Your Spell Book's Final Upgrade"
+			x: 1.0d
+			y: 17.0d
 		}
 	]
 	title: "Core Progression"
