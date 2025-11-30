@@ -520,13 +520,25 @@
 		}
 		{
 			dependencies: ["12538A7A93F646DC"]
-			description: ["(Worn Notebook: search \"charm\" in the Entry Index)"]
+			description: [
+				"&7&o(Worn Notebook: search \"charm\" in the Entry Index)&r"
+				""
+				"The world is full of all sorts of creatures, &dsome of which can come to your aid&r, with the help of &aCharms&r. The &dWorn Notebook&r will explain in detail what each creature summoned by Charms does, but here's a quick &dsummary&r:"
+				""
+				"- &dStarbuncles&r will assist in item logistics, moving items between containers."
+				"- &dDrygmies&r behave like a passive mob farm that is powered with Source."
+				"- &dWhirlisprigs&r will generate various natural resources at the cost of Source."
+				"- &dWixies&r can automatically craft items and potions at the cost of Source."
+				""
+				"The remaining creatures will be covered in the following quests."
+			]
 			icon: {
 				Count: 1
 				id: "ars_nouveau:starbuncle_charm"
 				tag: { }
 			}
 			id: "58200E0F6F2F6171"
+			min_width: 300
 			tasks: [{
 				id: "28A4F8743D9628BB"
 				item: {
@@ -570,7 +582,17 @@
 		}
 		{
 			dependencies: ["12538A7A93F646DC"]
-			description: ["(Worn Notebook: search \"enchanter\" in the Entry Index)"]
+			description: [
+				"&7&o(Worn Notebook: search \"enchanter\" in the Entry Index)&r"
+				""
+				"The &aEnchanter's Tools&r can prove useful in combat and exploration."
+				""
+				"The &dBow, Crossbow, Sword, Mirror, Eye, and Wand&r can all have a &dSpell inscribed onto them&r, just as you would with a parchment."
+				""
+				"For the &dSword, Mirror, and Wand&r, the inscribed spell &dmust NOT have a Form glyph&r. For the &dBow and Crossbow&r, you can use special &dAugment Arrows&r to give additional effects to the Spells."
+				""
+				"The &dShield&r will give a small amount of &dMana Regeneration and Spell Power&r upon blocking an attack."
+			]
 			icon: {
 				Count: 1
 				id: "ars_nouveau:enchanters_sword"
@@ -641,7 +663,13 @@
 		}
 		{
 			dependencies: ["12538A7A93F646DC"]
-			description: ["(Worn Notebook: \"Dominion Wand\")"]
+			description: [
+				"&7&o(Worn Notebook: \"Dominion Wand\")&r"
+				""
+				"The &aDominion Wand&r can be used to &dconfigure Source Relays&r, as well as &dcommand certain automatic devices and creatures&r."
+				""
+				"It really is this mod's equivalent to &da wrench&r."
+			]
 			id: "0905FA4B3385A6F6"
 			subtitle: "This is a wrench"
 			tasks: [{
@@ -659,7 +687,16 @@
 		}
 		{
 			dependencies: ["12538A7A93F646DC"]
-			description: ["(Worn Notebook: \"Magical Armor\", \"Armor Upgrading\")"]
+			description: [
+				"&7&o(Worn Notebook: \"Magical Armor\")&r"
+				""
+				"&aMagical armor&r can now be created by providing &deither Gold, Iron, or Netherite armor&r in the Enchanting Apparatus along &dwith 4 Magebloom Fibers&r."
+				"This will get you &dSorcerer, Arcanist, or Battlemage armor&r respectively."
+				""
+				"The resulting armor will grant you the &dsame defensive stats&r as their normal forms, but now with &dadded Max Mana and Mana Regen&r."
+				""
+				"In addition, they gain &dThread Slots&r, with Gold getting the most powerful slots. These will be explained in &dthe quest following this one&r."
+			]
 			icon: {
 				Count: 1
 				id: "ars_nouveau:arcanist_hood"
@@ -774,9 +811,20 @@
 		}
 		{
 			dependencies: ["67748B8C5391293E"]
-			description: ["(Worn Notebook: \"Applying Threads\", \"Alteration Table\")"]
+			description: [
+				"&7&o(Worn Notebook: \"Applying Threads\", \"Alteration Table\")&r"
+				""
+				"You may have noticed that your armor has &dnew info that looks like an enchantment&r, along the lines of \"&c&oEmpty I&r\". These are &aThread Slots&r, and are &danother way to improve your gear&r."
+				""
+				"Threads offer &dadditional bonuses&r, such as the &dThread of The Starbuncle&r, which gives you a &d20% speed boost&r. &cYou cannot use multiples of a single thread in a set of armor.&r"
+				""
+				"Depending on the &dlevel of the Thread Slot&r you put the thread into, you may see more effects. Going back to our &dStarbuncle Thread&r, putting it in a slot marked as \"&c&oEmpty III&r\" would give us a &d60% speed boost&r, as per its description stating that it &doffers 20% per level&r."
+				""
+				"You can apply threads using an &aAlteration Table&r. Place the armor on the Table, and then &dadd or remove desired threads&r. Removing the armor will apply the changes you made. If you want to access a lower slot for whatever reason, &dyou can use Blank Threads&r to fill in a slot."
+			]
 			icon: "ars_nouveau:alteration_table"
 			id: "7B45ABA97A9CD25F"
+			min_width: 300
 			tasks: [
 				{
 					id: "1CC33769A9CEA145"
@@ -805,8 +853,16 @@
 		}
 		{
 			dependencies: ["58200E0F6F2F6171"]
-			description: ["(Worn Notebook: \"Storage Lectern\")"]
+			description: [
+				"&7&o(Worn Notebook: \"Storage Lectern\")&r"
+				""
+				"The &aStorage Lectern&r can be used in conjunction with &aBookwyrms&r to provide &da mass storage solution&r."
+				""
+				"The &dWorn Notebook&r offers a detailed explanation on its mechanics."
+			]
+			icon: "ars_nouveau:storage_lectern"
 			id: "2C424184DFC9523B"
+			subtitle: "call it Ars Energistics 2"
 			tasks: [{
 				id: "0C8796562C538843"
 				item: "ars_nouveau:storage_lectern"
@@ -829,7 +885,17 @@
 		}
 		{
 			dependencies: ["58200E0F6F2F6171"]
-			description: ["(Worn Notebook: \"Amethyst Golem Charm\")"]
+			description: [
+				"&7&o(Worn Notebook: \"Amethyst Golem Charm\")&r"
+				""
+				"The &aAmethyst Golem&r has the special ability to &dcreate Amethyst&r. Groundbreaking information."
+				""
+				"Use the &aAmethyst Golem Charm&r on a block, and then use a &dDominion Wand&r to set a &dhome point&r for it."
+				""
+				"The Golem will then passively turn &dnearby Blocks of Amethyst into Budding Amethyst&r, and begin to &dharvest Amethyst Clusters&r."
+				""
+				"If its home point &dis a container&r, then it will also put harvested items into it."
+			]
 			icon: "ars_nouveau:amethyst_golem_charm"
 			id: "453AE16A21470002"
 			tasks: [
@@ -974,6 +1040,44 @@
 			title: "Cross-Dimensional Warp Portals"
 			x: 2.0d
 			y: 12.5d
+		}
+		{
+			dependencies: ["67748B8C5391293E"]
+			description: [
+				"&7&o(Worn Notebook: \"Armor Upgrading\", but the recipes are only in this quest and JEI.)&r"
+				""
+				"&cNote that Tiers are not displayed properly in the mod at this moment, so your gear might just say \"&6Tier&c\" with nothing after it. This is normal.&r"
+				""
+				"Your magical armor itself can also be &dupgraded further&r. This &dincreases their Mana Regen and Max Mana&r, as well as unlocking or upgrading your &dThread Slots&r."
+				""
+				"The upgrades are done in an &dEnchanting Apparatus&r, and are on the next page."
+				"{@pagebreak}"
+				"(some text is in gray for readability)"
+				""
+				"&6Tier 2:&r"
+				"- Starbuncle Token"
+				"&7- Drygmy Token&r"
+				"- Whirlisprig Token"
+				"&7- Source Gem&r"
+				"- 2500 Source"
+				""
+				"&6Tier 3:&r"
+				"- Wilden Tribute"
+				"&7- Ender Air Bottle&r"
+				"- Cascading Archwood Sapling"
+				"&7- Blazing Archwood Sapling&r"
+				"- Flourishing Archood Sapling"
+				"&7- Vexing Archwood Sapling&r"
+				"- 5000 Source"
+			]
+			id: "1670F24070A5D8AB"
+			tasks: [{
+				id: "68BE4F42D714E7EA"
+				type: "checkmark"
+			}]
+			title: "Upgrading Armor"
+			x: -3.5d
+			y: 13.0d
 		}
 	]
 	title: "Core Progression"
