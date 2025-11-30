@@ -103,7 +103,7 @@ ServerEvents.recipes(event => {
     )
   event.remove({ id: 'ars_nouveau:archmage_spell_book_upgrade' })
   event.recipes.ars_nouveau.enchanting_apparatus(
-        ['minecraft:nether_star', 'apotheosis:warden_tendril', 'botania:dragonstone', 'minecraft:chorus_fruit', "ars_nouveau:wilden_tribute", "minecraft:chorus_fruit", "botania:dragonstone", "apotheosis:warden_tendril"], // input items
+        ['minecraft:nether_star', 'apotheosis:warden_tendril', 'silentgear:azure_electrum_ingot', 'minecraft:chorus_fruit', "ars_nouveau:wilden_tribute", "minecraft:chorus_fruit", "silentgear:azure_electrum_ingot", "apotheosis:warden_tendril"], // input items
         'ars_nouveau:apprentice_spell_book', // reagent
         'ars_nouveau:archmage_spell_book', // output
         5000, // source cost
