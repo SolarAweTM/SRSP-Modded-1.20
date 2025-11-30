@@ -25,6 +25,7 @@
 				""
 				"To start, you'll need &aAndesite Alloy&r. This is one of the basic materials used all over the mod."
 			]
+			icon_scale: 0.1d
 			id: "05C90BF60E59F2F3"
 			rewards: [{
 				count: 4
@@ -34,7 +35,7 @@
 			}]
 			shape: "none"
 			size: 2.0d
-			subtitle: "Making cool stuff with the power of rotation."
+			subtitle: "Making cool stuff with the power of rotation"
 			tasks: [{
 				id: "2438C44A61654F14"
 				item: "create:andesite_alloy"
