@@ -1,4 +1,5 @@
 {
+	autofocus_id: "7D5474294C0F03DC"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "glyphs"
@@ -195,7 +196,12 @@
 		}
 		{
 			dependencies: ["5A8559F63EBA6E2B"]
-			description: ["&aAmplify&r is a glyph that &daugments the previous glyph&r before it. In a Spell with &dProjectile -> Harm -> Amplify -> Amplify&r, this glyph will &dapply Amplify twice&r to the Harm glyph."]
+			description: [
+				"&aAmplify&r is a glyph that &daugments the previous glyph&r before it. It makes the &deffects of some glyphs stronger&r."
+				""
+				"Example: "
+				"In a Spell with &dProjectile -> Harm -> Amplify -> Amplify&r, this glyph will &dapply Amplify twice&r to the Harm glyph."
+			]
 			id: "20225EA872F58FFD"
 			tasks: [{
 				id: "7F78FFD342808AC1"
@@ -291,6 +297,413 @@
 			title: "Dispel"
 			x: -2.5d
 			y: -5.0d
+		}
+		{
+			dependencies: ["5A8559F63EBA6E2B"]
+			description: ["&aCraft&r is a glyph that will &dopen a Crafting menu&r for you."]
+			id: "05E17324A3EB8D24"
+			tasks: [{
+				id: "35F49DC0B705F10D"
+				item: "ars_nouveau:glyph_craft"
+				type: "item"
+			}]
+			title: "Craft"
+			x: -4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5A8559F63EBA6E2B"]
+			description: [
+				"&aCut&r is a glyph that will &dsimulate a right-click action with Shears&r on the target. If the target is &dnon-shearable&r, it will instead deal &d1 damage&r."
+				""
+				"This glyph &dcan be augmented&r with the following:"
+				"&dAmplify:&r Simulates action with an Axe instead, and increases damage by 1."
+			]
+			id: "43B96D7E68762922"
+			tasks: [{
+				id: "43150C71B1C03FC3"
+				item: "ars_nouveau:glyph_cut"
+				type: "item"
+			}]
+			title: "Cut"
+			x: -3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5A8559F63EBA6E2B"]
+			description: [
+				"&aDelay&r is a glyph that &dcauses a delay&r before the next glyph in the Spell."
+				""
+				"This glyph &dcan be augmented&r with the following:"
+				"&dExtend Time:&r Increases the delay"
+				"&dDuration Down:&r Decreases the delay"
+			]
+			id: "78D96895506D54E8"
+			tasks: [{
+				id: "0ECAD766D923302E"
+				item: "ars_nouveau:glyph_delay"
+				type: "item"
+			}]
+			title: "Delay"
+			x: -4.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["5A8559F63EBA6E2B"]
+			description: [
+				"&aEvaporate&r is a glyph that will &dremove liquids&r."
+				""
+				"This glyph &dcan be augmented&r with the following:"
+				"&dAOE:&r Increases radius of effect"
+			]
+			id: "04B8122ECBA572A8"
+			tasks: [{
+				id: "5BDFB931A29C7D6B"
+				item: "ars_nouveau:glyph_evaporate"
+				type: "item"
+			}]
+			title: "Evaporate"
+			x: -3.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["5A8559F63EBA6E2B"]
+			description: [
+				"&aFell&r is a glyph that will attempt to harvest &dentire trees or vegetation&r."
+				""
+				"This glyph &dcan be augmented&r with the following:"
+				"&dAOE:&r Increases the maximum amount of blocks that can be broken."
+				"&dAmplify:&r Allows the Spell to break blocks of a higher hardness."
+			]
+			id: "49BE00FA0FF4051B"
+			tasks: [{
+				id: "2B191D8AEF46E73B"
+				item: "ars_nouveau:glyph_fell"
+				type: "item"
+			}]
+			title: "Fell"
+			x: -2.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["5A8559F63EBA6E2B"]
+			description: [
+				"&aFreeze&r is a glyph that will &dfreeze water, turn lava to obsidian, and slow entities&r for a short time."
+				""
+				"This glyph will also&d turn Ice into Packed Ice&r, and Packed Ice into Blue Ice."
+				""
+				"This glyph &dcan be augmented&r with the following:"
+				"&dSensitive:&r Turns water into Frosted Ice, vanishing after a short time."
+			]
+			id: "7BC088BE563088C4"
+			tasks: [{
+				id: "725C09677147F2A2"
+				item: "ars_nouveau:glyph_freeze"
+				type: "item"
+			}]
+			title: "Freeze"
+			x: -4.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["5A8559F63EBA6E2B"]
+			description: ["&aHarvest&r is a glyph that will &dharvest and replant&r fully grown crops."]
+			id: "31B07CDE9DCCCAE1"
+			tasks: [{
+				id: "07F4F7D558B3EE75"
+				item: "ars_nouveau:glyph_harvest"
+				type: "item"
+			}]
+			title: "Harvest"
+			x: -3.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["5A8559F63EBA6E2B"]
+			description: [
+				"&aIgnite&r is a glyph that will &dset blocks and mobs on fire&r."
+				""
+				"This glyph &dcan be augmented&r with the following:"
+				"&dSensitive:&r Causes the glyph to create Mage Fire instead, which cannot spread and has a shorter lifespan."
+			]
+			id: "07065DD6FAA18E20"
+			tasks: [{
+				id: "7F0B75137B7FFD2E"
+				item: "ars_nouveau:glyph_ignite"
+				type: "item"
+			}]
+			title: "Ignite"
+			x: -4.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["5A8559F63EBA6E2B"]
+			description: [
+				"&aInteract&r is a glyph that will &dsimulate a right-click action&r on the target."
+				""
+				"This glyph &dcan be augmented&r with the following:"
+				"&dSensitive:&r Performs the action as if it were holding the item in your offhand."
+			]
+			id: "33C0F8D015541910"
+			tasks: [{
+				id: "47C5D066CF962B68"
+				item: "ars_nouveau:glyph_interact"
+				type: "item"
+			}]
+			title: "Interact"
+			x: -3.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["5A8559F63EBA6E2B"]
+			description: [
+				"&aItem Pickup&r is a glyph that will &dpick up items&r around the target location."
+				""
+				"This glyph &dcan be augmented&r with the following:"
+				"&dAOE:&r Increases radius."
+			]
+			id: "72D0DD4EA5CC0C65"
+			tasks: [{
+				id: "4BC0B7614B24A725"
+				item: "ars_nouveau:glyph_pickup"
+				type: "item"
+			}]
+			title: "Item Pickup"
+			x: -2.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["5A8559F63EBA6E2B"]
+			description: [
+				"&aKnockback&r is a glyph that will &dapply knockback away from you&r to the target."
+				""
+				"This glyph &dcan be augmented&r with the following:"
+				"&dSensitive:&r This glyph will no longer target blocks."
+			]
+			id: "7E0469DE4F2D2AB4"
+			tasks: [{
+				id: "3C9F5A78C01D2994"
+				item: "ars_nouveau:glyph_gust"
+				type: "item"
+			}]
+			title: "Knockback"
+			x: -4.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["5A8559F63EBA6E2B"]
+			description: [
+				"&aLaunch&r is a glyph that will &dsend the target to the moon&r. Not really."
+				""
+				"This glyph will &dlaunch the target into the air&r."
+				""
+				"This glyph &dcan be augmented&r with the following:"
+				"&dSensitive:&r Will no longer target blocks."
+			]
+			id: "7C77D4A6BF5B94F4"
+			tasks: [{
+				id: "1E3998F551A9F907"
+				item: "ars_nouveau:glyph_launch"
+				type: "item"
+			}]
+			title: "Launch"
+			x: -3.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["5A8559F63EBA6E2B"]
+			description: [
+				"&aPlace Block&r is a glyph that will &dplace blocks&r from the caster's inventory."
+				""
+				"When used &dby a player&r, it will use blocks from the &dhotbar&r first."
+			]
+			id: "13BDAA1DBBF75589"
+			tasks: [{
+				id: "0037CD7392E1B008"
+				item: "ars_nouveau:glyph_place_block"
+				type: "item"
+			}]
+			title: "Place Block"
+			x: -4.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["5A8559F63EBA6E2B"]
+			description: [
+				"&aPull&r is a glyph that will &dpull the target closer&r to you."
+				""
+				"This glyph &dcan be augmented&r with the following:"
+				"&dSensitive:&r Will no longer target blocks."
+			]
+			id: "701B719A72C638C7"
+			tasks: [{
+				id: "5CB375831746828D"
+				item: "ars_nouveau:glyph_pull"
+				type: "item"
+			}]
+			title: "Pull"
+			x: -3.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["5A8559F63EBA6E2B"]
+			description: [
+				"&aRedstone Signal&r is a glyph that will &dplace a temporary Redstone Block&r with a &dbase power of 10&r."
+				""
+				"This glyph &dcan be augmented&r by the following:"
+				"&dSensitive:&r Applies a Redstone Signal to the target block instead of placing one."
+				"&dAmplify:&r Increases power."
+				"&dDampen:&r Decreases power."
+			]
+			id: "76146AD65F94D37C"
+			tasks: [{
+				id: "1353553BE18077FF"
+				item: "ars_nouveau:glyph_redstone_signal"
+				type: "item"
+			}]
+			title: "Redstone Signal"
+			x: -2.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["5A8559F63EBA6E2B"]
+			description: ["&aReset&r is a glyph that will &dreset the target&r of the Spell to the original target if it was changed. This allows you to &dbypass certain limits&r on other glyphs."]
+			id: "76E033E538D153A1"
+			tasks: [{
+				id: "2201BD85A141DEF1"
+				item: "ars_nouveau:reset"
+				type: "item"
+			}]
+			title: "Reset"
+			x: -4.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["5A8559F63EBA6E2B"]
+			description: [
+				"&aRotate&r is a glyph that will &drotate entities or compatible blocks&r clockwise."
+				""
+				"This glyph &dcan be augmented&r with the following:"
+				"&dSensitive:&r Changes the axis of the block if possible or forces the entity to turn."
+				"&dDampen:&r Causes the glyph to rotate counter-clockwise instead."
+			]
+			id: "37CE349E6A09724B"
+			tasks: [{
+				id: "5BC35191442586E8"
+				item: "ars_nouveau:glyph_rotate"
+				type: "item"
+			}]
+			title: "Rotate"
+			x: -3.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["5A8559F63EBA6E2B"]
+			description: [
+				"&aRune&r is a glyph that will place a &dtemporary Rune&r on the ground with the Spell. These Runes &ccannot be recharged&r."
+				""
+				"This glyph &dcan be augmented&r with the following:"
+				"&dSensitive:&r Causes item pickup and usage effects to target the owner's inventory instead of adjacent inventories to the Rune."
+			]
+			id: "27D171DAE5C8AD4D"
+			tasks: [{
+				id: "6122F9DB070AD1E6"
+				item: "ars_nouveau:glyph_rune"
+				type: "item"
+			}]
+			title: "Rune"
+			x: -3.5d
+			y: -13.0d
+		}
+		{
+			dependencies: ["5A8559F63EBA6E2B"]
+			description: [
+				"&aSummon Steed&r is a glyph that will &dsummon a temporary saddled Horse&r. This also gives you &dSummon Sickness&r, which prevents the further use of summoning glyphs for a time."
+				""
+				"This glyph &dcan be augmented&r with the following:"
+				"&dAOE:&r Summons more Horses."
+				"&dExtend Time:&r Increases the duration of the summons."
+			]
+			id: "1D34FC9BCEC5DBB8"
+			tasks: [{
+				id: "48EC50B494AD6B51"
+				item: "ars_nouveau:glyph_summon_steed"
+				type: "item"
+			}]
+			title: "Summon Steed"
+			x: -4.5d
+			y: -13.0d
+		}
+		{
+			dependencies: ["5A8559F63EBA6E2B"]
+			description: [
+				"&aSummon Wolves&r is a glyph that will &dsummon two temporary wolves&r to fight for you. This also gives you &dSummon Sickness&r, which prevents the further use of summoning glyphs for a time."
+				""
+				"This glyph &dcan be augmented&r with the following:"
+				"&dExtend Time:&r Increases duration of the summons."
+			]
+			id: "68401E394CAB6855"
+			tasks: [{
+				id: "5E74106B062E82AA"
+				item: "ars_nouveau:glyph_summon_wolves"
+				type: "item"
+			}]
+			title: "Summon Wolves"
+			x: -2.5d
+			y: -13.0d
+		}
+		{
+			dependencies: ["5A8559F63EBA6E2B"]
+			description: [
+				"&aSnare&r is a glyph that will &dprevent entities from moving or jumping&r for a time."
+				""
+				"This glyph &dcan be augmented&r with the following:"
+				"&dExtend Time:&r Increases duration of the effect."
+			]
+			id: "68A818488D57A25A"
+			tasks: [{
+				id: "2AC66C1E699630EC"
+				item: "ars_nouveau:glyph_snare"
+				type: "item"
+			}]
+			title: "Snare"
+			x: -4.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["5A8559F63EBA6E2B"]
+			description: [
+				"&aToss&r is a glyph that will &ddrop items from your inventory&r at the target location, starting from your hotbar first."
+				""
+				"If the target is an inventory, the items will be placed &dinto the inventory&r. The glyph will drop &dup to 64 of a single item&r by default."
+				""
+				"This glyph &dcan be augmented&r with the following:"
+				"&dAmplify:&r Doubles the amount of items."
+				"&dDampen:&r Halves the amount of items."
+				"&dRandomize:&r Selects a random item from your inventory."
+			]
+			id: "2D9BF78976682BA2"
+			tasks: [{
+				id: "2149EDAEEE64875B"
+				item: "ars_nouveau:glyph_toss"
+				type: "item"
+			}]
+			title: "Toss"
+			x: -3.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["5A8559F63EBA6E2B"]
+			description: ["&aWololo&r is a glyph that will &dchange the colour of a compatible entity or block&r to the colour of the Spell."]
+			id: "084139B310E6190D"
+			tasks: [{
+				id: "1463B20C7370BFD6"
+				item: "ars_nouveau:wololo"
+				type: "item"
+			}]
+			title: "Wololo"
+			x: -3.5d
+			y: -15.0d
 		}
 	]
 	title: "Glyphs"
