@@ -312,7 +312,9 @@ JEIEvents.hideItems(event => {
 		'storagedrawers:keyring_priority_n1',
 		'storagedrawers:keyring_priority_n2',
 		'storagedrawers:keyring_puller',
-		'sophisticatedstorage:inaccessible_slot'
+		'sophisticatedstorage:inaccessible_slot',
+		'railways:fuel_tank',
+		'railways:portable_fuel_interface'
 	]
 	hidden_items.forEach(item => {
 		event.hide(item) // noted: this also removes them from creative menus

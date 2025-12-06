@@ -102,6 +102,9 @@ ServerEvents.recipes(event => {
     )
     .transitionalItem('create:incomplete_precision_mechanism') //transitional item
     .loops(5) //loop count
+	//remove railways fuel tanks due to them disappearing trains for whatever reason
+	event.remove({output: 'railways:fuel_tank'})
+	event.remove({output: 'railways:portable_fuel_interface'})
 })
 
 ServerEvents.tags('item', event => {
