@@ -442,26 +442,6 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["230EECA40E2583F8"]
-			description: [
-				"The &aFuel Tank&r is like a &6Fluid Tank&r, but can only accept &6valid Train Fuel&r."
-				""
-				"Currently, the only valid Train Fuel in this pack is &6Lava&r, so this is just a Tank that only stores Lava."
-				""
-				"Trains will be able to use this as fuel to speed up."
-				""
-				"You can also use the &6Portable Fuel Interface&r to automate the refueling of a Train."
-			]
-			id: "4A325B7231E5B0A3"
-			tasks: [{
-				id: "10FE9B28142B8DA3"
-				item: "railways:fuel_tank"
-				type: "item"
-			}]
-			x: 2.0d
-			y: -3.0d
-		}
-		{
 			dependencies: ["605FE418AE25A582"]
 			description: [
 				"&aSmokestacks&r will billow out &6smoke&r."
@@ -696,8 +676,8 @@
 				item: "railways:track_coupler"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -5.0d
+			x: 2.0d
+			y: -3.0d
 		}
 	]
 	title: "Locomotion"
