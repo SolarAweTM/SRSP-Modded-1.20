@@ -7,6 +7,291 @@
 	id: "4D6059D9524CA520"
 	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			description: [
+				"&aGlyphs&r are the &dbuilding components of Spells&r."
+				""
+				"This quest chapter serves as a &dchecklist&r and &dreference&r for what each Glyph does."
+			]
+			id: "7D5474294C0F03DC"
+			size: 2.0d
+			tasks: [{
+				id: "5F7C8B7C6D75C6F9"
+				item: "ars_nouveau:scribes_table"
+				type: "item"
+			}]
+			title: "Glyphs"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7D5474294C0F03DC"]
+			description: [
+				"&aForm Glyphs&r are Glyphs that &ddictate the main form&r of the Spell, and what it can target."
+				""
+				"&dExactly one of these&r is required for a Spell to function, and &dmust be the first&r Glyph in a Spell."
+			]
+			icon: "ars_nouveau:blank_glyph"
+			id: "1996280109552BBD"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				disable_toast: true
+				icon: "ars_nouveau:blank_glyph"
+				id: "349BE3F1864F9076"
+				title: "Form Glyphs"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1996280109552BBD"]
+			description: ["Spells with a &aProjectile glyph&r will fire the Spell as a &dprojectile&r. This can target other &dentities, players, or blocks&r."]
+			id: "5E7C61951AA23312"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				disable_toast: true
+				icon: "ars_nouveau:glyph_projectile"
+				id: "7AAEC04CA011154C"
+				title: "You start with this Glyph!"
+				type: "dimension"
+			}]
+			title: "Projectile"
+			x: -0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1996280109552BBD"]
+			description: ["Spells with a &aSelf glyph&r will &dtarget the caster&r (in this case, &dyou&r) with the Spell."]
+			id: "16EDD608E5A104CB"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				disable_toast: true
+				icon: "ars_nouveau:glyph_self"
+				id: "667A2F9C8DA1D538"
+				title: "You start with this Glyph!"
+				type: "dimension"
+			}]
+			title: "Self"
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1996280109552BBD"]
+			description: [
+				"Spells with a &aTouch glyph&r will target &dthe object you are looking at&r."
+				""
+				"The target must be &dwithin your entity or block reach&r."
+			]
+			id: "2A01F265AA45DC7A"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				disable_toast: true
+				icon: "ars_nouveau:glyph_touch"
+				id: "652024E52D8E89AF"
+				title: "You start with this Glyph!"
+				type: "dimension"
+			}]
+			title: "Touch"
+			x: 0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1996280109552BBD"]
+			description: ["Spells with an &aUnderfoot glyph&r will target &dthe block directly below you&r."]
+			id: "20947C639F3D0DEF"
+			tasks: [{
+				id: "317A7DB41D75EB60"
+				item: "ars_nouveau:glyph_underfoot"
+				type: "item"
+			}]
+			title: "Underfoot"
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7D5474294C0F03DC"]
+			id: "1DF1A3282A8EE394"
+			tasks: [{
+				disable_toast: true
+				id: "3D0744E70341EDAA"
+				item: "ars_nouveau:apprentice_spell_book"
+				type: "item"
+			}]
+			title: "Tier 2 Glyphs"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7D5474294C0F03DC"]
+			hide_dependent_lines: true
+			icon: "ars_nouveau:novice_spell_book"
+			id: "5A8559F63EBA6E2B"
+			tasks: [{
+				id: "2E44B1C6DAFE45B7"
+				item: "ars_nouveau:scribes_table"
+				type: "item"
+			}]
+			title: "Tier 1 Glyphs"
+			x: -3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7D5474294C0F03DC"]
+			id: "0AB8680A6E3C5FA0"
+			tasks: [{
+				id: "669AD4344C8E3DFF"
+				item: "ars_nouveau:archmage_spell_book"
+				type: "item"
+			}]
+			title: "Tier 3 Glyphs"
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5A8559F63EBA6E2B"]
+			description: [
+				"&aBreak&r is a glyph that &dbreaks the targeted block&r. By default, it breaks with the &dharvest level of an Iron Pickaxe&r."
+				""
+				"This glyph &dcan be augmented&r with the following:"
+				"&dAmplify:&r Increases harvest level by 1 tier. "
+				"&dSensitive:&r Behaves like Shears instead of a Pickaxe."
+			]
+			id: "475E791DED452720"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				disable_toast: true
+				icon: "ars_nouveau:glyph_break"
+				id: "2E75CA3AE72112CB"
+				title: "You start with this Glyph!"
+				type: "dimension"
+			}]
+			title: "Break"
+			x: -3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5A8559F63EBA6E2B"]
+			description: [
+				"&aHarm&r is a glyph that &dapplies damage&r to the target. &cMultiple Harm glyphs without delay will have no effect due to invincibility.&r"
+				""
+				"This glyph &dcan be augmented&r with the following:"
+				"&dAmplify:&r Increases the amount of damage dealt"
+				"&dExtend Time:&r Applies Poison"
+			]
+			id: "39AE0E7ACB946FF7"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				disable_toast: true
+				icon: "ars_nouveau:glyph_harm"
+				id: "4696A7097BF88E29"
+				title: "You start with this Glyph!"
+				type: "dimension"
+			}]
+			title: "Harm"
+			x: -4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5A8559F63EBA6E2B"]
+			description: ["&aAmplify&r is a glyph that &daugments the previous glyph&r before it. In a Spell with &dProjectile -> Harm -> Amplify -> Amplify&r, this glyph will &dapply Amplify twice&r to the Harm glyph."]
+			id: "20225EA872F58FFD"
+			tasks: [{
+				id: "7F78FFD342808AC1"
+				item: "ars_nouveau:glyph_amplify"
+				type: "item"
+			}]
+			title: "Amplify"
+			x: -2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5A8559F63EBA6E2B"]
+			description: [
+				"&aBounce&r is a glyph that will &dapply the Bounce effect&r to the target, &dcausing them to bounce&r upon a fall."
+				""
+				"This glyph &dcan be augmented&r with the following:"
+				"&dAmplify:&r Preserves more motion per bounce."
+			]
+			id: "0E7067DBC671C6F2"
+			tasks: [{
+				id: "48D9AABAED1EAEE2"
+				item: "ars_nouveau:glyph_bounce"
+				type: "item"
+			}]
+			title: "Bounce"
+			x: -4.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["5A8559F63EBA6E2B"]
+			description: ["&aRandomize&r is a glyph that &daugments the glyph previously before it&r. It causes certain glyphs to have &drandom behaviour&r."]
+			id: "1278301B740664F3"
+			tasks: [{
+				id: "4A2342D45B4D99A7"
+				item: "ars_nouveau:glyph_randomize"
+				type: "item"
+			}]
+			title: "Randomize"
+			x: -4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5A8559F63EBA6E2B"]
+			description: [
+				"&aSensitive&r is a glyph that will &daugment the glyph that it follows&r. This mainly causes glyphs to &dtarget blocks that they normally would not&r."
+				""
+				"Examples include:"
+				"&dProjectile&r can now hit Grass."
+				"&dTouch&r can now target fluids and air."
+				"&dBreak&r will perform like Shears instead of a Pickaxe."
+			]
+			id: "2E6892A05ADA208A"
+			tasks: [{
+				id: "22D77856D577F85D"
+				item: "ars_nouveau:glyph_sensitive"
+				type: "item"
+			}]
+			title: "Sensitive"
+			x: -3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5A8559F63EBA6E2B"]
+			description: [
+				"&aConjure Mageblock&r is a glyph that will &dplace a temporary block&r."
+				""
+				"This glyph &dcan be augmented&r with the following:"
+				"&dAmplify:&r Makes the block permanent until broken otherwise."
+			]
+			id: "7D83F2BAF0F15816"
+			tasks: [{
+				id: "090414F8EFECF5F6"
+				item: "ars_nouveau:glyph_phantom_block"
+				type: "item"
+			}]
+			title: "Conjure Mageblock"
+			x: -3.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["5A8559F63EBA6E2B"]
+			description: [
+				"&aDispel&r is a glyph that will &dremove all potion effects&r from the target. Hitting a &dWitch below half health&r with Dispel will turn it into a &dWixie Shard&r."
+				""
+				"Dispel will also &dinstantly destroy any Mageblocks&r created from the &dConjure Mageblock&r glyph."
+			]
+			id: "0668749C7BF178E0"
+			tasks: [{
+				id: "28725A308F376A12"
+				item: "ars_nouveau:glyph_dispel"
+				type: "item"
+			}]
+			title: "Dispel"
+			x: -2.5d
+			y: -5.0d
+		}
+	]
 	title: "Glyphs"
 }
