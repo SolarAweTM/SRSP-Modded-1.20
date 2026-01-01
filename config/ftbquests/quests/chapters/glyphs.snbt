@@ -113,6 +113,8 @@
 		}
 		{
 			dependencies: ["7D5474294C0F03DC"]
+			description: ["&aTier 2 Glyphs&r require at least a &dMage's Spell Book&r in order to cast."]
+			hide_dependent_lines: true
 			id: "1DF1A3282A8EE394"
 			tasks: [{
 				disable_toast: true
@@ -126,6 +128,7 @@
 		}
 		{
 			dependencies: ["7D5474294C0F03DC"]
+			description: ["&aTier 1 Glyphs&r can be cast with &dany Spell Book&r."]
 			hide_dependent_lines: true
 			icon: "ars_nouveau:novice_spell_book"
 			id: "5A8559F63EBA6E2B"
@@ -140,6 +143,7 @@
 		}
 		{
 			dependencies: ["7D5474294C0F03DC"]
+			description: ["&aTier 3 Glyphs&r require at least an &dArchmage Spell Book&r to cast."]
 			id: "0AB8680A6E3C5FA0"
 			tasks: [{
 				id: "669AD4344C8E3DFF"
@@ -704,6 +708,106 @@
 			title: "Wololo"
 			x: -3.5d
 			y: -15.0d
+		}
+		{
+			dependencies: ["1DF1A3282A8EE394"]
+			id: "760CC57F94D127DA"
+			tasks: [{
+				id: "0129F82BCD05818D"
+				item: "ars_nouveau:glyph_aoe"
+				type: "item"
+			}]
+			title: "AOE"
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1DF1A3282A8EE394"]
+			id: "4E51F875A4CE1364"
+			tasks: [{
+				id: "5E62F0594514CDD0"
+				item: "ars_nouveau:glyph_accelerate"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1DF1A3282A8EE394"]
+			id: "23FF153C241DBE6A"
+			tasks: [{
+				id: "3AA0BE63A64839BD"
+				item: "ars_nouveau:glyph_dampen"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1DF1A3282A8EE394"]
+			id: "0EDFDC39600C4FA9"
+			tasks: [{
+				id: "19C29DC293C35F25"
+				item: "ars_nouveau:glyph_decelerate"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1DF1A3282A8EE394"]
+			id: "7E4BB25FBC3974AE"
+			tasks: [{
+				id: "7AC446E4773EDC3F"
+				item: "ars_nouveau:glyph_duration_down"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1DF1A3282A8EE394"]
+			id: "58E7BC54CDCA15FF"
+			tasks: [{
+				id: "71032B9D908C520C"
+				item: "ars_nouveau:glyph_extend_time"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1DF1A3282A8EE394"]
+			id: "4AB353E3C24597EB"
+			tasks: [{
+				id: "26C0620DAB76A82D"
+				item: "ars_nouveau:glyph_extract"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1DF1A3282A8EE394"]
+			id: "2B73119425120FBE"
+			tasks: [{
+				id: "6798EB072CC9C3F8"
+				item: "ars_nouveau:glyph_fortune"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1DF1A3282A8EE394"]
+			id: "0AE897843746EF8D"
+			tasks: [{
+				id: "1BC46DE5CD9CDFC0"
+				item: "ars_nouveau:glyph_pierce"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -6.0d
 		}
 	]
 	title: "Glyphs"

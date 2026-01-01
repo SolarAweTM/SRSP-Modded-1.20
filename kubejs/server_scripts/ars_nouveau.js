@@ -258,4 +258,8 @@ ServerEvents.recipes(event => {
 		sourceCost: 2500,
 		tier: 1
 	})
+	// remove warp scrolls and potion melder (FUTURE PHASE)
+	event.remove({output:'ars_nouveau:warp_scroll'})
+	event.remove({output:'ars_nouveau:stable_warp_scroll'})
+	event.remove({output:'ars_nouveau:potion_melder'})
 })
