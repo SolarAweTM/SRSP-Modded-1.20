@@ -940,6 +940,7 @@
 			hide_until_deps_complete: true
 			icon: "ars_nouveau:potion_melder"
 			id: "5E0C4A2AACEF5477"
+			subtitle: "Coming Soon!"
 			tasks: [{
 				id: "6E221DC915C25AE8"
 				item: "kubejs:intentionally_unobtainable"

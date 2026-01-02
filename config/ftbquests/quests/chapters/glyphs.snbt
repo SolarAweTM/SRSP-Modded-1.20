@@ -711,6 +711,7 @@
 		}
 		{
 			dependencies: ["1DF1A3282A8EE394"]
+			description: ["&aAOE&r is a glyph that &daugments the previous glyph&r before it. It allows spells to &dtarget a larger area&r."]
 			id: "760CC57F94D127DA"
 			tasks: [{
 				id: "0129F82BCD05818D"
@@ -723,91 +724,349 @@
 		}
 		{
 			dependencies: ["1DF1A3282A8EE394"]
+			description: ["&aAccelerate&r is a glyph that &daugments the previous glyph&r before it. It &dmakes Projectile-based spells move faster&r."]
 			id: "4E51F875A4CE1364"
 			tasks: [{
 				id: "5E62F0594514CDD0"
 				item: "ars_nouveau:glyph_accelerate"
 				type: "item"
 			}]
+			title: "Accelerate"
 			x: 1.0d
 			y: -5.0d
 		}
 		{
 			dependencies: ["1DF1A3282A8EE394"]
+			description: ["&aDampen&r is a glyph that &daugments the previous glyph&r before it. It makes the &deffects of some glyphs weaker&r."]
 			id: "23FF153C241DBE6A"
 			tasks: [{
 				id: "3AA0BE63A64839BD"
 				item: "ars_nouveau:glyph_dampen"
 				type: "item"
 			}]
+			title: "Dampen"
 			x: -1.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["1DF1A3282A8EE394"]
+			description: ["&aDecelerate&r is a glyph that &daugments the previous glyph&r before it. It &dmakes Projectile-based spells move slower&r."]
 			id: "0EDFDC39600C4FA9"
 			tasks: [{
 				id: "19C29DC293C35F25"
 				item: "ars_nouveau:glyph_decelerate"
 				type: "item"
 			}]
+			title: "Decelerate"
 			x: -1.0d
 			y: -5.0d
 		}
 		{
 			dependencies: ["1DF1A3282A8EE394"]
+			description: ["&aDuration Down&r is a glyph that &daugments the previous glyph&r before it. It &dmakes duration-based effects have less time&r."]
 			id: "7E4BB25FBC3974AE"
 			tasks: [{
 				id: "7AC446E4773EDC3F"
 				item: "ars_nouveau:glyph_duration_down"
 				type: "item"
 			}]
+			title: "Duration Down"
 			x: 0.5d
 			y: -4.0d
 		}
 		{
 			dependencies: ["1DF1A3282A8EE394"]
+			description: ["&aExtend Time&r is a glyph that &daugments the previous glyph&r before it. It &dmakes duration-based effects last longer&r."]
 			id: "58E7BC54CDCA15FF"
 			tasks: [{
 				id: "71032B9D908C520C"
 				item: "ars_nouveau:glyph_extend_time"
 				type: "item"
 			}]
+			title: "Extend Time"
 			x: -0.5d
 			y: -4.0d
 		}
 		{
 			dependencies: ["1DF1A3282A8EE394"]
+			description: [
+				"&aExtract&r is a glyph that &daugments the previous glyph&r before it. It &dapplies Silk Touch to Break and causes Explosion to not destroy blocks entirely&r."
+				""
+				"&cLuck has no effect on this glyph.&r"
+			]
 			id: "4AB353E3C24597EB"
 			tasks: [{
 				id: "26C0620DAB76A82D"
 				item: "ars_nouveau:glyph_extract"
 				type: "item"
 			}]
+			title: "Extract"
 			x: 0.0d
 			y: -5.0d
 		}
 		{
 			dependencies: ["1DF1A3282A8EE394"]
+			description: ["&aLuck&r is a glyph that &daugments the previous glyph&r before it. It allows certain glyphs to &dapply Fortune or Looting&r where able."]
 			id: "2B73119425120FBE"
 			tasks: [{
 				id: "6798EB072CC9C3F8"
 				item: "ars_nouveau:glyph_fortune"
 				type: "item"
 			}]
+			title: "Luck"
 			x: 0.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["1DF1A3282A8EE394"]
+			description: [
+				"&aPierce&r is a glyph that &daugments the previous glyph&r before it. It &dallows certain glyphs to target more things&r."
+				""
+				"Examples include:"
+				"&dAOE&r will include depth."
+				"&dBreak&r will target the block behind it."
+				"&dProjectile&r will be able to pierce entities."
+			]
 			id: "0AE897843746EF8D"
 			tasks: [{
 				id: "1BC46DE5CD9CDFC0"
 				item: "ars_nouveau:glyph_pierce"
 				type: "item"
 			}]
+			title: "Pierce"
 			x: -0.5d
 			y: -6.0d
+		}
+		{
+			dependencies: ["1DF1A3282A8EE394"]
+			description: ["&aAccess Ender Inventory&r is a glyph that will &dopen your Ender Chest&r."]
+			id: "1675C237F580935B"
+			tasks: [{
+				id: "7A343FB7DC21FB18"
+				item: "ars_nouveau:glyph_ender_inventory"
+				type: "item"
+			}]
+			title: "Access Ender Inventory"
+			x: 0.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1DF1A3282A8EE394"]
+			description: ["&aAnimate Block&r is a glyph that will &danimate the target block to fight for you&r. This does not give you Summoning Sickness, but will cost &da large amount of Mana&r."]
+			id: "6FB3B404956DBEF9"
+			tasks: [{
+				id: "2D135A970EFD76EC"
+				item: "ars_nouveau:glyph_animate_block"
+				type: "item"
+			}]
+			title: "Animate Block"
+			x: -1.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["1DF1A3282A8EE394"]
+			description: [""]
+			id: "3C653236BA88F136"
+			tasks: [{
+				id: "02C8124B5DE71BAE"
+				item: "ars_nouveau:glyph_cold_snap"
+				type: "item"
+			}]
+			title: "Cold Snap"
+			x: 0.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["1DF1A3282A8EE394"]
+			id: "79B4CE8DB949DA1B"
+			tasks: [{
+				id: "17C15C57C04D14C9"
+				item: "ars_nouveau:glyph_conjure_water"
+				type: "item"
+			}]
+			title: "Conjure Water"
+			x: 1.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["1DF1A3282A8EE394"]
+			id: "59BF99AE935BE0F4"
+			tasks: [{
+				id: "3875452D69A9CD1C"
+				item: "ars_nouveau:glyph_crush"
+				type: "item"
+			}]
+			title: "Crush"
+			x: -0.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["1DF1A3282A8EE394"]
+			id: "17829B53606B3329"
+			tasks: [{
+				id: "1A90EE2967A9B6AF"
+				item: "ars_nouveau:glyph_exchange"
+				type: "item"
+			}]
+			title: "Exchange"
+			x: 0.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["1DF1A3282A8EE394"]
+			id: "479710E1D7D03F31"
+			tasks: [{
+				id: "57ED7CA11C450683"
+				item: "ars_nouveau:glyph_explosion"
+				type: "item"
+			}]
+			title: "Explosion"
+			x: -1.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["1DF1A3282A8EE394"]
+			id: "2260C53EE7D3DFB5"
+			tasks: [{
+				id: "0DCDE2E9747936B4"
+				item: "ars_nouveau:glyph_firework"
+				type: "item"
+			}]
+			title: "Firework"
+			x: 0.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["1DF1A3282A8EE394"]
+			id: "02BCD4C4DE7D35DA"
+			tasks: [{
+				id: "48A85D9EAA3FE110"
+				item: "ars_nouveau:glyph_flare"
+				type: "item"
+			}]
+			title: "Flare"
+			x: 1.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["1DF1A3282A8EE394"]
+			id: "7DA735025C4F5C4E"
+			tasks: [{
+				id: "73FC289DAE89BAB7"
+				item: "ars_nouveau:glyph_gravity"
+				type: "item"
+			}]
+			title: "Gravity"
+			x: -0.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["1DF1A3282A8EE394"]
+			id: "19E77C353263BF15"
+			tasks: [{
+				id: "4A904C9438CB2576"
+				item: "ars_nouveau:glyph_grow"
+				type: "item"
+			}]
+			title: "Grow"
+			x: 0.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["1DF1A3282A8EE394"]
+			id: "721EDB772C315BEF"
+			tasks: [{
+				id: "5969BC5F427132BD"
+				item: "ars_nouveau:glyph_heal"
+				type: "item"
+			}]
+			title: "Heal"
+			x: -1.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["1DF1A3282A8EE394"]
+			id: "6A54B8F147F7CFAD"
+			tasks: [{
+				id: "387838C26D079357"
+				item: "ars_nouveau:glyph_infuse"
+				type: "item"
+			}]
+			title: "Infuse"
+			x: 0.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["1DF1A3282A8EE394"]
+			id: "40578A7E19ECF623"
+			tasks: [{
+				id: "54B2DA283EC72DE0"
+				item: "ars_nouveau:glyph_invisibility"
+				type: "item"
+			}]
+			title: "Invisibility"
+			x: 1.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["1DF1A3282A8EE394"]
+			id: "2F703E572672282F"
+			tasks: [{
+				id: "5BC8A4B3A57D1A81"
+				item: "ars_nouveau:glyph_name"
+				type: "item"
+			}]
+			title: "Name"
+			x: -0.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["1DF1A3282A8EE394"]
+			id: "062D75C46F37CB3A"
+			tasks: [{
+				id: "1C8D7559400A28CE"
+				item: "ars_nouveau:glyph_sense_magic"
+				type: "item"
+			}]
+			title: "Sense Magic"
+			x: 0.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["1DF1A3282A8EE394"]
+			id: "1C19A7AA5F6735E7"
+			tasks: [{
+				id: "03025EEFA95AE605"
+				item: "ars_nouveau:glyph_slowfall"
+				type: "item"
+			}]
+			title: "Slowfall"
+			x: -1.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["1DF1A3282A8EE394"]
+			id: "76A3A703219004ED"
+			tasks: [{
+				id: "215B4136DD702C48"
+				item: "ars_nouveau:glyph_smelt"
+				type: "item"
+			}]
+			title: "Smelt"
+			x: 0.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["1DF1A3282A8EE394"]
+			id: "3970251A81742080"
+			tasks: [{
+				id: "3DBF6BB820EE5A51"
+				item: "ars_nouveau:glyph_wind_shear"
+				type: "item"
+			}]
+			title: "Wind Shear"
+			x: 1.0d
+			y: -13.0d
 		}
 	]
 	title: "Glyphs"
