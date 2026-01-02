@@ -324,6 +324,15 @@ JEIEvents.hideItems(event => {
 	})
 })
 
+JEIEvents.hideFluids(event => {
+	let hidden_fluids = [
+		'estrogen:molten_amethyst'
+	]
+	hidden_fluids.forEach(item => {
+		event.hide(item)
+	})
+})
+
 JEIEvents.removeCategories(event => {
 	event.remove('tconstruct:tools/severing')
 })

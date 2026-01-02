@@ -105,6 +105,11 @@ ServerEvents.recipes(event => {
 	//remove railways fuel tanks due to them disappearing trains for whatever reason
 	event.remove({output: 'railways:fuel_tank'})
 	event.remove({output: 'railways:portable_fuel_interface'})
+	
+	//tconstruct compat recipes for create estrogen
+	event.remove({id:'createestrogen:filling/crystal_estrogen_pill'})
+	event.remove({id:'createestrogen:mixing/molten_amethyst'})
+	event.recipes.create.filling('estrogen:crystal_estrogen_pill',[Fluid.of('tconstruct:molten_amethyst', FluidAmounts.BOTTLE),'estrogen:estrogen_pill'])
 })
 
 ServerEvents.tags('item', event => {

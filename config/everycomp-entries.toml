@@ -351,7 +351,6 @@
 			rough = true
 			tiny_layered_bricks = true
 			loded = true
-			bricks = true
 			massive_bricks = true
 			layed_bricks = true
 			spider_carving = true
@@ -390,6 +389,7 @@
 			cracked_disordered_bricks = true
 			carved = true
 			ornate_pillar = true
+			bricks = true
 
 		[entries.stone_type.handcrafted]
 			corner_trim = true
