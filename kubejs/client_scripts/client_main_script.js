@@ -146,6 +146,11 @@ ItemEvents.tooltip(event => {
 	event.addAdvanced('#quark:revertable_trapped_chests', (item, advanced, text) => {
 		text.add(1, Text.gray('Can be converted to a vanilla Trapped Chest in a crafting grid.'))
 	})
+	
+	//tooltip for dream blocks
+	event.addAdvanced('estrogen:dormant_dream_block', (item, advanced, text) => {
+		text.add(1, Text.red('Elven knowledge is required to activate this block.'))
+	})
 })
 
 JEIEvents.hideItems(event => {

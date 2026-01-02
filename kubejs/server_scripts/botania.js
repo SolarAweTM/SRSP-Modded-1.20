@@ -10,6 +10,8 @@ ServerEvents.recipes(event => {
 	event.recipes.botania.mana_infusion("ars_nouveau:source_gem", "minecraft:lapis_lazuli", 3000)
 	event.recipes.botania.elven_trade(["ars_nouveau:starbuncle_shards"], "minecraft:gold_block")
 	event.recipes.botania.elven_trade([Item.of('minecraft:written_book', '{author:"The Elves of Alfheim",filtered_title:"Urgent Message",pages:[\'{"text":"What the hell is wrong with you?"}\'],title:"Urgent Message"}')], 'kubejs:skibidi_hawk_tuah')
+	//estrogen dream block recipe because the dreaming effect is quite undesirable
+	event.recipes.botania.elven_trade(["estrogen:dream_bottle"], "estrogen:dormant_dream_block")
 	//remove conjuration catalyst
 	event.remove({ output: 'botania:conjuration_catalyst' })
 	//remove terrasteel armor recipes for ars nouveau
