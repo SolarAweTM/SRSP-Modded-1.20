@@ -37,11 +37,11 @@ physicsRendering = false
 
 [ChestFeature]
 # Enable chest feature
-# Default: false
-enabled = true
+# Default: true
+enabled = false
 # Enable chest feature armor
-# Default: false
-armor = true
+# Default: true
+armor = false
 # Enable chest feature physics
 # Default: true
 physics = false
@@ -52,7 +52,7 @@ bounciness = 0.0
 # Chest feature physics damping
 # Range: 0.0 ~ 1.0
 # Default: 0.375
-damping = 0.375
+damping = 0.0
 
 # Settings for the dreamn block
 
