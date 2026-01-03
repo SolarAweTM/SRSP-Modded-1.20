@@ -711,3 +711,25 @@ ServerEvents.tags('fluid', event => { //tag fluids as metal, gem, or other mater
 		event.add('tconstruct:tooltips/metal', item)
 	})
 })
+
+LootJS.modifiers((event) => {
+	event.addLootTableModifier("minecraft:gameplay/hero_of_the_village/weaponsmith_gift").removeLoot("tconstruct:war_pick");
+	event.addLootTableModifier("minecraft:chests/woodland_mansion").removeLoot("tconstruct:war_pick");
+	event.addLootTableModifier("minecraft:chests/abandoned_mineshaft").removeLoot("tconstruct:war_pick");
+	event.addLootTableModifier("minecraft:chests/pillager_outpost").removeLoot("tconstruct:war_pick");
+	event.addLootTableModifier("minecraft:gameplay/hero_of_the_village/toolsmith_gift").removeLoot("tconstruct:melting_pan");
+	event.addLootTableModifier("minecraft:chests/igloo_chest").removeLoot("tconstruct:melting_pan");
+	event.addLootTableModifier("minecraft:chests/simple_dungeon").removeLoot("tconstruct:melting_pan");
+	event.addLootTableModifier("minecraft:chests/bastion_other").removeLoot("tconstruct:battlesign");
+	event.addLootTableModifier("minecraft:gameplay/piglin_bartering").removeLoot("tconstruct:battlesign");
+	event.addLootTableModifier("minecraft:chests/bastion_treasure").removeLoot("tconstruct:battlesign");
+	event.addLootTableModifier("minecraft:chests/bastion_treasure").removeLoot("tconstruct:plate_chestplate");
+	event.addLootTableModifier("minecraft:chests/bastion_treasure").removeLoot("tconstruct:plate_helmet");
+	event.addLootTableModifier("minecraft:chests/bastion_treasure").removeLoot("tconstruct:plate_leggings");
+	event.addLootTableModifier("minecraft:chests/bastion_treasure").removeLoot("tconstruct:plate_boots");
+	event.addLootTableModifier("minecraft:chests/buried_treasure").removeLoot("tconstruct:swasher");
+	event.addLootTableModifier("minecraft:chests/shipwrech_treasure").removeLoot("tconstruct:swasher");
+	event.addLootTableModifier("minecraft:gameplay/fishing/treasure").removeLoot("tconstruct:swasher");
+	event.addLootTableModifier("minecraft:chests/nether_bridge").removeLoot("tconstruct:flint_and_brick");
+	event.addLootTableModifier("minecraft:chests/ruined_portal").removeLoot("tconstruct:flint_and_brick");
+});

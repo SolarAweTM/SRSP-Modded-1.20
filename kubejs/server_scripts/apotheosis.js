@@ -187,3 +187,15 @@ ServerEvents.recipes(event => {
 		}]
 	})
 })
+
+LootJS.modifiers((event) => {
+	//remove spawn eggs from apotheosis pools
+	event.addLootTableModifier("apotheosis:chests/spawner_swarm").removeLoot("minecraft:enderman_spawn_egg");
+	event.addLootTableModifier("apotheosis:chests/spawner_swarm").removeLoot("minecraft:creeper_spawn_egg");
+	event.addLootTableModifier("apotheosis:chests/spawner_swarm").removeLoot("minecraft:zombie_spawn_egg");
+	event.addLootTableModifier("apotheosis:chests/spawner_swarm").removeLoot("minecraft:skeleton_spawn_egg");
+	event.addLootTableModifier("apotheosis:chests/spawner_swarm").removeLoot("minecraft:cave_spider_spawn_egg");
+	event.addLootTableModifier("apotheosis:chests/spawner_swarm").removeLoot("minecraft:spider_spawn_egg");
+	event.addLootTableModifier("apotheosis:chests/spawner_swarm").removeLoot("minecraft:slime_spawn_egg");
+	event.addLootTableModifier("apotheosis:chests/spawner_swarm").removeLoot("minecraft:silverfish_spawn_egg");
+});

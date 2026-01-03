@@ -263,3 +263,20 @@ ServerEvents.recipes(event => {
 	event.remove({output:'ars_nouveau:stable_warp_scroll'})
 	event.remove({output:'ars_nouveau:potion_melder'})
 })
+
+LootJS.modifiers((event) => {
+	event.addLootTableModifier("minecraft:chests/simple_dungeon").removeLoot("ars_nouveau:warp_scroll"); //TODO: RE-ENABLE IN FUTURE PHASE
+	event.addLootTableModifier("minecraft:chests/abandoned_mineshaft").removeLoot("ars_nouveau:warp_scroll");
+	event.addLootTableModifier("minecraft:chests/bastion_treasure").removeLoot("ars_nouveau:warp_scroll");
+	event.addLootTableModifier("minecraft:chests/end_city_treasure").removeLoot("ars_nouveau:warp_scroll");
+	event.addLootTableModifier("minecraft:chests/jungle_temple").removeLoot("ars_nouveau:warp_scroll");
+	event.addLootTableModifier("minecraft:chests/nether_bridge").removeLoot("ars_nouveau:warp_scroll");
+	event.addLootTableModifier("minecraft:chests/pillager_outpost").removeLoot("ars_nouveau:warp_scroll");
+	event.addLootTableModifier("minecraft:chests/ruined_portal").removeLoot("ars_nouveau:warp_scroll");
+	event.addLootTableModifier("minecraft:chests/stronghold_corridor").removeLoot("ars_nouveau:warp_scroll");
+	event.addLootTableModifier("minecraft:chests/stronghold_crossing").removeLoot("ars_nouveau:warp_scroll");
+	event.addLootTableModifier("minecraft:chests/stronghold_library").removeLoot("ars_nouveau:warp_scroll");
+	event.addLootTableModifier("minecraft:chests/underwater_ruin_small").removeLoot("ars_nouveau:warp_scroll");
+	event.addLootTableModifier("minecraft:chests/underwater_ruin_big").removeLoot("ars_nouveau:warp_scroll");
+	event.addLootTableModifier("minecraft:chests/woodland_mansion").removeLoot("ars_nouveau:warp_scroll");
+});
