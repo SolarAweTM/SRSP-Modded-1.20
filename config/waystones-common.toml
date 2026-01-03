@@ -33,7 +33,7 @@
 	#If enabled, only the owner of a waystone (the one who placed it) can rename it.
 	restrictRenameToOwner = true
 	#If enabled, waystones generated in worldgen are unbreakable.
-	generatedWaystonesUnbreakable = false
+	generatedWaystonesUnbreakable = true
 	#If enabled, leashed mobs will be teleported with you
 	transportLeashed = true
 	#Whether to take leashed mobs with you when teleporting between dimensions
@@ -48,7 +48,7 @@
 	#List of dimensions that players are not allowed to warp cross-dimension from and to. Only used if dimensionalWarpAllowList is empty.
 	dimensionalWarpDenyList = []
 	#Set to true if players should be able to teleport between waystones by simply right-clicking a waystone.
-	allowWaystoneToWaystoneTeleport = true
+	allowWaystoneToWaystoneTeleport = false
 	#Set to false to allow non-creative players to make waystones globally activated for all players.
 	globalWaystoneSetupRequiresCreativeMode = true
 
