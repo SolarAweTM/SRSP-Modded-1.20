@@ -322,7 +322,8 @@ JEIEvents.hideItems(event => {
 		'railways:portable_fuel_interface',
 		'ars_nouveau:warp_scroll',
 		'ars_nouveau:stable_warp_scroll',
-		'ars_nouveau:potion_melder'
+		'ars_nouveau:potion_melder',
+		'farmersdelight:rope'
 	]
 	hidden_items.forEach(item => {
 		event.hide(item) // noted: this also removes them from creative menus

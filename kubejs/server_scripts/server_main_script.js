@@ -9,6 +9,19 @@ ServerEvents.recipes(event => {
 	event.remove({ output: 'sophisticatedbackpacks:inception_upgrade' })
 	//remove item filters recipes (only used to make quests)
 	event.remove({ mod: 'itemfilters' })
+	//remove the rope from farmers delight (use the quark one instead)
+	event.remove({output:'farmersdelight:rope'})
+	event.remove({output:'farmersdelight:safety_net'})
+	event.shaped(
+		'farmersdelight:safety_net',
+		[
+			'RR',
+			'RR'
+		],
+		{
+			R: 'quark:rope'
+		}
+	)
 	//elytra is kil (NEVERMIND)
 	// event.remove({ output: 'minecraft:elytra' })
 	//convert BWG crafting tables to vanilla crafting tables
@@ -98,3 +111,8 @@ ServerEvents.tags('item', event => {
 		event.add('kubejs:ars_threads', item)
 	})
 })
+
+LootJS.modifiers((event) => {
+	event.addLootTableModifier("minecraft:chests/shipwreck_supply").removeLoot("farmersdelight:rope");
+	event.addLootTableModifier("minecraft:chests/simple_dungeon").removeLoot("farmersdelight:rope");
+});
