@@ -1150,167 +1150,248 @@
 		}
 		{
 			dependencies: ["0AB8680A6E3C5FA0"]
-			description: ["&aAOE&r is a glyph that &daugments the previous glyph&r before it. It allows spells to &dcast multiple projectiles&r."]
+			description: ["&aSplit&r is a glyph that &daugments the previous glyph&r before it. It allows spells to &dcast multiple projectiles&r."]
 			id: "0CB67FCFBF42B606"
 			tasks: [{
 				id: "0E4BC8AAA9C5ABAF"
 				item: "ars_nouveau:glyph_split"
 				type: "item"
 			}]
+			title: "Split"
 			x: 3.5d
 			y: -3.0d
 		}
 		{
 			dependencies: ["0AB8680A6E3C5FA0"]
+			description: [
+				"&aBlink&r is a glyph that will &dteleport you to the target location of the spell&r. When used with Self, this will instead teleport you 8 blocks forward."
+				""
+				"&dMore info on this spell&r can be found by &dholding Shift&r &7(default keybind)&r, which will become useful in &da future phase&r."
+			]
 			id: "16A144F0DC96DF7F"
 			tasks: [{
 				id: "3AC922798E052E03"
 				item: "ars_nouveau:glyph_blink"
 				type: "item"
 			}]
+			title: "Blink"
 			x: 2.5d
 			y: -3.0d
 		}
 		{
 			dependencies: ["0AB8680A6E3C5FA0"]
+			description: [
+				"&aBurst&r is a glyph that will &dcause the spell to affect a spherical area around the target&r."
+				""
+				"When &daugmented&r with &dSensitive&r, Burst will target blocks instead of entities."
+				""
+				"When &daugmented&r with &dDampen&r, the created spherical target will be hollow."
+				""
+				"When &daugmented&r with &dAOE&r, the radius of the sphere is increased."
+			]
 			id: "1BB74AD56D2FD616"
 			tasks: [{
 				id: "69260B4F0215D7FE"
 				item: "ars_nouveau:burst"
 				type: "item"
 			}]
+			title: "Burst"
 			x: 4.5d
 			y: -3.0d
 		}
 		{
 			dependencies: ["0AB8680A6E3C5FA0"]
+			description: ["&aFangs&r is a glyph that will &dsummon Evoker Fangs&r in the direction of the spell. When used with Self, the fangs are instead summoned around you."]
 			id: "074644AD2E8CBEC5"
 			tasks: [{
 				id: "0087AAF1342F340D"
 				item: "ars_nouveau:glyph_fangs"
 				type: "item"
 			}]
+			title: "Fangs"
 			x: 3.0d
 			y: -4.0d
 		}
 		{
 			dependencies: ["0AB8680A6E3C5FA0"]
+			description: [
+				"&aHex&r is a glyph that will &dapply the Hex effect to the target&r."
+				""
+				"Hex will &dincrease damage taken&r from all sources if also afflicted with Poison, Fire, Wither, or Freezing, and also &dcuts the target's mana and health regneration in half&r."
+			]
 			id: "4D473C46546B709F"
 			tasks: [{
 				id: "25A0CA48BB5CC8F7"
 				item: "ars_nouveau:glyph_hex"
 				type: "item"
 			}]
+			title: "Hex"
 			x: 4.0d
 			y: -4.0d
 		}
 		{
 			dependencies: ["0AB8680A6E3C5FA0"]
+			description: [
+				"&aIntangible&r is a glyph that will &dturn blocks into air for a short time&r."
+				""
+				"When &daugmented&r with &dAmplify&r, blocks of higher hardness can be made intangible as well."
+			]
 			id: "1FD11A84966A24A5"
 			tasks: [{
 				id: "799309ECA56DC9AF"
 				item: "ars_nouveau:glyph_intangible"
 				type: "item"
 			}]
+			title: "Intangible"
 			x: 2.5d
 			y: -5.0d
 		}
 		{
 			dependencies: ["0AB8680A6E3C5FA0"]
+			description: [
+				"&aLightning&r is a glyph that will &dsummon a lightning strike at the target&r."
+				""
+				"Hit entities will be given the &dShocked&r effect, a &dstacking debuff&r that causes them to take more lightning damage."
+				""
+				"This glyph also deals &dbonus damage to wet entities&r, and players wearing &denergy-capable items&r &7(those supporting FE or RF)&r."
+			]
 			id: "754AC06AC9054B99"
 			tasks: [{
 				id: "499CC805B0124E56"
 				item: "ars_nouveau:glyph_lightning"
 				type: "item"
 			}]
+			title: "Lightning"
 			x: 3.5d
 			y: -5.0d
 		}
 		{
 			dependencies: ["0AB8680A6E3C5FA0"]
+			description: [
+				"&aLinger&r is a glyph that will &dappply the spell in an area as if it were a Lingering Potion&r."
+				""
+				"When &daugmented&r with &dSensitive&r, this glyph will target blocks instead."
+				""
+				"When &daugmented&r with &dDampen&r, this glyph will ignore gravity."
+			]
 			id: "3CFAEAF1F5507EB2"
 			tasks: [{
 				id: "7FF5FBC4F2223A6B"
 				item: "ars_nouveau:glyph_linger"
 				type: "item"
 			}]
+			title: "Linger"
 			x: 4.5d
 			y: -5.0d
 		}
 		{
 			dependencies: ["0AB8680A6E3C5FA0"]
+			description: [
+				"&aOrbit&r is a glyph that will &dsummon orbiting projectiles around the target&r. Hit entities will have the spell result cast onto them."
+				""
+				"When &daugmented&r with &dSensitive&r, the projectiles will target blocks."
+			]
 			id: "73EDCF7B315FE825"
 			tasks: [{
 				id: "52D43E99625155DF"
 				item: "ars_nouveau:glyph_orbit"
 				type: "item"
 			}]
+			title: "Orbit"
 			x: 3.0d
 			y: -6.0d
 		}
 		{
 			dependencies: ["0AB8680A6E3C5FA0"]
+			description: ["&aRewind&r is a glyph that will &dsend an entity back in time&r. Blocks moved with spells can also be rewinded into solid blocks."]
 			id: "672C1AED343F1747"
 			tasks: [{
 				id: "0BB451FA1941E5B4"
 				item: "ars_nouveau:rewind"
 				type: "item"
 			}]
+			title: "Rewind"
 			x: 4.0d
 			y: -6.0d
 		}
 		{
 			dependencies: ["0AB8680A6E3C5FA0"]
+			description: ["&aSummon Decoy&r is a glyph that will &dsummon a clone of yourself&r. Decoys will attract hostile mobs to attack them instead of you."]
 			id: "0003E58F419E0AF9"
 			tasks: [{
 				id: "45E786D0B2B250CF"
 				item: "ars_nouveau:glyph_summon_decoy"
 				type: "item"
 			}]
+			title: "Summon Decoy"
 			x: 3.5d
 			y: -7.0d
 		}
 		{
 			dependencies: ["0AB8680A6E3C5FA0"]
+			description: [
+				"&aSummon Undead&r is a glyph that will &dsummon a handful of skeletons&r to fight for you for a short time. This also gives you &dSummon Sickness&r, which prevents the further use of summoning glyphs for a time."
+				""
+				"When &daugmented&r with &dAmplify&r, the skeletons' weapons are upgraded, eventually into Diamond Swords, and then into Netherite Axes."
+				""
+				"When &daugmented&r with &dPierce&r, the skeletons are given a Bow instead. &dAmplify&r will allow the Bow to be enchanted."
+				""
+				"When &daugmented&r with &dSplit&r, more skeletons are summoned."
+			]
 			id: "775D6366A96D6310"
 			tasks: [{
 				id: "0D9CB477DA145EBE"
 				item: "ars_nouveau:glyph_summon_undead"
 				type: "item"
 			}]
+			title: "Summon Undead"
 			x: 2.5d
 			y: -7.0d
 		}
 		{
 			dependencies: ["0AB8680A6E3C5FA0"]
+			description: ["&aSummon Vex&r is a glyph that will &dsummon three temporary Vexes&r to fight for you. This also gives you &dSummon Sickness&r, which prevents the further use of summoning glyphs for a time."]
 			id: "29DB3737A74AC12D"
 			tasks: [{
 				id: "2975436D201003EF"
 				item: "ars_nouveau:glyph_summon_vex"
 				type: "item"
 			}]
+			title: "Summon Vex"
 			x: 4.5d
 			y: -7.0d
 		}
 		{
 			dependencies: ["0AB8680A6E3C5FA0"]
+			description: [
+				"&aWall&r is a glyph that will &dresolve the spell as a lingering wall&r."
+				""
+				"When &daugmented&r with &dSensitive&r, the wall will target blocks instead."
+				""
+				"When &daugmented&r with &dDampen&r, the wall ignores gravity."
+				""
+				"When &daugmented&r with &dAOE&r, the wall becomes larger."
+			]
 			id: "74B7D4D0F2917E81"
 			tasks: [{
 				id: "2258FCE1CBD2C5DC"
 				item: "ars_nouveau:glyph_wall"
 				type: "item"
 			}]
+			title: "Wall"
 			x: 3.0d
 			y: -8.0d
 		}
 		{
 			dependencies: ["0AB8680A6E3C5FA0"]
+			description: ["&aWither&r is a glyph that will &dinflict Wither on the target&r."]
 			id: "3D8969524AA65A2B"
 			tasks: [{
 				id: "3E836D59B2CDB44E"
 				item: "ars_nouveau:glyph_wither"
 				type: "item"
 			}]
+			title: "Wither"
 			x: 4.0d
 			y: -8.0d
 		}

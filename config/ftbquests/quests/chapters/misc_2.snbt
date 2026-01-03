@@ -7,6 +7,434 @@
 	id: "0171DE21FC043541"
 	order_index: 2
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["7BE4785AF2C9E03D"]
+			description: ["This quest chapter covers most of the &dside content&r present in &dArs Nouveau&r. "]
+			id: "0B0589E73F8ECE09"
+			size: 2.0d
+			tasks: [{
+				id: "0FCF9456DA04E02F"
+				title: "Ars Nouveau: Misc"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B0589E73F8ECE09"]
+			description: [
+				"&7&o(Worn Notebook: \"Alchemist's Crown\")&r"
+				""
+				"The &aAlchemist's Crown&r allows you to &dconsume potions in your inventory instantly&r."
+				""
+				"To use, press &dG&r &7(default keybind)&r to open its radial menu."
+			]
+			id: "631C5B69E4D65B29"
+			tasks: [{
+				id: "40A350C255C4D3C7"
+				item: "ars_nouveau:alchemists_crown"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0B0589E73F8ECE09"]
+			id: "58B82E30E8EF0BA5"
+			tasks: [{
+				id: "16E7EB5BB6080AEA"
+				item: "ars_nouveau:basic_spell_turret"
+				type: "item"
+			}]
+			title: "Spell Turrets"
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0B0589E73F8ECE09"]
+			description: [
+				"&7&o(Worn Notebook: \"Focus of Summoning\")&r"
+				""
+				"The &aFocus of Summoning&r is a &dSpell Focus&r that can be equipped in the approprate Curio slot."
+				""
+				"This Spell Focus &dincreases the overall stats of your summoned minions&r, and causes entities to take damage when they kill a minion."
+				""
+				"Additionally, spells targeting you &dwill also affect your summons&r."
+			]
+			id: "74ED5DCCFB11A023"
+			tasks: [{
+				id: "5221D65B5205E044"
+				item: "ars_nouveau:summon_focus"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B0589E73F8ECE09"]
+			description: [
+				"&7&o(Worn Notebook: \"Redstone Relay\")&r"
+				""
+				"The &aRedstone Relay&r can be used to &dwirelessly transmit a Redstone signal&r within 30 blocks."
+				""
+				"These &dcan be chained&r, so the range is &dtheoretically infinite&r."
+			]
+			id: "5432FD2B7F5FA477"
+			tasks: [{
+				id: "6CBA23A24D1A2C52"
+				item: "ars_nouveau:redstone_relay"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0B0589E73F8ECE09"]
+			description: [
+				"&o&7(Worn Notebook: \"Spell Sensor\")&r"
+				""
+				"The &aSpell Sensor&r will emit a Redstone Signal &dwhen a spell is cast nearby&r."
+				""
+				"Using a &dDominion Wand&r on the Sensor will cause it to instead emit &dwhen a spell is resolved nearby&r."
+				""
+				"Giving it a &dSpell Parchment&r will filter the Sensor to &donly detect the inscribed spell&r."
+			]
+			id: "6FA25612281B5E3E"
+			tasks: [{
+				id: "45D75DFC1DCADFAA"
+				item: "ars_nouveau:spell_sensor"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0B0589E73F8ECE09"]
+			id: "08B6FB5FC58FA2A3"
+			tasks: [{
+				id: "07BED59388FF87C4"
+				item: "ars_nouveau:relay"
+				type: "item"
+			}]
+			title: "Source Relays"
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0B0589E73F8ECE09"]
+			description: ["The &aRing of Jumping&r, when equipped, allows the wearer to &djump in midair&r at the cost of &dMana&r."]
+			id: "1ECAFAEDE711B036"
+			tasks: [{
+				id: "6A4035D4CAA29F9C"
+				item: "ars_nouveau:jump_ring"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0B0589E73F8ECE09"]
+			description: [
+				"&7&o(Worn Notebook: \"Flask Cannons\")&r"
+				""
+				"&aFlask Cannons&r will take potions and flasks &7(from Ars Nouveau!)&r in your inventory and &dturn them into the specified type&r set by the Flask Cannon. It then launches the potion in question."
+				""
+				"You can select the potion to fire with &dV&r &7(default keybind)&r."
+			]
+			icon: {
+				Count: 1
+				id: "ars_nouveau:splash_flask_cannon"
+				tag: {
+					potion_launcher: {
+						amountLeft: 0
+						lastDataForRender: {
+							Potion: "minecraft:empty"
+							includedPotions: [ ]
+						}
+						lastSlot: 0
+					}
+				}
+			}
+			id: "3A7C542E0A2286FF"
+			tasks: [{
+				id: "71DF9D34358D2A67"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Flask Cannon\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "ars_nouveau:splash_flask_cannon"
+								tag: {
+									potion_launcher: {
+										amountLeft: 0
+										lastDataForRender: {
+											Potion: "minecraft:empty"
+											includedPotions: [ ]
+										}
+										lastSlot: 0
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:lingering_flask_cannon"
+								tag: {
+									potion_launcher: {
+										amountLeft: 0
+										lastDataForRender: {
+											Potion: "minecraft:empty"
+											includedPotions: [ ]
+										}
+										lastSlot: 0
+									}
+								}
+							}
+						]
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			title: "Flask Cannons"
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0B0589E73F8ECE09"]
+			description: [
+				"&7&o(Worn Notebook: \"Display Case\")&r"
+				""
+				"&aDisplay Cases&r can be used to &dshow off items&r, or &dtrack fill levels&r of containers with Redstone."
+				""
+				"You can use a &dDominion Wand&r to set it to track a container, and &dgive it an item&r to tell it what to track."
+				""
+				"See the &dWorn Notebook&r for more info."
+			]
+			id: "42E5787C8A911B11"
+			tasks: [{
+				id: "1AFD8E31DFC55BA8"
+				item: "ars_nouveau:item_detector"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0B0589E73F8ECE09"]
+			description: ["The &aBelt of Unstable Gifts&r, when equipped, will occasionally give you a &drandom effect&r for a short time."]
+			id: "3926DA0B2AD1DBC9"
+			tasks: [{
+				id: "6966A0959F03CE6B"
+				item: "ars_nouveau:belt_of_unstable_gifts"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0B0589E73F8ECE09"]
+			description: ["The &aRings of Discount&r, when equipped, will offer a &dslight boost&r to Mana Regeneration and Max Mana, and also &dreduce the cost of spells&r by a flat amount."]
+			icon: "ars_nouveau:ring_of_greater_discount"
+			id: "75B97B882928106C"
+			tasks: [{
+				id: "5B1A5B2F15E4EA3A"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Ring of Discount\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "ars_nouveau:ring_of_lesser_discount"
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:ring_of_greater_discount"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Rings of Discount"
+			x: -4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0B0589E73F8ECE09"]
+			description: ["The &aDowsing Rod&r will temporarily grant you the &dScrying effect for Budding Amethyst&r, and &dMagic Find&r."]
+			id: "0748D4E529F5836B"
+			tasks: [{
+				id: "3215070260B221B7"
+				item: {
+					Count: 1
+					id: "ars_nouveau:dowsing_rod"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0B0589E73F8ECE09"]
+			id: "098A0647DB869D91"
+			tasks: [{
+				id: "2A41B6CBA97F8B1C"
+				item: "ars_nouveau:amplify_arrow"
+				type: "item"
+			}]
+			title: "Augment Arrows"
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0B0589E73F8ECE09"]
+			description: [
+				"The &aJar of Light&r can be used to &dsummon a light&r that will follow you."
+				""
+				"It can be used again to dispel the light."
+			]
+			id: "285817B667798126"
+			tasks: [{
+				id: "6B0F9819FABF1125"
+				item: "ars_nouveau:jar_of_light"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0B0589E73F8ECE09"]
+			description: [
+				"&7&o(Worn Notebook: \"Belt of Levitaton\")&r"
+				""
+				"The &aBelt of Levitation&r will allow you to &dslightly levitate off the ground&r. Jump to rise, sneak to fall."
+				""
+				"The Belt also provides a &dsmall amount of fall damage resistance&r."
+			]
+			id: "7944E0F207597CCE"
+			tasks: [{
+				id: "28428A7C5E73BC4D"
+				item: "ars_nouveau:belt_of_levitation"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B0589E73F8ECE09"]
+			description: ["These &aAmulets&r, when equipped, &dincrease their respective stats&r by a moderate amount."]
+			icon: "ars_nouveau:amulet_of_mana_regen"
+			id: "09DBDDD2F3E50C83"
+			tasks: [{
+				id: "123B386B53CDD29D"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Ars Amulet\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "ars_nouveau:amulet_of_mana_boost"
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:amulet_of_mana_regen"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Amulets"
+			x: -5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0B0589E73F8ECE09"]
+			description: [
+				"&7&o(Worn Notebook: \"Jar of Voiding\")&r"
+				""
+				"While in the hotbar, the &aJar of Voiding&r will &ddestroy specific items on pickup&r and turn them into &dMana&r."
+				""
+				"To add an item to the Jar's whitelist, &duse the Jar with an item in your offhand&r."
+				""
+				"To toggle the Jar on or off, you can &dsneak-right-click while holding the Jar&r."
+			]
+			id: "347C9D29606475B8"
+			tasks: [{
+				id: "0F88776FE3F618BF"
+				item: "ars_nouveau:void_jar"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0B0589E73F8ECE09"]
+			id: "2BCA59F5BA607F29"
+			tasks: [{
+				id: "60319284997476A8"
+				item: "ars_nouveau:spell_prism"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0B0589E73F8ECE09"]
+			description: [
+				"&7&o(Worn Notebook: \"Potion Flask\")&r"
+				""
+				"&aPotion Flasks&r can be used to &dstore multiple charges&r of a potion in one slot."
+				""
+				"To fill, you can either &duse the Flask on a Potion Jar&r, or &dcraft it with a normal Potion&r."
+			]
+			id: "5F683043A74DCA28"
+			tasks: [{
+				id: "35F79138D6A82294"
+				item: {
+					Count: 1
+					id: "ars_nouveau:potion_flask"
+					tag: {
+						Damage: 8
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B0589E73F8ECE09"]
+			id: "5509D193B44F7A4A"
+			tasks: [{
+				id: "420660868CF56AD1"
+				item: "ars_nouveau:void_prism"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.5d
+		}
+	]
 	title: "Misc"
 }
