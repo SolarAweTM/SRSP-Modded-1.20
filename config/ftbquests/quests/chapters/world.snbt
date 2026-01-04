@@ -1,4 +1,5 @@
 {
+	autofocus_id: "4110D540DD554E6F"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "world"
@@ -16,6 +17,198 @@
 	id: "3851880A23AA1547"
 	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			description: ["&bApotheosis&r also modifies a large amount of other things in the game, most of which will be covered here."]
+			id: "4110D540DD554E6F"
+			size: 2.0d
+			tasks: [{
+				id: "6CD722D6D4D80F1D"
+				type: "checkmark"
+			}]
+			title: "World Domination with Apotheosis"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4110D540DD554E6F"]
+			description: [
+				"Certain plants have had their maximum growth &bincreased greatly&r:"
+				""
+				"- &bSugar Cane&r now grows up to 16."
+				"- &bCactus&r now grows up to 5."
+			]
+			icon: "minecraft:sugar_cane"
+			id: "052C4534FEBA643A"
+			tasks: [{
+				id: "1DD69641CB9802A0"
+				type: "checkmark"
+			}]
+			title: "This is really high"
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["4110D540DD554E6F"]
+			description: [
+				"&bSpawners&r now have a variety of changes:"
+				""
+				"- You can use &bSilk Touch&r to pick up a Spawner."
+				"- &bVarious items&r affect the Spawner's behaviour, on the &bnext page&r."
+				"{@pagebreak}"
+				"- A &bSoul Lantern&r will allow the Spawner to ignore lighting conditions."
+				"- A &bGhast Tear&r will increase the maximum amount of nearby entities."
+				"- &bWool&r will make the spawned entities silent."
+				"- A &bChorus Fruit&r makes spawned entities have no AI."
+				"- &bPrismarine Crystals&r increase how far you can be before the Spawner stops."
+				"- A &bTurtle Egg&r will cause the Spawner to spawn baby variants whenever possible."
+				"- A &bCuckoo Clock&r will reduce the maximum wait time for entities to spawn."
+				"- &bPixie Dust&r will reduce the minimum wait time for entities to spawn."
+				"- A &bDragon Scale&r will allow the Spawner to ignore spawn conditions."
+				"- A &bRedstone Comparator&r allows you to toggle the Spawner with a Redstone signal."
+				"- A &bFermented Spider Eye&r increases the amount of enemies spawned."
+				"- A &bBlaze Rod&r will increase the range that enemies will be spawned."
+				""
+				"Holding &bNether Quartz&r in your &boffhand&r with one of the above items will &binvert the effect&r."
+			]
+			icon: "minecraft:spawner"
+			id: "325D497689575EA2"
+			min_width: 300
+			tasks: [{
+				id: "3E0A5B9F43D21209"
+				type: "checkmark"
+			}]
+			title: "Spawners"
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4110D540DD554E6F"]
+			description: [
+				"The &bWandering Trader&r spawns more often, and can now &bspawn underground&r."
+				""
+				"They also have some &bnew trades&r, such as those for &bBeacons&r and &bTotems of Undying&r."
+			]
+			id: "4BA34C5C2CE1FA31"
+			tasks: [{
+				id: "1B8CDFABF7DEC6AF"
+				item: "minecraft:totem_of_undying"
+				type: "item"
+			}]
+			title: "Wandering Trader"
+			x: 1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4110D540DD554E6F"]
+			description: [
+				"The &bFletching Table&r can now be used by players to make &bArrows more efficiently&r, as well as making more types of Arrows."
+				""
+				"The &bnew Arrows&r include:"
+				""
+				"- &bObsidian Arrow&r &7(20% more damage)&r"
+				"- &bBroadhead Arrow&r &7(applies a stacking bleed effect)&r"
+				"- &bExplosive Arrow&r &7(explodes)&r"
+				"- &bIron Mining Arrow&r &7(mines blocks)&r"
+				"- &bDiamond Mining Arrow&r &7(mines blocks as a Diamond Pickaxe)&r"
+				""
+				"You can &buse JEI&r to find the recipes for these special Arrows."
+			]
+			id: "546FB50B3761E62F"
+			tasks: [{
+				id: "3E66C1634F90E856"
+				item: "minecraft:fletching_table"
+				type: "item"
+			}]
+			title: "Fletching"
+			x: -1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4110D540DD554E6F"]
+			description: [
+				"Sometimes, you may find &bspecial gear&r with &bspecial names&r and &bstats&r. These are called &bAffix Items/Loot&r. "
+				""
+				"Currently, in &bPhase I&r, only &bAffix Loot with a Common rarity&r &oshould&r be obtainable."
+				""
+				"You can use a &bSigil of Unnaming&r in a Smithing Table if you wish to &bremove a name&r from an Affix Item."
+			]
+			id: "54338324ED62BCC1"
+			tasks: [{
+				advancement: "apotheosis:affix/root"
+				criterion: ""
+				id: "1081FF0F9F1BD7A9"
+				title: "Obtain an Affix Item"
+				type: "advancement"
+			}]
+			title: "Affix Items"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2EE04DB77BCC5A01"]
+			description: [
+				"Using materials from salvaged Affix Loot, you can make a &bSimple Reforging Table&r. This allows you to &bre-roll the stats&r of an Affix Item, or &aturn a piece of gear into an Affix Item&r."
+				""
+				"Currently in &bPhase I&r, you will &bonly be able to reforge up to Common Affix Loot&r."
+				""
+				"Put the item you want to reforge in the &bmiddle slot&r, and some &bMysterious Scrap Metal&r in the &btop-left slot&r. "
+				""
+				"From there, you will have &bthree options at the bottom&r. Hover over each to see what you will get. In the &btop-left corner&r, you will see the cost of that reforge."
+			]
+			id: "19980084CF0536E5"
+			subtitle: "A goblin army has arrived!"
+			tasks: [{
+				id: "148F46C6F482D6A7"
+				item: "apotheosis:simple_reforging_table"
+				type: "item"
+			}]
+			title: "Reforging"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["54338324ED62BCC1"]
+			description: ["With a &bSalvaging Table&r, you can turn &bunwanted Affix Loot&r into more &buseful materials&r."]
+			id: "2EE04DB77BCC5A01"
+			tasks: [{
+				id: "760A48C4F386193A"
+				item: "apotheosis:salvaging_table"
+				type: "item"
+			}]
+			title: "Salvaging Affix Items"
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4110D540DD554E6F"]
+			description: [
+				"&bPotion Charms&r can be used to effectively equip a potion effect."
+				""
+				"You can craft them with &b3 of a specific potion&r and &b6 blaze powder&r in a bookshelf-like crafting shape."
+				""
+				"You can then activate them by &bright-clicking while holding the charm&r, and then to actually use its effect, you can put it &binto your Charm curio slot&r."
+				""
+				"Charms often &blast longer&r than their source potions, so it's still worth crafting."
+			]
+			id: "68A766731C15C2EA"
+			tasks: [{
+				id: "71D1C2D1873B3830"
+				item: {
+					Count: 1
+					id: "apotheosis:potion_charm"
+					tag: {
+						Damage: 0
+					}
+				}
+				match_nbt: false
+				title: "Any Potion Charm"
+				type: "item"
+			}]
+			title: "Potion Charms"
+			x: -2.5d
+			y: 0.0d
+		}
+	]
 	title: "World"
 }
