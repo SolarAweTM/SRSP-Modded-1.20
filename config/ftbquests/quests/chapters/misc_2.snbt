@@ -41,10 +41,47 @@
 		}
 		{
 			dependencies: ["0B0589E73F8ECE09"]
+			description: [
+				"&7&o(Worn Notebook: \"Basic Spell Turret\")&r"
+				""
+				"&aSpell Turrets&r can be used to &dautomatically cast a spell&r, like a Dispenser. Use an inscribed &dSpell Parchment&r in order to give it a spell, and provide it with &da Redstone signal&r to cast the spell."
+				""
+				"The spell given to the Turrets &dmust have either the form Touch, or the form Projectile&r. Casting spells will also &duse Source from nearby Source Jars&r."
+				""
+				"The &dAdjustable Spell Turret&r is able to be pointed in any direction, while the &dTimer Spell Turret&r can fire on its own intervals. An &dEnchanted Spell Turret&r will fire spells at half the Source cost."
+			]
+			icon: "ars_nouveau:basic_spell_turret"
 			id: "58B82E30E8EF0BA5"
 			tasks: [{
-				id: "16E7EB5BB6080AEA"
-				item: "ars_nouveau:basic_spell_turret"
+				id: "32143FCAE4BFADC5"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Spell Turret\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "ars_nouveau:basic_spell_turret"
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:spell_turret"
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:timer_spell_turret"
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:rotating_spell_turret"
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
 			title: "Spell Turrets"
@@ -111,10 +148,49 @@
 		}
 		{
 			dependencies: ["0B0589E73F8ECE09"]
+			description: [
+				"&7&o(Worn Notebook: Search \"source relay\" in the Entry Index)&r"
+				""
+				"&aSource Relays&r can be used to &dmove Source between Jars&r and between Relays themselves."
+				""
+				"See the &dWorn Notebook&r's pages on these items for more info."
+			]
+			icon: "ars_nouveau:relay"
 			id: "08B6FB5FC58FA2A3"
 			tasks: [{
-				id: "07BED59388FF87C4"
-				item: "ars_nouveau:relay"
+				id: "31BED0458B57B20C"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Source Relay\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "ars_nouveau:relay"
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:relay_splitter"
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:relay_deposit"
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:relay_warp"
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:relay_collector"
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
 			title: "Source Relays"
@@ -291,10 +367,39 @@
 		}
 		{
 			dependencies: ["0B0589E73F8ECE09"]
+			description: [
+				"&o&7(Worn Notebook: \"Enchanter's Crossbow\")&r"
+				""
+				"&aAugment Arrows&r can be used in an &dEnchanter's Crossbow&r to add some addtional effects to the inscribed spell."
+			]
+			icon: "ars_nouveau:pierce_arrow"
 			id: "098A0647DB869D91"
 			tasks: [{
-				id: "2A41B6CBA97F8B1C"
-				item: "ars_nouveau:amplify_arrow"
+				id: "60C7499ACC9A1658"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Augment Arrow\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "ars_nouveau:amplify_arrow"
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:split_arrow"
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:pierce_arrow"
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
 			title: "Augment Arrows"
@@ -390,6 +495,13 @@
 		}
 		{
 			dependencies: ["0B0589E73F8ECE09"]
+			description: [
+				"&7&o(Worn Notebook: \"Spell Prism\")&r"
+				""
+				"The &aSpell Prism&r will take any &dProjectile spell&r that hits it, and &dredirect it&r in the direction the block is facing."
+				""
+				"Note that when this occurs, it can be tracked by an Observer."
+			]
 			id: "2BCA59F5BA607F29"
 			tasks: [{
 				id: "60319284997476A8"
@@ -426,6 +538,7 @@
 		}
 		{
 			dependencies: ["0B0589E73F8ECE09"]
+			description: ["The &aVoid Prism&r will &dinstantly destroy&r any spell projectile that passes through it."]
 			id: "5509D193B44F7A4A"
 			tasks: [{
 				id: "420660868CF56AD1"
