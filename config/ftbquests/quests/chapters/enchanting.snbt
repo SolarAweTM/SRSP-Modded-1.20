@@ -1,4 +1,5 @@
 {
+	autofocus_id: "49157162CF2B674B"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "enchanting"
@@ -7,6 +8,387 @@
 	id: "43DCFF6DFCDB39B6"
 	order_index: 0
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			id: "49157162CF2B674B"
+			size: 2.0d
+			tasks: [{
+				id: "7AB2DDC2CD65610A"
+				item: "minecraft:enchanting_table"
+				type: "item"
+			}]
+			title: "Enchanting with Apotheosis"
+			x: 0.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["49157162CF2B674B"]
+			icon: "minecraft:bookshelf"
+			id: "01EB3011E1FB8E42"
+			tasks: [{
+				id: "0167B32C9EEE285F"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Bookshelf\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									RepairCost: 0
+									display: {
+										Name: "{\"text\":\"Standard Bookshelves\"}"
+									}
+									value: "forge:bookshelves"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									RepairCost: 0
+									display: {
+										Name: "{\"text\":\"Chipped Bookshelves\"}"
+									}
+									value: "chipped:bookshelf"
+								}
+							}
+							{
+								Count: 1b
+								id: "apotheosis:dormant_deepshelf"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Enchanting Stats: &aEterna&r"
+			x: 2.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["01EB3011E1FB8E42"]
+			description: [""]
+			icon: "minecraft:zombie_head"
+			id: "4EB43213FA51F90E"
+			tasks: [
+				{
+					id: "36C1FFDFA0E6B444"
+					type: "checkmark"
+				}
+				{
+					id: "75B3B27D04603DE2"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Non-Bookshelf Quanta Boosters\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "minecraft:skeleton_skull"
+								}
+								{
+									Count: 1b
+									id: "minecraft:wither_skeleton_skull"
+								}
+								{
+									Count: 1b
+									id: "minecraft:zombie_head"
+								}
+								{
+									Count: 1b
+									id: "minecraft:creeper_head"
+								}
+							]
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Enchanting Stats: &cQuanta&r"
+			x: 3.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["01EB3011E1FB8E42"]
+			icon: "minecraft:candle"
+			id: "68A5194C35651A46"
+			tasks: [
+				{
+					id: "1EDFCA04D02827A0"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Non-Bookshelf Arcana Boosters\"}"
+							}
+							value: "minecraft:candles"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4D448D4F2083F28A"
+					type: "checkmark"
+				}
+			]
+			title: "Enchanting Stats: &5Arcana&r"
+			x: 3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["4EB43213FA51F90E"]
+			icon: "minecraft:amethyst_cluster"
+			id: "39DD1B9CD71CC3BD"
+			tasks: [
+				{
+					id: "346FECAC3CB94C53"
+					type: "checkmark"
+				}
+				{
+					id: "11FD299E43B37CD3"
+					item: "minecraft:amethyst_cluster"
+					type: "item"
+				}
+			]
+			title: "Enchanting Stats: &eRectification&r"
+			x: 5.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["01EB3011E1FB8E42"]
+			id: "5868B6A5C8E99110"
+			tasks: [{
+				id: "2A466B9F73F5B447"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Level 45 Bookshelves\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "apotheosis:hellshelf"
+							}
+							{
+								Count: 1b
+								id: "apotheosis:seashelf"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Beyond Level 30"
+			x: 4.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["5868B6A5C8E99110"]
+			id: "45760E25FF84837C"
+			tasks: [{
+				id: "7006DEF2F4BAD9FB"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Special Bookshelves\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "apotheosis:beeshelf"
+							}
+							{
+								Count: 1b
+								id: "apotheosis:melonshelf"
+							}
+							{
+								Count: 1b
+								id: "apotheosis:stoneshelf"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Special Bookshelves"
+			x: 5.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["5868B6A5C8E99110"]
+			id: "289160D96A34F9BB"
+			tasks: [{
+				id: "45CAE6A61080797D"
+				item: "apotheosis:filtering_shelf"
+				type: "item"
+			}]
+			title: "Filtering Enchantments"
+			x: 6.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["289160D96A34F9BB"]
+			id: "090324A6338BE4A7"
+			tasks: [{
+				id: "2518AA377379C596"
+				item: "minecraft:honey_bottle"
+				type: "item"
+			}]
+			title: "Conjuring Experience"
+			x: 7.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["49157162CF2B674B"]
+			id: "7E0BC6DA7DB9AF65"
+			tasks: [{
+				id: "561D4A79A5D540E0"
+				item: "minecraft:anvil"
+				type: "item"
+			}]
+			title: "Anvil-ing with Apotheosis"
+			x: 0.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["49157162CF2B674B"]
+			id: "0C0CDEEEBA8EC3D3"
+			tasks: [{
+				id: "5B983E99CF6FF1E5"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Enchanting Tome\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "apotheosis:helmet_tome"
+							}
+							{
+								Count: 1b
+								id: "apotheosis:chestplate_tome"
+							}
+							{
+								Count: 1b
+								id: "apotheosis:leggings_tome"
+							}
+							{
+								Count: 1b
+								id: "apotheosis:boots_tome"
+							}
+							{
+								Count: 1b
+								id: "apotheosis:other_tome"
+							}
+							{
+								Count: 1b
+								id: "apotheosis:weapon_tome"
+							}
+							{
+								Count: 1b
+								id: "apotheosis:bow_tome"
+							}
+							{
+								Count: 1b
+								id: "apotheosis:pickaxe_tome"
+							}
+							{
+								Count: 1b
+								id: "apotheosis:fishing_tome"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Enchanting Tomes"
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["49157162CF2B674B"]
+			id: "62053DB36DFFE47C"
+			tasks: [{
+				id: "321A9AAF2F0E3ABB"
+				item: "apotheosis:library"
+				match_nbt: false
+				type: "item"
+			}]
+			x: -2.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["0C0CDEEEBA8EC3D3"]
+			icon: "apotheosis:improved_scrap_tome"
+			id: "6DC6C4E01DC3B59D"
+			tasks: [{
+				id: "0D340383325F97AA"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Removal Tome\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "apotheosis:scrap_tome"
+							}
+							{
+								Count: 1b
+								id: "apotheosis:improved_scrap_tome"
+							}
+							{
+								Count: 1b
+								id: "apotheosis:extraction_tome"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Removal Tomes"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["289160D96A34F9BB"]
+			id: "553AA430C37A77E2"
+			tasks: [{
+				id: "6D7E8ED1D8E7E4FF"
+				item: "apotheosis:inert_trident"
+				type: "item"
+			}]
+			title: "Trident Troubles"
+			x: 7.0d
+			y: -8.0d
+		}
+	]
 	title: "Enchanting"
 }
