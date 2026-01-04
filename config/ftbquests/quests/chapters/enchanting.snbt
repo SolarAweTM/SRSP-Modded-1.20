@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "enchanting"
+	group: "0C05148EC99040BA"
+	icon: "minecraft:enchanting_table"
+	id: "43DCFF6DFCDB39B6"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	title: "Enchanting"
+}

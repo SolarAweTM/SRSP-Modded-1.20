@@ -1,0 +1,21 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "world"
+	group: "0C05148EC99040BA"
+	icon: {
+		Count: 1
+		id: "apotheosis:gem"
+		tag: {
+			affix_data: {
+				rarity: "apotheosis:mythic"
+			}
+			gem: "apotheosis:core/lightning"
+		}
+	}
+	id: "3851880A23AA1547"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "World"
+}
