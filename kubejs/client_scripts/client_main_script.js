@@ -355,7 +355,11 @@ JEIEvents.hideItems(event => {
 		'apotheosis:sightshelf_t2',
 		'apotheosis:treasure_shelf',
 		'apotheosis:infused_seashelf',
-		'apotheosis:boss_summoner'
+		'apotheosis:boss_summoner',
+		'botania:terrasteel_helmet',
+		'botania:terrasteel_chestplate',
+		'botania:terrasteel_leggings',
+		'botania:terrasteel_boots'
 	]
 	hidden_items.forEach(item => {
 		event.hide(item) // noted: this also removes them from creative menus
