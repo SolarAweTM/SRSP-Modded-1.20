@@ -359,7 +359,11 @@ JEIEvents.hideItems(event => {
 		'botania:terrasteel_helmet',
 		'botania:terrasteel_chestplate',
 		'botania:terrasteel_leggings',
-		'botania:terrasteel_boots'
+		'botania:terrasteel_boots',
+		'ars_nouveau:shapers_focus',
+		'ars_nouveau:thread_life_drain',
+		'ars_nouveau:thread_magic_capacity',
+		'ars_nouveau:glyph_leap'
 	]
 	hidden_items.forEach(item => {
 		event.hide(item) // noted: this also removes them from creative menus
