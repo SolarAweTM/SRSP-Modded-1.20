@@ -89,3 +89,9 @@ ItemEvents.modification(event => {
 		item.armorKnockbackResistance = 0 //default 0.1
 	})
 })
+
+MoreJSEvents.registerPotionBrewing((event) => {
+	//remove flying potion
+	event.removeByPotion("apotheosis:flying", null, null)
+	event.removeByPotion(null, null, "apotheosis:flying")
+})
