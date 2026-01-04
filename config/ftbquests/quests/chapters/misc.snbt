@@ -967,6 +967,13 @@
 		}
 		{
 			dependencies: ["4F77A11667048B2F"]
+			description: [
+				"&aLinked Controllers&r allow you to &6manually send a wireless Redstone signal&r to a &6Redstone Link&r."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+				""
+				"It can also be placed on a Lectern!"
+			]
 			id: "485B1623287E60A5"
 			subtitle: "This is an Xbox."
 			tasks: [{
