@@ -363,7 +363,8 @@ JEIEvents.hideItems(event => {
 		'ars_nouveau:shapers_focus',
 		'ars_nouveau:thread_life_drain',
 		'ars_nouveau:thread_magic_capacity',
-		'ars_nouveau:glyph_leap'
+		'ars_nouveau:glyph_leap',
+		'quark:matrix_enchanter'
 	]
 	hidden_items.forEach(item => {
 		event.hide(item) // noted: this also removes them from creative menus
