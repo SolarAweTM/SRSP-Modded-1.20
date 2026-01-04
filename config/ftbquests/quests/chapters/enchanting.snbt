@@ -570,6 +570,19 @@
 			x: 4.0d
 			y: -3.5d
 		}
+		{
+			dependencies: ["289160D96A34F9BB"]
+			description: ["In &bfuture phases&r, you'll be able to increase the enchanting level even further. "]
+			id: "69B774D9430DE055"
+			tasks: [{
+				id: "696695FD20C26F06"
+				item: "kubejs:intentionally_unobtainable"
+				type: "item"
+			}]
+			title: "Coming Soon!"
+			x: 8.0d
+			y: -6.5d
+		}
 	]
 	title: "Enchanting"
 }

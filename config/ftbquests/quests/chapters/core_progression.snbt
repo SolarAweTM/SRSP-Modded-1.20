@@ -951,10 +951,7 @@
 			y: 14.0d
 		}
 		{
-			dependencies: [
-				"5E0C4A2AACEF5477"
-				"13624B70B1D19465"
-			]
+			dependencies: ["13624B70B1D19465"]
 			description: [
 				"&7&o(Worn Notebook: \"Potion Diffuser\")&r"
 				""
