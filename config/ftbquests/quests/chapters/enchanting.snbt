@@ -10,6 +10,30 @@
 	quest_links: [ ]
 	quests: [
 		{
+			description: [
+				"&aEnchanting&r in this pack has gotten a massive overhaul, thanks to &bApotheosis&r. You can now &bincrease the level limit&r beyond normal, among a whole slew of other changes."
+				""
+				"On the next page, you can find some info about how &bspecific enchants&r are handled."
+				"{@pagebreak}"
+				"&6-&r&eEnchantment Changes&r&6-&r"
+				""
+				"- &bSharpness&r can now be used alongside one of the other damage boosters (&bSmite&r and the &bBanes&r)"
+				""
+				"- &bProtection&r can now be used alongside one of the other protectors (&bFire, Blast, Projectile,&r etc.)"
+				"Note that while Protection itself is slightly less effective in this pack, the maximum overall effect is increased."
+				""
+				"- &bShears&r can now get &bUnbreaking, Efficiency, and Fortune&r."
+				""
+				"- &bTridents&r can now get &bSharpness, Piercing, and Looting&r."
+				""
+				"On the next page, you can learn &bhow XP has changed&r."
+				"{@pagebreak}"
+				"&6-&r&eExperience Costs&r&6-&r"
+				""
+				"- &c\"Too Expensive!\"&r &bis no more&r."
+				""
+				"- Experience costs are now calculated as &bthe minimum amount of XP needed&r to perform the action. This means if you were at &blevel 78&r, doing a &blevel 30 enchant&r that would set you to &blevel 75&r would &binstead only take&r the amount of XP that would be used to go &bfrom levels 27 to 30&r."
+			]
 			id: "49157162CF2B674B"
 			size: 2.0d
 			tasks: [{
@@ -23,6 +47,13 @@
 		}
 		{
 			dependencies: ["49157162CF2B674B"]
+			description: [
+				"You may have noticed that the Enchanting UI now has &bthree bars with stats&r. These three stats are now shown to you, and &bdirectly affect enchanting&r."
+				""
+				"&aEterna&r dictates the &bmaximum enchanting level&r. Every 1 point of &aEterna&r increases the &bmax level by 2&r."
+				""
+				"Most blocks will only be able to increase &aEterna&r &bup to a maximum&r, based on the block."
+			]
 			icon: "minecraft:bookshelf"
 			id: "01EB3011E1FB8E42"
 			tasks: [{
@@ -73,7 +104,15 @@
 		}
 		{
 			dependencies: ["01EB3011E1FB8E42"]
-			description: [""]
+			description: [
+				"&cQuanta&r is a stat that &bcontrols some randomness&r in your enchanting."
+				""
+				"When enchanting, you have a &bBase Power&r that eventually gets modified into a &bFinal Power&r, which is used to enchant."
+				""
+				"&cQuanta&r &badds a range&r to this Final Power, which is &bselected randomly&r. This means that the &bmore &cQuanta&r &byou have&r, the &bhigher&r your Final Power can get, but also the &blowest&r it can get as well."
+				""
+				"&bThe items in this quest are optional.&r This quest can be completed just by clicking the checkmark at the top."
+			]
 			icon: "minecraft:zombie_head"
 			id: "4EB43213FA51F90E"
 			tasks: [
@@ -121,6 +160,15 @@
 		}
 		{
 			dependencies: ["01EB3011E1FB8E42"]
+			description: [
+				"&5Arcana&r is a stat that &bcontrols the rarity&r of your enchants, and at certain thresholds will &bguarantee a number&r of enchantments."
+				""
+				"Generally, &bhigher values of&r &5Arcana&r will make &brarer enchants more common&r, and vice versa."
+				""
+				"At &b25%&r &5Arcana&r, you are &bguaranteed to get two enchantments&r on an item. At &b75%&r, this becomes &bthree&r."
+				""
+				"&bThe items in this quest are optional.&r This quest can be completed just by clicking the checkmark at the top."
+			]
 			icon: "minecraft:candle"
 			id: "68A5194C35651A46"
 			tasks: [
@@ -151,8 +199,18 @@
 		}
 		{
 			dependencies: ["4EB43213FA51F90E"]
+			description: [
+				"&eRectification&r is a stat that is not shown as a bar, but this is because it &bdirectly changes how&r &cQuanta&r &baffects enchanting&r."
+				""
+				"The more &eRectification&r you have, the &bhigher the floor for your Final Power&r becomes when enchanting."
+				""
+				"In essence, this means that &eRectification&r &breduces the harmful effects of&r &cQuanta&r."
+				""
+				"&bThe items in this quest are optional.&r This quest can be completed just by clicking the checkmark at the top."
+			]
 			icon: "minecraft:amethyst_cluster"
 			id: "39DD1B9CD71CC3BD"
+			subtitle: "This stat is so Yellow!"
 			tasks: [
 				{
 					id: "346FECAC3CB94C53"
@@ -170,6 +228,15 @@
 		}
 		{
 			dependencies: ["01EB3011E1FB8E42"]
+			description: [
+				"In order to go &bbeyond Level 30 enchanting&r, you have a couple options:"
+				""
+				"- &bOption 1:&r Go to the &bNether&r and craft &bHellshelves&r, which will also give a small amount of &cQuanta&r."
+				""
+				"- &bOption 2:&r Go to an &bOcean Monument&r and craft &bSeashelves&r, which will also give a small amount of &5Arcana&r."
+				""
+				"Both of these shelves have a &bmax&r &aEterna&r &bof&r &a22.50&r, allowing you to enchant at &bup to Level 45&r."
+			]
 			id: "5868B6A5C8E99110"
 			tasks: [{
 				id: "2A466B9F73F5B447"
@@ -201,6 +268,15 @@
 		}
 		{
 			dependencies: ["5868B6A5C8E99110"]
+			description: [
+				"In the future, you may want to &bbetter control your enchanting stats&r. These &bspecial bookshelves&r can help with that."
+				""
+				"The &bBeeshelf&r will reduce &aEterna&r, but fully max out &cQuanta&r."
+				""
+				"The &bMelonshelf&r will reduce both &aEterna&r and &cQuanta&r."
+				""
+				"The &bStoneshelf&r will do the same, but for &5Arcana&r."
+			]
 			id: "45760E25FF84837C"
 			tasks: [{
 				id: "7006DEF2F4BAD9FB"
@@ -236,6 +312,11 @@
 		}
 		{
 			dependencies: ["5868B6A5C8E99110"]
+			description: [
+				"With a &aSeashelf of Aquatic Filtration&r, you can &bprevent enchantments from appearing&r in the Enchanting Table."
+				""
+				"It's used just like a &bChiseled Bookshelf&r."
+			]
 			id: "289160D96A34F9BB"
 			tasks: [{
 				id: "45CAE6A61080797D"
@@ -248,6 +329,13 @@
 		}
 		{
 			dependencies: ["289160D96A34F9BB"]
+			description: [
+				"You can also turn &bHoney Bottles&r into &bBottles o' Enchanting&r."
+				""
+				"To do this, you'll need at least &a10 Eterna&r, &c25% Quanta&r, and &525% Arcana&r."
+				""
+				"From there, you can &bput your Honey Bottle in&r for enchanting, and &bselect \"Infusion\"&r to get an XP bottle."
+			]
 			id: "090324A6338BE4A7"
 			tasks: [{
 				id: "2518AA377379C596"
@@ -260,6 +348,17 @@
 		}
 		{
 			dependencies: ["49157162CF2B674B"]
+			description: [
+				"&aAnvils&r can now be &brepaired&r themselves &busing Iron Blocks&r."
+				""
+				"In addition, &bthey can now be enchanted&r with the following:"
+				""
+				"- &bUnbreaking&r"
+				""
+				"- &bSplitting&r: When the anvil is dropped on an Enchanted Book with multiple enchants, it turns the single Book into multiple Books with individual enchants."
+				""
+				"- &bObliteration&r: When the anvil is dropped on an Enchanted Book with only one enchant, it splits the single Book into two Books with the enchant, 1 level lower."
+			]
 			id: "7E0BC6DA7DB9AF65"
 			tasks: [{
 				id: "561D4A79A5D540E0"
@@ -272,6 +371,11 @@
 		}
 		{
 			dependencies: ["49157162CF2B674B"]
+			description: [
+				"These &aTomes&r can be used in an Enchanting Table to &bonly recieve enchantments for that item type&r."
+				""
+				"For example, using a &bTome of Chestplates&r in an Enchanting Table will allow you to only get enchants that can be &bput on a chestplate&r."
+			]
 			id: "0C0CDEEEBA8EC3D3"
 			tasks: [{
 				id: "5B983E99CF6FF1E5"
@@ -331,6 +435,13 @@
 		}
 		{
 			dependencies: ["49157162CF2B674B"]
+			description: [
+				"The &aEnchantment Library&r can be used to &bstore your Enchanted Books&r en masse."
+				""
+				"Putting an Enchanted Book in will &brecord the stored enchantments as points&r. From there, you can &bclick on an enchant to retrieve it&r as a book. &bSneak-click to retrieve the max possible level.&r"
+				""
+				"You can only extract the &bmaximum level of an enchant that you have put in&r. This means that if you only give the Library books containing Sharpness III, you will only be able to extract up to Sharpness III until you put a higher level book in."
+			]
 			id: "62053DB36DFFE47C"
 			tasks: [{
 				id: "321A9AAF2F0E3ABB"
@@ -343,6 +454,15 @@
 		}
 		{
 			dependencies: ["0C0CDEEEBA8EC3D3"]
+			description: [
+				"&aRemoval Tomes&r are another way to &bget enchantments off&r of an item. They can be used by combining an item with the Tomes &bin an anvil&r."
+				""
+				"The &bTome of Scrapping&r will &btake half&r of an item's enchants and turn them into a Book, but it &calso destroys the item&r."
+				""
+				"The &bTome of Superior Scrapping&r will instead &btake all&r of an item's enchants."
+				""
+				"The &bTome of Extraction&r is &cnot available in this phase&r, but it will &balso preserve the item&r."
+			]
 			icon: "apotheosis:improved_scrap_tome"
 			id: "6DC6C4E01DC3B59D"
 			tasks: [{
@@ -379,6 +499,15 @@
 		}
 		{
 			dependencies: ["289160D96A34F9BB"]
+			description: [
+				"Having issues getting a &aTrident&r? Now, you can &bmake one&r yourself."
+				""
+				"Enchanting an &aInert Trident&r in a specific way can turn it &binto a normal Trident&r."
+				""
+				"You'll need between &a20 and 30 Eterna&r, between &c20 and 50% Quanta&r, and at least &535% Arcana&r."
+				""
+				"From there, you should see an enchanting option labeled &b\"Infusion\"&r. That will get you a Trident."
+			]
 			id: "553AA430C37A77E2"
 			tasks: [{
 				id: "6D7E8ED1D8E7E4FF"
@@ -388,6 +517,58 @@
 			title: "Trident Troubles"
 			x: 7.0d
 			y: -8.0d
+		}
+		{
+			dependencies: ["7E0BC6DA7DB9AF65"]
+			description: [
+				"Combining an enchanted item with a &aCobweb&r in an anvil will &bremove all enchantments&r from the item."
+				""
+				"Combining an enchanted item with a &aPrismatic Cobweb&r in an anvil will &bremove all curses&r from the item."
+			]
+			id: "3CB7A83482B5DA4D"
+			tasks: [{
+				id: "324AC60778CDF43A"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Removal Cobweb\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "minecraft:cobweb"
+							}
+							{
+								Count: 1b
+								id: "apotheosis:prismatic_web"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Removing Enchants"
+			x: 0.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["68A5194C35651A46"]
+			description: [
+				"&3Enchanting Clues&r are a stat that directly translates to &bhow many enchants you can see&r in the preview. In vanilla, this is always 1, but &bin future phases&r of this pack, this can be increased."
+				""
+				"When &ball the enchants&r are listed, the text will say \"&bThe Runes Reveal All&r\"."
+			]
+			id: "3F74EF9145D3B46E"
+			tasks: [{
+				id: "03AB65FDB6A11619"
+				type: "checkmark"
+			}]
+			title: "Enchanting Stats: &3Clues&r"
+			x: 4.0d
+			y: -3.5d
 		}
 	]
 	title: "Enchanting"
