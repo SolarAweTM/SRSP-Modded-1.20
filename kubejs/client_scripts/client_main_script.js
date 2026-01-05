@@ -364,7 +364,9 @@ JEIEvents.hideItems(event => {
 		'ars_nouveau:thread_life_drain',
 		'ars_nouveau:thread_magic_capacity',
 		'ars_nouveau:glyph_leap',
-		'quark:matrix_enchanter'
+		'quark:matrix_enchanter',
+		'tconstruct:dragon_scale',
+		'tconstruct:creative_slot'
 	]
 	hidden_items.forEach(item => {
 		event.hide(item) // noted: this also removes them from creative menus

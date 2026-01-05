@@ -695,7 +695,17 @@ ServerEvents.recipes(event => {
 		temperature: 1200,
 		time: 20
 	})
-	//TODO: tyrian steel
+	//remove tconstruct potion fluid entity melting recipes
+	event.remove({id:'tconstruct:smeltery/entity_melting/frog'})
+	event.remove({id:'tconstruct:smeltery/entity_melting/night_vision'})
+	event.remove({id:'tconstruct:smeltery/entity_melting/phantom'})
+	event.remove({id:'tconstruct:smeltery/entity_melting/regeneration'}) //no melted axolotls
+	event.remove({id:'tconstruct:smeltery/entity_melting/shulker'})
+	event.remove({id:'tconstruct:smeltery/entity_melting/strength'})
+	event.remove({id:'tconstruct:smeltery/entity_melting/strider'})
+	event.remove({id:'tconstruct:smeltery/entity_melting/swiftness'})
+	event.remove({id:'tconstruct:smeltery/entity_melting/turtle'})
+	event.remove({id:'tconstruct:smeltery/entity_melting/water_breathing'})
 })
 
 ServerEvents.tags('fluid', event => { //tag fluids as metal, gem, or other material for unit conversions (i.e. 90mb -> 1 ingot)
