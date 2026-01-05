@@ -54,12 +54,6 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
-  "ars_nouveau": {
-    "mob_jar": true
-  },
-  "jadeaddons": {
-    "equipment_requirement": ""
-  },
   "jadeaddons.create": {
     "filter": true,
     "backtank_capacity": true,
@@ -70,8 +64,8 @@
     "goggles.detailed": false,
     "placard": true
   },
-  "jadeaddons.lootr": {
-    "info": true
+  "immersiveengineering": {
+    "multiblock_icon": true
   },
   "fluiddrawerslegacy": {
     "controller": true,
@@ -90,11 +84,23 @@
     "ench": true,
     "spawner": true
   },
+  "balm": {
+    "jade": true
+  },
+  "ars_nouveau": {
+    "mob_jar": true
+  },
+  "jadeaddons": {
+    "equipment_requirement": ""
+  },
+  "jadeaddons.lootr": {
+    "info": true
+  },
   "waystones": {
     "waystone": true
   },
-  "balm": {
-    "jade": true
+  "gravestone": {
+    "grave": true
   },
   "storagedrawers": {
     "display.stacklimit": true,
