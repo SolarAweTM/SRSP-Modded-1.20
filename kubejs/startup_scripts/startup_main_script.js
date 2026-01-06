@@ -20,6 +20,9 @@ StartupEvents.registry('item', event => {
 	event.create('crushed_raw_crimson_iron').texture('srsp:item/crushed_raw_crimson_iron')
 	event.create('crushed_raw_azure_silver').texture('srsp:item/crushed_raw_azure_silver')
 	event.create('crushed_raw_cobalt').texture('srsp:item/crushed_raw_cobalt')
+	//intermediate items for sequenced assembly
+	event.create('incomplete_iron_component').texture('srsp:item/incomplete_iron_component')
+	event.create('incomplete_steel_component').texture('srsp:item/incomplete_steel_component')
 })
 
 StartupEvents.registry('fluid', event => { //molten fluids for tconstruct/silent gear
