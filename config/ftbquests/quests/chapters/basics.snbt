@@ -988,6 +988,288 @@
 			x: 7.0d
 			y: -3.0d
 		}
+		{
+			dependencies: ["3B7819CB4710211B"]
+			description: [
+				"&aImmersive Engineering&r is a mod that adds various &6blocks and items related to engineering and contraptions&r, similar to Create."
+				""
+				"In this phase, the mod has been &6cut down significantly&r, but still has some stuff to offer."
+			]
+			id: "1E44C5DACE1B4A52"
+			tasks: [{
+				id: "3C09252E7563B558"
+				item: {
+					Count: 1
+					id: "immersiveengineering:hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			title: "Immersive Engineering"
+			x: 12.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3B7819CB4710211B"]
+			description: [
+				"The &aRolling Mill&r can take various metals, and &6turn them into Rods&r, given &6Rotational Force&r."
+				""
+				"It can also turn &6various plates into Wire&r."
+				""
+				"It can also turn &6Bamboo into Straws&r."
+				""
+				"You can &6Ponder&r this item to learn how to use it."
+			]
+			id: "2D67AAFD3D827BB6"
+			tasks: [{
+				id: "6C884C25A1BC7CF5"
+				item: "createaddition:rolling_mill"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1E44C5DACE1B4A52"]
+			description: ["In order to make some more &aadvanced multiblock machines&r, you'll need some components only accessible through &6Sequenced Assembly&r."]
+			icon: "immersiveengineering:component_iron"
+			id: "46D6D589F571469D"
+			tasks: [{
+				id: "5B724470F8D5857A"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Engineer's Component\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "immersiveengineering:component_iron"
+							}
+							{
+								Count: 1b
+								id: "immersiveengineering:component_steel"
+							}
+							{
+								Count: 1b
+								id: "immersiveengineering:light_bulb"
+							}
+							{
+								Count: 1b
+								id: "immersiveengineering:component_electronic"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Engineer's Crafting Components"
+			x: 12.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1E44C5DACE1B4A52"]
+			description: [
+				"The &aCoke Oven&r is able to turn &6Wood into Charcoal&r, but also turn normal &6Coal into a more efficient fuel&r, called &6Coal Coke&r."
+				""
+				"To build, place &627 Coke Bricks in a 3x3x3 cube&r. Then, &6right-click with your Engineer's Hammer on the middle of one of the side faces&r to turn it into a &6Coke Oven multiblock&r."
+				""
+				"To use, simply put the input item into the &6leftmost slot&r. The Coke Oven &6does not require any fuel&r to use."
+				""
+				"As a byproduct, this also creates &6Creosote Oil&r, which will come in handy later on."
+				""
+				"You can remove Creosote Oil from the Coke Oven by either piping it out, or by putting a Bucket in the top-right slot."
+			]
+			icon: "immersiveengineering:coke_oven"
+			id: "40DCA51EC6003CB4"
+			min_width: 250
+			subtitle: "Behold, the slowest thing ever."
+			tasks: [{
+				count: 27L
+				id: "28CDD34A5D8B3B5D"
+				item: { Count: 27, id: "immersiveengineering:cokebrick" }
+				type: "item"
+			}]
+			title: "Coke Oven"
+			x: 11.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1E44C5DACE1B4A52"]
+			description: [
+				"The &aCrude Blast Furnace&r's sole reason for existing is to &6create Steel&r."
+				""
+				"To build, place your &627 Blast Bricks in a 3x3x3 cube&r, then &6right-click with your Engineer's Hammer&r on the &6middle of one of the side faces&r to turn it into a &6Crude Blast Furnace multiblock&r."
+				""
+				"The Crude Blast Furnace works similarly to a Furnce, just that it &6can only produce Steel&r, and can &6only use Charcoal or Coal Coke as fuel&r."
+				""
+				"As a byproduct, it also produces &6Slag&r, which can be used for variety of things. &6Use JEI&r to find all the uses for Slag."
+			]
+			icon: "immersiveengineering:blast_furnace"
+			id: "3CFD7E0462572B9C"
+			tasks: [{
+				count: 27L
+				id: "67166AFD8AB9013C"
+				item: { Count: 27, id: "immersiveengineering:blastbrick" }
+				type: "item"
+			}]
+			title: "Crude Blast Furnace"
+			x: 10.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["40DCA51EC6003CB4"]
+			description: [
+				"&aCreosote Oil&r can be used for &6a variety of things&r."
+				""
+				"- It can be used along with Wool and 3 Sticks to &6make 12 Torches&r."
+				"- It can be used as &6fuel for a Blaze Burner&r."
+				"- It can be used to &6create Treated Wood&r when combined with 8 wood planks."
+				""
+				"That last use case is especially helpful, since Treated Wood is used in a bunch of recipes in this mod."
+			]
+			id: "6B771F840445110A"
+			tasks: [{
+				id: "470C5B6D809981BC"
+				item: "immersiveengineering:creosote_bucket"
+				type: "item"
+			}]
+			title: "Creosote Oil"
+			x: 11.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2D67AAFD3D827BB6"]
+			description: [
+				"&aWires&r can be created by putting &6Plates into a Rolling Mill&r."
+				""
+				"They are also instrumental in creating &6many powered devices&r."
+			]
+			icon: "immersiveengineering:wire_copper"
+			id: "7768F401119EA876"
+			tasks: [{
+				id: "3A5EBA9B84695E76"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Wire\"}"
+						}
+						value: "forge:wires"
+					}
+				}
+				type: "item"
+			}]
+			title: "Wires"
+			x: 13.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7768F401119EA876"]
+			id: "42F4E6319BA277B5"
+			subtitle: "One small step to UXV"
+			tasks: [{
+				id: "4F0483E4CAB79928"
+				item: "immersiveengineering:wirecoil_copper"
+				type: "item"
+			}]
+			title: "LV Power"
+			x: 13.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["46D6D589F571469D"]
+			id: "1EDDBA2F4C7702FC"
+			tasks: [{
+				id: "08F879B082256B04"
+				item: "immersiveengineering:dynamo"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["42F4E6319BA277B5"]
+			id: "6F95F79291E28B13"
+			tasks: [{
+				id: "210EAEE713DA579E"
+				item: "immersiveengineering:thermoelectric_generator"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["1EDDBA2F4C7702FC"]
+			id: "2632B2257A895D84"
+			tasks: [{
+				id: "29BFE88149A5628E"
+				item: "immersiveengineering:watermill"
+				type: "item"
+			}]
+			title: "Water Wheel (IE)"
+			x: 11.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1EDDBA2F4C7702FC"]
+			id: "31139E4125631E5B"
+			tasks: [{
+				id: "6CAC48B6C57DCE53"
+				item: "immersiveengineering:windmill"
+				type: "item"
+			}]
+			title: "Windmill (IE)"
+			x: 13.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6B771F840445110A"]
+			description: [
+				"&aSilos&r are multiblock devices capable of holding a &6large amount of a single item&r, and &aTanks&r are the &6same, but for fluids&r."
+				""
+				"An &6Item Silo&r requires &650 Iron Sheetmetal&r, and a &6Fluid Tank&r requires &634 Iron Sheetmetal&r. Both of them need &64 Treated Wood Fences&r each."
+				""
+				"You can find out how to build these multiblock devices &6by searching for the Item Silo and Fluid Tank in JEI&r. The block highlighted in red is &6where you should right-click with your Engineer's Hammer&r."
+				""
+				"You can &6only input&r items or fluids &6from the top&r, and extract &6from the bottom&r."
+			]
+			icon: "immersiveengineering:silo"
+			id: "63F5ED4EB7151ED0"
+			min_width: 250
+			tasks: [
+				{
+					count: 34L
+					id: "09E011BEFA9739EE"
+					item: { Count: 34, id: "immersiveengineering:sheetmetal_iron" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "334ABEF15F6BA301"
+					item: "immersiveengineering:treated_fence"
+					type: "item"
+				}
+				{
+					count: 50L
+					id: "6476B9FD3B9860B3"
+					item: { Count: 50, id: "immersiveengineering:sheetmetal_iron" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Silos and Tanks"
+			x: 10.5d
+			y: 6.0d
+		}
 	]
 	title: "Core Progression"
 }

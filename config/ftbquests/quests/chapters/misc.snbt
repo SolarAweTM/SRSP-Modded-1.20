@@ -1495,26 +1495,6 @@
 		{
 			dependencies: ["4F671D2881E44A55"]
 			description: [
-				"The &aRolling Mill&r can take various metals, and &6turn them into Rods&r, given &6Rotational Force&r."
-				""
-				"It can also turn &6various plates into Wire&r."
-				""
-				"It can also turn &6Bamboo into Straws&r."
-				""
-				"You can &6Ponder&r this item to learn how to use it."
-			]
-			id: "2D67AAFD3D827BB6"
-			tasks: [{
-				id: "6C884C25A1BC7CF5"
-				item: "createaddition:rolling_mill"
-				type: "item"
-			}]
-			x: -1.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["2D67AAFD3D827BB6"]
-			description: [
 				"The &aAccumulator&r is a &6multiblock device&r that can be used to &6store energy&r."
 				""
 				"You can &6Ponder&r this item to learn more about it."
@@ -1529,7 +1509,7 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["2D67AAFD3D827BB6"]
+			dependencies: ["4F671D2881E44A55"]
 			description: [
 				"The &aElectric Motor&r will &6generate Rotational Force&r when given &6Power&r."
 				""
@@ -1549,7 +1529,7 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["2D67AAFD3D827BB6"]
+			dependencies: ["4F671D2881E44A55"]
 			description: [
 				"The &aAlternator&r will &6take Rotational Force, and turn it into Power&r."
 				""
@@ -1567,7 +1547,7 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["2D67AAFD3D827BB6"]
+			dependencies: ["4F671D2881E44A55"]
 			description: [
 				"The &aRedstone Relay&r will only allow Power to pass through it when given a Redstone Signal."
 				""
@@ -1583,7 +1563,7 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["2D67AAFD3D827BB6"]
+			dependencies: ["4F671D2881E44A55"]
 			description: [
 				"The &aTesla Coil&r can be used to &6charge any item&r on a Depot or Belt, &6as long as it accepts Forge Energy&r &7(FE)&r."
 				""
