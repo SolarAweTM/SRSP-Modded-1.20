@@ -110,6 +110,43 @@ ServerEvents.tags('item', event => {
 	ars_threads.forEach(item => {
 		event.add('kubejs:ars_threads', item)
 	})
+	let createaddition_wires = [
+		'createaddition:copper_wire',
+		'createaddition:electrum_wire'
+	]
+	createaddition_wires.forEach(item => {
+		event.remove('forge:wires', item)
+		event.remove('forge:wires/all_metal', item)
+		event.remove('forge:wires/copper', item)
+		event.remove('forge:wires/electrum', item)
+	})
+	event.remove('forge:ingots', 'createaddition:electrum_ingot')
+	event.remove('forge:ingots/electrum', 'createaddition:electrum_ingot')
+	event.remove('balm:ingots', 'createaddition:electrum_ingot')
+	event.remove('minecraft:beacon_payment_items', 'createaddition:electrum_ingot')
+	event.remove('forge:nuggets', 'createaddition:electrum_nugget')
+	event.remove('forge:nuggets/electrum', 'createaddition:electrum_nugget')
+	event.remove('balm:nuggets', 'createaddition:electrum_nugget')
+	event.remove('silentgear:gold_digger', 'createaddition:electrum_nugget')
+	event.remove('forge:plates', 'createaddition:electrum_sheet')
+	event.remove('forge:plates/electrum', 'createaddition:electrum_sheet')
+	event.remove('forge:storage_blocks', 'createaddition:electrum_block')
+	event.remove('forge:storage_blocks/electrum', 'createaddition:electrum_block')
+	event.remove('tconstruct:anvil_metal', 'createaddition:electrum_block')
+	event.remove('forge:plates', 'immersiveengineering:plate_copper')
+	event.remove('forge:plates/copper', 'immersiveengineering:plate_copper')
+	event.remove('forge:ingots', 'tconstruct:steel_ingot')
+	event.remove('forge:ingots/steel', 'tconstruct:steel_ingot')
+	event.remove('balm:ingots', 'tconstruct:steel_ingot')
+	event.remove('minecraft:beacon_payment_items', 'tconstruct:steel_ingot')
+	event.remove('forge:nuggets', 'tconstruct:steel_nugget')
+	event.remove('forge:nuggets/steel', 'tconstruct:steel_nugget')
+	event.remove('balm:nuggets', 'tconstruct:steel_nugget')
+	event.remove('silentgear:gold_digger', 'tconstruct:steel_nugget')
+	event.remove('forge:storage_blocks', 'tconstruct:steel_block')
+	event.remove('forge:storage_blocks/steel', 'tconstruct:steel_block')
+	event.remove('forge:plates', 'immersiveengineering:plate_iron')
+	event.remove('forge:plates/iron', 'immersiveengineering:plate_iron')
 })
 
 LootJS.modifiers((event) => {

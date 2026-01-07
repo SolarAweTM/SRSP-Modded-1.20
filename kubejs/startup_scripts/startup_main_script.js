@@ -21,11 +21,11 @@ StartupEvents.registry('item', event => {
 	event.create('crushed_raw_azure_silver').texture('srsp:item/crushed_raw_azure_silver')
 	event.create('crushed_raw_cobalt').texture('srsp:item/crushed_raw_cobalt')
 	//intermediate items for sequenced assembly
-	event.create('incomplete_iron_component').texture('srsp:item/incomplete_iron_component')
-	event.create('incomplete_steel_component').texture('srsp:item/incomplete_steel_component')
-	event.create('incomplete_electronic_component').texture('srsp:item/incomplete_electronic_component')
-	event.create('incomplete_light_bulb').texture('srsp:item/incomplete_light_bulb')
-	event.create('incomplete_machine').texture('srsp:item/incomplete_machine')
+	event.create('incomplete_iron_component', 'create:sequenced_assembly').texture('srsp:item/incomplete_iron_component')
+	event.create('incomplete_steel_component', 'create:sequenced_assembly').texture('srsp:item/incomplete_steel_component')
+	event.create('incomplete_electronic_component', 'create:sequenced_assembly').texture('srsp:item/incomplete_electronic_component')
+	event.create('incomplete_light_bulb', 'create:sequenced_assembly').texture('srsp:item/incomplete_light_bulb')
+	event.create('incomplete_machine', 'create:sequenced_assembly').texture('srsp:item/incomplete_machine')
 })
 
 StartupEvents.registry('fluid', event => { //molten fluids for tconstruct/silent gear

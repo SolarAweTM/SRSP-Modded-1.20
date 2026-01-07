@@ -138,7 +138,28 @@ ServerEvents.recipes(event => {
 		'immersiveengineering:toolupgrade_powerpack_tesla',
 		'immersiveengineering:toolupgrade_powerpack_magnet',
 		'immersiveengineering:turntable',
-		'immersiveengineering:cloche'
+		'immersiveengineering:cloche',
+		'immersiveengineering:gunpart_barrel',
+		'immersiveengineering:gunpart_drum',
+		'immersiveengineering:gunpart_hammer',
+		'silentgear:iron_rod',
+		'immersiveengineering:wirecoil_steel',
+		'immersiveengineering:capacitor_hv',
+		'immersiveengineering:transformer_hv',
+		'immersiveengineering:connector_hv',
+		'immersiveengineering:connector_hv_relay',
+		'createaddition:electrum_block',
+		'createaddition:electrum_nugget',
+		'createaddition:electrum_sheet',
+		'createaddition:electrum_ingot',
+		'immersiveengineering:empty_casing',
+		'immersiveengineering:plate_copper',
+		'tconstruct:steel_block',
+		'tconstruct:steel_ingot',
+		'tconstruct:steel_nugget',
+		'immersiveengineering:electron_tube',
+		'immersiveengineering:cokebrick',
+		'immersiveengineering:blastbrick'
 	]
 	ie_removals.forEach(item => {
 		event.remove({output:item})
@@ -220,13 +241,119 @@ ServerEvents.recipes(event => {
 			event.recipes.create.filling('kubejs:incomplete_machine', [Fluid.of('immersiveengineering:creosote', FluidAmounts.BOTTLE), 'kubejs:incomplete_machine']),
 			event.recipes.create.pressing(['kubejs:incomplete_machine'], 'kubejs:incomplete_machine'),
 			event.recipes.create.deploying('kubejs:incomplete_machine', ['kubejs:incomplete_machine', 'immersiveengineering:component_iron']),
+			event.recipes.create.deploying('kubejs:incomplete_machine', ['kubejs:incomplete_machine', 'immersiveengineering:light_bulb']),
 			event.recipes.create.deploying('kubejs:incomplete_machine', ['kubejs:incomplete_machine', 'tconstruct:seared_fuel_gauge']),
 		]
 	)
 	.transitionalItem('kubejs:incomplete_machine')
 	.loops(1)
-	//remove the silent gear iron rod recipe (redundant with IE)
-	event.remove({output:'silentgear:iron_rod'})
+	//remove crafting recipes for metal rods
+	event.remove({id:'immersiveengineering:crafting/stick_iron'})
+	event.remove({id:'immersiveengineering:crafting/stick_steel'})
+	event.remove({id:'immersiveengineering:crafting/stick_aluminium'})
+	//do the same for metal press
+	event.remove({id:'immersiveengineering:metalpress/rod_iron'})
+	event.remove({id:'immersiveengineering:metalpress/rod_aluminium'})
+	event.remove({id:'immersiveengineering:metalpress/rod_electrum'})
+	event.remove({id:'immersiveengineering:metalpress/rod_brass'})
+	event.remove({id:'immersiveengineering:metalpress/rod_copper'})
+	event.remove({id:'immersiveengineering:metalpress/rod_steel'})
+	event.remove({id:'immersiveengineering:metalpress/rod_gold'})
+	event.remove({id:'immersiveengineering:metalpress/blaze_rod'}) //look i get thats the name of the item but like why not just use rod_blaze it makes so much more sense
+	//do the same for plates and wires
+	let plate_and_wire_recipe_ids = [
+		'immersiveengineering:metalpress/plate_iron',
+		'immersiveengineering:metalpress/plate_uranium',
+		'immersiveengineering:metalpress/plate_copper',
+		'immersiveengineering:metalpress/plate_silver',
+		'immersiveengineering:metalpress/plate_constantan',
+		'immersiveengineering:metalpress/plate_gold',
+		'immersiveengineering:metalpress/plate_steel',
+		'immersiveengineering:metalpress/plate_lead',
+		'immersiveengineering:metalpress/plate_brass',
+		'immersiveengineering:metalpress/plate_aluminium',
+		'immersiveengineering:metalpress/plate_nickel',
+		'immersiveengineering:metalpress/plate_electrum',
+		'immersiveengineering:metalpress/plate_zinc',
+		'immersiveengineering:metalpress/wire_steel',
+		'immersiveengineering:metalpress/wire_iron',
+		'immersiveengineering:metalpress/wire_lead',
+		'immersiveengineering:metalpress/wire_gold',
+		'immersiveengineering:metalpress/wire_aluminium',
+		'immersiveengineering:metalpress/wire_copper',
+		'immersiveengineering:metalpress/wire_electrum',
+		'createaddition:rolling/copper_plate',
+		'createaddition:rolling/electrum_plate',
+		'createaddition:pressing/silver_ingot',
+		'createaddition:pressing/constantan_ingot',
+		'createaddition:pressing/uranium_ingot',
+		'createaddition:pressing/lead_ingot',
+		'createaddition:pressing/nickel_ingot',
+		'createaddition:pressing/aluminum_ingot',
+		'createaddition:pressing/steel_ingot'
+	]
+	plate_and_wire_recipe_ids.forEach(item => {
+		event.remove({id:item})
+	})
+	//reinstate createaddition wire recipes but for IE wires instead
+	event.custom({
+		type: 'createaddition:rolling',
+		input: {
+			tag: 'forge_ingots/copper'
+		},
+		result: {
+			item: 'immersiveengineering:wire_copper',
+			count: 2
+		}
+	})
+	event.custom({
+		type: 'createaddition:rolling',
+		input: {
+			tag: 'forge_ingots/electrum'
+		},
+		result: {
+			item: 'immersiveengineering:wire_electrum',
+			count: 2
+		}
+	})
+	//remove hammer to plate recipes
+	let hammer_to_plate_recipe_ids = [
+		'immersiveengineering:crafting/plate_iron_hammering',
+		'immersiveengineering:crafting/plate_silver_hammering',
+		'immersiveengineering:crafting/plate_aluminium_hammering',
+		'immersiveengineering:crafting/plate_gold_hammering',
+		'immersiveengineering:crafting/plate_steel_hammering',
+		'immersiveengineering:crafting/plate_electrum_hammering',
+		'immersiveengineering:crafting/plate_uranium_hammering',
+		'immersiveengineering:crafting/plate_nickel_hammering',
+		'immersiveengineering:crafting/plate_lead_hammering',
+		'immersiveengineering:crafting/plate_constantan_hammering'
+	]
+	hammer_to_plate_recipe_ids.forEach(item => {
+		event.remove({id:item})
+	})
+	//reimplement many banner pattern recipes - the rest can be obtained via villagers
+	let banner_patterns = [
+		'immersiveengineering:bannerpattern_hammer',
+		'immersiveengineering:bannerpattern_bevels',
+		'immersiveengineering:bannerpattern_ornate',
+		'immersiveengineering:bannerpattern_treated_wood',
+		'immersiveengineering:bannerpattern_windmill',
+		'immersiveengineering:bannerpattern_wolf_r',
+		'immersiveengineering:bannerpattern_wolf_l',
+		'immersiveengineering:bannerpattern_wolf'
+	]
+	banner_patterns.forEach(item => {
+		event.remove({output:item})
+	})
+	event.shapeless('immersiveengineering:bannerpattern_bevels', ['minecraft:paper', '#forge:plates'])
+	event.shapeless('immersiveengineering:bannerpattern_treated_wood', ['minecraft:paper', '#forge:treated_wood'])
+	event.shapeless('immersiveengineering:bannerpattern_wolf_r', ['minecraft:paper', 'minecraft:bone', 'minecraft:bone'])
+	event.shapeless('immersiveengineering:bannerpattern_wolf_l', ['minecraft:paper', 'minecraft:bone'])
+	event.shapeless('immersiveengineering:bannerpattern_wolf', ['minecraft:paper', 'handcrafted:wolf_trophy'])
+	//rewrite coke and blast brick for create
+	event.recipes.create.mixing([Item.of('immersiveengineering:cokebrick', 3)], [Item.of('minecraft:clay_ball', 4), Item.of('minecraft:brick', 4), '#forge:sandstone'])
+	event.recipes.create.mixing([Item.of('immersiveengineering:blastbrick', 3)], [Item.of('minecraft:nether_brick', 4), Item.of('minecraft:brick', 4), 'minecraft:magma_block']).heated()
 })
 
 LootJS.modifiers((event) => {
