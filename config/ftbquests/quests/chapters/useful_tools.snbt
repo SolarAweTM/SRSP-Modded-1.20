@@ -389,50 +389,6 @@
 			min_width: 300
 			rewards: [
 				{
-					id: "69E9B6CE478634A0"
-					item: {
-						Count: 1
-						id: "eccentrictome:tome"
-						tag: {
-							Enchantments: [ ]
-							"eccentrictome:mods": {
-								apotheosis: {
-									0: {
-										Count: 1b
-										id: "patchouli:guide_book"
-										tag: {
-											"patchouli:book": "apotheosis:apoth_chronicle"
-										}
-									}
-								}
-								ars_nouveau: {
-									0: {
-										Count: 1b
-										id: "ars_nouveau:worn_notebook"
-										tag: {
-											Enchantments: [ ]
-										}
-									}
-								}
-								botania: {
-									0: {
-										Count: 1b
-										id: "botania:lexicon"
-									}
-								}
-								ftbquests: {
-									0: {
-										Count: 1b
-										id: "ftbquests:book"
-									}
-								}
-							}
-							"eccentrictome:version": 1
-						}
-					}
-					type: "item"
-				}
-				{
 					id: "0841444B7A2CDB03"
 					item: {
 						Count: 1
@@ -444,6 +400,75 @@
 							pages: ["{\"text\":\"To remove a book from the Eccentric Tome, select the book, and then hold SHIFT + your drop key to detach the book from the tome.\"}"]
 							resolved: 1b
 							title: "*ANY* Book"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2E387D4505CE0BA3"
+					item: {
+						Count: 1
+						id: "eccentrictome:tome"
+						tag: {
+							"eccentrictome:items": [
+								{
+									Count: 1b
+									id: "ftbquests:book"
+								}
+								{
+									Count: 1b
+									id: "botania:lexicon"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:worn_notebook"
+								}
+								{
+									Count: 1b
+									id: "patchouli:guide_book"
+									tag: {
+										"patchouli:book": "apotheosis:apoth_chronicle"
+									}
+								}
+								{
+									Count: 1b
+									id: "tconstruct:puny_smelting"
+									tag: {
+										mantle: {
+											book: {
+												current_page: ""
+											}
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "tconstruct:mighty_smelting"
+									tag: {
+										mantle: {
+											book: {
+												current_page: ""
+											}
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "tconstruct:fantastic_foundry"
+									tag: {
+										mantle: {
+											book: {
+												current_page: ""
+											}
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "immersiveengineering:manual"
+								}
+							]
+							"eccentrictome:version": 2
 						}
 					}
 					type: "item"
