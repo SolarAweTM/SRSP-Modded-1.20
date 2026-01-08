@@ -151,6 +151,23 @@ ItemEvents.tooltip(event => {
 	event.addAdvanced('estrogen:dormant_dream_block', (item, advanced, text) => {
 		text.add(1, Text.red('Elven knowledge is required to activate this block.'))
 	})
+	
+	//tooltip for now outdated guidebooks
+	let outdated_books = [
+		'tconstruct:puny_smelting',
+		'tconstruct:mighty_smelting',
+		'tconstruct:fantastic_foundry',
+		'ars_nouveau:worn_notebook',
+		'immersiveengineering:manual'
+	]
+	outdated_books.forEach(block => {
+		event.addAdvanced(block, (item, advanced, text) => {
+			text.add(1, Text.red('This pack has modified certain mechanics, and'))
+			text.add(2, Text.red('as such, the content in this book may not'))
+			text.add(3, Text.red('accurately reflect the correct instructions.'))
+			text.add(4, Text.green('Regardless, these books still serve as a decent reference.'))
+		})
+	})
 })
 
 JEIEvents.hideItems(event => {
@@ -543,7 +560,80 @@ JEIEvents.hideItems(event => {
 		'botania:ancient_will_verac',
 		'botania:ancient_will_karil',
 		'immersiveengineering:potion_bucket',
-		'immersiveengineering:plate_iron'
+		'immersiveengineering:plate_iron',
+		'immersiveengineering:plate_duroplast',
+		'immersiveengineering:duroplast',
+		'immersiveengineering:blastfurnace_preheater',
+		'immersiveengineering:coil_hv',
+		'immersiveengineering:dust_hop_graphite',
+		'immersiveengineering:ingot_hop_graphite',
+		'immersiveengineering:empty_casing',
+		'immersiveengineering:fluorescent_tube',
+		'immersiveengineering:concrete_sprayed',
+		'immersiveengineering:dust_wood',
+		'tconstruct:repair_kit_red_sand_cast',
+		'tconstruct:pick_head_red_sand_cast',
+		'tconstruct:small_axe_head_red_sand_cast',
+		'tconstruct:small_blade_red_sand_cast',
+		'tconstruct:adze_head_red_sand_cast',
+		'tconstruct:hammer_head_red_sand_cast',
+		'tconstruct:broad_axe_head_red_sand_cast',
+		'tconstruct:broad_blade_red_sand_cast',
+		'tconstruct:large_plate_red_sand_cast',
+		'tconstruct:tool_handle_red_sand_cast',
+		'tconstruct:tool_binding_red_sand_cast',
+		'tconstruct:tough_handle_red_sand_cast',
+		'tconstruct:tough_binding_red_sand_cast',
+		'tconstruct:bow_limb_red_sand_cast',
+		'tconstruct:bow_grip_red_sand_cast',
+		'tconstruct:bowstring_red_sand_cast',
+		'tconstruct:helmet_plating_red_sand_cast',
+		'tconstruct:chestplate_plating_red_sand_cast',
+		'tconstruct:leggings_plating_red_sand_cast',
+		'tconstruct:boots_plating_red_sand_cast',
+		'tconstruct:maille_red_sand_cast',
+		'tconstruct:repair_kit_sand_cast',
+		'tconstruct:pick_head_sand_cast',
+		'tconstruct:small_axe_head_sand_cast',
+		'tconstruct:small_blade_sand_cast',
+		'tconstruct:adze_head_sand_cast',
+		'tconstruct:hammer_head_sand_cast',
+		'tconstruct:broad_axe_head_sand_cast',
+		'tconstruct:broad_blade_sand_cast',
+		'tconstruct:large_plate_sand_cast',
+		'tconstruct:tool_handle_sand_cast',
+		'tconstruct:tool_binding_sand_cast',
+		'tconstruct:tough_handle_sand_cast',
+		'tconstruct:tough_binding_sand_cast',
+		'tconstruct:bow_limb_sand_cast',
+		'tconstruct:bow_grip_sand_cast',
+		'tconstruct:bowstring_sand_cast',
+		'tconstruct:helmet_plating_sand_cast',
+		'tconstruct:chestplate_plating_sand_cast',
+		'tconstruct:leggings_plating_sand_cast',
+		'tconstruct:boots_plating_sand_cast',
+		'tconstruct:maille_sand_cast',
+		'tconstruct:repair_kit_cast',
+		'tconstruct:pick_head_cast',
+		'tconstruct:small_axe_head_cast',
+		'tconstruct:small_blade_cast',
+		'tconstruct:adze_head_cast',
+		'tconstruct:hammer_head_cast',
+		'tconstruct:broad_axe_head_cast',
+		'tconstruct:broad_blade_cast',
+		'tconstruct:large_plate_cast',
+		'tconstruct:tool_handle_cast',
+		'tconstruct:tool_binding_cast',
+		'tconstruct:tough_handle_cast',
+		'tconstruct:tough_binding_cast',
+		'tconstruct:bow_limb_cast',
+		'tconstruct:bow_grip_cast',
+		'tconstruct:bowstring_cast',
+		'tconstruct:helmet_plating_cast',
+		'tconstruct:chestplate_plating_cast',
+		'tconstruct:leggings_plating_cast',
+		'tconstruct:boots_plating_cast',
+		'tconstruct:maille_cast'
 	]
 	hidden_items.forEach(item => {
 		event.hide(item) // noted: this also removes them from creative menus
@@ -560,7 +650,7 @@ JEIEvents.hideFluids(event => {
 })
 
 JEIEvents.removeCategories(event => {
-	event.remove('tconstruct:tools/severing')
+	event.remove('tconstruct:severing')
 })
 
 ClientEvents.loggedIn(event => {
