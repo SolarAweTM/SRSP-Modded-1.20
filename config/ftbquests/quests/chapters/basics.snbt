@@ -1153,6 +1153,7 @@
 			]
 			icon: "immersiveengineering:wire_copper"
 			id: "7768F401119EA876"
+			subtitle: "It was in Electrical"
 			tasks: [{
 				id: "3A5EBA9B84695E76"
 				item: {
@@ -1174,19 +1175,57 @@
 		}
 		{
 			dependencies: ["7768F401119EA876"]
+			description: [
+				"Now that you have some &6Wire&r on hand, you can turn it into &aCoils&r, which can then be used to &6transfer power between blocks&r."
+				""
+				"In order to do so, you will need &atwo Connectors&r. Attach an &6LV Wire Coil&r to the Connectors by &6right-clicking&r one of them while holding the wire, and then &6right-clicking&r the other. They will then be connected if the wire is &6in range&r and &6unobstructed&r."
+				""
+				"A Connector can only have &6one connection at a time&r. This can be remedied by using a &aRelay&r. Relays &6cannot transfer power to blocks&r, but can &6support multiple connections&r at once."
+				""
+				"Connectors and Relays will also &6only take one type of wire at a time&r. This means you &ccannot connect&r both an LV and an MV wire to a Relay. Some blocks will also &6only accept a specific tier&r of power, such as the LV Accumulator only accepting power from LV Connectors."
+				""
+				"Each tier of wire also has &ctransfer limits&r. Each &aLV Connector&r can support up to &6256 FE/tick&r, and each &aLV Wire&r can support up to &62048 FE/tick&r. &cExceeding the maximum rate on the wires may cause wires to burn up.&r"
+				""
+				"An &6uninsulated wire&r will &ccause damage to entites that touch it&r while it is being powered."
+			]
+			icon: "immersiveengineering:wirecoil_copper"
 			id: "42F4E6319BA277B5"
+			min_width: 300
 			subtitle: "One small step to UXV"
-			tasks: [{
-				id: "4F0483E4CAB79928"
-				item: "immersiveengineering:wirecoil_copper"
-				type: "item"
-			}]
-			title: "LV Power"
+			tasks: [
+				{
+					id: "4F0483E4CAB79928"
+					item: "immersiveengineering:wirecoil_copper"
+					type: "item"
+				}
+				{
+					id: "7AD6CE93A0F9130E"
+					item: "immersiveengineering:connector_lv"
+					type: "item"
+				}
+				{
+					id: "52F82A9C315BD3F9"
+					item: "immersiveengineering:connector_lv_relay"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3ED70977F6B06875"
+					item: "immersiveengineering:wirecoil_copper_ins"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Introduction to Energy"
 			x: 13.5d
 			y: 4.5d
 		}
 		{
-			dependencies: ["46D6D589F571469D"]
+			dependencies: [
+				"46D6D589F571469D"
+				"42F4E6319BA277B5"
+			]
+			description: ["The &aKinetic Dynamo&r can be used with a couple options to &6generate energy&r, which will be explained in the following quests."]
 			id: "1EDDBA2F4C7702FC"
 			tasks: [{
 				id: "08F879B082256B04"
@@ -1194,21 +1233,45 @@
 				type: "item"
 			}]
 			x: 12.5d
-			y: 4.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["42F4E6319BA277B5"]
+			description: [
+				"The &aThermoelectric Generator&r is an option for early-game &6passive power generation&r. "
+				""
+				"By placing a &6hot block or fluid&r on one end, and a &6cold fluid or block&r on the other, energy is generated automatically."
+				""
+				"The &6greater the temperature difference&r between the two blocks/fluids, the &6more energy&r is made."
+				""
+				"A list of &6supported blocks&r and fluids can be found on the &6next page&r."
+				"{@pagebreak}"
+				"Supported blocks/fluids include (in order from coldest to hottest):"
+				"&7- Blue Ice&r"
+				"- Packed Ice"
+				"&7- Ice&r"
+				"- Snow"
+				"&7- Water&r"
+				"- Magma Block"
+				"&7- Lava&r"
+				"- Block of Uranium"
+			]
 			id: "6F95F79291E28B13"
 			tasks: [{
 				id: "210EAEE713DA579E"
 				item: "immersiveengineering:thermoelectric_generator"
 				type: "item"
 			}]
-			x: 15.0d
-			y: 4.5d
+			x: 14.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["1EDDBA2F4C7702FC"]
+			description: [
+				"&aWater Wheels&r &7(from Immersive Engineering)&r can &6generate electricity&r when attached &6from the middle to a Kinetic Dynamo&r, in a similar way to the Water Wheels from &6Create&r."
+				""
+				"&6Up to three&r Water Wheels can be against each other in this way."
+			]
 			id: "2632B2257A895D84"
 			tasks: [{
 				id: "29BFE88149A5628E"
@@ -1217,19 +1280,38 @@
 			}]
 			title: "Water Wheel (IE)"
 			x: 11.5d
-			y: 6.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["1EDDBA2F4C7702FC"]
+			description: [
+				"The &aWindmill&r &7(from Immersive Engineering)&r can be used to &6effortlessly generate energy&r when connected to a &6Kinetic Dynamo from the middle&r."
+				""
+				"The &6speed of the Windmill&r depends on the &6space in front of it&r, and is greatly decreased if its airflow is obstructed."
+				""
+				"During &6rain or a thunderstorm&r, the speed is increased."
+				""
+				"Power generation can be further improved by attaching &6Windmill Sails&r to the Windmill by &6right-clicking&r with one."
+			]
+			icon: "immersiveengineering:windmill"
 			id: "31139E4125631E5B"
-			tasks: [{
-				id: "6CAC48B6C57DCE53"
-				item: "immersiveengineering:windmill"
-				type: "item"
-			}]
+			min_width: 250
+			tasks: [
+				{
+					id: "6CAC48B6C57DCE53"
+					item: "immersiveengineering:windmill"
+					type: "item"
+				}
+				{
+					id: "5F7A08522A4AFDB3"
+					item: "immersiveengineering:windmill_sail"
+					optional_task: true
+					type: "item"
+				}
+			]
 			title: "Windmill (IE)"
 			x: 13.5d
-			y: 6.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["6B771F840445110A"]
@@ -1269,6 +1351,298 @@
 			title: "Silos and Tanks"
 			x: 10.5d
 			y: 6.0d
+		}
+		{
+			dependencies: ["42F4E6319BA277B5"]
+			description: [
+				"&aMV Wires&r can be crafted from &6Electrum&r, and support &6four times as much energy&r as the LV tier."
+				""
+				"That's a Connector rate of &61024 FE/tick&r and a Wire rate of &68192 FE/tick&r!"
+				""
+				"Also, the terms \"FE\", \"RF\", and \"IF\" are all interchangeable with one another. They all basically mean \"energy\"."
+			]
+			icon: "immersiveengineering:wirecoil_electrum"
+			id: "2362F1239D182C79"
+			tasks: [
+				{
+					id: "09C01A6F30BAED60"
+					item: "immersiveengineering:wirecoil_electrum"
+					type: "item"
+				}
+				{
+					id: "4C30221F8C8A411C"
+					item: "immersiveengineering:connector_mv"
+					type: "item"
+				}
+				{
+					id: "30E726AAA2D08B51"
+					item: "immersiveengineering:connector_mv_relay"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "11BC4905FCC330E1"
+					item: "immersiveengineering:wirecoil_electrum_ins"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "MV Power"
+			x: 13.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["05C90BF60E59F2F3"]
+			description: [
+				"&aTinkers' Construct&r is a mod that will be used in this pack for its multiblock structures, the &6Melter&r, &6Smeltery&r, and &6Foundry&r."
+				""
+				"&cThe tools and gear provided by the mod have largely been removed from this pack.&r"
+				""
+				"To get started, make some &6Grout&r, then smelt it to get &6Seared Bricks&r. These will be the main material you use for your Melter."
+			]
+			icon: "tconstruct:grout"
+			id: "56C728059DA3DBB2"
+			tasks: [
+				{
+					id: "1912292801D64B1F"
+					item: "tconstruct:grout"
+					type: "item"
+				}
+				{
+					id: "1C69CD941E253F8E"
+					item: "tconstruct:seared_brick"
+					type: "item"
+				}
+			]
+			title: "Tinkers' Construct"
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["56C728059DA3DBB2"]
+			description: [
+				"The &aMelter&r is your entryway into, well, &6melting things&r. Mostly metals."
+				""
+				"To use, you'll need to provide it with a &6fuel source&r. This can either be a &6Seared Tank&r &7(for liquid fuels)&r or a &6Seared Heater&r &7(for solid fuels)&r, and should be placed &6directly below the Melter&r."
+				"{image:srsp:textures/ftbquests/melter_setup_1.png width:192 height:108 align:center}"
+			]
+			id: "65CB468E8207E990"
+			min_width: 250
+			tasks: [{
+				id: "61D4013371F1D0B2"
+				item: "tconstruct:seared_melter"
+				type: "item"
+			}]
+			title: "The Melter"
+			x: -1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["65CB468E8207E990"]
+			description: [
+				"In order to get your molten metals &6out of the Melter&r, you'll need to use a &aSeared Faucet&r."
+				""
+				"To use the Faucets, simply &6right-click&r them and the fluid at the &6bottom of the Melter&r will come out, provided that a &6valid cast is below&r."
+				""
+				"These can be placed on &6any side&r of the Melter."
+				"{image:srsp:textures/ftbquests/melter_setup_2.png width:192 height:108 align:center}"
+			]
+			id: "01BD93F2070444ED"
+			min_width: 250
+			tasks: [{
+				id: "1C906B0A79FB6564"
+				item: "tconstruct:seared_faucet"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"65CB468E8207E990"
+				"01BD93F2070444ED"
+			]
+			description: [
+				"In order to get the molten metals from your Melter into &6something usable&r, you can cast it into a &aCasting Table&r &7(for items)&r or a &aCasting Basin&r &7(for blocks)&r."
+				""
+				"These should go directly below any &6Seared Faucets&r you have, and they'll allow your Faucets to actually output the fluid into something."
+				"{image:srsp:textures/ftbquests/melter_setup_3.png width:192 height:108 align:center}"
+			]
+			id: "6CB4087B1583F423"
+			min_width: 250
+			subtitle: "(int)\"eighty-two\""
+			tasks: [{
+				id: "2CBF4190ACB27415"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Seared Casting Block\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "tconstruct:seared_table"
+							}
+							{
+								Count: 1b
+								id: "tconstruct:seared_basin"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Casting"
+			x: -1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["6CB4087B1583F423"]
+			description: [
+				"&aCasts&r can be used in the &6Casting Table&r to turn your molten metals &6into usable items&r."
+				""
+				"A &aGold Cast&r can be created by &6putting an item&r of a relevant category &7(like an Iron Ingot for an Ingot Cast)&r on your &6Casting Table&r, and then &6pouring Molten Gold&r onto it."
+				""
+				"A &aSand&r &7(or Red Sand)&r &aCast&r can be created by first &6crafting Blank Sand Casts&r, and then putting those onto your &6Casting Table&r. Then, &6right-click the relevant item&r onto the &6Casting Table&r to create your Sand Cast."
+				""
+				"A Sand Cast is &csingle-use&r, while a Gold Cast can be &6reused infinitely&r."
+			]
+			icon: "tconstruct:ingot_cast"
+			id: "5C85690BEF090E41"
+			min_width: 250
+			tasks: [
+				{
+					id: "160E2D8EB7CA3E4A"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Cast\"}"
+							}
+							value: "tconstruct:casts"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6C35079E7AF258FC"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Blank Cast\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "tconstruct:blank_sand_cast"
+								}
+								{
+									Count: 1b
+									id: "tconstruct:blank_red_sand_cast"
+								}
+							]
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Casts"
+			x: 0.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["6CB4087B1583F423"]
+			description: [
+				"The &aSmeltery&r is the next big upgrade to your &6Melter&r. It can &6hold more fluids&r, &6melt more things&r at once, and &6have more fuel&r. It can also &6alloy certain metals&r together."
+				""
+				"To get started, make some &6Seared Bricks&r &7(the block)&r, put one into a &6Casting Basin&r, and pour 4 ingots worth of &6Molten Copper&r into it. This will get you a &aSmeltery Controller&r."
+			]
+			id: "47479C57109296A0"
+			tasks: [{
+				id: "115A768FE8EC7DFF"
+				item: "tconstruct:smeltery_controller"
+				type: "item"
+			}]
+			title: "The Smeltery"
+			x: -1.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["47479C57109296A0"]
+			description: [
+				"In order to &6get fluids out &rof your Smeltery, you'll need a &aSeared Drain&r, which &6provides a face to connect a Seared Faucet&r."
+				""
+				"You can use the Seared Faucets &6from your Melter&r if you choose to."
+			]
+			id: "79771E84B6E324CF"
+			tasks: [{
+				id: "7473089929621336"
+				item: "tconstruct:seared_drain"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"47479C57109296A0"
+				"79771E84B6E324CF"
+			]
+			description: [
+				"This quest will show you how to build a basic Smeltery, but in reality, &6the Smeltery is a highly modular device&r. You can make it &6larger or smaller&r than the size described in this quest, and you can add &6any number of tanks and drains&r, among a few other unmentioned blocks."
+				""
+				"Start by placing a &63x3 square of Seared Bricks&r on the ground, and then &6bordering it without corners 1 block higher&r, but only on &6three of the sides&r. On the open side, you can place your &6Seared Fuel Tank, Drain, and Smeltery Controller&r."
+				""
+				"If everything was placed correctly, you should be able to &6right-click the Smeltery Controller&r to open its GUI. It functions similarly to the &6Melter&r."
+				"{image:srsp:textures/ftbquests/smeltery_setup.png width:192 height:108 align:center}"
+			]
+			icon: "tconstruct:seared_bricks"
+			id: "4B463BE554955408"
+			min_width: 300
+			tasks: [
+				{
+					count: 18L
+					id: "1442E20D2BD88245"
+					item: "tconstruct:seared_bricks"
+					type: "item"
+				}
+				{
+					id: "184F8178021BFDA0"
+					item: "tconstruct:seared_fuel_tank"
+					type: "item"
+				}
+			]
+			title: "Putting It All Together"
+			x: -1.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["4B463BE554955408"]
+			description: [
+				"When &6certain metals are together&r in the Smeltery, they will &6automatically create an alloy&r. This can be useful if you're actually trying to make that alloy &7(such as Brass or Constantan)&r, but annoying if you don't want to make an alloy."
+				""
+				"This means that &6you should be careful&r about what metals you put into the Smeltery &6while you still have metals in it&r."
+				""
+				"You can &6use JEI&r to see a list of all alloys by &6viewing recipe uses for the Smeltery Controller&r item."
+			]
+			id: "67B17AEC0001D814"
+			min_width: 250
+			tasks: [{
+				id: "20086F81AA103035"
+				type: "checkmark"
+			}]
+			title: "Alloying"
+			x: -2.5d
+			y: -8.0d
 		}
 	]
 	title: "Core Progression"
