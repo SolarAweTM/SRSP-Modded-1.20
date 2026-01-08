@@ -159,7 +159,10 @@ ServerEvents.recipes(event => {
 		'tconstruct:steel_nugget',
 		'immersiveengineering:electron_tube',
 		'immersiveengineering:cokebrick',
-		'immersiveengineering:blastbrick'
+		'immersiveengineering:blastbrick',
+		'immersiveengineering:blastfurnace_preheater',
+		'immersiveengineering:coil_hv',
+		'immersiveengineering:redstone_breaker'
 	]
 	ie_removals.forEach(item => {
 		event.remove({output:item})
@@ -299,7 +302,7 @@ ServerEvents.recipes(event => {
 	event.custom({
 		type: 'createaddition:rolling',
 		input: {
-			tag: 'forge_ingots/copper'
+			tag: 'forge:plates/copper'
 		},
 		result: {
 			item: 'immersiveengineering:wire_copper',
@@ -309,7 +312,7 @@ ServerEvents.recipes(event => {
 	event.custom({
 		type: 'createaddition:rolling',
 		input: {
-			tag: 'forge_ingots/electrum'
+			tag: 'forge:plates/electrum'
 		},
 		result: {
 			item: 'immersiveengineering:wire_electrum',
@@ -354,6 +357,42 @@ ServerEvents.recipes(event => {
 	//rewrite coke and blast brick for create
 	event.recipes.create.mixing([Item.of('immersiveengineering:cokebrick', 3)], [Item.of('minecraft:clay_ball', 4), Item.of('minecraft:brick', 4), '#forge:sandstone'])
 	event.recipes.create.mixing([Item.of('immersiveengineering:blastbrick', 3)], [Item.of('minecraft:nether_brick', 4), Item.of('minecraft:brick', 4), 'minecraft:magma_block']).heated()
+	//get rid of the other multiblock for good
+	event.remove({type:'immersiveengineering:arc_furnace'})
+	event.remove({type:'immersiveengineering:alloy'})
+	event.remove({type:'immersiveengineering:bottling_machine'})
+	event.remove({type:'immersiveengineering:crusher'})
+	event.remove({type:'immersiveengineering:fermenter'})
+	event.remove({type:'immersiveengineering:metal_press'})
+	event.remove({type:'immersiveengineering:mixer'})
+	event.remove({type:'immersiveengineering:refinery'})
+	event.remove({type:'immersiveengineering:sawmill'})
+	event.remove({type:'immersiveengineering:squeezer'})
+	//reimplement insulating glass
+	event.recipes.create.mixing('2x immersiveengineering:insulating_glass', ['2x #forge:glass', '#forge:dusts/iron']).heated()
+	//reimplement redstone breaker
+	event.shaped(
+		'immersiveengineering:redstone_breaker',
+		[
+			'CRC',
+			'IEI'
+		],
+		{
+			C: 'immersiveengineering:connector_mv',
+			R: 'minecraft:repeater',
+			I: '#forge:plates/iron',
+			E: 'immersiveengineering:component_electronic'
+		}
+	)
+	//reimplement sulfur dust apparently
+	event.custom({
+		type: 'immersiveengineering:hammer_crushing',
+		input: {tag:'forge:gems/quartz'},
+		result: {item:'immersiveengineering:dust_sulfur'}
+	})
+	//reimplement nitrate dust also apparently
+	event.remove({id:'create:milling/sandstone'})
+	event.recipes.create.milling(['minecraft:sand', 'immersiveengineering:dust_saltpeter'], 'minecraft:sandstone')
 })
 
 LootJS.modifiers((event) => {
