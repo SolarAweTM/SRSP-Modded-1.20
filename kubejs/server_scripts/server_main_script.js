@@ -147,6 +147,124 @@ ServerEvents.tags('item', event => {
 	event.remove('forge:storage_blocks/steel', 'tconstruct:steel_block')
 	event.remove('forge:plates', 'immersiveengineering:plate_iron')
 	event.remove('forge:plates/iron', 'immersiveengineering:plate_iron')
+	let removed_tconstruct_casts = [
+		'tconstruct:repair_kit_red_sand_cast',
+		'tconstruct:pick_head_red_sand_cast',
+		'tconstruct:small_axe_head_red_sand_cast',
+		'tconstruct:small_blade_red_sand_cast',
+		'tconstruct:adze_head_red_sand_cast',
+		'tconstruct:hammer_head_red_sand_cast',
+		'tconstruct:broad_axe_head_red_sand_cast',
+		'tconstruct:broad_blade_red_sand_cast',
+		'tconstruct:large_plate_red_sand_cast',
+		'tconstruct:tool_handle_red_sand_cast',
+		'tconstruct:tool_binding_red_sand_cast',
+		'tconstruct:tough_handle_red_sand_cast',
+		'tconstruct:tough_binding_red_sand_cast',
+		'tconstruct:bow_limb_red_sand_cast',
+		'tconstruct:bow_grip_red_sand_cast',
+		'tconstruct:bowstring_red_sand_cast',
+		'tconstruct:helmet_plating_red_sand_cast',
+		'tconstruct:chestplate_plating_red_sand_cast',
+		'tconstruct:leggings_plating_red_sand_cast',
+		'tconstruct:boots_plating_red_sand_cast',
+		'tconstruct:maille_red_sand_cast',
+		'tconstruct:repair_kit_sand_cast',
+		'tconstruct:pick_head_sand_cast',
+		'tconstruct:small_axe_head_sand_cast',
+		'tconstruct:small_blade_sand_cast',
+		'tconstruct:adze_head_sand_cast',
+		'tconstruct:hammer_head_sand_cast',
+		'tconstruct:broad_axe_head_sand_cast',
+		'tconstruct:broad_blade_sand_cast',
+		'tconstruct:large_plate_sand_cast',
+		'tconstruct:tool_handle_sand_cast',
+		'tconstruct:tool_binding_sand_cast',
+		'tconstruct:tough_handle_sand_cast',
+		'tconstruct:tough_binding_sand_cast',
+		'tconstruct:bow_limb_sand_cast',
+		'tconstruct:bow_grip_sand_cast',
+		'tconstruct:bowstring_sand_cast',
+		'tconstruct:helmet_plating_sand_cast',
+		'tconstruct:chestplate_plating_sand_cast',
+		'tconstruct:leggings_plating_sand_cast',
+		'tconstruct:boots_plating_sand_cast',
+		'tconstruct:maille_sand_cast',
+		'tconstruct:repair_kit_cast',
+		'tconstruct:pick_head_cast',
+		'tconstruct:small_axe_head_cast',
+		'tconstruct:small_blade_cast',
+		'tconstruct:adze_head_cast',
+		'tconstruct:hammer_head_cast',
+		'tconstruct:broad_axe_head_cast',
+		'tconstruct:broad_blade_cast',
+		'tconstruct:large_plate_cast',
+		'tconstruct:tool_handle_cast',
+		'tconstruct:tool_binding_cast',
+		'tconstruct:tough_handle_cast',
+		'tconstruct:tough_binding_cast',
+		'tconstruct:bow_limb_cast',
+		'tconstruct:bow_grip_cast',
+		'tconstruct:bowstring_cast',
+		'tconstruct:helmet_plating_cast',
+		'tconstruct:chestplate_plating_cast',
+		'tconstruct:leggings_plating_cast',
+		'tconstruct:boots_plating_cast',
+		'tconstruct:maille_cast'
+	]
+	removed_tconstruct_casts.forEach(item => {
+		event.remove('minecraft:piglin_loved', item)
+		event.remove('tconstruct:patterns', item)
+		event.remove('tconstruct:patterns/reusable', item)
+		event.remove('tconstruct:casts', item)
+		event.remove('tconstruct:casts/gold', item)
+		event.remove('tconstruct:casts/sand', item)
+		event.remove('tconstruct:casts/red_sand', item)
+		event.remove('tconstruct:casts/single_use', item)
+		event.remove('tconstruct:casts/multi_use', item)
+		event.remove('tconstruct:casts/multi_use/repair_kit', item)
+		event.remove('tconstruct:casts/multi_use/pick_head', item)
+		event.remove('tconstruct:casts/multi_use/small_axe_head', item)
+		event.remove('tconstruct:casts/multi_use/small_blade', item)
+		event.remove('tconstruct:casts/multi_use/adze_head', item)
+		event.remove('tconstruct:casts/multi_use/hammer_head', item)
+		event.remove('tconstruct:casts/multi_use/broad_axe_head', item)
+		event.remove('tconstruct:casts/multi_use/broad_blade', item)
+		event.remove('tconstruct:casts/multi_use/large_plate', item)
+		event.remove('tconstruct:casts/multi_use/tool_handle', item)
+		event.remove('tconstruct:casts/multi_use/tool_binding', item)
+		event.remove('tconstruct:casts/multi_use/tough_handle', item)
+		event.remove('tconstruct:casts/multi_use/tough_binding', item)
+		event.remove('tconstruct:casts/multi_use/bow_limb', item)
+		event.remove('tconstruct:casts/multi_use/bow_grip', item)
+		event.remove('tconstruct:casts/multi_use/bowstring', item)
+		event.remove('tconstruct:casts/multi_use/helmet_plating', item)
+		event.remove('tconstruct:casts/multi_use/chestplate_plating', item)
+		event.remove('tconstruct:casts/multi_use/leggings_plating', item)
+		event.remove('tconstruct:casts/multi_use/boots_plating', item)
+		event.remove('tconstruct:casts/multi_use/maille', item)
+		event.remove('tconstruct:casts/single_use/repair_kit', item)
+		event.remove('tconstruct:casts/single_use/pick_head', item)
+		event.remove('tconstruct:casts/single_use/small_axe_head', item)
+		event.remove('tconstruct:casts/single_use/small_blade', item)
+		event.remove('tconstruct:casts/single_use/adze_head', item)
+		event.remove('tconstruct:casts/single_use/hammer_head', item)
+		event.remove('tconstruct:casts/single_use/broad_axe_head', item)
+		event.remove('tconstruct:casts/single_use/broad_blade', item)
+		event.remove('tconstruct:casts/single_use/large_plate', item)
+		event.remove('tconstruct:casts/single_use/tool_handle', item)
+		event.remove('tconstruct:casts/single_use/tool_binding', item)
+		event.remove('tconstruct:casts/single_use/tough_handle', item)
+		event.remove('tconstruct:casts/single_use/tough_binding', item)
+		event.remove('tconstruct:casts/single_use/bow_limb', item)
+		event.remove('tconstruct:casts/single_use/bow_grip', item)
+		event.remove('tconstruct:casts/single_use/bowstring', item)
+		event.remove('tconstruct:casts/single_use/helmet_plating', item)
+		event.remove('tconstruct:casts/single_use/chestplate_plating', item)
+		event.remove('tconstruct:casts/single_use/leggings_plating', item)
+		event.remove('tconstruct:casts/single_use/boots_plating', item)
+		event.remove('tconstruct:casts/single_use/maille', item)
+	})
 })
 
 LootJS.modifiers((event) => {
