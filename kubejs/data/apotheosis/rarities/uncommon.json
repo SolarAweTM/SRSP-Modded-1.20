@@ -3,7 +3,7 @@
     "color": "#33FF33",
     "material": "apotheosis:uncommon_material",
 	"weight": 0,
-	"quality": 5,
+	"quality": 0,
 	"rules": [{
 			"type": "stat",
 			"chance": 1.0

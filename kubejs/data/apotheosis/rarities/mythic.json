@@ -3,7 +3,7 @@
     "color": "#ED7014",
     "material": "apotheosis:mythic_material",
 	"weight": 0,
-	"quality": 20,
+	"quality": 0,
 	"rules": [{
 			"type": "stat",
 			"chance": 1.0

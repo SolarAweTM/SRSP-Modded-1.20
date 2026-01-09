@@ -3,7 +3,7 @@
     "color": "#BB00BB",
     "material": "apotheosis:epic_material",
 	"weight": 0,
-	"quality": 15,
+	"quality": 0,
 	"rules": [{
 			"type": "stat",
 			"chance": 1.0
