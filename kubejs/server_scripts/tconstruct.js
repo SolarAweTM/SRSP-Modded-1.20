@@ -160,11 +160,15 @@ ServerEvents.recipes(event => {
 		'tconstruct:chestplate_plating_cast',
 		'tconstruct:leggings_plating_cast',
 		'tconstruct:boots_plating_cast',
-		'tconstruct:maille_cast'
+		'tconstruct:maille_cast',
+		'tconstruct:copper_nugget'
 	]
 	obliterated_items.forEach(item => {
 		event.remove({output:item})
 	})
+	
+	//fix duplicate copper ingots
+	event.remove({input:'tconstruct:copper_nugget'})
 	
 	event.custom({ //crimson steel tconstruct alloying recipe
 		type: 'tconstruct:alloy',

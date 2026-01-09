@@ -162,7 +162,8 @@ ServerEvents.recipes(event => {
 		'immersiveengineering:blastbrick',
 		'immersiveengineering:blastfurnace_preheater',
 		'immersiveengineering:coil_hv',
-		'immersiveengineering:redstone_breaker'
+		'immersiveengineering:redstone_breaker',
+		'immersiveengineering:nugget_copper'
 	]
 	ie_removals.forEach(item => {
 		event.remove({output:item})
@@ -393,6 +394,8 @@ ServerEvents.recipes(event => {
 	//reimplement nitrate dust also apparently
 	event.remove({id:'create:milling/sandstone'})
 	event.recipes.create.milling(['minecraft:sand', 'immersiveengineering:dust_saltpeter'], 'minecraft:sandstone')
+	//fix duplicate copper ingots
+	event.remove({input:'immersiveengineering:nugget_copper'})
 })
 
 LootJS.modifiers((event) => {

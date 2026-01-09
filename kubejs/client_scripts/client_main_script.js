@@ -592,6 +592,7 @@ JEIEvents.hideItems(event => {
 		'tconstruct:leggings_plating_red_sand_cast',
 		'tconstruct:boots_plating_red_sand_cast',
 		'tconstruct:maille_red_sand_cast',
+		'tconstruct:coin_red_sand_cast',
 		'tconstruct:repair_kit_sand_cast',
 		'tconstruct:pick_head_sand_cast',
 		'tconstruct:small_axe_head_sand_cast',
@@ -613,6 +614,7 @@ JEIEvents.hideItems(event => {
 		'tconstruct:leggings_plating_sand_cast',
 		'tconstruct:boots_plating_sand_cast',
 		'tconstruct:maille_sand_cast',
+		'tconstruct:coin_sand_cast',
 		'tconstruct:repair_kit_cast',
 		'tconstruct:pick_head_cast',
 		'tconstruct:small_axe_head_cast',
@@ -633,7 +635,10 @@ JEIEvents.hideItems(event => {
 		'tconstruct:chestplate_plating_cast',
 		'tconstruct:leggings_plating_cast',
 		'tconstruct:boots_plating_cast',
-		'tconstruct:maille_cast'
+		'tconstruct:maille_cast',
+		'tconstruct:coin_cast',
+		'tconstruct:copper_nugget',
+		'immersiveengineering:nugget_copper'
 	]
 	hidden_items.forEach(item => {
 		event.hide(item) // noted: this also removes them from creative menus

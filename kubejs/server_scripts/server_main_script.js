@@ -147,6 +147,16 @@ ServerEvents.tags('item', event => {
 	event.remove('forge:storage_blocks/steel', 'tconstruct:steel_block')
 	event.remove('forge:plates', 'immersiveengineering:plate_iron')
 	event.remove('forge:plates/iron', 'immersiveengineering:plate_iron')
+	let copper_nuggets_to_be_removed = [
+		'tconstruct:copper_nugget',
+		'immersiveengineering:nugget_copper'
+	]
+	copper_nuggets_to_be_removed.forEach(item => {
+		event.remove('forge:nuggets', item)
+		event.remove('forge:nuggets/copper', item)
+		event.remove('balm:nuggets', item)
+		event.remove('silentgear:gold_digger', item)
+	})
 	let removed_tconstruct_casts = [
 		'tconstruct:repair_kit_red_sand_cast',
 		'tconstruct:pick_head_red_sand_cast',
@@ -169,6 +179,7 @@ ServerEvents.tags('item', event => {
 		'tconstruct:leggings_plating_red_sand_cast',
 		'tconstruct:boots_plating_red_sand_cast',
 		'tconstruct:maille_red_sand_cast',
+		'tconstruct:coin_red_sand_cast',
 		'tconstruct:repair_kit_sand_cast',
 		'tconstruct:pick_head_sand_cast',
 		'tconstruct:small_axe_head_sand_cast',
@@ -190,6 +201,7 @@ ServerEvents.tags('item', event => {
 		'tconstruct:leggings_plating_sand_cast',
 		'tconstruct:boots_plating_sand_cast',
 		'tconstruct:maille_sand_cast',
+		'tconstruct:coin_sand_cast',
 		'tconstruct:repair_kit_cast',
 		'tconstruct:pick_head_cast',
 		'tconstruct:small_axe_head_cast',
@@ -210,7 +222,8 @@ ServerEvents.tags('item', event => {
 		'tconstruct:chestplate_plating_cast',
 		'tconstruct:leggings_plating_cast',
 		'tconstruct:boots_plating_cast',
-		'tconstruct:maille_cast'
+		'tconstruct:maille_cast',
+		'tconstruct:coin_cast'
 	]
 	removed_tconstruct_casts.forEach(item => {
 		event.remove('minecraft:piglin_loved', item)
@@ -243,6 +256,7 @@ ServerEvents.tags('item', event => {
 		event.remove('tconstruct:casts/multi_use/leggings_plating', item)
 		event.remove('tconstruct:casts/multi_use/boots_plating', item)
 		event.remove('tconstruct:casts/multi_use/maille', item)
+		event.remove('tconstruct:casts/multi_use/coin', item)
 		event.remove('tconstruct:casts/single_use/repair_kit', item)
 		event.remove('tconstruct:casts/single_use/pick_head', item)
 		event.remove('tconstruct:casts/single_use/small_axe_head', item)
@@ -264,6 +278,7 @@ ServerEvents.tags('item', event => {
 		event.remove('tconstruct:casts/single_use/leggings_plating', item)
 		event.remove('tconstruct:casts/single_use/boots_plating', item)
 		event.remove('tconstruct:casts/single_use/maille', item)
+		event.remove('tconstruct:casts/single_use/coin', item)
 	})
 })
 
