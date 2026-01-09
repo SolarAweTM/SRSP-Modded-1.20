@@ -25,6 +25,11 @@
 				}
 			}
 			id: "284D2FA3BE428AB8"
+			rewards: [{
+				id: "540848A42D96BE0F"
+				type: "xp"
+				xp: 10
+			}]
 			size: 2.0d
 			subtitle: "FISH!"
 			tasks: [{
@@ -44,6 +49,11 @@
 				"Note that there are over 30+ new fish to find in different climates."
 			]
 			id: "3049D8F58AC32157"
+			rewards: [{
+				id: "2E39EB65A10235B9"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Where it all begins"
 			tasks: [{
 				id: "5C55FA136250BC5F"
@@ -67,6 +77,11 @@
 				"It has more durability, and so does every rod after this except for the final one."
 			]
 			id: "46BCC279DE4AAF0E"
+			rewards: [{
+				id: "6D574F0338D64453"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Acquire Hardware"
 			tasks: [{
 				id: "10E76EF47A0FDCD4"
@@ -90,6 +105,11 @@
 				"It can also store these special items within itself."
 			]
 			id: "64B7E7E392B035B4"
+			rewards: [{
+				id: "238D6CBBE2C55A93"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "The Workstation"
 			tasks: [{
 				id: "10FCCF69018EF723"
@@ -118,6 +138,11 @@
 				}
 			}
 			id: "474430CA7E6FDBD4"
+			rewards: [{
+				id: "1D126BE9E0084BB7"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Don't fall for it!"
 			tasks: [
 				{
@@ -156,6 +181,11 @@
 				"- &6Netherstar&r: combined effects of Gold and Diamond"
 			]
 			id: "5DB1CB1C751A1F15"
+			rewards: [{
+				id: "06FE435600BAA640"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "ON the Hook"
 			tasks: [{
 				id: "7DEE80404C900D7E"
@@ -169,6 +199,11 @@
 			dependencies: ["64B7E7E392B035B4"]
 			description: ["&aBobbers&r are cosmetics that can be applied to your fishing rod, and can be dyed like leather armor."]
 			id: "76D2E35BBD6707C9"
+			rewards: [{
+				id: "7662EC027346F45E"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "the thing that floats"
 			tasks: [{
 				id: "385C8B3BA99CC092"
@@ -186,6 +221,11 @@
 				"They can be dyed like leather armor."
 			]
 			id: "6B8B673B6D86D246"
+			rewards: [{
+				id: "6271D4887580B2AF"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "A Link to the Water"
 			tasks: [{
 				id: "451D243C12DD55FD"
@@ -199,6 +239,11 @@
 			dependencies: ["64B7E7E392B035B4"]
 			description: ["It has more durability than the last."]
 			id: "018158DD30109436"
+			rewards: [{
+				id: "60817F2E339F53DE"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "150D2E0B00D0959A"
 				item: {
@@ -224,6 +269,11 @@
 				"- Rarely as nuggets in &6small underwater ruins&r"
 			]
 			id: "495528CEE2EA6DC4"
+			rewards: [{
+				id: "19B1DCF5CA56CD16"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Water Ingot"
 			tasks: [{
 				id: "25BD588338265A39"
@@ -238,6 +288,11 @@
 			dependencies: ["495528CEE2EA6DC4"]
 			description: ["If you want to upgrade to &aNeptunium gear&r directly, you'll need to find a &6Smithing Template&r for it. These can commonly be found in &6buried treasure&r, and can then be duplicated using nuggets and gravel."]
 			id: "4BF13F4D9B10F6F7"
+			rewards: [{
+				id: "33B2B6FBCA8A4119"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Wow, another upgrade from Netherite!"
 			tasks: [{
 				id: "5A077FCDE247EC79"
@@ -252,6 +307,11 @@
 			dependencies: ["4BF13F4D9B10F6F7"]
 			hide_until_deps_complete: true
 			id: "59E69CDAF6392A9B"
+			rewards: [{
+				id: "3E548F9B2DB3A209"
+				type: "xp"
+				xp: 10
+			}]
 			size: 2.0d
 			subtitle: "Absolutely essential to your fishing experience."
 			tasks: [{

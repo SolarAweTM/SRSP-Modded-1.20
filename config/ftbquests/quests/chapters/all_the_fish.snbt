@@ -11,6 +11,11 @@
 	quests: [
 		{
 			id: "3C035697E9D834CB"
+			rewards: [{
+				id: "211DA1194D68DB23"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [
 				{
 					disable_toast: true
@@ -125,6 +130,11 @@
 		}
 		{
 			id: "5963903B7964EA37"
+			rewards: [{
+				id: "506726C0F3B331BF"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [
 				{
 					disable_toast: true
@@ -211,6 +221,11 @@
 		}
 		{
 			id: "6501A7C3F0271F41"
+			rewards: [{
+				id: "09416E750CD561CE"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [
 				{
 					disable_toast: true
@@ -256,6 +271,11 @@
 		}
 		{
 			id: "731FDD0F1538B688"
+			rewards: [{
+				id: "7CA38F22FA826B98"
+				type: "xp"
+				xp: 10
+			}]
 			size: 2.0d
 			tasks: [
 				{
@@ -945,6 +965,11 @@
 		}
 		{
 			id: "76B3E1391452ED28"
+			rewards: [{
+				id: "742A2BBE7DA9B755"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "44F82FB8A573C22C"
 				item: "quark:crab_bucket"
@@ -965,6 +990,11 @@
 			description: ["&dCollect or catch every kind of fish in this world.&r"]
 			hide_dependency_lines: true
 			id: "0C168363A74CED35"
+			rewards: [{
+				id: "114D8BD7E8346907"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
 			size: 3.0d
 			tasks: [{
 				dimension: "minecraft:overworld"

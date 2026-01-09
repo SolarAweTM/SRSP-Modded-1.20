@@ -16,6 +16,11 @@
 				"This quest chapter serves as a &dchecklist&r and &dreference&r for what each Glyph does."
 			]
 			id: "7D5474294C0F03DC"
+			rewards: [{
+				id: "178890C35DEBCC21"
+				type: "xp"
+				xp: 10
+			}]
 			size: 2.0d
 			tasks: [{
 				id: "5F7C8B7C6D75C6F9"
@@ -35,6 +40,11 @@
 			]
 			icon: "ars_nouveau:blank_glyph"
 			id: "1996280109552BBD"
+			rewards: [{
+				id: "2BB92A38C80AB984"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				dimension: "minecraft:overworld"
 				disable_toast: true
@@ -50,6 +60,11 @@
 			dependencies: ["1996280109552BBD"]
 			description: ["Spells with a &aProjectile glyph&r will fire the Spell as a &dprojectile&r. This can target other &dentities, players, or blocks&r."]
 			id: "5E7C61951AA23312"
+			rewards: [{
+				id: "37223AB81650DAD8"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				dimension: "minecraft:overworld"
 				disable_toast: true
@@ -66,6 +81,11 @@
 			dependencies: ["1996280109552BBD"]
 			description: ["Spells with a &aSelf glyph&r will &dtarget the caster&r (in this case, &dyou&r) with the Spell."]
 			id: "16EDD608E5A104CB"
+			rewards: [{
+				id: "6D6FA97501FB1900"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				dimension: "minecraft:overworld"
 				disable_toast: true
@@ -86,6 +106,11 @@
 				"The target must be &dwithin your entity or block reach&r."
 			]
 			id: "2A01F265AA45DC7A"
+			rewards: [{
+				id: "798B5AB84183A1AE"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				dimension: "minecraft:overworld"
 				disable_toast: true
@@ -102,6 +127,11 @@
 			dependencies: ["1996280109552BBD"]
 			description: ["Spells with an &aUnderfoot glyph&r will target &dthe block directly below you&r."]
 			id: "20947C639F3D0DEF"
+			rewards: [{
+				id: "01B25353A1946354"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "317A7DB41D75EB60"
 				item: "ars_nouveau:glyph_underfoot"
@@ -116,6 +146,11 @@
 			description: ["&aTier 2 Glyphs&r require at least a &dMage's Spell Book&r in order to cast."]
 			hide_dependent_lines: true
 			id: "1DF1A3282A8EE394"
+			rewards: [{
+				id: "0520EECFB75A71F3"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				disable_toast: true
 				id: "3D0744E70341EDAA"
@@ -132,6 +167,11 @@
 			hide_dependent_lines: true
 			icon: "ars_nouveau:novice_spell_book"
 			id: "5A8559F63EBA6E2B"
+			rewards: [{
+				id: "22F3D55AE9A1F7AB"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "2E44B1C6DAFE45B7"
 				item: "ars_nouveau:scribes_table"
@@ -146,6 +186,11 @@
 			description: ["&aTier 3 Glyphs&r require at least an &dArchmage Spell Book&r to cast."]
 			hide_dependent_lines: true
 			id: "0AB8680A6E3C5FA0"
+			rewards: [{
+				id: "433CDA212543F110"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "669AD4344C8E3DFF"
 				item: "ars_nouveau:archmage_spell_book"
@@ -165,6 +210,11 @@
 				"&dSensitive:&r Behaves like Shears instead of a Pickaxe."
 			]
 			id: "475E791DED452720"
+			rewards: [{
+				id: "74F2AA0A7E372847"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				dimension: "minecraft:overworld"
 				disable_toast: true
@@ -187,6 +237,11 @@
 				"&dExtend Time:&r Applies Poison"
 			]
 			id: "39AE0E7ACB946FF7"
+			rewards: [{
+				id: "4078C5A4FDB176E0"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				dimension: "minecraft:overworld"
 				disable_toast: true
@@ -208,6 +263,11 @@
 				"In a Spell with &dProjectile -> Harm -> Amplify -> Amplify&r, this glyph will &dapply Amplify twice&r to the Harm glyph."
 			]
 			id: "20225EA872F58FFD"
+			rewards: [{
+				id: "6BE34C552E13E300"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "7F78FFD342808AC1"
 				item: "ars_nouveau:glyph_amplify"
@@ -226,6 +286,11 @@
 				"&dAmplify:&r Preserves more motion per bounce."
 			]
 			id: "0E7067DBC671C6F2"
+			rewards: [{
+				id: "213452682C1F4B97"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "48D9AABAED1EAEE2"
 				item: "ars_nouveau:glyph_bounce"
@@ -239,6 +304,11 @@
 			dependencies: ["5A8559F63EBA6E2B"]
 			description: ["&aRandomize&r is a glyph that &daugments the glyph previously before it&r. It causes certain glyphs to have &drandom behaviour&r."]
 			id: "1278301B740664F3"
+			rewards: [{
+				id: "280EE2F5752F5B54"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "4A2342D45B4D99A7"
 				item: "ars_nouveau:glyph_randomize"
@@ -259,6 +329,11 @@
 				"&dBreak&r will perform like Shears instead of a Pickaxe."
 			]
 			id: "2E6892A05ADA208A"
+			rewards: [{
+				id: "3D9C1373FFEECD7D"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "22D77856D577F85D"
 				item: "ars_nouveau:glyph_sensitive"
@@ -277,6 +352,11 @@
 				"&dAmplify:&r Makes the block permanent until broken otherwise."
 			]
 			id: "7D83F2BAF0F15816"
+			rewards: [{
+				id: "37CE95FC92D8113D"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "090414F8EFECF5F6"
 				item: "ars_nouveau:glyph_phantom_block"
@@ -294,6 +374,11 @@
 				"Dispel will also &dinstantly destroy any Mageblocks&r created from the &dConjure Mageblock&r glyph."
 			]
 			id: "0668749C7BF178E0"
+			rewards: [{
+				id: "0C6349131181DAD2"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "28725A308F376A12"
 				item: "ars_nouveau:glyph_dispel"
@@ -307,6 +392,11 @@
 			dependencies: ["5A8559F63EBA6E2B"]
 			description: ["&aCraft&r is a glyph that will &dopen a Crafting menu&r for you."]
 			id: "05E17324A3EB8D24"
+			rewards: [{
+				id: "01ECC01E85BE386F"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "35F49DC0B705F10D"
 				item: "ars_nouveau:glyph_craft"
@@ -325,6 +415,11 @@
 				"&dAmplify:&r Simulates action with an Axe instead, and increases damage by 1."
 			]
 			id: "43B96D7E68762922"
+			rewards: [{
+				id: "3B2FBF414ECD2C95"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "43150C71B1C03FC3"
 				item: "ars_nouveau:glyph_cut"
@@ -344,6 +439,11 @@
 				"&dDuration Down:&r Decreases the delay"
 			]
 			id: "78D96895506D54E8"
+			rewards: [{
+				id: "45920E6D4F5178F2"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "0ECAD766D923302E"
 				item: "ars_nouveau:glyph_delay"
@@ -362,6 +462,11 @@
 				"&dAOE:&r Increases radius of effect"
 			]
 			id: "04B8122ECBA572A8"
+			rewards: [{
+				id: "4AF0EED2945DAB3F"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "5BDFB931A29C7D6B"
 				item: "ars_nouveau:glyph_evaporate"
@@ -381,6 +486,11 @@
 				"&dAmplify:&r Allows the Spell to break blocks of a higher hardness."
 			]
 			id: "49BE00FA0FF4051B"
+			rewards: [{
+				id: "5E351D892557DC4B"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "2B191D8AEF46E73B"
 				item: "ars_nouveau:glyph_fell"
@@ -401,6 +511,11 @@
 				"&dSensitive:&r Turns water into Frosted Ice, vanishing after a short time."
 			]
 			id: "7BC088BE563088C4"
+			rewards: [{
+				id: "07CD713CA8CD6496"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "725C09677147F2A2"
 				item: "ars_nouveau:glyph_freeze"
@@ -414,6 +529,11 @@
 			dependencies: ["5A8559F63EBA6E2B"]
 			description: ["&aHarvest&r is a glyph that will &dharvest and replant&r fully grown crops."]
 			id: "31B07CDE9DCCCAE1"
+			rewards: [{
+				id: "7DB01A0101AD436B"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "07F4F7D558B3EE75"
 				item: "ars_nouveau:glyph_harvest"
@@ -432,6 +552,11 @@
 				"&dSensitive:&r Causes the glyph to create Mage Fire instead, which cannot spread and has a shorter lifespan."
 			]
 			id: "07065DD6FAA18E20"
+			rewards: [{
+				id: "39A2D0F3ED922E7A"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "7F0B75137B7FFD2E"
 				item: "ars_nouveau:glyph_ignite"
@@ -450,6 +575,11 @@
 				"&dSensitive:&r Performs the action as if it were holding the item in your offhand."
 			]
 			id: "33C0F8D015541910"
+			rewards: [{
+				id: "2B99E6C62B8ABEB8"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "47C5D066CF962B68"
 				item: "ars_nouveau:glyph_interact"
@@ -468,6 +598,11 @@
 				"&dAOE:&r Increases radius."
 			]
 			id: "72D0DD4EA5CC0C65"
+			rewards: [{
+				id: "55A0A84A6C99F55C"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "4BC0B7614B24A725"
 				item: "ars_nouveau:glyph_pickup"
@@ -486,6 +621,11 @@
 				"&dSensitive:&r This glyph will no longer target blocks."
 			]
 			id: "7E0469DE4F2D2AB4"
+			rewards: [{
+				id: "3F6858D6BEACE17E"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "3C9F5A78C01D2994"
 				item: "ars_nouveau:glyph_gust"
@@ -506,6 +646,11 @@
 				"&dSensitive:&r Will no longer target blocks."
 			]
 			id: "7C77D4A6BF5B94F4"
+			rewards: [{
+				id: "55F0008E7DDC4D71"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "1E3998F551A9F907"
 				item: "ars_nouveau:glyph_launch"
@@ -523,6 +668,11 @@
 				"When used &dby a player&r, it will use blocks from the &dhotbar&r first."
 			]
 			id: "13BDAA1DBBF75589"
+			rewards: [{
+				id: "32FE06AD373B9EAD"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "0037CD7392E1B008"
 				item: "ars_nouveau:glyph_place_block"
@@ -541,6 +691,11 @@
 				"&dSensitive:&r Will no longer target blocks."
 			]
 			id: "701B719A72C638C7"
+			rewards: [{
+				id: "42113BA71F7DA637"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "5CB375831746828D"
 				item: "ars_nouveau:glyph_pull"
@@ -561,6 +716,11 @@
 				"&dDampen:&r Decreases power."
 			]
 			id: "76146AD65F94D37C"
+			rewards: [{
+				id: "0C0293B439AE2F73"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "1353553BE18077FF"
 				item: "ars_nouveau:glyph_redstone_signal"
@@ -574,6 +734,11 @@
 			dependencies: ["5A8559F63EBA6E2B"]
 			description: ["&aReset&r is a glyph that will &dreset the target&r of the Spell to the original target if it was changed. This allows you to &dbypass certain limits&r on other glyphs."]
 			id: "76E033E538D153A1"
+			rewards: [{
+				id: "7349D2D32DA1001D"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "2201BD85A141DEF1"
 				item: "ars_nouveau:reset"
@@ -593,6 +758,11 @@
 				"&dDampen:&r Causes the glyph to rotate counter-clockwise instead."
 			]
 			id: "37CE349E6A09724B"
+			rewards: [{
+				id: "664AA9FC454986F1"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "5BC35191442586E8"
 				item: "ars_nouveau:glyph_rotate"
@@ -611,6 +781,11 @@
 				"&dSensitive:&r Causes item pickup and usage effects to target the owner's inventory instead of adjacent inventories to the Rune."
 			]
 			id: "27D171DAE5C8AD4D"
+			rewards: [{
+				id: "0888E51AC6688E48"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "6122F9DB070AD1E6"
 				item: "ars_nouveau:glyph_rune"
@@ -630,6 +805,11 @@
 				"&dExtend Time:&r Increases the duration of the summons."
 			]
 			id: "1D34FC9BCEC5DBB8"
+			rewards: [{
+				id: "4B2F52ABD14186AF"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "48EC50B494AD6B51"
 				item: "ars_nouveau:glyph_summon_steed"
@@ -648,6 +828,11 @@
 				"&dExtend Time:&r Increases duration of the summons."
 			]
 			id: "68401E394CAB6855"
+			rewards: [{
+				id: "313E5F9A1CD46DC0"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "5E74106B062E82AA"
 				item: "ars_nouveau:glyph_summon_wolves"
@@ -666,6 +851,11 @@
 				"&dExtend Time:&r Increases duration of the effect."
 			]
 			id: "68A818488D57A25A"
+			rewards: [{
+				id: "0DAA92B7352BB8F6"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "2AC66C1E699630EC"
 				item: "ars_nouveau:glyph_snare"
@@ -688,6 +878,11 @@
 				"&dRandomize:&r Selects a random item from your inventory."
 			]
 			id: "2D9BF78976682BA2"
+			rewards: [{
+				id: "305B1035102E6696"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "2149EDAEEE64875B"
 				item: "ars_nouveau:glyph_toss"
@@ -701,6 +896,11 @@
 			dependencies: ["5A8559F63EBA6E2B"]
 			description: ["&aWololo&r is a glyph that will &dchange the colour of a compatible entity or block&r to the colour of the Spell."]
 			id: "084139B310E6190D"
+			rewards: [{
+				id: "5CDC12B0796F65A5"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "1463B20C7370BFD6"
 				item: "ars_nouveau:wololo"
@@ -714,6 +914,11 @@
 			dependencies: ["1DF1A3282A8EE394"]
 			description: ["&aAOE&r is a glyph that &daugments the previous glyph&r before it. It allows spells to &dtarget a larger area&r."]
 			id: "760CC57F94D127DA"
+			rewards: [{
+				id: "6815B745582E6B9F"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "0129F82BCD05818D"
 				item: "ars_nouveau:glyph_aoe"
@@ -727,6 +932,11 @@
 			dependencies: ["1DF1A3282A8EE394"]
 			description: ["&aAccelerate&r is a glyph that &daugments the previous glyph&r before it. It &dmakes Projectile-based spells move faster&r."]
 			id: "4E51F875A4CE1364"
+			rewards: [{
+				id: "0813CF047818B224"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "5E62F0594514CDD0"
 				item: "ars_nouveau:glyph_accelerate"
@@ -740,6 +950,11 @@
 			dependencies: ["1DF1A3282A8EE394"]
 			description: ["&aDampen&r is a glyph that &daugments the previous glyph&r before it. It makes the &deffects of some glyphs weaker&r."]
 			id: "23FF153C241DBE6A"
+			rewards: [{
+				id: "0FE4E1438D6A39BD"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "3AA0BE63A64839BD"
 				item: "ars_nouveau:glyph_dampen"
@@ -753,6 +968,11 @@
 			dependencies: ["1DF1A3282A8EE394"]
 			description: ["&aDecelerate&r is a glyph that &daugments the previous glyph&r before it. It &dmakes Projectile-based spells move slower&r."]
 			id: "0EDFDC39600C4FA9"
+			rewards: [{
+				id: "3648B5FB5A7D80F4"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "19C29DC293C35F25"
 				item: "ars_nouveau:glyph_decelerate"
@@ -766,6 +986,11 @@
 			dependencies: ["1DF1A3282A8EE394"]
 			description: ["&aDuration Down&r is a glyph that &daugments the previous glyph&r before it. It &dmakes duration-based effects have less time&r."]
 			id: "7E4BB25FBC3974AE"
+			rewards: [{
+				id: "468F4E2D9E762AF9"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "7AC446E4773EDC3F"
 				item: "ars_nouveau:glyph_duration_down"
@@ -779,6 +1004,11 @@
 			dependencies: ["1DF1A3282A8EE394"]
 			description: ["&aExtend Time&r is a glyph that &daugments the previous glyph&r before it. It &dmakes duration-based effects last longer&r."]
 			id: "58E7BC54CDCA15FF"
+			rewards: [{
+				id: "5EA164EC74406217"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "71032B9D908C520C"
 				item: "ars_nouveau:glyph_extend_time"
@@ -796,6 +1026,11 @@
 				"&cLuck has no effect on this glyph.&r"
 			]
 			id: "4AB353E3C24597EB"
+			rewards: [{
+				id: "0A4D13CC4D2D3666"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "26C0620DAB76A82D"
 				item: "ars_nouveau:glyph_extract"
@@ -809,6 +1044,11 @@
 			dependencies: ["1DF1A3282A8EE394"]
 			description: ["&aLuck&r is a glyph that &daugments the previous glyph&r before it. It allows certain glyphs to &dapply Fortune or Looting&r where able."]
 			id: "2B73119425120FBE"
+			rewards: [{
+				id: "66FC8B0DA12FC305"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "6798EB072CC9C3F8"
 				item: "ars_nouveau:glyph_fortune"
@@ -829,6 +1069,11 @@
 				"&dProjectile&r will be able to pierce entities."
 			]
 			id: "0AE897843746EF8D"
+			rewards: [{
+				id: "1E9D7C3C6493BE72"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "1BC46DE5CD9CDFC0"
 				item: "ars_nouveau:glyph_pierce"
@@ -842,6 +1087,11 @@
 			dependencies: ["1DF1A3282A8EE394"]
 			description: ["&aAccess Ender Inventory&r is a glyph that will &dopen your Ender Chest&r."]
 			id: "1675C237F580935B"
+			rewards: [{
+				id: "662E3D71B080601D"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "7A343FB7DC21FB18"
 				item: "ars_nouveau:glyph_ender_inventory"
@@ -855,6 +1105,11 @@
 			dependencies: ["1DF1A3282A8EE394"]
 			description: ["&aAnimate Block&r is a glyph that will &danimate the target block to fight for you&r. This does not give you Summoning Sickness, but will cost &da large amount of Mana&r."]
 			id: "6FB3B404956DBEF9"
+			rewards: [{
+				id: "24C306AA5860ECFE"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "2D135A970EFD76EC"
 				item: "ars_nouveau:glyph_animate_block"
@@ -874,6 +1129,11 @@
 				"- &dIf the target is a block of ice&r, it can erupt that instead."
 			]
 			id: "3C653236BA88F136"
+			rewards: [{
+				id: "0EE64F14D8BBF622"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "02C8124B5DE71BAE"
 				item: "ars_nouveau:glyph_cold_snap"
@@ -891,6 +1151,11 @@
 				"When &daugmented&r with &dExtend Time&r, if the target is an entity then it will instead make the entity wet."
 			]
 			id: "79B4CE8DB949DA1B"
+			rewards: [{
+				id: "2A41374A820BA0DB"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "17C15C57C04D14C9"
 				item: "ars_nouveau:glyph_conjure_water"
@@ -908,6 +1173,11 @@
 				"When &daugmented&r with &dSensitive&r, it can also target items."
 			]
 			id: "59BF99AE935BE0F4"
+			rewards: [{
+				id: "5C2671CE1C97D0FC"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "3875452D69A9CD1C"
 				item: "ars_nouveau:glyph_crush"
@@ -925,6 +1195,11 @@
 				"When &daugmented&r with &dAmplify&r, blocks with higher hardness can be swapped."
 			]
 			id: "17829B53606B3329"
+			rewards: [{
+				id: "41D1CC13F406B558"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "1A90EE2967A9B6AF"
 				item: "ars_nouveau:glyph_exchange"
@@ -944,6 +1219,11 @@
 				"When &daugmented&r with &dAOE&r, the size of the explosion is increased greatly, but the damage stays the same."
 			]
 			id: "479710E1D7D03F31"
+			rewards: [{
+				id: "18D34EB43788BF2B"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Self -> Explosion Think Fast Chucklenuts"
 			tasks: [{
 				id: "57ED7CA11C450683"
@@ -964,6 +1244,11 @@
 				"When &daugmented&r with &dExtend Time&r, the firework duration is increased."
 			]
 			id: "2260C53EE7D3DFB5"
+			rewards: [{
+				id: "0F3F89D1F67C9219"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "0DCDE2E9747936B4"
 				item: "ars_nouveau:glyph_firework"
@@ -982,6 +1267,11 @@
 				"- &dIf the mob is inflicted with Blasting&r, they also explode for more damage in addition to the Cinders."
 			]
 			id: "02BCD4C4DE7D35DA"
+			rewards: [{
+				id: "5459159C1B7024AF"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "48A85D9EAA3FE110"
 				item: "ars_nouveau:glyph_flare"
@@ -999,6 +1289,11 @@
 				"When &daugmented&r with &dExtend Time&r, it will cause players to lose their flying abilities and gain the Gravity effect, causing them to plummet with &ddouble fall damage&r."
 			]
 			id: "7DA735025C4F5C4E"
+			rewards: [{
+				id: "7D45C990AC4F4259"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "73FC289DAE89BAB7"
 				item: "ars_nouveau:glyph_gravity"
@@ -1012,6 +1307,11 @@
 			dependencies: ["1DF1A3282A8EE394"]
 			description: ["&aGrow&r is a glyph that will &dapply Bone Meal to the target&r. "]
 			id: "19E77C353263BF15"
+			rewards: [{
+				id: "05981D98AFB8CDD0"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "4A904C9438CB2576"
 				item: "ars_nouveau:glyph_grow"
@@ -1025,6 +1325,11 @@
 			dependencies: ["1DF1A3282A8EE394"]
 			description: ["&aHeal&r is a glyph that will &dheal some health and take some hunger&r. When used on &dundead mobs&r, this deals some magic damage instead."]
 			id: "721EDB772C315BEF"
+			rewards: [{
+				id: "0BC83498ECA12C5A"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "5969BC5F427132BD"
 				item: "ars_nouveau:glyph_heal"
@@ -1044,6 +1349,11 @@
 				"When &daugmented&r with &dExtend Time&r, a lingering potion is spawned."
 			]
 			id: "6A54B8F147F7CFAD"
+			rewards: [{
+				id: "0BD75B8AE7082CDF"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "387838C26D079357"
 				item: "ars_nouveau:glyph_infuse"
@@ -1057,6 +1367,11 @@
 			dependencies: ["1DF1A3282A8EE394"]
 			description: ["&aInvisibility&r is a glyph that will &dmake the target invisible&r. "]
 			id: "40578A7E19ECF623"
+			rewards: [{
+				id: "32140CDF8D598FBC"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: " "
 			tasks: [{
 				id: "54B2DA283EC72DE0"
@@ -1075,6 +1390,11 @@
 				"When &dtargeting&r with &dSelf&r, the name is applied to your offhand item."
 			]
 			id: "2F703E572672282F"
+			rewards: [{
+				id: "087E2EDCC58DC0BC"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "5BC8A4B3A57D1A81"
 				item: "ars_nouveau:glyph_name"
@@ -1088,6 +1408,11 @@
 			dependencies: ["1DF1A3282A8EE394"]
 			description: ["&aSense Magic&r is a glyph that will &dgive the target the Magic Find effect&r. This effect causes magical mobs within 75 blocks to glow, and reveals the spells inscribed on Runes."]
 			id: "062D75C46F37CB3A"
+			rewards: [{
+				id: "31757E9BF3601F2D"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "1C8D7559400A28CE"
 				item: "ars_nouveau:glyph_sense_magic"
@@ -1101,6 +1426,11 @@
 			dependencies: ["1DF1A3282A8EE394"]
 			description: ["&aSlowfall&r is a glyph that will &dapply the Slow Falling effect to the target&r. "]
 			id: "1C19A7AA5F6735E7"
+			rewards: [{
+				id: "1D6C21F6357FB398"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "03025EEFA95AE605"
 				item: "ars_nouveau:glyph_slowfall"
@@ -1122,6 +1452,11 @@
 				"When &daugmented&r with &dAOE&r, the number of items and blocks that can be smelted at once is increased."
 			]
 			id: "76A3A703219004ED"
+			rewards: [{
+				id: "2687A4124EACC334"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "215B4136DD702C48"
 				item: "ars_nouveau:glyph_smelt"
@@ -1139,6 +1474,11 @@
 				"This glyph deals no damage to grounded entities. "
 			]
 			id: "3970251A81742080"
+			rewards: [{
+				id: "602C2050AA54DF9E"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "3DBF6BB820EE5A51"
 				item: "ars_nouveau:glyph_wind_shear"
@@ -1152,6 +1492,11 @@
 			dependencies: ["0AB8680A6E3C5FA0"]
 			description: ["&aSplit&r is a glyph that &daugments the previous glyph&r before it. It allows spells to &dcast multiple projectiles&r."]
 			id: "0CB67FCFBF42B606"
+			rewards: [{
+				id: "0892AC3BD33CDAD7"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "0E4BC8AAA9C5ABAF"
 				item: "ars_nouveau:glyph_split"
@@ -1169,6 +1514,11 @@
 				"&dMore info on this spell&r can be found by &dholding Shift&r &7(default keybind)&r, which will become useful in &da future phase&r."
 			]
 			id: "16A144F0DC96DF7F"
+			rewards: [{
+				id: "7FF0B43610D51061"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "3AC922798E052E03"
 				item: "ars_nouveau:glyph_blink"
@@ -1190,6 +1540,11 @@
 				"When &daugmented&r with &dAOE&r, the radius of the sphere is increased."
 			]
 			id: "1BB74AD56D2FD616"
+			rewards: [{
+				id: "4864806B7E81008D"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "69260B4F0215D7FE"
 				item: "ars_nouveau:burst"
@@ -1203,6 +1558,11 @@
 			dependencies: ["0AB8680A6E3C5FA0"]
 			description: ["&aFangs&r is a glyph that will &dsummon Evoker Fangs&r in the direction of the spell. When used with Self, the fangs are instead summoned around you."]
 			id: "074644AD2E8CBEC5"
+			rewards: [{
+				id: "611B63C2790CBED2"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "0087AAF1342F340D"
 				item: "ars_nouveau:glyph_fangs"
@@ -1220,6 +1580,11 @@
 				"Hex will &dincrease damage taken&r from all sources if also afflicted with Poison, Fire, Wither, or Freezing, and also &dcuts the target's mana and health regneration in half&r."
 			]
 			id: "4D473C46546B709F"
+			rewards: [{
+				id: "2B0E5935CA28974C"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "25A0CA48BB5CC8F7"
 				item: "ars_nouveau:glyph_hex"
@@ -1237,6 +1602,11 @@
 				"When &daugmented&r with &dAmplify&r, blocks of higher hardness can be made intangible as well."
 			]
 			id: "1FD11A84966A24A5"
+			rewards: [{
+				id: "3A08244BA13C7D0B"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "799309ECA56DC9AF"
 				item: "ars_nouveau:glyph_intangible"
@@ -1256,6 +1626,11 @@
 				"This glyph also deals &dbonus damage to wet entities&r, and players wearing &denergy-capable items&r &7(those supporting FE or RF)&r."
 			]
 			id: "754AC06AC9054B99"
+			rewards: [{
+				id: "35996A4211873BDC"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "499CC805B0124E56"
 				item: "ars_nouveau:glyph_lightning"
@@ -1275,6 +1650,11 @@
 				"When &daugmented&r with &dDampen&r, this glyph will ignore gravity."
 			]
 			id: "3CFAEAF1F5507EB2"
+			rewards: [{
+				id: "6DC7A366B856361A"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "7FF5FBC4F2223A6B"
 				item: "ars_nouveau:glyph_linger"
@@ -1292,6 +1672,11 @@
 				"When &daugmented&r with &dSensitive&r, the projectiles will target blocks."
 			]
 			id: "73EDCF7B315FE825"
+			rewards: [{
+				id: "786261AB7B71E453"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "52D43E99625155DF"
 				item: "ars_nouveau:glyph_orbit"
@@ -1305,6 +1690,11 @@
 			dependencies: ["0AB8680A6E3C5FA0"]
 			description: ["&aRewind&r is a glyph that will &dsend an entity back in time&r. Blocks moved with spells can also be rewinded into solid blocks."]
 			id: "672C1AED343F1747"
+			rewards: [{
+				id: "16ADBCEFAF85515B"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "0BB451FA1941E5B4"
 				item: "ars_nouveau:rewind"
@@ -1318,6 +1708,11 @@
 			dependencies: ["0AB8680A6E3C5FA0"]
 			description: ["&aSummon Decoy&r is a glyph that will &dsummon a clone of yourself&r. Decoys will attract hostile mobs to attack them instead of you."]
 			id: "0003E58F419E0AF9"
+			rewards: [{
+				id: "6CE7631BD4877DB1"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "45E786D0B2B250CF"
 				item: "ars_nouveau:glyph_summon_decoy"
@@ -1339,6 +1734,11 @@
 				"When &daugmented&r with &dSplit&r, more skeletons are summoned."
 			]
 			id: "775D6366A96D6310"
+			rewards: [{
+				id: "42D74910D2E62819"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "0D9CB477DA145EBE"
 				item: "ars_nouveau:glyph_summon_undead"
@@ -1352,6 +1752,11 @@
 			dependencies: ["0AB8680A6E3C5FA0"]
 			description: ["&aSummon Vex&r is a glyph that will &dsummon three temporary Vexes&r to fight for you. This also gives you &dSummon Sickness&r, which prevents the further use of summoning glyphs for a time."]
 			id: "29DB3737A74AC12D"
+			rewards: [{
+				id: "0FD71EB6CC92CEC9"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "2975436D201003EF"
 				item: "ars_nouveau:glyph_summon_vex"
@@ -1373,6 +1778,11 @@
 				"When &daugmented&r with &dAOE&r, the wall becomes larger."
 			]
 			id: "74B7D4D0F2917E81"
+			rewards: [{
+				id: "6599AD6C6C2FF986"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "2258FCE1CBD2C5DC"
 				item: "ars_nouveau:glyph_wall"
@@ -1386,6 +1796,11 @@
 			dependencies: ["0AB8680A6E3C5FA0"]
 			description: ["&aWither&r is a glyph that will &dinflict Wither on the target&r."]
 			id: "3D8969524AA65A2B"
+			rewards: [{
+				id: "4552F707AF40319F"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "3E836D59B2CDB44E"
 				item: "ars_nouveau:glyph_wither"

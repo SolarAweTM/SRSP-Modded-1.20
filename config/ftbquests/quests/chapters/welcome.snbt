@@ -112,6 +112,12 @@
 			icon: "ftbquests:book"
 			id: "343033073CECDF2A"
 			min_width: 300
+			rewards: [{
+				count: 4
+				id: "42EE0705EFF052A7"
+				item: "minecraft:cooked_beef"
+				type: "item"
+			}]
 			shape: "gear"
 			subtitle: "Get to know your new favorite questing system!"
 			tasks: [{

@@ -20,6 +20,11 @@
 			dependency_requirement: "one_started"
 			description: ["This quest chapter covers a handful of things you may find useful."]
 			id: "695654EE3BCBE110"
+			rewards: [{
+				id: "1AFA2D9E7809A04D"
+				type: "xp"
+				xp: 10
+			}]
 			size: 2.0d
 			subtitle: "Tools of the Trade"
 			tasks: [{
@@ -43,6 +48,11 @@
 				"Silent tools are modular, and so you can build them generally however you like, while still being able to enchant them as if they were vanilla tools."
 			]
 			id: "580D1F89AD25FB5C"
+			rewards: [{
+				id: "48F74CCAFD494B4D"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Not actually silent."
 			tasks: [{
 				id: "1216D8F4FE54C4D2"
@@ -144,6 +154,11 @@
 			icon: "silentgear:template_board"
 			id: "3EC6B4CE2CBDA962"
 			min_width: 250
+			rewards: [{
+				id: "340F72BBF0F68D73"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Template board, palette, same thing..."
 			tasks: [
 				{
@@ -252,6 +267,11 @@
 				}
 			}
 			id: "16FDF737D9DBF2A6"
+			rewards: [{
+				id: "00884E9D7E531FA4"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "World's most original quest name!"
 			tasks: [
 				{
@@ -473,6 +493,11 @@
 					}
 					type: "item"
 				}
+				{
+					id: "4A2899FAA67A2EEC"
+					type: "xp"
+					xp: 10
+				}
 			]
 			shape: "circle"
 			subtitle: "All your docs in one place!"
@@ -489,6 +514,11 @@
 			dependencies: ["16FDF737D9DBF2A6"]
 			description: ["Now that you know the general basics of how Silent Gear works, the mod has a handful of machines you can use to make your tools extremely powerful. Read the quests after this to discover what they do."]
 			id: "062D537F9C1E5551"
+			rewards: [{
+				id: "588B91525312116F"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "579B1200D79BC1D0"
 				title: "I have read the description."
@@ -516,6 +546,11 @@
 			icon: "silentgear:material_grader"
 			id: "2CD2DE72C19ED643"
 			min_width: 300
+			rewards: [{
+				id: "7149328D68807721"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "SSX+ ULTRA MAX PERFECT"
 			tasks: [
 				{
@@ -595,6 +630,11 @@
 			]
 			id: "61390B566B4EC1FE"
 			min_width: 300
+			rewards: [{
+				id: "756228AE26FD5B2D"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Do you like to read? Read this!"
 			tasks: [
 				{
@@ -621,6 +661,11 @@
 				"Yes, it's that simple."
 			]
 			id: "2C252EEFD106DE76"
+			rewards: [{
+				id: "3369FBCCB72CC17B"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Become back your money!"
 			tasks: [{
 				id: "0953ECD9937EF890"
@@ -642,6 +687,11 @@
 				"For gems, you want to use the &aRecrystallizer&r."
 			]
 			id: "28ABA808715EA423"
+			rewards: [{
+				id: "5A164F2B3CCB8A49"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Alloyer? I hardly know her!"
 			tasks: [{
 				id: "55CAAFDB5A5CFC18"
@@ -660,6 +710,11 @@
 			]
 			icon: "silentgear:starlight_charger"
 			id: "14979D4649381A40"
+			rewards: [{
+				id: "11105408B5F30DEE"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Celestial tools"
 			tasks: [
 				{
@@ -681,6 +736,11 @@
 			description: ["Blueprints are templates that can be used infinitely."]
 			icon: "silentgear:blueprint_paper"
 			id: "202AAEBE11F779C8"
+			rewards: [{
+				id: "3CB313B7F65E71FA"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "\"its a reusable template. have a nice day\" - Boom"
 			tasks: [
 				{
@@ -708,6 +768,11 @@
 				"Craft tips with a &6tip upgrade template or blueprint&r - use JEI to find the recipes."
 			]
 			id: "6B8A9B1E251B05B5"
+			rewards: [{
+				id: "5E890CF3185842C4"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Tip of the iceberg"
 			tasks: [{
 				id: "0FE79F0BAB4EF5FE"
@@ -739,6 +804,11 @@
 				"You can use a &6coating template or blueprint&r to create a coating, and then craft it with the tool to apply it."
 			]
 			id: "4B590AF98B23947E"
+			rewards: [{
+				id: "59DE41F74EE22E21"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "A fresh coat of paint"
 			tasks: [{
 				id: "6C24A170ED8CBFAE"
@@ -772,6 +842,11 @@
 				"See JEI to find out how you can upgrade your backpack's capacity."
 			]
 			id: "00EE131DB547C2F4"
+			rewards: [{
+				id: "79BA5AAB9D4D458C"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Sophisticated, but also modular!"
 			tasks: [{
 				id: "51B05C04675EAA7F"
@@ -792,6 +867,11 @@
 				"Info will display in the top left corner of your screen, showing you if the biome was found, where it is, and how far you are from it."
 			]
 			id: "0584E441D6EE02FF"
+			rewards: [{
+				id: "1DA1D157842A4AC0"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Where do you want to go today?"
 			tasks: [{
 				id: "638796295B4DD7F6"
@@ -816,6 +896,11 @@
 			]
 			icon: "waystones:waystone"
 			id: "6517E4D6916B6A4F"
+			rewards: [{
+				id: "6F52713D7606F8A7"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Get from point A to point C and then point B"
 			tasks: [{
 				id: "72AA66B4EAFAD7BF"
@@ -840,6 +925,11 @@
 				"You can also open a &6radial menu&r with R &7(default keybind)&r to get more options for chiseling and placement."
 			]
 			id: "6B1B776A24339D89"
+			rewards: [{
+				id: "48055B4BB8B22E47"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "64 bits, 32 bits, 16 bits, 4 BITS, 2 BITS, ONE BIT"
 			tasks: [{
 				advancement: "chiselsandbits:chiselsandbits/root"
@@ -863,6 +953,11 @@
 				}
 			}
 			id: "367A6AEAB981335D"
+			rewards: [{
+				id: "2AF2D250757063E5"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "But if you close your eyes"
 			tasks: [{
 				id: "11C55F59A595391B"
@@ -926,6 +1021,11 @@
 				"This is a feature from &aQuark&r, a mod by Vazkii."
 			]
 			id: "2AD39CD26D6605B6"
+			rewards: [{
+				id: "15F2B7A43463B190"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Enchantment glint galore"
 			tasks: [{
 				id: "37B82B4DEFCFBAD1"
@@ -945,6 +1045,11 @@
 			]
 			icon: "create:clipboard"
 			id: "451D71520AC8BE6B"
+			rewards: [{
+				id: "79C557D5F9D590FA"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Show off your special stuff!"
 			tasks: [{
 				id: "34C2F1E76326C3E0"
@@ -963,6 +1068,11 @@
 				"This is a feature from &aQuark&r, a mod by Vazkii."
 			]
 			id: "10C9E14777AD1E49"
+			rewards: [{
+				id: "2C5B28BC8E9FB82B"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "needs more variety"
 			tasks: [{
 				id: "07604A1F20A2D7FA"
@@ -987,6 +1097,11 @@
 				tag: { }
 			}
 			id: "794FC867B6758318"
+			rewards: [{
+				id: "1F4DF8F1B8247C26"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Not to be confused with AE2 patterns"
 			tasks: [
 				{
@@ -1027,6 +1142,11 @@
 				tag: { }
 			}
 			id: "79A460F865C118A7"
+			rewards: [{
+				id: "121314441549EA1B"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "A permanent bond"
 			tasks: [
 				{
@@ -1061,6 +1181,11 @@
 			description: ["These upgrades offer the functionality of Chipped's various stations in a Sophisticated Storage &7(or backpack)&r upgrade."]
 			icon: "sophisticatedstorage:chipped/tinkering_table_upgrade"
 			id: "1888166D9C751DBD"
+			rewards: [{
+				id: "546C360469D27CD6"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Reduce clutter"
 			tasks: [{
 				id: "5D4370226E107E6F"
@@ -1148,6 +1273,11 @@
 				"There are also dedicated upgrade items that will increase the capacity/tier of the chest by simply right clicking on them."
 			]
 			id: "106BE9BA38F303F6"
+			rewards: [{
+				id: "49D4A1B914FF8733"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Backbacks but static!"
 			tasks: [{
 				id: "60859AC59E507BA3"
@@ -1203,6 +1333,11 @@
 				"&8(Don't know what this means? Find out more in the JEI quest in this quest chapter!)&r"
 			]
 			id: "4C0823B13BC79982"
+			rewards: [{
+				id: "3194798010C8912F"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Backpacks aka All-In-One Portable Storage"
 			tasks: [{
 				id: "7F3F70D7F2C7ED3F"
@@ -1228,6 +1363,11 @@
 			]
 			id: "5AE9F88949F6EF44"
 			min_width: 300
+			rewards: [{
+				id: "659FE23274E0C846"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "The REAL All-In-One Storage"
 			tasks: [{
 				id: "4EC55375A8BDA8C7"
@@ -1246,6 +1386,11 @@
 				"Hover over the item and check its tooltip to learn more."
 			]
 			id: "774914553E120A14"
+			rewards: [{
+				id: "69B38C3EF964EDA0"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Who's the shortest?"
 			tasks: [{
 				id: "4D9FAE5ABECD376B"
@@ -1269,6 +1414,11 @@
 				"Patterns are also able to use bits directly from the bag."
 			]
 			id: "2B534AF72D62B045"
+			rewards: [{
+				id: "5D557FAEA8C76197"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "We have this in the bag."
 			tasks: [{
 				id: "7C2771F55532D67C"
@@ -1293,6 +1443,11 @@
 				"This can be very useful if you need to move things around in a base, and it even works with double chests."
 			]
 			id: "3C2027B8CEE96ECA"
+			rewards: [{
+				id: "5F0A66B726E611EE"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "No more items going everywhere!"
 			tasks: [{
 				id: "77BEF995BA7791C8"
@@ -1324,6 +1479,11 @@
 			icon: "storagedrawers:oak_full_drawers_4"
 			id: "7BE1BB906139D39B"
 			min_width: 250
+			rewards: [{
+				id: "1F1C46DFC98A2A43"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "god i love the limited 3D they used for this game, its so charming"
 			tasks: [{
 				id: "6B35C85C4F50FC47"
@@ -1352,6 +1512,11 @@
 				"With a &aFraming Table&r, you can replace the &6inner, outer, and trim textures&r of drawers."
 			]
 			id: "119231B96C42D36D"
+			rewards: [{
+				id: "53E258E298B111C4"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "I've been framed!"
 			tasks: [{
 				id: "2F8975AF27E1F0EE"
@@ -1370,6 +1535,11 @@
 			]
 			icon: "storagedrawers:compacting_drawers_3"
 			id: "4CC05CF2A84EC26D"
+			rewards: [{
+				id: "4FC0223734F2E8AC"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Drawer.zip"
 			tasks: [{
 				id: "36D3544B5609CC4C"
@@ -1417,6 +1587,11 @@
 				"Search &6\"drawer upgrade\" &rin JEI to see a list of all Drawer Upgrades and what they do."
 			]
 			id: "1A2882743E00F3D7"
+			rewards: [{
+				id: "2D8F4F6E62D6BFE9"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Upgrade Complete"
 			tasks: [{
 				id: "13D231A2E695511E"
@@ -1436,6 +1611,11 @@
 			]
 			icon: "storagedrawers:drawer_key"
 			id: "5C8303F341E8A124"
+			rewards: [{
+				id: "41EA12C0C5BA4B71"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "A key to your Drawer's heart"
 			tasks: [{
 				id: "02330E1C9C093278"
@@ -1501,6 +1681,11 @@
 			icon: "storagedrawers:controller"
 			id: "698DE10F206C017E"
 			min_width: 250
+			rewards: [{
+				id: "3689DDB3B52A2F57"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "In CTRL"
 			tasks: [
 				{

@@ -13,6 +13,11 @@
 			dependencies: ["7BE4785AF2C9E03D"]
 			description: ["This quest chapter covers most of the &dside content&r present in &dArs Nouveau&r. "]
 			id: "0B0589E73F8ECE09"
+			rewards: [{
+				id: "7523804907AFB250"
+				type: "xp"
+				xp: 10
+			}]
 			size: 2.0d
 			tasks: [{
 				id: "0FCF9456DA04E02F"
@@ -32,6 +37,11 @@
 				"To use, press &dG&r &7(default keybind)&r to open its radial menu."
 			]
 			id: "631C5B69E4D65B29"
+			rewards: [{
+				id: "40BA41E04938CBDC"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "40A350C255C4D3C7"
 				item: "ars_nouveau:alchemists_crown"
@@ -53,6 +63,11 @@
 			]
 			icon: "ars_nouveau:basic_spell_turret"
 			id: "58B82E30E8EF0BA5"
+			rewards: [{
+				id: "02A4284976077181"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "32143FCAE4BFADC5"
 				item: {
@@ -101,6 +116,11 @@
 				"Additionally, spells targeting you &dwill also affect your summons&r."
 			]
 			id: "74ED5DCCFB11A023"
+			rewards: [{
+				id: "41378574CC96EFE9"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "5221D65B5205E044"
 				item: "ars_nouveau:summon_focus"
@@ -119,6 +139,11 @@
 				"These &dcan be chained&r, so the range is &dtheoretically infinite&r."
 			]
 			id: "5432FD2B7F5FA477"
+			rewards: [{
+				id: "33373452298EBEDB"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "6CBA23A24D1A2C52"
 				item: "ars_nouveau:redstone_relay"
@@ -139,6 +164,11 @@
 				"Giving it a &dSpell Parchment&r will filter the Sensor to &donly detect the inscribed spell&r."
 			]
 			id: "6FA25612281B5E3E"
+			rewards: [{
+				id: "0791EBA07F0C4876"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "45D75DFC1DCADFAA"
 				item: "ars_nouveau:spell_sensor"
@@ -158,6 +188,11 @@
 			]
 			icon: "ars_nouveau:relay"
 			id: "08B6FB5FC58FA2A3"
+			rewards: [{
+				id: "006B1FDD9C7B402C"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "31BED0458B57B20C"
 				item: {
@@ -202,6 +237,11 @@
 			dependencies: ["0B0589E73F8ECE09"]
 			description: ["The &aRing of Jumping&r, when equipped, allows the wearer to &djump in midair&r at the cost of &dMana&r."]
 			id: "1ECAFAEDE711B036"
+			rewards: [{
+				id: "1B9E4DF3D83062B9"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "6A4035D4CAA29F9C"
 				item: "ars_nouveau:jump_ring"
@@ -234,6 +274,11 @@
 				}
 			}
 			id: "3A7C542E0A2286FF"
+			rewards: [{
+				id: "6E39FCA0FC66EDC3"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "71DF9D34358D2A67"
 				item: {
@@ -295,6 +340,11 @@
 				"See the &dWorn Notebook&r for more info."
 			]
 			id: "42E5787C8A911B11"
+			rewards: [{
+				id: "65F8FBA0299CE308"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "1AFD8E31DFC55BA8"
 				item: "ars_nouveau:item_detector"
@@ -307,6 +357,11 @@
 			dependencies: ["0B0589E73F8ECE09"]
 			description: ["The &aBelt of Unstable Gifts&r, when equipped, will occasionally give you a &drandom effect&r for a short time."]
 			id: "3926DA0B2AD1DBC9"
+			rewards: [{
+				id: "5D67D30A33982EF7"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "6966A0959F03CE6B"
 				item: "ars_nouveau:belt_of_unstable_gifts"
@@ -320,6 +375,11 @@
 			description: ["The &aRings of Discount&r, when equipped, will offer a &dslight boost&r to Mana Regeneration and Max Mana, and also &dreduce the cost of spells&r by a flat amount."]
 			icon: "ars_nouveau:ring_of_greater_discount"
 			id: "75B97B882928106C"
+			rewards: [{
+				id: "406A317FAD8F4AD3"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "5B1A5B2F15E4EA3A"
 				item: {
@@ -352,6 +412,11 @@
 			dependencies: ["0B0589E73F8ECE09"]
 			description: ["The &aDowsing Rod&r will temporarily grant you the &dScrying effect for Budding Amethyst&r, and &dMagic Find&r."]
 			id: "0748D4E529F5836B"
+			rewards: [{
+				id: "43C0F59F6F28705B"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "3215070260B221B7"
 				item: {
@@ -375,6 +440,11 @@
 			]
 			icon: "ars_nouveau:pierce_arrow"
 			id: "098A0647DB869D91"
+			rewards: [{
+				id: "034E077B8DD7F6A5"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "60C7499ACC9A1658"
 				item: {
@@ -415,6 +485,11 @@
 				"It can be used again to dispel the light."
 			]
 			id: "285817B667798126"
+			rewards: [{
+				id: "2DE9A317D3FD80AA"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "6B0F9819FABF1125"
 				item: "ars_nouveau:jar_of_light"
@@ -433,6 +508,11 @@
 				"The Belt also provides a &dsmall amount of fall damage resistance&r."
 			]
 			id: "7944E0F207597CCE"
+			rewards: [{
+				id: "4470E33EED09B5FB"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "28428A7C5E73BC4D"
 				item: "ars_nouveau:belt_of_levitation"
@@ -446,6 +526,11 @@
 			description: ["These &aAmulets&r, when equipped, &dincrease their respective stats&r by a moderate amount."]
 			icon: "ars_nouveau:amulet_of_mana_regen"
 			id: "09DBDDD2F3E50C83"
+			rewards: [{
+				id: "153936474CD1A163"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "123B386B53CDD29D"
 				item: {
@@ -486,6 +571,11 @@
 				"To toggle the Jar on or off, you can &dsneak-right-click while holding the Jar&r."
 			]
 			id: "347C9D29606475B8"
+			rewards: [{
+				id: "27D8F9A6D1192EDA"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "0F88776FE3F618BF"
 				item: "ars_nouveau:void_jar"
@@ -504,6 +594,11 @@
 				"Note that when this occurs, it can be tracked by an Observer."
 			]
 			id: "2BCA59F5BA607F29"
+			rewards: [{
+				id: "34F8392025E086AD"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "60319284997476A8"
 				item: "ars_nouveau:spell_prism"
@@ -522,6 +617,11 @@
 				"To fill, you can either &duse the Flask on a Potion Jar&r, or &dcraft it with a normal Potion&r."
 			]
 			id: "5F683043A74DCA28"
+			rewards: [{
+				id: "1AF279E66EC5D26E"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "35F79138D6A82294"
 				item: {
@@ -541,6 +641,11 @@
 			dependencies: ["0B0589E73F8ECE09"]
 			description: ["The &aVoid Prism&r will &dinstantly destroy&r any spell projectile that passes through it."]
 			id: "5509D193B44F7A4A"
+			rewards: [{
+				id: "088A1F6B0FAF334F"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "420660868CF56AD1"
 				item: "ars_nouveau:void_prism"

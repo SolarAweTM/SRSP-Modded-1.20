@@ -18,6 +18,11 @@
 			]
 			hide_dependency_lines: true
 			id: "7E5E335541331112"
+			rewards: [{
+				id: "7812B6D43D7D7B46"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Ultra Hand"
 			tasks: [{
 				id: "34BE1585992AB19F"
@@ -37,6 +42,11 @@
 				"&eCheck back often to see if there's anything interesting you can make!&r"
 			]
 			id: "50FF774BEF232E50"
+			rewards: [{
+				id: "745135E587FDAC68"
+				type: "xp"
+				xp: 10
+			}]
 			size: 2.0d
 			tasks: [{
 				id: "4FBF73CD2ED0B900"
@@ -54,17 +64,24 @@
 				"&6Ponder&r this item to learn how to use it."
 			]
 			id: "294BBFFDC374897D"
-			rewards: [{
-				id: "1ACD76F6EAD1CDE0"
-				item: {
-					Count: 1
-					id: "create:super_glue"
-					tag: {
-						Damage: 0
+			rewards: [
+				{
+					id: "1ACD76F6EAD1CDE0"
+					item: {
+						Count: 1
+						id: "create:super_glue"
+						tag: {
+							Damage: 0
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "15053E30D1110756"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "Sticky Situation"
 			tasks: [{
 				id: "2962A3A9AA72EED5"
@@ -94,6 +111,11 @@
 			icon: "create:cogwheel"
 			id: "5083CEA54727E68D"
 			min_width: 300
+			rewards: [{
+				id: "7A2E2BA1887D0800"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "135AF6E71333B0A4"
 				title: "Checkmark"
@@ -115,6 +137,11 @@
 				"You can &6Ponder&r this item to learn more about it."
 			]
 			id: "2050D598FF07536A"
+			rewards: [{
+				id: "15DC5D85F73029C4"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "64D315E9EB26C654"
 				item: "create:mechanical_drill"
@@ -135,6 +162,11 @@
 				"You can &6Ponder&r this item to learn more about it."
 			]
 			id: "304270E80B04E5A2"
+			rewards: [{
+				id: "4F51078AEBFB8F0A"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "666969A94F09E498"
 				item: "create:mechanical_saw"
@@ -153,6 +185,11 @@
 				"You can &6Ponder&r this item to learn more about it."
 			]
 			id: "087F3AD7686DEDAB"
+			rewards: [{
+				id: "7F35C6960DA34885"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "4E259085FC89E708"
 				item: "create:mechanical_harvester"
@@ -176,6 +213,11 @@
 			]
 			icon: "create:mechanical_piston"
 			id: "542CE5D3801CB0C2"
+			rewards: [{
+				id: "720F67B1CDE271AF"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [
 				{
 					id: "550190F3F71681A2"
@@ -220,6 +262,11 @@
 			]
 			icon: "create:gantry_shaft"
 			id: "79873CDEF9B67320"
+			rewards: [{
+				id: "1BACD0E26FFFBAD8"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [
 				{
 					id: "1D28A82A2E4F07C1"
@@ -245,6 +292,11 @@
 			]
 			icon: "create:portable_storage_interface"
 			id: "0D2248AC5E7A98AE"
+			rewards: [{
+				id: "66E44573E728F132"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "a portable portable portable device"
 			tasks: [{
 				id: "483ABEF0407C92FD"
@@ -288,6 +340,11 @@
 				"You can &6Ponder&r this item to learn more about it."
 			]
 			id: "75172BDEAC2BD2F8"
+			rewards: [{
+				id: "680FBBC71D5D6FFF"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "5A2FAA4AFAAA81BB"
 				item: "create:rope_pulley"
@@ -304,6 +361,11 @@
 				"You can &6Ponder&r this item to learn how to use it."
 			]
 			id: "6572F2E7AAE79744"
+			rewards: [{
+				id: "04663F2F4D314967"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "33FC217D882A0DD7"
 				item: "create:elevator_pulley"
@@ -320,6 +382,11 @@
 				"You can &6Ponder&r this item to learn more about it."
 			]
 			id: "4A681CF9970E071D"
+			rewards: [{
+				id: "6AEE859086F80703"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "7D423EBBB2113770"
 				item: "create:mechanical_bearing"
@@ -338,6 +405,11 @@
 				"You can &6Ponder&r this item to learn more about it, including how to have it &6show minutes&r as well."
 			]
 			id: "6A2827A5A933A556"
+			rewards: [{
+				id: "73D407AB8ED326C4"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "5D7280A7785D9E3D"
 				item: "create:clockwork_bearing"
@@ -356,6 +428,11 @@
 				"You can &6Ponder&r this item to learn more about it."
 			]
 			id: "12DB2B6A13DB813F"
+			rewards: [{
+				id: "6FA158AD4878C43E"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "01F8ADC08A2ED1A4"
 				item: "create:cart_assembler"
@@ -375,6 +452,11 @@
 			]
 			icon: "create:linear_chassis"
 			id: "1F10C6443A9C1A79"
+			rewards: [{
+				id: "5700FEC2F1567742"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "50C1EEC2034BDDF7"
 				item: {
@@ -419,6 +501,11 @@
 				"You can &6Ponder&r this item to learn more about it."
 			]
 			id: "0040A3CA218EBE2D"
+			rewards: [{
+				id: "75121836AEF3A79E"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "0CBED0AABA34302F"
 				item: "create:sticker"
@@ -437,6 +524,11 @@
 				"You can &6Ponder&r this item to learn more about it."
 			]
 			id: "58D967380B2A45C9"
+			rewards: [{
+				id: "094FDA63812F1DC3"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "4248C1932CF1B7DF"
 				item: "create:contraption_controls"
@@ -462,6 +554,11 @@
 				}
 			}
 			id: "431C5804C31CEA21"
+			rewards: [{
+				id: "3F094811D4AF08D7"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [
 				{
 					id: "230DD7F82103B3F5"
@@ -574,6 +671,11 @@
 				}
 			}
 			id: "10EFD21E7A036C62"
+			rewards: [{
+				id: "3F2C298DBC91B03B"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "36BFE5AEB4785009"
 				item: {
@@ -618,6 +720,11 @@
 				}
 			}
 			id: "589512E0702C8A66"
+			rewards: [{
+				id: "0581FF63C12DDA0C"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "32FBBE2A35718122"
 				title: "Checkmark"
@@ -694,6 +801,11 @@
 					item: "minecraft:poisonous_potato"
 					type: "item"
 				}
+				{
+					id: "42CFB239A18DF462"
+					type: "xp"
+					xp: 10
+				}
 			]
 			subtitle: "Spud Launcher"
 			tasks: [{
@@ -721,6 +833,11 @@
 				"It can also be &6enchanted&r."
 			]
 			id: "0460BA7CA69B8F3F"
+			rewards: [{
+				id: "391C88FFAAD9ED01"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "3B049D863CACCCB1"
 				item: {
@@ -747,6 +864,11 @@
 				"&6Right-click the air&r to &6remove&r any of your mirrors."
 			]
 			id: "7AC377CC83C4415D"
+			rewards: [{
+				id: "73930BC317B3B95E"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "5C8FF19C469A3458"
 				item: "create:wand_of_symmetry"
@@ -770,6 +892,11 @@
 				}
 			}
 			id: "6C9D2577A291C1AB"
+			rewards: [{
+				id: "4CAEAB917884EE1E"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Snake? Snake?! SNAAAAAAKE!!"
 			tasks: [
 				{
@@ -838,6 +965,11 @@
 				"When doing so, you can also check out the possible Targets and Sources for Display Links in the &6top left corner of the Ponder screen&r."
 			]
 			id: "5FE954AD928F1637"
+			rewards: [{
+				id: "4D40EAD72EF02AF9"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "330FA86DE82D3C5B"
 				item: "create:display_link"
@@ -855,6 +987,11 @@
 			]
 			icon: "create:empty_schematic"
 			id: "0911EA1339458D20"
+			rewards: [{
+				id: "1EAA7329BA8F92C3"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "48C3D95366FAC386"
 				type: "checkmark"
@@ -877,12 +1014,19 @@
 				"You can &6Ponder&r this item to learn more about it."
 			]
 			id: "76F550EF7613360A"
-			rewards: [{
-				count: 3
-				id: "12218EFF6DE70959"
-				item: "create:display_board"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 3
+					id: "12218EFF6DE70959"
+					item: "create:display_board"
+					type: "item"
+				}
+				{
+					id: "0686E48A991D3059"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "323CB4CF99E6C4F6"
 				item: "create:display_board"
@@ -905,6 +1049,11 @@
 				"You can &6Ponder&r this item to learn more about it."
 			]
 			id: "7C7B44E1255FD59E"
+			rewards: [{
+				id: "69F33E326AF55BF6"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "4FCE035E11144108"
 				item: "create:nixie_tube"
@@ -922,6 +1071,11 @@
 			]
 			icon: "minecraft:redstone"
 			id: "4F77A11667048B2F"
+			rewards: [{
+				id: "6817E6839283829F"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "3178F219B28A8772"
 				type: "checkmark"
@@ -938,6 +1092,11 @@
 				"You can &6Ponder&r this item to learn how to use it."
 			]
 			id: "0C3E40AB5E0C8D8A"
+			rewards: [{
+				id: "7FA0BE574C148EA4"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "7E7971BF177CEAEC"
 				item: "create:redstone_link"
@@ -956,6 +1115,11 @@
 				"You can &6Ponder&r this item to learn more about it."
 			]
 			id: "7499340272FFD37F"
+			rewards: [{
+				id: "7F5765E3EFC3BE0D"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "hello I would like 4.999999999997 apples please"
 			tasks: [{
 				id: "4D418466E7C0D4D6"
@@ -975,6 +1139,11 @@
 				"It can also be placed on a Lectern!"
 			]
 			id: "485B1623287E60A5"
+			rewards: [{
+				id: "1FA75B5884C0093D"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "This is an Xbox."
 			tasks: [{
 				id: "56EE3CED19BA8738"
@@ -995,6 +1164,11 @@
 				"You can &6Ponder&r this item to learn more about it."
 			]
 			id: "42466EE936C53C62"
+			rewards: [{
+				id: "7304390E4470A78D"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "5AAA4CBE9FB36C59"
 				item: "create:redstone_contact"
@@ -1011,6 +1185,11 @@
 				"You can &6Ponder&r this item to learn more about it."
 			]
 			id: "35427D377B13E97E"
+			rewards: [{
+				id: "75A69121014F3A41"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "557564FFBE9A11B7"
 				item: "create:rose_quartz_lamp"
@@ -1027,6 +1206,11 @@
 				"You can &6Ponder&r this item to learn more about it."
 			]
 			id: "1F7CA198D5C6A7A5"
+			rewards: [{
+				id: "69C7C8FA62283690"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "6EB7F75AE0523260"
 				item: "create:pulse_repeater"
@@ -1043,6 +1227,11 @@
 				"You can &6Ponder&r this item to learn more about it."
 			]
 			id: "64F1F912BC5D0696"
+			rewards: [{
+				id: "49188913E2F0E8BE"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "653580301126FAA1"
 				item: "create:pulse_extender"
@@ -1061,6 +1250,11 @@
 				"You can &6Ponder&r this item to learn more about it."
 			]
 			id: "44084514B5082514"
+			rewards: [{
+				id: "3B91E5A59E932518"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "0E9A24EDE24A2A24"
 				item: "create:pulse_timer"
@@ -1077,6 +1271,11 @@
 				"You can &6Ponder&r this item to learn how to use it."
 			]
 			id: "4C1E8CA1FC955EC4"
+			rewards: [{
+				id: "59133F469945B10E"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "3750E78EAE0818AF"
 				item: "create:powered_latch"
@@ -1093,6 +1292,11 @@
 				"You can &6Ponder&r this item to learn how to use it."
 			]
 			id: "316F6828D4E9FFEB"
+			rewards: [{
+				id: "1428D91B1008B93A"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "1764A10825DD47C5"
 				item: "create:powered_toggle_latch"
@@ -1114,11 +1318,18 @@
 			hide_dependency_lines: true
 			id: "3C78507EA5143D05"
 			min_width: 300
-			rewards: [{
-				id: "33C09B45D848C206"
-				item: "create:crafting_blueprint"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "33C09B45D848C206"
+					item: "create:crafting_blueprint"
+					type: "item"
+				}
+				{
+					id: "0302E52BF10848B7"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "Microcrafting-B-Gone"
 			tasks: [{
 				id: "7735E41E28758CF2"
@@ -1137,6 +1348,11 @@
 			]
 			hide_dependency_lines: true
 			id: "79C7CA4745D572B9"
+			rewards: [{
+				id: "47DA683663539711"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Write that down, write that down!"
 			tasks: [{
 				id: "4F1948DE8B5E6E01"
@@ -1158,6 +1374,11 @@
 			hide_dependency_lines: true
 			icon: "create:brown_toolbox"
 			id: "6FD0AFB0B59A720C"
+			rewards: [{
+				id: "609BAE645D9D92DD"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "60241C7042F6D427"
 				item: {
@@ -1194,6 +1415,11 @@
 			icon: "create:schematic_and_quill"
 			id: "4FD3306CB3609D91"
 			min_width: 300
+			rewards: [{
+				id: "57B3DEC425115436"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [
 				{
 					id: "19CF5FD054BCAE19"
@@ -1227,6 +1453,11 @@
 				"You can also put a &6Clipboard&r in the top-right slot, and it will fill out the Clipboard with &6a list of materials&r a schematic needs."
 			]
 			id: "1694DF04334EC46B"
+			rewards: [{
+				id: "5111358BEC8E89B3"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "22DEE1BE3C56A636"
 				item: "create:schematicannon"
@@ -1244,6 +1475,11 @@
 			]
 			hide_dependency_lines: true
 			id: "63B2EB9DEB3B28A4"
+			rewards: [{
+				id: "02B668217E60B40F"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "73E0EF5092E0A9DF"
 				item: "create:turntable"
@@ -1263,6 +1499,11 @@
 			]
 			hide_dependency_lines: true
 			id: "68ACFF26EA418F69"
+			rewards: [{
+				id: "6356E4B4841D04AC"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "459384822F6609E3"
 				item: "create:cuckoo_clock"
@@ -1280,6 +1521,11 @@
 			]
 			hide_dependency_lines: true
 			id: "44BAEB31101C6175"
+			rewards: [{
+				id: "5D8EC7C43B4518E1"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "2B1358DC1D92DEC4"
 				item: "create:flywheel"
@@ -1301,6 +1547,11 @@
 			]
 			hide_dependency_lines: true
 			id: "35E291663BFBCDCB"
+			rewards: [{
+				id: "7ADC241B876E66A9"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "3BDB4AC41E445994"
 				item: "create:weighted_ejector"
@@ -1314,6 +1565,11 @@
 			description: ["&aTree Fertilizer&r will &6instantly grow a Sapling&r when used on one, &6ignoring any space constraints&r."]
 			hide_dependency_lines: true
 			id: "3039BCF6D40C5A47"
+			rewards: [{
+				id: "02B4EB52C141C779"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "07848EA6617BAF5F"
 				item: "create:tree_fertilizer"
@@ -1341,6 +1597,11 @@
 			hide_dependency_lines: true
 			id: "7B7F91A0C9DFBCB5"
 			min_width: 300
+			rewards: [{
+				id: "3D91C0B94A2A3D41"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "541F4F81568DCCFD"
 				item: "create:encased_fan"
@@ -1357,6 +1618,11 @@
 				"Note that doing this &cprevents it from interacting with items&r for processing."
 			]
 			id: "41B6B91267416F33"
+			rewards: [{
+				id: "4676D4CBB00378C2"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "1ADFDD3A36DC6FE2"
 				item: "create:nozzle"
@@ -1374,6 +1640,11 @@
 			]
 			hide_dependency_lines: true
 			id: "73031CC9DC0E269A"
+			rewards: [{
+				id: "05FBA3E32C4C1825"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "2B921C3FD4B92D5B"
 				item: "create:fluid_valve"
@@ -1387,6 +1658,11 @@
 			description: ["The &aMinecart Coupling&r attaches two Minecarts together."]
 			hide_dependency_lines: true
 			id: "7B8C4521D63C221F"
+			rewards: [{
+				id: "37175DC97B5F4DAB"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "1D9F809CF61886A5"
 				item: "create:minecart_coupling"
@@ -1408,6 +1684,11 @@
 			]
 			hide_dependency_lines: true
 			id: "0B82DB6962C63107"
+			rewards: [{
+				id: "0991FDE6965818A6"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "3B6C63278C32C449"
 				item: "create:chain_conveyor"
@@ -1425,6 +1706,11 @@
 			]
 			hide_dependency_lines: true
 			id: "526A784034FE77C4"
+			rewards: [{
+				id: "7437D1425CD94133"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "7EF63A1CB0930C0D"
 				item: "create:controller_rail"
@@ -1444,6 +1730,11 @@
 			]
 			hide_dependency_lines: true
 			id: "1CA0BBEA87485EE9"
+			rewards: [{
+				id: "6EEE6D9044C293AD"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "13BC427E6FCAD48D"
 				item: "create:filter"
@@ -1465,6 +1756,11 @@
 			]
 			hide_dependency_lines: true
 			id: "7A70F3FAECDA1879"
+			rewards: [{
+				id: "5ABF8F04D2F66311"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "3187017652103D5E"
 				item: "create:attribute_filter"
@@ -1483,6 +1779,11 @@
 			hide_dependency_lines: true
 			icon: "createaddition:digital_adapter"
 			id: "4F671D2881E44A55"
+			rewards: [{
+				id: "3BAD184136A2F799"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Now you're playing with Power"
 			tasks: [{
 				id: "0C22972189CFC084"
@@ -1500,6 +1801,11 @@
 				"You can &6Ponder&r this item to learn more about it."
 			]
 			id: "370213C881C0CDD2"
+			rewards: [{
+				id: "1EE6145A4CBD4B10"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "62D655DCB289CCF3"
 				item: "createaddition:modular_accumulator"
@@ -1520,6 +1826,11 @@
 				"You can &6Ponder&r this item to learn more about it."
 			]
 			id: "5498E1A040886028"
+			rewards: [{
+				id: "4638F880E4E15523"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "410455B273805F0F"
 				item: "createaddition:electric_motor"
@@ -1538,6 +1849,11 @@
 				"You can &6Ponder&r this item to learn more about it."
 			]
 			id: "46F4F55F8C4B55EF"
+			rewards: [{
+				id: "1A62DFE1D33DA6B4"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "6F5BF1414DCAF92B"
 				item: "createaddition:alternator"
@@ -1554,6 +1870,11 @@
 				"This is a &6low current&r device."
 			]
 			id: "627233ADE5B787CD"
+			rewards: [{
+				id: "663F62D1239872A5"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "2D438C16827E2A1D"
 				item: "createaddition:redstone_relay"
@@ -1574,6 +1895,11 @@
 				"&7(Theoretically, it should accept items that take Redstone Flux (RF) as well.)&r"
 			]
 			id: "4CA68872A82237F5"
+			rewards: [{
+				id: "4684D2C2B3CBEDDD"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "04578389B73B4B97"
 				item: "createaddition:tesla_coil"
@@ -1591,6 +1917,11 @@
 			]
 			hide_dependency_lines: true
 			id: "6077C30DC7A48964"
+			rewards: [{
+				id: "639FE909F2EE4CB1"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Make your boiler whistle"
 			tasks: [{
 				id: "7F3BDA4D1C2025A1"
@@ -1608,6 +1939,11 @@
 				"You can &6Ponder&r this item to learn more about it."
 			]
 			id: "100FB5CF0BE1B8BF"
+			rewards: [{
+				id: "14E1A9C920804ECE"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				icon: "railways:red_conductor_cap"
 				id: "5000A1A2BABA14C9"

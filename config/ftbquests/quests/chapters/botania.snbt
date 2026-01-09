@@ -33,6 +33,11 @@
 			icon: "botania:lexicon"
 			id: "40F38B864E509197"
 			min_width: 300
+			rewards: [{
+				id: "1800690102C81B89"
+				type: "xp"
+				xp: 10
+			}]
 			size: 2.0d
 			subtitle: "Not as difficult as you might expect! I promise!"
 			tasks: [
@@ -62,6 +67,11 @@
 				"- &aFlowers are split into two categories: Generating Flora and Functional Flora.&r Generating Flora are primarily used to generate Mana, and Functional Flora actually do things, usually using Mana."
 			]
 			id: "5D7E00B16CA1AB0D"
+			rewards: [{
+				id: "76B80E0D2EAAD60B"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Health \\& Safety Information"
 			tasks: [{
 				id: "3DE5335E1852081C"
@@ -79,6 +89,11 @@
 				"You'll be able to find them scattered throughout the world, but if necessary &7(or lazy)&r, you can use Floral Fertilizer &7(find it in JEI!)&r to summon some Mystical Flowers like you would use bonemeal on grass."
 			]
 			id: "3818137BD58DC608"
+			rewards: [{
+				id: "42B7906F1443E531"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "No, it's not weed."
 			tasks: [{
 				advancement: "botania:main/flower_pickup"
@@ -102,6 +117,11 @@
 			]
 			icon: "botania:white_petal"
 			id: "2ACD3DDCD503F19F"
+			rewards: [{
+				id: "11B66D9F0B99DB7D"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "I SWEAR its not weed."
 			tasks: [{
 				id: "0915ABC43F299796"
@@ -200,6 +220,11 @@
 			]
 			icon: "botania:apothecary_default"
 			id: "28FE5F4EA27528C3"
+			rewards: [{
+				id: "36ADF0A39D4AE0A7"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "It's NOT weed, I promise!"
 			tasks: [{
 				id: "586E7E90E0CF972D"
@@ -247,6 +272,11 @@
 				"- Blaze Meshes into Obsidian"
 			]
 			id: "23444D61BF3C5D76"
+			rewards: [{
+				id: "3493FF6075F9B4FF"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "See? Not weed!"
 			tasks: [{
 				id: "7B01B9FF5BAC5790"
@@ -265,6 +295,11 @@
 			]
 			icon: "botania:livingwood_log"
 			id: "4BED5850AA2AEC5B"
+			rewards: [{
+				id: "4F661F076C5D2273"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Mother Nature but actually alive"
 			tasks: [
 				{
@@ -291,6 +326,11 @@
 			]
 			icon: "botania:mana_pool"
 			id: "6066C7319021E6F4"
+			rewards: [{
+				id: "1FED1EF796552FD2"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Bringing mana into the equation"
 			tasks: [{
 				id: "03B09D969AA26625"
@@ -334,6 +374,11 @@
 			]
 			icon: "botania:endoflame"
 			id: "0AE2DF9FD2DFA95D"
+			rewards: [{
+				id: "5B12DE8D1D62FCC3"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "\"Power\""
 			tasks: [{
 				id: "39A713A393FAB309"
@@ -377,6 +422,11 @@
 				"For more info on the Mana Spreader, read its entry in the &6Lexica Botania&r."
 			]
 			id: "24BE318B3D980C3D"
+			rewards: [{
+				id: "405B537D9AEE8280"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Getting your Mana from point A to point B"
 			tasks: [{
 				id: "69B0BDF5ED129FCA"
@@ -401,6 +451,11 @@
 			]
 			id: "3677152197E09665"
 			min_width: 300
+			rewards: [{
+				id: "79EC918CE3298FC9"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "It's not magic, though. More like a wrench."
 			tasks: [{
 				id: "5126767CECC47DC2"
@@ -429,6 +484,11 @@
 				"There are many things you can make with Mana Infusion, so &6check JEI&r for how you can use it by viewing recipe uses for your Mana Pool."
 			]
 			id: "10723C5FB5536B8E"
+			rewards: [{
+				id: "70A9293C46CDFD36"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Everyone gets mana!"
 			tasks: [{
 				id: "1539219DA4E066AD"
@@ -456,6 +516,11 @@
 				}
 			}
 			id: "2869DE031EA28798"
+			rewards: [{
+				id: "73629E5672CEF7AF"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Repaired like magic!"
 			tasks: [{
 				id: "22895B2BDD55B35B"
@@ -482,6 +547,11 @@
 				"The mechanics of this are a little complex to include in a single quest, so it's &6highly advised&r to read its entry in the &6Lexica Botania&r."
 			]
 			id: "319BA915C441C223"
+			rewards: [{
+				id: "4C7515BDC2A0410B"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "It makes runes, what did you expect?"
 			tasks: [{
 				id: "471FA4784EF6ECED"
@@ -503,6 +573,11 @@
 				"For more info, read its entry in the &6Lexica Botania&r."
 			]
 			id: "00D9A71246D7CFB0"
+			rewards: [{
+				id: "53B2DB0A9E74B7E1"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "or the TAP, T.A. Plate, or Terrasteel Thingy"
 			tasks: [{
 				id: "3D639A2CBC508AB7"
@@ -520,6 +595,11 @@
 				"Look to the quests branching from this one to learn more."
 			]
 			id: "6FBAFAE394225917"
+			rewards: [{
+				id: "05A321069BD5145B"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "green bar"
 			tasks: [{
 				id: "7BD3BCFF2A9127D7"
@@ -544,6 +624,11 @@
 				"&c&oYou won't be able to visit Alfheim yourself just yet...&r"
 			]
 			id: "70A3F4DDACAB6609"
+			rewards: [{
+				id: "6A8962408957CE25"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Not yet..."
 			tasks: [{
 				id: "0EBC0AF67FD81368"
@@ -573,6 +658,11 @@
 				}
 			}
 			id: "342834A5909FF7E7"
+			rewards: [{
+				id: "364DCA05E6342463"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Terraria"
 			tasks: [{
 				id: "02E4E7D7A6B81058"
@@ -596,6 +686,11 @@
 				"- Mana Pearl -> &aPixie Dust&r"
 			]
 			id: "355B931936D3465C"
+			rewards: [{
+				id: "0B75511CC840F607"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Trade offer:"
 			tasks: [{
 				id: "1DD1479E8CC37E19"
@@ -614,6 +709,11 @@
 				"For more info, please check their respective entries in the &6Lexica Botania&r."
 			]
 			id: "4A5239322BFED050"
+			rewards: [{
+				id: "3CF5ACA5A989CB45"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "yeah i got nothing for this one"
 			tasks: [{
 				id: "1AB2A3A8A2C6E6C7"
@@ -641,6 +741,11 @@
 			]
 			icon: "botania:gaia_head"
 			id: "63DD8C0BAD9C09BF"
+			rewards: [{
+				id: "66FDE5F349EAE070"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "04E0C9F899F6AA0B"
 				item: "botania:gaia_pylon"
@@ -661,6 +766,11 @@
 				"{ \"text\": \"[Terrasteel Equipment]\", \"underlined\": \"true\", \"italic\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"342834A5909FF7E7\" } }"
 			]
 			id: "0E581E1B7B1B83C9"
+			rewards: [{
+				id: "50ECC9C7CA4D53E5"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "4DF954AF426782E8"
 				item: "botania:life_essence"
@@ -686,12 +796,19 @@
 			]
 			hide_until_deps_complete: true
 			id: "0DAD8125A26D512A"
-			rewards: [{
-				count: 2
-				id: "7C3F0E39594289F9"
-				item: "kubejs:skibidi_hawk_tuah"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 2
+					id: "7C3F0E39594289F9"
+					item: "kubejs:skibidi_hawk_tuah"
+					type: "item"
+				}
+				{
+					id: "42611ED9A6673466"
+					type: "xp"
+					xp: 10
+				}
+			]
 			size: 2.0d
 			subtitle: "The final boss."
 			tasks: [{

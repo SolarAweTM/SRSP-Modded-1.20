@@ -27,12 +27,19 @@
 			]
 			icon_scale: 0.1d
 			id: "05C90BF60E59F2F3"
-			rewards: [{
-				count: 4
-				id: "04C1E588D3DB3F80"
-				item: "create:andesite_alloy"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "04C1E588D3DB3F80"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					id: "5968F09F7A81ED4E"
+					type: "xp"
+					xp: 10
+				}
+			]
 			shape: "none"
 			size: 2.0d
 			subtitle: "Making cool stuff with the power of rotation"
@@ -60,6 +67,11 @@
 			]
 			id: "5BE5AD125B412D5E"
 			min_width: 300
+			rewards: [{
+				id: "219D5BCD588D01B5"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "607D8C6E471FA678"
 				title: "A Moment to Ponder"
@@ -80,6 +92,11 @@
 			]
 			icon: "create:hand_crank"
 			id: "5937D8D676C5CDBA"
+			rewards: [{
+				id: "013E1EE211C7C31E"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "speeeeeen"
 			tasks: [{
 				id: "13DF81EC5C412C3E"
@@ -137,6 +154,11 @@
 					item: "create:cogwheel"
 					type: "item"
 				}
+				{
+					id: "6EA8BD4F7B6129D7"
+					type: "xp"
+					xp: 10
+				}
 			]
 			subtitle: "Getting your rotational force from point A to point B"
 			tasks: [
@@ -170,12 +192,19 @@
 				"&6Ponder&r this item to learn how to use this item."
 			]
 			id: "75465F72D3FADC01"
-			rewards: [{
-				count: 2
-				id: "125005221324C6A7"
-				item: "create:belt_connector"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 2
+					id: "125005221324C6A7"
+					item: "create:belt_connector"
+					type: "item"
+				}
+				{
+					id: "4FA233DB7DB82E13"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "Getting your items from point A to point B, with rotational force"
 			tasks: [{
 				id: "4255D75A3D2E5B78"
@@ -196,6 +225,11 @@
 				"&o&7Note: The Andesite Funnel only performs operations 1 item at a time. There is a funnel that can remedy this, and let it filter items.&r"
 			]
 			id: "1FFBEDA1B43C6354"
+			rewards: [{
+				id: "59D6022A90DE2793"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Getting your items INTO points A and B"
 			tasks: [{
 				id: "0CD69C8814AB2407"
@@ -217,6 +251,11 @@
 				"You can also use &6JEI&r to view recipes for the Millstone."
 			]
 			id: "5A36F0409C36879A"
+			rewards: [{
+				id: "3E5F4BCFA59D603E"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "The grind begins"
 			tasks: [{
 				id: "50EF1B66D4744B93"
@@ -240,6 +279,11 @@
 			]
 			icon: "create:mechanical_press"
 			id: "252E8705B9375A6F"
+			rewards: [{
+				id: "2536B2C5534D4964"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Taking a hammer to things"
 			tasks: [{
 				id: "67187359B7FF8B3E"
@@ -281,6 +325,11 @@
 				"&cBe careful! It also possesses the ability to crush entities, including you.&r"
 			]
 			id: "35DD7D47B32B1FDD"
+			rewards: [{
+				id: "459EC9425F2F3124"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "If Millstone is so good, why isn't there a-"
 			tasks: [{
 				id: "319D553FCD97FC6B"
@@ -301,6 +350,11 @@
 			]
 			icon: "create:depot"
 			id: "36430316693F14AF"
+			rewards: [{
+				id: "7F3ED506F2957236"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Security checkpoint"
 			tasks: [{
 				id: "0FDC0AE40D9CAC71"
@@ -349,12 +403,19 @@
 			icon: "create:blaze_burner"
 			id: "4F21D70BC00FFA8A"
 			min_width: 300
-			rewards: [{
-				count: 2
-				id: "7CB3E386C613766D"
-				item: "create:blaze_cake"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 2
+					id: "7CB3E386C613766D"
+					item: "create:blaze_cake"
+					type: "item"
+				}
+				{
+					id: "65768301F246C1F9"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "Hang on, this is kinda heat"
 			tasks: [
 				{
@@ -384,6 +445,11 @@
 				"It can also be used for &6Silent Gear&r as a material."
 			]
 			id: "2F1BDB52441FCA5A"
+			rewards: [{
+				id: "6D1C452FEF882621"
+				type: "xp"
+				xp: 10
+			}]
 			size: 2.0d
 			subtitle: "Not to be confused with LeBron James"
 			tasks: [{
@@ -407,6 +473,11 @@
 				"You can &6Ponder&r this item to learn more about it."
 			]
 			id: "7C140D80711A3674"
+			rewards: [{
+				id: "5E335FC158A258C2"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Poking the bear"
 			tasks: [{
 				id: "28E1FD8E01DE7DB2"
@@ -424,6 +495,11 @@
 				"From the work put into it, you can make a couple &6really useful blocks and items&r to help."
 			]
 			id: "0B200FC34835FD43"
+			rewards: [{
+				id: "5C304B6627ED7AF5"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "this thing is probably just a pocket watch"
 			tasks: [{
 				id: "722F091F1C2FDD6C"
@@ -441,6 +517,11 @@
 				"&cNote that while the speed can increase, the stress capacity does not.&r"
 			]
 			id: "3AA46C67E835763B"
+			rewards: [{
+				id: "7301DD5B7FFDEDC8"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Fast"
 			tasks: [{
 				id: "651311965D881E24"
@@ -458,6 +539,11 @@
 				"&6Ponder&r this item to learn more about it."
 			]
 			id: "68C536FFD816AE69"
+			rewards: [{
+				id: "4BE4715588EBB39C"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "The cooler Hopper"
 			tasks: [{
 				id: "509081B48A0379FE"
@@ -475,6 +561,11 @@
 				"&6Ponder&r this item to learn more about it."
 			]
 			id: "5B929E949A764616"
+			rewards: [{
+				id: "0AD3B61E78D29D40"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Splitting along the belt"
 			tasks: [{
 				id: "1AD7F8B1DC6FBAC5"
@@ -501,6 +592,11 @@
 			]
 			icon: "create:brass_funnel"
 			id: "2C44491A6129FA54"
+			rewards: [{
+				id: "2032F5F119F532F7"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Getting what you WANT, WHERE you want it"
 			tasks: [
 				{
@@ -528,6 +624,11 @@
 				"&6Ponder&r this item to learn more about it."
 			]
 			id: "4EDF209588667ED8"
+			rewards: [{
+				id: "2E98A2077371CA74"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Open and shut case"
 			tasks: [{
 				id: "7640ACA5A11D779B"
@@ -548,6 +649,11 @@
 				"You can also use &6JEI&r to find recipes for this item."
 			]
 			id: "464DA75FA33C2760"
+			rewards: [{
+				id: "36DBA6BB3737D008"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "How Honey is Made"
 			tasks: [{
 				id: "66343A94FDCFB58F"
@@ -571,6 +677,11 @@
 			]
 			icon: "create:fluid_pipe"
 			id: "28FEAB05A72D3920"
+			rewards: [{
+				id: "45C4128EABEFF4ED"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "metal pipe falling sound effect"
 			tasks: [
 				{
@@ -605,6 +716,11 @@
 				"&aPro tip:&r Try this in the Nether!"
 			]
 			id: "2717D9AC9583B0D8"
+			rewards: [{
+				id: "115BEEFDC53D8D08"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Infinite water source? The ocean."
 			tasks: [{
 				id: "6D7E3DE4E35940E7"
@@ -626,6 +742,11 @@
 				"You can &6Ponder&r this item to learn more about it."
 			]
 			id: "3ECC860840DE7B9C"
+			rewards: [{
+				id: "7746DB067C951B09"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "How to Un-Make Honey"
 			tasks: [{
 				id: "5575017F99E8835D"
@@ -646,12 +767,19 @@
 				"&6Ponder&r this item to learn more about it."
 			]
 			id: "318F6B4FE91596C4"
-			rewards: [{
-				count: 4
-				id: "3F6F4BFBE8DB2760"
-				item: "create:andesite_alloy"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "3F6F4BFBE8DB2760"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					id: "17668C59C96FA2DE"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "Case closed"
 			tasks: [{
 				id: "1E30B13D0A62742B"
@@ -701,6 +829,11 @@
 			]
 			id: "3B7819CB4710211B"
 			min_width: 500
+			rewards: [{
+				id: "0949EEBE01ABFA7F"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "A long read, but this is important!"
 			tasks: [{
 				id: "5B4F2E44A5643A2A"
@@ -726,6 +859,11 @@
 			icon: "create:goggles"
 			id: "0A32F6B649916373"
 			min_width: 250
+			rewards: [{
+				id: "016D42304E3E2364"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Stress and You"
 			tasks: [
 				{
@@ -760,6 +898,11 @@
 				"You can &6Ponder&r this item to learn more about it. &cI highly recommend reading all of the Ponder pages for this one.&r"
 			]
 			id: "1CBEC7914DA3FCB2"
+			rewards: [{
+				id: "2814A43EED63CD9D"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "The cooler autocrafting"
 			tasks: [{
 				id: "7CBF7E5FBA2111D3"
@@ -774,6 +917,11 @@
 			description: ["These are some &aKinetic Sources&r that may take &6a bit more effort&r to get to or to set up, but often provide &6increased stress capacity&r."]
 			icon: "create:windmill_bearing"
 			id: "3763D2B2C1E42024"
+			rewards: [{
+				id: "3A718FECADFAE1F6"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Better speeeeeen"
 			tasks: [{
 				id: "1087B93EB545819C"
@@ -818,6 +966,11 @@
 				"&6Ponder&r this item to learn more about it."
 			]
 			id: "183530ECAAA33879"
+			rewards: [{
+				id: "38DC14D5DA8BA88E"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Now you're thinking with pipes"
 			tasks: [{
 				id: "573B9D5EEAF8C663"
@@ -838,6 +991,11 @@
 				"You can &6Ponder&r this item to learn more about it."
 			]
 			id: "71E30FB99120BB07"
+			rewards: [{
+				id: "7EF2EA4DFE55409E"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "The cooler Chute"
 			tasks: [{
 				id: "003196C9F2BFF14F"
@@ -856,6 +1014,11 @@
 			]
 			icon: "create:adjustable_chain_gearshift"
 			id: "2965BBE297B3B25A"
+			rewards: [{
+				id: "1C5469AC79D58FD4"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "A to B, but with style"
 			tasks: [{
 				id: "432610BA225354A2"
@@ -919,6 +1082,11 @@
 				"You can &6Ponder&r this item to learn more about it."
 			]
 			id: "37F457EBDA875D92"
+			rewards: [{
+				id: "46A717D8C5435BB9"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "spee-"
 			tasks: [{
 				id: "3B1D1816E9E75006"
@@ -963,6 +1131,11 @@
 			id: "6CD45F103E5EFD65"
 			min_width: 300
 			optional: true
+			rewards: [{
+				id: "7CA6662CDE621624"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "7CF5E89C06095DB8"
 				type: "checkmark"
@@ -979,6 +1152,11 @@
 				"Hold &6Shift&r &7(default keybind)&r to view a short description."
 			]
 			id: "5239145D964A13CE"
+			rewards: [{
+				id: "558543C002A68122"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Percussive Maintenance "
 			tasks: [{
 				id: "5F8EA782D15C3238"
@@ -996,6 +1174,11 @@
 				"In this phase, the mod has been &6cut down significantly&r, but still has some stuff to offer."
 			]
 			id: "1E44C5DACE1B4A52"
+			rewards: [{
+				id: "370FF7494C325CFC"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "3C09252E7563B558"
 				item: {
@@ -1024,6 +1207,11 @@
 				"You can &6Ponder&r this item to learn how to use it."
 			]
 			id: "2D67AAFD3D827BB6"
+			rewards: [{
+				id: "3F08F40E05C2285A"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "6C884C25A1BC7CF5"
 				item: "createaddition:rolling_mill"
@@ -1037,6 +1225,11 @@
 			description: ["In order to make some more &aadvanced multiblock machines&r, you'll need some components only accessible through &6Sequenced Assembly&r."]
 			icon: "immersiveengineering:component_iron"
 			id: "46D6D589F571469D"
+			rewards: [{
+				id: "34EAADB5F2BF6CD8"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "5B724470F8D5857A"
 				item: {
@@ -1089,6 +1282,11 @@
 			icon: "immersiveengineering:coke_oven"
 			id: "40DCA51EC6003CB4"
 			min_width: 250
+			rewards: [{
+				id: "570E8D66BEEF963F"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Behold, the slowest thing ever."
 			tasks: [{
 				count: 27L
@@ -1113,6 +1311,11 @@
 			]
 			icon: "immersiveengineering:blast_furnace"
 			id: "3CFD7E0462572B9C"
+			rewards: [{
+				id: "29CAA1450BEB0CD0"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				count: 27L
 				id: "67166AFD8AB9013C"
@@ -1135,6 +1338,11 @@
 				"That last use case is especially helpful, since Treated Wood is used in a bunch of recipes in this mod."
 			]
 			id: "6B771F840445110A"
+			rewards: [{
+				id: "09310C79E3FCE5E6"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "470C5B6D809981BC"
 				item: "immersiveengineering:creosote_bucket"
@@ -1153,6 +1361,11 @@
 			]
 			icon: "immersiveengineering:wire_copper"
 			id: "7768F401119EA876"
+			rewards: [{
+				id: "63E5B32C7B0AFEEA"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "It was in Electrical"
 			tasks: [{
 				id: "3A5EBA9B84695E76"
@@ -1191,6 +1404,11 @@
 			icon: "immersiveengineering:wirecoil_copper"
 			id: "42F4E6319BA277B5"
 			min_width: 300
+			rewards: [{
+				id: "5219EE4AE94BF9CB"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "One small step to UXV"
 			tasks: [
 				{
@@ -1227,6 +1445,11 @@
 			]
 			description: ["The &aKinetic Dynamo&r can be used with a couple options to &6generate energy&r, which will be explained in the following quests."]
 			id: "1EDDBA2F4C7702FC"
+			rewards: [{
+				id: "243A64E4D2B539B3"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "08F879B082256B04"
 				item: "immersiveengineering:dynamo"
@@ -1257,6 +1480,11 @@
 				"- Block of Uranium"
 			]
 			id: "6F95F79291E28B13"
+			rewards: [{
+				id: "20D3698ED3014BF6"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "210EAEE713DA579E"
 				item: "immersiveengineering:thermoelectric_generator"
@@ -1273,6 +1501,11 @@
 				"&6Up to three&r Water Wheels can be against each other in this way."
 			]
 			id: "2632B2257A895D84"
+			rewards: [{
+				id: "1319967FA8915ED9"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "29BFE88149A5628E"
 				item: "immersiveengineering:watermill"
@@ -1296,6 +1529,11 @@
 			icon: "immersiveengineering:windmill"
 			id: "31139E4125631E5B"
 			min_width: 250
+			rewards: [{
+				id: "39B7A636B6C0A1A7"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [
 				{
 					id: "6CAC48B6C57DCE53"
@@ -1327,6 +1565,11 @@
 			icon: "immersiveengineering:silo"
 			id: "63F5ED4EB7151ED0"
 			min_width: 250
+			rewards: [{
+				id: "696C66DCDED77A47"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [
 				{
 					count: 34L
@@ -1363,6 +1606,11 @@
 			]
 			icon: "immersiveengineering:wirecoil_electrum"
 			id: "2362F1239D182C79"
+			rewards: [{
+				id: "3DB5BC51A5C32462"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [
 				{
 					id: "09C01A6F30BAED60"
@@ -1402,6 +1650,11 @@
 			]
 			icon: "tconstruct:grout"
 			id: "56C728059DA3DBB2"
+			rewards: [{
+				id: "6EC64499D83E9002"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [
 				{
 					id: "1912292801D64B1F"
@@ -1428,6 +1681,11 @@
 			]
 			id: "65CB468E8207E990"
 			min_width: 250
+			rewards: [{
+				id: "40FF7DDBB5FE4B6D"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "61D4013371F1D0B2"
 				item: "tconstruct:seared_melter"
@@ -1449,6 +1707,11 @@
 			]
 			id: "01BD93F2070444ED"
 			min_width: 250
+			rewards: [{
+				id: "07682E9B0F112A94"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "1C906B0A79FB6564"
 				item: "tconstruct:seared_faucet"
@@ -1470,6 +1733,11 @@
 			]
 			id: "6CB4087B1583F423"
 			min_width: 250
+			rewards: [{
+				id: "1D121DD9788F5B76"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "(int)\"eighty-two\""
 			tasks: [{
 				id: "2CBF4190ACB27415"
@@ -1513,6 +1781,11 @@
 			icon: "tconstruct:ingot_cast"
 			id: "5C85690BEF090E41"
 			min_width: 250
+			rewards: [{
+				id: "2D3A9A22D5221E43"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [
 				{
 					id: "160E2D8EB7CA3E4A"
@@ -1567,6 +1840,11 @@
 				"To get started, make some &6Seared Bricks&r &7(the block)&r, put one into a &6Casting Basin&r, and pour 4 ingots worth of &6Molten Copper&r into it. This will get you a &aSmeltery Controller&r."
 			]
 			id: "47479C57109296A0"
+			rewards: [{
+				id: "10B6162C3F379A46"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "115A768FE8EC7DFF"
 				item: "tconstruct:smeltery_controller"
@@ -1584,6 +1862,11 @@
 				"You can use the Seared Faucets &6from your Melter&r if you choose to."
 			]
 			id: "79771E84B6E324CF"
+			rewards: [{
+				id: "110D75F954F4F9B7"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "7473089929621336"
 				item: "tconstruct:seared_drain"
@@ -1608,6 +1891,12 @@
 			icon: "tconstruct:seared_bricks"
 			id: "4B463BE554955408"
 			min_width: 300
+			rewards: [{
+				id: "0CFD8BFB5539891B"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "The manual's renders for this are broken, anyway."
 			tasks: [
 				{
 					count: 18L
@@ -1636,6 +1925,11 @@
 			]
 			id: "67B17AEC0001D814"
 			min_width: 250
+			rewards: [{
+				id: "25004F0091F0FE91"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "20086F81AA103035"
 				type: "checkmark"
@@ -1643,6 +1937,73 @@
 			title: "Alloying"
 			x: -2.5d
 			y: -8.0d
+		}
+		{
+			dependencies: ["4B463BE554955408"]
+			description: [
+				"Sometimes, you may need a &6hotter fuel than Lava&r in order to melt certain metals. This is where &aBlazing Blood&r comes in."
+				""
+				"To obtain, you can either put &6Blaze Rods into your Smeltery&r, or put &6an entire Blaze into your Smeltery&r. Yes, you can &6melt entities&r in this thing too."
+				""
+				"&aBlazing Blood&r will allow you to &6melt almost any metal&r, and will make most melting processes &6go faster&r to boot."
+				""
+				"You can also melt several &6other entities for different fluids&r! Check &6JEI&r for recipe uses under the &6Smeltery Controller&r for &6Entity Melting&r to find all the possible entities you can melt."
+				""
+				"&oPro tip:&r Try putting a Blaze Spawner over your Smeltery."
+			]
+			icon: "tconstruct:blaze_head"
+			id: "1F3D93531544E6E7"
+			min_width: 250
+			rewards: [{
+				id: "79B1845E67AEB248"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "67F8388AC2BAEEE6"
+				type: "checkmark"
+			}]
+			title: "Blazing Blood"
+			x: 0.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["4B463BE554955408"]
+			description: [
+				"The &aFoundry&r is a similar device to the Smeltery, except for &6three key changes&r:"
+				""
+				"&b1.&r The Foundry &6produces byproducts&r with certain ores."
+				"&b2.&r The Foundry &ccannot create alloys&r on its own."
+				"&b3.&r The Foundry &6can store a lot more&r than a Smeltery at the same size."
+				""
+				"A Foundry uses more or less the &6same components&r as a Smeltery, however, they &6must be made out of Scorched Bricks&r, which can be made by smelting &aNether Grout&r."
+				""
+				"To build, use a similar setup to the Smeltery, but &6fill in the corners&r."
+				"{image:srsp:textures/ftbquests/foundry_setup.png width:192 height:108 align:center}"
+			]
+			icon: "tconstruct:foundry_controller"
+			id: "3E3DA7E284FDE01F"
+			min_width: 250
+			rewards: [{
+				id: "4866F8EBBAC09150"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [
+				{
+					id: "2532686128499338"
+					item: "tconstruct:nether_grout"
+					type: "item"
+				}
+				{
+					id: "5746B0F8B3CB06E5"
+					item: "tconstruct:foundry_controller"
+					type: "item"
+				}
+			]
+			title: "The Foundry"
+			x: -1.0d
+			y: -9.5d
 		}
 	]
 	title: "Core Progression"

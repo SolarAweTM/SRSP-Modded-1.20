@@ -11,6 +11,11 @@
 	quests: [
 		{
 			id: "60ADFBCB9A4E9BF7"
+			rewards: [{
+				id: "1A4679FB159F56C8"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [
 				{
 					id: "71526A840B4E7B74"
@@ -99,6 +104,11 @@
 		}
 		{
 			id: "75824A52BA632F9B"
+			rewards: [{
+				id: "1C9897EC90D0ED42"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [
 				{
 					id: "4109910B6C7186D8"
@@ -187,6 +197,11 @@
 		}
 		{
 			id: "61C7E065C5C5894F"
+			rewards: [{
+				id: "5F74C24D32D9E697"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [
 				{
 					id: "04503C4E89D1EA02"
@@ -280,6 +295,11 @@
 				"Use JEI to see recipes."
 			]
 			id: "211D879A87677820"
+			rewards: [{
+				id: "21539F818B9D8B56"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "What color do you want to be?"
 			tasks: [{
 				id: "6474762331871F68"
@@ -296,6 +316,11 @@
 				"The flower shines &cred&r if there is a loss of Mana, and &9blue&r if there is a gain."
 			]
 			id: "7E200039E850DD34"
+			rewards: [{
+				id: "590CEA7EE80078F9"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Wish upon a star"
 			tasks: [{
 				id: "4AF92C93BD828760"
@@ -312,11 +337,18 @@
 				"The volume of sounds is reduced by &aaround half&r, and it can stack with nearby Bergamute. &6Vibrations are also muffled near a Bergamute.&r"
 			]
 			id: "640846D0F074F2AD"
-			rewards: [{
-				id: "6364E78A749E0E17"
-				item: "botania:cacophonium"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "6364E78A749E0E17"
+					item: "botania:cacophonium"
+					type: "item"
+				}
+				{
+					id: "34E19924D3082D41"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "My lips are sealed"
 			tasks: [{
 				id: "5F730B68C00201B3"
@@ -335,6 +367,11 @@
 				"The burn speed of the Endoflame is roughly double that of a Furnace."
 			]
 			id: "35C83016225CE19E"
+			rewards: [{
+				id: "1D03F310212C55E8"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Endothermically reactive"
 			tasks: [{
 				id: "3A84E312151EDE0E"
@@ -351,6 +388,11 @@
 				"The flower &cdecays after 1 real hour&r."
 			]
 			id: "6B866DE33C2294DF"
+			rewards: [{
+				id: "2810236343C8CE6C"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Just friendly crustaceans"
 			tasks: [{
 				id: "7F261E9570E7AD3E"
@@ -369,6 +411,11 @@
 				"A Thermalily's cooldown can be read with a &aRedstone Comparator&r &7(1 power per 20 seconds on cooldown)&r."
 			]
 			id: "488DA685AD59C261"
+			rewards: [{
+				id: "40F3EB771C9E60C6"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Not advised for blood mages"
 			tasks: [{
 				id: "2D084A6E4894D746"
@@ -385,12 +432,19 @@
 				"&cBe careful with your gear around this; it's effectively a mana grindstone.&r"
 			]
 			id: "65A4DFC0B63E2CF0"
-			rewards: [{
-				count: 4
-				id: "590C0EF306050AEC"
-				item: "minecraft:experience_bottle"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "590C0EF306050AEC"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "2EFB3ABB51E0717D"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "Ten blue orbs in the corner"
 			tasks: [{
 				id: "1FA12ECA3B8C9D4F"
@@ -407,11 +461,18 @@
 				"After eating roughly a tree's worth of leaves, it will enter a &aminute-long cooldown&r."
 			]
 			id: "0DFAB107441DDDE2"
-			rewards: [{
-				id: "1AA1190C67D18AAD"
-				item: "minecraft:oak_sapling"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "1AA1190C67D18AAD"
+					item: "minecraft:oak_sapling"
+					type: "item"
+				}
+				{
+					id: "0631938A14393807"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "Does this count as cannibalism?"
 			tasks: [{
 				id: "5048570C259EE286"
@@ -430,11 +491,18 @@
 				"Entropinnyum will generate significantly less mana if duplicated TNT is used."
 			]
 			id: "6E9791FD493A385C"
-			rewards: [{
-				id: "7091B4F24834A980"
-				item: "minecraft:tnt"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "7091B4F24834A980"
+					item: "minecraft:tnt"
+					type: "item"
+				}
+				{
+					id: "720A0F94F00995C5"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "Handle with care"
 			tasks: [{
 				id: "158AF4B4FB66EB5F"
@@ -451,11 +519,18 @@
 				"That's all."
 			]
 			id: "2783A93924D9EC81"
-			rewards: [{
-				id: "1CC68464B2353B1A"
-				item: "minecraft:cake"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "1CC68464B2353B1A"
+					item: "minecraft:cake"
+					type: "item"
+				}
+				{
+					id: "0366B4B4E0BD01BC"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "This flower is a lie"
 			tasks: [{
 				id: "733F4C7BA0CE8270"
@@ -476,12 +551,19 @@
 				"Giving the Gourmaryllis &aa variety of foods&r will improve Mana generation, but repeatedly giving it the same food will yield &cdiminishing returns&r. Its mood can be gauged by its sounds."
 			]
 			id: "089407B4EC4F4FB4"
-			rewards: [{
-				count: 4
-				id: "620C68FD23EE0F30"
-				item: "minecraft:cooked_beef"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "620C68FD23EE0F30"
+					item: "minecraft:cooked_beef"
+					type: "item"
+				}
+				{
+					id: "057EDEEDCE31A4AA"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "How unpleasant"
 			tasks: [{
 				id: "3A50A9D94B9A82C9"
@@ -498,12 +580,19 @@
 				"The &asize of the Slime&r dictates the amount of Mana generated."
 			]
 			id: "17CE3C5371E63163"
-			rewards: [{
-				count: 4
-				id: "48252164E766EF5E"
-				item: "minecraft:slime_ball"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "48252164E766EF5E"
+					item: "minecraft:slime_ball"
+					type: "item"
+				}
+				{
+					id: "3B300F0D50C182EA"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "What's this? It's all sticky"
 			tasks: [{
 				id: "41B4E63E3C4410FF"
@@ -520,12 +609,19 @@
 				"The color starts at White, and then &acycles through the spectrum&r. The expected color can be viewed using a &aWand of the Forest&r."
 			]
 			id: "0BE994ABFAE08B88"
-			rewards: [{
-				count: 4
-				id: "6AAC95182FF288E1"
-				item: "minecraft:white_wool"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "6AAC95182FF288E1"
+					item: "minecraft:white_wool"
+					type: "item"
+				}
+				{
+					id: "02AE5C2DFDC41D0C"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "Profiting off Hate"
 			tasks: [{
 				id: "4FD18FBCB7EF8FE4"
@@ -546,12 +642,19 @@
 				"&6Alternatively, read this flower's entry in the Lexica Botania.&r"
 			]
 			id: "26D25C205C2C03CE"
-			rewards: [{
-				count: 4
-				id: "3283F6304541D5F2"
-				item: "botania:cell_block"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "3283F6304541D5F2"
+					item: "botania:cell_block"
+					type: "item"
+				}
+				{
+					id: "5F2196F2C2900202"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "C'est la vie"
 			tasks: [{
 				id: "572504E6AB58B19A"
@@ -568,6 +671,11 @@
 				"The Rafflowsia will generate more Mana if given &aa variety of flowers&r to consume, and will have &cdiminishing returns&r if the same flowers are given."
 			]
 			id: "7476E0BA5A41E61F"
+			rewards: [{
+				id: "637E484F9369E6DC"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Trap Hole Nightmare"
 			tasks: [{
 				id: "69C25A0ED8ADB050"
@@ -584,12 +692,19 @@
 				"The Shulk Me Not will only function if its &ainternal buffer&r is completely empty."
 			]
 			id: "2B376F3F9F85303B"
-			rewards: [{
-				count: 4
-				id: "06CB68E542C944AA"
-				item: "minecraft:ender_pearl"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "06CB68E542C944AA"
+					item: "minecraft:ender_pearl"
+					type: "item"
+				}
+				{
+					id: "1FD451BF41C0A014"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "Really feeling it"
 			tasks: [{
 				id: "0785E6126C53E342"
@@ -608,11 +723,18 @@
 				"This flower &adoes not require Mana&r, but providing it with Mana will increase its range."
 			]
 			id: "7595C584347ED8A7"
-			rewards: [{
-				id: "739C2749F4D68C02"
-				item: "minecraft:hopper"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "739C2749F4D68C02"
+					item: "minecraft:hopper"
+					type: "item"
+				}
+				{
+					id: "5B8093FDE0279D94"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "It all funnels into it"
 			tasks: [{
 				id: "0C0A89441A61F377"
@@ -633,6 +755,11 @@
 				"This flower &adoes not consume Mana&r, but providing it with Mana will increase its range."
 			]
 			id: "391AA4E896E4FB44"
+			rewards: [{
+				id: "4AA709FB204339C0"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "That's handy"
 			tasks: [{
 				id: "7988154035027581"
@@ -645,11 +772,18 @@
 		{
 			description: ["The &6Hyacidus&r will take Mana from a nearby pool, and &aapply Poison&r to nearby mobs."]
 			id: "7FF414EB24FFCAFE"
-			rewards: [{
-				id: "441B5EC04AC911CB"
-				item: "minecraft:pufferfish"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "441B5EC04AC911CB"
+					item: "minecraft:pufferfish"
+					type: "item"
+				}
+				{
+					id: "76058D1CD1AB0977"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "If you don't walk, it doesn't hurt"
 			tasks: [{
 				id: "6C8C3BDC2B2889D8"
@@ -670,12 +804,19 @@
 				"- Babies only"
 			]
 			id: "6951F6B4CE286FE6"
-			rewards: [{
-				count: 4
-				id: "7681271C04E5CD54"
-				item: "minecraft:wheat"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "7681271C04E5CD54"
+					item: "minecraft:wheat"
+					type: "item"
+				}
+				{
+					id: "5870C6C40818398B"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "Birds and bees"
 			tasks: [{
 				id: "27CA73D6E566CDF2"
@@ -688,12 +829,19 @@
 		{
 			description: ["The &6Clayconia&r will take Mana from a nearby pool, and &aturn nearby Sand into Clay&r."]
 			id: "149AE40CC9291C24"
-			rewards: [{
-				count: 4
-				id: "698044E23004A94A"
-				item: "minecraft:sand"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "698044E23004A94A"
+					item: "minecraft:sand"
+					type: "item"
+				}
+				{
+					id: "33141FA97B799F59"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "Rupees not included"
 			tasks: [{
 				id: "26554B61617BFC79"
@@ -712,6 +860,11 @@
 				"Note that there are some items that the Loonium &ccannot create&r."
 			]
 			id: "72639B4844CC27BE"
+			rewards: [{
+				id: "12158CB969176B8D"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Hold it up above your head"
 			tasks: [{
 				id: "1E295AA7ADDB77DD"
@@ -728,11 +881,18 @@
 				"&6Sneak-right clicking&r with a &aWand of the Forest in Function Mode&r will change its orientation."
 			]
 			id: "21F1675DDC9C8DD0"
-			rewards: [{
-				id: "47CA5ED8555F43C3"
-				item: "create:propeller"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "47CA5ED8555F43C3"
+					item: "create:propeller"
+					type: "item"
+				}
+				{
+					id: "14A8AD52710B7DA5"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "Cook's Assistant"
 			tasks: [{
 				id: "5F3937BA7DB7F475"
@@ -745,11 +905,18 @@
 		{
 			description: ["The &6Vinculotus&r will take Mana from a nearby pool, and use it to &aforce nearby Endermen to teleport&r to its position."]
 			id: "4ACA48C40A3D9B89"
-			rewards: [{
-				id: "6A5512F8E84E326A"
-				item: "minecraft:ender_pearl"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "6A5512F8E84E326A"
+					item: "minecraft:ender_pearl"
+					type: "item"
+				}
+				{
+					id: "314CE08AC2686998"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "Totally an Extra Utils ripoff"
 			tasks: [{
 				id: "4DA0616318084B90"
@@ -768,6 +935,11 @@
 				"The Mana cost per teleport is based on the distance traveled."
 			]
 			id: "3CC6A4DFDDAE313D"
+			rewards: [{
+				id: "3CEA27CCD97E97FC"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "In the shell"
 			tasks: [{
 				id: "12D980D047C6E981"
@@ -780,6 +952,11 @@
 		{
 			description: ["The &6Jiyuulia&r will take Mana from a nearby pool, and create a circular area in which &amobs are not able to enter&r."]
 			id: "022FAE1AF127AC8B"
+			rewards: [{
+				id: "0169E15B66EBB121"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Flügel der Freiheit"
 			tasks: [{
 				id: "45F38CBEFAA1E344"
@@ -792,6 +969,11 @@
 		{
 			description: ["The &6Bellethorne&r will take Mana from a nearby pool, and &adeal damage to non-player entities&r in its area."]
 			id: "46714A68CD3F37A5"
+			rewards: [{
+				id: "3110D076AA37FAC6"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Kiss from a rose"
 			tasks: [{
 				id: "58E754974B117A87"
@@ -804,6 +986,11 @@
 		{
 			description: ["The &6Dreadthorne&r will take Mana from a nearby pool, and &aonly deal damage to adult animals&r in its area."]
 			id: "1911901BCAE5EE31"
+			rewards: [{
+				id: "7D3FEB06CEE4E11A"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Just a prick"
 			tasks: [{
 				id: "24AFA8CE0E22E720"
@@ -816,6 +1003,11 @@
 		{
 			description: ["The &6Heisei Dream&r will take Mana from a nearby pool to make &anearby mobs target one another&r."]
 			id: "6368A20DA1DFA84B"
+			rewards: [{
+				id: "42A5E1E9297AB0CD"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Heisei heisei"
 			tasks: [{
 				id: "6913E0E78262FBEE"
@@ -828,12 +1020,19 @@
 		{
 			description: ["The &6Tigerseye&r will take Mana from a nearby pool, and create a field where &aCreepers will not explode&r, and will &aflee from players&r."]
 			id: "6F78AEC58756D5E9"
-			rewards: [{
-				count: 4
-				id: "407CF0F01C84C84A"
-				item: "minecraft:gunpowder"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "407CF0F01C84C84A"
+					item: "minecraft:gunpowder"
+					type: "item"
+				}
+				{
+					id: "4EA236CF0CBBD409"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "The palmtop tiger"
 			tasks: [{
 				id: "2244E34A4F25AFC9"
@@ -846,11 +1045,18 @@
 		{
 			description: ["The &6Jaded Amaranthus&r will take Mana from a nearby pool, and &acreate Mystical Flowers&r in its area."]
 			id: "16534ED08BC26BE4"
-			rewards: [{
-				id: "32E0598230E0ECF4"
-				item: "botania:white_mystical_flower"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "32E0598230E0ECF4"
+					item: "botania:white_mystical_flower"
+					type: "item"
+				}
+				{
+					id: "15F11A672CA0E00B"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "A couple died for this"
 			tasks: [{
 				id: "1332DE89503F9598"
@@ -871,12 +1077,19 @@
 				"&cThis flower is also quite loud.&r"
 			]
 			id: "2290024D35A43224"
-			rewards: [{
-				count: 4
-				id: "30683ACCA1BC3179"
-				item: "minecraft:deepslate"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "30683ACCA1BC3179"
+					item: "minecraft:deepslate"
+					type: "item"
+				}
+				{
+					id: "2FDEBAF7FBA3FD5C"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "I seed what you did there"
 			tasks: [{
 				id: "52EE9FDA4491B3DA"
@@ -889,6 +1102,11 @@
 		{
 			description: ["The &6Fallen Kanade&r will take Mana from a nearby pool, and &aapply Regeneration III&r to nearby players and tamed pets."]
 			id: "2D6378F11FA47631"
+			rewards: [{
+				id: "6BBFD7BC970DE9BF"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "I'm not an Angel"
 			tasks: [{
 				id: "765A92F82F31B727"
@@ -905,12 +1123,19 @@
 				"It also gives affected Furnaces a &aspeed boost&r."
 			]
 			id: "6CD901733D1C2169"
-			rewards: [{
-				count: 4
-				id: "0442010E7933C3BF"
-				item: "minecraft:coal"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "0442010E7933C3BF"
+					item: "minecraft:coal"
+					type: "item"
+				}
+				{
+					id: "424EC2922386CC33"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "Exothermically reactive"
 			tasks: [{
 				id: "4CF11005832DD708"
@@ -923,12 +1148,19 @@
 		{
 			description: ["The &6Agricarnation&r will take Mana from a nearby pool, and use it to &aboost the growth of nearby crops&r."]
 			id: "3E0CC283409A44F1"
-			rewards: [{
-				count: 4
-				id: "279E3EA2A522EEEF"
-				item: "minecraft:wheat_seeds"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "279E3EA2A522EEEF"
+					item: "minecraft:wheat_seeds"
+					type: "item"
+				}
+				{
+					id: "0ED670891871B754"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "Wear on the 25th of April"
 			tasks: [{
 				id: "593D3E78E3C21044"
@@ -945,6 +1177,11 @@
 				"The area is a circle with a &aradius of 6 blocks&r."
 			]
 			id: "6AFE91F3D5950CB2"
+			rewards: [{
+				id: "458869F9E9C20DBA"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "No frying pans allowed"
 			tasks: [{
 				id: "7E66C23977AB621C"
@@ -957,6 +1194,11 @@
 		{
 			description: ["The &6Medumone&r will take Mana from a nearby pool, and create a slowing field capable of &acompletely stopping any mob from moving&r."]
 			id: "163030DF7FB16CEA"
+			rewards: [{
+				id: "2B526002BD1A79CD"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Solid as a rock"
 			tasks: [{
 				id: "39E73DCF6B4AC413"
@@ -975,12 +1217,19 @@
 				"For more info, see this flower's entry in the &6Lexica Botania&r."
 			]
 			id: "05717C3CD2BAFF80"
-			rewards: [{
-				count: 4
-				id: "34021570FBDA0A6B"
-				item: "minecraft:stone"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "34021570FBDA0A6B"
+					item: "minecraft:stone"
+					type: "item"
+				}
+				{
+					id: "4CC3897DFF0B7575"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "Good Morning, World!"
 			tasks: [{
 				id: "54B1DA45009E1175"
@@ -997,6 +1246,11 @@
 				"The spherical field has a &aradius of around 12 blocks&r, and requires a &cconstant supply of Mana&r to maintain the field."
 			]
 			id: "58208F9899AEB4B9"
+			rewards: [{
+				id: "6CA46D5EEC9275B4"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "And whistle"
 			tasks: [{
 				id: "362F4E57073AA3B0"
@@ -1013,6 +1267,11 @@
 				"This flower &6does not consume Mana&r."
 			]
 			id: "1B81E36ECD79ED9C"
+			rewards: [{
+				id: "669EDB7DB95896FF"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "All your magnets are belong to us"
 			tasks: [{
 				id: "4EABD9DBF0F77383"
@@ -1035,12 +1294,19 @@
 				"&cLike its Overworld counterpart, this flower is equally loud.&r"
 			]
 			id: "488EE27736624A5D"
-			rewards: [{
-				count: 4
-				id: "3BC05F34C0E43D72"
-				item: "minecraft:netherrack"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "3BC05F34C0E43D72"
+					item: "minecraft:netherrack"
+					type: "item"
+				}
+				{
+					id: "1E0CFB08B91CC3B5"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "Red like roses"
 			tasks: [{
 				id: "3B5384C41B3C70D1"
@@ -1053,11 +1319,18 @@
 		{
 			description: ["The &6Labellia&r will take a modest amount of Mana from a nearby pool, and &aapply dropped Name Tags&r to all entities and items within a 5x5 area centered on itself."]
 			id: "5464934ABCB1F679"
-			rewards: [{
-				id: "40A5CECD22E0808B"
-				item: "minecraft:name_tag"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "40A5CECD22E0808B"
+					item: "minecraft:name_tag"
+					type: "item"
+				}
+				{
+					id: "3099C22E93B62DB2"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "The engineer's second hardest problem"
 			tasks: [{
 				id: "7CD5F916AA1F974D"
@@ -1125,6 +1398,11 @@
 				}
 			}
 			id: "13B8662F6C7CCC5F"
+			rewards: [{
+				id: "6B6DB72D36386DE0"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
 			size: 3.0d
 			tasks: [{
 				dimension: "minecraft:overworld"

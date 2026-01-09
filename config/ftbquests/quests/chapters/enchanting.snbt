@@ -35,6 +35,11 @@
 				"- Experience costs are now calculated as &bthe minimum amount of XP needed&r to perform the action. This means if you were at &blevel 78&r, doing a &blevel 30 enchant&r that would set you to &blevel 75&r would &binstead only take&r the amount of XP that would be used to go &bfrom levels 27 to 30&r."
 			]
 			id: "49157162CF2B674B"
+			rewards: [{
+				id: "4689234AD0EC276C"
+				type: "xp"
+				xp: 10
+			}]
 			size: 2.0d
 			tasks: [{
 				id: "7AB2DDC2CD65610A"
@@ -56,6 +61,11 @@
 			]
 			icon: "minecraft:bookshelf"
 			id: "01EB3011E1FB8E42"
+			rewards: [{
+				id: "5D1510D14804B35D"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "0167B32C9EEE285F"
 				item: {
@@ -115,6 +125,11 @@
 			]
 			icon: "minecraft:zombie_head"
 			id: "4EB43213FA51F90E"
+			rewards: [{
+				id: "26AF69428E065D1C"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [
 				{
 					id: "36C1FFDFA0E6B444"
@@ -171,6 +186,11 @@
 			]
 			icon: "minecraft:candle"
 			id: "68A5194C35651A46"
+			rewards: [{
+				id: "30AE6EAC00D55E32"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [
 				{
 					id: "1EDFCA04D02827A0"
@@ -210,6 +230,11 @@
 			]
 			icon: "minecraft:amethyst_cluster"
 			id: "39DD1B9CD71CC3BD"
+			rewards: [{
+				id: "2AF7C22290B0ED8F"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "This stat is so Yellow!"
 			tasks: [
 				{
@@ -238,6 +263,11 @@
 				"Both of these shelves have a &bmax&r &aEterna&r &bof&r &a22.50&r, allowing you to enchant at &bup to Level 45&r."
 			]
 			id: "5868B6A5C8E99110"
+			rewards: [{
+				id: "5C14E22105DEABD1"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "2A466B9F73F5B447"
 				item: {
@@ -278,6 +308,11 @@
 				"The &bStoneshelf&r will do the same, but for &5Arcana&r."
 			]
 			id: "45760E25FF84837C"
+			rewards: [{
+				id: "1EAF106ABE19209B"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "7006DEF2F4BAD9FB"
 				item: {
@@ -318,6 +353,11 @@
 				"It's used just like a &bChiseled Bookshelf&r."
 			]
 			id: "289160D96A34F9BB"
+			rewards: [{
+				id: "11B75A098258922C"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "45CAE6A61080797D"
 				item: "apotheosis:filtering_shelf"
@@ -337,6 +377,11 @@
 				"From there, you can &bput your Honey Bottle in&r for enchanting, and &bselect \"Infusion\"&r to get an XP bottle."
 			]
 			id: "090324A6338BE4A7"
+			rewards: [{
+				id: "6039A01CBD6EE638"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "2518AA377379C596"
 				item: "minecraft:honey_bottle"
@@ -360,6 +405,11 @@
 				"- &bObliteration&r: When the anvil is dropped on an Enchanted Book with only one enchant, it splits the single Book into two Books with the enchant, 1 level lower."
 			]
 			id: "7E0BC6DA7DB9AF65"
+			rewards: [{
+				id: "163E8BE4FE8C505F"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "561D4A79A5D540E0"
 				item: "minecraft:anvil"
@@ -377,6 +427,11 @@
 				"For example, using a &bTome of Chestplates&r in an Enchanting Table will allow you to only get enchants that can be &bput on a chestplate&r."
 			]
 			id: "0C0CDEEEBA8EC3D3"
+			rewards: [{
+				id: "7F0ED219017ADFE7"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "5B983E99CF6FF1E5"
 				item: {
@@ -443,6 +498,11 @@
 				"You can only extract the &bmaximum level of an enchant that you have put in&r. This means that if you only give the Library books containing Sharpness III, you will only be able to extract up to Sharpness III until you put a higher level book in."
 			]
 			id: "62053DB36DFFE47C"
+			rewards: [{
+				id: "58919E891686A95B"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "321A9AAF2F0E3ABB"
 				item: "apotheosis:library"
@@ -465,6 +525,11 @@
 			]
 			icon: "apotheosis:improved_scrap_tome"
 			id: "6DC6C4E01DC3B59D"
+			rewards: [{
+				id: "04A8C5745B57C684"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "0D340383325F97AA"
 				item: {
@@ -509,6 +574,11 @@
 				"From there, you should see an enchanting option labeled &b\"Infusion\"&r. That will get you a Trident."
 			]
 			id: "553AA430C37A77E2"
+			rewards: [{
+				id: "01039418E9AAD442"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "6D7E8ED1D8E7E4FF"
 				item: "apotheosis:inert_trident"
@@ -526,6 +596,11 @@
 				"Combining an enchanted item with a &aPrismatic Cobweb&r in an anvil will &bremove all curses&r from the item."
 			]
 			id: "3CB7A83482B5DA4D"
+			rewards: [{
+				id: "35EE72FA05ACF4CB"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "324AC60778CDF43A"
 				item: {
@@ -562,6 +637,11 @@
 				"When &ball the enchants&r are listed, the text will say \"&bThe Runes Reveal All&r\"."
 			]
 			id: "3F74EF9145D3B46E"
+			rewards: [{
+				id: "68B999B9EC522C68"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "03AB65FDB6A11619"
 				type: "checkmark"
@@ -574,6 +654,7 @@
 			dependencies: ["289160D96A34F9BB"]
 			description: ["In &bfuture phases&r, you'll be able to increase the enchanting level even further. "]
 			id: "69B774D9430DE055"
+			shape: "diamond"
 			tasks: [{
 				id: "696695FD20C26F06"
 				item: "kubejs:intentionally_unobtainable"

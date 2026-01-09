@@ -34,6 +34,11 @@
 			icon: "ars_nouveau:novice_spell_book"
 			id: "7BE4785AF2C9E03D"
 			min_width: 250
+			rewards: [{
+				id: "5C5EA2FCE6EDBA45"
+				type: "xp"
+				xp: 10
+			}]
 			size: 2.0d
 			tasks: [{
 				id: "37BD7123EB1B4E73"
@@ -76,6 +81,11 @@
 				"You can increase &dmax Mana&r and &dMana regeneration&r by wearing &dspecial armor&r from Ars Nouveau, or use the &dMana Boost&r and &dMana Regen&r enchantments. You can also increase these stats by unlocking &aGlyphs&r."
 			]
 			id: "6E6477BC6493DFB0"
+			rewards: [{
+				id: "09C0D983B2EA2D57"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "191CFF98A2506E00"
 				type: "checkmark"
@@ -96,6 +106,11 @@
 				"You can view the amount of Source stored in a Jar by simply &dlooking at it&r in the world."
 			]
 			id: "2F41E0F3908A1910"
+			rewards: [{
+				id: "200DA31C374F2B41"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "trust me bro"
 			tasks: [{
 				id: "3586AD20C5380388"
@@ -116,6 +131,11 @@
 			hide_until_deps_complete: true
 			id: "07BA10BA5AB897CF"
 			min_width: 350
+			rewards: [{
+				id: "46349C2D840AC9C6"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "6670CCD494986B50"
 				type: "checkmark"
@@ -145,6 +165,11 @@
 			icon: "ars_nouveau:novice_spell_book"
 			id: "28FC5C865BF166F6"
 			min_width: 300
+			rewards: [{
+				id: "3CCBA04B5999E8F6"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "251606E50B68070B"
 				type: "checkmark"
@@ -167,6 +192,11 @@
 			]
 			icon: "ars_nouveau:source_gem"
 			id: "3EDE2D3559B99C52"
+			rewards: [{
+				id: "44D18F006E2B73F5"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [
 				{
 					id: "3A78DDD45E8CC491"
@@ -191,6 +221,11 @@
 				"&aSource Jars&r are used to &dstore generated Source&r, and can &dprovide Source&r to nearby devices."
 			]
 			id: "462AD4FAE5BA7C8F"
+			rewards: [{
+				id: "4AEA5CDD888EC274"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "2F400625DE87F94F"
 				item: "ars_nouveau:source_jar"
@@ -217,6 +252,11 @@
 			]
 			id: "6943170F478360F2"
 			min_width: 300
+			rewards: [{
+				id: "07BD46B694E10483"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "3F07B9F87084EF9F"
 				item: "ars_nouveau:scribes_table"
@@ -236,11 +276,18 @@
 				"&cBone Meal will not produce Source when used.&r"
 			]
 			id: "17D20D8CD5E598CE"
-			rewards: [{
-				id: "5CC13DD79CE13553"
-				item: "ars_nouveau:source_jar"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "5CC13DD79CE13553"
+					item: "ars_nouveau:source_jar"
+					type: "item"
+				}
+				{
+					id: "5B77FB2E35700726"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "Source: touch grass"
 			tasks: [{
 				id: "349BE521F8EDBEC8"
@@ -260,11 +307,18 @@
 				"It will also turn &dGrass or Dirt blocks&r in the 3x3 area directly below it into &dMycelium&r, and start &dgrowing mushrooms&r."
 			]
 			id: "3211FD66D6733C28"
-			rewards: [{
-				id: "77FC20B031C19A81"
-				item: "ars_nouveau:source_jar"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "77FC20B031C19A81"
+					item: "ars_nouveau:source_jar"
+					type: "item"
+				}
+				{
+					id: "75C4B9A0BECF9F6A"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "Source: food"
 			tasks: [{
 				id: "54D374772B225987"
@@ -286,11 +340,18 @@
 				"After this process, it can then create &dLava Lilies&r, which can be used for decoration."
 			]
 			id: "0933BE0FAC8C1097"
-			rewards: [{
-				id: "2CEE90E82BBB45EA"
-				item: "ars_nouveau:source_jar"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "2CEE90E82BBB45EA"
+					item: "ars_nouveau:source_jar"
+					type: "item"
+				}
+				{
+					id: "2B1C356C16E329AB"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "Source: this is heat"
 			tasks: [{
 				id: "7745095BB4FD8D26"
@@ -310,11 +371,18 @@
 				"It will also generate Source &dwhen baby animals are near&r and will &dspeed up their growth&r."
 			]
 			id: "384081A7277B8A25"
-			rewards: [{
-				id: "779DB5EAA42E3EAF"
-				item: "ars_nouveau:source_jar"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "779DB5EAA42E3EAF"
+					item: "ars_nouveau:source_jar"
+					type: "item"
+				}
+				{
+					id: "4480159EE638B824"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "Source: life and death"
 			tasks: [{
 				id: "3A754BEC165F0CB6"
@@ -337,6 +405,11 @@
 			]
 			icon: "ars_nouveau:enchanting_apparatus"
 			id: "04B9E6FF29C31E6A"
+			rewards: [{
+				id: "3A535D1BA00B678B"
+				type: "xp"
+				xp: 10
+			}]
 			size: 2.0d
 			tasks: [
 				{
@@ -392,6 +465,11 @@
 				"The &dWorn Notebook&r will tell you &dhow to change the Spell&r after the fact."
 			]
 			id: "2CB797D4604D3091"
+			rewards: [{
+				id: "24F1F1E859401DF6"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				icon: "minecraft:enchanted_book"
 				id: "5C542BC18F0C9574"
@@ -458,6 +536,11 @@
 				"Then, with your Spell Book, &dsneak-right-click with the selected Spell&r to inscribe."
 			]
 			id: "1312DBA1BBBD0602"
+			rewards: [{
+				id: "3CCE28878BCEC961"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "29634891F1FA0922"
 				item: "ars_nouveau:blank_parchment"
@@ -479,6 +562,11 @@
 				"To activate, &dright-click the Brazier with an empty hand&r. &cThis consumes the Tablet&r, and if Source is necessary, it will &dpull Source from Jars&r within 6 blocks."
 			]
 			id: "37F2F1E4A89C4CA9"
+			rewards: [{
+				id: "32F31BA7445CCF84"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "3557A0E097F0217D"
 				item: "ars_nouveau:ritual_brazier"
@@ -505,6 +593,11 @@
 				"The &aMage's Spell Book&r will allow you to create Spells with &dup to Tier 2 Glyphs&r."
 			]
 			id: "296EDF98C7269A35"
+			rewards: [{
+				id: "45C536C8BC858A77"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "4C99A23FA2E15FB3"
 				item: "ars_nouveau:apprentice_spell_book"
@@ -519,6 +612,11 @@
 			dependencies: ["04B9E6FF29C31E6A"]
 			description: ["The &dEnchanting Apparatus&r can be used to &acreate many useful items&r. The quests following this one will elaborate more on what you can do."]
 			id: "12538A7A93F646DC"
+			rewards: [{
+				id: "2BD0ECF8EA8EAD2B"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "this quest exists because theres SO MUCH you can make with this thing"
 			tasks: [{
 				id: "5E5454144762F5F8"
@@ -549,6 +647,11 @@
 			}
 			id: "58200E0F6F2F6171"
 			min_width: 300
+			rewards: [{
+				id: "58998991A2E40BD9"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "28A4F8743D9628BB"
 				item: {
@@ -611,6 +714,11 @@
 				}
 			}
 			id: "26A341CD7A3255B1"
+			rewards: [{
+				id: "063DAFEE1C600A09"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "455D5B4A359018C6"
 				item: {
@@ -681,6 +789,11 @@
 				"It really is this mod's equivalent to &da wrench&r."
 			]
 			id: "0905FA4B3385A6F6"
+			rewards: [{
+				id: "2355C821FE07D29D"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "This is a wrench"
 			tasks: [{
 				id: "1D67E1A2FF50D105"
@@ -715,6 +828,11 @@
 				}
 			}
 			id: "67748B8C5391293E"
+			rewards: [{
+				id: "5D2FF705D4EC4E8F"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "4D8B6FE23C0E4665"
 				item: {
@@ -835,6 +953,11 @@
 			icon: "ars_nouveau:alteration_table"
 			id: "7B45ABA97A9CD25F"
 			min_width: 300
+			rewards: [{
+				id: "3A6C76FD150D63AD"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [
 				{
 					id: "1CC33769A9CEA145"
@@ -872,6 +995,11 @@
 			]
 			icon: "ars_nouveau:storage_lectern"
 			id: "2C424184DFC9523B"
+			rewards: [{
+				id: "6057A3FC82D3F70C"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "call it Ars Energistics 2"
 			tasks: [{
 				id: "0C8796562C538843"
@@ -891,6 +1019,11 @@
 				"You can &dsneak-right-click&r with a &dDominion Wand&r in order to &dlock the Potion Jar&r, only allowing it to recieve the Potion it was locked to."
 			]
 			id: "13624B70B1D19465"
+			rewards: [{
+				id: "36B803F23A52A162"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "6CA9861A48D79D1A"
 				item: "ars_nouveau:potion_jar"
@@ -915,6 +1048,11 @@
 			]
 			icon: "ars_nouveau:amethyst_golem_charm"
 			id: "453AE16A21470002"
+			rewards: [{
+				id: "7C7E1A2B1704FBF5"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [
 				{
 					id: "2530BE4C18506B47"
@@ -940,6 +1078,12 @@
 			hide_until_deps_complete: true
 			icon: "ars_nouveau:potion_melder"
 			id: "5E0C4A2AACEF5477"
+			rewards: [{
+				id: "3DA7BA3E0B550E9D"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
 			subtitle: "Coming Soon!"
 			tasks: [{
 				id: "6E221DC915C25AE8"
@@ -962,6 +1106,11 @@
 				"The Diffuser will then use &d1 bottle of the Potion Jar&r in order to apply the effects every few seconds to nearby entities &dfor 10 minutes&r."
 			]
 			id: "7D50240721BBAE55"
+			rewards: [{
+				id: "732253576B704D1B"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "0FECE140964AED51"
 				item: "ars_nouveau:potion_diffuser"
@@ -979,6 +1128,12 @@
 				tag: { }
 			}
 			id: "2EF417E3247D1A96"
+			rewards: [{
+				id: "59C3B0E3247B0B21"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
 			subtitle: "Coming Soon!"
 			tasks: [{
 				id: "108ACAE334A58DAF"
@@ -1004,6 +1159,12 @@
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "42DC89D938676D7A"
+			rewards: [{
+				id: "759EF9E1A362FC91"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
 			tasks: [{
 				id: "6E6311D192A4653E"
 				item: {
@@ -1033,6 +1194,12 @@
 			hide_until_deps_complete: true
 			icon: "ars_nouveau:sourcestone"
 			id: "295EE49EA4D33A15"
+			rewards: [{
+				id: "71916F8B6F515027"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
 			tasks: [{
 				advancement: "ars_nouveau:create_portal"
 				criterion: ""
@@ -1057,6 +1224,12 @@
 			]
 			hide_until_deps_complete: true
 			id: "4B35307F9085C96A"
+			rewards: [{
+				id: "55C67BCCAC575CBF"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
 			tasks: [{
 				id: "72708D1EA0B20358"
 				type: "checkmark"
@@ -1095,6 +1268,11 @@
 				"- 5000 Source"
 			]
 			id: "1670F24070A5D8AB"
+			rewards: [{
+				id: "728AEA3EDF93223C"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "68BE4F42D714E7EA"
 				type: "checkmark"
@@ -1115,6 +1293,11 @@
 			]
 			id: "767238FA400CFD11"
 			min_width: 250
+			rewards: [{
+				id: "1CB0952D304222A3"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "233EC8E86BD76DCF"
 				item: "ars_nouveau:sourceberry_bush"
@@ -1134,6 +1317,11 @@
 			]
 			icon: "ars_nouveau:magebloom"
 			id: "57E9A286A9D51FCB"
+			rewards: [{
+				id: "716E438F94A6758F"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "22FBB79B66B33049"
 				item: "ars_nouveau:magebloom_crop"
@@ -1148,6 +1336,11 @@
 			description: ["The following quests will cover all the many &dTablets and Rituals&r that can be used with the &dRitual Brazier&r."]
 			hide_dependent_lines: true
 			id: "54BD1203D1E6EEF7"
+			rewards: [{
+				id: "25ACF8B2B1F7B108"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "yes, youre gonna be an iPad kid"
 			tasks: [{
 				id: "6E1A650BCA1CA322"
@@ -1161,6 +1354,11 @@
 			dependencies: ["54BD1203D1E6EEF7"]
 			description: ["This Ritual will &asummon a variety of animals&r based on the biome the Ritual is activated in."]
 			id: "5A0374CBBD525F81"
+			rewards: [{
+				id: "60FEAA7A77A0331A"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "640DD43B8ECC0585"
 				item: "ars_nouveau:ritual_animal_summon"
@@ -1177,6 +1375,11 @@
 				"If augmented with a &dWilden Wing, Spike, and Horn&r, it will instead summon the &dWilden Chimera&r, which &ccan destroy blocks&r, and proves &da formidable opponent&r."
 			]
 			id: "74619717E2016196"
+			rewards: [{
+				id: "10102C1B5310AAC9"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "5399C89785DE0265"
 				item: "ars_nouveau:ritual_wilden_summon"
@@ -1193,6 +1396,11 @@
 				"On activation, it will &ateleport all nearby entities&r to the location of the given Warp Scroll."
 			]
 			id: "6B94E9A4AF0FC566"
+			rewards: [{
+				id: "7875CB2E20BE0485"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "7F2D5D093C823D88"
 				item: "ars_nouveau:ritual_warping"
@@ -1215,6 +1423,11 @@
 				"Additionally augmenting this Ritual with &dManipulation Essence&r will increase the effect duration to &d15 minutes&r."
 			]
 			id: "274A6AAA09F31418"
+			rewards: [{
+				id: "47A272D42FF7517C"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Spelunker Potion"
 			tasks: [{
 				id: "38A2D096699E2023"
@@ -1232,6 +1445,11 @@
 				"This Ritual will &aturn nearby compatible entities into Bound Scripts&r, which can be used to &dcreate Familiars&r."
 			]
 			id: "3573089E12978A75"
+			rewards: [{
+				id: "30EA4AA1712ED7F5"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "46E3F8C3479CCBCE"
 				item: "ars_nouveau:ritual_binding"
@@ -1248,6 +1466,11 @@
 				"&dSource will be consumed&r for each mob killed."
 			]
 			id: "438BF046D52F9E89"
+			rewards: [{
+				id: "37CFCDC626928FE3"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "6B1830256DECC162"
 				item: "ars_nouveau:ritual_disintegration"
@@ -1264,6 +1487,11 @@
 				"Augmenting this Ritual with an &dEmerald&r causes the Raid to &dbecome max difficulty&r. This has no effect on Hard difficulty."
 			]
 			id: "4E84DCBC01F0049F"
+			rewards: [{
+				id: "1DB4E6394A8F3C3D"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "342A23B77B85F4D9"
 				item: "ars_nouveau:ritual_challenge"
@@ -1280,6 +1508,11 @@
 				"Good morning!"
 			]
 			id: "05C3C94249241A77"
+			rewards: [{
+				id: "66E36995A3CC2E4D"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "4F5360CDFCBF74F3"
 				item: "ars_nouveau:ritual_sunrise"
@@ -1296,6 +1529,11 @@
 				"Good night."
 			]
 			id: "7EFC673E78DC08DD"
+			rewards: [{
+				id: "311A8EFBAA318088"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "6B21ABB55063B281"
 				item: "ars_nouveau:ritual_moonfall"
@@ -1312,6 +1550,11 @@
 				"&dSource is necessary&r for any mobs beyond the first."
 			]
 			id: "6F2877E25852FAAE"
+			rewards: [{
+				id: "324517D9A56366DF"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "485D0D3FB52BBF31"
 				item: "ars_nouveau:ritual_containment"
@@ -1328,6 +1571,11 @@
 				"Each time this Ritual applies or refreshes Gravity, &dit will consume Source&r."
 			]
 			id: "6893F5334498A08B"
+			rewards: [{
+				id: "5BA1DE79DC8413BE"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "5EB705D8B214A0B8"
 				item: "ars_nouveau:ritual_gravity"
@@ -1344,6 +1592,11 @@
 				"Each time this Ritual refreshes or grants Flight, &dit will consume Source&r."
 			]
 			id: "2982A11AC984A045"
+			rewards: [{
+				id: "727A75375903A42D"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "3A2FE98753B2C2F0"
 				item: "ars_nouveau:ritual_flight"
@@ -1362,6 +1615,11 @@
 				"This Ritual &dwill consume Source for every minute&r that it blocks spawns."
 			]
 			id: "2A2F511E80D4E77F"
+			rewards: [{
+				id: "12951A2AF7335262"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "5EF708DCBDBDBCEC"
 				item: "ars_nouveau:ritual_sanctuary"
@@ -1380,6 +1638,11 @@
 				"&dSource is consumed&r while this Ritual is active."
 			]
 			id: "0E770BA3F9A66009"
+			rewards: [{
+				id: "7889251BB52B9132"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "49040CE53F3B65AA"
 				item: "ars_nouveau:ritual_restoration"
@@ -1392,6 +1655,11 @@
 			dependencies: ["54BD1203D1E6EEF7"]
 			description: ["This Ritual will &adig holes on the 4 adjacent blocks&r of the Brazier &ddown to Bedrock&r."]
 			id: "06487D42CF989C96"
+			rewards: [{
+				id: "2E9539A5329C50CA"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "22214D3405C0CECD"
 				item: "ars_nouveau:ritual_burrowing"
@@ -1408,6 +1676,11 @@
 				"If &daugmented with Gunpowder&r, it will &acause it to rain&r. With &dLapis Lazuli&r, it &acauses a storm&r."
 			]
 			id: "5C8DD4EB8AD0F4C7"
+			rewards: [{
+				id: "4888088797D08314"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "271C3FEC40331821"
 				item: "ars_nouveau:ritual_cloudshaping"
@@ -1428,6 +1701,11 @@
 				"&dAugmenting with Glow Berries&r causes the Ritual to summon &dJungle resources&r."
 			]
 			id: "0B7F90E4C9A708C3"
+			rewards: [{
+				id: "5067BDC60ADCBBB9"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "5E48A7DCC1097E4A"
 				item: "ars_nouveau:ritual_forestation"
@@ -1446,6 +1724,11 @@
 				"&dAugmenting&r this Ritual with a &dBook and Quill&r will create &dBookwyrm Charms&r."
 			]
 			id: "499E69AC8272E8CD"
+			rewards: [{
+				id: "5B85F7D145FDAF18"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "45C1E055E530635E"
 				item: "ars_nouveau:ritual_awakening"
@@ -1464,6 +1747,11 @@
 				"Augmenting with &dSand&r causes the Ritual to &dsummon Cacti and Dead Bushes&r instead."
 			]
 			id: "1CC4451F163D5315"
+			rewards: [{
+				id: "490090C730DA731A"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "25982DBDBF8FED5B"
 				item: "ars_nouveau:ritual_flowering"
@@ -1484,6 +1772,11 @@
 				"This Ritual &dwill consume Source for every block&r placed."
 			]
 			id: "6A5CDCF16CE6EDC1"
+			rewards: [{
+				id: "608E030C07C7913A"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "05F051183B4B44AD"
 				item: "ars_nouveau:ritual_conjure_island_plains"
@@ -1504,6 +1797,11 @@
 				"This Ritual &dwill consume Source for every block&r placed."
 			]
 			id: "3B26D0F5A850D95E"
+			rewards: [{
+				id: "3452803E0971E640"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "640B0CB4D49745E1"
 				item: "ars_nouveau:ritual_conjure_island_desert"
@@ -1520,6 +1818,11 @@
 				"This &dconsumes Source&r, and will &ddo nothing if there are 20 or more animals&r."
 			]
 			id: "3E9FEC1C5EBE4169"
+			rewards: [{
+				id: "0AD9952F45B695DF"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "6E53422D18CE97EB"
 				item: "ars_nouveau:ritual_fertility"
@@ -1538,6 +1841,11 @@
 				"This Ritual &dwill consume Source&r."
 			]
 			id: "27D05FC5F77AE673"
+			rewards: [{
+				id: "4BA4B0FA4BB3211B"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "67B9A5D3A5567D55"
 				item: "ars_nouveau:ritual_overgrowth"
@@ -1554,6 +1862,11 @@
 				"This &dconsumes Source for each set of crops&r harvested."
 			]
 			id: "14F5C0CC38F0B20E"
+			rewards: [{
+				id: "628E22BA7F5CCA5B"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "6971D893292E7EED"
 				item: "ars_nouveau:ritual_harvest"
@@ -1579,6 +1892,11 @@
 				"This is currently the &dhighest tier of Spell Book&r you can achieve."
 			]
 			id: "74C62281F9B31CF9"
+			rewards: [{
+				id: "228B1F34D12353C8"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "22E9C38319609531"
 				item: "ars_nouveau:archmage_spell_book"
@@ -1605,6 +1923,12 @@
 			id: "689B12F522520E78"
 			invisible: true
 			min_width: 300
+			rewards: [{
+				id: "56B575F571A0FB1D"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "diamond"
 			tasks: [{
 				id: "7638D1C1F740482C"
 				type: "checkmark"

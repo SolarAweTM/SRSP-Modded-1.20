@@ -28,6 +28,11 @@
 			]
 			id: "2358A02649D246B1"
 			min_width: 300
+			rewards: [{
+				id: "4C94E3B2A77E8E29"
+				type: "xp"
+				xp: 10
+			}]
 			size: 2.0d
 			subtitle: "Creating a warehouse"
 			tasks: [{
@@ -54,6 +59,11 @@
 				tag: { }
 			}
 			id: "63B4511F046172B4"
+			rewards: [{
+				id: "69FB2C4D85AF38E7"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Box Kingdom"
 			tasks: [{
 				id: "78DC2C4DA221E4D9"
@@ -84,6 +94,11 @@
 				"&6For example&r, if you only wanted packages addressed with &6\"Storage\"&r to go directly into your storage solution, you can use a &aPackage Filter&r to tell a Funnel or Tunnel to only &6allow Packages with that address&r to go directly to storage."
 			]
 			id: "75AC8472DB7C89BC"
+			rewards: [{
+				id: "660FFC62C5FBE31B"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "127.0.0.1"
 			tasks: [{
 				id: "0A59AF04133B9DC1"
@@ -110,6 +125,11 @@
 			]
 			id: "6CFA51103EF4A2ED"
 			min_width: 300
+			rewards: [{
+				id: "51DAF521D027B90C"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Networking 101"
 			tasks: [{
 				id: "6EBEA05B3E7F277D"
@@ -132,6 +152,11 @@
 				"You can &6Ponder&r this item to learn more about it."
 			]
 			id: "74477F88A0D99D62"
+			rewards: [{
+				id: "66C91FBFFC0D09CC"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "CASH DROP 54"
 			tasks: [{
 				id: "076BC3AE0D3E991B"
@@ -155,6 +180,11 @@
 			]
 			id: "29E8BB0D86B5DB08"
 			min_width: 250
+			rewards: [{
+				id: "28816CAD3AA7BBC2"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Networking 102"
 			tasks: [{
 				id: "466FF4044B51429F"
@@ -182,6 +212,11 @@
 			]
 			id: "6CF13F4EBFF12BE1"
 			min_width: 300
+			rewards: [{
+				id: "1E076695A881CDEC"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Tounge Lashing"
 			tasks: [{
 				id: "42D735514231A9FA"
@@ -211,6 +246,11 @@
 			icon: "create:red_table_cloth"
 			id: "571796C1784081C4"
 			min_width: 300
+			rewards: [{
+				id: "2000961018E8BDE0"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Beginnings of a capitalist society"
 			tasks: [{
 				id: "5FB5FB1F97412DEB"
@@ -253,6 +293,11 @@
 			icon: "create:white_postbox"
 			id: "0D2FB3EF1D77F2B9"
 			min_width: 300
+			rewards: [{
+				id: "5C34ED2165F05AE5"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "You've got mail"
 			tasks: [{
 				id: "684E8F568E42C7CF"
@@ -283,6 +328,11 @@
 				"You can &6Ponder&r this item to learn more about it."
 			]
 			id: "18FBF17D4F32EB07"
+			rewards: [{
+				id: "4DB5F39E623890FC"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Networking 103"
 			tasks: [{
 				id: "6EA2D97A24F1DA9B"
@@ -302,6 +352,11 @@
 				"You can &6Ponder&r this item to learn more about it."
 			]
 			id: "163D77D9BC98FE78"
+			rewards: [{
+				id: "4A4AC6A88F0C9E6F"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Putting more package per package in your package"
 			tasks: [{
 				id: "7FC1F8A374CC16B1"
@@ -326,6 +381,11 @@
 			]
 			id: "454C2DBA1EFD82A0"
 			min_width: 250
+			rewards: [{
+				id: "450D59142B117933"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "Budget Crafting CPU"
 			tasks: [{
 				id: "139CA806CA5F1BBB"

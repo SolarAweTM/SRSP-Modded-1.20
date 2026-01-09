@@ -24,12 +24,19 @@
 			]
 			id: "411797381601796A"
 			min_width: 300
-			rewards: [{
-				count: 128
-				id: "5A30B1FC13CB77E2"
-				item: "create:track"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 128
+					id: "5A30B1FC13CB77E2"
+					item: "create:track"
+					type: "item"
+				}
+				{
+					id: "0E0373F6265CEC27"
+					type: "xp"
+					xp: 10
+				}
+			]
 			size: 2.0d
 			subtitle: "All Aboard!"
 			tasks: [{
@@ -51,12 +58,19 @@
 				"&6Sturdy Sheets&r can be obtained through Sequenced Assembly, and then &6right-clicked onto Brass Casing&r either manually or via Deployer to get &aTrain Casing&r."
 			]
 			id: "1B33EAEC3C53AA76"
-			rewards: [{
-				count: 16
-				id: "623E6A60215EE977"
-				item: "create:track"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 16
+					id: "623E6A60215EE977"
+					item: "create:track"
+					type: "item"
+				}
+				{
+					id: "4D6A2636785953E0"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "6320FB8FC7CD2A31"
 				item: "create:railway_casing"
@@ -73,12 +87,19 @@
 				"You can &6Ponder&r this item to learn more about it."
 			]
 			id: "57683083D5BC4A7A"
-			rewards: [{
-				count: 16
-				id: "25BB1FD8E7AEA579"
-				item: "create:track"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 16
+					id: "25BB1FD8E7AEA579"
+					item: "create:track"
+					type: "item"
+				}
+				{
+					id: "334B2FDBA0758B86"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "109F769B8EA9E96A"
 				item: "create:track_station"
@@ -99,12 +120,19 @@
 				"You can &6Ponder&r this item to learn more about it."
 			]
 			id: "7CC9B63F917FE394"
-			rewards: [{
-				count: 16
-				id: "65BC4C82F2D99751"
-				item: "create:track"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 16
+					id: "65BC4C82F2D99751"
+					item: "create:track"
+					type: "item"
+				}
+				{
+					id: "0773A9E1A6935237"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "753AAD899E7A673A"
 				item: "create:controls"
@@ -153,12 +181,19 @@
 			icon: "create:train_door"
 			id: "33CB67DFABED8A6D"
 			min_width: 300
-			rewards: [{
-				count: 64
-				id: "4DB7B7554E06E923"
-				item: "create:track"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 64
+					id: "4DB7B7554E06E923"
+					item: "create:track"
+					type: "item"
+				}
+				{
+					id: "5CA97322897F43F4"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "A reminder that you can scroll down on quest menus"
 			tasks: [{
 				advancement: "create:train"
@@ -181,12 +216,19 @@
 				"You can &6Ponder&r this item to learn more about it."
 			]
 			id: "1D58B5D55698DB7C"
-			rewards: [{
-				count: 16
-				id: "3756010A1F73BA17"
-				item: "create:track"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 16
+					id: "3756010A1F73BA17"
+					item: "create:track"
+					type: "item"
+				}
+				{
+					id: "1AC680E7B000E9A6"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "4E463DC0979A9E7B"
 				item: "create:track_observer"
@@ -205,12 +247,19 @@
 				"You can &6Ponder&r this item to learn more about it, including &6how to prevent crashes&r at an intersection."
 			]
 			id: "6309BE1D6B6943D4"
-			rewards: [{
-				count: 16
-				id: "0801E70561BC3A3F"
-				item: "create:track"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 16
+					id: "0801E70561BC3A3F"
+					item: "create:track"
+					type: "item"
+				}
+				{
+					id: "03411CB8035BCAD6"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "7472F78D78318D2D"
 				item: "create:track_signal"
@@ -233,12 +282,19 @@
 				"You can &6Ponder&r this item to learn more about it."
 			]
 			id: "1CF428D3849A8D70"
-			rewards: [{
-				count: 16
-				id: "7E4559018B5A4588"
-				item: "create:track"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 16
+					id: "7E4559018B5A4588"
+					item: "create:track"
+					type: "item"
+				}
+				{
+					id: "2169C9B0805AC4EF"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "707BE48038DE5B69"
 				item: "create:schedule"
@@ -258,12 +314,19 @@
 			]
 			icon: "minecraft:netherrack"
 			id: "677430591605D694"
-			rewards: [{
-				count: 16
-				id: "752446B1365D7C46"
-				item: "create:track"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 16
+					id: "752446B1365D7C46"
+					item: "create:track"
+					type: "item"
+				}
+				{
+					id: "468048CE436DDF9E"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "Ticket to Hell"
 			tasks: [{
 				advancement: "create:train_portal"
@@ -280,12 +343,19 @@
 			dependencies: ["33CB67DFABED8A6D"]
 			description: ["&aSteam Whistles&r, when put as part of a Train, can be &6activated manually regardless of heating&r by pressing your &6Sprint&r key &7(default is Left Control)&r."]
 			id: "12CABF1F0148B072"
-			rewards: [{
-				count: 16
-				id: "4D90F02C13D3A066"
-				item: "create:track"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 16
+					id: "4D90F02C13D3A066"
+					item: "create:track"
+					type: "item"
+				}
+				{
+					id: "3081D04B357DC26D"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "CHOO CHOO"
 			tasks: [{
 				advancement: "create:train_whistle"
@@ -313,13 +383,20 @@
 			]
 			id: "706B5AA50B8E32CF"
 			min_width: 300
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "4E5D60E35ACF310C"
-				table_id: 5416129495299782277L
-				title: "Random Train Tracks x16"
-				type: "loot"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4E5D60E35ACF310C"
+					table_id: 5416129495299782277L
+					title: "Random Train Tracks x16"
+					type: "loot"
+				}
+				{
+					id: "4A8A5751E2FFC4AB"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "2A0A6C2E2E953119"
 				item: {
@@ -347,6 +424,11 @@
 				"The following quests will cover decorative blocks."
 			]
 			id: "605FE418AE25A582"
+			rewards: [{
+				id: "1CE56BE4316267A3"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "1F789EC07178A1B4"
 				type: "checkmark"
@@ -363,6 +445,11 @@
 				"The following quests will cover this category of items."
 			]
 			id: "230EECA40E2583F8"
+			rewards: [{
+				id: "44BEDE7B3D9D8BB8"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "2194B9128B828CB1"
 				type: "checkmark"
@@ -379,6 +466,11 @@
 				"The Handcar can be &6removed&r from a Track &6using a Wrench&r."
 			]
 			id: "312B3E7EF4AD4B74"
+			rewards: [{
+				id: "6AA2610AE740B548"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "the car of fullness"
 			tasks: [{
 				id: "624AFF62EF3DA418"
@@ -396,6 +488,11 @@
 				"You can &6Ponder&r this item to learn more about it."
 			]
 			id: "6CCBB6A0DA8A34EA"
+			rewards: [{
+				id: "3CA268B16B562F09"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "27733B3E1EDF9E8E"
 				item: "railways:semaphore"
@@ -413,6 +510,11 @@
 			]
 			icon: "railways:track_switch_andesite"
 			id: "4B46556984959D0A"
+			rewards: [{
+				id: "7C8B82DA8993FF76"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "2D004C3599484853"
 				item: {
@@ -452,6 +554,11 @@
 			]
 			icon: "railways:smokestack_oilburner"
 			id: "027BFD1C523DCF15"
+			rewards: [{
+				id: "3BEF23788CD767AD"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "4C929C9F3B649F84"
 				item: {
@@ -549,6 +656,11 @@
 			]
 			icon: "railways:link_and_pin"
 			id: "631A2EF210D9E97A"
+			rewards: [{
+				id: "50A6BF63E44475D0"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "3F3F415A3E57F879"
 				item: {
@@ -599,6 +711,11 @@
 			]
 			icon: "railways:wooden_headstock_link_and_pin"
 			id: "7977DECBC8EFFA20"
+			rewards: [{
+				id: "3C15166D1455D6FB"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "7F9C773B009E22C7"
 				item: {
@@ -651,6 +768,11 @@
 				"&6Hold Shift&r to learn more about this item."
 			]
 			id: "3E5F1D997E6FF496"
+			rewards: [{
+				id: "2EB00BD13025D8EF"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "2231F9F783FB8FFA"
 				item: "railways:buffer"
@@ -671,6 +793,11 @@
 				"Another note: &cCoupling and De-coupling a Train also modifies its name!&r"
 			]
 			id: "4BD64446BF499B52"
+			rewards: [{
+				id: "754F08746265DFC5"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "1EC673DAE940A7FF"
 				item: "railways:track_coupler"

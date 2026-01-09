@@ -21,6 +21,11 @@
 		{
 			description: ["&bApotheosis&r also modifies a large amount of other things in the game, most of which will be covered here."]
 			id: "4110D540DD554E6F"
+			rewards: [{
+				id: "601F96C7252F903F"
+				type: "xp"
+				xp: 10
+			}]
 			size: 2.0d
 			tasks: [{
 				id: "6CD722D6D4D80F1D"
@@ -40,6 +45,11 @@
 			]
 			icon: "minecraft:sugar_cane"
 			id: "052C4534FEBA643A"
+			rewards: [{
+				id: "70E90A6014AC7003"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "1DD69641CB9802A0"
 				type: "checkmark"
@@ -74,6 +84,11 @@
 			icon: "minecraft:spawner"
 			id: "325D497689575EA2"
 			min_width: 300
+			rewards: [{
+				id: "4503A0427131F6A3"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "3E0A5B9F43D21209"
 				type: "checkmark"
@@ -90,6 +105,11 @@
 				"They also have some &bnew trades&r, such as those for &bBeacons&r and &bTotems of Undying&r."
 			]
 			id: "4BA34C5C2CE1FA31"
+			rewards: [{
+				id: "21B517EA9A3B78AF"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "1B8CDFABF7DEC6AF"
 				item: "minecraft:totem_of_undying"
@@ -115,6 +135,11 @@
 				"You can &buse JEI&r to find the recipes for these special Arrows."
 			]
 			id: "546FB50B3761E62F"
+			rewards: [{
+				id: "2367B35852662BEB"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "3E66C1634F90E856"
 				item: "minecraft:fletching_table"
@@ -134,6 +159,11 @@
 				"You can use a &bSigil of Unnaming&r in a Smithing Table if you wish to &bremove a name&r from an Affix Item."
 			]
 			id: "54338324ED62BCC1"
+			rewards: [{
+				id: "2A24411BC5A2A098"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				advancement: "apotheosis:affix/root"
 				criterion: ""
@@ -157,6 +187,11 @@
 				"From there, you will have &bthree options at the bottom&r. Hover over each to see what you will get. In the &btop-left corner&r, you will see the cost of that reforge."
 			]
 			id: "19980084CF0536E5"
+			rewards: [{
+				id: "64A1F5CC82A2B5C4"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "A goblin army has arrived!"
 			tasks: [{
 				id: "148F46C6F482D6A7"
@@ -171,6 +206,11 @@
 			dependencies: ["54338324ED62BCC1"]
 			description: ["With a &bSalvaging Table&r, you can turn &bunwanted Affix Loot&r into more &buseful materials&r."]
 			id: "2EE04DB77BCC5A01"
+			rewards: [{
+				id: "3D7DD55DA5A358A5"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "760A48C4F386193A"
 				item: "apotheosis:salvaging_table"
@@ -192,6 +232,11 @@
 				"Charms often &blast longer&r than their source potions, so it's still worth crafting."
 			]
 			id: "68A766731C15C2EA"
+			rewards: [{
+				id: "081B6D2884CE657B"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "71D1C2D1873B3830"
 				item: {
