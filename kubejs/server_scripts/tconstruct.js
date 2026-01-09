@@ -16,6 +16,17 @@ ServerEvents.recipes(event => {
 		temperature: 950,
 		time: 64
 	})
+	//blaze rod to blood
+	event.custom({
+		type: 'tconstruct:melting',
+		ingredient: {item:'minecraft:blaze_rod'},
+		result: {
+			amount: 100,
+			tag: 'tconstruct:blazing_blood'
+		},
+		temperature: 1000,
+		time: 80
+	})
 	let obliterated_items = [ //make tconstruct tools and other related items inaccessible
 		'tconstruct:repair_kit',
 		'tconstruct:pick_head',
