@@ -746,6 +746,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			subtitle: "Yes, the health bar is broken. Visually."
 			tasks: [{
 				id: "04E0C9F899F6AA0B"
 				item: "botania:gaia_pylon"
