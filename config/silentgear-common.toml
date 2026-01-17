@@ -9,7 +9,7 @@
 		#When joining a new world, should players be given a blueprint package?
 		#The blueprint package gives some blueprints when used (right-click).
 		#To change what is given, override the starter_blueprints loot table.
-		spawnWithStarterBlueprints = true
+		spawnWithStarterBlueprints = false
 
 	#Repair kit configs.
 	[item.repairKits]
@@ -32,7 +32,7 @@
 		#Setting to zero would make the repair kit unusable.
 		[item.repairKits.efficiency]
 			#Range: 0.0 ~ 10.0
-			very_crude = 0.30000001192092896
+			very_crude = 8.0
 			#Range: 0.0 ~ 10.0
 			crude = 0.3499999940395355
 			#Range: 0.0 ~ 10.0
