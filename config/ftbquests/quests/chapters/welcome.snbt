@@ -81,29 +81,13 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["343033073CECDF2A"]
-			description: [
-				"Click the link below to view a list of impactful vanilla changes."
-				""
-				"{ \"text\": \"[Vanilla Changes]\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"open_url\", \"value\": \"http://gist.github.com/SolarAweTM/21a9ee83a29275204dbc989e75e9f761\" } }"
-			]
-			id: "2E61EA3C4ABA133B"
-			tasks: [{
-				id: "767846BBCDD4F75F"
-				title: "Overview: Vanilla Changes"
-				type: "checkmark"
-			}]
-			x: 0.5d
-			y: -2.0d
-		}
-		{
 			dependencies: ["4711FC6D3224F5F9"]
 			description: [
 				"&7(if this covers your screen, know that you can scroll this window!)&f"
 				""
-				"Quests (glorified advancements) will be the main way I incentivize progression in this pack, and I'm sure many of you don't know how this works."
+				"&aQuests&r (glorified advancements) will be the main way I incentivize progression in this pack, and I'm sure many of you don't know how this works."
 				""
-				"Generally they work very similar to advancements; you gotta complete a goal. However, some tasks (like the ones on this page) are just checkmark tasks, labeled with a checkmark. To complete these, simply just click the checkmark under the Tasks section."
+				"Generally they work very similar to advancements; you gotta &6complete a goal&r. However, some tasks (like the ones on this page) are just &6checkmark tasks&r, labeled with a checkmark. To complete these, simply just &6click the checkmark&r under the Tasks section."
 				""
 				"To claim any potential rewards, you can click on each item listed under the Rewards section to immediately recieve the listed reward."
 				""
