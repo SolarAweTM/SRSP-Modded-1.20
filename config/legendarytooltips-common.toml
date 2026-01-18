@@ -60,7 +60,7 @@
 		level6_entries = ["@silentgear+~$forge:ingots+~$forge:nuggets+~$forge:storage_blocks+~$forge:ores+~$forge:raw_materials+~$forge:rods+~$silentgear:fluffy_blocks+~silentgear:raw_crimson_iron_block+~silentgear:raw_azure_silver_block+~%Netherwood+~silentgear:stone_torch", "minecraft:eye_armor_trim_smithing_template"]
 		level7_entries = ["@create", "@immersiveengineering", "@railways", "@interiors", "@createestrogen", "@tconstruct+~$forge:ingots+~$forge:nuggets+~$forge:storage_blocks+~$forge:ores+~$forge:raw_materials+~$forge:rods+~$tconstruct:slimy_soil+~$forge:glass+~$tconstruct:slime_block"]
 		level8_entries = ["@ars_nouveau", "minecraft:spire_armor_trim_smithing_template"]
-		level9_entries = ["quark:smithing_template_rune"]
+		level9_entries = ["quark:smithing_template_rune", "ftbquests:book"]
 		level10_entries = ["%Sculk", "minecraft:warden_spawn_egg", "apotheosis:warden_tendril", "minecraft:ward_armor_trim_smithing_template", "minecraft:silence_armor_trim_smithing_template", "minecraft:echo_shard", "minecraft:recovery_compass"]
 		level11_entries = []
 		level12_entries = []
