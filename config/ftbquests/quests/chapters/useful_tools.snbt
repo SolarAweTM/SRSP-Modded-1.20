@@ -894,8 +894,12 @@
 				""
 				"&6Waystones work across dimensions&r, and you can pick up and move Waystones as long as you have a pickaxe on hand."
 			]
+			hide_text_until_complete: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			icon: "waystones:waystone"
 			id: "6517E4D6916B6A4F"
+			invisible: true
 			rewards: [{
 				id: "6F52713D7606F8A7"
 				type: "xp"
@@ -903,9 +907,9 @@
 			}]
 			subtitle: "Get from point A to point C and then point B"
 			tasks: [{
-				id: "72AA66B4EAFAD7BF"
-				title: "Click here."
-				type: "checkmark"
+				id: "7DF9F51AA7AD099E"
+				item: "kubejs:intentionally_unobtainable"
+				type: "item"
 			}]
 			title: "Waystones"
 			x: -1.5d

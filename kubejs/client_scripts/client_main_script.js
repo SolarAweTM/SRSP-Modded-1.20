@@ -87,7 +87,9 @@ ItemEvents.tooltip(event => {
 	'botania:terrasteel_boots',
 	'ars_nouveau:thread_life_drain',
 	'ars_nouveau:thread_magic_capacity',
-	'ars_nouveau:shapers_focus'
+	'ars_nouveau:shapers_focus',
+	'waystones:warp_stone',
+		'@waystones'
 	]
 	disabled_items.forEach(item => {
 		event.add(item, [
@@ -638,7 +640,8 @@ JEIEvents.hideItems(event => {
 		'tconstruct:maille_cast',
 		'tconstruct:coin_cast',
 		'tconstruct:copper_nugget',
-		'immersiveengineering:nugget_copper'
+		'immersiveengineering:nugget_copper',
+		'@waystones'
 	]
 	hidden_items.forEach(item => {
 		event.hide(item) // noted: this also removes them from creative menus

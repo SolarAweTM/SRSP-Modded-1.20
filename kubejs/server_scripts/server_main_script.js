@@ -31,6 +31,13 @@ ServerEvents.recipes(event => {
 			'#biomeswevegone:crafting_tables' //inputs
 		]
 	)
+	//waystone stuff
+	event.remove({output:'waystones:warp_stone'})
+	event.remove({output:'waystones:return_scroll'})
+	event.remove({output:'waystones:bound_scroll'})
+	event.remove({output:'waystones:warp_scroll'})
+	event.remove({output:'waystones:warp_plate'})
+	event.remove({output:'waystones:warp_dust'})
 })
 
 ServerEvents.tags('block', event => {
