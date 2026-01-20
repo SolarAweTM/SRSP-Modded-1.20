@@ -139,4 +139,81 @@ ServerEvents.recipes(event => {
 			}
 		)
 	}
+	
+	let chairs = [
+		"everycomp:vf/botania/livingwood_chair",
+		"everycomp:vf/botania/dreamwood_chair",
+		"everycomp:vf/ars_nouveau/archwood_chair",
+		"everycomp:vf/quark/azalea_chair",
+		"everycomp:vf/valhelsia_structures/lapidified_jungle_chair",
+		"everycomp:vf/biomesoplenty/fir_chair",
+		"everycomp:vf/biomesoplenty/pine_chair",
+		"everycomp:vf/biomesoplenty/maple_chair",
+		"everycomp:vf/biomesoplenty/redwood_chair",
+		"everycomp:vf/biomesoplenty/mahogany_chair",
+		"everycomp:vf/biomesoplenty/jacaranda_chair",
+		"everycomp:vf/biomesoplenty/palm_chair",
+		"everycomp:vf/biomesoplenty/willow_chair",
+		"everycomp:vf/biomesoplenty/dead_chair",
+		"everycomp:vf/biomesoplenty/magic_chair",
+		"everycomp:vf/biomesoplenty/umbran_chair",
+		"everycomp:vf/biomesoplenty/hellbark_chair",
+		"everycomp:vf/biomesoplenty/empyreal_chair",
+		"everycomp:vf/silentgear/netherwood_chair",
+		"everycomp:vf/tconstruct/greenheart_chair",
+		"everycomp:vf/tconstruct/skyroot_chair",
+		"everycomp:vf/tconstruct/bloodshroom_chair",
+		"everycomp:vf/tconstruct/enderbark_chair",
+		"everycomp:vf/quark/ancient_chair",
+		"everycomp:vf/quark/blossom_chair",
+		"everycomp:vf/biomeswevegone/aspen_chair",
+		"everycomp:vf/biomeswevegone/baobab_chair",
+		"everycomp:vf/biomeswevegone/blue_enchanted_chair",
+		"everycomp:vf/biomeswevegone/cika_chair",
+		"everycomp:vf/biomeswevegone/cypress_chair",
+		"everycomp:vf/biomeswevegone/ebony_chair",
+		"everycomp:vf/biomeswevegone/fir_chair",
+		"everycomp:vf/biomeswevegone/florus_chair",
+		"everycomp:vf/biomeswevegone/green_enchanted_chair",
+		"everycomp:vf/biomeswevegone/holly_chair",
+		"everycomp:vf/biomeswevegone/ironwood_chair",
+		"everycomp:vf/biomeswevegone/jacaranda_chair",
+		"everycomp:vf/biomeswevegone/mahogany_chair",
+		"everycomp:vf/biomeswevegone/maple_chair",
+		"everycomp:vf/biomeswevegone/palm_chair",
+		"everycomp:vf/biomeswevegone/pine_chair",
+		"everycomp:vf/biomeswevegone/rainbow_eucalyptus_chair",
+		"everycomp:vf/biomeswevegone/redwood_chair",
+		"everycomp:vf/biomeswevegone/sakura_chair",
+		"everycomp:vf/biomeswevegone/skyris_chair",
+		"everycomp:vf/biomeswevegone/willow_chair",
+		"everycomp:vf/biomeswevegone/witch_hazel_chair",
+		"everycomp:vf/biomeswevegone/zelkova_chair",
+		"valhelsia_furniture:oak_chair",
+		"valhelsia_furniture:spruce_chair",
+		"valhelsia_furniture:birch_chair",
+		"valhelsia_furniture:jungle_chair",
+		"valhelsia_furniture:acacia_chair",
+		"valhelsia_furniture:cherry_chair",
+		"valhelsia_furniture:dark_oak_chair",
+		"valhelsia_furniture:mangrove_chair",
+		"valhelsia_furniture:crimson_chair",
+		"valhelsia_furniture:warped_chair"
+	]
+	chairs.forEach(item => {
+		event.remove({id:item})
+	})
+	for(let j = 0; j < chairs.length; j++) {
+		event.shaped(
+			chairs[j],
+			[
+				'AA',
+				'BB'
+			],
+			{
+				A: planks[j],
+				B: 'minecraft:stick',
+			}
+		)
+	}
 })
