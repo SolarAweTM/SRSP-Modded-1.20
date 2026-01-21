@@ -160,7 +160,8 @@ ItemEvents.tooltip(event => {
 		'tconstruct:mighty_smelting',
 		'tconstruct:fantastic_foundry',
 		'ars_nouveau:worn_notebook',
-		'immersiveengineering:manual'
+		'immersiveengineering:manual',
+		'botania:lexicon'
 	]
 	outdated_books.forEach(block => {
 		event.addAdvanced(block, (item, advanced, text) => {
@@ -175,6 +176,15 @@ ItemEvents.tooltip(event => {
 	event.addAdvanced('kubejs:trizzco_point', (item, advanced, text) => {
 		text.add(1, Text.green('Can be exchanged for saplings at The'))
 		text.add(2, Text.green('Sapling Exchange in the Quest Book.'))
+	})
+	
+	//tooltip for thigh high changes
+	event.addAdvanced('estrogen:thigh_highs', (item, advanced, text) => {
+		if(!event.shift) {
+		}
+		else {
+			text.add(1, Text.red("No longer gives fall damage resistance."))
+		}
 	})
 })
 
