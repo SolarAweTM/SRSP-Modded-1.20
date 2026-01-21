@@ -51,7 +51,7 @@ ServerEvents.recipes(event => {
 		stat_changes: [{
 			id: 'max_delay',
 			value: -10,
-			min: 100,
+			min: 200,
 			max: -1
 		}]
 	})
@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
 		stat_changes: [{
 			id: 'max_delay',
 			value: 10,
-			min: 100,
+			min: 200,
 			max: -1
 		}]
 	})
@@ -162,7 +162,7 @@ ServerEvents.recipes(event => {
 		stat_changes: [{
 			id: 'min_delay',
 			value: -10,
-			min: 100,
+			min: 200,
 			max: -1
 		}]
 	})
@@ -182,8 +182,46 @@ ServerEvents.recipes(event => {
 		stat_changes: [{
 			id: 'min_delay',
 			value: 10,
-			min: 100,
+			min: 200,
 			max: -1
+		}]
+	})
+	//player range and inverse
+	event.custom({
+		type: 'apotheosis:spawner_modifier',
+		conditions: [{
+			type: 'apotheosis:module',
+			module: 'spawner'
+		}],
+		mainhand: {
+			item: 'minecraft:prismarine_crystals'
+		},
+		consumes_offhand: false,
+		stat_changes: [{
+			id: 'req_player_range',
+			value: 2,
+			min: -1,
+			max: 24
+		}]
+	})
+	event.custom({
+		type: 'apotheosis:spawner_modifier',
+		conditions: [{
+			type: 'apotheosis:module',
+			module: 'spawner'
+		}],
+		mainhand: {
+			item: 'minecraft:prismarine_crystals'
+		},
+		offhand: {
+			item: 'minecraft:quartz'
+		},
+		consumes_offhand: false,
+		stat_changes: [{
+			id: 'req_player_range',
+			value: -2,
+			min: -1,
+			max: 24
 		}]
 	})
 	
