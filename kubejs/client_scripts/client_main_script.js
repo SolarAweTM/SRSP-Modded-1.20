@@ -170,6 +170,12 @@ ItemEvents.tooltip(event => {
 			text.add(4, Text.green('Regardless, these books still serve as a decent reference.'))
 		})
 	})
+	
+	//trizzco point tooltip
+	event.addAdvanced('kubejs:trizzco_point', (item, advanced, text) => {
+		text.add(1, Text.green('Can be exchanged for saplings at The'))
+		text.add(2, Text.green('Sapling Exchange in the Quest Book.'))
+	})
 })
 
 JEIEvents.hideItems(event => {

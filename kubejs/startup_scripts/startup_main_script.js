@@ -26,6 +26,8 @@ StartupEvents.registry('item', event => {
 	event.create('incomplete_electronic_component', 'create:sequenced_assembly').texture('srsp:item/incomplete_electronic_component')
 	event.create('incomplete_light_bulb', 'create:sequenced_assembly').texture('srsp:item/incomplete_light_bulb')
 	event.create('incomplete_machine', 'create:sequenced_assembly').texture('srsp:item/incomplete_machine')
+	//sapling exchange token
+	event.create('trizzco_point').texture('srsp:item/trizzco_point')
 })
 
 StartupEvents.registry('fluid', event => { //molten fluids for tconstruct/silent gear

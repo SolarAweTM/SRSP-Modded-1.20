@@ -1,0 +1,1496 @@
+{
+	autofocus_id: "0D4B8DB3A3CCE3A5"
+	consume_items: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	default_repeatable_quest: true
+	disable_toast: true
+	filename: "sapling_exchange"
+	group: ""
+	icon: "minecraft:oak_sapling"
+	id: "38DF34E66CD86E0A"
+	images: [{
+		height: 2.2d
+		image: "srsp:textures/ftbquests/arrow.png"
+		rotation: 0.0d
+		width: 8.7d
+		x: 3.5d
+		y: -1.0d
+	}]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			can_repeat: true
+			dependencies: ["0D4B8DB3A3CCE3A5"]
+			description: [
+				"&6This quest is repeatable infinitely.&r"
+				""
+				"Turn in your saplings in order to trade here."
+			]
+			icon: "immersiveengineering:shader_bag_uncommon"
+			id: "174E0BA75E2CFE44"
+			rewards: [{
+				id: "136E91C1FBDDA328"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "37C1E8133CA6F323"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Sapling\"}"
+						}
+						value: "minecraft:saplings"
+					}
+				}
+				type: "item"
+			}]
+			title: "Sell Saplings"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			can_repeat: false
+			description: [
+				"What do you do if you happen to &6need a wood type&r that isn't within the world borders?"
+				""
+				"Thankfully, we've partnered with &aTrizzco Industries&r* to bring you &6The Sapling Exchange&r! Turn in a sapling, get a token you can use to get &6any&r**&6 other sapling&r!"
+				""
+				"&7&o*Trizzco Industries is not responsible for any wars that take place as a result of this partnership.&r"
+				""
+				"&7&o**Tinkers' Construct saplings excluded. You can still trade them in, though.&r"
+			]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "0D4B8DB3A3CCE3A5"
+			subtitle: "Brought to you by our sponsor, Trizzco Industries"
+			tasks: [{
+				id: "3B993F719D87871A"
+				title: "Checkmark"
+				type: "checkmark"
+			}]
+			title: "The Sapling Exchange"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			icon: "minecraft:oak_sapling"
+			id: "71B8271C172467FA"
+			rewards: [{
+				id: "0B8676470230CC19"
+				item: "minecraft:oak_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "107317A572880519"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Oak Sapling"
+			x: 8.5d
+			y: -5.5d
+		}
+		{
+			icon: "minecraft:spruce_sapling"
+			id: "4032B8460EE443C0"
+			rewards: [{
+				id: "3619184265CD3E0A"
+				item: "minecraft:spruce_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7CE8AB6065461E31"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Spruce Sapling"
+			x: 9.5d
+			y: -5.5d
+		}
+		{
+			icon: "minecraft:birch_sapling"
+			id: "03643AC178382460"
+			rewards: [{
+				id: "4D03414D99882784"
+				item: "minecraft:birch_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4268D2C82755A631"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Birch Sapling"
+			x: 10.5d
+			y: -5.5d
+		}
+		{
+			icon: "minecraft:jungle_sapling"
+			id: "02390E6428CA045A"
+			rewards: [{
+				id: "72E9A3F6B750F0AE"
+				item: "minecraft:jungle_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6DBBE40F721F0B34"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Jungle Sapling"
+			x: 11.5d
+			y: -5.5d
+		}
+		{
+			icon: "minecraft:acacia_sapling"
+			id: "410C67FB97038E87"
+			rewards: [{
+				id: "21D446ECF8E3B5DF"
+				item: "minecraft:acacia_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6A0592F6A3CB7982"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Acacia Sapling"
+			x: 8.5d
+			y: -4.5d
+		}
+		{
+			icon: "minecraft:dark_oak_sapling"
+			id: "59D35F31B7E82588"
+			rewards: [{
+				id: "2D6A724F5AFD6001"
+				item: "minecraft:dark_oak_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "705F523D3F3FEA4D"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Dark Oak Sapling"
+			x: 9.5d
+			y: -4.5d
+		}
+		{
+			icon: "minecraft:mangrove_propagule"
+			id: "50BD338983BC6CA3"
+			rewards: [{
+				id: "3D3783A3CC0A4515"
+				item: "minecraft:mangrove_propagule"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3469CB11C2536FD5"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Mangrove Propagule"
+			x: 10.5d
+			y: -4.5d
+		}
+		{
+			icon: "minecraft:cherry_sapling"
+			id: "086C6778394578CD"
+			rewards: [{
+				id: "1486D6A18CFB1CC5"
+				item: "minecraft:cherry_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "68F471AE76CB234C"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Cherry Sapling"
+			x: 11.5d
+			y: -4.5d
+		}
+		{
+			icon: "minecraft:azalea"
+			id: "18B7A7FD25E79B29"
+			rewards: [{
+				id: "3E33122759C36D86"
+				item: "minecraft:azalea"
+				type: "item"
+			}]
+			tasks: [{
+				id: "30CC399E97C3C8C7"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Azalea"
+			x: 12.5d
+			y: -5.5d
+		}
+		{
+			icon: "minecraft:flowering_azalea"
+			id: "25F4B7AF2EAE3932"
+			rewards: [{
+				id: "278C295D2BC81FA8"
+				item: "minecraft:flowering_azalea"
+				type: "item"
+			}]
+			tasks: [{
+				id: "78271CE517879B23"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Flowering Azalea"
+			x: 12.5d
+			y: -4.5d
+		}
+		{
+			icon: "biomesoplenty:palm_sapling"
+			id: "4617DE061863E7F6"
+			rewards: [{
+				id: "570D885B500AFBC9"
+				item: "biomesoplenty:palm_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "78AA0E76215CE251"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Palm Sapling (BOP)"
+			x: 13.0d
+			y: 3.5d
+		}
+		{
+			icon: "ars_nouveau:blue_archwood_sapling"
+			id: "13BA74BA68B56388"
+			rewards: [{
+				id: "31890CA9AB5923A3"
+				item: "ars_nouveau:blue_archwood_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0BBC6DCC8E933C08"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Cascading Archwood Sapling"
+			x: 9.0d
+			y: -2.5d
+		}
+		{
+			icon: "ars_nouveau:red_archwood_sapling"
+			id: "3E346FA074140C57"
+			rewards: [{
+				id: "30F7AC2F2AE55C81"
+				item: "ars_nouveau:red_archwood_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1E32194AC81E6522"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Blazing Archwood Sapling"
+			x: 10.0d
+			y: -2.5d
+		}
+		{
+			icon: "ars_nouveau:purple_archwood_sapling"
+			id: "1402779FE0F7A2F7"
+			rewards: [{
+				id: "600C42211F242AFE"
+				item: "ars_nouveau:purple_archwood_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "25291640E9315384"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Vexing Archwood Sapling"
+			x: 11.0d
+			y: -2.5d
+		}
+		{
+			icon: "ars_nouveau:green_archwood_sapling"
+			id: "0E9C46DE4E47C7EF"
+			rewards: [{
+				id: "69FB8E470EB8A20C"
+				item: "ars_nouveau:green_archwood_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6F789BB0ED6AD104"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Flourishing Archwood Sapling"
+			x: 12.0d
+			y: -2.5d
+		}
+		{
+			icon: "biomesoplenty:origin_sapling"
+			id: "159797951AE4516E"
+			rewards: [{
+				id: "6F4A6D841D0792C3"
+				item: "biomesoplenty:origin_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "63F95D65B9C76DCB"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Origin Sapling"
+			x: 10.0d
+			y: -0.5d
+		}
+		{
+			icon: "biomesoplenty:flowering_oak_sapling"
+			id: "7C02FD1EF9A23201"
+			rewards: [{
+				id: "0C1123C4D6A46FF1"
+				item: "biomesoplenty:flowering_oak_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "77FF268CB6571AC6"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Flowering Oak Sapling"
+			x: 9.0d
+			y: -0.5d
+		}
+		{
+			icon: "biomesoplenty:cypress_sapling"
+			id: "06BFB436D1C840C7"
+			rewards: [{
+				id: "14072A16ED454ECB"
+				item: "biomesoplenty:cypress_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5F16A2522374BC73"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Cypress Sapling (BOP)"
+			x: 12.0d
+			y: 3.5d
+		}
+		{
+			icon: "biomesoplenty:snowblossom_sapling"
+			id: "7DD77F6DFE10537A"
+			rewards: [{
+				id: "5D5BCB12A0166CEF"
+				item: "biomesoplenty:snowblossom_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5C008F745853E988"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Snowblossom Sapling"
+			x: 14.0d
+			y: 0.5d
+		}
+		{
+			icon: "biomesoplenty:rainbow_birch_sapling"
+			id: "065EC3927BC30503"
+			rewards: [{
+				id: "6177ED6932D93891"
+				item: "biomesoplenty:rainbow_birch_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1AF5F010FEF9198F"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Rainbow Birch Sapling"
+			x: 10.5d
+			y: 5.5d
+		}
+		{
+			icon: "biomesoplenty:fir_sapling"
+			id: "599B7053AFACB70C"
+			rewards: [{
+				id: "380E8E63FD4F8210"
+				item: "biomesoplenty:fir_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "777BC6BC8F58770D"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Fir Sapling (BOP)"
+			x: 8.0d
+			y: 3.5d
+		}
+		{
+			icon: "biomesoplenty:pine_sapling"
+			id: "16F79FA7EB76F45D"
+			rewards: [{
+				id: "7DF01C75C52AD500"
+				item: "biomesoplenty:pine_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1AECAF6E2392038D"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Pine Sapling (BOP)"
+			x: 7.0d
+			y: 3.5d
+		}
+		{
+			icon: "biomesoplenty:red_maple_sapling"
+			id: "7C6CA89F22D4AE0F"
+			rewards: [{
+				id: "5450D6E764461431"
+				item: "biomesoplenty:red_maple_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "498E1A0777B8DA91"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Red Maple Sapling (BOP)"
+			x: 11.0d
+			y: -1.5d
+		}
+		{
+			icon: "biomesoplenty:orange_maple_sapling"
+			id: "26555F74E9E2D0A2"
+			rewards: [{
+				id: "4E48B936942732ED"
+				item: "biomesoplenty:orange_maple_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "077C6EFF1E099252"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Orange Maple Sapling"
+			x: 12.0d
+			y: -1.5d
+		}
+		{
+			icon: "biomesoplenty:yellow_maple_sapling"
+			id: "563F49AD29B25F89"
+			rewards: [{
+				id: "07DBB04643AA39D5"
+				item: "biomesoplenty:yellow_maple_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "68B4ED9492EEC36B"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Yellow Maple Sapling"
+			x: 13.0d
+			y: -1.5d
+		}
+		{
+			icon: "biomesoplenty:redwood_sapling"
+			id: "42C2C0EB9F0CD1CD"
+			rewards: [{
+				id: "1EA10370CFC9867F"
+				item: "biomesoplenty:redwood_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "77FDED741FDA2198"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Redwood Sapling (BOP)"
+			x: 11.0d
+			y: 3.5d
+		}
+		{
+			icon: "biomesoplenty:mahogany_sapling"
+			id: "5815A6388A5ED846"
+			rewards: [{
+				id: "2902C0CCFE85E9A7"
+				item: "biomesoplenty:mahogany_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3C1797FEC1F9FD2E"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Mahogany Sapling (BOP)"
+			x: 14.0d
+			y: 3.5d
+		}
+		{
+			icon: "biomesoplenty:jacaranda_sapling"
+			id: "587B8B01F9C93DE3"
+			rewards: [{
+				id: "63FFA3D02788F024"
+				item: "biomesoplenty:jacaranda_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "655BD221238CAC88"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Jacaranda Sapling (BOP)"
+			x: 9.0d
+			y: 3.5d
+		}
+		{
+			icon: "biomesoplenty:willow_sapling"
+			id: "50A3151DD490C1F4"
+			rewards: [{
+				id: "5405526111597230"
+				item: "biomesoplenty:willow_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1CCDE94B2770B330"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Willow Sapling (BOP)"
+			x: 10.0d
+			y: 3.5d
+		}
+		{
+			icon: "biomesoplenty:dead_sapling"
+			id: "2B9E403748A8E96D"
+			rewards: [{
+				id: "23DD2E785A11D6F5"
+				item: "biomesoplenty:dead_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "70E3261EBF4B7E31"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Dead Sapling"
+			x: 14.0d
+			y: 2.5d
+		}
+		{
+			icon: "biomesoplenty:magic_sapling"
+			id: "61E3E1BAA4876251"
+			rewards: [{
+				id: "4695C5014F5E8DFF"
+				item: "biomesoplenty:magic_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "78758A9D0385F7BE"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Magic Sapling"
+			x: 10.0d
+			y: 0.5d
+		}
+		{
+			icon: "biomesoplenty:umbran_sapling"
+			id: "6AC4ADAE70BADD96"
+			rewards: [{
+				id: "2E188086B56BE1F4"
+				item: "biomesoplenty:umbran_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "67EBEE87D6BBCDB7"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Umbran Sapling"
+			x: 11.0d
+			y: 0.5d
+		}
+		{
+			icon: "biomesoplenty:hellbark_sapling"
+			id: "548D32AC531F2605"
+			rewards: [{
+				id: "15BA0B6931CBE419"
+				item: "biomesoplenty:hellbark_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2F4E05EBE12CAA7C"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Hellbark Sapling"
+			x: 12.0d
+			y: 0.5d
+		}
+		{
+			icon: "biomesoplenty:empyreal_sapling"
+			id: "274A4D29EB440ED2"
+			rewards: [{
+				id: "78B5B91A1C60BD3C"
+				item: "biomesoplenty:empyreal_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "78C4BC492BBE2DA4"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Empyreal Sapling"
+			x: 13.0d
+			y: 0.5d
+		}
+		{
+			icon: "biomeswevegone:aspen_sapling"
+			id: "01B98F5A528B8537"
+			rewards: [{
+				id: "2DE29A9459B03936"
+				item: "biomeswevegone:aspen_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1B32468A072B09D9"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Aspen Sapling"
+			x: 9.0d
+			y: 0.5d
+		}
+		{
+			icon: "biomeswevegone:baobab_sapling"
+			id: "6BC8AF9F157AAB59"
+			rewards: [{
+				id: "5F835866F34949B1"
+				item: "biomeswevegone:baobab_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "32EC4A6617CCD953"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Baobab Sapling"
+			x: 14.0d
+			y: 1.5d
+		}
+		{
+			icon: "biomeswevegone:blue_enchanted_sapling"
+			id: "53044DE4CBEDAAA6"
+			rewards: [{
+				id: "2C85FE0B59796A45"
+				item: "biomeswevegone:blue_enchanted_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "64524E7752914CD8"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Blue Enchanted Sapling"
+			x: 14.0d
+			y: -2.5d
+		}
+		{
+			icon: "biomeswevegone:cika_sapling"
+			id: "4D7C818638CB264E"
+			rewards: [{
+				id: "231AFE413F77C72D"
+				item: "biomeswevegone:cika_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3688C3F6E53FA75F"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Cika Sapling"
+			x: 7.0d
+			y: 1.5d
+		}
+		{
+			icon: "biomeswevegone:cypress_sapling"
+			id: "57772C997F24B3BE"
+			rewards: [{
+				id: "132F66832A1D0588"
+				item: "biomeswevegone:cypress_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "70B17AC10D6CB3BE"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Cypress Sapling (BWG)"
+			x: 12.0d
+			y: 4.5d
+		}
+		{
+			icon: "biomeswevegone:ebony_sapling"
+			id: "1A02AD34590F6B9E"
+			rewards: [{
+				id: "5788D135EC137F01"
+				item: "biomeswevegone:ebony_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7CBA9DBC69C85990"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Ebony Sapling"
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			icon: "biomeswevegone:fir_sapling"
+			id: "4EC6E37B15DF1662"
+			rewards: [{
+				id: "7A61EDE39EE3145F"
+				item: "biomeswevegone:fir_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1CCC2A52B942B8E6"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Fir Sapling (BWG)"
+			x: 8.0d
+			y: 4.5d
+		}
+		{
+			icon: "biomeswevegone:green_enchanted_sapling"
+			id: "36BF5535FC9EC774"
+			rewards: [{
+				id: "126F3D6D1C4AD1DC"
+				item: "biomeswevegone:green_enchanted_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "03017C9387D9658C"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Green Enchanted Sapling"
+			x: 13.0d
+			y: -2.5d
+		}
+		{
+			icon: "biomeswevegone:holly_sapling"
+			id: "6CFEABB10424A7BB"
+			rewards: [{
+				id: "40F2A4641D373A28"
+				item: "biomeswevegone:holly_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "66E8655D4CFED139"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Holly Sapling"
+			x: 12.0d
+			y: 1.5d
+		}
+		{
+			icon: "biomeswevegone:ironwood_sapling"
+			id: "5952BF923EC4AC56"
+			rewards: [{
+				id: "710B85AD063A988F"
+				item: "biomeswevegone:ironwood_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2CC82B453DFEC39E"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Ironwood Sapling"
+			x: 13.0d
+			y: 1.5d
+		}
+		{
+			icon: "biomeswevegone:jacaranda_sapling"
+			id: "63B37FBB715BB74A"
+			rewards: [{
+				id: "09D83E700020E95C"
+				item: "biomeswevegone:jacaranda_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "31C5679EA4C8D282"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Jacaranda Sapling (BWG)"
+			x: 9.0d
+			y: 4.5d
+		}
+		{
+			icon: "biomeswevegone:mahogany_sapling"
+			id: "0AE09716A191AFB4"
+			rewards: [{
+				id: "3A3FA56C7A207DDC"
+				item: "biomeswevegone:mahogany_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1A427D5D27194B9E"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Mahogany Sapling (BWG)"
+			x: 14.0d
+			y: 4.5d
+		}
+		{
+			icon: "biomeswevegone:maple_sapling"
+			id: "18960A1AC952BA5C"
+			rewards: [{
+				id: "1975347A7B494C38"
+				item: "biomeswevegone:maple_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4D9DBB2D377E6484"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Maple Sapling"
+			x: 13.0d
+			y: -0.5d
+		}
+		{
+			icon: "biomeswevegone:palm_sapling"
+			id: "1DADF594D2E2D7B1"
+			rewards: [{
+				id: "67EF9BE70866D4E1"
+				item: "biomeswevegone:palm_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "319A3B9F2CC1E6BD"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Palm Sapling (BWG)"
+			x: 13.0d
+			y: 4.5d
+		}
+		{
+			icon: "biomeswevegone:pine_sapling"
+			id: "04C5C01261AD126E"
+			rewards: [{
+				id: "1641F4C42C47E79E"
+				item: "biomeswevegone:pine_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3984599A86047EDE"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Pine Sapling (BWG)"
+			x: 7.0d
+			y: 4.5d
+		}
+		{
+			icon: "biomeswevegone:rainbow_eucalyptus_sapling"
+			id: "6FAA4DE40E846048"
+			rewards: [{
+				id: "7293AE97797ED9FD"
+				item: "biomeswevegone:rainbow_eucalyptus_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1CCD1205F8F06247"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Rainbow Eucalyptus Sapling"
+			x: 10.0d
+			y: 2.5d
+		}
+		{
+			icon: "biomeswevegone:redwood_sapling"
+			id: "14851D2220714825"
+			rewards: [{
+				id: "4417373E8EC6DD2F"
+				item: "biomeswevegone:redwood_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "124A13732CCCC99A"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Redwood Sapling (BWG)"
+			x: 11.0d
+			y: 4.5d
+		}
+		{
+			icon: "biomeswevegone:white_sakura_sapling"
+			id: "385B08B22A7F5A61"
+			rewards: [{
+				id: "6001C2CA335AAD29"
+				item: "biomeswevegone:white_sakura_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "42B42935B8B6183D"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "White Sakura Sapling"
+			x: 13.0d
+			y: -3.5d
+		}
+		{
+			icon: "biomeswevegone:yellow_sakura_sapling"
+			id: "6B04513408F2F673"
+			rewards: [{
+				id: "5D574E13E3311975"
+				item: "biomeswevegone:yellow_sakura_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "67E89CA9F6B01307"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Yellow Sakura Sapling"
+			x: 14.0d
+			y: -3.5d
+		}
+		{
+			icon: "biomeswevegone:skyris_sapling"
+			id: "692CBB2F540102FD"
+			rewards: [{
+				id: "7B2799ED3FDC09BE"
+				item: "biomeswevegone:skyris_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "72CA7B87597F63B7"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Skyris Sapling"
+			x: 12.0d
+			y: 2.5d
+		}
+		{
+			icon: "biomeswevegone:white_mangrove_sapling"
+			id: "72C0A6526AF434F6"
+			rewards: [{
+				id: "51A7C03E24692952"
+				item: "biomeswevegone:white_mangrove_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0418EE52C861C06D"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "White Mangrove Sapling"
+			x: 13.0d
+			y: 2.5d
+		}
+		{
+			icon: "biomeswevegone:willow_sapling"
+			id: "2701B31465EF2C57"
+			rewards: [{
+				id: "0E5D05940A9BEE5B"
+				item: "biomeswevegone:willow_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3CAA8DACEE000C9B"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Willow Sapling (BWG)"
+			x: 10.0d
+			y: 4.5d
+		}
+		{
+			icon: "biomeswevegone:witch_hazel_sapling"
+			id: "5A700A304ECBF9E3"
+			rewards: [{
+				id: "3C2CB9D3080F2667"
+				item: "biomeswevegone:witch_hazel_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "698DBFECCB05E29E"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Witch Hazel Sapling"
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			icon: "biomeswevegone:zelkova_sapling"
+			id: "22E484F72ED71C3B"
+			rewards: [{
+				id: "02FCD762ABBDA0DE"
+				item: "biomeswevegone:zelkova_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "01493FEB0F86055B"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Zelkova Sapling"
+			x: 7.0d
+			y: 0.5d
+		}
+		{
+			icon: "biomeswevegone:palo_verde_sapling"
+			id: "247E553F481DD118"
+			rewards: [{
+				id: "742E84EDBA0ED030"
+				item: "biomeswevegone:palo_verde_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "50ED3ED396C46DF6"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Palo Verde Sapling"
+			x: 11.0d
+			y: 2.5d
+		}
+		{
+			icon: "biomeswevegone:araucaria_sapling"
+			id: "687308CCAC70DBA6"
+			rewards: [{
+				id: "3CC02CAFDF6420EA"
+				item: "biomeswevegone:araucaria_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "50A4538F37AD57C3"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Araucaria Sapling"
+			x: 11.0d
+			y: 1.5d
+		}
+		{
+			icon: "biomeswevegone:blue_spruce_sapling"
+			id: "54E9349A51981F10"
+			rewards: [{
+				id: "04B40DFB17C047B2"
+				item: "biomeswevegone:blue_spruce_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "406E63D615BA3460"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Blue Spruce Sapling"
+			x: 7.0d
+			y: -2.5d
+		}
+		{
+			icon: "biomeswevegone:brown_birch_sapling"
+			id: "53D58F40556FCC61"
+			rewards: [{
+				id: "5B6F451993C02145"
+				item: "biomeswevegone:brown_birch_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "76F36A326C2C42BC"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Brown Birch Sapling"
+			x: 12.5d
+			y: 5.5d
+		}
+		{
+			icon: "biomeswevegone:brown_oak_sapling"
+			id: "3A44C806E723A9F6"
+			rewards: [{
+				id: "34B2995DB7A4068A"
+				item: "biomeswevegone:brown_oak_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0CADAFA0B2660B59"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Brown Oak Sapling"
+			x: 8.0d
+			y: -0.5d
+		}
+		{
+			icon: "biomeswevegone:brown_zelkova_sapling"
+			id: "48E299CB93282CAB"
+			rewards: [{
+				id: "064524A582955812"
+				item: "biomeswevegone:brown_zelkova_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1BFC679FD34AF3CB"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Brown Zelkova Sapling"
+			x: 8.0d
+			y: 0.5d
+		}
+		{
+			icon: "biomeswevegone:indigo_jacaranda_sapling"
+			id: "5B3CB6ABD4FBEEE4"
+			rewards: [{
+				id: "1062720431DAECD1"
+				item: "biomeswevegone:indigo_jacaranda_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2BD264CEBCE81901"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Indigo Jacaranda Sapling"
+			x: 9.0d
+			y: 2.5d
+		}
+		{
+			icon: "biomeswevegone:orange_birch_sapling"
+			id: "604E108BDA89BCF9"
+			rewards: [{
+				id: "4F2E9C4136FEA30D"
+				item: "biomeswevegone:orange_birch_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "72B4E3F065B8325B"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Orange Birch Sapling"
+			x: 9.5d
+			y: 5.5d
+		}
+		{
+			icon: "biomeswevegone:orange_oak_sapling"
+			id: "1534F54E379B8345"
+			rewards: [{
+				id: "597D4E6F63726EDA"
+				item: "biomeswevegone:orange_oak_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5B786D632D484ADF"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Orange Oak Sapling"
+			x: 9.0d
+			y: -1.5d
+		}
+		{
+			icon: "biomeswevegone:orange_spruce_sapling"
+			id: "26102B11C145112D"
+			rewards: [{
+				id: "22DA40E261EFA2BA"
+				item: "biomeswevegone:orange_spruce_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "78ABD0AE4A8C6803"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Orange Spruce Sapling"
+			x: 8.0d
+			y: -3.5d
+		}
+		{
+			icon: "biomeswevegone:orchard_sapling"
+			id: "6935CF16206D700C"
+			rewards: [{
+				id: "4DF34F47D9158FBC"
+				item: "biomeswevegone:orchard_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2F1E4CFFA5A6F7AF"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Orchard Sapling"
+			x: 10.0d
+			y: -1.5d
+		}
+		{
+			icon: "biomeswevegone:red_birch_sapling"
+			id: "5BFEA3B9CF3417F9"
+			rewards: [{
+				id: "73212D43F50A4567"
+				item: "biomeswevegone:red_birch_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2622F4A09D1E4DA5"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Red Birch Sapling"
+			x: 8.5d
+			y: 5.5d
+		}
+		{
+			icon: "biomeswevegone:red_maple_sapling"
+			id: "181EF99AD108B5BC"
+			rewards: [{
+				id: "16E2248D605439D5"
+				item: "biomeswevegone:red_maple_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2C366C47FCF77A4D"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Red Maple Sapling (BWG)"
+			x: 11.0d
+			y: -0.5d
+		}
+		{
+			icon: "biomeswevegone:red_oak_sapling"
+			id: "63BCECA1D5F5C5B2"
+			rewards: [{
+				id: "5C3930D3288CA8CC"
+				item: "biomeswevegone:red_oak_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2CDF9C0C665C5565"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Red Oak Sapling"
+			x: 8.0d
+			y: -1.5d
+		}
+		{
+			icon: "biomeswevegone:red_spruce_sapling"
+			id: "0AD2BE128964C57B"
+			rewards: [{
+				id: "214A5F62D9F418AE"
+				item: "biomeswevegone:red_spruce_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "59FF5C6E2935C7A3"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Red Spruce Sapling"
+			x: 7.0d
+			y: -3.5d
+		}
+		{
+			icon: "biomeswevegone:silver_maple_sapling"
+			id: "39381E90C0EB2588"
+			rewards: [{
+				id: "2085CA9AC6FB9525"
+				item: "biomeswevegone:silver_maple_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4AEEEA5696EEC4BC"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Silver Maple Sapling"
+			x: 12.0d
+			y: -0.5d
+		}
+		{
+			icon: "biomeswevegone:yellow_birch_sapling"
+			id: "7DC58EB4F1676962"
+			rewards: [{
+				id: "2B30B57AF2E8BE76"
+				item: "biomeswevegone:yellow_birch_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4678C0A983CA9D4C"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Yellow Birch Sapling"
+			x: 11.5d
+			y: 5.5d
+		}
+		{
+			icon: "biomeswevegone:yellow_spruce_sapling"
+			id: "259F9E254379A184"
+			rewards: [{
+				id: "1CE273BF7D853ACE"
+				item: "biomeswevegone:yellow_spruce_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1B0F3CD4A4B861D6"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Yellow Spruce Sapling"
+			x: 8.0d
+			y: -2.5d
+		}
+		{
+			icon: "biomeswevegone:yucca_sapling"
+			id: "663C0B6682516CDB"
+			rewards: [{
+				id: "1C36CD0AF13398FB"
+				item: "biomeswevegone:yucca_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6590A55F2FADEB0B"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Yucca Sapling"
+			x: 10.0d
+			y: 1.5d
+		}
+		{
+			icon: "quark:ancient_sapling"
+			id: "5082A3F369079820"
+			rewards: [{
+				id: "56187698C052006E"
+				item: "quark:ancient_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "15495405AB63ADC1"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Ashen Sapling"
+			x: 7.0d
+			y: 2.5d
+		}
+		{
+			icon: "quark:blue_blossom_sapling"
+			id: "0DC72303B1799B71"
+			rewards: [{
+				id: "37EA6962DD311EDA"
+				item: "quark:blue_blossom_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1CE074A370683BB9"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Frosty Trumpet Sapling"
+			x: 9.0d
+			y: -3.5d
+		}
+		{
+			icon: "quark:lavender_blossom_sapling"
+			id: "3FE06C2CC5D884CD"
+			rewards: [{
+				id: "1064356ACEE4B75B"
+				item: "quark:lavender_blossom_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7359DCC45436048B"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Serene Trumpet Sapling"
+			x: 10.0d
+			y: -3.5d
+		}
+		{
+			icon: "quark:orange_blossom_sapling"
+			id: "1F4376B0C4837D48"
+			rewards: [{
+				id: "18F9F6C0AAE92703"
+				item: "quark:orange_blossom_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3789BE006A5DE87B"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Warm Trumpet Sapling"
+			x: 11.0d
+			y: -3.5d
+		}
+		{
+			icon: "quark:red_blossom_sapling"
+			id: "4D8481AE2F204282"
+			rewards: [{
+				id: "7781658BD4C69AE9"
+				item: "quark:red_blossom_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "680AEF6867208CB1"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Fiery Trumpet Sapling"
+			x: 12.0d
+			y: -3.5d
+		}
+		{
+			icon: "silentgear:netherwood_sapling"
+			id: "11347290D77E7A0B"
+			rewards: [{
+				id: "098E2ED38952F270"
+				item: "silentgear:netherwood_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "372F13C9509C150C"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Netherwood Sapling"
+			x: 8.0d
+			y: 2.5d
+		}
+	]
+	title: "Sapling Exchange"
+}
