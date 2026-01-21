@@ -905,6 +905,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			shape: "diamond"
 			subtitle: "Get from point A to point C and then point B"
 			tasks: [{
 				id: "7DF9F51AA7AD099E"
@@ -1705,6 +1706,28 @@
 			]
 			x: -3.5d
 			y: 3.5d
+		}
+		{
+			dependencies: ["794FC867B6758318"]
+			description: [
+				"The &aModifcation Table&r can be used to rotate unsealed patterns."
+				""
+				"It works similarly to a Stonecutter."
+			]
+			id: "49C87A422192B57F"
+			rewards: [{
+				id: "2C50C7EA142F0576"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "rotate"
+			tasks: [{
+				id: "325A0DC8196879E6"
+				item: "chiselsandbits:modification_table"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.5d
 		}
 	]
 	title: "Useful Tools"
