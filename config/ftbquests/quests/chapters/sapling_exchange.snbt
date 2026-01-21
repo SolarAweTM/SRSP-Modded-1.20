@@ -27,6 +27,8 @@
 				"&6This quest is repeatable infinitely.&r"
 				""
 				"Turn in your saplings in order to trade here."
+				""
+				"Click the task above to turn in a sapling."
 			]
 			icon: "immersiveengineering:shader_bag_uncommon"
 			id: "174E0BA75E2CFE44"
