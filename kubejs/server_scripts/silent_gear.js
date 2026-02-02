@@ -16,6 +16,10 @@ ServerEvents.recipes(event => {
 	event.remove({output:'silentgear:elytra_template'})
 	event.remove({output:'silentgear:lining_blueprint'})
 	event.remove({output:'silentgear:lining_template'})
+	event.remove({output:'silentgear:arrow_template'})
+	event.remove({output:'silentgear:arrow_blueprint'})
+	event.remove({output:'silentgear:arrow_heads'})
+	event.remove({output:'silentgear:arrow'})
 	event.remove({output:'silentgear:lining'})
 	event.remove({output:'silentgear:helmet'})
 	event.remove({output:'silentgear:chestplate'})
@@ -27,4 +31,8 @@ ServerEvents.recipes(event => {
 	event.remove({output:'silentgear:fishing_rod_blueprint'})
 	event.remove({output:'silentgear:fishing_rod_template'})
 	event.remove({output:'silentgear:fishing_reel_and_hook'})
+})
+
+ServerEvents.tags('item', event => {
+    event.remove('minecraft:arrows', 'silentgear:arrow')
 })
