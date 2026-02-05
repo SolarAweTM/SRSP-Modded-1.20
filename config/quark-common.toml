@@ -331,7 +331,7 @@
 	[management.item_sharing]
 		#In ticks.
 		#Allowed values: [0,)
-		Cooldown = 100
+		Cooldown = 0
 		"Render Items In Chat" = true
 
 	[management.quick_armor_swapping]
