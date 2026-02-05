@@ -176,9 +176,9 @@ ServerEvents.recipes(event => {
 		'minecraft:copper_ingot',
 		//sqeuence
 		[
-			event.recipes.create.deploying('kubejs:incomplete_iron_component', ['kubejs:incomplete_iron_component', 'immersiveengineering:plate_iron']),
+			event.recipes.create.deploying('kubejs:incomplete_iron_component', ['kubejs:incomplete_iron_component', 'create:iron_sheet']),
 			event.recipes.create.pressing(['kubejs:incomplete_iron_component'], 'kubejs:incomplete_iron_component'),
-			event.recipes.create.deploying('kubejs:incomplete_iron_component', ['kubejs:incomplete_iron_component', 'immersiveengineering:plate_iron']),
+			event.recipes.create.deploying('kubejs:incomplete_iron_component', ['kubejs:incomplete_iron_component', 'create:iron_sheet']),
 			event.recipes.create.pressing(['kubejs:incomplete_iron_component'], 'kubejs:incomplete_iron_component')
 		]
 	)
