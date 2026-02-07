@@ -110,6 +110,52 @@ ServerEvents.recipes(event => {
 	event.remove({id:'createestrogen:filling/crystal_estrogen_pill'})
 	event.remove({id:'createestrogen:mixing/molten_amethyst'})
 	event.recipes.create.filling('estrogen:crystal_estrogen_pill',[Fluid.of('tconstruct:molten_amethyst', FluidAmounts.BOTTLE),'estrogen:estrogen_pill'])
+	
+	//fix electric motor and alternator recipe being impossible
+	event.remove({id:'createaddition:mechanical_crafting/electric_motor'})
+	event.remove({id:'createaddition:mechanical_crafting/alternator'})
+	event.recipes.create.mechanical_crafting('createaddition:electric_motor',
+		[
+		'  A  ',
+		' BCB ',
+		'BCICB',
+		' BPB '
+		],
+		{
+			A: 'create:andesite_alloy',
+			B: 'create:brass_sheet',
+			C: 'immersiveengineering:wirecoil_copper',
+			I: '#forge:rods/iron',
+			P: 'createaddition:capacitor'
+		}
+	)
+	event.recipes.create.mechanical_crafting('createaddition:alternator',
+		[
+		'  A  ',
+		' BCB ',
+		'BCICB',
+		' BPB '
+		],
+		{
+			A: 'create:andesite_alloy',
+			B: 'create:iron_sheet',
+			C: 'immersiveengineering:wirecoil_copper',
+			I: '#forge:rods/iron',
+			P: 'createaddition:capacitor'
+		}
+	)
+	
+	//iron rod recipe
+	event.custom({
+		type: 'createaddition:rolling',
+		input: {
+			tag: 'forge:ingots/iron'
+		},
+		result: {
+			item: 'immersiveengineering:stick_iron',
+			count: 2
+		}
+	})
 })
 
 ServerEvents.tags('item', event => {
