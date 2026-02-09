@@ -156,6 +156,9 @@ ServerEvents.recipes(event => {
 			count: 2
 		}
 	})
+	
+	//steel ingot recipe
+	event.recipes.create.mixing(['immersiveengineering:ingot_steel'], ['minecraft:iron_ingot', 'minecraft:coal']).heated()
 })
 
 ServerEvents.tags('item', event => {
