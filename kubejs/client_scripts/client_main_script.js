@@ -186,6 +186,28 @@ ItemEvents.tooltip(event => {
 			text.add(1, Text.red("No longer gives fall damage resistance."))
 		}
 	})
+	
+	//numerical mana!!
+	event.addAdvanced('botania:mana_tablet', (item, advanced, text) => {
+		if(item.nbt) {
+			text.add(1, Text.of('Mana: ').append(Text.aqua(Text.prettyPrintNbt(item.nbt.mana))).append(Text.of(' / 500000 (')).append(Text.of(((item.nbt.mana / 500000) * 100).toFixed(2))).append(Text.of('%)')))
+		}
+	})
+	event.addAdvanced('botania:mana_mirror', (item, advanced, text) => {
+		if(item.nbt) {
+			text.add(1, Text.of('Mana: ').append(Text.aqua(Text.prettyPrintNbt(item.nbt.mana))).append(Text.of(' / 1000000 (')).append(Text.of(((item.nbt.mana / 1000000) * 100).toFixed(2))).append(Text.of('%)')))
+		}
+	})
+	event.addAdvanced('botania:mana_ring', (item, advanced, text) => {
+		if(item.nbt) {
+			text.add(1, Text.of('Mana: ').append(Text.aqua(Text.prettyPrintNbt(item.nbt.mana))).append(Text.of(' / 500000 (')).append(Text.of(((item.nbt.mana / 500000) * 100).toFixed(2))).append(Text.of('%)')))
+		}
+	})
+	event.addAdvanced('botania:mana_ring_greater', (item, advanced, text) => {
+		if(item.nbt) {
+			text.add(1, Text.of('Mana: ').append(Text.aqua(Text.prettyPrintNbt(item.nbt.mana))).append(Text.of(' / 2000000 (')).append(Text.of(((item.nbt.mana / 2000000) * 100).toFixed(2))).append(Text.of('%)')))
+		}
+	})
 })
 
 JEIEvents.hideItems(event => {
