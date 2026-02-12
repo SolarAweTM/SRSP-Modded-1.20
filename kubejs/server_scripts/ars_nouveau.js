@@ -279,6 +279,7 @@ LootJS.modifiers((event) => {
 	event.addLootTableModifier("minecraft:chests/underwater_ruin_small").removeLoot("ars_nouveau:warp_scroll");
 	event.addLootTableModifier("minecraft:chests/underwater_ruin_big").removeLoot("ars_nouveau:warp_scroll");
 	event.addLootTableModifier("minecraft:chests/woodland_mansion").removeLoot("ars_nouveau:warp_scroll");
+	event.addLootTableModifier("minecraft:chests/desert_pyramid").removeLoot("ars_nouveau:warp_scroll");
 });
 
 MoreJSEvents.updateVillagerOffers((event) => { //forgot this
