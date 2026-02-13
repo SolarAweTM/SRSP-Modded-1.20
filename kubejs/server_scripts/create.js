@@ -174,4 +174,23 @@ ServerEvents.tags('item', event => {
 	newRawOres.forEach(item => {
 		event.add('create:crushed_raw_materials', item)
 	})
+	// railways BOP compat tracks are actually not tracks by default 
+	const tracks = [
+		'railways:track_biomesoplenty_dead',
+		'railways:track_biomesoplenty_fir',
+		'railways:track_biomesoplenty_hellbark',
+		'railways:track_biomesoplenty_jacaranda',
+		'railways:track_biomesoplenty_magic',
+		'railways:track_biomesoplenty_mahogany',
+		'railways:track_biomesoplenty_palm',
+		'railways:track_biomesoplenty_redwood',
+		'railways:track_biomesoplenty_umbran',
+		'railways:track_biomesoplenty_willow',
+		'railways:track_quark_blossom',
+		'railways:track_quark_ancient',
+		'railways:track_quark_azalea'
+	]
+	tracks.forEach(item => {
+		event.add('create:tracks', item)
+	})
 })
