@@ -190,22 +190,45 @@ ItemEvents.tooltip(event => {
 	//numerical mana!!
 	event.addAdvanced('botania:mana_tablet', (item, advanced, text) => {
 		if(item.nbt) {
-			text.add(1, Text.of('Mana: ').append(Text.aqua(Text.prettyPrintNbt(item.nbt.mana))).append(Text.of(' / 500000 (')).append(Text.of(((item.nbt.mana / 500000) * 100).toFixed(2))).append(Text.of('%)')))
+			text.add(1, Text.of('Mana: ').append(Text.aqua((item.nbt.mana).toFixed(0))).append(Text.of(' / 500000 (')).append(Text.of(((item.nbt.mana / 500000) * 100).toFixed(2))).append(Text.of('%)')))
 		}
 	})
 	event.addAdvanced('botania:mana_mirror', (item, advanced, text) => {
 		if(item.nbt) {
-			text.add(1, Text.of('Mana: ').append(Text.aqua(Text.prettyPrintNbt(item.nbt.mana))).append(Text.of(' / 1000000 (')).append(Text.of(((item.nbt.mana / 1000000) * 100).toFixed(2))).append(Text.of('%)')))
+			text.add(1, Text.of('Mana: ').append(Text.aqua((item.nbt.mana).toFixed(0))).append(Text.of(' / 1000000 (')).append(Text.of(((item.nbt.mana / 1000000) * 100).toFixed(2))).append(Text.of('%)')))
 		}
 	})
 	event.addAdvanced('botania:mana_ring', (item, advanced, text) => {
 		if(item.nbt) {
-			text.add(1, Text.of('Mana: ').append(Text.aqua(Text.prettyPrintNbt(item.nbt.mana))).append(Text.of(' / 500000 (')).append(Text.of(((item.nbt.mana / 500000) * 100).toFixed(2))).append(Text.of('%)')))
+			text.add(1, Text.of('Mana: ').append(Text.aqua((item.nbt.mana).toFixed(0))).append(Text.of(' / 500000 (')).append(Text.of(((item.nbt.mana / 500000) * 100).toFixed(2))).append(Text.of('%)')))
 		}
 	})
 	event.addAdvanced('botania:mana_ring_greater', (item, advanced, text) => {
 		if(item.nbt) {
-			text.add(1, Text.of('Mana: ').append(Text.aqua(Text.prettyPrintNbt(item.nbt.mana))).append(Text.of(' / 2000000 (')).append(Text.of(((item.nbt.mana / 2000000) * 100).toFixed(2))).append(Text.of('%)')))
+			text.add(1, Text.of('Mana: ').append(Text.aqua((item.nbt.mana).toFixed(0))).append(Text.of(' / 2000000 (')).append(Text.of(((item.nbt.mana / 2000000) * 100).toFixed(2))).append(Text.of('%)')))
+		}
+	})
+	event.addAdvanced('botania:terra_pick', (item, advanced, text) => {
+		if(item.nbt) {
+			text.add(2, Text.of('Mana: ').append(Text.aqua((item.nbt.mana).toFixed(0))).append(Text.of(' / 1000000000 (')).append(Text.of(((item.nbt.mana / 1000000000) * 100).toFixed(2))).append(Text.of('%)')))
+			if(item.nbt.mana < 10000) {
+				text.add(3, Text.of('To next rank: ').append(Text.green((10000 - item.nbt.mana).toFixed(0))).append(Text.of(' (')).append(Text.of(((item.nbt.mana / 10000) * 100).toFixed(2))).append(Text.of('%)')))
+			}
+			else if(item.nbt.mana < 1000000) {
+				text.add(3, Text.of('To next rank: ').append(Text.green((1000000 - item.nbt.mana).toFixed(0))).append(Text.of(' (')).append(Text.of(((item.nbt.mana / 1000000) * 100).toFixed(2))).append(Text.of('%)')))
+			}
+			else if(item.nbt.mana < 10000000) {
+				text.add(3, Text.of('To next rank: ').append(Text.green((10000000 - item.nbt.mana).toFixed(0))).append(Text.of(' (')).append(Text.of(((item.nbt.mana / 10000000) * 100).toFixed(2))).append(Text.of('%)')))
+			}
+			else if(item.nbt.mana < 100000000) {
+				text.add(3, Text.of('To next rank: ').append(Text.green((100000000 - item.nbt.mana).toFixed(0))).append(Text.of(' (')).append(Text.of(((item.nbt.mana / 100000000) * 100).toFixed(2))).append(Text.of('%)')))
+			}
+			else if(item.nbt.mana < 1000000000) {
+				text.add(3, Text.of('To next rank: ').append(Text.green((1000000000 - item.nbt.mana).toFixed(0))).append(Text.of(' (')).append(Text.of(((item.nbt.mana / 1000000000) * 100).toFixed(2))).append(Text.of('%)')))
+			}
+			else if(item.nbt.mana == 1000000000) {
+				text.add(3, Text.green('Max rank!'))
+			}
 		}
 	})
 })
