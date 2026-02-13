@@ -32,7 +32,7 @@ ServerEvents.recipes(event => {
 		],
 		{
 			A: 'botania:terrasteel_ingot',
-			B: 'botania:livingwood',
+			B: '#botania:livingwood_logs',
 			C: 'kubejs:terrasteel_upgrade_smithing_template'
 		}
 	)
