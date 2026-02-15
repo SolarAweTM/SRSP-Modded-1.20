@@ -24,7 +24,7 @@
     "iconMode": "TOP",
     "animation": true,
     "disappearingDelay": 0.0,
-    "overlaySquare": true,
+    "overlaySquare": false,
     "flipMainHand": false,
     "autoScaleThreshold": 0.4,
     "overlayPosY": 1.0,

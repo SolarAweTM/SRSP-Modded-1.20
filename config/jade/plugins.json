@@ -64,6 +64,22 @@
     "goggles.detailed": false,
     "placard": true
   },
+  "mana_jade": {
+    "runic_altar_recipe_progress": true,
+    "thermalily_info": true,
+    "special_flora_storage": true,
+    "mana_star_info": true,
+    "mana_pool_catalyst": true,
+    "mana_pool_storage": true,
+    "endoflame_info": true,
+    "hydroangeas_info": true,
+    "mana_spreader_burst_info": true,
+    "rosa_arcana_info": true,
+    "pure_daisy_recipe_progress": true,
+    "munchdew_info": true,
+    "mana_spreader_storage": true,
+    "terra_plate_recipe_progress": true
+  },
   "immersiveengineering": {
     "multiblock_icon": true
   },
