@@ -159,6 +159,11 @@ ServerEvents.recipes(event => {
 	
 	//steel ingot recipe
 	event.recipes.create.mixing(['immersiveengineering:ingot_steel'], ['minecraft:iron_ingot', 'minecraft:coal']).heated()
+	
+	//BOP sand recipes
+	event.recipes.create.mixing(['64x biomesoplenty:white_sand'],['64x minecraft:sand', 'minecraft:white_dye'])
+	event.recipes.create.mixing(['64x biomesoplenty:orange_sand'],['64x minecraft:sand', 'minecraft:orange_dye'])
+	event.recipes.create.mixing(['64x biomesoplenty:black_sand'],['64x minecraft:sand', 'minecraft:black_dye'])
 })
 
 ServerEvents.tags('item', event => {
