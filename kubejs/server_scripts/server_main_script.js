@@ -43,6 +43,7 @@ ServerEvents.recipes(event => {
 ServerEvents.tags('block', event => {
 	event.add('framedblocks:frameable', 'ars_nouveau:source_gem_block')
 	event.add('forge:workbenches', '#biomeswevegone:crafting_tables')
+	event.add('create:non_movable', '#lootr:containers')
 })
 
 ServerEvents.tags('item', event => {
