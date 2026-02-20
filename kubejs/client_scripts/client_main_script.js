@@ -231,6 +231,13 @@ ItemEvents.tooltip(event => {
 			}
 		}
 	})
+	
+	//numerical source!!
+	event.addAdvanced('ars_nouveau:source_jar', (item, advanced, text) => {
+		if(item.nbt) {
+			text.add(2, Text.of('Source: ').append(Text.lightPurple((item.nbt.BlockEntityTag.source).toFixed(0))).append(Text.of(' / 10000 (')).append(Text.of(((item.nbt.BlockEntityTag.source / 10000) * 100).toFixed(2))).append(Text.of('%)')))
+		}
+	})
 })
 
 JEIEvents.hideItems(event => {
