@@ -50,6 +50,9 @@
 		[types.stone_type.fintastic]
 			stromatolite = true
 
+		[types.stone_type.iceandfire]
+			dread_stone = true
+
 	[types.wood_type]
 
 		[types.wood_type.botania]
@@ -116,6 +119,9 @@
 			skyroot = true
 			bloodshroom = true
 			enderbark = true
+
+		[types.wood_type.iceandfire]
+			dreadwood = true
 
 	[types.leaves_type]
 
@@ -291,6 +297,15 @@
 			earth_slime = true
 			sky_slime = true
 			ender_slime = true
+
+		[types.leaves_type.iceandfire]
+			dreadwood = true
+
+		[types.leaves_type.occultism]
+			otherworld = true
+
+		[types.leaves_type.ars_elemental]
+			yellow_archwood = true
 
 #Disables specific entries
 [entries]
