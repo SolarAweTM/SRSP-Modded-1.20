@@ -96,6 +96,14 @@ ItemEvents.modification(event => {
 		item.armorToughness = 0 //default 3
 		item.armorKnockbackResistance = 0 //default 0.1
 	})
+	//edible uranium
+	event.modify('immersiveengineering:raw_uranium', item => {
+		item.foodProperties = food => {
+			food.hunger(1)
+			food.saturation(1)
+			food.effect('minecraft:instant_damage', -1, 100, 1.0)
+		}
+	})
 })
 
 MoreJSEvents.registerPotionBrewing((event) => {
