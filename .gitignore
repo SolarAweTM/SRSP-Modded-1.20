@@ -24,3 +24,5 @@ config/oculus.properties
 /schematics
 config/packetfixer.properties
 config/freecam.toml
+debug.log
+wd_next.txt
