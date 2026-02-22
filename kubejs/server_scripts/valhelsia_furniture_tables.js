@@ -61,7 +61,8 @@ ServerEvents.recipes(event => {
 		"valhelsia_furniture:dark_oak_table",
 		"valhelsia_furniture:mangrove_table",
 		"valhelsia_furniture:crimson_table",
-		"valhelsia_furniture:warped_table"
+		"valhelsia_furniture:warped_table",
+		"everycomp:vf/iceandfire/dreadwood_table"
 	]
 	tables.forEach(item => {
 		event.remove({id:item})
@@ -124,7 +125,8 @@ ServerEvents.recipes(event => {
 		"minecraft:dark_oak_planks",
 		"minecraft:mangrove_planks",
 		"minecraft:crimson_planks",
-		"minecraft:warped_planks"
+		"minecraft:warped_planks",
+		"iceandfire:dreadwood_planks"
 	]
 	for(let i = 0; i < tables.length; i++) {
 		event.shaped(
@@ -198,7 +200,8 @@ ServerEvents.recipes(event => {
 		"valhelsia_furniture:dark_oak_chair",
 		"valhelsia_furniture:mangrove_chair",
 		"valhelsia_furniture:crimson_chair",
-		"valhelsia_furniture:warped_chair"
+		"valhelsia_furniture:warped_chair",
+		"everycomp:vf/iceandfire/dreadwood_chair"
 	]
 	chairs.forEach(item => {
 		event.remove({id:item})
@@ -216,4 +219,15 @@ ServerEvents.recipes(event => {
 			}
 		)
 	}
+	event.remove({id:'valhelsia_structures:glazed_jar'})
+	event.shaped(
+		'valhelsia_structures:glazed_jar',
+		[
+			'AAA',
+			' A '
+		],
+		{
+			A: 'minecraft:terracotta'
+		}
+	)
 })
