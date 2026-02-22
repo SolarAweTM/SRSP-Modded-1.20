@@ -81,15 +81,66 @@ ItemEvents.tooltip(event => {
 	
 	//tooltip for stuff disabled in this phase
 	let disabled_items = [
-	'botania:terrasteel_helmet',
-	'botania:terrasteel_chestplate',
-	'botania:terrasteel_leggings',
-	'botania:terrasteel_boots',
-	'ars_nouveau:thread_life_drain',
-	'ars_nouveau:thread_magic_capacity',
-	'ars_nouveau:shapers_focus',
-	'waystones:warp_stone',
-		'@waystones'
+		'botania:terrasteel_helmet',
+		'botania:terrasteel_chestplate',
+		'botania:terrasteel_leggings',
+		'botania:terrasteel_boots',
+		'ars_nouveau:thread_life_drain',
+		'ars_nouveau:thread_magic_capacity',
+		'ars_nouveau:shapers_focus',
+		'waystones:warp_stone',
+		'@waystones',
+		'ae2:item_storage_cell_16k',
+		'ae2:item_storage_cell_64k',
+		'ae2:item_storage_cell_256k',
+		'ae2:fluid_storage_cell_16k',
+		'ae2:fluid_storage_cell_64k',
+		'ae2:fluid_storage_cell_256k',
+		'ae2:spatial_storage_cell_2',
+		'ae2:spatial_storage_cell_16',
+		'ae2:spatial_storage_cell_128',
+		'ae2:singularity',
+		'ae2:quantum_entangled_singularity',
+		'ae2:wireless_terminal',
+		'ae2:wireless_crafting_terminal',
+		'ae2:quantum_ring',
+		'ae2:quantum_link',
+		'ae2:spatial_io_port',
+		'ae2:cell_component_16k',
+		'ae2:cell_component_64k',
+		'ae2:cell_component_256k',
+		'ae2:spatial_cell_component_2',
+		'ae2:spatial_cell_component_16',
+		'ae2:spatial_cell_component_128',
+		'ae2:wireless_receiver',
+		'ae2:wireless_booster',
+		'ae2:wireless_access_point',
+		'ae2:condenser',
+		'ae2:vibration_chamber',
+		'ae2:crystal_resonance_generator',
+		'ae2:spatial_anchor',
+		'ae2:portable_item_cell_16k',
+		'ae2:portable_item_cell_64k',
+		'ae2:portable_item_cell_256k',
+		'ae2:portable_fluid_cell_16k',
+		'ae2:portable_fluid_cell_64k',
+		'ae2:portable_fluid_cell_256k',
+		'ae2:crafting_unit',
+		'ae2:crafting_accelerator',
+		'ae2:1k_crafting_storage',
+		'ae2:4k_crafting_storage',
+		'ae2:16k_crafting_storage',
+		'ae2:64k_crafting_storage',
+		'ae2:256k_crafting_storage',
+		'ae2:crafting_monitor',
+		'ae2:pattern_provider',
+		'ae2:molecular_assembler',
+		'ae2:blank_pattern',
+		'ae2:spatial_pylon',
+		'ae2:crafting_card',
+		'ae2:cable_pattern_provider',
+		'ae2:pattern_access_terminal',
+		'ae2:pattern_encoding_terminal'
 	]
 	disabled_items.forEach(item => {
 		event.add(item, [
@@ -161,7 +212,8 @@ ItemEvents.tooltip(event => {
 		'tconstruct:fantastic_foundry',
 		'ars_nouveau:worn_notebook',
 		'immersiveengineering:manual',
-		'botania:lexicon'
+		'botania:lexicon',
+		'ae2:guide'
 	]
 	outdated_books.forEach(block => {
 		event.addAdvanced(block, (item, advanced, text) => {
@@ -209,7 +261,7 @@ ItemEvents.tooltip(event => {
 		}
 	})
 	event.addAdvanced('botania:terra_pick', (item, advanced, text) => {
-		if(item.nbt) {
+		if(item.nbt.mana) {
 			text.add(2, Text.of('Mana: ').append(Text.aqua((item.nbt.mana).toFixed(0))).append(Text.of(' / 1000000000 (')).append(Text.of(((item.nbt.mana / 1000000000) * 100).toFixed(2))).append(Text.of('%)')))
 			if(item.nbt.mana < 10000) {
 				text.add(3, Text.of('To next rank: ').append(Text.green((10000 - item.nbt.mana).toFixed(0))).append(Text.of(' (')).append(Text.of(((item.nbt.mana / 10000) * 100).toFixed(2))).append(Text.of('%)')))
@@ -702,7 +754,58 @@ JEIEvents.hideItems(event => {
 		'tconstruct:coin_cast',
 		'tconstruct:copper_nugget',
 		'immersiveengineering:nugget_copper',
-		'@waystones'
+		'@waystones',
+		'ae2:item_storage_cell_16k',
+		'ae2:item_storage_cell_64k',
+		'ae2:item_storage_cell_256k',
+		'ae2:fluid_storage_cell_16k',
+		'ae2:fluid_storage_cell_64k',
+		'ae2:fluid_storage_cell_256k',
+		'ae2:spatial_storage_cell_2',
+		'ae2:spatial_storage_cell_16',
+		'ae2:spatial_storage_cell_128',
+		'ae2:singularity',
+		'ae2:quantum_entangled_singularity',
+		'ae2:wireless_terminal',
+		'ae2:wireless_crafting_terminal',
+		'ae2:quantum_ring',
+		'ae2:quantum_link',
+		'ae2:spatial_io_port',
+		'ae2:cell_component_16k',
+		'ae2:cell_component_64k',
+		'ae2:cell_component_256k',
+		'ae2:spatial_cell_component_2',
+		'ae2:spatial_cell_component_16',
+		'ae2:spatial_cell_component_128',
+		'ae2:wireless_receiver',
+		'ae2:wireless_booster',
+		'ae2:wireless_access_point',
+		'ae2:condenser',
+		'ae2:vibration_chamber',
+		'ae2:crystal_resonance_generator',
+		'ae2:spatial_anchor',
+		'ae2:portable_item_cell_16k',
+		'ae2:portable_item_cell_64k',
+		'ae2:portable_item_cell_256k',
+		'ae2:portable_fluid_cell_16k',
+		'ae2:portable_fluid_cell_64k',
+		'ae2:portable_fluid_cell_256k',
+		'ae2:crafting_unit',
+		'ae2:crafting_accelerator',
+		'ae2:1k_crafting_storage',
+		'ae2:4k_crafting_storage',
+		'ae2:16k_crafting_storage',
+		'ae2:64k_crafting_storage',
+		'ae2:256k_crafting_storage',
+		'ae2:crafting_monitor',
+		'ae2:pattern_provider',
+		'ae2:molecular_assembler',
+		'ae2:blank_pattern',
+		'ae2:spatial_pylon',
+		'ae2:crafting_card',
+		'ae2:cable_pattern_provider',
+		'ae2:pattern_access_terminal',
+		'ae2:pattern_encoding_terminal'
 	]
 	hidden_items.forEach(item => {
 		event.hide(item) // noted: this also removes them from creative menus
@@ -726,4 +829,10 @@ ClientEvents.loggedIn(event => {
 	//this took like an hour to find because the only solution i could find was on a discord server
 	//can we stop using discord as a knowledge base now
 	event.player.tell('§eFTB Chunks: §rPress [§b' + Text.keybind('key.ftbchunks.map').getString() + '§r]')
+})
+
+JEIEvents.information(event => {
+	event.addItem('iceandfire:dragonsteel_ice_ingot', ['Create an Ice Dragonforge as described in the Bestiary. Then, right-click on the Aperture and insert Iron Ingots and Ice Dragon Blood. Finally, have an Ice Dragon breathe into the Dragonforge to create Ice Dragonsteel.', 'Do note that you cannot shift-click the items in, you must move them manually.'])
+	event.addItem('iceandfire:dragonsteel_fire_ingot', ['Create a Fire Dragonforge as described in the Bestiary. Then, right-click on the Aperture and insert Iron Ingots and Fire Dragon Blood. Finally, have a Fire Dragon breathe into the Dragonforge to create Fire Dragonsteel.', 'Do note that you cannot shift-click the items in, you must move them manually.'])
+	event.addItem('iceandfire:dragonsteel_lightning_ingot', ['Create a Lightning Dragonforge as described in the Bestiary. Then, right-click on the Aperture and insert Iron Ingots and Lightning Dragon Blood. Finally, have a Lightning Dragon breathe into the Dragonforge to create Lightning Dragonsteel.', 'Do note that you cannot shift-click the items in, you must move them manually.'])
 })

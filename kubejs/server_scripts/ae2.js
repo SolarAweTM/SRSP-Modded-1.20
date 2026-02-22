@@ -1,0 +1,62 @@
+// priority: 0
+
+console.info('-KubeJS- Applied Energistics 2 server script loaded.')
+
+ServerEvents.recipes(e => {
+	const ae2_disabled_items = [
+		'ae2:item_storage_cell_16k',
+		'ae2:item_storage_cell_64k',
+		'ae2:item_storage_cell_256k',
+		'ae2:fluid_storage_cell_16k',
+		'ae2:fluid_storage_cell_64k',
+		'ae2:fluid_storage_cell_256k',
+		'ae2:spatial_storage_cell_2',
+		'ae2:spatial_storage_cell_16',
+		'ae2:spatial_storage_cell_128',
+		'ae2:singularity',
+		'ae2:quantum_entangled_singularity',
+		'ae2:wireless_terminal',
+		'ae2:wireless_crafting_terminal',
+		'ae2:quantum_ring',
+		'ae2:quantum_link',
+		'ae2:spatial_io_port',
+		'ae2:cell_component_16k',
+		'ae2:cell_component_64k',
+		'ae2:cell_component_256k',
+		'ae2:spatial_cell_component_2',
+		'ae2:spatial_cell_component_16',
+		'ae2:spatial_cell_component_128',
+		'ae2:wireless_receiver',
+		'ae2:wireless_booster',
+		'ae2:wireless_access_point',
+		'ae2:condenser',
+		'ae2:vibration_chamber',
+		'ae2:crystal_resonance_generator',
+		'ae2:spatial_anchor',
+		'ae2:portable_item_cell_16k',
+		'ae2:portable_item_cell_64k',
+		'ae2:portable_item_cell_256k',
+		'ae2:portable_fluid_cell_16k',
+		'ae2:portable_fluid_cell_64k',
+		'ae2:portable_fluid_cell_256k',
+		'ae2:crafting_unit',
+		'ae2:crafting_accelerator',
+		'ae2:1k_crafting_storage',
+		'ae2:4k_crafting_storage',
+		'ae2:16k_crafting_storage',
+		'ae2:64k_crafting_storage',
+		'ae2:256k_crafting_storage',
+		'ae2:crafting_monitor',
+		'ae2:pattern_provider',
+		'ae2:molecular_assembler',
+		'ae2:blank_pattern',
+		'ae2:spatial_pylon',
+		'ae2:crafting_card',
+		'ae2:cable_pattern_provider',
+		'ae2:pattern_access_terminal',
+		'ae2:pattern_encoding_terminal'
+	]
+	ae2_disabled_items.forEach(item => {
+		e.remove({output: item})
+	})
+})
