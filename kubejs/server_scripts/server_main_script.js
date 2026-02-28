@@ -47,6 +47,8 @@ ServerEvents.tags('block', event => {
 })
 
 ServerEvents.tags('item', event => {
+    event.add('fintastic:sugar_glass', 'minecraft:sugar')
+    event.add('fintastic:uranium', 'immersiveengineering:raw_uranium')
 	let addToBackSlot = [
     "create_jetpack:jetpack",
 	"create_jetpack:netherite_jetpack"
