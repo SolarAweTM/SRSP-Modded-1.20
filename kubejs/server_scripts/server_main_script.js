@@ -294,3 +294,36 @@ LootJS.modifiers((event) => {
 	event.addLootTableModifier("minecraft:chests/shipwreck_supply").removeLoot("farmersdelight:rope");
 	event.addLootTableModifier("minecraft:chests/simple_dungeon").removeLoot("farmersdelight:rope");
 });
+
+PlayerEvents.decorateChat(event => {
+	//emojis
+	event.setMessage(event.message.replace(':check:', '§a✔§r'))
+	event.setMessage(event.message.replace(':x:', '§c❌§r'))
+	event.setMessage(event.message.replace(':skull:', '§7☠§r'))
+	event.setMessage(event.message.replace(':fire:', '§6🔥§r'))
+	//formatting (bold, italic, underline, strikethrough, obfuscated)
+	event.setMessage(event.message.replace('\\bold', '§l'))
+	event.setMessage(event.message.replace('\\italic', '§o'))
+	event.setMessage(event.message.replace('\\underline', '§n'))
+	event.setMessage(event.message.replace('\\strike', '§m'))
+	event.setMessage(event.message.replace('\\obs', '§k'))
+	//colors
+	event.setMessage(event.message.replace('\\black', '§0'))
+	event.setMessage(event.message.replace('\\darkblue', '§1'))
+	event.setMessage(event.message.replace('\\darkgreen', '§2'))
+	event.setMessage(event.message.replace('\\cyan', '§3'))
+	event.setMessage(event.message.replace('\\darkred', '§4'))
+	event.setMessage(event.message.replace('\\purple', '§5'))
+	event.setMessage(event.message.replace('\\orange', '§6'))
+	event.setMessage(event.message.replace('\\gray', '§7'))
+	event.setMessage(event.message.replace('\\darkgray', '§8'))
+	event.setMessage(event.message.replace('\\blue', '§9'))
+	event.setMessage(event.message.replace('\\green', '§a'))
+	event.setMessage(event.message.replace('\\teal', '§b'))
+	event.setMessage(event.message.replace('\\red', '§c'))
+	event.setMessage(event.message.replace('\\pink', '§d'))
+	event.setMessage(event.message.replace('\\yellow', '§e'))
+	event.setMessage(event.message.replace('\\white', '§f'))
+	//reset
+	event.setMessage(event.message.replace('\\reset', '§r'))
+})
