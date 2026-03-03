@@ -140,7 +140,13 @@ ItemEvents.tooltip(event => {
 		'ae2:crafting_card',
 		'ae2:cable_pattern_provider',
 		'ae2:pattern_access_terminal',
-		'ae2:pattern_encoding_terminal'
+		'ae2:pattern_encoding_terminal',
+		'ae2:me_p2p_tunnel',
+		'ae2:redstone_p2p_tunnel',
+		'ae2:item_p2p_tunnel',
+		'ae2:fluid_p2p_tunnel',
+		'ae2:fe_p2p_tunnel',
+		'ae2:light_p2p_tunnel'
 	]
 	disabled_items.forEach(item => {
 		event.add(item, [
@@ -805,7 +811,13 @@ JEIEvents.hideItems(event => {
 		'ae2:crafting_card',
 		'ae2:cable_pattern_provider',
 		'ae2:pattern_access_terminal',
-		'ae2:pattern_encoding_terminal'
+		'ae2:pattern_encoding_terminal',
+		'ae2:me_p2p_tunnel',
+		'ae2:redstone_p2p_tunnel',
+		'ae2:item_p2p_tunnel',
+		'ae2:fluid_p2p_tunnel',
+		'ae2:fe_p2p_tunnel',
+		'ae2:light_p2p_tunnel'
 	]
 	hidden_items.forEach(item => {
 		event.hide(item) // noted: this also removes them from creative menus
