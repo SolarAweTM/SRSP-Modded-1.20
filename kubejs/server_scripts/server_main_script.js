@@ -42,6 +42,13 @@ ServerEvents.recipes(event => {
 
 ServerEvents.tags('block', event => {
 	event.add('framedblocks:frameable', 'ars_nouveau:source_gem_block')
+	event.add('framedblocks:frameable', 'immersiveengineering:steel_scaffolding_standard')
+	event.add('framedblocks:frameable', 'immersiveengineering:steel_scaffolding_grate_top')
+	event.add('framedblocks:frameable', 'immersiveengineering:steel_scaffolding_wooden_top')
+	event.add('framedblocks:blockentity_whitelisted', 'immersiveengineering:steel_scaffolding_standard')
+	event.add('framedblocks:blockentity_whitelisted', 'immersiveengineering:steel_scaffolding_grate_top')
+	event.add('framedblocks:blockentity_whitelisted', 'immersiveengineering:steel_scaffolding_wooden_top')
+	event.add('framedblocks:frameable', 'ars_nouveau:source_gem_block')
 	event.add('forge:workbenches', '#biomeswevegone:crafting_tables')
 	event.add('create:non_movable', '#lootr:containers')
 })
