@@ -51,9 +51,310 @@ ServerEvents.tags('block', event => {
 	event.add('framedblocks:frameable', 'ars_nouveau:source_gem_block')
 	event.add('forge:workbenches', '#biomeswevegone:crafting_tables')
 	event.add('create:non_movable', '#lootr:containers')
+	event.remove('iceandfire:dragon_cave_uncommon_ores', 'iceandfire:silver_ore')
+	event.add('iceandfire:dragon_cave_uncommon_ores', 'immersiveengineering:ore_silver')
 })
 
 ServerEvents.tags('item', event => {
+	// WHY THE FUCK DOES ICE AND FIRE TAG LITERALLY NOTHING
+	event.add('iceandfire:storage_blocks/scales/sea_serpent', 'iceandfire:sea_serpent_scale_block_blue')
+	event.add('iceandfire:storage_blocks/scales/sea_serpent', 'iceandfire:sea_serpent_scale_block_bronze')
+	event.add('iceandfire:storage_blocks/scales/sea_serpent', 'iceandfire:sea_serpent_scale_block_deepblue')
+	event.add('iceandfire:storage_blocks/scales/sea_serpent', 'iceandfire:sea_serpent_scale_block_green')
+	event.add('iceandfire:storage_blocks/scales/sea_serpent', 'iceandfire:sea_serpent_scale_block_purple')
+	event.add('iceandfire:storage_blocks/scales/sea_serpent', 'iceandfire:sea_serpent_scale_block_red')
+	event.add('iceandfire:storage_blocks/scales/sea_serpent', 'iceandfire:sea_serpent_scale_block_teal')
+	event.add('iceandfire:storage_blocks/dragon_bone', 'iceandfire:dragon_bone_block')
+	const pickaxe_tags = [
+		'minecraft:pickaxes',
+		'minecraft:tools',
+		'forge:tools/pickaxes',
+		'forge:tools',
+		'minecraft:breaks_decorated_pots',
+		'minecraft:cluster_max_harvestables'
+	]
+	const iaf_pickaxes = [
+		'iceandfire:silver_pickaxe',
+		'iceandfire:copper_pickaxe',
+		'iceandfire:dragonbone_pickaxe',
+		'iceandfire:dragonsteel_fire_pickaxe',
+		'iceandfire:dragonsteel_ice_pickaxe',
+		'iceandfire:dragonsteel_lightning_pickaxe'
+	]
+	iaf_pickaxes.forEach(pick => {
+		pickaxe_tags.forEach(tag => {
+			event.add(tag, pick)
+		})
+	})
+	const axe_tags = [
+		'minecraft:axes',
+		'minecraft:tools',
+		'forge:tools/axes',
+		'forge:tools',
+		'minecraft:breaks_decorated_pots'
+	]
+	const iaf_axes = [
+		'iceandfire:silver_axe',
+		'iceandfire:copper_axe',
+		'iceandfire:dragonbone_axe',
+		'iceandfire:dragonsteel_fire_axe',
+		'iceandfire:dragonsteel_ice_axe',
+		'iceandfire:dragonsteel_lightning_axe'
+	]
+	iaf_axes.forEach(axe => {
+		axe_tags.forEach(tag => {
+			event.add(tag, axe)
+		})
+	})
+	const shovel_tags = [
+		'minecraft:shovels',
+		'minecraft:tools',
+		'forge:tools/shovels',
+		'forge:tools',
+		'minecraft:breaks_decorated_pots'
+	]
+	const iaf_shovels = [
+		'iceandfire:silver_shovel',
+		'iceandfire:copper_shovel',
+		'iceandfire:dragonbone_shovel',
+		'iceandfire:dragonsteel_fire_shovel',
+		'iceandfire:dragonsteel_ice_shovel',
+		'iceandfire:dragonsteel_lightning_shovel'
+	]
+	iaf_shovels.forEach(shovel => {
+		shovel_tags.forEach(tag => {
+			event.add(tag, shovel)
+		})
+	})
+	const hoe_tags = [
+		'minecraft:hoes',
+		'minecraft:tools',
+		'forge:tools'
+	]
+	const iaf_hoes = [
+		'iceandfire:silver_hoe',
+		'iceandfire:copper_hoe',
+		'iceandfire:dragonbone_hoe',
+		'iceandfire:dragonsteel_fire_hoe',
+		'iceandfire:dragonsteel_ice_hoe',
+		'iceandfire:dragonsteel_lightning_hoe'
+	]
+	iaf_hoes.forEach(hoe => {
+		hoe_tags.forEach(tag => {
+			event.add(tag, hoe)
+		})
+	})
+	const sword_tags = [
+		'minecraft:swords',
+		'minecraft:tools',
+		'forge:tools',
+		'minecraft:breaks_decorated_pots'
+	]
+	const iaf_swords = [
+		'iceandfire:silver_sword',
+		'iceandfire:copper_sword',
+		'iceandfire:dragonbone_sword',
+		'iceandfire:dragonbone_sword_fire',
+		'iceandfire:dragonbone_sword_ice',
+		'iceandfire:dragonbone_sword_lightning',
+		'iceandfire:hippogryph_sword',
+		'iceandfire:dragonsteel_fire_sword',
+		'iceandfire:dragonsteel_ice_sword',
+		'iceandfire:dragonsteel_lightning_sword',
+		'iceandfire:dread_sword',
+		'iceandfire:dread_knight_sword',
+		'iceandfire:ghost_sword'
+	]
+	iaf_swords.forEach(sword => {
+		sword_tags.forEach(tag => {
+			event.add(tag, sword)
+		})
+	})
+	const helmet_tags = [
+		'forge:armors/helmets',
+		'forge:helmets',
+		'forge:armor',
+		'forge:armors',
+		'bookshelf:helmets',
+		'bookshelf:armor'
+	]
+	const chestplate_tags = [
+		'forge:armors/chestplates',
+		'forge:chestplates',
+		'forge:armor',
+		'forge:armors',
+		'bookshelf:chestplates',
+		'bookshelf:armor'
+	]
+	const leggings_tags = [
+		'forge:armors/leggings',
+		'forge:leggings',
+		'forge:armor',
+		'forge:armors',
+		'bookshelf:leggings',
+		'bookshelf:armor'
+	]
+	const boots_tags = [
+		'forge:armors/boots',
+		'forge:boots',
+		'forge:armor',
+		'forge:armors',
+		'bookshelf:boots',
+		'bookshelf:armor'
+	]
+	const iaf_helmets = [
+		'iceandfire:armor_silver_metal_helmet',
+		'iceandfire:armor_copper_metal_helmet',
+		'iceandfire:sheep_helmet',
+		'iceandfire:deathworm_yellow_helmet',
+		'iceandfire:deathworm_white_helmet',
+		'iceandfire:deathworm_red_helmet',
+		'iceandfire:dragonsteel_fire_helmet',
+		'iceandfire:dragonsteel_ice_helmet',
+		'iceandfire:dragonsteel_lightning_helmet',
+		'iceandfire:armor_red_helmet',
+		'iceandfire:armor_bronze_helmet',
+		'iceandfire:armor_green_helmet',
+		'iceandfire:armor_gray_helmet',
+		'iceandfire:armor_blue_helmet',
+		'iceandfire:armor_white_helmet',
+		'iceandfire:armor_sapphire_helmet',
+		'iceandfire:armor_silver_helmet',
+		'iceandfire:armor_electric_helmet',
+		'iceandfire:armor_amethyst_helmet',
+		'iceandfire:armor_copper_helmet',
+		'iceandfire:armor_black_helmet',
+		'iceandfire:tide_blue_helmet',
+		'iceandfire:tide_bronze_helmet',
+		'iceandfire:tide_deepblue_helmet',
+		'iceandfire:tide_green_helmet',
+		'iceandfire:tide_purple_helmet',
+		'iceandfire:tide_red_helmet',
+		'iceandfire:tide_teal_helmet',
+		'iceandfire:forest_troll_leather_helmet',
+		'iceandfire:frost_troll_leather_helmet',
+		'iceandfire:mountain_troll_leather_helmet'
+	]
+	iaf_helmets.forEach(helmet => {
+		helmet_tags.forEach(tag => {
+			event.add(tag, helmet)
+		})
+	})
+	const iaf_chestplates = [
+		'iceandfire:armor_silver_metal_chestplate',
+		'iceandfire:armor_copper_metal_chestplate',
+		'iceandfire:sheep_chestplate',
+		'iceandfire:deathworm_yellow_chestplate',
+		'iceandfire:deathworm_white_chestplate',
+		'iceandfire:deathworm_red_chestplate',
+		'iceandfire:dragonsteel_fire_chestplate',
+		'iceandfire:dragonsteel_ice_chestplate',
+		'iceandfire:dragonsteel_lightning_chestplate',
+		'iceandfire:armor_red_chestplate',
+		'iceandfire:armor_bronze_chestplate',
+		'iceandfire:armor_green_chestplate',
+		'iceandfire:armor_gray_chestplate',
+		'iceandfire:armor_blue_chestplate',
+		'iceandfire:armor_white_chestplate',
+		'iceandfire:armor_sapphire_chestplate',
+		'iceandfire:armor_silver_chestplate',
+		'iceandfire:armor_electric_chestplate',
+		'iceandfire:armor_amethyst_chestplate',
+		'iceandfire:armor_copper_chestplate',
+		'iceandfire:armor_black_chestplate',
+		'iceandfire:tide_blue_chestplate',
+		'iceandfire:tide_bronze_chestplate',
+		'iceandfire:tide_deepblue_chestplate',
+		'iceandfire:tide_green_chestplate',
+		'iceandfire:tide_purple_chestplate',
+		'iceandfire:tide_red_chestplate',
+		'iceandfire:tide_teal_chestplate',
+		'iceandfire:forest_troll_leather_chestplate',
+		'iceandfire:frost_troll_leather_chestplate',
+		'iceandfire:mountain_troll_leather_chestplate'
+	]
+	iaf_chestplates.forEach(chestplate => {
+		chestplate_tags.forEach(tag => {
+			event.add(tag, chestplate)
+		})
+	})
+	const iaf_leggings = [
+		'iceandfire:armor_silver_metal_leggings',
+		'iceandfire:armor_copper_metal_leggings',
+		'iceandfire:sheep_leggings',
+		'iceandfire:deathworm_yellow_leggings',
+		'iceandfire:deathworm_white_leggings',
+		'iceandfire:deathworm_red_leggings',
+		'iceandfire:dragonsteel_fire_leggings',
+		'iceandfire:dragonsteel_ice_leggings',
+		'iceandfire:dragonsteel_lightning_leggings',
+		'iceandfire:armor_red_leggings',
+		'iceandfire:armor_bronze_leggings',
+		'iceandfire:armor_green_leggings',
+		'iceandfire:armor_gray_leggings',
+		'iceandfire:armor_blue_leggings',
+		'iceandfire:armor_white_leggings',
+		'iceandfire:armor_sapphire_leggings',
+		'iceandfire:armor_silver_leggings',
+		'iceandfire:armor_electric_leggings',
+		'iceandfire:armor_amethyst_leggings',
+		'iceandfire:armor_copper_leggings',
+		'iceandfire:armor_black_leggings',
+		'iceandfire:tide_blue_leggings',
+		'iceandfire:tide_bronze_leggings',
+		'iceandfire:tide_deepblue_leggings',
+		'iceandfire:tide_green_leggings',
+		'iceandfire:tide_purple_leggings',
+		'iceandfire:tide_red_leggings',
+		'iceandfire:tide_teal_leggings',
+		'iceandfire:forest_troll_leather_leggings',
+		'iceandfire:frost_troll_leather_leggings',
+		'iceandfire:mountain_troll_leather_leggings'
+	]
+	iaf_leggings.forEach(leggings => {
+		leggings_tags.forEach(tag => {
+			event.add(tag, leggings)
+		})
+	})
+	const iaf_boots = [
+		'iceandfire:armor_silver_metal_boots',
+		'iceandfire:armor_copper_metal_boots',
+		'iceandfire:sheep_boots',
+		'iceandfire:deathworm_yellow_boots',
+		'iceandfire:deathworm_white_boots',
+		'iceandfire:deathworm_red_boots',
+		'iceandfire:dragonsteel_fire_boots',
+		'iceandfire:dragonsteel_ice_boots',
+		'iceandfire:dragonsteel_lightning_boots',
+		'iceandfire:armor_red_boots',
+		'iceandfire:armor_bronze_boots',
+		'iceandfire:armor_green_boots',
+		'iceandfire:armor_gray_boots',
+		'iceandfire:armor_blue_boots',
+		'iceandfire:armor_white_boots',
+		'iceandfire:armor_sapphire_boots',
+		'iceandfire:armor_silver_boots',
+		'iceandfire:armor_electric_boots',
+		'iceandfire:armor_amethyst_boots',
+		'iceandfire:armor_copper_boots',
+		'iceandfire:armor_black_boots',
+		'iceandfire:tide_blue_boots',
+		'iceandfire:tide_bronze_boots',
+		'iceandfire:tide_deepblue_boots',
+		'iceandfire:tide_green_boots',
+		'iceandfire:tide_purple_boots',
+		'iceandfire:tide_red_boots',
+		'iceandfire:tide_teal_boots',
+		'iceandfire:forest_troll_leather_boots',
+		'iceandfire:frost_troll_leather_boots',
+		'iceandfire:mountain_troll_leather_boots'
+	]
+	iaf_boots.forEach(boots => {
+		boots_tags.forEach(tag => {
+			event.add(tag, boots)
+		})
+	})
+	
     event.add('fintastic:sugar_glass', 'minecraft:sugar')
     event.add('fintastic:uranium', 'immersiveengineering:raw_uranium')
 	let addToBackSlot = [
