@@ -1,0 +1,72 @@
+{
+	autofocus_id: "5D6AE9F83134678D"
+	consume_items: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	default_repeatable_quest: true
+	filename: "gem_exchange"
+	group: "648DF65B44220ED8"
+	icon: "apotheosis:gem_dust"
+	id: "54D27E0F13949825"
+	images: [{
+		height: 2.2d
+		image: "srsp:textures/ftbquests/arrow.png"
+		rotation: 0.0d
+		width: 8.7d
+		x: -0.5d
+		y: 0.0d
+	}]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			can_repeat: false
+			description: [
+				"Do &cYOU&r need a &6specific Apotheosis Gem&r for your gear? Have &cYOU&r run out of wizard towers in the world to search for gems in? Well we have a solution for you: the &aRock Shop&r, brought to you by &bFurnox Gem Cutting&r*! &aIt rocks!&r"
+				""
+				"Simply hand over some of your hard-earned &6[ITEM TBD]&r and we'll give you some &6Gem Dust&r to get some Gems with!"
+				""
+				"&7&o*Furnox Gem Cutting is not responsible for any loss of habitat, environmental destruction, nuclear wars, or other unsavory circumstances as a result of the Rock Shop.&r"
+			]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "5D6AE9F83134678D"
+			subtitle: "Brought to you by our other sponsor, Furnox Gem Cutting"
+			tasks: [{
+				id: "4372A079F4CC1A84"
+				title: "Checkmark"
+				type: "checkmark"
+			}]
+			title: "The Rock Shop"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5D6AE9F83134678D"]
+			icon: "immersiveengineering:shader_bag_rare"
+			id: "637531A54BBB26AB"
+			size: 2.0d
+			title: "Sell [TBD]"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5D6AE9F83134678D"]
+			hide_dependency_lines: true
+			icon: "immersiveengineering:shader_bag_common"
+			id: "43D51492D5ADF797"
+			title: "Sell [TBD] (x10)"
+			x: -5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5D6AE9F83134678D"]
+			hide_dependency_lines: true
+			icon: "immersiveengineering:shader_bag_epic"
+			id: "7DC84D422E2F2AE5"
+			title: "Sell [TBD] (x64)"
+			x: -5.0d
+			y: 1.0d
+		}
+	]
+	title: "Rock Shop"
+}
