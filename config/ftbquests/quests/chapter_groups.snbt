@@ -1,5 +1,6 @@
 {
 	chapter_groups: [
+		{ id: "648DF65B44220ED8", title: "Trading Center" }
 		{ id: "6196AA2FACEE0C19", title: "Create" }
 		{ id: "22E2861D9475E7CD", title: "Botania" }
 		{ id: "7C52BACF3A6137F7", title: "Aquaculture" }
