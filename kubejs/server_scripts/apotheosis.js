@@ -228,7 +228,7 @@ ServerEvents.recipes(event => {
 	//remove gem related recipes due to gems being disabled in phase 1 (will be reinstated in future phases)
 	event.remove({output:'apotheosis:gem_cutting_table'})
 	event.remove({output:'apotheosis:sigil_of_rebirth'})
-	event.remove({output:'apotheosis:sigil_of_withdrawal'})
+	event.remove({output:'apotheosis:sigil_of_withdrawal'}) //TODO: ENABLE THIS
 	event.remove({output:'apotheosis:sigil_of_socketing'})
 	event.remove({output:'apotheosis:gem_fused_slate'})
 	event.remove({output:'apotheosis:sigil_of_enhancement'})
@@ -330,6 +330,13 @@ ServerEvents.recipes(event => {
 			T: 'minecraft:enchanting_table'
 		}
 	)
+	//gem dust is now a currency (you can still get it via anvil but like thats mega inefficient)
+	event.remove({id:'apotheosis:salvaging/common_gem_dust'})
+	event.remove({id:'apotheosis:salvaging/uncommon_gem_dust'})
+	event.remove({id:'apotheosis:salvaging/rare_gem_dust'})
+	event.remove({id:'apotheosis:salvaging/epic_gem_dust'})
+	event.remove({id:'apotheosis:salvaging/mythic_gem_dust'})
+	event.remove({id:'apotheosis:salvaging/ancient_gem_dust'})
 })
 
 LootJS.modifiers((event) => {

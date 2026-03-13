@@ -81,10 +81,6 @@ ItemEvents.tooltip(event => {
 	
 	//tooltip for stuff disabled in this phase
 	let disabled_items = [
-		'botania:terrasteel_helmet',
-		'botania:terrasteel_chestplate',
-		'botania:terrasteel_leggings',
-		'botania:terrasteel_boots',
 		'ars_nouveau:thread_life_drain',
 		'ars_nouveau:thread_magic_capacity',
 		'ars_nouveau:shapers_focus',
@@ -234,6 +230,12 @@ ItemEvents.tooltip(event => {
 	event.addAdvanced('kubejs:trizzco_point', (item, advanced, text) => {
 		text.add(1, Text.green('Can be exchanged for saplings at The'))
 		text.add(2, Text.green('Sapling Exchange in the Quest Book.'))
+	})
+	
+	//gem dust tooltip
+	event.addAdvanced('apotheosis:gem_dust', (item, advanced, text) => {
+		text.add(1, Text.green('Can be exchanged for gems at The'))
+		text.add(2, Text.green('Rock Shop in the Quest Book.'))
 	})
 	
 	//tooltip for thigh high changes
@@ -458,26 +460,18 @@ JEIEvents.hideItems(event => {
 		'sophisticatedstorage:inaccessible_slot',
 		'railways:fuel_tank',
 		'railways:portable_fuel_interface',
-		'ars_nouveau:warp_scroll',
+		'ars_nouveau:warp_scroll', //TODO: ENABLE ACCESS
 		'ars_nouveau:stable_warp_scroll',
 		'ars_nouveau:potion_melder',
 		'farmersdelight:rope',
-		'apotheosis:gem',
 		'apotheosis:gem_cutting_table',
 		'apotheosis:reforging_table',
 		'apotheosis:gem_fused_slate',
 		'apotheosis:sigil_of_socketing',
-		'apotheosis:sigil_of_withdrawal',
 		'apotheosis:sigil_of_rebirth',
 		'apotheosis:sigil_of_enhancement',
 		'apotheosis:augmenting_table',
 		'apotheosis:ancient_material',
-		'apotheosis:gem_dust',
-		'apotheosis:infused_hellshelf',
-		'apotheosis:blazing_hellshelf',
-		'apotheosis:glowing_hellshelf',
-		'apotheosis:crystal_seashelf',
-		'apotheosis:heart_seashelf',
 		'apotheosis:deepshelf',
 		'apotheosis:echoing_deepshelf',
 		'apotheosis:soul_touched_deepshelf',
@@ -486,18 +480,11 @@ JEIEvents.hideItems(event => {
 		'apotheosis:endshelf',
 		'apotheosis:pearl_endshelf',
 		'apotheosis:draconic_endshelf',
-		'apotheosis:rectifier',
 		'apotheosis:rectifier_t2',
 		'apotheosis:rectifier_t3',
-		'apotheosis:sightshelf',
 		'apotheosis:sightshelf_t2',
 		'apotheosis:treasure_shelf',
-		'apotheosis:infused_seashelf',
 		'apotheosis:boss_summoner',
-		'botania:terrasteel_helmet',
-		'botania:terrasteel_chestplate',
-		'botania:terrasteel_leggings',
-		'botania:terrasteel_boots',
 		'ars_nouveau:shapers_focus',
 		'ars_nouveau:thread_life_drain',
 		'ars_nouveau:thread_magic_capacity',
