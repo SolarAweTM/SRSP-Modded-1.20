@@ -24,7 +24,7 @@
 			description: [
 				"Do &cYOU&r need a &6specific Apotheosis Gem&r for your gear? Have &cYOU&r run out of wizard towers in the world to search for gems in? Well we have a solution for you: the &aRock Shop&r, brought to you by &bFurnox Gem Cutting&r*! &aIt rocks!&r"
 				""
-				"Simply hand over some of your hard-earned &6[ITEM TBD]&r and we'll give you some &6Gem Dust&r to get some Gems with!"
+				"Simply hand over some of your hard-earned &6[ITEM TBD]&r and we'll give you some &6Gem Dust&r to get some Gems with, provided you get us some &6necessary reagents&r to work with!"
 				""
 				"&7&o*Furnox Gem Cutting is not responsible for any loss of habitat, environmental destruction, nuclear wars, or other unsavory circumstances as a result of the Rock Shop.&r"
 			]
@@ -44,6 +44,11 @@
 			dependencies: ["5D6AE9F83134678D"]
 			icon: "immersiveengineering:shader_bag_rare"
 			id: "637531A54BBB26AB"
+			rewards: [{
+				id: "5E310CDD7AD322D8"
+				item: "apotheosis:gem_dust"
+				type: "item"
+			}]
 			size: 2.0d
 			title: "Sell [TBD]"
 			x: -4.0d
@@ -54,6 +59,12 @@
 			hide_dependency_lines: true
 			icon: "immersiveengineering:shader_bag_common"
 			id: "43D51492D5ADF797"
+			rewards: [{
+				count: 10
+				id: "1834A055581C962E"
+				item: "apotheosis:gem_dust"
+				type: "item"
+			}]
 			title: "Sell [TBD] (x10)"
 			x: -5.0d
 			y: -1.0d
@@ -63,9 +74,587 @@
 			hide_dependency_lines: true
 			icon: "immersiveengineering:shader_bag_epic"
 			id: "7DC84D422E2F2AE5"
+			rewards: [{
+				count: 64
+				id: "21C10F8966706F85"
+				item: "apotheosis:gem_dust"
+				type: "item"
+			}]
 			title: "Sell [TBD] (x64)"
 			x: -5.0d
 			y: 1.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:common"
+					}
+					gem: "apotheosis:core/ballast"
+				}
+			}
+			id: "332ACE3620644E33"
+			rewards: [{
+				id: "632B3DDE7466EDF5"
+				item: {
+					Count: 1
+					id: "apotheosis:gem"
+					tag: {
+						affix_data: {
+							rarity: "apotheosis:common"
+						}
+						gem: "apotheosis:core/ballast"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 5L
+					id: "7D55A9963DC806F0"
+					item: "apotheosis:gem_dust"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "7EC17AE7E214CE36"
+					item: "apotheosis:common_material"
+					type: "item"
+				}
+			]
+			title: "Cracked Ballast Gem"
+			x: 6.5d
+			y: -2.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:common"
+					}
+					gem: "apotheosis:core/brawlers"
+				}
+			}
+			id: "7702EC87813D2334"
+			rewards: [{
+				id: "7E103B2B2B6EB725"
+				item: {
+					Count: 1
+					id: "apotheosis:gem"
+					tag: {
+						affix_data: {
+							rarity: "apotheosis:common"
+						}
+						gem: "apotheosis:core/brawlers"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 5L
+					id: "62E0D96A71D5B640"
+					item: { Count: 5, id: "apotheosis:gem_dust" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "7D6174BB9BF4F572"
+					item: { Count: 5, id: "apotheosis:common_material" }
+					type: "item"
+				}
+			]
+			title: "Cracked Brawler's Gem"
+			x: 7.5d
+			y: -2.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:common"
+					}
+					gem: "apotheosis:core/breach"
+				}
+			}
+			id: "65367972D93825E2"
+			rewards: [{
+				id: "13BF3C87BD604821"
+				item: {
+					Count: 1
+					id: "apotheosis:gem"
+					tag: {
+						affix_data: {
+							rarity: "apotheosis:common"
+						}
+						gem: "apotheosis:core/breach"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 5L
+					id: "3656505100463D13"
+					item: { Count: 5, id: "apotheosis:gem_dust" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "0704C6AB3C14ECA7"
+					item: { Count: 5, id: "apotheosis:common_material" }
+					type: "item"
+				}
+			]
+			title: "Cracked Breach Gem"
+			x: 8.5d
+			y: -2.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:common"
+					}
+					gem: "apotheosis:core/combatant"
+				}
+			}
+			id: "5517859DB8A5130D"
+			rewards: [{
+				id: "27EF4C5CE8A1327C"
+				item: {
+					Count: 1
+					id: "apotheosis:gem"
+					tag: {
+						affix_data: {
+							rarity: "apotheosis:common"
+						}
+						gem: "apotheosis:core/combatant"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 5L
+					id: "77CD5406D0B461F0"
+					item: { Count: 5, id: "apotheosis:gem_dust" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "130DA07013538BB0"
+					item: { Count: 5, id: "apotheosis:common_material" }
+					type: "item"
+				}
+			]
+			title: "Cracked Gem of the Combatant"
+			x: 6.5d
+			y: 1.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:common"
+					}
+					gem: "apotheosis:core/guardian"
+				}
+			}
+			id: "3E8491A2FCD8C9D4"
+			rewards: [{
+				id: "4B9725E9DE06A183"
+				item: {
+					Count: 1
+					id: "apotheosis:gem"
+					tag: {
+						affix_data: {
+							rarity: "apotheosis:common"
+						}
+						gem: "apotheosis:core/guardian"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 5L
+					id: "6BE3624ED2DD6536"
+					item: { Count: 5, id: "apotheosis:gem_dust" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "3EDAA12B534EEFF9"
+					item: { Count: 5, id: "apotheosis:common_material" }
+					type: "item"
+				}
+			]
+			title: "Cracked Guardian Gem"
+			x: 9.5d
+			y: -2.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:common"
+					}
+					gem: "apotheosis:core/lightning"
+				}
+			}
+			id: "58C5BC37D654DF2C"
+			rewards: [{
+				id: "11BA2D4D5CCC7288"
+				item: {
+					Count: 1
+					id: "apotheosis:gem"
+					tag: {
+						affix_data: {
+							rarity: "apotheosis:common"
+						}
+						gem: "apotheosis:core/lightning"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 5L
+					id: "669BADCFA40EDB5E"
+					item: { Count: 5, id: "apotheosis:gem_dust" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "7408201F1317E4FC"
+					item: { Count: 5, id: "apotheosis:common_material" }
+					type: "item"
+				}
+			]
+			title: "Cracked Lightning Gem"
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:common"
+					}
+					gem: "apotheosis:core/lunar"
+				}
+			}
+			id: "50198946B5F6E0F6"
+			rewards: [{
+				id: "69D4FB3FCB27EA4D"
+				item: {
+					Count: 1
+					id: "apotheosis:gem"
+					tag: {
+						affix_data: {
+							rarity: "apotheosis:common"
+						}
+						gem: "apotheosis:core/lunar"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 5L
+					id: "50513DA0A2F35901"
+					item: { Count: 5, id: "apotheosis:gem_dust" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "133883FA672BE0E7"
+					item: { Count: 5, id: "apotheosis:common_material" }
+					type: "item"
+				}
+			]
+			title: "Cracked Lunar Gem"
+			x: 7.0d
+			y: -1.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:common"
+					}
+					gem: "apotheosis:core/samurai"
+				}
+			}
+			id: "4D154565489B94FD"
+			rewards: [{
+				id: "6D51DB414388D6AA"
+				item: {
+					Count: 1
+					id: "apotheosis:gem"
+					tag: {
+						affix_data: {
+							rarity: "apotheosis:common"
+						}
+						gem: "apotheosis:core/samurai"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 5L
+					id: "593BFEDBC8CA3381"
+					item: { Count: 5, id: "apotheosis:gem_dust" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "74C5123EC804D934"
+					item: { Count: 5, id: "apotheosis:common_material" }
+					type: "item"
+				}
+			]
+			title: "Cracked Gem of the Samurai"
+			x: 7.5d
+			y: 1.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:common"
+					}
+					gem: "apotheosis:core/slipstream"
+				}
+			}
+			id: "48908AE03FE1588B"
+			rewards: [{
+				id: "5B34103A83AE7888"
+				item: {
+					Count: 1
+					id: "apotheosis:gem"
+					tag: {
+						affix_data: {
+							rarity: "apotheosis:common"
+						}
+						gem: "apotheosis:core/slipstream"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 5L
+					id: "12B222F6C5FA0744"
+					item: { Count: 5, id: "apotheosis:gem_dust" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "0F196EE8390C7171"
+					item: { Count: 5, id: "apotheosis:common_material" }
+					type: "item"
+				}
+			]
+			title: "Cracked Slipstream Gem"
+			x: 8.5d
+			y: 1.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:common"
+					}
+					gem: "apotheosis:core/solar"
+				}
+			}
+			id: "37DD0169D67E4546"
+			rewards: [{
+				id: "3CC5912C0D3677AD"
+				item: {
+					Count: 1
+					id: "apotheosis:gem"
+					tag: {
+						affix_data: {
+							rarity: "apotheosis:common"
+						}
+						gem: "apotheosis:core/solar"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 5L
+					id: "0D48CF3E300E9B87"
+					item: "apotheosis:gem_dust"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "57B66CFF32DF3C5A"
+					item: { Count: 5, id: "apotheosis:common_material" }
+					type: "item"
+				}
+			]
+			title: "Cracked Solar Gem"
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:common"
+					}
+					gem: "apotheosis:core/splendor"
+				}
+			}
+			id: "53DCE3D109384141"
+			rewards: [{
+				id: "34EDE21056CDEB29"
+				item: {
+					Count: 1
+					id: "apotheosis:gem"
+					tag: {
+						affix_data: {
+							rarity: "apotheosis:common"
+						}
+						gem: "apotheosis:core/splendor"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 5L
+					id: "68345BB64708D225"
+					item: { Count: 5, id: "apotheosis:gem_dust" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "431407F9D57A332F"
+					item: { Count: 5, id: "apotheosis:common_material" }
+					type: "item"
+				}
+			]
+			title: "Cracked Splendor Gem"
+			x: 9.0d
+			y: -1.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:common"
+					}
+					gem: "apotheosis:core/tyrannical"
+				}
+			}
+			id: "2B6F29382CEE0FFF"
+			rewards: [{
+				id: "72E0375D4E3B76DB"
+				item: {
+					Count: 1
+					id: "apotheosis:gem"
+					tag: {
+						affix_data: {
+							rarity: "apotheosis:common"
+						}
+						gem: "apotheosis:core/tyrannical"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 5L
+					id: "2A87DA57C8B5DE33"
+					item: { Count: 5, id: "apotheosis:gem_dust" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "55F1492EF6C09893"
+					item: { Count: 5, id: "apotheosis:common_material" }
+					type: "item"
+				}
+			]
+			title: "Cracked Tyrannical Gem"
+			x: 9.5d
+			y: 1.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:common"
+					}
+					gem: "apotheosis:core/warlord"
+				}
+			}
+			id: "130507B507F8FD7F"
+			rewards: [{
+				id: "441A8985277F98EC"
+				item: {
+					Count: 1
+					id: "apotheosis:gem"
+					tag: {
+						affix_data: {
+							rarity: "apotheosis:common"
+						}
+						gem: "apotheosis:core/warlord"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 5L
+					id: "4BA7140E4E26022C"
+					item: { Count: 5, id: "apotheosis:gem_dust" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "7FA45BA4A4726786"
+					item: { Count: 5, id: "apotheosis:common_material" }
+					type: "item"
+				}
+			]
+			title: "Cracked Gem of the Warlord"
+			x: 10.0d
+			y: -1.0d
 		}
 	]
 	title: "Rock Shop"
