@@ -28,6 +28,8 @@ StartupEvents.registry('item', event => {
 	event.create('incomplete_machine', 'create:sequenced_assembly').texture('srsp:item/incomplete_machine')
 	//sapling exchange token
 	event.create('trizzco_point').texture('srsp:item/trizzco_point')
+	//flower shop token
+	event.create('flower_token').texture('kubejs:item/example_item') //TODO: Give proper texture
 })
 
 StartupEvents.registry('fluid', event => { //molten fluids for tconstruct/silent gear

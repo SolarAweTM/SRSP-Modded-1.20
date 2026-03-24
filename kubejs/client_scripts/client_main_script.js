@@ -238,6 +238,15 @@ ItemEvents.tooltip(event => {
 		text.add(2, Text.green('Rock Shop in the Quest Book.'))
 	})
 	
+	//flower token tooltip
+	event.addAdvanced('kubejs:flower_token', (item, advanced, text) => {
+		text.add(1, Text.green('Can be exchanged for flowers at The'))
+		text.add(2, Text.green('TODO in the Quest Book.'))
+		if(event.shift) {
+			text.add(3, Text.darkGray("Everything's going to be okay..."))
+		}
+	})
+	
 	//tooltip for thigh high changes
 	event.addAdvanced('estrogen:thigh_highs', (item, advanced, text) => {
 		if(!event.shift) {
