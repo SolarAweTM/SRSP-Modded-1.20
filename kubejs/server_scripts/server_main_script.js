@@ -53,6 +53,11 @@ ServerEvents.tags('block', event => {
 	event.add('create:non_movable', '#lootr:containers')
 	event.remove('iceandfire:dragon_cave_uncommon_ores', 'iceandfire:silver_ore')
 	event.add('iceandfire:dragon_cave_uncommon_ores', 'immersiveengineering:ore_silver')
+    event.add('create:chest_mounted_storage', '#forge:chests/wooden')
+    event.remove('create:chest_mounted_storage', 'sophisticatedstorage:chest')
+    event.remove('create:chest_mounted_storage', 'lootr:lootr_chest')
+    event.add('create:simple_mounted_storage', '#chipped:barrel')
+    event.add('create:single_block_inventories', '#chipped:barrel')
 })
 
 ServerEvents.tags('item', event => {
@@ -640,3 +645,33 @@ PlayerEvents.decorateChat(event => {
 	//reset
 	event.setMessage(event.message.replace('\\reset', '§r'))
 })
+/*
+ServerEvents.customCommand('head', event => {
+    const VALID_HEADS = [
+        'skeleton_skull',
+        'wither_skeleton_skull',
+        'player_head',
+        'zombie_head',
+        'creeper_head',
+        'gaia_head',
+        'blaze_head',
+        'enderman_head',
+        'stray_head',
+        'husk_head',
+        'drowned_head',
+        'spider_head',
+        'cave_spider_head',
+        'piglin_brute_head',
+        'zombified_piglin_head'
+    ]
+    if(event.player.getHeldItem(0).nbt && event.player.getHeldItem(0).nbt.display && event.player.getHeldItem(0).nbt.display.Name && (VALID_HEADS.indexOf(event.player.getHeldItem(0).item) != -1)){
+        let playerName = JSON.parse(event.player.getHeldItem(0).nbt.display.Name).text
+        const SKULL_OWNER = '{SkullOwner:"'
+        event.player.setHeldItem(0, Item.of('minecraft:player_head', event.player.getHeldItem(0).count, SKULL_OWNER.concat(playerName, '"}')))
+        event.player.tell(Text.green("Successfully converted held item into ").append(playerName).append("'s Head."))
+    }
+    else {
+        event.player.tell(Text.red("Failed to convert held item into Player Head. ").append(Text.white("Are you holding a valid mob head? Is the mob head named to the player you want?")))
+    }
+})
+*/
