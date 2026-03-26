@@ -240,8 +240,8 @@ ItemEvents.tooltip(event => {
 	
 	//flower token tooltip
 	event.addAdvanced('kubejs:flower_token', (item, advanced, text) => {
-		text.add(1, Text.green('Can be exchanged for flowers at The'))
-		text.add(2, Text.green('TODO in the Quest Book.'))
+		text.add(1, Text.green('Can be exchanged for flowers at '))
+		text.add(2, Text.green('Petallurgy in the Quest Book.'))
 		if(event.shift) {
 			text.add(3, Text.darkGray("Everything's going to be okay..."))
 		}
@@ -300,6 +300,280 @@ ItemEvents.tooltip(event => {
 			}
 		}
 	})
+	
+	//tooltips explaining all of the ae2 blocks
+	const CHANNEL_USING_ITEMS = [
+		'ae2:chest',
+		'ae2:drive',
+		'ae2:interface',
+		'ae2:cable_interface',
+		'ae2:io_port',
+		'ae2:storage_bus',
+		'ae2:import_bus',
+		'ae2:export_bus',
+		'ae2:terminal',
+		'ae2:crafting_terminal',
+		'ae2:conversion_monitor',
+		'ae2:annihilation_plane',
+		'ae2:formation_plane'
+	]
+	CHANNEL_USING_ITEMS.forEach(i => {
+		event.addAdvanced(i, (item, advanced, text) => {
+			if(event.shift) {
+				text.add(1, Text.yellow('Uses a channel.'))
+			}
+		})
+	})
+	const NO_CHANNEL_ITEMS = [
+		'ae2:energy_acceptor',
+		'ae2:cable_energy_acceptor',
+		'ae2:energy_cell',
+		'ae2:dense_energy_cell',
+		'ae2:storage_monitor',
+		'ae2:level_emitter',
+		'ae2:energy_level_emitter',
+		'ae2:toggle_bus',
+		'ae2:inverted_toggle_bus'
+	]
+	NO_CHANNEL_ITEMS.forEach(i => {
+		event.addAdvanced(i, (item, advanced, text) => {
+			if(event.shift) {
+				text.add(1, Text.green('Does not use a channel.'))
+			}
+		})
+	})
+	const AE2_TOOLTIPPED_ITEMS = [
+		'#ae2:glass_cable',
+		'#ae2:covered_cable',
+		'#ae2:smart_cable',
+		'#ae2:covered_dense_cable',
+		'#ae2:smart_dense_cable',
+		'ae2:controller',
+		'ae2:cell_workbench',
+		'ae2:drive',
+		'ae2:chest',
+		'ae2:interface',
+		'ae2:cable_interface',
+		'ae2:io_port',
+		'ae2:energy_acceptor',
+		'ae2:cable_energy_acceptor',
+		'ae2:energy_cell',
+		'ae2:dense_energy_cell',
+		'ae2:annihilation_plane',
+		'ae2:formation_plane',
+		'ae2:terminal',
+		'ae2:crafting_terminal',
+		'ae2:storage_monitor',
+		'ae2:conversion_monitor',
+		'ae2:level_emitter',
+		'ae2:energy_level_emitter',
+		'ae2:storage_bus',
+		'ae2:import_bus',
+		'ae2:export_bus',
+		'ae2:quartz_fiber',
+		'ae2:toggle_bus',
+		'ae2:inverted_toggle_bus'
+	]
+	AE2_TOOLTIPPED_ITEMS.forEach(i => {
+		event.addAdvanced(i, (item, advanced, text) => {
+			if(!event.shift) {
+				text.add(1, Text.darkGray('Hold [').append(Text.gray('Shift')).append(Text.darkGray('] for Summary')))
+			}
+		})
+	})
+	const AE2_CABLES = [
+		'#ae2:glass_cable',
+		'#ae2:covered_cable',
+		'#ae2:smart_cable'
+	]
+	AE2_CABLES.forEach(tag => {
+		event.addAdvanced(tag, (item, advanced, text) => {
+			if(event.shift) {
+				text.add(1, Text.gray('Can carry up to ').append(Text.yellow('8')).append(Text.gray(' channels.')))
+			}
+		})
+	})
+	event.addAdvanced('#ae2:smart_cable', (item, advanced, text) => {
+		if(event.shift) {
+			text.add(2, Text.gray('Shows channel usage on the cable and on Jade.'))
+		}
+	})
+	const DENSE_AE2_CABLES = [
+		'#ae2:covered_dense_cable',
+		'#ae2:smart_dense_cable'
+	]
+	DENSE_AE2_CABLES.forEach(tag => {
+		event.addAdvanced(tag, (item, advanced, text) => {
+			if(event.shift) {
+				text.add(1, Text.gray('Can carry up to ').append(Text.green('32')).append(Text.gray(' channels.')))
+				text.add(2, Text.gray('Cannot connect to cable subparts.'))
+				text.add(3, Text.gray('Use a non-dense cable for subparts.'))
+			}
+		})
+	})
+	event.addAdvanced('#ae2:smart_dense_cable', (item, advanced, text) => {
+		if(event.shift) {
+			text.add(4, Text.gray('Shows channel usage on the cable and on Jade.'))
+		}
+	})
+	event.addAdvanced('ae2:controller', (item, advanced, text) => {
+		if(event.shift) {
+			text.add(1, Text.gray('Provides ').append(Text.green('32 ')).append(Text.gray('channels per face.')))
+		}
+	})
+	event.addAdvanced('ae2:cell_workbench', (item, advanced, text) => {
+		if(event.shift) {
+			text.add(1, Text.gray('Used to partition (filter) and'))
+			text.add(2, Text.gray('apply upgrade cards to cells.'))
+		}
+	})
+	event.addAdvanced('ae2:drive', (item, advanced, text) => {
+		if(event.shift) {
+			text.add(1, Text.gray('Stores ME storage cells, making their'))
+			text.add(2, Text.gray('contents available as network storage.'))
+		}
+	})
+	event.addAdvanced('ae2:chest', (item, advanced, text) => {
+		if(event.shift) {
+			text.add(1, Text.gray('Can be used to interface with a'))
+			text.add(2, Text.gray('single ME storage cell or compatible'))
+			text.add(3, Text.gray('items.'))
+		}
+	})
+	event.addAdvanced('ae2:interface', (item, advanced, text) => {
+		if(event.shift) {
+			text.add(1, Text.gray('Allows external logistics (e.g. Create) to'))
+			text.add(2, Text.gray('insert/extract items to/from network storage.'))
+		}
+	})
+	event.addAdvanced('ae2:cable_interface', (item, advanced, text) => {
+		if(event.shift) {
+			text.add(1, Text.gray('Allows external logistics (e.g. Create) to'))
+			text.add(2, Text.gray('insert/extract items to/from network storage.'))
+		}
+	})
+	event.addAdvanced('ae2:io_port', (item, advanced, text) => {
+		if(event.shift) {
+			text.add(1, Text.gray('Used to quickly empty/fill an'))
+			text.add(2, Text.gray('ME storage cell using network storage.'))
+		}
+	})
+	event.addAdvanced('ae2:energy_acceptor', (item, advanced, text) => {
+		if(event.shift) {
+			text.add(1, Text.gray('Power can be given to the ME network'))
+			text.add(2, Text.gray('through this block instead of the Controller.'))
+			text.add(3, Text.gray('Also available as a cable subpart.'))
+		}
+	})
+	event.addAdvanced('ae2:cable_energy_acceptor', (item, advanced, text) => {
+		if(event.shift) {
+			text.add(1, Text.gray('Power can be given to the ME network through'))
+			text.add(2, Text.gray('this subpart instead of the Controller.'))
+			text.add(3, Text.gray('Also available as a block.'))
+		}
+	})
+	const ENERGY_CELLS = [
+		'ae2:energy_cell',
+		'ae2:dense_energy_cell'
+	]
+	ENERGY_CELLS.forEach(i => {
+		event.addAdvanced(i, (item, advanced, text) => {
+			if(event.shift) {
+				text.add(2, Text.gray('Holds energy for the network,'))
+				text.add(3, Text.gray('creating a buffer.'))
+				text.add(4, Text.gray('Optional, but recommended.'))
+			}
+		})
+	})
+	event.addAdvanced('ae2:annihilation_plane', (item, advanced, text) => {
+		if(event.shift) {
+			text.add(1, Text.gray('Breaks blocks and picks up items'))
+			text.add(2, Text.gray('in the world, outputting to network'))
+			text.add(3, Text.gray('storage.'))
+		}
+	})
+	event.addAdvanced('ae2:formation_plane', (item, advanced, text) => {
+		if(event.shift) {
+			text.add(1, Text.gray('Can place or drop items in the world'))
+			text.add(2, Text.gray('when network storage pushes items to it.'))
+		}
+	})
+	event.addAdvanced('ae2:terminal', (item, advanced, text) => {
+		if(event.shift) {
+			text.add(1, Text.gray('Allows players to access and interact'))
+			text.add(2, Text.gray('directly with network storage.'))
+		}
+	})
+	event.addAdvanced('ae2:crafting_terminal', (item, advanced, text) => {
+		if(event.shift) {
+			text.add(1, Text.gray('Allows players to access, interact, and'))
+			text.add(2, Text.gray('craft directly with network storage.'))
+		}
+	})
+	event.addAdvanced('ae2:storage_monitor', (item, advanced, text) => {
+		if(event.shift) {
+			text.add(1, Text.gray('Displays an item and its amount'))
+			text.add(2, Text.gray('within network storage.'))
+		}
+	})
+	event.addAdvanced('ae2:conversion_monitor', (item, advanced, text) => {
+		if(event.shift) {
+			text.add(1, Text.gray('Displays an item and its amount'))
+			text.add(2, Text.gray('within network storage.'))
+			text.add(3, Text.gray('Allows players to insert/extract items.'))
+		}
+	})
+	event.addAdvanced('ae2:level_emitter', (item, advanced, text) => {
+		if(event.shift) {
+			text.add(1, Text.gray('Emits redstone based on the amount'))
+			text.add(2, Text.gray('of the specified item in network storage.'))
+		}
+	})
+	event.addAdvanced('ae2:energy_level_emitter', (item, advanced, text) => {
+		if(event.shift) {
+			text.add(1, Text.gray('Emits redstone based on the amount'))
+			text.add(2, Text.gray('of energy in the network.'))
+		}
+	})
+	event.addAdvanced('ae2:storage_bus', (item, advanced, text) => {
+		if(event.shift) {
+			text.add(1, Text.gray('Attaches external containers'))
+			text.add(2, Text.gray('(e.g. Chests) as network storage.'))
+		}
+	})
+	event.addAdvanced('ae2:import_bus', (item, advanced, text) => {
+		if(event.shift) {
+			text.add(1, Text.gray('Pulls items from the attached'))
+			text.add(2, Text.gray('container into network storage.'))
+		}
+	})
+	event.addAdvanced('ae2:export_bus', (item, advanced, text) => {
+		if(event.shift) {
+			text.add(1, Text.gray('Pushes items from network storage'))
+			text.add(2, Text.gray('into the attached container.'))
+			text.add(3, Text.gray('Must be filtered to operate.'))
+		}
+	})
+	event.addAdvanced('ae2:quartz_fiber', (item, advanced, text) => {
+		if(event.shift) {
+			text.add(1, Text.gray('Allows a network to provide power'))
+			text.add(2, Text.gray('to another network, without making'))
+			text.add(3, Text.gray('a network connection.'))
+		}
+	})
+	event.addAdvanced('ae2:toggle_bus', (item, advanced, text) => {
+		if(event.shift) {
+			text.add(1, Text.gray('Allows a redstone signal to enable'))
+			text.add(2, Text.gray('connected devices on the other side.'))
+		}
+	})
+	event.addAdvanced('ae2:inverted_toggle_bus', (item, advanced, text) => {
+		if(event.shift) {
+			text.add(1, Text.gray('Allows a redstone signal to disable'))
+			text.add(2, Text.gray('connected devices on the other side.'))
+		}
+	})
+	
 })
 
 JEIEvents.hideItems(event => {
