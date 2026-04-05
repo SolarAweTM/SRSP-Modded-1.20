@@ -34,6 +34,7 @@
 		}
 		{
 			dependencies: ["09C2D39A209F63D6"]
+			description: ["TBD"]
 			icon: "immersiveengineering:shader_bag_ie_masterwork"
 			id: "2781273162C75B38"
 			rewards: [{
