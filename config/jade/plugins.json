@@ -134,6 +134,9 @@
   "gravestone": {
     "grave": true
   },
+  "camera": {
+    "image_frame": true
+  },
   "storagedrawers": {
     "display.stacklimit": true,
     "main": true,
