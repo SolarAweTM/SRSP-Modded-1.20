@@ -92,25 +92,15 @@ ItemEvents.tooltip(event => {
 		'ae2:fluid_storage_cell_16k',
 		'ae2:fluid_storage_cell_64k',
 		'ae2:fluid_storage_cell_256k',
-		'ae2:spatial_storage_cell_2',
-		'ae2:spatial_storage_cell_16',
 		'ae2:spatial_storage_cell_128',
 		'ae2:singularity',
 		'ae2:quantum_entangled_singularity',
-		'ae2:wireless_terminal',
-		'ae2:wireless_crafting_terminal',
 		'ae2:quantum_ring',
 		'ae2:quantum_link',
-		'ae2:spatial_io_port',
 		'ae2:cell_component_16k',
 		'ae2:cell_component_64k',
 		'ae2:cell_component_256k',
-		'ae2:spatial_cell_component_2',
-		'ae2:spatial_cell_component_16',
 		'ae2:spatial_cell_component_128',
-		'ae2:wireless_receiver',
-		'ae2:wireless_booster',
-		'ae2:wireless_access_point',
 		'ae2:condenser',
 		'ae2:vibration_chamber',
 		'ae2:crystal_resonance_generator',
@@ -132,17 +122,10 @@ ItemEvents.tooltip(event => {
 		'ae2:pattern_provider',
 		'ae2:molecular_assembler',
 		'ae2:blank_pattern',
-		'ae2:spatial_pylon',
 		'ae2:crafting_card',
 		'ae2:cable_pattern_provider',
 		'ae2:pattern_access_terminal',
-		'ae2:pattern_encoding_terminal',
-		'ae2:me_p2p_tunnel',
-		'ae2:redstone_p2p_tunnel',
-		'ae2:item_p2p_tunnel',
-		'ae2:fluid_p2p_tunnel',
-		'ae2:fe_p2p_tunnel',
-		'ae2:light_p2p_tunnel'
+		'ae2:pattern_encoding_terminal'
 	]
 	disabled_items.forEach(item => {
 		event.add(item, [
@@ -315,7 +298,16 @@ ItemEvents.tooltip(event => {
 		'ae2:crafting_terminal',
 		'ae2:conversion_monitor',
 		'ae2:annihilation_plane',
-		'ae2:formation_plane'
+		'ae2:formation_plane', 
+		'ae2:spatial_io_port',
+		'ae2:wireless_access_point',
+		'ae2:me_p2p_tunnel',
+		'ae2:redstone_p2p_tunnel',
+		'ae2:item_p2p_tunnel',
+		'ae2:fe_p2p_tunnel',
+		'ae2:fluid_p2p_tunnel',
+		'ae2:light_p2p_tunnel',
+		'ae2:spatial_pylon'
 	]
 	CHANNEL_USING_ITEMS.forEach(i => {
 		event.addAdvanced(i, (item, advanced, text) => {
@@ -372,7 +364,18 @@ ItemEvents.tooltip(event => {
 		'ae2:export_bus',
 		'ae2:quartz_fiber',
 		'ae2:toggle_bus',
-		'ae2:inverted_toggle_bus'
+		'ae2:inverted_toggle_bus', 
+		'ae2:spatial_io_port',
+		'ae2:wireless_access_point',
+		'ae2:wireless_terminal',
+		'ae2:wireless_crafting_terminal',
+		'ae2:me_p2p_tunnel',
+		'ae2:redstone_p2p_tunnel',
+		'ae2:item_p2p_tunnel',
+		'ae2:fe_p2p_tunnel',
+		'ae2:fluid_p2p_tunnel',
+		'ae2:light_p2p_tunnel',
+		'ae2:spatial_pylon'
 	]
 	AE2_TOOLTIPPED_ITEMS.forEach(i => {
 		event.addAdvanced(i, (item, advanced, text) => {
@@ -573,7 +576,78 @@ ItemEvents.tooltip(event => {
 			text.add(2, Text.gray('connected devices on the other side.'))
 		}
 	})
-	
+	event.addAdvanced('ae2:spatial_io_port', (item, advanced, text) => {
+		if(event.shift) {
+			text.add(1, Text.gray('Allows you to insert or extract an area stored'))
+			text.add(2, Text.gray('within a Spatial Cell. Activate with redstone.'))
+		}
+	})
+	event.addAdvanced('ae2:wireless_terminal', (item, advanced, text) => {
+		if(event.shift) {
+			text.add(1, Text.gray('Access your ME network at a distance.'))
+			text.add(2, Text.gray('Pair to network with Wireless Access Point.'))
+		}
+	})
+	event.addAdvanced('ae2:wireless_crafting_terminal', (item, advanced, text) => {
+		if(event.shift) {
+			text.add(1, Text.gray('Access your ME network at a distance.'))
+			text.add(2, Text.gray('Pair to network with Wireless Access Point.'))
+		}
+	})
+	event.addAdvanced('ae2:wireless_booster', (item, advanced, text) => {
+		if(event.shift) {
+			text.add(1, Text.gray('Use with the Wireless Access Point.'))
+			text.add(2, Text.gray('Increases range and power usage.'))
+		}
+	})
+	event.addAdvanced('ae2:me_p2p_tunnel', (item, advanced, text) => {
+		if(event.shift) {
+			text.add(1, Text.gray('Pair with a Memory Card.'))
+			text.add(2, Text.gray('Connects with another P2P Tunnel to'))
+			text.add(3, Text.gray('relay a network connection.'))
+		}
+	})
+	event.addAdvanced('ae2:redstone_p2p_tunnel', (item, advanced, text) => {
+		if(event.shift) {
+			text.add(1, Text.gray('Pair with a Memory Card.'))
+			text.add(2, Text.gray('Connects with another P2P Tunnel to'))
+			text.add(3, Text.gray('relay a redstone signal.'))
+		}
+	})
+	event.addAdvanced('ae2:item_p2p_tunnel', (item, advanced, text) => {
+		if(event.shift) {
+			text.add(1, Text.gray('Pair with a Memory Card.'))
+			text.add(2, Text.gray('Connects with another P2P Tunnel to'))
+			text.add(3, Text.gray('relay item transfer.'))
+		}
+	})
+	event.addAdvanced('ae2:fluid_p2p_tunnel', (item, advanced, text) => {
+		if(event.shift) {
+			text.add(1, Text.gray('Pair with a Memory Card.'))
+			text.add(2, Text.gray('Connects with another P2P Tunnel to'))
+			text.add(3, Text.gray('relay fluid transfer.'))
+		}
+	})
+	event.addAdvanced('ae2:fe_p2p_tunnel', (item, advanced, text) => {
+		if(event.shift) {
+			text.add(1, Text.gray('Pair with a Memory Card.'))
+			text.add(2, Text.gray('Connects with another P2P Tunnel to'))
+			text.add(3, Text.gray('relay energy transfer.'))
+		}
+	})
+	event.addAdvanced('ae2:light_p2p_tunnel', (item, advanced, text) => {
+		if(event.shift) {
+			text.add(1, Text.gray('Pair with a Memory Card.'))
+			text.add(2, Text.gray('Connects with another P2P Tunnel to'))
+			text.add(3, Text.gray('relay light.'))
+		}
+	})
+	event.addAdvanced('ae2:spatial_pylon', (item, advanced, text) => {
+		if(event.shift) {
+			text.add(1, Text.gray('Defines an area for use with'))
+			text.add(2, Text.gray('the Spatial IO Port.'))
+		}
+	})
 })
 
 JEIEvents.hideItems(event => {
@@ -1037,25 +1111,15 @@ JEIEvents.hideItems(event => {
 		'ae2:fluid_storage_cell_16k',
 		'ae2:fluid_storage_cell_64k',
 		'ae2:fluid_storage_cell_256k',
-		'ae2:spatial_storage_cell_2',
-		'ae2:spatial_storage_cell_16',
 		'ae2:spatial_storage_cell_128',
 		'ae2:singularity',
 		'ae2:quantum_entangled_singularity',
-		'ae2:wireless_terminal',
-		'ae2:wireless_crafting_terminal',
 		'ae2:quantum_ring',
 		'ae2:quantum_link',
-		'ae2:spatial_io_port',
 		'ae2:cell_component_16k',
 		'ae2:cell_component_64k',
 		'ae2:cell_component_256k',
-		'ae2:spatial_cell_component_2',
-		'ae2:spatial_cell_component_16',
 		'ae2:spatial_cell_component_128',
-		'ae2:wireless_receiver',
-		'ae2:wireless_booster',
-		'ae2:wireless_access_point',
 		'ae2:condenser',
 		'ae2:vibration_chamber',
 		'ae2:crystal_resonance_generator',
@@ -1077,17 +1141,10 @@ JEIEvents.hideItems(event => {
 		'ae2:pattern_provider',
 		'ae2:molecular_assembler',
 		'ae2:blank_pattern',
-		'ae2:spatial_pylon',
 		'ae2:crafting_card',
 		'ae2:cable_pattern_provider',
 		'ae2:pattern_access_terminal',
-		'ae2:pattern_encoding_terminal',
-		'ae2:me_p2p_tunnel',
-		'ae2:redstone_p2p_tunnel',
-		'ae2:item_p2p_tunnel',
-		'ae2:fluid_p2p_tunnel',
-		'ae2:fe_p2p_tunnel',
-		'ae2:light_p2p_tunnel'
+		'ae2:pattern_encoding_terminal'
 	]
 	hidden_items.forEach(item => {
 		event.hide(item) // noted: this also removes them from creative menus
