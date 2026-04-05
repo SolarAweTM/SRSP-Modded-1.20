@@ -22,4 +22,6 @@ ServerEvents.recipes(event => {
 	event.stonecutting('quark:violet_corundum', 'quark:violet_corundum_cluster')
 	event.stonecutting('quark:white_corundum', 'quark:white_corundum_cluster')
 	event.stonecutting('quark:black_corundum', 'quark:black_corundum_cluster')
+    //remove chute due to crashes
+    event.remove({output: 'quark:chute'})
 })
