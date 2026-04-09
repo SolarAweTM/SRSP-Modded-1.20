@@ -35,4 +35,6 @@ ServerEvents.recipes(event => {
 
 ServerEvents.tags('item', event => {
     event.remove('minecraft:arrows', 'silentgear:arrow')
+	event.add('silentgear:grader_catalysts/tier4', 'kubejs:catalyst_4')
+	event.add('silentgear:grader_catalysts/tier5', 'kubejs:catalyst_5')
 })
