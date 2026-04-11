@@ -7,6 +7,7 @@
 	icon: "ars_nouveau:apprentice_spell_book"
 	id: "550C8ADC0D852DB8"
 	images: [{
+		dependency: "42DC89D938676D7A"
 		dev: true
 		height: 2.0d
 		image: "ars_nouveau:block/warp_portal"
@@ -1074,20 +1075,27 @@
 				"13624B70B1D19465"
 				"0905FA4B3385A6F6"
 			]
-			description: ["The &aPotion Melder&r is a feature in Ars Nouveau that will be discovered in a &dfuture phase&r. Look forward to it in &dPhase II&r."]
-			hide_until_deps_complete: true
+			description: [
+				"&7&o(Worn Notebook: \"Potion Melder\")&r"
+				""
+				"The &aPotion Melder&r will take &dtwo Potion Jars&r with Potions inside, and with &dsome Source&r, it will use &dtwo bottles worth&r of each Potion Jar in order to &dmake one bottle of Potion that combines their effects&r, and put that into another Potion Jar."
+				""
+				"To start, &dplace down the Melder&r and have a Source Jar nearby. Then, &dplace the Potion Jar&r that you want to be set as &dthe output&r, and &dright-click the Melder&r with a &dDominion Wand&r, then &dright-click the output Potion Jar&r. From there, you can &dplace down your two input Jars&r, and then &duse the Dominion Wand on them&r, and then the Melder to set them as &dthe inputs&r."
+				""
+				"If the Melder has any issues, you can view them by &dlooking at the Melder&r. Any relevant information will be provided &dnext to your crosshair&r."
+			]
 			icon: "ars_nouveau:potion_melder"
 			id: "5E0C4A2AACEF5477"
+			min_width: 300
 			rewards: [{
 				id: "3DA7BA3E0B550E9D"
 				type: "xp"
 				xp: 20
 			}]
 			shape: "diamond"
-			subtitle: "Coming Soon!"
 			tasks: [{
 				id: "6E221DC915C25AE8"
-				item: "kubejs:intentionally_unobtainable"
+				item: "ars_nouveau:potion_melder"
 				type: "item"
 			}]
 			title: "Potion Melder"
@@ -1134,10 +1142,13 @@
 				xp: 20
 			}]
 			shape: "diamond"
-			subtitle: "Coming Soon!"
 			tasks: [{
 				id: "108ACAE334A58DAF"
-				item: "kubejs:intentionally_unobtainable"
+				item: {
+					Count: 1
+					id: "ars_nouveau:warp_scroll"
+					tag: { }
+				}
 				type: "item"
 			}]
 			title: "Warp Scrolls"
@@ -1905,36 +1916,6 @@
 			}]
 			title: "Your Spell Book's Final Upgrade"
 			x: 1.0d
-			y: 17.0d
-		}
-		{
-			dependencies: ["2EF417E3247D1A96"]
-			description: [
-				"&7&o(Worn Notebook: \"Potion Melder\")&r"
-				""
-				"The &aPotion Melder&r will take &dtwo Potion Jars&r with Potions inside, and with &dsome Source&r, it will use &dtwo bottles worth&r of each Potion Jar in order to &dmake one bottle of Potion that combines their effects&r, and put that into another Potion Jar."
-				""
-				"To start, &dplace down the Melder&r and have a Source Jar nearby. Then, &dplace the Potion Jar&r that you want to be set as &dthe output&r, and &dright-click the Melder&r with a &dDominion Wand&r, then &dright-click the output Potion Jar&r. From there, you can &dplace down your two input Jars&r, and then &duse the Dominion Wand on them&r, and then the Melder to set them as &dthe inputs&r."
-				""
-				"If the Melder has any issues, you can view them by &dlooking at the Melder&r. Any relevant information will be provided &dnext to your crosshair&r."
-			]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			id: "689B12F522520E78"
-			invisible: true
-			min_width: 300
-			rewards: [{
-				id: "56B575F571A0FB1D"
-				type: "xp"
-				xp: 10
-			}]
-			shape: "diamond"
-			tasks: [{
-				id: "7638D1C1F740482C"
-				type: "checkmark"
-			}]
-			title: "Potion Melder Quest Description"
-			x: -1.0d
 			y: 17.0d
 		}
 	]
