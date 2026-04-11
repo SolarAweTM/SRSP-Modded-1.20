@@ -207,7 +207,7 @@ ServerEvents.recipes(event => {
 	*/
 	
 	event.remove({id:'ars_nouveau:thread_life_drain'}) //remove the thread of life drain
-	event.remove({id:'ars_nouveau:thread_magic_capacity'}) //remove the thread of magic capacity
+	//event.remove({id:'ars_nouveau:thread_magic_capacity'}) //remove the thread of magic capacity
 	
 	/* scrapped
 	event.remove({id:'ars_nouveau:thread_spellpower'})
@@ -259,11 +259,13 @@ ServerEvents.recipes(event => {
 		tier: 1
 	})
 	// remove warp scrolls and potion melder (FUTURE PHASE)
+	/*
 	event.remove({output:'ars_nouveau:warp_scroll'})
 	event.remove({output:'ars_nouveau:stable_warp_scroll'})
 	event.remove({output:'ars_nouveau:potion_melder'})
+	*/
 })
-
+/*
 LootJS.modifiers((event) => {
 	event.addLootTableModifier("minecraft:chests/simple_dungeon").removeLoot("ars_nouveau:warp_scroll"); //TODO: RE-ENABLE IN FUTURE PHASE
 	event.addLootTableModifier("minecraft:chests/abandoned_mineshaft").removeLoot("ars_nouveau:warp_scroll");
@@ -287,3 +289,4 @@ MoreJSEvents.updateVillagerOffers((event) => { //forgot this
 			if(offer.getOutput() == 'ars_nouveau:warp_scroll'){offer.setDisabled(true)}
 	})
 })
+*/
