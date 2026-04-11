@@ -2,20 +2,62 @@
 	autofocus_id: "5D6AE9F83134678D"
 	consume_items: true
 	default_hide_dependency_lines: false
-	default_quest_shape: ""
+	default_quest_shape: "diamond"
 	default_repeatable_quest: true
 	filename: "gem_exchange"
 	group: "648DF65B44220ED8"
 	icon: "apotheosis:gem_dust"
 	id: "54D27E0F13949825"
-	images: [{
-		height: 2.2d
-		image: "srsp:textures/ftbquests/arrow.png"
-		rotation: 0.0d
-		width: 8.7d
-		x: -0.5d
-		y: 0.0d
-	}]
+	images: [
+		{
+			height: 2.2d
+			image: "srsp:textures/ftbquests/arrow.png"
+			rotation: 0.0d
+			width: 8.7d
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			height: 0.7d
+			image: "srsp:textures/ftbquests/text_commongems.png"
+			rotation: 0.0d
+			width: 6.1d
+			x: 6.5d
+			y: -5.0d
+		}
+		{
+			height: 0.7d
+			image: "srsp:textures/ftbquests/text_uncommongems.png"
+			rotation: 0.0d
+			width: 7.3d
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			height: 0.7d
+			image: "srsp:textures/ftbquests/text_raregems.png"
+			rotation: 0.0d
+			width: 4.9d
+			x: 6.5d
+			y: 2.0d
+		}
+		{
+			height: 0.1d
+			image: "forge:white"
+			rotation: 0.0d
+			width: 7.0d
+			x: 6.5d
+			y: -2.25d
+		}
+		{
+			height: 0.1d
+			image: "forge:white"
+			rotation: 0.0d
+			width: 7.0d
+			x: 6.5d
+			y: 1.25d
+		}
+	]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
@@ -125,8 +167,8 @@
 				}
 			]
 			title: "Cracked Ballast Gem"
-			x: 6.5d
-			y: -2.0d
+			x: 5.0d
+			y: -4.0d
 		}
 		{
 			icon: {
@@ -169,8 +211,8 @@
 				}
 			]
 			title: "Cracked Brawler's Gem"
-			x: 7.5d
-			y: -2.0d
+			x: 6.0d
+			y: -4.0d
 		}
 		{
 			icon: {
@@ -213,8 +255,8 @@
 				}
 			]
 			title: "Cracked Breach Gem"
-			x: 8.5d
-			y: -2.0d
+			x: 7.0d
+			y: -4.0d
 		}
 		{
 			icon: {
@@ -257,8 +299,8 @@
 				}
 			]
 			title: "Cracked Gem of the Combatant"
-			x: 6.5d
-			y: 1.0d
+			x: 5.0d
+			y: -3.0d
 		}
 		{
 			icon: {
@@ -301,8 +343,8 @@
 				}
 			]
 			title: "Cracked Guardian Gem"
-			x: 9.5d
-			y: -2.0d
+			x: 8.0d
+			y: -4.0d
 		}
 		{
 			icon: {
@@ -345,8 +387,8 @@
 				}
 			]
 			title: "Cracked Lightning Gem"
-			x: 6.0d
-			y: -1.0d
+			x: 4.5d
+			y: -3.5d
 		}
 		{
 			icon: {
@@ -389,8 +431,8 @@
 				}
 			]
 			title: "Cracked Lunar Gem"
-			x: 7.0d
-			y: -1.0d
+			x: 5.5d
+			y: -3.5d
 		}
 		{
 			icon: {
@@ -433,8 +475,8 @@
 				}
 			]
 			title: "Cracked Gem of the Samurai"
-			x: 7.5d
-			y: 1.0d
+			x: 6.0d
+			y: -3.0d
 		}
 		{
 			icon: {
@@ -477,8 +519,8 @@
 				}
 			]
 			title: "Cracked Slipstream Gem"
-			x: 8.5d
-			y: 1.0d
+			x: 7.0d
+			y: -3.0d
 		}
 		{
 			icon: {
@@ -521,8 +563,8 @@
 				}
 			]
 			title: "Cracked Solar Gem"
-			x: 8.0d
-			y: -1.0d
+			x: 6.5d
+			y: -3.5d
 		}
 		{
 			icon: {
@@ -565,8 +607,8 @@
 				}
 			]
 			title: "Cracked Splendor Gem"
-			x: 9.0d
-			y: -1.0d
+			x: 7.5d
+			y: -3.5d
 		}
 		{
 			icon: {
@@ -609,8 +651,8 @@
 				}
 			]
 			title: "Cracked Tyrannical Gem"
-			x: 9.5d
-			y: 1.0d
+			x: 8.0d
+			y: -3.0d
 		}
 		{
 			icon: {
@@ -653,8 +695,1284 @@
 				}
 			]
 			title: "Cracked Gem of the Warlord"
-			x: 10.0d
-			y: -1.0d
+			x: 8.5d
+			y: -3.5d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:uncommon"
+					}
+					gem: "apotheosis:core/ballast"
+				}
+			}
+			id: "3085458472FDF629"
+			rewards: [{
+				id: "118DF518AE120AB0"
+				item: {
+					Count: 1
+					id: "apotheosis:gem"
+					tag: {
+						affix_data: {
+							rarity: "apotheosis:uncommon"
+						}
+						gem: "apotheosis:core/ballast"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 10L
+					id: "69F2C1325BB6B221"
+					item: { Count: 5, id: "apotheosis:gem_dust" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "21E054877B53C269"
+					item: { Count: 5, id: "apotheosis:uncommon_material" }
+					type: "item"
+				}
+			]
+			title: "Chipped Ballast Gem"
+			x: 5.0d
+			y: -0.5d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:uncommon"
+					}
+					gem: "apotheosis:core/brawlers"
+				}
+			}
+			id: "6012A277549ADB6D"
+			rewards: [{
+				id: "16B35CF5EB3CC560"
+				item: {
+					Count: 1
+					id: "apotheosis:gem"
+					tag: {
+						affix_data: {
+							rarity: "apotheosis:uncommon"
+						}
+						gem: "apotheosis:core/brawlers"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 10L
+					id: "5A92295926C1A154"
+					item: { Count: 5, id: "apotheosis:gem_dust" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "5BAFDDA4314460BD"
+					item: "apotheosis:uncommon_material"
+					type: "item"
+				}
+			]
+			title: "Chipped Brawler's Gem"
+			x: 6.0d
+			y: -0.5d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:uncommon"
+					}
+					gem: "apotheosis:core/breach"
+				}
+			}
+			id: "004F4ACFE9A324CB"
+			rewards: [{
+				id: "2B979CD4DCF74262"
+				item: {
+					Count: 1
+					id: "apotheosis:gem"
+					tag: {
+						affix_data: {
+							rarity: "apotheosis:uncommon"
+						}
+						gem: "apotheosis:core/breach"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 10L
+					id: "7BB414169B1AE594"
+					item: { Count: 5, id: "apotheosis:gem_dust" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "00E68CFEDD74E831"
+					item: { Count: 5, id: "apotheosis:uncommon_material" }
+					type: "item"
+				}
+			]
+			title: "Chipped Breach Gem"
+			x: 7.0d
+			y: -0.5d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:uncommon"
+					}
+					gem: "apotheosis:core/guardian"
+				}
+			}
+			id: "56EA030C6C0EFDD0"
+			rewards: [{
+				id: "679CA693D2509483"
+				item: {
+					Count: 1
+					id: "apotheosis:gem"
+					tag: {
+						affix_data: {
+							rarity: "apotheosis:uncommon"
+						}
+						gem: "apotheosis:core/guardian"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 10L
+					id: "3904767D63DC4246"
+					item: { Count: 10, id: "apotheosis:gem_dust" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "23A940C31397C12C"
+					item: { Count: 5, id: "apotheosis:uncommon_material" }
+					type: "item"
+				}
+			]
+			title: "Chipped Guardian Gem"
+			x: 8.0d
+			y: -0.5d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:uncommon"
+					}
+					gem: "apotheosis:core/lightning"
+				}
+			}
+			id: "42ACD833D99FA8D8"
+			rewards: [{
+				id: "4184B684161C0899"
+				item: {
+					Count: 1
+					id: "apotheosis:gem"
+					tag: {
+						affix_data: {
+							rarity: "apotheosis:uncommon"
+						}
+						gem: "apotheosis:core/lightning"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 10L
+					id: "687DFD1BFC236721"
+					item: { Count: 10, id: "apotheosis:gem_dust" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "012CDBF2798C1141"
+					item: { Count: 5, id: "apotheosis:uncommon_material" }
+					type: "item"
+				}
+			]
+			title: "Chipped Lightning Gem"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:uncommon"
+					}
+					gem: "apotheosis:core/lunar"
+				}
+			}
+			id: "4E43439FCC087DB4"
+			rewards: [{
+				id: "5A0724CFCB68BC8C"
+				item: {
+					Count: 1
+					id: "apotheosis:gem"
+					tag: {
+						affix_data: {
+							rarity: "apotheosis:uncommon"
+						}
+						gem: "apotheosis:core/lunar"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 10L
+					id: "12E38DD0143FD1E6"
+					item: { Count: 10, id: "apotheosis:gem_dust" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "5E53F60A985011DE"
+					item: { Count: 5, id: "apotheosis:uncommon_material" }
+					type: "item"
+				}
+			]
+			title: "Chipped Lunar Gem"
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:uncommon"
+					}
+					gem: "apotheosis:core/solar"
+				}
+			}
+			id: "1785B68FFE791E13"
+			rewards: [{
+				id: "16CD1F3E50DB2686"
+				item: {
+					Count: 1
+					id: "apotheosis:gem"
+					tag: {
+						affix_data: {
+							rarity: "apotheosis:uncommon"
+						}
+						gem: "apotheosis:core/solar"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 10L
+					id: "264A4721646126E3"
+					item: { Count: 10, id: "apotheosis:gem_dust" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "0563F77EFDD9EAB7"
+					item: { Count: 5, id: "apotheosis:uncommon_material" }
+					type: "item"
+				}
+			]
+			title: "Chipped Solar Gem"
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:uncommon"
+					}
+					gem: "apotheosis:core/splendor"
+				}
+			}
+			id: "405AF629BD078F1E"
+			rewards: [{
+				id: "0BAE675ECA762886"
+				item: {
+					Count: 1
+					id: "apotheosis:gem"
+					tag: {
+						affix_data: {
+							rarity: "apotheosis:uncommon"
+						}
+						gem: "apotheosis:core/splendor"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 10L
+					id: "4B1A31FB2789ED98"
+					item: { Count: 10, id: "apotheosis:gem_dust" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "30D46A32767639E4"
+					item: { Count: 5, id: "apotheosis:uncommon_material" }
+					type: "item"
+				}
+			]
+			title: "Chipped Splendor Gem"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:uncommon"
+					}
+					gem: "apotheosis:core/warlord"
+				}
+			}
+			id: "4F047D21BB1322A4"
+			rewards: [{
+				id: "6AC674C1E467465A"
+				item: {
+					Count: 1
+					id: "apotheosis:gem"
+					tag: {
+						affix_data: {
+							rarity: "apotheosis:uncommon"
+						}
+						gem: "apotheosis:core/warlord"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 10L
+					id: "10DBDCE58D69B1AE"
+					item: { Count: 10, id: "apotheosis:gem_dust" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "69E1CC033C6D039F"
+					item: { Count: 5, id: "apotheosis:uncommon_material" }
+					type: "item"
+				}
+			]
+			title: "Chipped Gem of the Warlord"
+			x: 8.5d
+			y: 0.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:uncommon"
+					}
+					gem: "apotheosis:core/combatant"
+				}
+			}
+			id: "6B7935EADEC42C2D"
+			rewards: [{
+				id: "63B8AD69140AF05C"
+				item: {
+					Count: 1
+					id: "apotheosis:gem"
+					tag: {
+						affix_data: {
+							rarity: "apotheosis:uncommon"
+						}
+						gem: "apotheosis:core/combatant"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 10L
+					id: "00A839B1E006CF7A"
+					item: { Count: 10, id: "apotheosis:gem_dust" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "7447A12C4CCF068F"
+					item: { Count: 5, id: "apotheosis:uncommon_material" }
+					type: "item"
+				}
+			]
+			title: "Chipped Gem of the Combatant"
+			x: 5.0d
+			y: 0.5d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:uncommon"
+					}
+					gem: "apotheosis:core/samurai"
+				}
+			}
+			id: "4E8D0EDA28CC3551"
+			rewards: [{
+				id: "4DC176A028AD1D93"
+				item: {
+					Count: 1
+					id: "apotheosis:gem"
+					tag: {
+						affix_data: {
+							rarity: "apotheosis:uncommon"
+						}
+						gem: "apotheosis:core/samurai"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 10L
+					id: "1B9F1B469BB1AD5B"
+					item: { Count: 10, id: "apotheosis:gem_dust" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "72F73F0079500CB1"
+					item: { Count: 5, id: "apotheosis:uncommon_material" }
+					type: "item"
+				}
+			]
+			title: "Chipped Gem of the Samurai"
+			x: 6.0d
+			y: 0.5d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:uncommon"
+					}
+					gem: "apotheosis:core/slipstream"
+				}
+			}
+			id: "3841310045093861"
+			rewards: [{
+				id: "20AC8ECB9310ADA2"
+				item: {
+					Count: 1
+					id: "apotheosis:gem"
+					tag: {
+						affix_data: {
+							rarity: "apotheosis:uncommon"
+						}
+						gem: "apotheosis:core/slipstream"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 10L
+					id: "5D4D52206903CD8C"
+					item: { Count: 10, id: "apotheosis:gem_dust" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "2E17862E5DA13B70"
+					item: { Count: 5, id: "apotheosis:uncommon_material" }
+					type: "item"
+				}
+			]
+			title: "Chipped Slipstream Gem"
+			x: 7.0d
+			y: 0.5d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:uncommon"
+					}
+					gem: "apotheosis:core/tyrannical"
+				}
+			}
+			id: "35CD10FDFCE55A52"
+			rewards: [{
+				id: "44ACD444EADB8A43"
+				item: {
+					Count: 1
+					id: "apotheosis:gem"
+					tag: {
+						affix_data: {
+							rarity: "apotheosis:uncommon"
+						}
+						gem: "apotheosis:core/tyrannical"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 10L
+					id: "346E3271ADC864D3"
+					item: { Count: 10, id: "apotheosis:gem_dust" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "0155555DF09C6058"
+					item: { Count: 5, id: "apotheosis:uncommon_material" }
+					type: "item"
+				}
+			]
+			title: "Chipped Tyrannical Gem"
+			x: 8.0d
+			y: 0.5d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:rare"
+					}
+					gem: "apotheosis:core/ballast"
+				}
+			}
+			id: "7D462DBCBE528B09"
+			rewards: [{
+				id: "49707732F77BE16E"
+				item: {
+					Count: 1
+					id: "apotheosis:gem"
+					tag: {
+						affix_data: {
+							rarity: "apotheosis:rare"
+						}
+						gem: "apotheosis:core/ballast"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 15L
+					id: "60E9534C6BD7A250"
+					item: { Count: 15, id: "apotheosis:gem_dust" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "06033BAD081FA259"
+					item: { Count: 5, id: "apotheosis:rare_material" }
+					type: "item"
+				}
+			]
+			title: "Flawed Ballast Gem"
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:rare"
+					}
+					gem: "apotheosis:core/brawlers"
+				}
+			}
+			id: "0624D485BF08567E"
+			rewards: [{
+				id: "2AD5155277FDC24F"
+				item: {
+					Count: 1
+					id: "apotheosis:gem"
+					tag: {
+						affix_data: {
+							rarity: "apotheosis:rare"
+						}
+						gem: "apotheosis:core/brawlers"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 15L
+					id: "108C3577215DE193"
+					item: { Count: 15, id: "apotheosis:gem_dust" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "3D2B932AF491CA46"
+					item: { Count: 5, id: "apotheosis:rare_material" }
+					type: "item"
+				}
+			]
+			title: "Flawed Brawler's Gem"
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:rare"
+					}
+					gem: "apotheosis:core/breach"
+				}
+			}
+			id: "3E498EB185B98F10"
+			rewards: [{
+				id: "20B511D25D234DCD"
+				item: {
+					Count: 1
+					id: "apotheosis:gem"
+					tag: {
+						affix_data: {
+							rarity: "apotheosis:rare"
+						}
+						gem: "apotheosis:core/breach"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 15L
+					id: "2199399929FDB496"
+					item: { Count: 15, id: "apotheosis:gem_dust" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "712494A24F88E4A7"
+					item: { Count: 5, id: "apotheosis:rare_material" }
+					type: "item"
+				}
+			]
+			title: "Flawed Breach Gem"
+			x: 7.0d
+			y: 3.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:rare"
+					}
+					gem: "apotheosis:core/guardian"
+				}
+			}
+			id: "42A2E96CB727F9B3"
+			rewards: [{
+				id: "596114A90F173377"
+				item: {
+					Count: 1
+					id: "apotheosis:gem"
+					tag: {
+						affix_data: {
+							rarity: "apotheosis:rare"
+						}
+						gem: "apotheosis:core/guardian"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 15L
+					id: "4573C9BC7D64C15D"
+					item: { Count: 15, id: "apotheosis:gem_dust" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "610FBC42C0674453"
+					item: { Count: 5, id: "apotheosis:rare_material" }
+					type: "item"
+				}
+			]
+			title: "Flawed Guardian Gem"
+			x: 8.0d
+			y: 3.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:rare"
+					}
+					gem: "apotheosis:core/lightning"
+				}
+			}
+			id: "66347D826F8886F6"
+			rewards: [{
+				id: "421E48740C77A74D"
+				item: {
+					Count: 1
+					id: "apotheosis:gem"
+					tag: {
+						affix_data: {
+							rarity: "apotheosis:rare"
+						}
+						gem: "apotheosis:core/lightning"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 15L
+					id: "3EAB0D3D97E246D0"
+					item: { Count: 15, id: "apotheosis:gem_dust" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "76F296360780ACC3"
+					item: { Count: 5, id: "apotheosis:rare_material" }
+					type: "item"
+				}
+			]
+			title: "Flawed Lightning Gem"
+			x: 4.5d
+			y: 3.5d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:rare"
+					}
+					gem: "apotheosis:core/lunar"
+				}
+			}
+			id: "532A2B941F69366F"
+			rewards: [{
+				id: "12D8E92D3BED8E63"
+				item: {
+					Count: 1
+					id: "apotheosis:gem"
+					tag: {
+						affix_data: {
+							rarity: "apotheosis:rare"
+						}
+						gem: "apotheosis:core/lunar"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 15L
+					id: "09E8ADF2F78E0866"
+					item: { Count: 15, id: "apotheosis:gem_dust" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "5438CE575EB3AC02"
+					item: { Count: 5, id: "apotheosis:rare_material" }
+					type: "item"
+				}
+			]
+			title: "Flawed Lunar Gem"
+			x: 5.5d
+			y: 3.5d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:rare"
+					}
+					gem: "apotheosis:core/solar"
+				}
+			}
+			id: "2930B912C423783D"
+			rewards: [{
+				id: "449A87DF53AB7C65"
+				item: {
+					Count: 1
+					id: "apotheosis:gem"
+					tag: {
+						affix_data: {
+							rarity: "apotheosis:rare"
+						}
+						gem: "apotheosis:core/solar"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 15L
+					id: "693F9A71C48C9FBA"
+					item: { Count: 15, id: "apotheosis:gem_dust" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "0ABE9B951CE86CD9"
+					item: { Count: 5, id: "apotheosis:rare_material" }
+					type: "item"
+				}
+			]
+			title: "Flawed Solar Gem"
+			x: 6.5d
+			y: 3.5d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:rare"
+					}
+					gem: "apotheosis:core/splendor"
+				}
+			}
+			id: "344D40FF23A00E89"
+			rewards: [{
+				id: "352BD77F4D400486"
+				item: {
+					Count: 1
+					id: "apotheosis:gem"
+					tag: {
+						affix_data: {
+							rarity: "apotheosis:rare"
+						}
+						gem: "apotheosis:core/splendor"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 15L
+					id: "5637B38F1CC036A6"
+					item: { Count: 15, id: "apotheosis:gem_dust" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "24DFF6C3A58270E9"
+					item: { Count: 5, id: "apotheosis:rare_material" }
+					type: "item"
+				}
+			]
+			title: "Flawed Splendor Gem"
+			x: 7.5d
+			y: 3.5d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:rare"
+					}
+					gem: "apotheosis:core/warlord"
+				}
+			}
+			id: "791983898B6ECAA4"
+			rewards: [{
+				id: "2F36CC8B4168A03C"
+				item: {
+					Count: 1
+					id: "apotheosis:gem"
+					tag: {
+						affix_data: {
+							rarity: "apotheosis:rare"
+						}
+						gem: "apotheosis:core/warlord"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 15L
+					id: "40C32A482632E6DE"
+					item: { Count: 15, id: "apotheosis:gem_dust" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "083EF57118135156"
+					item: { Count: 5, id: "apotheosis:rare_material" }
+					type: "item"
+				}
+			]
+			title: "Flawed Gem of the Warlord"
+			x: 8.5d
+			y: 3.5d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:rare"
+					}
+					gem: "apotheosis:core/combatant"
+				}
+			}
+			id: "4677D89B1443CD7D"
+			rewards: [{
+				id: "0828E8F85B6B751D"
+				item: {
+					Count: 1
+					id: "apotheosis:gem"
+					tag: {
+						affix_data: {
+							rarity: "apotheosis:rare"
+						}
+						gem: "apotheosis:core/combatant"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 15L
+					id: "285F113BE392482C"
+					item: { Count: 15, id: "apotheosis:gem_dust" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "0B084C224D77BE60"
+					item: { Count: 5, id: "apotheosis:rare_material" }
+					type: "item"
+				}
+			]
+			title: "Flawed Gem of the Combatant"
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:rare"
+					}
+					gem: "apotheosis:core/samurai"
+				}
+			}
+			id: "4DE2F24BF2AC582D"
+			rewards: [{
+				id: "4C8067090E51608F"
+				item: {
+					Count: 1
+					id: "apotheosis:gem"
+					tag: {
+						affix_data: {
+							rarity: "apotheosis:rare"
+						}
+						gem: "apotheosis:core/samurai"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 15L
+					id: "020CE9D7F62A1A34"
+					item: { Count: 15, id: "apotheosis:gem_dust" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "5B6D2FFD06E5C061"
+					item: { Count: 5, id: "apotheosis:rare_material" }
+					type: "item"
+				}
+			]
+			title: "Flawed Gem of the Samurai"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:rare"
+					}
+					gem: "apotheosis:core/slipstream"
+				}
+			}
+			id: "13FC909431A2D394"
+			rewards: [{
+				id: "2924281A7E3E5B7C"
+				item: {
+					Count: 1
+					id: "apotheosis:gem"
+					tag: {
+						affix_data: {
+							rarity: "apotheosis:rare"
+						}
+						gem: "apotheosis:core/slipstream"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 15L
+					id: "52ADE68456675367"
+					item: { Count: 15, id: "apotheosis:gem_dust" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "148DA5E653E0396D"
+					item: { Count: 5, id: "apotheosis:rare_material" }
+					type: "item"
+				}
+			]
+			title: "Flawed Slipstream Gem"
+			x: 7.0d
+			y: 4.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:rare"
+					}
+					gem: "apotheosis:core/tyrannical"
+				}
+			}
+			id: "16753DFE23BC7D18"
+			rewards: [{
+				id: "0A2203176FFFE6CF"
+				item: {
+					Count: 1
+					id: "apotheosis:gem"
+					tag: {
+						affix_data: {
+							rarity: "apotheosis:rare"
+						}
+						gem: "apotheosis:core/tyrannical"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 15L
+					id: "2438D48B088E26EE"
+					item: { Count: 15, id: "apotheosis:gem_dust" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "1766EDFC3422E067"
+					item: { Count: 5, id: "apotheosis:rare_material" }
+					type: "item"
+				}
+			]
+			title: "Flawed Tyrannical Gem"
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:rare"
+					}
+					gem: "apotheosis:overworld/earth"
+				}
+			}
+			id: "56E6CDB7C5896EB5"
+			rewards: [{
+				id: "1C786302CE4C87FB"
+				item: {
+					Count: 1
+					id: "apotheosis:gem"
+					tag: {
+						affix_data: {
+							rarity: "apotheosis:rare"
+						}
+						gem: "apotheosis:overworld/earth"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 15L
+					id: "0773C482C22A9C96"
+					item: { Count: 15, id: "apotheosis:gem_dust" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "2AAF083E769901F5"
+					item: { Count: 5, id: "apotheosis:rare_material" }
+					type: "item"
+				}
+			]
+			title: "Flawed Gem of the Earth"
+			x: 5.5d
+			y: 4.5d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:rare"
+					}
+					gem: "apotheosis:overworld/royalty"
+				}
+			}
+			id: "56FC1284AEC327E8"
+			rewards: [{
+				id: "54FACA8D3C39AA8D"
+				item: {
+					Count: 1
+					id: "apotheosis:gem"
+					tag: {
+						affix_data: {
+							rarity: "apotheosis:rare"
+						}
+						gem: "apotheosis:overworld/royalty"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 15L
+					id: "69717C327F9C4690"
+					item: { Count: 15, id: "apotheosis:gem_dust" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "5630FF43BBF5DB71"
+					item: { Count: 5, id: "apotheosis:rare_material" }
+					type: "item"
+				}
+			]
+			title: "Flawed Gem of the Royal Family"
+			x: 6.5d
+			y: 4.5d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:rare"
+					}
+					gem: "apotheosis:the_nether/inferno"
+				}
+			}
+			id: "3C60A8FB88CE8E05"
+			rewards: [{
+				id: "77F4291079129333"
+				item: {
+					Count: 1
+					id: "apotheosis:gem"
+					tag: {
+						affix_data: {
+							rarity: "apotheosis:rare"
+						}
+						gem: "apotheosis:the_nether/inferno"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 15L
+					id: "6AC1853286AC6258"
+					item: { Count: 15, id: "apotheosis:gem_dust" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "42DC4D65D9C4E734"
+					item: { Count: 5, id: "apotheosis:rare_material" }
+					type: "item"
+				}
+			]
+			title: "Flawed Gem of the Incandescent Inferno"
+			x: 7.5d
+			y: 4.5d
 		}
 	]
 	title: "Rock Shop"
