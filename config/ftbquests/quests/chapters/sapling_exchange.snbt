@@ -1632,6 +1632,7 @@
 				item: "ars_elemental:yellow_archwood_sapling"
 				type: "item"
 			}]
+			shape: "diamond"
 			tasks: [{
 				consume_items: true
 				id: "64D835F9D1238681"
@@ -1651,6 +1652,7 @@
 				item: "iceandfire:dreadwood_sapling"
 				type: "item"
 			}]
+			shape: "diamond"
 			tasks: [{
 				consume_items: true
 				id: "26AD5B21C8F225CA"
