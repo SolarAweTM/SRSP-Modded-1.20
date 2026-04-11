@@ -7,11 +7,11 @@
 	#The minimum base xp cost (may be subceeded by multipliers defined below)
 	minimumBaseXpCost = 0.0
 	#The maximum base xp cost (may be exceeded by multipliers defined below), set to 0 to disable all distance-based XP costs
-	maximumBaseXpCost = 3.0
+	maximumBaseXpCost = 0.0
 	#How much xp is needed per leashed animal to travel with you
 	xpCostPerLeashed = 0
 	#The base xp level cost when travelling between dimensions. Ignores block distance.
-	dimensionalWarpXpCost = 3
+	dimensionalWarpXpCost = 0
 	#The multiplier applied to the base xp cost when teleporting to a global waystone through any method.
 	globalWaystoneXpCostMultiplier = 0.0
 	#The multiplier applied to the base xp cost when teleporting using a Warp Stone item (not the Waystone block, Konstantin)
@@ -33,22 +33,22 @@
 	#If enabled, only the owner of a waystone (the one who placed it) can rename it.
 	restrictRenameToOwner = true
 	#If enabled, waystones generated in worldgen are unbreakable.
-	generatedWaystonesUnbreakable = true
+	generatedWaystonesUnbreakable = false
 	#If enabled, leashed mobs will be teleported with you
 	transportLeashed = true
 	#Whether to take leashed mobs with you when teleporting between dimensions
-	transportLeashedDimensional = true
+	transportLeashedDimensional = false
 	#List of leashed mobs that cannot be taken with you when teleporting
 	leashedDenyList = ["minecraft:wither"]
 	#Set to 'ALLOW' to allow dimensional warp in general. Set to 'GLOBAL_ONLY' to restrict dimensional warp to global waystones. Set to 'DENY' to disallow all dimensional warps.
 	#Allowed Values: ALLOW, GLOBAL_ONLY, DENY
-	dimensionalWarp = "ALLOW"
+	dimensionalWarp = "DENY"
 	#List of dimensions that players are allowed to warp cross-dimension from and to. If left empty, all dimensions except those in dimensionalWarpDenyList are allowed.
 	dimensionalWarpAllowList = []
 	#List of dimensions that players are not allowed to warp cross-dimension from and to. Only used if dimensionalWarpAllowList is empty.
 	dimensionalWarpDenyList = []
 	#Set to true if players should be able to teleport between waystones by simply right-clicking a waystone.
-	allowWaystoneToWaystoneTeleport = false
+	allowWaystoneToWaystoneTeleport = true
 	#Set to false to allow non-creative players to make waystones globally activated for all players.
 	globalWaystoneSetupRequiresCreativeMode = true
 
@@ -68,7 +68,7 @@
 
 [inventoryButton]
 	#Set to 'NONE' for no inventory button. Set to 'NEAREST' for an inventory button that teleports to the nearest waystone. Set to 'ANY' for an inventory button that opens the waystone selection menu. Set to a waystone name for an inventory button that teleports to a specifically named waystone.
-	inventoryButton = ""
+	inventoryButton = "NONE"
 	#The x position of the warp button in the inventory.
 	warpButtonX = 58
 	#The y position of the warp button in the inventory.
@@ -90,9 +90,9 @@
 	dimensionDenyList = []
 	#Set to 'PRESET_FIRST' to first use names from the custom names list. Set to 'PRESET_ONLY' to use only those custom names. Set to 'MIXED' to have some waystones use custom names, and others random names.
 	#Allowed Values: PRESET_FIRST, RANDOM_ONLY, PRESET_ONLY, MIXED
-	nameGenerationMode = "PRESET_FIRST"
+	nameGenerationMode = "PRESET_ONLY"
 	#These names will be used for the PRESET name generation mode. See the nameGenerationMode option for more info.
-	customWaystoneNames = ["Spawning Grounds", "Marooner's Bay", "Jammin' Salmon Junction", "Gone Fission Hydroplant", "Sockeye Station", "Salmonid Smokeyard", "Lost Outpost", "Ruins of Ark Polaris", "Inkblot Art Academy", "Mincemeat Metalworks", "Moray Towers", "Um'ami Ruins", "Robo ROM-en", "Shipshape Cargo Co.", "Crableg Capital", "Lemuria Hub", "London, England"]
+	customWaystoneNames = ["Spawning Grounds", "Marooner's Bay", "Jammin' Salmon Junction", "Gone Fission Hydroplant", "Sockeye Station", "Salmonid Smokeyard", "Lost Outpost", "Ruins of Ark Polaris", "Inkblot Art Academy", "Mincemeat Metalworks", "Moray Towers", "Um'ami Ruins", "Robo ROM-en", "Shipshape Cargo Co.", "Crableg Capital", "Lemuria Hub", "London, England", "The Grand Design 2", "Yuriland", "Yaoiville", "Newesterestest Home", "Montana", "Oregon", "Florida", "Ed's Walls", "Tesco II", "Walmart", "Costco Wholesale", "Wawa", "Publix", "Manta Maria", "Undertow Spillway", "Undertale", "Unnamed Waystone", "Yes DK", "hell world", "Texas", "Waystone, Japan", "ed: want to go skateboard?", "WHITE SPACE", "Hydra Splatling Factory", "Furnox II: The Pestilence Arrives", "https://youtu.be/uie7Oz3qHkk", "John Waystone", "You will explode in 3...", "Codo 5.0"]
 	#Set to true if waystones should be added to the generation of villages. Some villages may still spawn without a waystone.
 	spawnInVillages = true
 	#Ensures that pretty much every village will have a waystone, by spawning it as early as possible. In addition, this means waystones will generally be located in the center of the village.
