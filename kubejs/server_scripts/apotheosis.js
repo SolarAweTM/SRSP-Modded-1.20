@@ -228,7 +228,7 @@ ServerEvents.recipes(event => {
 	//remove gem related recipes due to gems being disabled in phase 1 (will be reinstated in future phases)
 	event.remove({output:'apotheosis:gem_cutting_table'})
 	event.remove({output:'apotheosis:sigil_of_rebirth'})
-	event.remove({output:'apotheosis:sigil_of_withdrawal'}) //TODO: ENABLE THIS
+	//event.remove({output:'apotheosis:sigil_of_withdrawal'}) //TODO: ENABLE THIS
 	event.remove({output:'apotheosis:sigil_of_socketing'})
 	event.remove({output:'apotheosis:gem_fused_slate'})
 	event.remove({output:'apotheosis:sigil_of_enhancement'})
