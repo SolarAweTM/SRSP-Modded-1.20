@@ -1128,7 +1128,18 @@ JEIEvents.hideItems(event => {
 		'ae2:crafting_card',
 		'ae2:cable_pattern_provider',
 		'ae2:pattern_access_terminal',
-		'ae2:pattern_encoding_terminal'
+		'ae2:pattern_encoding_terminal',
+		'webdisplays:ownerthief',
+		'webdisplays:server',
+		'webdisplays:upgrade_gps',
+		'webdisplays:craftcomp_stonekey',
+		'webdisplays:craftcomp_upgrade',
+		'webdisplays:craftcomp_peripheral',
+		'webdisplays:craftcomp_batcell',
+		'webdisplays:craftcomp_batpack',
+		'webdisplays:craftcomp_backlight',
+		'webdisplays:craftcomp_extcard',
+		'webdisplays:craftcomp_badextcard'
 	]
 	hidden_items.forEach(item => {
 		event.hide(item) // noted: this also removes them from creative menus
