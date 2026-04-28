@@ -149,7 +149,7 @@
     "generateGorgonTempleChance": 1.0,
     "generateGraveYardChance": 1.0,
     "generateHydraCaveChance": 1.0,
-    "generateMausoleumChance": 1.0,
+    "generateMausoleumChance": 0.0,
     "generatePixieVillageChance": 1.0,
     "generateSirenIslandChance": 1.0
   },
