@@ -58,6 +58,10 @@ ServerEvents.tags('block', event => {
     event.remove('create:chest_mounted_storage', 'lootr:lootr_chest')
     event.add('create:simple_mounted_storage', '#chipped:barrel')
     event.add('create:single_block_inventories', '#chipped:barrel')
+    event.add('chipped:glass', '#forge:glass')
+    event.remove('chipped:glass', '#forge:stained_glass')
+    event.remove('chipped:glass', '@botania')
+    event.remove('chipped:glass', '#forge:glass/tinted')
 })
 
 ServerEvents.tags('item', event => {
