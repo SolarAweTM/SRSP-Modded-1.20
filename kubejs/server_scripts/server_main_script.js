@@ -679,3 +679,74 @@ ServerEvents.customCommand('head', event => {
     }
 })
 */
+
+ServerEvents.customCommand('coinflip', event => {
+    event.server.runCommandSilent('/tellraw @a "' + event.player.username + ' flipped a coin: ' + (Math.round(Math.random()*100) % 2 == 0 ? '§9Heads§r' : '§cTails§r') + '"')
+    event.server.runCommandSilent('/execute at ' + event.player.username + ' run playsound minecraft:item.trident.return master @p ~ ~ ~')
+})
+
+ServerEvents.customCommand('d20', event => {
+    event.server.runCommandSilent('/tellraw @a "' + event.player.username + ' rolled a D20: §6' + ((Math.round(Math.random()*100) % 20) + 1) + '"')
+    event.server.runCommandSilent('/execute at ' + event.player.username + ' run playsound crittersandcompanions:entity.leaf_insect.death master @p ~ ~ ~')
+})
+
+ServerEvents.customCommand('8ball', event => {
+    const RESPONSES = [
+        "kill yourself",
+        "ask again later",
+        "ask reef",
+        "its in the quest book",
+        "Self -> Explosion",
+        "naw.",
+        "[Insightful Response Here]",
+        "ping lucy",
+        "run /kjs custom_command coinflip",
+        "chipstone will crash in 3",
+        "are you sure",
+        "depends on the current rotation",
+        "[object Object]",
+        "request it to Crafting",
+        "allocate more memory",
+        "never piss again",
+        "real and true",
+        "round to the nearest 15 minutes",
+        "yes, definitely",
+        "for sure bro",
+        "ok boomer",
+        "fuck you",
+        "im hungry",
+        "absolutely!",
+        "You reached 90% memory usage, showing leaking objects so far...",
+        "happy for you bro or sorry that happened",
+        "oh HELL no",
+        "send me $20",
+        "The §9Magic 8 Ball§d is neutral about these things.",
+        "where do you stand on it",
+        "five hundred cigarettes",
+        "Magic 8 Ball left the game",
+        "you should TOTALLY try it and see what happens",
+        "weak ass question",
+        "Yeah!!!!!!!!"
+    ]
+    let number = (Math.round(Math.random()*100) % 35)
+    if(number == 32) {
+    	event.server.runCommandSilent('/tellraw @a {"text":"Magic 8 Ball ", "color":"blue", "extra":[{"text":"left the game", "color":"yellow"}]}');
+    }
+    else {
+        event.server.runCommandSilent('/tellraw @a "' + event.player.username + ' asked the §9Magic 8 Ball§r: §d' + RESPONSES[number] + '"');
+    }
+    if(number == 0 || number == 21){
+        event.server.runCommandSilent('/execute at @a run playsound minecraft:entity.wither.spawn master @p ~ ~ ~')
+    }
+    else {
+        event.server.runCommandSilent('/execute at ' + event.player.username + ' run playsound minecraft:entity.experience_orb.pickup master @p ~ ~ ~')
+    }
+})
+
+PlayerEvents.chat(event => {
+    if(event.message.startsWith('!voices '))
+        {
+            event.server.runCommandSilent('/title Fehdison title "' + event.message.substring(8) + '"')
+            event.cancel()
+        }
+})
