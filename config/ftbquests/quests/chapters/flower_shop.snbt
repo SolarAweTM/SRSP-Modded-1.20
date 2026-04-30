@@ -8,24 +8,105 @@
 	group: "648DF65B44220ED8"
 	icon: "biomeswevegone:orange_daisy"
 	id: "67CCB63993F51C2A"
-	images: [{
-		height: 2.2d
-		image: "srsp:textures/ftbquests/arrow.png"
-		rotation: 0.0d
-		width: 8.7d
-		x: -0.5d
-		y: 0.0d
-	}]
+	images: [
+		{
+			height: 2.2d
+			image: "srsp:textures/ftbquests/arrow.png"
+			rotation: 0.0d
+			width: 8.7d
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			height: 0.36d
+			image: "srsp:textures/ftbquests/petallurgy_vanilla.png"
+			rotation: 0.0d
+			width: 1.56d
+			x: 5.785714285714278d
+			y: -4.415000000000024d
+		}
+		{
+			height: 0.36d
+			image: "srsp:textures/ftbquests/petallurgy_tall.png"
+			rotation: 0.0d
+			width: 4.06d
+			x: 11.642857142857139d
+			y: -4.4999999999999964d
+		}
+		{
+			height: 0.36d
+			image: "srsp:textures/ftbquests/petallurgy_allothers.png"
+			rotation: 0.0d
+			width: 2.36d
+			x: 9.0d
+			y: -2.0d
+		}
+		{
+			height: 0.36d
+			image: "srsp:textures/ftbquests/petallurgy_amaranth.png"
+			rotation: 0.0d
+			width: 2.26d
+			x: 5.535714285714278d
+			y: 1.7500000000000142d
+		}
+		{
+			height: 0.36d
+			image: "srsp:textures/ftbquests/petallurgy_roses.png"
+			rotation: 0.0d
+			width: 1.46d
+			x: 5.535714285714278d
+			y: 3.785714285714299d
+		}
+		{
+			height: 0.42d
+			image: "srsp:textures/ftbquests/petallurgy_farmdelight.png"
+			rotation: 0.0d
+			width: 3.92d
+			x: 8.571428571428562d
+			y: 6.678571428571445d
+		}
+		{
+			height: 0.42d
+			image: "srsp:textures/ftbquests/petallurgy_tulips.png"
+			rotation: 0.0d
+			width: 1.42d
+			x: 11.035714285714278d
+			y: 1.7500000000000213d
+		}
+		{
+			height: 0.36d
+			image: "srsp:textures/ftbquests/petallurgy_cacti.png"
+			rotation: 0.0d
+			width: 1.16d
+			x: 13.535714285714278d
+			y: 1.7500000000000213d
+		}
+		{
+			height: 0.36d
+			image: "srsp:textures/ftbquests/petallurgy_grasswater.png"
+			rotation: 0.0d
+			width: 3.16d
+			x: 18.0d
+			y: -3.0d
+		}
+	]
 	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
 			can_repeat: false
+			description: [
+				"Welcome to &aPetallurgy&r, where you can &6give us flowers&r to get &6other flowers&r."
+				""
+				"Specifically, we take most flowers that we sell, with some arbitrary exceptions."
+				""
+				"[ \"If you're familiar with \", { \"text\": \"The Sapling Exchange\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"0D4B8DB3A3CCE3A5\" } }, \", you'll know how this works.\" ]"
+			]
 			icon: "botania:cosmetic_questgiver_mark"
 			id: "09C2D39A209F63D6"
 			tasks: [{
 				id: "4ECD374C4C3CFCDA"
-				title: "[SHOPNAME]"
+				title: "Petallurgy"
 				type: "checkmark"
 			}]
 			title: "Petallurgy"
@@ -34,7 +115,13 @@
 		}
 		{
 			dependencies: ["09C2D39A209F63D6"]
-			description: ["TBD"]
+			description: [
+				"&6This quest is repeatable infinitely.&r"
+				""
+				"Turn in your flowers in order to trade here."
+				""
+				"Click the task above to turn in a flower."
+			]
 			icon: "immersiveengineering:shader_bag_ie_masterwork"
 			id: "2781273162C75B38"
 			rewards: [{
@@ -43,8 +130,2810 @@
 				type: "item"
 			}]
 			size: 2.0d
+			tasks: [{
+				id: "67B6FA99EC66B736"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:not"
+								tag: {
+									items: [{
+										Count: 1b
+										id: "itemfilters:tag"
+										tag: {
+											value: "botania:special_flowers"
+										}
+									}]
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:not"
+								tag: {
+									items: [{
+										Count: 1b
+										id: "itemfilters:tag"
+										tag: {
+											value: "botania:special_floating_flowers"
+										}
+									}]
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:not"
+								tag: {
+									items: [{
+										Count: 1b
+										id: "itemfilters:tag"
+										tag: {
+											value: "botania:mystical_flowers"
+										}
+									}]
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:not"
+								tag: {
+									items: [{
+										Count: 1b
+										id: "itemfilters:tag"
+										tag: {
+											value: "botania:double_mystical_flowers"
+										}
+									}]
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:or"
+								tag: {
+									items: [
+										{
+											Count: 1b
+											id: "itemfilters:tag"
+											tag: {
+												value: "minecraft:flowers"
+											}
+										}
+										{
+											Count: 1b
+											id: "itemfilters:tag"
+											tag: {
+												value: "minecraft:tall_flowers"
+											}
+										}
+									]
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:not"
+								tag: {
+									items: [{
+										Count: 1b
+										id: "itemfilters:tag"
+										tag: {
+											value: "minecraft:leaves"
+										}
+									}]
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:not"
+								tag: {
+									items: [{
+										Count: 1b
+										id: "itemfilters:tag"
+										tag: {
+											value: "minecraft:saplings"
+										}
+									}]
+								}
+							}
+						]
+					}
+				}
+				title: "Any Standard Flower"
+				type: "item"
+			}]
 			title: "Sell Flowers"
 			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["09C2D39A209F63D6"]
+			hide_dependency_lines: true
+			icon: "immersiveengineering:shader_bag_uncommon"
+			id: "7F3BEFA586F47BB2"
+			rewards: [{
+				count: 10
+				id: "0F8216CA1F6A0F4E"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			tasks: [{
+				count: 10L
+				id: "34AE99FEC18F0627"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:not"
+								tag: {
+									items: [{
+										Count: 1b
+										id: "itemfilters:tag"
+										tag: {
+											value: "botania:special_flowers"
+										}
+									}]
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:not"
+								tag: {
+									items: [{
+										Count: 1b
+										id: "itemfilters:tag"
+										tag: {
+											value: "botania:special_floating_flowers"
+										}
+									}]
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:not"
+								tag: {
+									items: [{
+										Count: 1b
+										id: "itemfilters:tag"
+										tag: {
+											value: "botania:mystical_flowers"
+										}
+									}]
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:not"
+								tag: {
+									items: [{
+										Count: 1b
+										id: "itemfilters:tag"
+										tag: {
+											value: "botania:double_mystical_flowers"
+										}
+									}]
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:or"
+								tag: {
+									items: [
+										{
+											Count: 1b
+											id: "itemfilters:tag"
+											tag: {
+												value: "minecraft:flowers"
+											}
+										}
+										{
+											Count: 1b
+											id: "itemfilters:tag"
+											tag: {
+												value: "minecraft:tall_flowers"
+											}
+										}
+									]
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:not"
+								tag: {
+									items: [{
+										Count: 1b
+										id: "itemfilters:tag"
+										tag: {
+											value: "minecraft:leaves"
+										}
+									}]
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:not"
+								tag: {
+									items: [{
+										Count: 1b
+										id: "itemfilters:tag"
+										tag: {
+											value: "minecraft:saplings"
+										}
+									}]
+								}
+							}
+						]
+					}
+				}
+				title: "Any Standard Flower"
+				type: "item"
+			}]
+			title: "Sell Flowers (x10)"
+			x: -5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["09C2D39A209F63D6"]
+			hide_dependency_lines: true
+			icon: "immersiveengineering:shader_bag_epic"
+			id: "0BAC416963FF6FF7"
+			rewards: [{
+				count: 64
+				id: "66A630A48812034C"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "262B3C30024D9FA4"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:not"
+								tag: {
+									items: [{
+										Count: 1b
+										id: "itemfilters:tag"
+										tag: {
+											value: "botania:special_flowers"
+										}
+									}]
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:not"
+								tag: {
+									items: [{
+										Count: 1b
+										id: "itemfilters:tag"
+										tag: {
+											value: "botania:special_floating_flowers"
+										}
+									}]
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:not"
+								tag: {
+									items: [{
+										Count: 1b
+										id: "itemfilters:tag"
+										tag: {
+											value: "botania:mystical_flowers"
+										}
+									}]
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:not"
+								tag: {
+									items: [{
+										Count: 1b
+										id: "itemfilters:tag"
+										tag: {
+											value: "botania:double_mystical_flowers"
+										}
+									}]
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:or"
+								tag: {
+									items: [
+										{
+											Count: 1b
+											id: "itemfilters:tag"
+											tag: {
+												value: "minecraft:flowers"
+											}
+										}
+										{
+											Count: 1b
+											id: "itemfilters:tag"
+											tag: {
+												value: "minecraft:tall_flowers"
+											}
+										}
+									]
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:not"
+								tag: {
+									items: [{
+										Count: 1b
+										id: "itemfilters:tag"
+										tag: {
+											value: "minecraft:leaves"
+										}
+									}]
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:not"
+								tag: {
+									items: [{
+										Count: 1b
+										id: "itemfilters:tag"
+										tag: {
+											value: "minecraft:saplings"
+										}
+									}]
+								}
+							}
+						]
+					}
+				}
+				title: "Any Standard Flower"
+				type: "item"
+			}]
+			title: "Sell Flowers (x64)"
+			x: -5.0d
+			y: 1.0d
+		}
+		{
+			icon: "minecraft:dandelion"
+			id: "694E3B357100C7DC"
+			rewards: [{
+				id: "7507D3F80DBB92E3"
+				item: "minecraft:dandelion"
+				type: "item"
+			}]
+			tasks: [{
+				id: "777C87DE41A7BE9F"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Dandelion"
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			icon: "minecraft:poppy"
+			id: "4F624B93A5154D3E"
+			rewards: [{
+				id: "0F8705E274FC1CE5"
+				item: "minecraft:poppy"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5E466A6D5E6D1E8E"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Poppy"
+			x: 4.5d
+			y: -3.5d
+		}
+		{
+			icon: "minecraft:blue_orchid"
+			id: "5B90A7AFD777E5AD"
+			rewards: [{
+				id: "261EB092B093BFEB"
+				item: "minecraft:blue_orchid"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5F8F692B057C4B1C"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Blue Orchid"
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			icon: "minecraft:allium"
+			id: "5A33381A7B2F8613"
+			rewards: [{
+				id: "15ECEDE1C0ABF552"
+				item: "minecraft:allium"
+				type: "item"
+			}]
+			tasks: [{
+				id: "54D5E432F9FE1BD0"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Allium"
+			x: 12.5d
+			y: -3.5d
+		}
+		{
+			icon: "minecraft:azure_bluet"
+			id: "43E9B918A5F5C296"
+			rewards: [{
+				id: "09D759B6D76702F6"
+				item: "minecraft:azure_bluet"
+				type: "item"
+			}]
+			tasks: [{
+				id: "25288E781545E27D"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Azure Bluet"
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			icon: "minecraft:red_tulip"
+			id: "2E35986641CAD3F1"
+			rewards: [{
+				id: "7A66AC9A32F40E1A"
+				item: "minecraft:red_tulip"
+				type: "item"
+			}]
+			tasks: [{
+				id: "02AD8120E42F5019"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Red Tulip"
+			x: 10.5d
+			y: 3.0d
+		}
+		{
+			icon: "minecraft:orange_tulip"
+			id: "6C12F5E30A7E7EF7"
+			rewards: [{
+				id: "2BF6BD930B57BE2B"
+				item: "minecraft:orange_tulip"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3E8CD56601909951"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Orange Tulip"
+			x: 11.0d
+			y: 3.5d
+		}
+		{
+			icon: "minecraft:white_tulip"
+			id: "45D5C17D80088019"
+			rewards: [{
+				id: "4F5FD3B587A54E8D"
+				item: "minecraft:white_tulip"
+				type: "item"
+			}]
+			tasks: [{
+				id: "198A37AD914B322E"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "White Tulip"
+			x: 11.0d
+			y: 2.5d
+		}
+		{
+			icon: "minecraft:pink_tulip"
+			id: "0519F902020B671B"
+			rewards: [{
+				id: "6003897FAABD5EA8"
+				item: "minecraft:pink_tulip"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7D7617988DE9BFE0"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Pink Tulip"
+			x: 11.5d
+			y: 4.0d
+		}
+		{
+			icon: "minecraft:oxeye_daisy"
+			id: "75E0513EDA059633"
+			rewards: [{
+				id: "5C8E98586287E98D"
+				item: "minecraft:oxeye_daisy"
+				type: "item"
+			}]
+			tasks: [{
+				id: "59C619261CB88AF7"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Oxeye Daisy"
+			x: 6.5d
+			y: -3.5d
+		}
+		{
+			icon: "minecraft:cornflower"
+			id: "2E2604B64ABD4FBE"
+			rewards: [{
+				id: "143C6E3D44B0F153"
+				item: "minecraft:cornflower"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1ADB2BD25BE70A2B"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Cornflower"
+			x: 7.0d
+			y: -3.0d
+		}
+		{
+			icon: "minecraft:lily_of_the_valley"
+			id: "3902EC84A588E1A1"
+			rewards: [{
+				id: "6DA2C40CC9167B5F"
+				item: "minecraft:lily_of_the_valley"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2C8A9132D413FBC7"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Lily of the Valley"
+			x: 5.5d
+			y: -3.5d
+		}
+		{
+			icon: "minecraft:torchflower"
+			id: "3AECC6DCC29CF97E"
+			rewards: [{
+				id: "6B8EECF221AF7F02"
+				item: "minecraft:torchflower"
+				type: "item"
+			}]
+			tasks: [{
+				id: "59996A2B6116FA89"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Torchflower"
+			x: 4.5d
+			y: -2.5d
+		}
+		{
+			icon: "minecraft:wither_rose"
+			id: "0DF396E64B8C2889"
+			rewards: [{
+				id: "3914893F16DBE2C7"
+				item: "minecraft:wither_rose"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0691ED7F34E85FED"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Wither Rose"
+			x: 5.5d
+			y: 4.5d
+		}
+		{
+			icon: "biomesoplenty:rose"
+			id: "0F4D8F10E95F2202"
+			rewards: [{
+				id: "61C3E8095592FF3E"
+				item: "biomesoplenty:rose"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0935EDA390B76A59"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Rose (BOP)"
+			x: 6.0d
+			y: 5.0d
+		}
+		{
+			icon: "biomesoplenty:violet"
+			id: "4C7B32765CA8ADDE"
+			rewards: [{
+				id: "6DD75509C7DD23D3"
+				item: "biomesoplenty:violet"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1C66285186A5102F"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Violet"
+			x: 7.5d
+			y: -0.5d
+		}
+		{
+			icon: "biomesoplenty:lavender"
+			id: "035E8E3A44FEED42"
+			rewards: [{
+				id: "7825B39B40985E44"
+				item: "biomesoplenty:lavender"
+				type: "item"
+			}]
+			tasks: [{
+				id: "210D875B16AFD771"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Lavender"
+			x: 10.5d
+			y: -3.5d
+		}
+		{
+			icon: "biomesoplenty:white_lavender"
+			id: "2F03B2BCB3202A29"
+			rewards: [{
+				id: "65A36DFCA40B42D4"
+				item: "biomesoplenty:white_lavender"
+				type: "item"
+			}]
+			tasks: [{
+				id: "21E3943B8A34EAF4"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "White Lavender"
+			x: 9.5d
+			y: -3.5d
+		}
+		{
+			icon: "biomesoplenty:orange_cosmos"
+			id: "4D8FE989E16E9F2E"
+			rewards: [{
+				id: "19BF05E66A7C9DC3"
+				item: "biomesoplenty:orange_cosmos"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6A7791A37B64C887"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Orange Cosmos"
+			x: 6.5d
+			y: -0.5d
+		}
+		{
+			icon: "biomesoplenty:pink_daffodil"
+			id: "4FF1F997B6F9F579"
+			rewards: [{
+				id: "3E75E6C892EAB3DA"
+				item: "biomesoplenty:pink_daffodil"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0D3316BB020DCB65"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Pink Daffodil (BOP)"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			icon: "biomesoplenty:pink_hibiscus"
+			id: "4E3C413FF5DE4BB9"
+			rewards: [{
+				id: "5973FD11BE1A99A0"
+				item: "biomesoplenty:pink_hibiscus"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1D895C062F062946"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Pink Hibiscus"
+			x: 12.0d
+			y: -1.0d
+		}
+		{
+			icon: "biomesoplenty:glowflower"
+			id: "7EF7E60A30572645"
+			rewards: [{
+				id: "0805800E476DD926"
+				item: "biomesoplenty:glowflower"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3AACEDF5889086D6"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Glowflower"
+			x: 13.0d
+			y: -1.0d
+		}
+		{
+			icon: "biomesoplenty:wilted_lily"
+			id: "11381B36C7AC4D72"
+			rewards: [{
+				id: "2D446CD00C05F8F1"
+				item: "biomesoplenty:wilted_lily"
+				type: "item"
+			}]
+			tasks: [{
+				id: "55F9CD091BCE2ED2"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Wilted Lily"
+			x: 14.0d
+			y: -1.0d
+		}
+		{
+			icon: "biomesoplenty:burning_blossom"
+			id: "7130B8677FD8C23D"
+			rewards: [{
+				id: "3C787F7C6BFF14B0"
+				item: "biomesoplenty:burning_blossom"
+				type: "item"
+			}]
+			tasks: [{
+				id: "517E23AE0805F0B6"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Burning Blossom"
+			x: 5.5d
+			y: -0.5d
+		}
+		{
+			icon: "biomesoplenty:endbloom"
+			id: "00B3AFF59104C8C1"
+			rewards: [{
+				id: "50068461A9276FF5"
+				item: "biomesoplenty:endbloom"
+				type: "item"
+			}]
+			tasks: [{
+				id: "047C9CA8FBD0C503"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Endbloom"
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			icon: "biomesoplenty:waterlily"
+			id: "7600E2B25EC44474"
+			rewards: [{
+				id: "4949D3B9746993CB"
+				item: "biomesoplenty:waterlily"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1DEFA7873940ADC6"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Waterlily"
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			icon: "biomeswevegone:pink_allium"
+			id: "68448B4C34D1F056"
+			rewards: [{
+				id: "1827914CB94725E4"
+				item: "biomeswevegone:pink_allium"
+				type: "item"
+			}]
+			tasks: [{
+				id: "452D0C7AD5DC6AEB"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Pink Allium"
+			x: 11.5d
+			y: -3.5d
+		}
+		{
+			icon: "biomeswevegone:white_allium"
+			id: "4F72CFD466A703C0"
+			rewards: [{
+				id: "027FB052D529386E"
+				item: "biomeswevegone:white_allium"
+				type: "item"
+			}]
+			tasks: [{
+				id: "49D8B556BE4F6FE2"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "White Allium"
+			x: 13.5d
+			y: -3.5d
+		}
+		{
+			icon: "biomeswevegone:rose"
+			id: "3A795A071B469CC6"
+			rewards: [{
+				id: "232DBBAF83DBEB22"
+				item: "biomeswevegone:rose"
+				type: "item"
+			}]
+			tasks: [{
+				id: "210079F21152601A"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Rose (BWG)"
+			x: 5.0d
+			y: 5.0d
+		}
+		{
+			icon: "biomeswevegone:osiria_rose"
+			id: "4B08589FB4474F1C"
+			rewards: [{
+				id: "2F1C32B72A496064"
+				item: "biomeswevegone:osiria_rose"
+				type: "item"
+			}]
+			tasks: [{
+				id: "14D7D27DFB06960E"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Osiria Rose"
+			x: 5.5d
+			y: 5.5d
+		}
+		{
+			icon: "biomeswevegone:black_rose"
+			id: "644884E6C7508A34"
+			rewards: [{
+				id: "6BBC572FF625B5BE"
+				item: "biomeswevegone:black_rose"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1D5559B0CF6C9DF0"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Black Rose"
+			x: 4.5d
+			y: 5.5d
+		}
+		{
+			icon: "biomeswevegone:cyan_rose"
+			id: "5E089D372F6235EB"
+			rewards: [{
+				id: "039B47C1BCB1BAA9"
+				item: "biomeswevegone:cyan_rose"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5FB2ED70183DFF4B"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Cyan Rose"
+			x: 6.5d
+			y: 5.5d
+		}
+		{
+			icon: "biomeswevegone:cyan_tulip"
+			id: "60FDED584490C02A"
+			rewards: [{
+				id: "55C720246A84352B"
+				item: "biomeswevegone:cyan_tulip"
+				type: "item"
+			}]
+			tasks: [{
+				id: "52A91360DF7A721F"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Cyan Tulip"
+			x: 11.5d
+			y: 5.0d
+		}
+		{
+			icon: "biomeswevegone:green_tulip"
+			id: "0FF1D947BF4A576C"
+			rewards: [{
+				id: "02DAA1B4B6C10568"
+				item: "biomeswevegone:green_tulip"
+				type: "item"
+			}]
+			tasks: [{
+				id: "74E1EC23B62B75BA"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Green Tulip"
+			x: 10.5d
+			y: 5.0d
+		}
+		{
+			icon: "biomeswevegone:magenta_tulip"
+			id: "00228143123EB253"
+			rewards: [{
+				id: "584B4EFF66CE26C3"
+				item: "biomeswevegone:magenta_tulip"
+				type: "item"
+			}]
+			tasks: [{
+				id: "48CB65FBC6C2CA35"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Magenta Tulip"
+			x: 10.5d
+			y: 4.0d
+		}
+		{
+			icon: "biomeswevegone:purple_tulip"
+			id: "75BB66D1AE025364"
+			rewards: [{
+				id: "1B1DB3054B1FEC3E"
+				item: "biomeswevegone:purple_tulip"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1F1F1A5D0B31F041"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Purple Tulip"
+			x: 11.0d
+			y: 4.5d
+		}
+		{
+			icon: "biomeswevegone:yellow_tulip"
+			id: "770B0FBD801D48F9"
+			rewards: [{
+				id: "770143F7B7231799"
+				item: "biomeswevegone:yellow_tulip"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1091EA13A69E7983"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Yellow Tulip"
+			x: 11.5d
+			y: 3.0d
+		}
+		{
+			icon: "biomeswevegone:amaranth"
+			id: "144D77A5BCE60DA6"
+			rewards: [{
+				id: "607D3DF33FC78D6A"
+				item: "biomeswevegone:amaranth"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4A8FF4F20E21D2EC"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Amaranth"
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			icon: "biomeswevegone:cyan_amaranth"
+			id: "566582DAEDDBEBCB"
+			rewards: [{
+				id: "54A72AD184DA7ECC"
+				item: "biomeswevegone:cyan_amaranth"
+				type: "item"
+			}]
+			tasks: [{
+				id: "19EF62F33941A700"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Cyan Amaranth"
+			x: 5.5d
+			y: 3.0d
+		}
+		{
+			icon: "biomeswevegone:magenta_amaranth"
+			id: "5117DA66E2E6B27F"
+			rewards: [{
+				id: "711BF6A5F0B127DF"
+				item: "biomeswevegone:magenta_amaranth"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7A87F0008F14A2D4"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Magenta Amaranth"
+			x: 6.0d
+			y: 2.5d
+		}
+		{
+			icon: "biomeswevegone:orange_amaranth"
+			id: "66DDC58FFDA0C789"
+			rewards: [{
+				id: "7ACCD84BC510A303"
+				item: "biomeswevegone:orange_amaranth"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4352B5EE916960A5"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Orange Amaranth"
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			icon: "biomeswevegone:purple_amaranth"
+			id: "014670A7DB8AEAEE"
+			rewards: [{
+				id: "0EE6B5DBDDD78F5A"
+				item: "biomeswevegone:purple_amaranth"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5C24B6C5C642D90B"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Purple Amaranth"
+			x: 6.5d
+			y: 3.0d
+		}
+		{
+			icon: "biomeswevegone:blue_sage"
+			id: "4B06739934ABE193"
+			rewards: [{
+				id: "5FCE3787BD459A07"
+				item: "biomeswevegone:blue_sage"
+				type: "item"
+			}]
+			tasks: [{
+				id: "539E0010D1906FF4"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Blue Sage"
+			x: 11.5d
+			y: -0.5d
+		}
+		{
+			icon: "biomeswevegone:purple_sage"
+			id: "398A77D3E523EB36"
+			rewards: [{
+				id: "280FE6DC7594B403"
+				item: "biomeswevegone:purple_sage"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2F0151E209D617E9"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Purple Sage"
+			x: 12.5d
+			y: -0.5d
+		}
+		{
+			icon: "biomeswevegone:white_sage"
+			id: "51626B2CBE38909C"
+			rewards: [{
+				id: "23BC41FD43539581"
+				item: "biomeswevegone:white_sage"
+				type: "item"
+			}]
+			tasks: [{
+				id: "63EB753DACFB8C48"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "White Sage"
+			x: 13.5d
+			y: -0.5d
+		}
+		{
+			icon: "biomeswevegone:daffodil"
+			id: "0D71287FD1E4FF0A"
+			rewards: [{
+				id: "77949A5497B948CE"
+				item: "biomeswevegone:daffodil"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5AB685C9BE2434C3"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Daffodil"
+			x: 4.5d
+			y: -0.5d
+		}
+		{
+			icon: "biomeswevegone:pink_daffodil"
+			id: "54B349C64D73C89E"
+			rewards: [{
+				id: "3E3192C409011732"
+				item: "biomeswevegone:pink_daffodil"
+				type: "item"
+			}]
+			tasks: [{
+				id: "028A086FE88F3AF9"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Pink Daffodil (BWG)"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			icon: "biomeswevegone:yellow_daffodil"
+			id: "13FB38B17A8348FC"
+			rewards: [{
+				id: "201CC86610D5A201"
+				item: "biomeswevegone:yellow_daffodil"
+				type: "item"
+			}]
+			tasks: [{
+				id: "778974AE084134B5"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Yellow Daffodil"
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			icon: "biomeswevegone:pink_anemone"
+			id: "6004791D64ED8716"
+			rewards: [{
+				id: "384387E52F68DF2D"
+				item: "biomeswevegone:pink_anemone"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1E778E52C44442E7"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Pink Anemone"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			icon: "biomeswevegone:white_anemone"
+			id: "14519DEB08D92B4B"
+			rewards: [{
+				id: "22BED57C57506169"
+				item: "biomeswevegone:white_anemone"
+				type: "item"
+			}]
+			tasks: [{
+				id: "173157D4F10AB6A6"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "White Anemone"
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			icon: "biomeswevegone:alpine_bellflower"
+			id: "5CF684B48D9AC76C"
+			rewards: [{
+				id: "663A01FC3E4BCEC1"
+				item: "biomeswevegone:alpine_bellflower"
+				type: "item"
+			}]
+			tasks: [{
+				id: "47DFD2C86F3B06EA"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Alpine Bellflower"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			icon: "biomeswevegone:lazarus_bellflower"
+			id: "3E59ADB25BDDBF77"
+			rewards: [{
+				id: "7EF29F94538F0536"
+				item: "biomeswevegone:lazarus_bellflower"
+				type: "item"
+			}]
+			tasks: [{
+				id: "09ABF04E3C8729B9"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Lazarus Bellflower"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			icon: "biomeswevegone:peach_leather_flower"
+			id: "107E1042D04240E2"
+			rewards: [{
+				id: "616A03CD74E63FB8"
+				item: "biomeswevegone:peach_leather_flower"
+				type: "item"
+			}]
+			tasks: [{
+				id: "18E48AFF221DDBD3"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Peach Leather Flower"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			icon: "biomeswevegone:violet_leather_flower"
+			id: "6806C32EB0252852"
+			rewards: [{
+				id: "6414B0B027C6C669"
+				item: "biomeswevegone:violet_leather_flower"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2DE7D4D5E46E48AA"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Violet Leather Flower"
+			x: 11.0d
+			y: 0.0d
+		}
+		{
+			icon: "biomeswevegone:angelica"
+			id: "5CC46CB2992C9CEC"
+			rewards: [{
+				id: "1BA4D5D1BC8CDB29"
+				item: "biomeswevegone:angelica"
+				type: "item"
+			}]
+			tasks: [{
+				id: "00EC5A8CFF56324E"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Angelica"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			icon: "biomeswevegone:begonia"
+			id: "75DB66B271946014"
+			rewards: [{
+				id: "5C40FAB730614B92"
+				item: "biomeswevegone:begonia"
+				type: "item"
+			}]
+			tasks: [{
+				id: "538A619E2C444B03"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Begonia"
+			x: 13.0d
+			y: 0.0d
+		}
+		{
+			icon: "biomeswevegone:bistort"
+			id: "086FB3EA4467107D"
+			rewards: [{
+				id: "4BAB5BC5AC46C367"
+				item: "biomeswevegone:bistort"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3B2E1FDEBA6C0F84"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Bistort"
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			icon: "biomeswevegone:california_poppy"
+			id: "4B5D574D9A29BE7C"
+			rewards: [{
+				id: "7AD7025E4B3217E1"
+				item: "biomeswevegone:california_poppy"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0C0B5F4BAA0EF985"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "California Poppy"
+			x: 14.5d
+			y: -0.5d
+		}
+		{
+			icon: "biomeswevegone:crocus"
+			id: "3BEF497D8BB17481"
+			rewards: [{
+				id: "37638C45E19578D7"
+				item: "biomeswevegone:crocus"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4943B3075AD906C6"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Crocus"
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			icon: "biomeswevegone:fairy_slipper"
+			id: "5643EC7524513E09"
+			rewards: [{
+				id: "43E223538CB309F1"
+				item: "biomeswevegone:fairy_slipper"
+				type: "item"
+			}]
+			tasks: [{
+				id: "417B4E2905B2E7F5"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Fairy Slipper"
+			x: 5.5d
+			y: 0.5d
+		}
+		{
+			icon: "biomeswevegone:guzmania"
+			id: "7CAACCC277B58F86"
+			rewards: [{
+				id: "16757E2FFE99645F"
+				item: "biomeswevegone:guzmania"
+				type: "item"
+			}]
+			tasks: [{
+				id: "740170F093D85F98"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Guzmania"
+			x: 6.5d
+			y: 0.5d
+		}
+		{
+			icon: "biomeswevegone:incan_lily"
+			id: "54CE2279B3BC5339"
+			rewards: [{
+				id: "7E380A15EF877550"
+				item: "biomeswevegone:incan_lily"
+				type: "item"
+			}]
+			tasks: [{
+				id: "340B0B0773EB22DA"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Incan Lily"
+			x: 7.5d
+			y: 0.5d
+		}
+		{
+			icon: "biomeswevegone:iris"
+			id: "058168A4A5E744C0"
+			rewards: [{
+				id: "3664AC19D332477E"
+				item: "biomeswevegone:iris"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1D57B32AE52DD85A"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Iris"
+			x: 8.5d
+			y: 0.5d
+		}
+		{
+			icon: "biomeswevegone:kovan_flower"
+			id: "2BF6280F5A242DBF"
+			rewards: [{
+				id: "4F79935A690EFD31"
+				item: "biomeswevegone:kovan_flower"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4307524A2DA058FA"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Kovan Flower"
+			x: 9.5d
+			y: 0.5d
+		}
+		{
+			icon: "biomeswevegone:lollipop_flower"
+			id: "1F085D2E0BB6C103"
+			rewards: [{
+				id: "38A46CD73C2BAB74"
+				item: "biomeswevegone:lollipop_flower"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4EEC9F2C2015CC3B"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Lollipop Flower"
+			x: 10.5d
+			y: 0.5d
+		}
+		{
+			icon: "biomeswevegone:orange_daisy"
+			id: "77701ECEA3474B3A"
+			rewards: [{
+				id: "744CB31B216FDCC5"
+				item: "biomeswevegone:orange_daisy"
+				type: "item"
+			}]
+			tasks: [{
+				id: "263BA963F58E4DAB"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Orange Daisy"
+			x: 11.5d
+			y: 0.5d
+		}
+		{
+			icon: "biomeswevegone:protea_flower"
+			id: "1B72641BC3F0BC69"
+			rewards: [{
+				id: "616EA65C3516EC3F"
+				item: "biomeswevegone:protea_flower"
+				type: "item"
+			}]
+			tasks: [{
+				id: "40ED856AFED3D45F"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Protea Flower"
+			x: 12.5d
+			y: 0.5d
+		}
+		{
+			icon: "biomeswevegone:richea"
+			id: "6B825A755FC95FAD"
+			rewards: [{
+				id: "3A1F669EA39BB277"
+				item: "biomeswevegone:richea"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6DC2709C0C253725"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Richea"
+			x: 13.5d
+			y: 0.5d
+		}
+		{
+			icon: "biomeswevegone:silver_vase_flower"
+			id: "02D26619BEBCC942"
+			rewards: [{
+				id: "2C890EB890B1870A"
+				item: "biomeswevegone:silver_vase_flower"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2E9E715AD0376370"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Silver Vase Flower"
+			x: 14.5d
+			y: 0.5d
+		}
+		{
+			icon: "biomeswevegone:snowdrops"
+			id: "52E593A113A92493"
+			rewards: [{
+				id: "3766FFDB4B2DEFDB"
+				item: "biomeswevegone:snowdrops"
+				type: "item"
+			}]
+			tasks: [{
+				id: "231E2CDB3D103F72"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Snowdrops"
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			icon: "biomeswevegone:winter_cyclamen"
+			id: "091AE8C53346B9F2"
+			rewards: [{
+				id: "639EE957D7394E2D"
+				item: "biomeswevegone:winter_cyclamen"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7CF043125871C00C"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Winter Cyclamen"
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			icon: "biomeswevegone:winter_rose"
+			id: "1A388D7ADC27A035"
+			rewards: [{
+				id: "76278760F4EAC7CC"
+				item: "biomeswevegone:winter_rose"
+				type: "item"
+			}]
+			tasks: [{
+				id: "194167CE8B52FB3B"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Winter Rose"
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			icon: "biomeswevegone:winter_scilla"
+			id: "792148F057E4A715"
+			rewards: [{
+				id: "412CE47A88F6D6D2"
+				item: "biomeswevegone:winter_scilla"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0D6AE07A4EBC4BC6"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Winter Scilla"
+			x: 7.0d
+			y: 1.0d
+		}
+		{
+			icon: "farmersdelight:wild_cabbages"
+			id: "748FADD727447702"
+			rewards: [{
+				id: "7A44AD8B82C2AA9C"
+				item: "farmersdelight:wild_cabbages"
+				type: "item"
+			}]
+			tasks: [{
+				id: "73A64E115D93B4D4"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Wild Cabbage"
+			x: 8.0d
+			y: 4.5d
+		}
+		{
+			icon: "farmersdelight:wild_onions"
+			id: "6276535259FEAC99"
+			rewards: [{
+				id: "33B899BBC47BB042"
+				item: "farmersdelight:wild_onions"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7DE73DB02AA2C2B0"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Wild Onion"
+			x: 9.0d
+			y: 4.5d
+		}
+		{
+			icon: "farmersdelight:wild_tomatoes"
+			id: "7CA05A1FDD745480"
+			rewards: [{
+				id: "6F181CAE7C0F935B"
+				item: "farmersdelight:wild_tomatoes"
+				type: "item"
+			}]
+			tasks: [{
+				id: "09D47173DE2F953E"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Tomato Shrub"
+			x: 8.5d
+			y: 5.0d
+		}
+		{
+			icon: "farmersdelight:wild_carrots"
+			id: "157256EE9C1599A7"
+			rewards: [{
+				id: "1EB79371438E5001"
+				item: "farmersdelight:wild_carrots"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1D8A7DE741FB3D03"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Wild Carrot"
+			x: 8.0d
+			y: 5.5d
+		}
+		{
+			icon: "farmersdelight:wild_potatoes"
+			id: "70EEB95983F31A1D"
+			rewards: [{
+				id: "75BE946F6438145F"
+				item: "farmersdelight:wild_potatoes"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0CAFD9CC5843E1C3"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Wild Potato"
+			x: 9.0d
+			y: 5.5d
+		}
+		{
+			icon: "farmersdelight:wild_beetroots"
+			id: "4F27E79F8D659E46"
+			rewards: [{
+				id: "0900F76DC83831A8"
+				item: "farmersdelight:wild_beetroots"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1D4C8866CA487EDE"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Sea Beet"
+			x: 8.5d
+			y: 6.0d
+		}
+		{
+			icon: "botania:daybloom_motif"
+			id: "69611016FA011715"
+			rewards: [{
+				id: "71D595629E418AB4"
+				item: "botania:daybloom_motif"
+				type: "item"
+			}]
+			tasks: [{
+				id: "79C2276333297470"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Daybloom Motif"
+			x: 10.0d
+			y: 1.0d
+		}
+		{
+			icon: "botania:nightshade_motif"
+			id: "5C4F50612902F97D"
+			rewards: [{
+				id: "11FDEBAE0E70CF89"
+				item: "botania:nightshade_motif"
+				type: "item"
+			}]
+			tasks: [{
+				id: "48B0C582A16FF1D2"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Nightshade Motif"
+			x: 11.0d
+			y: 1.0d
+		}
+		{
+			icon: "minecraft:sunflower"
+			id: "6CA37ADB77E45001"
+			rewards: [{
+				id: "7D945FF9577AD4C4"
+				item: "minecraft:sunflower"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0AA132A7B15908A5"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Sunflower"
+			x: 7.5d
+			y: -3.5d
+		}
+		{
+			icon: "minecraft:lilac"
+			id: "5BFD2E7681BA395D"
+			rewards: [{
+				id: "57709C08B8AC814F"
+				item: "minecraft:lilac"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4D31C5D3B81687F2"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Lilac"
+			x: 7.5d
+			y: -2.5d
+		}
+		{
+			icon: "minecraft:rose_bush"
+			id: "23F714DF60D8F288"
+			rewards: [{
+				id: "59DCB6AE8358E000"
+				item: "minecraft:rose_bush"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7EFE88732A2C3752"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Rose Bush"
+			x: 5.0d
+			y: 6.0d
+		}
+		{
+			icon: "minecraft:peony"
+			id: "2A1F65611B3DBBE2"
+			rewards: [{
+				id: "4302C4DC7129062A"
+				item: "minecraft:peony"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3669704656EF07FB"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Peony"
+			x: 6.5d
+			y: -2.5d
+		}
+		{
+			icon: "minecraft:pitcher_plant"
+			id: "37F19E2E2814088F"
+			rewards: [{
+				id: "32F3A8F453EDD688"
+				item: "minecraft:pitcher_plant"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3FC80E2AD7CFF047"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Pitcher Plant"
+			x: 5.5d
+			y: -2.5d
+		}
+		{
+			icon: "biomesoplenty:tall_lavender"
+			id: "231A4E139FB14215"
+			rewards: [{
+				id: "243529738CD50A20"
+				item: "biomesoplenty:tall_lavender"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5AC1D72F27B6332B"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Tall Lavender"
+			x: 11.0d
+			y: -3.0d
+		}
+		{
+			icon: "biomesoplenty:tall_white_lavender"
+			id: "19A8A08C9DD76C9A"
+			rewards: [{
+				id: "1E169844C0BC5B8B"
+				item: "biomesoplenty:tall_white_lavender"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3E80F09F71587F08"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Tall White Lavender"
+			x: 10.0d
+			y: -3.0d
+		}
+		{
+			icon: "biomesoplenty:blue_hydrangea"
+			id: "4100E98626644BB9"
+			rewards: [{
+				id: "245D15858879293C"
+				item: "biomesoplenty:blue_hydrangea"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5676B5B5E5752998"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Blue Hydrangea"
+			x: 10.5d
+			y: -0.5d
+		}
+		{
+			icon: "biomesoplenty:goldenrod"
+			id: "527661DF5FCB56C4"
+			rewards: [{
+				id: "263A28473F13A591"
+				item: "biomesoplenty:goldenrod"
+				type: "item"
+			}]
+			tasks: [{
+				id: "50845C76B393E209"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Goldenrod"
+			x: 10.0d
+			y: -1.0d
+		}
+		{
+			icon: "biomesoplenty:icy_iris"
+			id: "44C2FB6B8106E154"
+			rewards: [{
+				id: "5957616746376C4A"
+				item: "biomesoplenty:icy_iris"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5334E02CE59C7CA3"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Icy Iris"
+			x: 12.0d
+			y: 1.0d
+		}
+		{
+			icon: "biomeswevegone:tall_allium"
+			id: "3ED1E93BD015D2E4"
+			rewards: [{
+				id: "22CE12384EB9D351"
+				item: "biomeswevegone:tall_allium"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5D30BAA5A016217C"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Tall Allium"
+			x: 13.0d
+			y: -3.0d
+		}
+		{
+			icon: "biomeswevegone:tall_pink_allium"
+			id: "41C158826E824FCF"
+			rewards: [{
+				id: "0A81A33C4A7BAD18"
+				item: "biomeswevegone:tall_pink_allium"
+				type: "item"
+			}]
+			tasks: [{
+				id: "07477F0D627AF141"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Tall Pink Allium"
+			x: 12.0d
+			y: -3.0d
+		}
+		{
+			icon: "biomeswevegone:tall_white_allium"
+			id: "690C591ACC74C53F"
+			rewards: [{
+				id: "367C53A0871F9A87"
+				item: "biomeswevegone:tall_white_allium"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5415BBA3E5B7F312"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Tall White Allium"
+			x: 14.0d
+			y: -3.0d
+		}
+		{
+			icon: "biomeswevegone:cyan_pitcher_plant"
+			id: "54EBF59E4F92C315"
+			rewards: [{
+				id: "701E41CBEC2ED166"
+				item: "biomeswevegone:cyan_pitcher_plant"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1CD673F2DF5A5C96"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Cyan Pitcher Plant"
+			x: 7.0d
+			y: -1.0d
+		}
+		{
+			icon: "biomeswevegone:magenta_pitcher_plant"
+			id: "03506727CADE4CC7"
+			rewards: [{
+				id: "18B3BC6027DC05AF"
+				item: "biomeswevegone:magenta_pitcher_plant"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2D2F81FFD20FC010"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Magenta Pitcher Plant"
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			icon: "biomeswevegone:blue_rose_bush"
+			id: "3C15235C155610A0"
+			rewards: [{
+				id: "67A767AD8D3DD8AD"
+				item: "biomeswevegone:blue_rose_bush"
+				type: "item"
+			}]
+			tasks: [{
+				id: "02F27B0ECF05B49C"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Blue Rose Bush"
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			icon: "biomeswevegone:delphinium"
+			id: "60148CF746A1DE68"
+			rewards: [{
+				id: "0E687D7EAF0372AD"
+				item: "biomeswevegone:delphinium"
+				type: "item"
+			}]
+			tasks: [{
+				id: "69B06ACCACC91440"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Delphinium"
+			x: 8.5d
+			y: -0.5d
+		}
+		{
+			icon: "biomeswevegone:foxglove"
+			id: "1E087FE857D498BB"
+			rewards: [{
+				id: "51CA64A64361670D"
+				item: "biomeswevegone:foxglove"
+				type: "item"
+			}]
+			tasks: [{
+				id: "796EE3EB7769976A"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Foxglove"
+			x: 9.5d
+			y: -0.5d
+		}
+		{
+			icon: "biomeswevegone:japanese_orchid"
+			id: "62961B22C86DEED2"
+			rewards: [{
+				id: "18F0144DFE9BE363"
+				item: "biomeswevegone:japanese_orchid"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5DC0468F5907CF47"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Japanese Orchid"
+			x: 9.0d
+			y: -1.0d
+		}
+		{
+			icon: "farmersdelight:wild_rice"
+			id: "45D13AA8F540B96F"
+			rewards: [{
+				id: "3ADC0B664CBA2794"
+				item: "farmersdelight:wild_rice"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2B2604B5755FD6A3"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Wild Rice"
+			x: 8.5d
+			y: 4.0d
+		}
+		{
+			icon: "biomesoplenty:sprout"
+			id: "500742916B8C0BDA"
+			rewards: [{
+				id: "3D0FE5DD441946F9"
+				item: "biomesoplenty:sprout"
+				type: "item"
+			}]
+			tasks: [{
+				id: "34297F42D556BADE"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Sprout"
+			x: 19.0d
+			y: 0.0d
+		}
+		{
+			icon: "biomesoplenty:bush"
+			id: "1929796A49A26889"
+			rewards: [{
+				id: "651CD56A567E23B5"
+				item: "biomesoplenty:bush"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1D8A3A678902632A"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Bush"
+			x: 18.5d
+			y: -0.5d
+		}
+		{
+			icon: "biomesoplenty:high_grass"
+			id: "36DBD5813AE4A803"
+			rewards: [{
+				id: "4114426EC3AC50A0"
+				item: "biomesoplenty:high_grass"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7B70FED67A6D6226"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "High Grass"
+			x: 18.0d
+			y: 0.0d
+		}
+		{
+			icon: "biomesoplenty:clover"
+			id: "3076ED9FC4F80AF3"
+			rewards: [{
+				id: "57CD0D93BF00D139"
+				item: "biomesoplenty:clover"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4D7317B87FB57DB3"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Clover"
+			x: 17.5d
+			y: 2.5d
+		}
+		{
+			icon: "biomesoplenty:huge_clover_petal"
+			id: "13C4CBE453C37603"
+			rewards: [{
+				id: "30382CD968F94688"
+				item: "biomesoplenty:huge_clover_petal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "44D90CF07B37D5DF"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Huge Clover Petal"
+			x: 18.0d
+			y: 2.0d
+		}
+		{
+			icon: "biomesoplenty:huge_lily_pad"
+			id: "20AD2FDA26BD41D8"
+			rewards: [{
+				id: "0B3E196EF41D59C7"
+				item: "biomesoplenty:huge_lily_pad"
+				type: "item"
+			}]
+			tasks: [{
+				id: "114BF978FCBAD4B3"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Huge Lily Pad"
+			x: 18.0d
+			y: -2.0d
+		}
+		{
+			icon: "biomesoplenty:dune_grass"
+			id: "603A41CDF63C5683"
+			rewards: [{
+				id: "2D72AD1D9617912D"
+				item: "biomesoplenty:dune_grass"
+				type: "item"
+			}]
+			tasks: [{
+				id: "794028662100EA36"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Dune Grass"
+			x: 17.5d
+			y: 0.5d
+		}
+		{
+			icon: "biomesoplenty:desert_grass"
+			id: "46A812A2B2516007"
+			rewards: [{
+				id: "43C6858AB0892C5B"
+				item: "biomesoplenty:desert_grass"
+				type: "item"
+			}]
+			tasks: [{
+				id: "49914234B0B7D267"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Desert Grass"
+			x: 18.5d
+			y: 0.5d
+		}
+		{
+			icon: "biomesoplenty:dead_grass"
+			id: "10F91E0D96318C7A"
+			rewards: [{
+				id: "245FBE1819465090"
+				item: "biomesoplenty:dead_grass"
+				type: "item"
+			}]
+			tasks: [{
+				id: "309DF36ECA52C2AC"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Dead Grass"
+			x: 18.0d
+			y: 1.0d
+		}
+		{
+			icon: "biomesoplenty:tundra_shrub"
+			id: "5F89F9070F5D3858"
+			rewards: [{
+				id: "2E7ACD10EFDB6F51"
+				item: "biomesoplenty:tundra_shrub"
+				type: "item"
+			}]
+			tasks: [{
+				id: "61F81B4F9339FBEE"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Tundra Shrub"
+			x: 18.5d
+			y: 1.5d
+		}
+		{
+			icon: "biomesoplenty:enderphyte"
+			id: "2453508C249306A1"
+			rewards: [{
+				id: "57C3DFF664D6CBD0"
+				item: "biomesoplenty:enderphyte"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6A9ADCC941393D92"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Enderphyte"
+			x: 19.0d
+			y: 1.0d
+		}
+		{
+			icon: "biomesoplenty:barley"
+			id: "08DF1A1F2BFDDBB4"
+			rewards: [{
+				id: "7E77F4437637E28F"
+				item: "biomesoplenty:barley"
+				type: "item"
+			}]
+			tasks: [{
+				id: "589C9AF25F3EDB56"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Barley"
+			x: 18.0d
+			y: -1.0d
+		}
+		{
+			icon: "biomesoplenty:sea_oats"
+			id: "681713F2FF0A58CA"
+			rewards: [{
+				id: "75D7D6EBC82B5437"
+				item: "biomesoplenty:sea_oats"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4F195CAD5AB11E74"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Sea Oats"
+			x: 13.0d
+			y: 1.0d
+		}
+		{
+			icon: "biomesoplenty:cattail"
+			id: "16A5B06DB23637D7"
+			rewards: [{
+				id: "113AC9BE02B1E5B4"
+				item: "biomesoplenty:cattail"
+				type: "item"
+			}]
+			tasks: [{
+				id: "10BF6B993AAD0490"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Cattail"
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			icon: "biomesoplenty:reed"
+			id: "6CD10AD9539EFE44"
+			rewards: [{
+				id: "65DFE4BFC8D9F587"
+				item: "biomesoplenty:reed"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1136C1B7F15B3483"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Reed"
+			x: 16.5d
+			y: 0.5d
+		}
+		{
+			icon: "biomesoplenty:watergrass"
+			id: "6BB348EE6E8DBAD3"
+			rewards: [{
+				id: "515525D72637F3BC"
+				item: "biomesoplenty:watergrass"
+				type: "item"
+			}]
+			tasks: [{
+				id: "06CB88E578112802"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Watergrass"
+			x: 17.5d
+			y: 1.5d
+		}
+		{
+			icon: "biomesoplenty:tiny_cactus"
+			id: "10CED51E2672D555"
+			rewards: [{
+				id: "7565DFE32AB7D015"
+				item: "biomesoplenty:tiny_cactus"
+				type: "item"
+			}]
+			tasks: [{
+				id: "743DCC4B42EFFC3D"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Tiny Cactus"
+			x: 13.5d
+			y: 4.5d
+		}
+		{
+			icon: "biomesoplenty:bramble"
+			id: "61B925E87E28DF53"
+			rewards: [{
+				id: "7D9E7161961B088C"
+				item: "biomesoplenty:bramble"
+				type: "item"
+			}]
+			tasks: [{
+				id: "421A444F8BD2E4D7"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Bramble"
+			x: 16.5d
+			y: -0.5d
+		}
+		{
+			icon: "biomesoplenty:bramble_leaves"
+			id: "5E2939E99DDC2916"
+			rewards: [{
+				id: "129177939DF84685"
+				item: "biomesoplenty:bramble_leaves"
+				type: "item"
+			}]
+			tasks: [{
+				id: "21B185C7E73E0929"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Bramble Leaves"
+			x: 17.0d
+			y: -1.0d
+		}
+		{
+			icon: "biomesoplenty:spanish_moss"
+			id: "40C76985A25345A3"
+			rewards: [{
+				id: "6956DCF9FDFB7662"
+				item: "biomesoplenty:spanish_moss"
+				type: "item"
+			}]
+			tasks: [{
+				id: "44DFFF2B21365BEF"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Spanish Moss"
+			x: 17.5d
+			y: -0.5d
+		}
+		{
+			icon: "biomeswevegone:barrel_cactus"
+			id: "62607C28CB21BD73"
+			rewards: [{
+				id: "1EA456EBF12922FA"
+				item: "biomeswevegone:barrel_cactus"
+				type: "item"
+			}]
+			tasks: [{
+				id: "18B9B929635CB91B"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Barrel Cactus"
+			x: 13.0d
+			y: 3.0d
+		}
+		{
+			icon: "biomeswevegone:flowering_barrel_cactus"
+			id: "10520697372CEB6D"
+			rewards: [{
+				id: "26650AE53F5E128E"
+				item: "biomeswevegone:flowering_barrel_cactus"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7ED6155C814078F3"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Flowering Barrel Cactus"
+			x: 14.0d
+			y: 3.0d
+		}
+		{
+			icon: "biomeswevegone:carved_barrel_cactus"
+			id: "6DB3E27A4B456455"
+			rewards: [{
+				id: "284ECD4B12BE64BB"
+				item: "biomeswevegone:carved_barrel_cactus"
+				type: "item"
+			}]
+			tasks: [{
+				id: "156100778FC790AC"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Carved Barrel Cactus"
+			x: 13.5d
+			y: 3.5d
+		}
+		{
+			icon: "biomeswevegone:aloe_vera"
+			id: "36542D43350EE6EF"
+			rewards: [{
+				id: "2ABA9652AE3CCE9F"
+				item: "biomeswevegone:aloe_vera"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1FC5A7BDCA756013"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Aloe Vera"
+			x: 14.0d
+			y: 1.0d
+		}
+		{
+			icon: "biomeswevegone:golden_spined_cactus"
+			id: "1ECE88BE26E042F5"
+			rewards: [{
+				id: "18F2D324C8E6383B"
+				item: "biomeswevegone:golden_spined_cactus"
+				type: "item"
+			}]
+			tasks: [{
+				id: "159024C8D3EEE462"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Golden Spined Cactus"
+			x: 13.0d
+			y: 4.0d
+		}
+		{
+			icon: "biomeswevegone:prickly_pear_cactus"
+			id: "2464BBABD3EEA3E8"
+			rewards: [{
+				id: "379DE84EAADB0AF9"
+				item: "biomeswevegone:prickly_pear_cactus"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7CA94CAE6F156012"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Prickly Pear Cactus"
+			x: 14.0d
+			y: 4.0d
+		}
+		{
+			icon: "biomeswevegone:mini_cactus"
+			id: "0D13BCFA0D626382"
+			rewards: [{
+				id: "58AA149689BE9F6B"
+				item: "biomeswevegone:mini_cactus"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1C600E8EBF8C82A6"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Mini Cactus"
+			x: 13.5d
+			y: 2.5d
+		}
+		{
+			icon: "biomeswevegone:witch_hazel_branch"
+			id: "139314FE104498CC"
+			rewards: [{
+				id: "477703DF420BBEA0"
+				item: "biomeswevegone:witch_hazel_branch"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2EAF08E2276F16C8"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Witch Hazel Branch"
+			x: 11.0d
+			y: -1.0d
+		}
+		{
+			icon: "biomeswevegone:poison_ivy"
+			id: "5D7E44E05D3C3E64"
+			rewards: [{
+				id: "4DDD355F531D5E9A"
+				item: "biomeswevegone:poison_ivy"
+				type: "item"
+			}]
+			tasks: [{
+				id: "700024C6615C5D2C"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Poison Ivy"
+			x: 17.0d
+			y: 1.0d
+		}
+		{
+			icon: "biomeswevegone:yellow_sakura_petals"
+			id: "0A107A6584C5816B"
+			rewards: [{
+				id: "3EDA3B0DE82A140B"
+				item: "biomeswevegone:yellow_sakura_petals"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0035590993AF3397"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Yellow Sakura Petals"
+			x: 19.0d
+			y: -1.0d
+		}
+		{
+			icon: "biomeswevegone:white_sakura_petals"
+			id: "673E9B4EE554E8B0"
+			rewards: [{
+				id: "3D5854CF565495C6"
+				item: "biomeswevegone:white_sakura_petals"
+				type: "item"
+			}]
+			tasks: [{
+				id: "46E7A71DBC73B725"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "White Sakura Petals"
+			x: 19.5d
+			y: -0.5d
+		}
+		{
+			icon: "biomeswevegone:flower_patch"
+			id: "32B0C537FDFCD53A"
+			rewards: [{
+				id: "3C9E8347DF90FF7C"
+				item: "biomeswevegone:flower_patch"
+				type: "item"
+			}]
+			tasks: [{
+				id: "48E1DD6C541E7D6E"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Flower Patch"
+			x: 18.0d
+			y: 3.0d
+		}
+		{
+			icon: "biomeswevegone:clover_patch"
+			id: "0646FA0C378B73D1"
+			rewards: [{
+				id: "6F47383566CBD69B"
+				item: "biomeswevegone:clover_patch"
+				type: "item"
+			}]
+			tasks: [{
+				id: "761C742072949A61"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Clover Patch"
+			x: 18.5d
+			y: 2.5d
+		}
+		{
+			icon: "biomeswevegone:leaf_pile"
+			id: "0F0E9E99D98E2564"
+			rewards: [{
+				id: "29BA2B42F7A9745D"
+				item: "biomeswevegone:leaf_pile"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1E3F8ED0BD3BC66F"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Leaf Pile"
+			x: 19.5d
+			y: 0.5d
+		}
+		{
+			icon: "biomeswevegone:beach_grass"
+			id: "220660A01022E92F"
+			rewards: [{
+				id: "0C09193669438EE3"
+				item: "biomeswevegone:beach_grass"
+				type: "item"
+			}]
+			tasks: [{
+				id: "165FB30C0C65D763"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Beach Grass"
+			x: 20.0d
+			y: 0.0d
+		}
+		{
+			icon: "biomeswevegone:tall_beach_grass"
+			id: "4AAE323ED49E8BD5"
+			rewards: [{
+				id: "53B4304C9D690D08"
+				item: "biomeswevegone:tall_beach_grass"
+				type: "item"
+			}]
+			tasks: [{
+				id: "63751E893624E8E6"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Tall Beach Grass"
+			x: 20.0d
+			y: 1.0d
+		}
+		{
+			icon: "biomeswevegone:prairie_grass"
+			id: "4C3B132950993E03"
+			rewards: [{
+				id: "5757733A49EFDC55"
+				item: "biomeswevegone:prairie_grass"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0C4A04CBCF0F445C"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Prairie Grass"
+			x: 16.0d
+			y: 0.0d
+		}
+		{
+			icon: "biomeswevegone:tall_prairie_grass"
+			id: "4F8BB74A7A229C6D"
+			rewards: [{
+				id: "52C96F481A9F2357"
+				item: "biomeswevegone:tall_prairie_grass"
+				type: "item"
+			}]
+			tasks: [{
+				id: "367CC7CC2B927CC2"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Tall Prairie Grass"
+			x: 16.0d
+			y: 1.0d
+		}
+		{
+			icon: "biomeswevegone:cattail_sprout"
+			id: "03D6BED162C01D3D"
+			rewards: [{
+				id: "58DFC710EC8E1B4D"
+				item: "biomeswevegone:cattail_sprout"
+				type: "item"
+			}]
+			tasks: [{
+				id: "48A985AC6F07FFBA"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Cattail Sprout"
+			x: 9.0d
+			y: 1.0d
+		}
+		{
+			icon: "biomeswevegone:tiny_lily_pads"
+			id: "0FE94B24F92389B2"
+			rewards: [{
+				id: "660CD157EA6D4AA3"
+				item: "biomeswevegone:tiny_lily_pads"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0E97B146D066F5B1"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Tiny Lily Pads"
+			x: 18.5d
+			y: -1.5d
+		}
+		{
+			icon: "biomeswevegone:flowering_tiny_lily_pads"
+			id: "00D1DF06E654874A"
+			rewards: [{
+				id: "4BDC3594F162E012"
+				item: "biomeswevegone:flowering_tiny_lily_pads"
+				type: "item"
+			}]
+			tasks: [{
+				id: "685374899EDB70D5"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Flowering Tiny Lily Pads"
+			x: 17.5d
+			y: -1.5d
+		}
+		{
+			icon: "biomeswevegone:water_silk"
+			id: "224913EE9EF24FE7"
+			rewards: [{
+				id: "43A1169327B44F93"
+				item: "biomeswevegone:water_silk"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6B41E3F1FFD8D67B"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Water Silk"
+			x: 17.0d
 			y: 0.0d
 		}
 	]
