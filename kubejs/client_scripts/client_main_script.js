@@ -644,6 +644,17 @@ ItemEvents.tooltip(event => {
 			text.add(2, Text.gray('the Spatial IO Port.'))
 		}
 	})
+	//tooltips for camera mod
+	event.addAdvanced('camera:camera', (item, advanved, text) => {
+		text.add(1, Text.gray('Uses Paper from your inventory.'))
+		text.add(2, Text.gray('Scroll to zoom, right-click to take.'))
+	})
+	event.addAdvanced('camera:album', (item, advanved, text) => {
+		text.add(1, Text.gray('Sneak-right-click to insert photos.'))
+		text.add(2, Text.gray('Right-click to view album.'))
+		text.add(3, Text.gray('Use ['+Text.keybind('key.next_image').getString()+'] and ['+Text.keybind('key.previous_image').getString()+'] to'))
+		text.add(4, Text.gray('move between photos.'))
+	})
 })
 
 JEIEvents.hideItems(event => {
