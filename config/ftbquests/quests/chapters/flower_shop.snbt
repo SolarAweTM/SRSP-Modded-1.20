@@ -104,6 +104,7 @@
 			]
 			icon: "botania:cosmetic_questgiver_mark"
 			id: "09C2D39A209F63D6"
+			subtitle: "This one isn't sponsored."
 			tasks: [{
 				id: "4ECD374C4C3CFCDA"
 				title: "Petallurgy"
