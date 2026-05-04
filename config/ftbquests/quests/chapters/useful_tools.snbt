@@ -487,6 +487,32 @@
 									Count: 1b
 									id: "immersiveengineering:manual"
 								}
+								{
+									Count: 1b
+									id: "iceandfire:bestiary"
+									tag: {
+										Pages: ["introduction"]
+									}
+								}
+								{
+									Count: 1b
+									id: "ae2:guide"
+								}
+								{
+									Count: 1b
+									id: "occultism:dictionary_of_spirits"
+									tag: {
+										"modonomicon:book_id": "occultism:dictionary_of_spirits"
+										"modonomicon:book_open_state": "closed"
+									}
+								}
+								{
+									Count: 1b
+									id: "occultengineering:encyclopedia_of_souls"
+									tag: {
+										"modonomicon:book_id": "occultengineering:encyclopedia_of_souls"
+									}
+								}
 							]
 							"eccentrictome:version": 2
 						}

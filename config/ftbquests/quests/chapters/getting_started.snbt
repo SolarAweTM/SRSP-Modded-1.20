@@ -1,0 +1,21 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "diamond"
+	filename: "getting_started"
+	group: "033234AE9F196F53"
+	icon: "ae2:controller"
+	id: "40D979199D5F39BB"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		id: "68876BE0591604C2"
+		tasks: [{
+			id: "1A58E0F2B8A15DF4"
+			title: "Applied Energistics 2"
+			type: "checkmark"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "Getting Started"
+}

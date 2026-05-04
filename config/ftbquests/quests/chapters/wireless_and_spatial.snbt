@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "diamond"
+	filename: "wireless_and_spatial"
+	group: "033234AE9F196F53"
+	icon: "ae2:wireless_receiver"
+	id: "6A278F11852240B6"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "Wireless and Spatial"
+}

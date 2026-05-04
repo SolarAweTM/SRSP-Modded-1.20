@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "diamond"
+	filename: "misc_3"
+	group: "033234AE9F196F53"
+	icon: "ae2:network_tool"
+	id: "3D5F51BB54D94434"
+	order_index: 2
+	quest_links: [ ]
+	quests: [ ]
+	title: "Misc"
+}
