@@ -18,24 +18,614 @@
 	}]
 	order_index: 3
 	quest_links: [ ]
-	quests: [{
-		can_repeat: false
-		description: [
-			"Have you ever wanted to &6play a variety of sound effects&r, but unfortunately realized that the Cacophonium &6only works for certain mobs&r? Worry no more, as we have the solution for you: &aThe Cacophonium Compound!&r"
-			""
-			"[\"Simply hand over any old Cacophonium you have lying around and our friends at \",  { \"text\": \"Audio Jungle\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://youtu.be/DrYRpPxBEaU\" } }, \" will use magic to give it a quite of exotic sound effects not normally obtainable!\" ]"
-		]
-		icon: "botania:cosmetic_questgiver_mark"
-		id: "624C464E295EF6D1"
-		size: 2.0d
-		subtitle: "...a segue to our sponsor, Audio Jungle!"
-		tasks: [{
-			id: "3977DD879FAFC6C9"
-			title: "Cacophonium Compound"
-			type: "checkmark"
-		}]
-		x: -4.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			can_repeat: false
+			description: [
+				"Have you ever wanted to &6play a variety of sound effects&r, but unfortunately realized that the Cacophonium &6only works for certain mobs&r? Worry no more, as we have the solution for you: &aThe Cacophonium Compound!&r"
+				""
+				"Simply hand over &6any Cacophonium&r you have lying around and our friends at &aAudio Jungle&r will use &dmagic&r to give it a suite of &6exotic sound effects&r not normally obtainable!"
+				"{ \"text\": \"[Visit Audio Jungle]\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://youtu.be/DrYRpPxBEaU\" } }"
+			]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "624C464E295EF6D1"
+			size: 2.0d
+			subtitle: "...a segue to our sponsor, Audio Jungle!"
+			tasks: [{
+				id: "3977DD879FAFC6C9"
+				title: "Cacophonium Compound"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			id: "5D4A637C4D9E8ABE"
+			invisible: true
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "3942C47C3FA7C133"
+				item: "botania:cacophonium"
+				match_nbt: false
+				title: "Any Cacophonium"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Subtitle: &7\"Player hit\"&r"
+				"Pulls from sound &ominecraft:entity.arrow.hit_player&r"
+			]
+			icon: "minecraft:experience_bottle"
+			id: "21779700CAFEEDBB"
+			rewards: [{
+				id: "5E93949D3193AE7A"
+				item: {
+					Count: 1
+					id: "botania:cacophonium"
+					tag: {
+						sound: "minecraft:entity.arrow.hit_player"
+						soundName: "Ding"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "06F9048BF3985B67"
+				item: "botania:cacophonium"
+				match_nbt: false
+				title: "Any Cacophonium"
+				type: "item"
+			}]
+			title: "Ding"
+			x: 4.0d
+			y: -0.5d
+		}
+		{
+			description: ["Pulls from sound &ominecraft:ui.button.click&r"]
+			icon: "webdisplays:craftcomp_stonekey"
+			id: "722FA13B82407D99"
+			rewards: [{
+				id: "28A38E4D23A2AA1B"
+				item: {
+					Count: 1
+					id: "botania:cacophonium"
+					tag: {
+						sound: "minecraft:ui.button.click"
+						soundName: "Click"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "3189AE2830BA85C0"
+				item: "botania:cacophonium"
+				match_nbt: false
+				title: "Any Cacophonium"
+				type: "item"
+			}]
+			title: "Click"
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Subtitle &7\"Sculk Shrieker shrieks\"&r"
+				"Pulls from sound &ominecraft:block.sculk_shrieker.shriek&r"
+			]
+			icon: "minecraft:sculk_shrieker"
+			id: "346527FC5A3FF21D"
+			rewards: [{
+				id: "11710CA4F6F2E1E4"
+				item: {
+					Count: 1
+					id: "botania:cacophonium"
+					tag: {
+						sound: "minecraft:block.sculk_shrieker.shriek"
+						soundName: "Sculk Shrieker"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "595637FD997560F7"
+				item: "botania:cacophonium"
+				match_nbt: false
+				title: "Any Cacophonium"
+				type: "item"
+			}]
+			title: "Sculk Shrieker"
+			x: 5.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"Subtitle &7\"Explosion\"&r"
+				"Pulls from sound &ominecraft:entity.generic.explode&r"
+			]
+			icon: "minecraft:tnt"
+			id: "43E8D7B0ABB086E0"
+			rewards: [{
+				id: "06C97933DDB3A6FD"
+				item: {
+					Count: 1
+					id: "botania:cacophonium"
+					tag: {
+						sound: "minecraft:entity.generic.explode"
+						soundName: "Explosion"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "4BF077CC6207A884"
+				item: "botania:cacophonium"
+				match_nbt: false
+				title: "Any Cacophonium"
+				type: "item"
+			}]
+			title: "Explosion"
+			x: 6.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"Subtitle &7\"Salmon Run Defeat\"&r"
+				"Overwrites unused sound &ominecraft:entity.ghast.scream&r"
+			]
+			icon: "farmersdelight:salmon_roll"
+			id: "0C95587FD0C8A86D"
+			rewards: [{
+				id: "437DAF31C9B5200B"
+				item: {
+					Count: 1
+					id: "botania:cacophonium"
+					tag: {
+						sound: "minecraft:entity.ghast.scream"
+						soundName: "Salmon Run Defeat"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "4735F49864449F49"
+				item: "botania:cacophonium"
+				match_nbt: false
+				title: "Any Cacophonium"
+				type: "item"
+			}]
+			title: "Salmon Run Defeat"
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Subtitle &7\"Boss Salmonid Spawns\"&r"
+				"Overwrites unused sound &ominecraft:entity.bat.loop&r"
+			]
+			icon: "minecraft:salmon"
+			id: "438557273FDF5ED4"
+			rewards: [{
+				id: "391DFF9C96EFD43C"
+				item: {
+					Count: 1
+					id: "botania:cacophonium"
+					tag: {
+						sound: "minecraft:entity.bat.loop"
+						soundName: "Boss Salmonid Spawn"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "2D9D24412F4A0E79"
+				item: "botania:cacophonium"
+				match_nbt: false
+				title: "Any Cacophonium"
+				type: "item"
+			}]
+			title: "Boss Salmonid Spawn"
+			x: 7.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"Subtitle &7\"Night Wave cleared\"&r"
+				"Overwrites unused sound &ominecraft:entity.player.breath&r"
+			]
+			icon: "minecraft:cooked_salmon"
+			id: "0D6311DE956BD2A7"
+			rewards: [{
+				id: "728F0194F97A4D70"
+				item: {
+					Count: 1
+					id: "botania:cacophonium"
+					tag: {
+						sound: "minecraft:entity.player.breath"
+						soundName: "Night Wave cleared"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "3F9E0A7581D288C5"
+				item: "botania:cacophonium"
+				match_nbt: false
+				title: "Any Cacophonium"
+				type: "item"
+			}]
+			title: "Night Wave Clear"
+			x: 6.5d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Subtitle &7\"This way!\"&r"
+				"Overwrites unused sound &ominecraft:entity.silverfish.step&r"
+			]
+			icon: "minecraft:bamboo_sign"
+			id: "3D110ECE983D5F01"
+			rewards: [{
+				id: "13BAF1F045809D02"
+				item: {
+					Count: 1
+					id: "botania:cacophonium"
+					tag: {
+						sound: "minecraft:entity.silverfish.step"
+						soundName: "This way! (Inklings)"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "08A49493443706E0"
+				item: "botania:cacophonium"
+				match_nbt: false
+				title: "Any Cacophonium"
+				type: "item"
+			}]
+			title: "This way! (Inklings)"
+			x: 5.0d
+			y: 0.5d
+		}
+		{
+			description: [
+				"Subtitle &7\"This way!\"&r"
+				"Overwrites unused sound &ominecraft:entity.endermite.step&r"
+			]
+			icon: "biomesoplenty:magic_sign"
+			id: "6AE1350441EACE61"
+			rewards: [{
+				id: "59943E330AD5F544"
+				item: {
+					Count: 1
+					id: "botania:cacophonium"
+					tag: {
+						sound: "minecraft:entity.endermite.step"
+						soundName: "This way! (Octolings)"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "072A3375C9967B4D"
+				item: "botania:cacophonium"
+				match_nbt: false
+				title: "Any Cacophonium"
+				type: "item"
+			}]
+			title: "This way! (Octolings)"
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Subtitle &7\"Wither released\"&r"
+				"Pulls from sound &ominecraft:entity.wither.spawn&r"
+			]
+			icon: "minecraft:wither_skeleton_skull"
+			id: "4C873C50D5136990"
+			rewards: [{
+				id: "0070EA37BE52C301"
+				item: {
+					Count: 1
+					id: "botania:cacophonium"
+					tag: {
+						sound: "minecraft:entity.wither.spawn"
+						soundName: "Wither Spawn"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "08726BEF2255A8B5"
+				item: "botania:cacophonium"
+				match_nbt: false
+				title: "Any Cacophonium"
+				type: "item"
+			}]
+			title: "Wither Spawn"
+			x: 6.0d
+			y: 0.5d
+		}
+		{
+			description: [
+				"Subtitle &7\"Vine Boom\"&r"
+				"Overwrites unused sound &ominecraft:entity.zombie.attack_iron_door&r"
+			]
+			icon: "minecraft:vine"
+			id: "5BEF7A36EEFA26B2"
+			rewards: [{
+				id: "407133BB5E7881B1"
+				item: {
+					Count: 1
+					id: "botania:cacophonium"
+					tag: {
+						sound: "minecraft:entity.zombie.attack_iron_door"
+						soundName: "Vine Boom"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "7D9C8076FD361EA2"
+				item: "botania:cacophonium"
+				match_nbt: false
+				title: "Any Cacophonium"
+				type: "item"
+			}]
+			title: "Vine Boom"
+			x: 7.0d
+			y: 0.5d
+		}
+		{
+			description: [
+				"Subtitle &7\"Black Hole Talisman dings\"&r"
+				"Pulls from sound &obotania:black_hole_talisman_configure&r"
+				""
+				"Also known as the &6Hypixel Noise&r according to &cFehdison&r"
+			]
+			icon: "botania:ender_air_bottle"
+			id: "6360AA97765D47A8"
+			rewards: [{
+				id: "785119D92FC4427A"
+				item: {
+					Count: 1
+					id: "botania:cacophonium"
+					tag: {
+						sound: "botania:black_hole_talisman_configure"
+						soundName: "Ding (Black Hole Talisman)"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "26637DA63AFB9EB0"
+				item: "botania:cacophonium"
+				match_nbt: false
+				title: "Any Cacophonium"
+				type: "item"
+			}]
+			title: "Ding (BH Talisman)"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Subtitle &7\"Terrasteel shines\"&r"
+				"Pulls from sound &obotania:terrasteel_craft&r"
+			]
+			icon: "botania:light_relay"
+			id: "3AAF072D7FC43F45"
+			rewards: [{
+				id: "1DC16D5959485156"
+				item: {
+					Count: 1
+					id: "botania:cacophonium"
+					tag: {
+						sound: "botania:terrasteel_craft"
+						soundName: "Shine"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "5902E670A7D35BFB"
+				item: "botania:cacophonium"
+				match_nbt: false
+				title: "Any Cacophonium"
+				type: "item"
+			}]
+			title: "Shine"
+			x: 4.0d
+			y: 0.5d
+		}
+		{
+			description: [
+				"Subtitle &7\"Brewery crackles\"&r"
+				"Pulls from sound &obotania:potion_create&r"
+			]
+			icon: "botania:brewery"
+			id: "61D45A9BA9F2DCFB"
+			rewards: [{
+				id: "4C7979807B230D5E"
+				item: {
+					Count: 1
+					id: "botania:cacophonium"
+					tag: {
+						sound: "botania:potion_create"
+						soundName: "Botanical Brewery brews"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "1211E6DA61B17E36"
+				item: "botania:cacophonium"
+				match_nbt: false
+				title: "Any Cacophonium"
+				type: "item"
+			}]
+			title: "Botanical Brewery"
+			x: 5.5d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Subtitle &7\"Metal Pipe Falling Sound Effect\"&r"
+				"Overwrites unused sound &obotania:way&r"
+			]
+			icon: "immersiveengineering:stick_iron"
+			id: "18A318AC30ED2B47"
+			rewards: [{
+				id: "44519262274859E2"
+				item: {
+					Count: 1
+					id: "botania:cacophonium"
+					tag: {
+						sound: "botania:way"
+						soundName: "Metal Pipe Falling"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "7B1710B2D97CDFB5"
+				item: "botania:cacophonium"
+				match_nbt: false
+				title: "Any Cacophonium"
+				type: "item"
+			}]
+			title: "Metal Pipe Falling Sound Effect"
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			description: ["Pulls from sound &ominecraft:ui.toast.challenge_complete&r"]
+			icon: "minecraft:end_crystal"
+			id: "489788D9C7EF4D62"
+			rewards: [{
+				id: "2E97B8CDD0D3A5AC"
+				item: {
+					Count: 1
+					id: "botania:cacophonium"
+					tag: {
+						sound: "minecraft:ui.toast.challenge_complete"
+						soundName: "Challenge Complete"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "768B25234C8D8F1F"
+				item: "botania:cacophonium"
+				match_nbt: false
+				title: "Any Cacophonium"
+				type: "item"
+			}]
+			title: "Challenge Complete"
+			x: 6.5d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Subtitle &7\"Beacon power selected\"&r"
+				"Pulls from sound &ominecraft:block.beacon.power_select&r"
+			]
+			icon: "minecraft:beacon"
+			id: "2680D25D40AB4E3B"
+			rewards: [{
+				id: "55151300C53C15B6"
+				item: {
+					Count: 1
+					id: "botania:cacophonium"
+					tag: {
+						sound: "minecraft:block.beacon.power_select"
+						soundName: "Beacon Selection"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "37192D8EDC4034BD"
+				item: "botania:cacophonium"
+				match_nbt: false
+				title: "Any Cacophonium"
+				type: "item"
+			}]
+			title: "Beacon Select"
+			x: 5.5d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Subtitle &7\"Totem activates\"&r"
+				"Pulls from sound &ominecraft:item.totem.use&r"
+			]
+			icon: "minecraft:totem_of_undying"
+			id: "6535964F3FEEF7C1"
+			rewards: [{
+				id: "0AC8936E11BD8296"
+				item: {
+					Count: 1
+					id: "botania:cacophonium"
+					tag: {
+						sound: "minecraft:item.totem.use"
+						soundName: "Totem of Undying"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "73A43D6828B926E8"
+				item: "botania:cacophonium"
+				match_nbt: false
+				title: "Any Cacophonium"
+				type: "item"
+			}]
+			title: "Totem of Undying"
+			x: 7.5d
+			y: 0.0d
+		}
+	]
 	title: "Cacophonium Compound"
 }
