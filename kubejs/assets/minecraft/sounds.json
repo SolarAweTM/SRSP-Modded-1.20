@@ -1,0 +1,32 @@
+{
+	"entity.ghast.scream": {
+		"replace": true,
+		"subtitle": "Salmon Run Defeat",
+		"sounds": ["salmon_run_defeat"]
+	},
+	"entity.bat.loop": {
+		"replace": true,
+		"subtitle": "Boss Salmonid Spawns",
+		"sounds": ["salmon_run_boss"]
+	},
+	"entity.player.breath": {
+		"replace": true,
+		"subtitle": "Night Wave cleared",
+		"sounds": ["night_wave_clear"]
+	},
+	"entity.silverfish.step": {
+		"replace": true,
+		"subtitle": "This way!",
+		"sounds": ["thisway_ib0", "thisway_ib1", "thisway_ib2", "thisway_ig0", "thisway_ig1", "thisway_ig2"]
+	},
+	"entity.endermite.step": {
+		"replace": true,
+		"subtitle": "This way!",
+		"sounds": ["thisway_oc0", "thisway_oc1", "thisway_oc2", "thisway_oc3", "thisway_oc4", "thisway_oc5", "thisway_oc6", "thisway_oc7", "thisway_oc8", "thisway_oc9", "thisway_oc10", "thisway_oc11", "thisway_oc12", "thisway_oc13", "thisway_oc14", "thisway_oc15", "thisway_oc16", "thisway_oc17", "thisway_oc18"]
+	},
+	"entity.zombie.attack_iron_door": {
+		"replace": true,
+		"subtitle": "Vine Boom",
+		"sounds": ["vineboom"]
+	}
+}

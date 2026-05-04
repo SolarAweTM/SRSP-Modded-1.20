@@ -1,0 +1,7 @@
+{
+	"way": {
+		"replace": true,
+		"subtitle": "Metal Pipe Falling Sound Effect",
+		"sounds": ["metalpipe"]
+	}
+}
