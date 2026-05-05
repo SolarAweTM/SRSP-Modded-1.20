@@ -190,6 +190,43 @@
 			x: -1.0d
 			y: 0.5d
 		}
+		{
+			dependencies: ["53DE820EE74EC24D"]
+			description: [
+				"- Create Optimized Trains &7(optimizes trains)&r"
+				"- Web Displays &7(connect to the internet!)&r"
+				"- Create: Copycats+ &7(even more copycats to work with)&r"
+				"- Freecam &7(look anywhere easily)&r"
+				"- Mana Jade &7(numerical mana visible in Jade)&r"
+			]
+			id: "3867ABD286464C5A"
+			shape: "diamond"
+			tasks: [{
+				id: "6FAD1E4AA214D1AF"
+				title: "Overview: Quality of Life"
+				type: "checkmark"
+			}]
+			title: "Overview: Quality of Life [Phase II]"
+			x: 1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["668616E5C2E4049F"]
+			description: [
+				"- Applied Energistics 2 &7(Top of the line logistics and item management, cut down for this phase)&r"
+				"- Ice and Fire Community Edition &7(Dragons and many other mythological creatures)&r"
+				"- Occultism&7 (Embrace the occult and perform rituals to make life easier)&r"
+			]
+			id: "55E743B018F65718"
+			shape: "diamond"
+			tasks: [{
+				id: "150950A59B4C400D"
+				title: "Overview: Content Mods [Phase II]"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: -2.5d
+		}
 	]
 	title: "Welcome"
 }

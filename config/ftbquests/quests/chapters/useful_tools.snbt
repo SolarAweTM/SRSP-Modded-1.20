@@ -916,16 +916,14 @@
 			description: [
 				"&aWaystones&r are magical stones that can appear in many places in the world, from randomly finding them to appearing in a village."
 				""
-				"&aRight clicking&r a Waystone will mark it as discovered for you, and from there, you can teleport to &aany other Waystone&r that you have discovered. If the distance between Waystones is large enough, there will also be an &aXP cost&r associated with the destination."
+				"&aRight clicking&r a Waystone will mark it as discovered for you, and from there, you can teleport to &aany other Waystone&r that you have discovered. If the distance between Waystones is large enough, there may also be an &aXP cost&r associated with the destination."
 				""
 				"&6Waystones work across dimensions&r, and you can pick up and move Waystones as long as you have a pickaxe on hand."
 			]
-			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			icon: "waystones:waystone"
 			id: "6517E4D6916B6A4F"
-			invisible: true
 			rewards: [{
 				id: "6F52713D7606F8A7"
 				type: "xp"
@@ -934,9 +932,9 @@
 			shape: "diamond"
 			subtitle: "Get from point A to point C and then point B"
 			tasks: [{
-				id: "7DF9F51AA7AD099E"
-				item: "kubejs:intentionally_unobtainable"
-				type: "item"
+				id: "3F3EF4135C38D28C"
+				title: "Waystones"
+				type: "checkmark"
 			}]
 			title: "Waystones"
 			x: -1.5d
@@ -1754,6 +1752,49 @@
 			}]
 			x: 4.5d
 			y: -1.5d
+		}
+		{
+			dependencies: ["695654EE3BCBE110"]
+			description: [
+				"The Camera is a handy tool for taking photos in-game and showing them off in the world."
+				""
+				"To use the Camera, you need to have some Paper in your inventory. You can scroll the mouse to zoom in and out, and right-click to take a photo."
+				""
+				"These photos can then be placed in an Image Frame or Album for viewing."
+			]
+			icon: "camera:camera"
+			id: "36EA74BF7A83AD4B"
+			rewards: [{
+				id: "3591C9FACFF25B19"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "diamond"
+			subtitle: "Savor the moment"
+			tasks: [
+				{
+					id: "17225E4A76012330"
+					item: "camera:camera"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "2FB63B86FDFF4D26"
+					item: "camera:image_frame"
+					optional_task: true
+					title: "Image Frame"
+					type: "item"
+				}
+				{
+					id: "75C72B6425B4B168"
+					item: "camera:album"
+					optional_task: true
+					title: "Album"
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: 0.0d
 		}
 	]
 	title: "Useful Tools"
