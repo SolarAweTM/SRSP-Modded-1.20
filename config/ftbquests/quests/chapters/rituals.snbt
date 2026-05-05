@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "diamond"
+	filename: "rituals"
+	group: "26E5F0658A8B43C0"
+	icon: "occultism:chalk_purple_impure"
+	id: "2430DA21B15D1777"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "Rituals"
+}

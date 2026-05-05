@@ -1,0 +1,18 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "diamond"
+	filename: "core_progression_2"
+	group: "26E5F0658A8B43C0"
+	icon: {
+		Count: 1
+		id: "occultism:dictionary_of_spirits"
+		tag: {
+			"modonomicon:book_id": "occultism:dictionary_of_spirits"
+		}
+	}
+	id: "4698259BCB2D478A"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	title: "Core Progression"
+}

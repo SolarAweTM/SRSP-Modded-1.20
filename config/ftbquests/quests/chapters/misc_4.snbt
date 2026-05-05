@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "diamond"
+	filename: "misc_4"
+	group: "26E5F0658A8B43C0"
+	icon: "occultism:book_of_binding_foliot"
+	id: "387836EBE572F868"
+	order_index: 2
+	quest_links: [ ]
+	quests: [ ]
+	title: "Misc"
+}

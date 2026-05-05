@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "misc_5"
+	group: "4C3727C165FD204E"
+	icon: "iceandfire:bestiary"
+	id: "31284A6125812191"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "Misc"
+}
