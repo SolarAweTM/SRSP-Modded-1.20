@@ -1,0 +1,11 @@
+{
+	"server": {
+		"replace": true,
+		"subtitle": "PvP Speech",
+		"sounds": [
+			{"name": "entity.player.attack.crit", "type": "event"},
+			{"name": "entity.player.attack.strong", "type": "event"},
+			{"name": "entity.player.attack.sweep", "type": "event"}
+		]
+	}
+}

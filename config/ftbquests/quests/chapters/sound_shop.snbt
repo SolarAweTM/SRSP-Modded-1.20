@@ -51,12 +51,12 @@
 				title: "Any Cacophonium"
 				type: "item"
 			}]
-			x: -4.5d
+			x: -5.0d
 			y: -1.0d
 		}
 		{
 			description: [
-				"Subtitle: &7\"Player hit\"&r"
+				"Subtitle &7\"Player hit\"&r"
 				"Pulls from sound &ominecraft:entity.arrow.hit_player&r"
 			]
 			icon: "minecraft:experience_bottle"
@@ -623,8 +623,47 @@
 				type: "item"
 			}]
 			title: "Totem of Undying"
-			x: 7.5d
-			y: 0.0d
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			description: [
+				"Subtitle &7\"PvP Speech\"&r"
+				"Overwrites existing sound &owebdisplays:server&r"
+				"Uses sounds &ominecraft:entity.player.attack.crit&r, &ominecraft:entity.player.attack.strong&r, and &ominecraft:entity.player.attack.sweep&r"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "742EBB7C3530E6E6"
+			rewards: [{
+				id: "4C8AB20D3343EC24"
+				item: {
+					Count: 1
+					id: "botania:cacophonium"
+					tag: {
+						sound: "webdisplays:server"
+						soundName: "Speaking PvP"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "174F5669D104BC79"
+				item: "botania:cacophonium"
+				match_nbt: false
+				title: "Any Cacophonium"
+				type: "item"
+			}]
+			title: "Speaking PvP"
+			x: 5.0d
+			y: 1.5d
 		}
 	]
 	title: "Cacophonium Compound"
