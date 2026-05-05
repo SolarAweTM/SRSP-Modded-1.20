@@ -7,15 +7,456 @@
 	id: "40D979199D5F39BB"
 	order_index: 0
 	quest_links: [ ]
-	quests: [{
-		id: "68876BE0591604C2"
-		tasks: [{
-			id: "1A58E0F2B8A15DF4"
-			title: "Applied Energistics 2"
-			type: "checkmark"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
-	title: "Getting Started"
+	quests: [
+		{
+			description: [
+				"&bApplied Energistics 2&r is a mod all about Matter, Energy, and using them to take over the world. It adds arguably the &6most powerful logistics systems&r in modded Minecraft, and will be extremely helpful to learn early on."
+				""
+				"The mod's &bbuilt-in guide&r is extremely well put-together, and should be used as a reference for mod mechanics, and can be used as a &6substitute for this questline&r, barring recipes. You can get a copy of the guide within an &6Eccentric Tome&r obtained from the &6Useful Tools&r questline."
+				""
+				"{ \"text\": \"[Eccentric Tome Quest]\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"580C9EFE799877FB\" } }"
+			]
+			id: "68876BE0591604C2"
+			size: 2.0d
+			tasks: [{
+				id: "1A58E0F2B8A15DF4"
+				title: "Applied Energistics 2"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["68876BE0591604C2"]
+			description: [
+				"To start, you'll want to find a &bSky Stone Meteor&r. These can be found basically anywhere on the surface, and are really difficult to miss. If you can't find one, you can craft a &6Meteorite Compass&r that will lead you to one."
+				""
+				"Inside the meteor, you'll find a &bMysterious Cube&r. Break the Cube &7(without Silk Touch)&r, and you'll get a set of each &bInscriber Press&r needed to continue."
+			]
+			icon: "ae2:mysterious_cube"
+			id: "1AED6BCDB038D4EB"
+			tasks: [{
+				id: "31D9103D824F8E25"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Main Inscriber Presses\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "ae2:calculation_processor_press"
+							}
+							{
+								Count: 1b
+								id: "ae2:engineering_processor_press"
+							}
+							{
+								Count: 1b
+								id: "ae2:logic_processor_press"
+							}
+							{
+								Count: 1b
+								id: "ae2:silicon_press"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Getting Started"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1AED6BCDB038D4EB"]
+			description: [
+				"Within the Meteor, you'll also find some Budding Certus Quartz blocks. These will, similarly to Amethyst, grow crystals over time."
+				""
+				"However, they also have a lot of differences. Check out the Getting Started page in the AE2 Guide for more info."
+			]
+			id: "6AB127E31D5A414C"
+			tasks: [{
+				id: "0E9F5234956F51E2"
+				item: "ae2:certus_quartz_crystal"
+				type: "item"
+			}]
+			title: "Certus Quartz"
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1AED6BCDB038D4EB"]
+			description: [
+				"The &bInscriber&r is a machine that will make use of &6Inscriber Presses&r and &6other materials&r to create &bprinted circuits and processors&r, which are necessary to craft many AE2 components. &cThis block requires power to operate.&r"
+				""
+				"You may also &6duplicate Inscriber Presses&r using an Iron Block in the Inscriber."
+			]
+			id: "22BBECAC2DD615CB"
+			tasks: [{
+				id: "079464259B17DD3B"
+				item: "ae2:inscriber"
+				type: "item"
+			}]
+			title: "The Inscriber"
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1AED6BCDB038D4EB"]
+			description: [
+				"The &bCharger&r is a block capable of &6charging compatible items&r, as well as providing power to items that can store power. &cThis block requires power to operate.&r"
+				""
+				"The &6most common use&r of the Charger is to produce &bCharged Certus Quartz&r, a useful material."
+			]
+			id: "683115B8304B1086"
+			tasks: [{
+				id: "5FB10653B14FB08A"
+				item: "ae2:charger"
+				type: "item"
+			}]
+			title: "The Charger"
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"683115B8304B1086"
+				"6AB127E31D5A414C"
+			]
+			description: ["By throwing &6Charged Certus Quartz, Redstone Dust, and some Nether Quartz&r into water, you can create &bFluix Crystals&r, which are extremely important in crafting many AE2 components."]
+			id: "6CEEC5D9627C306E"
+			tasks: [{
+				id: "10851BED8EEF084C"
+				item: "ae2:fluix_crystal"
+				type: "item"
+			}]
+			title: "Fluix Crystals"
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["22BBECAC2DD615CB"]
+			description: [
+				"&bProcessors&r will make up a large majority of crafting components used in AE2."
+				""
+				"Every processor will require a piece of &6printed silicon&r, and redstone dust. The main material dictates the processor created:"
+				"- &6Gold Ingots:&r Logic Processors"
+				"- &6Diamonds:&r Engineering Processors"
+				"- &6Certus Quartz:&r Calculation Processors"
+				"Naturally, each processor's printed circuit will &6require the respective press&r."
+				""
+				"Silicon can be obtained by smelting &6Certus Quartz Dust&r, which can then be turned into printed silicon in the &6Inscriber&r."
+			]
+			id: "5A55E22C6CFF8ADA"
+			tasks: [{
+				id: "5B62BBCC02F9815B"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Processor\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "ae2:logic_processor"
+							}
+							{
+								Count: 1b
+								id: "ae2:calculation_processor"
+							}
+							{
+								Count: 1b
+								id: "ae2:engineering_processor"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Processors"
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"6CEEC5D9627C306E"
+				"5A55E22C6CFF8ADA"
+			]
+			description: ["In order to make use of AE2's logistics, you'll ideally need to build what's called an &bME Network&r &7(or ME System)&r. The specifics of this are detailed later in the questline, and also &6in the in-game guide&r."]
+			id: "6F1701A9FE54115B"
+			tasks: [{
+				id: "780B01B2322CCF27"
+				title: "Getting the Network Components"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"0B38F16DB41E2CB2"
+				"6F1701A9FE54115B"
+			]
+			description: [
+				"The &bME Drive&r will store up to &610 ME Storage Cells&r, and make those Storage Cells visible to the Network."
+				""
+				"Each ME Drive uses a channel to operate."
+			]
+			hide_dependency_lines: true
+			id: "50A92B36E634CEDF"
+			tasks: [{
+				id: "3CB01AE13E94133E"
+				item: "ae2:drive"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"0B38F16DB41E2CB2"
+				"6F1701A9FE54115B"
+			]
+			description: [
+				"The &bME Terminal&r is used to &6manually insert or extract items&r from the Network. There is also a &bCrafting Terminal&r, which offers the same functionality, with an added crafting grid."
+				""
+				"The Terminals consume a channel."
+			]
+			hide_dependency_lines: true
+			id: "347D7F4667EFD64A"
+			tasks: [{
+				id: "67325920D90D2B7F"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Basic ME Terminals\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "ae2:terminal"
+							}
+							{
+								Count: 1b
+								id: "ae2:crafting_terminal"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "ME Terminal"
+			x: -0.5d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"0B38F16DB41E2CB2"
+				"6F1701A9FE54115B"
+			]
+			description: [
+				"&bME Storage Cells&r are what actually store the items you put into the ME Network. &6Up to 10&r of these can fit in one ME Drive."
+				""
+				"These Storage Cells &6have limits&r on how many items they can store, and it's a good idea to read the &b\"Bytes and Types\" page in the AE2 in-game guide&r in order to get a proper understanding of the mechanics."
+			]
+			id: "79B5CC5DBA7F77C2"
+			tasks: [{
+				id: "633D6BFE1ABA8ADC"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Phase II ME Storage Cells\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "ae2:item_storage_cell_1k"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "ae2:item_storage_cell_4k"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "ae2:fluid_storage_cell_1k"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "ae2:fluid_storage_cell_4k"
+								tag: { }
+							}
+						]
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			title: "ME Storage Cells"
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"0B38F16DB41E2CB2"
+				"6F1701A9FE54115B"
+			]
+			description: [
+				"&bME Cables&r allow you to connect Devices in your Network together over a distance. They come in the &6base Fluix color, as well as the 16 Minecraft colors&r."
+				""
+				"Colored cables will only connect to &bother cables of the same color&r, with the exception of Fluix, which can connect to &6any color&r."
+				""
+				"Each variant of cable can carry a &6different amount of Channels&r:"
+				"- &bNormal cables&r &7(glass, smart, and covered)&r can carry up to 8 channels."
+				"- &bDense cables&r &7(smart and covered)&r can carry up to 32 channels."
+				""
+				"&6Smart cables&r will make their channel usage visible on the cable texture itself, and to Jade."
+				""
+				"&6Dense cables&r, while carrying many more Channels, &ccannot connect directly to cable subparts&r, such as Terminals. In these cases, you can &bstep down the connection&r using a normal cable."
+			]
+			hide_dependency_lines: true
+			id: "04AE773451C0EE14"
+			min_width: 300
+			tasks: [{
+				id: "0D77961172690E80"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"ME Cables\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									RepairCost: 0
+									display: {
+										Name: "{\"text\":\"ME Glass Cables\"}"
+									}
+									value: "ae2:glass_cable"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									RepairCost: 0
+									display: {
+										Name: "{\"text\":\"ME Smart Cables\"}"
+									}
+									value: "ae2:smart_cable"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									RepairCost: 0
+									display: {
+										Name: "{\"text\":\"ME Covered Cables\"}"
+									}
+									value: "ae2:covered_cable"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									RepairCost: 0
+									display: {
+										Name: "{\"text\":\"ME Dense Smart Cables\"}"
+									}
+									value: "ae2:smart_dense_cable"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									RepairCost: 0
+									display: {
+										Name: "{\"text\":\"ME Dense Covered Cables\"}"
+									}
+									value: "ae2:covered_dense_cable"
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"0B38F16DB41E2CB2"
+				"6F1701A9FE54115B"
+			]
+			description: [
+				"The &bME Controller&r is what powers your entire Network. A Controller can be comprised of &6one or more blocks&r, as long as they fit &6within the rules specified in the in-game guide&r. "
+				""
+				"Regardless, each block face of the Controller &bprovides 32 Channels&r for cables to use."
+				""
+				"&6Right-clicking&r the Controller will provide a &bsummary&r of connected Devices, and power information."
+				""
+				"&6Power&r can be provided to the Network directly to the Controller, or by use of an &6Energy Acceptor&r."
+			]
+			hide_dependency_lines: true
+			id: "47C777F331C82EF4"
+			tasks: [{
+				id: "675C1CD55CBB49D9"
+				item: "ae2:controller"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"6CEEC5D9627C306E"
+				"5A55E22C6CFF8ADA"
+			]
+			description: [
+				"&bNetwork Channels&r are a complex mechanic in AE2 that anyone building an ME Network will need to keep track of."
+				"Note that &6the AE2 in-game guide has a much better explanation&r of Channels than what's explained here, so you may want to look at that."
+				""
+				"Each machine or block that interacts with the ME Network is considered a \"&bDevice&r\", and almost all Devices will &6consume a channel&r on the Network."
+				""
+				"The ME Controller &6provides the Network with channels&r on each face, and ME Cables simply &6connect Devices to the Network&r using Channels. The length of the cable being used does not matter."
+				""
+				"If a Network &bexceeds its channel limit&r on a cable, &6no new Devices&r may be added. This can be seen in Jade when it shows \"Device Missing Channel\"."
+				""
+				"More info on specific components can be found in each component's &6summary tooltips, in the following quests, and in the in-game guide.&r"
+			]
+			id: "0B38F16DB41E2CB2"
+			min_width: 300
+			tasks: [{
+				id: "42A65AE754998038"
+				title: "Understanding Channels"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: -3.0d
+		}
+	]
+	title: "Core Progression"
 }
