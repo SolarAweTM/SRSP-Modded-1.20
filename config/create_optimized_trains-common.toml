@@ -1,0 +1,133 @@
+
+#=== Create Optimized Trains - Configuração ===
+[general]
+
+	#Sistema LOD (Level of Detail)
+	[general.lod]
+		#Distância máxima (em blocos) para detail completo
+		#Range: 16 ~ 256
+		fullDistance = 48
+		#Distância máxima (em blocos) para detail médio
+		#Range: 32 ~ 512
+		mediumDistance = 96
+		#Distância máxima (em blocos) para detail baixo
+		#Range: 64 ~ 1024
+		lowDistance = 192
+		#Distância (em blocos) a partir da qual comboios entram em modo fantasma
+		#Modo fantasma reduz significativamente o render para poupar FPS
+		#Aumenta este valor se queres ver comboios mais longe antes de ficarem fantasma
+		#Range: 32 ~ 2048
+		ghostDistance = 256
+
+	#Agrupamento / Abstração de Carruagens
+	[general.grouping]
+		#Ativar agrupamento de carruagens em entidades lógicas
+		enabled = false
+		#Número mínimo de carruagens para agrupar
+		#Range: 2 ~ 100
+		minCarriages = 5
+
+	#Multi-threading
+	[general.threading]
+		#Número de threads auxiliares para cálculos pesados
+		#Range: 1 ~ 8
+		poolSize = 2
+
+	#Tick Throttling - Atualização Parcial
+	[general.throttling]
+		#Ativar atualização parcial de carruagens
+		enabled = true
+		#Intervalo de ticks para carruagens em LOD médio
+		#Range: 1 ~ 20
+		mediumInterval = 3
+		#Intervalo de ticks para carruagens em LOD baixo
+		#Range: 2 ~ 40
+		lowInterval = 8
+		#Intervalo de ticks para carruagens fantasma
+		#Range: 5 ~ 100
+		ghostInterval = 20
+
+	#Otimização de Renderização (cliente)
+	[general.rendering]
+		#Ativar otimização de renderização
+		enabled = true
+		#Desativar animações para comboios distantes
+		disableDistantAnimations = true
+		#Reduzir partículas para comboios distantes
+		disableDistantParticles = true
+		#Frames de atraso antes de comboios começarem a renderizar ao entrar em chunks
+		#Reduz spike de FPS quando comboios aparecem pela primeira vez
+		#0 = sem warmup, 1 = mínimo recomendado, 3+ = mais suave para PCs fracos
+		#Range: 0 ~ 10
+		warmupFrames = 1
+
+	#Proxy Entities
+	[general.proxy]
+		#Usar entidades proxy leves para comboios distantes
+		enabled = true
+
+	#Gestão Inteligente de Chunk Loading
+	[general.chunks]
+		#Ativar gestão inteligente de chunks
+		enabled = true
+		#Chunks mínimos a pré-carregar à frente do comboio (adaptativo por velocidade)
+		#Range: 0 ~ 16
+		lookahead = 4
+		#Chunks a manter atrás do comboio antes de descarregar
+		#Range: 0 ~ 4
+		trailKeep = 1
+
+	#Carregamento Direcional de Chunks
+	#Quando o jogador está num comboio, redistribui as chunks visuais
+	#para carregar mais no sentido do movimento e menos para os lados.
+	#Ideal para quem usa Distant Horizons.
+	[general.directional_chunks]
+		#Ativar carregamento direcional de chunks quando num comboio
+		enabled = true
+		#Chunks a carregar à frente do comboio (no sentido do movimento)
+		#Range: 2 ~ 32
+		forwardChunks = 8
+		#Chunks a carregar atrás do comboio
+		#Range: 2 ~ 32
+		backwardChunks = 6
+		#Chunks a carregar para os lados do comboio
+		#Range: 1 ~ 16
+		sideChunks = 3
+
+	#Otimização de Física
+	[general.physics]
+		#Ativar otimização de física
+		enabled = true
+		#Desativar colisões entre carruagens distantes
+		disableDistantCollisions = true
+
+	#Otimização de Sincronização/Networking
+	[general.networking]
+		#Ativar otimização de networking
+		enabled = true
+		#Intervalo de sync (ticks) para comboios distantes
+		#Range: 5 ~ 100
+		distantSyncInterval = 20
+
+	#Sistema de Prioridades e Horários
+	[general.priority]
+		#Ativar sistema de prioridades para comboios
+		enabled = true
+
+	#Monitor de Performance Dinâmico
+	[general.monitor]
+		#Ativar monitor de performance adaptativo
+		enabled = false
+		#TPS abaixo deste valor = reduzir fidelidade
+		#Range: 5 ~ 20
+		tpsLowThreshold = 15
+		#TPS acima deste valor = restaurar fidelidade normal
+		#Range: 10 ~ 20
+		tpsHighThreshold = 18
+
+	#Overlay de debug no ecrã F3
+	[general.debug_overlay]
+		#Mostrar informações do mod no ecrã de debug (F3)
+		#Inclui memória, threads, TPS/MSPT, FPS, chunks forçados
+		enabled = false
+
