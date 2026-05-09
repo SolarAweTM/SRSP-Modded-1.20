@@ -1,4 +1,5 @@
 {
+	autofocus_id: "4B46EF307977674F"
 	default_hide_dependency_lines: false
 	default_quest_shape: "diamond"
 	filename: "wireless_and_spatial"
@@ -7,6 +8,18 @@
 	id: "6A278F11852240B6"
 	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [{
+		dependencies: ["7C25D84F795B1729"]
+		id: "4B46EF307977674F"
+		size: 2.0d
+		tasks: [{
+			id: "57E4CB2085AEEC94"
+			title: "AE2: Wireless and Spatialk"
+			type: "checkmark"
+		}]
+		title: "AE2: Wireless and Spatial"
+		x: 0.0d
+		y: 0.0d
+	}]
 	title: "Wireless and Spatial"
 }

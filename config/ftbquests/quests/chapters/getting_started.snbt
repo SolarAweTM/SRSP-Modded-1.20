@@ -1,4 +1,5 @@
 {
+	autofocus_id: "68876BE0591604C2"
 	default_hide_dependency_lines: false
 	default_quest_shape: "diamond"
 	filename: "getting_started"
@@ -456,6 +457,61 @@
 			}]
 			x: -0.5d
 			y: -3.0d
+		}
+		{
+			dependencies: [
+				"50A92B36E634CEDF"
+				"04AE773451C0EE14"
+				"47C777F331C82EF4"
+				"79B5CC5DBA7F77C2"
+				"347D7F4667EFD64A"
+			]
+			description: [
+				"By putting these five components together in the world, you can &bcreate your first ME Network&r. While it is possible to set up a basic network without using cables, it would be best to &6use cables&r to provide room for expansion later on."
+				""
+				"You'll also need to &bprovide the Controller with power&r."
+				""
+				"Note that the ME Network &6does not care about cable distance&r, so you can have cables stretch across your base if you want."
+				""
+				"The Network can be built in &6any way you want&r, so the next two pages will have some examples."
+				"{@pagebreak}"
+				"{image:srsp:textures/ftbquests/controller-1.png width:240 height:135 align:center}"
+				""
+				"This setup shows how a Network could be set up &6without using ME Cables&r, except for the Terminal. This is &cnot recommended&r, however, as you will quickly run into channel bottlenecks."
+				"{@pagebreak}"
+				"{image:srsp:textures/ftbquests/controller-2.png width:240 height:135 align:center}"
+				""
+				"This setup is ideal for starting out. Using a &6Dense Cable&r to route channels to the Terminal &7(stepped down to a normal cable)&r and to the Drive allows you to &bexpand your network&r much further in the future."
+			]
+			id: "7C25D84F795B1729"
+			min_width: 250
+			tasks: [{
+				id: "21B46384A1A25D19"
+				type: "checkmark"
+			}]
+			title: "Putting it All Together"
+			x: 0.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["7C25D84F795B1729"]
+			description: [
+				"Now that you've built a Network, it's time to &6expand it&r."
+				""
+				"You can do so by &6adding more&r storage cells and drives, or by looking to the &bother questlines&r for AE2."
+				""
+				"{ \"text\": \"[Wireless and Spatial Questline]\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"4B46EF307977674F\" } }"
+				""
+				"{ \"text\": \"[Misc Questline]\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"67A5093E7141315C\" } }"
+			]
+			id: "05975F3C6F36BD82"
+			tasks: [{
+				id: "6805BECA0505FFFD"
+				title: "Next Steps"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -7.5d
 		}
 	]
 	title: "Core Progression"
