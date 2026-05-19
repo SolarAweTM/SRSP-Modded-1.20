@@ -19,7 +19,6 @@ ServerEvents.recipes(e => {
 		'ae2:cell_component_64k',
 		'ae2:cell_component_256k',
 		'ae2:spatial_cell_component_128',
-		'ae2:condenser',
 		'ae2:vibration_chamber',
 		'ae2:crystal_resonance_generator',
 		'ae2:spatial_anchor',

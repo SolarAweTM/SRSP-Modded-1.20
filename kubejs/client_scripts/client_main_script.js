@@ -97,7 +97,6 @@ ItemEvents.tooltip(event => {
 		'ae2:cell_component_64k',
 		'ae2:cell_component_256k',
 		'ae2:spatial_cell_component_128',
-		'ae2:condenser',
 		'ae2:vibration_chamber',
 		'ae2:crystal_resonance_generator',
 		'ae2:spatial_anchor',
@@ -371,12 +370,16 @@ ItemEvents.tooltip(event => {
 		'ae2:fe_p2p_tunnel',
 		'ae2:fluid_p2p_tunnel',
 		'ae2:light_p2p_tunnel',
-		'ae2:spatial_pylon'
+		'ae2:spatial_pylon',
+		'ae2:condenser'
 	]
 	AE2_TOOLTIPPED_ITEMS.forEach(i => {
 		event.addAdvanced(i, (item, advanced, text) => {
 			if(!event.shift) {
 				text.add(1, Text.darkGray('Hold [').append(Text.gray('Shift')).append(Text.darkGray('] for Summary')))
+			}
+			else {
+				text.add(1, Text.darkGray('Hold [').append(Text.white('Shift')).append(Text.darkGray('] for Summary')))
 			}
 		})
 	})
@@ -388,7 +391,8 @@ ItemEvents.tooltip(event => {
 	AE2_CABLES.forEach(tag => {
 		event.addAdvanced(tag, (item, advanced, text) => {
 			if(event.shift) {
-				text.add(1, Text.gray('Can carry up to ').append(Text.yellow('8')).append(Text.gray(' channels.')))
+				text.add(2, Text.gray('Can carry up to ').append(Text.yellow('8')).append(Text.gray(' channels.')))
+				text.add(2, '')
 			}
 		})
 	})
@@ -404,9 +408,10 @@ ItemEvents.tooltip(event => {
 	DENSE_AE2_CABLES.forEach(tag => {
 		event.addAdvanced(tag, (item, advanced, text) => {
 			if(event.shift) {
-				text.add(1, Text.gray('Can carry up to ').append(Text.green('32')).append(Text.gray(' channels.')))
-				text.add(2, Text.gray('Cannot connect to cable subparts.'))
-				text.add(3, Text.gray('Use a non-dense cable for subparts.'))
+				text.add(2, Text.gray('Can carry up to ').append(Text.green('32')).append(Text.gray(' channels.')))
+				text.add(3, Text.gray('Cannot connect to cable subparts.'))
+				text.add(4, Text.gray('Use a non-dense cable for subparts.'))
+				text.add(2, '')
 			}
 		})
 	})
@@ -417,58 +422,67 @@ ItemEvents.tooltip(event => {
 	})
 	event.addAdvanced('ae2:controller', (item, advanced, text) => {
 		if(event.shift) {
-			text.add(1, Text.gray('Provides ').append(Text.green('32 ')).append(Text.gray('channels per face.')))
+			text.add(2, Text.gray('Provides ').append(Text.green('32 ')).append(Text.gray('channels per face.')))
+			text.add(2, '')
 		}
 	})
 	event.addAdvanced('ae2:cell_workbench', (item, advanced, text) => {
 		if(event.shift) {
-			text.add(1, Text.gray('Used to partition (filter) and'))
-			text.add(2, Text.gray('apply upgrade cards to cells.'))
+			text.add(2, Text.gray('Used to partition (filter) and'))
+			text.add(3, Text.gray('apply upgrade cards to cells.'))
+			text.add(2, '')
 		}
 	})
 	event.addAdvanced('ae2:drive', (item, advanced, text) => {
 		if(event.shift) {
-			text.add(1, Text.gray('Stores ME storage cells, making their'))
-			text.add(2, Text.gray('contents available as network storage.'))
+			text.add(2, Text.gray('Stores ME storage cells, making their'))
+			text.add(3, Text.gray('contents available as network storage.'))
+			text.add(2, '')
 		}
 	})
 	event.addAdvanced('ae2:chest', (item, advanced, text) => {
 		if(event.shift) {
-			text.add(1, Text.gray('Can be used to interface with a'))
-			text.add(2, Text.gray('single ME storage cell or compatible'))
-			text.add(3, Text.gray('items.'))
+			text.add(2, Text.gray('Can be used to interface with a'))
+			text.add(3, Text.gray('single ME storage cell or compatible'))
+			text.add(4, Text.gray('items.'))
+			text.add(2, '')
 		}
 	})
 	event.addAdvanced('ae2:interface', (item, advanced, text) => {
 		if(event.shift) {
-			text.add(1, Text.gray('Allows external logistics (e.g. Create) to'))
-			text.add(2, Text.gray('insert/extract items to/from network storage.'))
+			text.add(2, Text.gray('Allows external logistics (e.g. Create) to'))
+			text.add(3, Text.gray('insert/extract items to/from network storage.'))
+			text.add(2, '')
 		}
 	})
 	event.addAdvanced('ae2:cable_interface', (item, advanced, text) => {
 		if(event.shift) {
-			text.add(1, Text.gray('Allows external logistics (e.g. Create) to'))
-			text.add(2, Text.gray('insert/extract items to/from network storage.'))
+			text.add(2, Text.gray('Allows external logistics (e.g. Create) to'))
+			text.add(3, Text.gray('insert/extract items to/from network storage.'))
+			text.add(2, '')
 		}
 	})
 	event.addAdvanced('ae2:io_port', (item, advanced, text) => {
 		if(event.shift) {
-			text.add(1, Text.gray('Used to quickly empty/fill an'))
-			text.add(2, Text.gray('ME storage cell using network storage.'))
+			text.add(2, Text.gray('Used to quickly empty/fill an'))
+			text.add(3, Text.gray('ME storage cell using network storage.'))
+			text.add(2, '')
 		}
 	})
 	event.addAdvanced('ae2:energy_acceptor', (item, advanced, text) => {
 		if(event.shift) {
-			text.add(1, Text.gray('Power can be given to the ME network'))
-			text.add(2, Text.gray('through this block instead of the Controller.'))
-			text.add(3, Text.gray('Also available as a cable subpart.'))
+			text.add(2, Text.gray('Power can be given to the ME network'))
+			text.add(3, Text.gray('through this block instead of the Controller.'))
+			text.add(4, Text.gray('Also available as a cable subpart.'))
+			text.add(2, '')
 		}
 	})
 	event.addAdvanced('ae2:cable_energy_acceptor', (item, advanced, text) => {
 		if(event.shift) {
-			text.add(1, Text.gray('Power can be given to the ME network through'))
-			text.add(2, Text.gray('this subpart instead of the Controller.'))
-			text.add(3, Text.gray('Also available as a block.'))
+			text.add(2, Text.gray('Power can be given to the ME network through'))
+			text.add(3, Text.gray('this subpart instead of the Controller.'))
+			text.add(4, Text.gray('Also available as a block.'))
+			text.add(2, '')
 		}
 	})
 	const ENERGY_CELLS = [
@@ -481,169 +495,203 @@ ItemEvents.tooltip(event => {
 				text.add(2, Text.gray('Holds energy for the network,'))
 				text.add(3, Text.gray('creating a buffer.'))
 				text.add(4, Text.gray('Optional, but recommended.'))
+				text.add(2, '')
 			}
 		})
 	})
 	event.addAdvanced('ae2:annihilation_plane', (item, advanced, text) => {
 		if(event.shift) {
-			text.add(1, Text.gray('Breaks blocks and picks up items'))
-			text.add(2, Text.gray('in the world, outputting to network'))
-			text.add(3, Text.gray('storage.'))
+			text.add(2, Text.gray('Breaks blocks and picks up items'))
+			text.add(3, Text.gray('in the world, outputting to network'))
+			text.add(4, Text.gray('storage.'))
+			text.add(2, '')
 		}
 	})
 	event.addAdvanced('ae2:formation_plane', (item, advanced, text) => {
 		if(event.shift) {
-			text.add(1, Text.gray('Can place or drop items in the world'))
-			text.add(2, Text.gray('when network storage pushes items to it.'))
+			text.add(2, Text.gray('Can place or drop items in the world'))
+			text.add(3, Text.gray('when network storage pushes items to it.'))
+			text.add(2, '')
 		}
 	})
 	event.addAdvanced('ae2:terminal', (item, advanced, text) => {
 		if(event.shift) {
-			text.add(1, Text.gray('Allows players to access and interact'))
-			text.add(2, Text.gray('directly with network storage.'))
+			text.add(2, Text.gray('Allows players to access and interact'))
+			text.add(3, Text.gray('directly with network storage.'))
+			text.add(2, '')
 		}
 	})
 	event.addAdvanced('ae2:crafting_terminal', (item, advanced, text) => {
 		if(event.shift) {
-			text.add(1, Text.gray('Allows players to access, interact, and'))
-			text.add(2, Text.gray('craft directly with network storage.'))
+			text.add(2, Text.gray('Allows players to access, interact, and'))
+			text.add(3, Text.gray('craft directly with network storage.'))
+			text.add(2, '')
 		}
 	})
 	event.addAdvanced('ae2:storage_monitor', (item, advanced, text) => {
 		if(event.shift) {
-			text.add(1, Text.gray('Displays an item and its amount'))
-			text.add(2, Text.gray('within network storage.'))
+			text.add(2, Text.gray('Displays an item and its amount'))
+			text.add(3, Text.gray('within network storage.'))
+			text.add(2, '')
 		}
 	})
 	event.addAdvanced('ae2:conversion_monitor', (item, advanced, text) => {
 		if(event.shift) {
-			text.add(1, Text.gray('Displays an item and its amount'))
-			text.add(2, Text.gray('within network storage.'))
-			text.add(3, Text.gray('Allows players to insert/extract items.'))
+			text.add(2, Text.gray('Displays an item and its amount'))
+			text.add(3, Text.gray('within network storage.'))
+			text.add(4, Text.gray('Allows players to insert/extract items.'))
+			text.add(2, '')
 		}
 	})
 	event.addAdvanced('ae2:level_emitter', (item, advanced, text) => {
 		if(event.shift) {
-			text.add(1, Text.gray('Emits redstone based on the amount'))
-			text.add(2, Text.gray('of the specified item in network storage.'))
+			text.add(2, Text.gray('Emits redstone based on the amount'))
+			text.add(3, Text.gray('of the specified item in network storage.'))
+			text.add(2, '')
 		}
 	})
 	event.addAdvanced('ae2:energy_level_emitter', (item, advanced, text) => {
 		if(event.shift) {
-			text.add(1, Text.gray('Emits redstone based on the amount'))
-			text.add(2, Text.gray('of energy in the network.'))
+			text.add(2, Text.gray('Emits redstone based on the amount'))
+			text.add(3, Text.gray('of energy in the network.'))
+			text.add(2, '')
 		}
 	})
 	event.addAdvanced('ae2:storage_bus', (item, advanced, text) => {
 		if(event.shift) {
-			text.add(1, Text.gray('Attaches external containers'))
-			text.add(2, Text.gray('(e.g. Chests) as network storage.'))
+			text.add(2, Text.gray('Attaches external containers'))
+			text.add(3, Text.gray('(e.g. Chests) as network storage.'))
+			text.add(2, '')
 		}
 	})
 	event.addAdvanced('ae2:import_bus', (item, advanced, text) => {
 		if(event.shift) {
-			text.add(1, Text.gray('Pulls items from the attached'))
-			text.add(2, Text.gray('container into network storage.'))
+			text.add(2, Text.gray('Pulls items from the attached'))
+			text.add(3, Text.gray('container into network storage.'))
+			text.add(2, '')
 		}
 	})
 	event.addAdvanced('ae2:export_bus', (item, advanced, text) => {
 		if(event.shift) {
-			text.add(1, Text.gray('Pushes items from network storage'))
-			text.add(2, Text.gray('into the attached container.'))
-			text.add(3, Text.gray('Must be filtered to operate.'))
+			text.add(2, Text.gray('Pushes items from network storage'))
+			text.add(3, Text.gray('into the attached container.'))
+			text.add(4, Text.gray('Must be filtered to operate.'))
+			text.add(2, '')
 		}
 	})
 	event.addAdvanced('ae2:quartz_fiber', (item, advanced, text) => {
 		if(event.shift) {
-			text.add(1, Text.gray('Allows a network to provide power'))
-			text.add(2, Text.gray('to another network, without making'))
-			text.add(3, Text.gray('a network connection.'))
+			text.add(2, Text.gray('Allows a network to provide power'))
+			text.add(3, Text.gray('to another network, without making'))
+			text.add(4, Text.gray('a network connection.'))
+			text.add(2, '')
 		}
 	})
 	event.addAdvanced('ae2:toggle_bus', (item, advanced, text) => {
 		if(event.shift) {
-			text.add(1, Text.gray('Allows a redstone signal to enable'))
-			text.add(2, Text.gray('connected devices on the other side.'))
+			text.add(2, Text.gray('Allows a redstone signal to enable'))
+			text.add(3, Text.gray('connected devices on the other side.'))
+			text.add(2, '')
 		}
 	})
 	event.addAdvanced('ae2:inverted_toggle_bus', (item, advanced, text) => {
 		if(event.shift) {
-			text.add(1, Text.gray('Allows a redstone signal to disable'))
-			text.add(2, Text.gray('connected devices on the other side.'))
+			text.add(2, Text.gray('Allows a redstone signal to disable'))
+			text.add(3, Text.gray('connected devices on the other side.'))
+			text.add(2, '')
 		}
 	})
 	event.addAdvanced('ae2:spatial_io_port', (item, advanced, text) => {
 		if(event.shift) {
-			text.add(1, Text.gray('Allows you to insert or extract an area stored'))
-			text.add(2, Text.gray('within a Spatial Cell. Activate with redstone.'))
+			text.add(2, Text.gray('Allows you to insert or extract an area stored'))
+			text.add(3, Text.gray('within a Spatial Cell. Activate with redstone.'))
+			text.add(2, '')
 		}
 	})
 	event.addAdvanced('ae2:wireless_terminal', (item, advanced, text) => {
 		if(event.shift) {
-			text.add(1, Text.gray('Access your ME network at a distance.'))
-			text.add(2, Text.gray('Pair to network with Wireless Access Point.'))
+			text.add(2, Text.gray('Access your ME network at a distance.'))
+			text.add(3, Text.gray('Pair to network with Wireless Access Point.'))
+			text.add(2, '')
 		}
 	})
 	event.addAdvanced('ae2:wireless_crafting_terminal', (item, advanced, text) => {
 		if(event.shift) {
-			text.add(1, Text.gray('Access your ME network at a distance.'))
-			text.add(2, Text.gray('Pair to network with Wireless Access Point.'))
+			text.add(2, Text.gray('Access your ME network at a distance.'))
+			text.add(3, Text.gray('Pair to network with Wireless Access Point.'))
+			text.add(2, '')
 		}
 	})
 	event.addAdvanced('ae2:wireless_booster', (item, advanced, text) => {
 		if(event.shift) {
-			text.add(1, Text.gray('Use with the Wireless Access Point.'))
-			text.add(2, Text.gray('Increases range and power usage.'))
+			text.add(2, Text.gray('Use with the Wireless Access Point.'))
+			text.add(3, Text.gray('Increases range and power usage.'))
+			text.add(2, '')
 		}
 	})
 	event.addAdvanced('ae2:me_p2p_tunnel', (item, advanced, text) => {
 		if(event.shift) {
-			text.add(1, Text.gray('Pair with a Memory Card.'))
-			text.add(2, Text.gray('Connects with another P2P Tunnel to'))
-			text.add(3, Text.gray('relay a network connection.'))
+			text.add(2, Text.gray('Pair with a Memory Card.'))
+			text.add(3, Text.gray('Connects with another P2P Tunnel to'))
+			text.add(4, Text.gray('relay a network connection.'))
+			text.add(2, '')
 		}
 	})
 	event.addAdvanced('ae2:redstone_p2p_tunnel', (item, advanced, text) => {
 		if(event.shift) {
-			text.add(1, Text.gray('Pair with a Memory Card.'))
-			text.add(2, Text.gray('Connects with another P2P Tunnel to'))
-			text.add(3, Text.gray('relay a redstone signal.'))
+			text.add(2, Text.gray('Pair with a Memory Card.'))
+			text.add(3, Text.gray('Connects with another P2P Tunnel to'))
+			text.add(4, Text.gray('relay a redstone signal.'))
+			text.add(2, '')
 		}
 	})
 	event.addAdvanced('ae2:item_p2p_tunnel', (item, advanced, text) => {
 		if(event.shift) {
-			text.add(1, Text.gray('Pair with a Memory Card.'))
-			text.add(2, Text.gray('Connects with another P2P Tunnel to'))
-			text.add(3, Text.gray('relay item transfer.'))
+			text.add(2, Text.gray('Pair with a Memory Card.'))
+			text.add(3, Text.gray('Connects with another P2P Tunnel to'))
+			text.add(4, Text.gray('relay item transfer.'))
+			text.add(2, '')
 		}
 	})
 	event.addAdvanced('ae2:fluid_p2p_tunnel', (item, advanced, text) => {
 		if(event.shift) {
-			text.add(1, Text.gray('Pair with a Memory Card.'))
-			text.add(2, Text.gray('Connects with another P2P Tunnel to'))
-			text.add(3, Text.gray('relay fluid transfer.'))
+			text.add(2, Text.gray('Pair with a Memory Card.'))
+			text.add(3, Text.gray('Connects with another P2P Tunnel to'))
+			text.add(4, Text.gray('relay fluid transfer.'))
+			text.add(2, '')
 		}
 	})
 	event.addAdvanced('ae2:fe_p2p_tunnel', (item, advanced, text) => {
 		if(event.shift) {
-			text.add(1, Text.gray('Pair with a Memory Card.'))
-			text.add(2, Text.gray('Connects with another P2P Tunnel to'))
-			text.add(3, Text.gray('relay energy transfer.'))
+			text.add(2, Text.gray('Pair with a Memory Card.'))
+			text.add(3, Text.gray('Connects with another P2P Tunnel to'))
+			text.add(4, Text.gray('relay energy transfer.'))
+			text.add(2, '')
 		}
 	})
 	event.addAdvanced('ae2:light_p2p_tunnel', (item, advanced, text) => {
 		if(event.shift) {
-			text.add(1, Text.gray('Pair with a Memory Card.'))
-			text.add(2, Text.gray('Connects with another P2P Tunnel to'))
-			text.add(3, Text.gray('relay light.'))
+			text.add(2, Text.gray('Pair with a Memory Card.'))
+			text.add(3, Text.gray('Connects with another P2P Tunnel to'))
+			text.add(4, Text.gray('relay light.'))
+			text.add(2, '')
 		}
 	})
 	event.addAdvanced('ae2:spatial_pylon', (item, advanced, text) => {
 		if(event.shift) {
-			text.add(1, Text.gray('Defines an area for use with'))
-			text.add(2, Text.gray('the Spatial IO Port.'))
+			text.add(2, Text.gray('Defines an area for use with'))
+			text.add(3, Text.gray('the Spatial IO Port.'))
+			text.add(2, '')
 		}
 	})
+	event.addAdvanced('ae2:condenser', (item, advanced, text) => {
+		if(event.shift) {
+			text.add(2, Text.gray('Can be used as a trash can for items and fluids.'))
+			text.add(3, Text.gray('Optionally, also creates Matter Balls.'))
+			text.add(2, '')
+		}
+	})
+	
 	//tooltips for camera mod
 	event.addAdvanced('camera:camera', (item, advanved, text) => {
 		text.add(1, Text.gray('Uses Paper from your inventory.'))
@@ -1113,7 +1161,6 @@ JEIEvents.hideItems(event => {
 		'ae2:cell_component_64k',
 		'ae2:cell_component_256k',
 		'ae2:spatial_cell_component_128',
-		'ae2:condenser',
 		'ae2:vibration_chamber',
 		'ae2:crystal_resonance_generator',
 		'ae2:spatial_anchor',
@@ -1138,6 +1185,17 @@ JEIEvents.hideItems(event => {
 		'ae2:cable_pattern_provider',
 		'ae2:pattern_access_terminal',
 		'ae2:pattern_encoding_terminal',
+		'ae2:crafting_pattern',
+		'ae2:processing_pattern',
+		'ae2:smithing_table_pattern',
+		'ae2:stonecutting_pattern',
+		'ae2:cable_bus',
+		'ae2:paint',
+		'ae2:matrix_frame',
+		'ae2:creative_item_cell',
+		'ae2:creative_fluid_cell',
+		'ae2:wrapped_generic_stack',
+		'ae2:creative_energy_cell',
 		'webdisplays:ownerthief',
 		'webdisplays:server',
 		'webdisplays:upgrade_gps',
