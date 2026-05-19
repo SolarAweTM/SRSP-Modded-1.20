@@ -7,5 +7,10 @@
 			{"name": "entity.player.attack.strong", "type": "event"},
 			{"name": "entity.player.attack.sweep", "type": "event"}
 		]
+	},
+	"ironic": {
+		"replace": true,
+		"subtitle": "Explosion",
+		"sounds": ["deltarune_explosion"]
 	}
 }

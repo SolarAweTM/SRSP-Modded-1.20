@@ -1,0 +1,7 @@
+{
+	"throw.shuriken": {
+		"replace": true,
+		"subtitle": "Bell tolls",
+		"sounds": ["undertaker_bell"]
+	}
+}

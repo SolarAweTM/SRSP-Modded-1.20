@@ -665,6 +665,70 @@
 			x: 5.0d
 			y: 1.5d
 		}
+		{
+			description: [
+				"Subtitle &7\"Explosion\"&r"
+				"Overwrites existing sound &owebdisplays:ironic&r"
+			]
+			icon: "ae2:tiny_tnt"
+			id: "1235CE19933DFC10"
+			rewards: [{
+				id: "31D263426EEEE61E"
+				item: {
+					Count: 1
+					id: "botania:cacophonium"
+					tag: {
+						sound: "webdisplays:ironic"
+						soundName: "Comic Explosion"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "5F7ACA00ABB4AD71"
+				item: "botania:cacophonium"
+				match_nbt: false
+				title: "Any Cacophonium"
+				type: "item"
+			}]
+			title: "Comic Explosion"
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			description: [
+				"Subtitle &7\"Bell tolls\"&r"
+				"Overwrites existing sound &otconstruct:throw.shuriken&r"
+			]
+			icon: "minecraft:bell"
+			id: "135F8E11199D6B05"
+			rewards: [{
+				id: "01886F3AE51D3551"
+				item: {
+					Count: 1
+					id: "botania:cacophonium"
+					tag: {
+						sound: "tconstruct:throw.shuriken"
+						soundName: "Undertaker Bell"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "5987607E31F93C8F"
+				item: "botania:cacophonium"
+				match_nbt: false
+				title: "Any Cacophonium"
+				type: "item"
+			}]
+			title: "Undertaker Bell"
+			x: 6.0d
+			y: 1.5d
+		}
 	]
 	title: "Cacophonium Compound"
 }
