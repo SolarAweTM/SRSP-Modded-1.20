@@ -45,6 +45,7 @@ ServerEvents.tags('block', event => {
 	event.add('framedblocks:frameable', 'immersiveengineering:steel_scaffolding_standard')
 	event.add('framedblocks:frameable', 'immersiveengineering:steel_scaffolding_grate_top')
 	event.add('framedblocks:frameable', 'immersiveengineering:steel_scaffolding_wooden_top')
+	event.add('framedblocks:frameable', '#quark:corundum')
 	event.add('framedblocks:blockentity_whitelisted', 'immersiveengineering:steel_scaffolding_standard')
 	event.add('framedblocks:blockentity_whitelisted', 'immersiveengineering:steel_scaffolding_grate_top')
 	event.add('framedblocks:blockentity_whitelisted', 'immersiveengineering:steel_scaffolding_wooden_top')
