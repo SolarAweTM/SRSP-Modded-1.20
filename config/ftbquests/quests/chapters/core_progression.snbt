@@ -7,8 +7,7 @@
 	icon: "ars_nouveau:apprentice_spell_book"
 	id: "550C8ADC0D852DB8"
 	images: [{
-		dependency: "42DC89D938676D7A"
-		dev: true
+		dependency: "4B35307F9085C96A"
 		height: 2.0d
 		image: "ars_nouveau:block/warp_portal"
 		rotation: 56.0d
@@ -1129,7 +1128,17 @@
 		}
 		{
 			dependencies: ["1312DBA1BBBD0602"]
-			description: ["&aWarp Scrolls&r are a feature in Ars Nouveau that will be discovered in a &dfuture phase&r. Look forward to it in &dPhase II&r."]
+			description: [
+				"&7&o(Worn Notebook: \"Warp Scroll\")&r"
+				""
+				"&aWarp Scrolls&r can be used to &dquickly teleport&r to a set location."
+				""
+				"To use, you must first &dbind a location&r to the Warp Scroll by &dsneak-right-clicking&r while holding one."
+				""
+				"After binding, you can then &dright-click while holding&r it at any time to instantly teleport to the bound location."
+				""
+				"Note that this variant of Warp Scroll &ccannot cross dimensions&r on its own."
+			]
 			icon: {
 				Count: 1
 				id: "ars_nouveau:warp_scroll"

@@ -2238,7 +2238,7 @@
 			}]
 			title: "Sprout"
 			x: 19.0d
-			y: 0.0d
+			y: 2.0d
 		}
 		{
 			icon: "biomesoplenty:bush"
@@ -2254,8 +2254,8 @@
 				type: "item"
 			}]
 			title: "Bush"
-			x: 18.5d
-			y: -0.5d
+			x: 17.0d
+			y: 2.0d
 		}
 		{
 			icon: "biomesoplenty:high_grass"
@@ -2764,8 +2764,8 @@
 				type: "item"
 			}]
 			title: "Flower Patch"
-			x: 18.0d
-			y: 3.0d
+			x: 18.5d
+			y: -0.5d
 		}
 		{
 			icon: "biomeswevegone:clover_patch"
@@ -2935,6 +2935,23 @@
 			}]
 			title: "Water Silk"
 			x: 17.0d
+			y: 0.0d
+		}
+		{
+			icon: "minecraft:pink_petals"
+			id: "152F239382251411"
+			rewards: [{
+				id: "56089D56DE2059FF"
+				item: "minecraft:pink_petals"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0CA2C2083C603A39"
+				item: "kubejs:flower_token"
+				type: "item"
+			}]
+			title: "Pink Petals"
+			x: 19.0d
 			y: 0.0d
 		}
 	]

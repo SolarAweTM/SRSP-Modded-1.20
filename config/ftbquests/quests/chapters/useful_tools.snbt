@@ -1760,11 +1760,11 @@
 		{
 			dependencies: ["695654EE3BCBE110"]
 			description: [
-				"The Camera is a handy tool for taking photos in-game and showing them off in the world."
+				"The &aCamera&r is a handy tool for &6taking photos in-game&r and showing them off in the world."
 				""
-				"To use the Camera, you need to have some Paper in your inventory. You can scroll the mouse to zoom in and out, and right-click to take a photo."
+				"To use the Camera, you need to have some &6Paper&r in your inventory. You can &ascroll&r the mouse to zoom in and out, and &aright-click&r to take a photo."
 				""
-				"These photos can then be placed in an Image Frame or Album for viewing."
+				"These photos can then be placed in an&6 Image Frame or Album&r for viewing."
 			]
 			icon: "camera:camera"
 			id: "36EA74BF7A83AD4B"
