@@ -112,8 +112,8 @@
 				type: "item"
 			}]
 			title: "Click"
-			x: 4.5d
-			y: -1.0d
+			x: 6.0d
+			y: 1.5d
 		}
 		{
 			description: [
@@ -176,8 +176,8 @@
 				type: "item"
 			}]
 			title: "Explosion"
-			x: 6.0d
-			y: -0.5d
+			x: 5.5d
+			y: -1.0d
 		}
 		{
 			description: [
@@ -304,8 +304,8 @@
 				type: "item"
 			}]
 			title: "This way! (Inklings)"
-			x: 5.0d
-			y: 0.5d
+			x: 5.5d
+			y: 1.0d
 		}
 		{
 			description: [
@@ -336,8 +336,8 @@
 				type: "item"
 			}]
 			title: "This way! (Octolings)"
-			x: 5.5d
-			y: 0.0d
+			x: 6.0d
+			y: 0.5d
 		}
 		{
 			description: [
@@ -368,8 +368,8 @@
 				type: "item"
 			}]
 			title: "Wither Spawn"
-			x: 6.0d
-			y: 0.5d
+			x: 5.5d
+			y: 0.0d
 		}
 		{
 			description: [
@@ -498,8 +498,8 @@
 				type: "item"
 			}]
 			title: "Botanical Brewery"
-			x: 5.5d
-			y: -1.0d
+			x: 6.0d
+			y: -0.5d
 		}
 		{
 			description: [
@@ -530,8 +530,8 @@
 				type: "item"
 			}]
 			title: "Metal Pipe Falling Sound Effect"
-			x: 4.5d
-			y: 1.0d
+			x: 5.0d
+			y: 1.5d
 		}
 		{
 			description: ["Pulls from sound &ominecraft:ui.toast.challenge_complete&r"]
@@ -559,8 +559,8 @@
 				type: "item"
 			}]
 			title: "Challenge Complete"
-			x: 6.5d
-			y: 1.0d
+			x: 4.5d
+			y: -1.0d
 		}
 		{
 			description: [
@@ -591,8 +591,8 @@
 				type: "item"
 			}]
 			title: "Beacon Select"
-			x: 5.5d
-			y: 1.0d
+			x: 5.0d
+			y: 0.5d
 		}
 		{
 			description: [
@@ -662,8 +662,8 @@
 				type: "item"
 			}]
 			title: "Speaking PvP"
-			x: 5.0d
-			y: 1.5d
+			x: 4.5d
+			y: 1.0d
 		}
 		{
 			description: [
@@ -726,8 +726,8 @@
 				type: "item"
 			}]
 			title: "Undertaker Bell"
-			x: 6.0d
-			y: 1.5d
+			x: 6.5d
+			y: 1.0d
 		}
 	]
 	title: "Cacophonium Compound"
