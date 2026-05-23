@@ -691,6 +691,14 @@ ItemEvents.tooltip(event => {
 			text.add(2, '')
 		}
 	})
+	event.addAdvanced('ae2:wireless_access_point', (item, advanced, text) => {
+		if(event.shift) {
+			text.add(2, Text.gray('Required to connect a Wireless Terminal'))
+			text.add(3, Text.gray('to the Network. Use Wireless Boosters'))
+			text.add(4, Text.gray('to improve range.'))
+			text.add(2, '')
+		}
+	})
 	
 	//tooltips for camera mod
 	event.addAdvanced('camera:camera', (item, advanved, text) => {

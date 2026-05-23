@@ -39,7 +39,6 @@ ServerEvents.recipes(e => {
 		'ae2:pattern_provider',
 		'ae2:molecular_assembler',
 		'ae2:blank_pattern',
-		'ae2:spatial_pylon',
 		'ae2:crafting_card',
 		'ae2:cable_pattern_provider',
 		'ae2:pattern_access_terminal',
