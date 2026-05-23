@@ -37,6 +37,11 @@
 			]
 			icon: "ae2:mysterious_cube"
 			id: "1AED6BCDB038D4EB"
+			rewards: [{
+				id: "25207C4993BC95E2"
+				type: "xp"
+				xp: 20
+			}]
 			tasks: [{
 				id: "31D9103D824F8E25"
 				item: {
@@ -81,6 +86,11 @@
 				"However, they also have a lot of differences. Check out the Getting Started page in the AE2 Guide for more info."
 			]
 			id: "6AB127E31D5A414C"
+			rewards: [{
+				id: "42324E19EEDC8C3C"
+				type: "xp"
+				xp: 20
+			}]
 			tasks: [{
 				id: "0E9F5234956F51E2"
 				item: "ae2:certus_quartz_crystal"
@@ -98,6 +108,11 @@
 				"You may also &6duplicate Inscriber Presses&r using an Iron Block in the Inscriber."
 			]
 			id: "22BBECAC2DD615CB"
+			rewards: [{
+				id: "71C0F3DA857BB95A"
+				type: "xp"
+				xp: 20
+			}]
 			tasks: [{
 				id: "079464259B17DD3B"
 				item: "ae2:inscriber"
@@ -115,6 +130,11 @@
 				"The &6most common use&r of the Charger is to produce &bCharged Certus Quartz&r, a useful material."
 			]
 			id: "683115B8304B1086"
+			rewards: [{
+				id: "44BC2E13EE42A63C"
+				type: "xp"
+				xp: 20
+			}]
 			tasks: [{
 				id: "5FB10653B14FB08A"
 				item: "ae2:charger"
@@ -131,6 +151,11 @@
 			]
 			description: ["By throwing &6Charged Certus Quartz, Redstone Dust, and some Nether Quartz&r into water, you can create &bFluix Crystals&r, which are extremely important in crafting many AE2 components."]
 			id: "6CEEC5D9627C306E"
+			rewards: [{
+				id: "3B31A5E03AAE5DFF"
+				type: "xp"
+				xp: 20
+			}]
 			tasks: [{
 				id: "10851BED8EEF084C"
 				item: "ae2:fluix_crystal"
@@ -154,6 +179,11 @@
 				"Silicon can be obtained by smelting &6Certus Quartz Dust&r, which can then be turned into printed silicon in the &6Inscriber&r."
 			]
 			id: "5A55E22C6CFF8ADA"
+			rewards: [{
+				id: "330E15DA872527A9"
+				type: "xp"
+				xp: 20
+			}]
 			tasks: [{
 				id: "5B62BBCC02F9815B"
 				item: {
@@ -193,6 +223,11 @@
 			]
 			description: ["In order to make use of AE2's logistics, you'll ideally need to build what's called an &bME Network&r &7(or ME System)&r. The specifics of this are detailed later in the questline, and also &6in the in-game guide&r."]
 			id: "6F1701A9FE54115B"
+			rewards: [{
+				id: "1674E19DAFC8344B"
+				type: "xp"
+				xp: 20
+			}]
 			tasks: [{
 				id: "780B01B2322CCF27"
 				title: "Getting the Network Components"
@@ -213,6 +248,11 @@
 			]
 			hide_dependency_lines: true
 			id: "50A92B36E634CEDF"
+			rewards: [{
+				id: "7A2B6B12E182160A"
+				type: "xp"
+				xp: 20
+			}]
 			tasks: [{
 				id: "3CB01AE13E94133E"
 				item: "ae2:drive"
@@ -233,6 +273,11 @@
 			]
 			hide_dependency_lines: true
 			id: "347D7F4667EFD64A"
+			rewards: [{
+				id: "37BE39A0CA5F124D"
+				type: "xp"
+				xp: 20
+			}]
 			tasks: [{
 				id: "67325920D90D2B7F"
 				item: {
@@ -272,6 +317,11 @@
 				"These Storage Cells &6have limits&r on how many items they can store, and it's a good idea to read the &b\"Bytes and Types\" page in the AE2 in-game guide&r in order to get a proper understanding of the mechanics."
 			]
 			id: "79B5CC5DBA7F77C2"
+			rewards: [{
+				id: "3BE0373420664E14"
+				type: "xp"
+				xp: 20
+			}]
 			tasks: [{
 				id: "633D6BFE1ABA8ADC"
 				item: {
@@ -334,6 +384,11 @@
 			hide_dependency_lines: true
 			id: "04AE773451C0EE14"
 			min_width: 300
+			rewards: [{
+				id: "58B205C5A7723A49"
+				type: "xp"
+				xp: 20
+			}]
 			tasks: [{
 				id: "0D77961172690E80"
 				item: {
@@ -424,6 +479,11 @@
 			]
 			hide_dependency_lines: true
 			id: "47C777F331C82EF4"
+			rewards: [{
+				id: "025F38877A32DE7E"
+				type: "xp"
+				xp: 20
+			}]
 			tasks: [{
 				id: "675C1CD55CBB49D9"
 				item: "ae2:controller"
@@ -451,6 +511,11 @@
 			]
 			id: "0B38F16DB41E2CB2"
 			min_width: 300
+			rewards: [{
+				id: "57000B3B2529E932"
+				type: "xp"
+				xp: 20
+			}]
 			tasks: [{
 				id: "42A65AE754998038"
 				title: "Understanding Channels"
@@ -486,6 +551,11 @@
 			]
 			id: "7C25D84F795B1729"
 			min_width: 250
+			rewards: [{
+				id: "391545704E7C52DE"
+				type: "xp"
+				xp: 20
+			}]
 			tasks: [{
 				id: "21B46384A1A25D19"
 				type: "checkmark"
@@ -506,6 +576,11 @@
 				"{ \"text\": \"[Misc Questline]\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"67A5093E7141315C\" } }"
 			]
 			id: "05975F3C6F36BD82"
+			rewards: [{
+				id: "2339D2F326C48FF7"
+				type: "xp"
+				xp: 20
+			}]
 			tasks: [{
 				id: "6805BECA0505FFFD"
 				title: "Next Steps"

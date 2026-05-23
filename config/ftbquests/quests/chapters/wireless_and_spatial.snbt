@@ -8,18 +8,245 @@
 	id: "6A278F11852240B6"
 	order_index: 1
 	quest_links: [ ]
-	quests: [{
-		dependencies: ["7C25D84F795B1729"]
-		id: "4B46EF307977674F"
-		size: 2.0d
-		tasks: [{
-			id: "57E4CB2085AEEC94"
-			title: "AE2: Wireless and Spatialk"
-			type: "checkmark"
-		}]
-		title: "AE2: Wireless and Spatial"
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			dependencies: ["7C25D84F795B1729"]
+			description: [
+				"&cThis quest chapter assumes you've already completed everything in the Getting Started chapter for AE2.&r"
+				""
+				"Here, you'll learn about &btwo new mechanics&r which will help integrate AE2 into the rest of your base."
+			]
+			id: "4B46EF307977674F"
+			size: 2.0d
+			tasks: [{
+				id: "57E4CB2085AEEC94"
+				title: "AE2: Wireless and Spatialk"
+				type: "checkmark"
+			}]
+			title: "AE2: Wireless and Spatial"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4B46EF307977674F"]
+			description: ["A &bWireless Reciever&r can be used to craft many important items useful for enabling &bwireless network access&r from your inventory."]
+			id: "0A2A0319BACEB798"
+			rewards: [{
+				id: "466B2F7AFE748D68"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "1700FF5513992281"
+				item: "ae2:wireless_receiver"
+				type: "item"
+			}]
+			title: "Wireless Access"
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0A2A0319BACEB798"]
+			description: [
+				"The &6Wireless Access Point&r allows a Wireless Terminal to connect to the Network from a range."
+				""
+				"By default, the range is only &baround 16 blocks&r, but you can increase it using &bWireless Boosters&r."
+				"Note that using boosters will also &cincrease power usage&r."
+			]
+			icon: "ae2:wireless_access_point"
+			id: "5C5D0D1FC0F1FE95"
+			rewards: [{
+				id: "7344EF839AC81556"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [
+				{
+					id: "101C645B4F8C2F3C"
+					item: "ae2:wireless_access_point"
+					type: "item"
+				}
+				{
+					id: "380966D73729C054"
+					item: "ae2:wireless_booster"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Wireless Access Point"
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0A2A0319BACEB798"]
+			description: [
+				"&6Wireless Terminals&r allow you to &baccess Network storage&r from a distance."
+				""
+				"To use, they must first be linked to a Network using a &bWireless Access Point&r, and then charged, &busing a Charger&r or anything else capable of charging items."
+				""
+				"The Terminals will slowly consume their stored power while in use."
+			]
+			icon: "ae2:wireless_terminal"
+			id: "0F5E51F6E2000A7C"
+			rewards: [{
+				id: "1322C329B8CCD53E"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "5173167466FBA21A"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"AE2 Wireless Terminals\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "ae2:wireless_terminal"
+							}
+							{
+								Count: 1b
+								id: "ae2:wireless_crafting_terminal"
+							}
+						]
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			title: "Wireless Terminals"
+			x: -0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4B46EF307977674F"]
+			description: [
+				"&o&7The AE2 in-game guide has a MUCH better explanation of Spatial Storage than this questline, so if you need more help, try looking there.&r"
+				""
+				"&6Spatial Storage&r is a mechanic in AE2 that allows you to &bcut-and-paste a selected area&r, wherever you desire."
+				""
+				"To get started, craft some &6Spatial Pylons&r, used to select the area to work with."
+				""
+				"Note that a valid Pylon &cmust be placed in a straight line&r, and cannot have bends."
+				""
+				"Each line of Pylons will consume its own channel."
+			]
+			id: "5C58E168DB13B1AA"
+			min_width: 250
+			rewards: [{
+				id: "403B08915BAD14A3"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "0A41B737ECA02110"
+				item: "ae2:spatial_pylon"
+				type: "item"
+			}]
+			title: "Spatial Storage"
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5C58E168DB13B1AA"]
+			description: [
+				"The &6Spatial IO Port&r is responsible for performing actions regarding &bmoving things in and out&r of Spatial Storage."
+				""
+				"Note that the &b\"Efficiency\"&r value is represented by how many &bSpatial Pylons&r are in the selected area. &6The higher the Efficiency, the lower the power cost.&r"
+				""
+				"To use, insert a &bSpatial Storage Cell&r into the left slot, then provide the IO Port with a &bredstone pulse&r &7(such as a Button)&r to swap the contents of the Spatial Cell with the contents of the selected area."
+				""
+				"Note that performing swap actions with the IO Port will take &can extreme amount of power&r, but it is not constant."
+			]
+			id: "125316F0D3A537A3"
+			min_width: 250
+			rewards: [{
+				id: "495D16D5E7B98CCD"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "1F637BC823FAAA0E"
+				item: "ae2:spatial_io_port"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5C58E168DB13B1AA"]
+			description: [
+				"&6Spatial Storage Cells&r will store the data needed to access an area within Spatial Storage. These are used with the &6IO Port&r to act as a &b\"clipboard\" of sorts&r in the cut-and-paste paradigm."
+				""
+				"Note that once a Spatial Storage Cell has been written to with a specific size of area, it &cCANNOT be rewritten with a different size&r. You must &bmake a new Cell&r to use a differently sized area."
+				""
+				"This is important as these Cells cannot rotate wither. &cA 4x4x8 area is NOT the same as an 8x4x4 area&r according to these Cells."
+			]
+			id: "510F9849ACDF6132"
+			rewards: [{
+				id: "5E5A6502A67B02F3"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "22FF6B98910EBDB1"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Phase II Spatial Cells\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "ae2:spatial_storage_cell_2"
+							}
+							{
+								Count: 1b
+								id: "ae2:spatial_storage_cell_16"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Spatial Storage Cells"
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"125316F0D3A537A3"
+				"510F9849ACDF6132"
+			]
+			description: [
+				"Use the &6AE2 in-game guide&r to set up a Spatial Storage setup &7(build an SCS)&r. Then, &binsert your Spatial Storage Cell into the IO Port&r and &bprovide a redstone pulse&r. You'll notice that &6anything&r in the defined area &7(the SCS)&r will have disappeared,&6 including entities&r."
+				""
+				"Putting the same Storage Cell back into the IO Port and providing another redstone pulse will &bbring back the contents&r stored in Spatial Storage. If you had placed more things in the defined area while something was already stored, you'll notice that the &bcontents have instead been swapped&r."
+				""
+				"Note that Spatial Storage stores everything in a &6separate dimension&r, which is important to note if you intend on putting anything functional inside."
+			]
+			id: "4ACFC616E3663F90"
+			min_width: 300
+			rewards: [{
+				id: "17F387F80AA4B29D"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "4311E834C293F002"
+				title: "Putting it All Together"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: -3.0d
+		}
+	]
 	title: "Wireless and Spatial"
 }
