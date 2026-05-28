@@ -8,16 +8,664 @@
 	id: "3D5F51BB54D94434"
 	order_index: 2
 	quest_links: [ ]
-	quests: [{
-		id: "67A5093E7141315C"
-		size: 2.0d
-		tasks: [{
-			id: "79F70BC879E26A25"
-			title: "AE2: Misc"
-			type: "checkmark"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			description: ["This quest chapter will cover the rest of what's available in AE2 that isn't covered by the other two chapters."]
+			id: "67A5093E7141315C"
+			size: 2.0d
+			tasks: [{
+				id: "79F70BC879E26A25"
+				title: "AE2: Misc"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["67A5093E7141315C"]
+			description: [
+				"The &bCharged Staff&r, despite being a Staff, is a &6melee weapon&r that deals &b6 damage&r &7(3 hearts)&r."
+				""
+				"It &6must be charged&r using a Charger or other means, and &6uses some energy&r with each attack."
+			]
+			id: "622759ED5548B269"
+			tasks: [{
+				id: "07C2C255B78E4B46"
+				item: "ae2:charged_staff"
+				match_nbt: false
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["67A5093E7141315C"]
+			description: [
+				"The &bMatter Cannon&r is a weapon that can be used to &6fire a variety of items&r at your adversaries:"
+				""
+				"- Various nuggets"
+				"- Matter and Paint Balls"
+				""
+				"The damage is dictated &bby the material&r itself, so a Uranium Nugget will deal much more damage than a Matter Ball."
+				""
+				"Charge this weapon using a Charger or other means."
+				""
+				"In order to load the Cannon with ammo, it can be &bused as a Storage Cell&r. Ideally, you'll want to use an &6ME Chest&r for this."
+				""
+				"The Cannon also supports a variety of &bupgrade cards&r, which can be applied with a&6 Cell Workbench&r."
+			]
+			id: "4965B2003FAFC7F5"
+			min_width: 250
+			tasks: [{
+				id: "7C90AF23295D2877"
+				item: {
+					Count: 1
+					id: "ae2:matter_cannon"
+					tag: { }
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["67A5093E7141315C"]
+			description: [
+				"The &bColor Applicator&r is a handy tool if you need to &6recolor blocks&r such as &bcables&r, terracotta, wool, and concrete."
+				""
+				"It can take &6Paint Balls and Dyes&r as ammo for recoloring blocks, and &6Snowballs&r can be used to remove colors off cables and paintball splotches left by a Matter Cannon."
+				""
+				"Like the Matter Cannon, this item &bfunctions as a Storage Cell&r, and can be filled with ammo ideally with an &6ME Chest&r."
+				""
+				"It must also be charged with power via a Charger or other means."
+			]
+			id: "04B6F3DB7402B007"
+			min_width: 250
+			subtitle: "You're blue now. That's my attack!"
+			tasks: [{
+				id: "092C1E525C3E7793"
+				item: {
+					Count: 1
+					id: "ae2:color_applicator"
+					tag: { }
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			title: "Color Applicator"
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["67A5093E7141315C"]
+			description: [
+				"&bPortable Cells&r function similarly to a &bWireless Terminal&r, however, they can also function &6exactly like a normal Storage Cell&r."
+				""
+				"When charged, you can use the Portable Cell &bin your hand&r to open its Terminal."
+			]
+			id: "4EE81CC5A55B37DD"
+			tasks: [{
+				id: "59108E90C9FE0C40"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Phase II Portable Cells\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "ae2:portable_item_cell_1k"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "ae2:portable_item_cell_4k"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "ae2:portable_fluid_cell_1k"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "ae2:portable_fluid_cell_4k"
+								tag: { }
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Portable Cells"
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["67A5093E7141315C"]
+			description: [
+				"The &bNetwork Tool&r is useful when dealing with networks, as it can &6display diagnostic information&r about a network on use, such as connected devices. "
+				""
+				"Like the wrench used to craft it, it can also &6easily remove cables and subparts&r individually, but it can no longer rotate blocks."
+				""
+				"The Tool can also be used in the air to open its own inventory, where you can put &bup to 9 stacks of upgrade cards&r, which will be accessible in most AE2 UIs."
+			]
+			id: "0E2995DC87230012"
+			subtitle: "The 64th wrench you'll ever need!"
+			tasks: [{
+				id: "265DB8C6F281B960"
+				item: "ae2:network_tool"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["67A5093E7141315C"]
+			description: [
+				"The &bME Chest&r can be used either as a network device, or on its own. It acts as a &6Terminal and a single Storage Cell slot&r in one block."
+				""
+				"This can be useful for &6refilling certain tools&r with items, such as the &bMatter Cannon and Color Applicator&r."
+				""
+				"If &6attached to a Network&r, the Chest's Terminal can only access the contents of the Storage Cell &6contained inside it&r, which could potentially be useful in some cases."
+			]
+			id: "59C800B2D13FF5AA"
+			tasks: [{
+				id: "4A7391029AA83456"
+				item: "ae2:chest"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["67A5093E7141315C"]
+			description: [
+				"The &6Matter Condenser&r is a &btrash can&r by default. However, it also has a &bcouple other modes&r. Note that the Condenser can take &6both items and fluids&r."
+				""
+				"By supplying it with at least a &61k ME Storage Component&r and selecting the &6correct mode&r, every &b256 items&r thrown into it will create &b1 Matter Ball&r."
+				""
+				"In &cPhase III&r, if supplied with at least a &664k ME Storage Component&r and in the correct mode, every &b256,000 items&r will create &b1 Singularity&r."
+			]
+			id: "3C6143272554BEED"
+			tasks: [{
+				id: "639A511369FB94F8"
+				item: "ae2:condenser"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["67A5093E7141315C"]
+			description: [
+				"The &bCell Workbench&r is a block that can be used to &6partition, or filter Storage Cells&r, limiting what items and types they can store."
+				""
+				"It also allows you to&6 apply upgrade cards&r to Storage Cells."
+			]
+			id: "7F7B090628D6E78A"
+			tasks: [{
+				id: "0FAD6015379C1EE6"
+				item: "ae2:cell_workbench"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["67A5093E7141315C"]
+			description: [
+				"The &bME IO Port&r will allow you to quickly &6dump the contents of a Storage Cell&r into network storage, or vice versa."
+				""
+				"The &6button in the middle&r allows you to select which direction contents are transferred. To begin transfers, &bplace a Storage Cell into the slots on the left side&r."
+				""
+				"Note that the IO Port is capable of consuming &blarge amounts of power&r in some cases, especially when &6Acceleration Cards&r are used."
+			]
+			id: "124A671CFD5F5E18"
+			tasks: [{
+				id: "4B7167A832032EC7"
+				item: "ae2:io_port"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["67A5093E7141315C"]
+			description: [
+				"The &bME Interface&r can be used for a &6variety of purposes&r, which honestly I cannot be bothered to explain in one quest."
+				""
+				"Hold &6G&r &7(default keybind)&r while hovering over the item to open the &bAE2 in-game guide&r to learn more."
+			]
+			icon: "ae2:interface"
+			id: "26AF696F0CE205BB"
+			tasks: [{
+				id: "4F1D5895FD1036C6"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"ME Interfaces\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "ae2:interface"
+							}
+							{
+								Count: 1b
+								id: "ae2:cable_interface"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["67A5093E7141315C"]
+			description: [
+				"&bEnergy Cells&r simply &6store energy&r for use across the Network, which can provide a buffer, helping prevent network brownouts."
+				""
+				"They will &6retain their stored energy&r when broken."
+			]
+			icon: {
+				Count: 1
+				id: "ae2:energy_cell"
+				tag: { }
+			}
+			id: "16F69160F70371C7"
+			tasks: [{
+				id: "3230F2B5D3E9EC59"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Energy Cells\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "ae2:energy_cell"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "ae2:dense_energy_cell"
+								tag: { }
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["67A5093E7141315C"]
+			description: [
+				"The &6ME Toggle Bus&r can be used to &6turn on and off&r a section of a network with a &6redstone signal&r."
+				""
+				"Note that performing this action &cmay cause the network with the Toggle Bus to reboot&r."
+			]
+			icon: "ae2:toggle_bus"
+			id: "5FB7088D49B3B553"
+			tasks: [{
+				id: "10616FAC45EE1895"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"ME Toggle Busses\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "ae2:toggle_bus"
+							}
+							{
+								Count: 1b
+								id: "ae2:inverted_toggle_bus"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "ME Toggle Bus"
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["67A5093E7141315C"]
+			description: [
+				"&bQuartz Fiber&r is useful for &6creating subnetworks&r, as it allows two networks to &bshare energy without forming a network connection&r."
+				""
+				"Note that this is not a normal cable, but rather must be attached to an existing cable."
+			]
+			id: "6276B14FB576AC9E"
+			tasks: [{
+				id: "1B1E8C5D203AC10F"
+				item: "ae2:quartz_fiber"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["67A5093E7141315C"]
+			description: [
+				"The &6ME Level Emitter&r will output a &6redstone signal&r based on the &bamount of a certain item&r in network storage."
+				""
+				"In &cPhase III&r, the Level Emitter is capable of some &6Autocrafting&r tasks."
+				""
+				"The &6Energy Level Emitter&r outputs a &6redstone signal&r based on a &bset threshold of energy available&r in the network."
+			]
+			id: "5B0626460622083C"
+			tasks: [{
+				id: "6FCC263942B485FA"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"ME Level Emitters\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "ae2:level_emitter"
+							}
+							{
+								Count: 1b
+								id: "ae2:energy_level_emitter"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "ME Level Emitter"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["67A5093E7141315C"]
+			description: [
+				"The &bME Storage Bus&r can be used to &6attach external storage&r &7(such as a Chest from another mod)&r to the Network. "
+				""
+				"While this can be used as an &6alternative to Drives and Storage Cells&r, it should still be &cused sparingly&r, as it &ccan cause lag&r in some cases:"
+				""
+				"- Having &clarge amounts of Storage Busses&r"
+				"- Storage Busses that are connected to &ccontainers with a large amount of slots&r"
+			]
+			id: "751FE2B41CA34DB5"
+			min_width: 250
+			tasks: [{
+				id: "6E70C5F60E37F9FB"
+				item: "ae2:storage_bus"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["67A5093E7141315C"]
+			description: [
+				"The &bME Import and Export Busses&r can be used to &6pull items from a container&r into network storage &7(Import Bus)&r, or &6push items from network storage&r into a container &7(Export Bus)&r."
+				""
+				"The main slots inside each bus' interface allow you to &bfilter what gets transferred&r. You can drag items into these filters from JEI."
+				""
+				"Note that the &6Export Bus must be filtered&r to function."
+			]
+			icon: "ae2:export_bus"
+			id: "14A02745C80A3AA8"
+			tasks: [{
+				id: "05B17B0622B07DCD"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"ME Import/Export Bus\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "ae2:import_bus"
+							}
+							{
+								Count: 1b
+								id: "ae2:export_bus"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "ME Import and Export Busses"
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["67A5093E7141315C"]
+			description: [
+				"&bP2P Tunnels&r are extremely useful, as they allow you to create block &6connections over a distance&r."
+				""
+				"The &bAE2 in-game guide&r has a much better explanation on how P2P works."
+			]
+			icon: "ae2:me_p2p_tunnel"
+			id: "08F51679BC1C4187"
+			tasks: [
+				{
+					id: "51D92F237D58DE79"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"ME P2P Tunnels\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "ae2:me_p2p_tunnel"
+								}
+								{
+									Count: 1b
+									id: "ae2:redstone_p2p_tunnel"
+								}
+								{
+									Count: 1b
+									id: "ae2:item_p2p_tunnel"
+								}
+								{
+									Count: 1b
+									id: "ae2:fluid_p2p_tunnel"
+								}
+								{
+									Count: 1b
+									id: "ae2:fe_p2p_tunnel"
+								}
+								{
+									Count: 1b
+									id: "ae2:light_p2p_tunnel"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5441042EBBE9A5C2"
+					item: {
+						Count: 1
+						id: "ae2:memory_card"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["67A5093E7141315C"]
+			description: [
+				"The &bME Formation Plane&r allows you to &6place blocks or drop items&r into the world."
+				""
+				"It functions like a Storage Bus that can only be inserted into."
+				""
+				"It can be &6filtered through its UI&r, and can also be set to place blocks or drop items."
+			]
+			id: "7F400C958BEEA9A5"
+			tasks: [{
+				id: "7D5143B8F72CEA16"
+				item: "ae2:formation_plane"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["67A5093E7141315C"]
+			description: [
+				"The &bME Annihilation Plane&r will &6break blocks and pick up dropped items&r in front of it, and put the results into network storage."
+				""
+				"Note that unlike the Formation Plane, the Annihilation Plane &ccannot be filtered&r, and thus must be filtered in other ways, such as using a &6subnetwork&r."
+				""
+				"Also unlike the Formation Plane, the Annihilation Plane &bcan be enchanted&r with most pickaxe enchantments."
+			]
+			id: "74AA2CCBAFE6647A"
+			tasks: [{
+				id: "08A819B25F78FD78"
+				item: "ae2:annihilation_plane"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["67A5093E7141315C"]
+			description: [
+				"The &6ME Storage Monitor&r allows you to display &6how much of an item you have&r in network storage. &6Sneak-right-clicking&r on the Monitor locks it, &bpreventing the item from being overwritten&r."
+				""
+				"The &6Conversion Monitor&r allows you to &binsert and extract items&r from the Monitor, similar in function to a Drawer."
+			]
+			id: "7B976262E1899D23"
+			tasks: [{
+				id: "22AD046E6189EF4B"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"ME Storage and Conversion Monitors\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "ae2:storage_monitor"
+							}
+							{
+								Count: 1b
+								id: "ae2:conversion_monitor"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["67A5093E7141315C"]
+			description: [
+				"&bCable Anchors&r are useful for &6preventing cables from connecting&r with each other, by blocking a cable connection on the side it's attached to."
+				""
+				"&bCable Facades&r, on the other hand, are &6purely visual&r, and will allow cables to connect through the Facade."
+				""
+				"A Facade can be crafted by surrounding &6any block&r with 4 Cable Anchors in crafting."
+			]
+			icon: {
+				Count: 1
+				id: "ae2:facade"
+				tag: {
+					item: "minecraft:oak_planks"
+				}
+			}
+			id: "18F722F1C77CBAFA"
+			subtitle: "congratulations AE2 you bloated JEI"
+			tasks: [{
+				id: "0A8C52E620034C68"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Cable Anchors and Facades\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "ae2:cable_anchor"
+							}
+							{
+								Count: 1b
+								id: "ae2:facade"
+								tag: {
+									item: "minecraft:oak_planks"
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["67A5093E7141315C"]
+			description: [
+				"The &bEntropy Manipulator&r can perform a variety of actions on blocks by &6right-clicking or sneak-right-clicking&r:"
+				""
+				"- Freeze or evaporate water"
+				"- Turn lava into obsidian"
+				"- Turn logs into charcoal"
+				"- Turn cobblestone into stone and vice versa"
+				""
+				"On any other action, it will simply act as a &bflint and steel&r."
+			]
+			id: "56963B875765046C"
+			tasks: [{
+				id: "49404712F06C8569"
+				item: "ae2:entropy_manipulator"
+				match_nbt: false
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.0d
+		}
+	]
 	title: "Misc"
 }
