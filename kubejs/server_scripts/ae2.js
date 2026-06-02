@@ -4,10 +4,8 @@ console.info('-KubeJS- Applied Energistics 2 server script loaded.')
 
 ServerEvents.recipes(e => {
 	const ae2_disabled_items = [
-		'ae2:item_storage_cell_16k',
 		'ae2:item_storage_cell_64k',
 		'ae2:item_storage_cell_256k',
-		'ae2:fluid_storage_cell_16k',
 		'ae2:fluid_storage_cell_64k',
 		'ae2:fluid_storage_cell_256k',
 		'ae2:spatial_storage_cell_128',
@@ -15,17 +13,14 @@ ServerEvents.recipes(e => {
 		'ae2:quantum_entangled_singularity',
 		'ae2:quantum_ring',
 		'ae2:quantum_link',
-		'ae2:cell_component_16k',
 		'ae2:cell_component_64k',
 		'ae2:cell_component_256k',
 		'ae2:spatial_cell_component_128',
 		'ae2:vibration_chamber',
 		'ae2:crystal_resonance_generator',
 		'ae2:spatial_anchor',
-		'ae2:portable_item_cell_16k',
 		'ae2:portable_item_cell_64k',
 		'ae2:portable_item_cell_256k',
-		'ae2:portable_fluid_cell_16k',
 		'ae2:portable_fluid_cell_64k',
 		'ae2:portable_fluid_cell_256k',
 		'ae2:crafting_unit',

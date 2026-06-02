@@ -323,7 +323,7 @@
 				xp: 20
 			}]
 			tasks: [{
-				id: "633D6BFE1ABA8ADC"
+				id: "252638910F709F3E"
 				item: {
 					Count: 1
 					id: "itemfilters:or"
@@ -345,12 +345,22 @@
 							}
 							{
 								Count: 1b
+								id: "ae2:item_storage_cell_16k"
+								tag: { }
+							}
+							{
+								Count: 1b
 								id: "ae2:fluid_storage_cell_1k"
 								tag: { }
 							}
 							{
 								Count: 1b
 								id: "ae2:fluid_storage_cell_4k"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "ae2:fluid_storage_cell_16k"
 								tag: { }
 							}
 						]
