@@ -481,7 +481,7 @@
 				type: "item"
 			}]
 			title: "Origin Sapling"
-			x: 22.5d
+			x: 22.0d
 			y: 3.5d
 		}
 		{
@@ -838,7 +838,7 @@
 				type: "item"
 			}]
 			title: "Blue Enchanted Sapling"
-			x: 19.5d
+			x: 19.0d
 			y: 3.5d
 		}
 		{
@@ -923,7 +923,7 @@
 				type: "item"
 			}]
 			title: "Green Enchanted Sapling"
-			x: 18.5d
+			x: 18.0d
 			y: 3.5d
 		}
 		{
@@ -1093,7 +1093,7 @@
 				type: "item"
 			}]
 			title: "White Sakura Sapling"
-			x: 20.5d
+			x: 20.0d
 			y: 3.5d
 		}
 		{
@@ -1110,7 +1110,7 @@
 				type: "item"
 			}]
 			title: "Yellow Sakura Sapling"
-			x: 21.5d
+			x: 21.0d
 			y: 3.5d
 		}
 		{
@@ -1382,7 +1382,7 @@
 				type: "item"
 			}]
 			title: "Orchard Sapling"
-			x: 23.5d
+			x: 23.0d
 			y: 3.5d
 		}
 		{
@@ -1660,7 +1660,7 @@
 				type: "item"
 			}]
 			title: "Dreadwood Sapling"
-			x: 17.5d
+			x: 17.0d
 			y: 3.5d
 		}
 		{
@@ -1718,6 +1718,30 @@
 			title: "Sell Saplings (x10)"
 			x: -1.0d
 			y: -2.0d
+		}
+		{
+			dependencies: ["1969E3A133A34850"]
+			description: [
+				"This sapling requires you to possess knowledge about the &5Otherworld&r in order to obtain."
+				""
+				"See the &6Occultism&r questlines."
+			]
+			icon: "occultism:otherworld_sapling"
+			id: "44EA59D7F49E971F"
+			rewards: [{
+				id: "6A61B5B8C2540880"
+				item: "occultism:otherworld_sapling"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "0BF9E2EAC27E0EBE"
+				item: "kubejs:trizzco_point"
+				type: "item"
+			}]
+			title: "Otherworld Sapling"
+			x: 24.0d
+			y: 3.5d
 		}
 	]
 	title: "Sapling Exchange"
