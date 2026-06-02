@@ -1,4 +1,5 @@
 {
+	autofocus_id: "19F0D6BE6B83B60E"
 	default_hide_dependency_lines: false
 	default_quest_shape: "diamond"
 	filename: "core_progression_2"
@@ -13,6 +14,58 @@
 	id: "4698259BCB2D478A"
 	order_index: 0
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			description: [
+				"&5Occultism&r is a mod about &6rituals and spirits&r, surrounding the &5Otherworld&r, a realm of demons."
+				""
+				"This quest chapter will help you get started with the mod."
+				""
+				"Start by getting your hands on a &5Dictionary of Spirits&r - you can get &5Demon's Dream Seeds&r from breaking grass. One can also be found in your &6Eccentric Tome&r."
+			]
+			id: "19F0D6BE6B83B60E"
+			size: 2.0d
+			subtitle: "Join the Occult, Dad!"
+			tasks: [{
+				id: "2A2E556C6A3092DA"
+				item: {
+					Count: 1
+					id: "occultism:dictionary_of_spirits"
+					tag: {
+						"modonomicon:book_id": "occultism:dictionary_of_spirits"
+						"modonomicon:book_open_state": "closed"
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			title: "Occultism"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["19F0D6BE6B83B60E"]
+			description: [
+				"By planting and growing some &5Demon's Dream Seeds&r, you'll get its fruit."
+				""
+				"While eating it does &6give you Hunger&r, it also has a chance to &6give you its special effect&r, allowing you to &6see and interact with&r &5Otherworld&r &6materials&r such as &5trees and stone&r."
+				""
+				"Of note, you might want to eat these &6outside the Phase I world generation&r &7(beyond 5000 blocks away from spawn)&r, or else you'll find nothing."
+				""
+				"Without the effects of the Fruit, these Otherworld materials will simply take the shape of and behave exactly like placed &6Oak Trees and Andesite&r."
+			]
+			id: "1969E3A133A34850"
+			min_width: 250
+			subtitle: "Minecraft: Otherworld"
+			tasks: [{
+				id: "74A075281335BA43"
+				item: "occultism:datura"
+				type: "item"
+			}]
+			title: "Lifting the Veil"
+			x: 1.0d
+			y: 1.0d
+		}
+	]
 	title: "Core Progression"
 }
