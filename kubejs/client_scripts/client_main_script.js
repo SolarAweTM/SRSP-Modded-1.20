@@ -1204,7 +1204,8 @@ JEIEvents.hideItems(event => {
 		'webdisplays:craftcomp_batpack',
 		'webdisplays:craftcomp_backlight',
 		'webdisplays:craftcomp_extcard',
-		'webdisplays:craftcomp_badextcard'
+		'webdisplays:craftcomp_badextcard',
+		'createaddition:redstone_relay'
 	]
 	hidden_items.forEach(item => {
 		event.hide(item) // noted: this also removes them from creative menus

@@ -164,6 +164,28 @@ ServerEvents.recipes(event => {
 	event.recipes.create.mixing(['64x biomesoplenty:white_sand'],['64x minecraft:sand', 'minecraft:white_dye'])
 	event.recipes.create.mixing(['64x biomesoplenty:orange_sand'],['64x minecraft:sand', 'minecraft:orange_dye'])
 	event.recipes.create.mixing(['64x biomesoplenty:black_sand'],['64x minecraft:sand', 'minecraft:black_dye'])
+	
+	//tesla coil
+	event.remove({id:'createaddition:mechanical_crafting/tesla_coil'})
+	event.recipes.create.mechanical_crafting('createaddition:tesla_coil',
+		[
+		'CCC',
+		' A ',
+		'PBP',
+		'SES'
+		],
+		{
+			C: 'immersiveengineering:wirecoil_copper',
+			A: 'create:andesite_alloy',
+			P: 'createaddition:capacitor',
+			B: 'create:brass_casing',
+			S: 'create:brass_sheet',
+			E: 'create:electron_tube'
+		}
+	)
+	
+	//definitely didnt forget this
+	event.remove({output:'createaddition:redstone_relay'})
 })
 
 ServerEvents.tags('item', event => {
