@@ -1720,7 +1720,7 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["1969E3A133A34850"]
+			dependencies: ["0C5ED1A1B0FDB204"]
 			description: [
 				"This sapling requires you to possess knowledge about the &5Otherworld&r in order to obtain."
 				""

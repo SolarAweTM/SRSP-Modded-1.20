@@ -920,7 +920,7 @@
 			description: [
 				"&aWaystones&r are magical stones that can appear in many places in the world, from randomly finding them to appearing in a village."
 				""
-				"&aRight clicking&r a Waystone will mark it as discovered for you, and from there, you can teleport to &aany other Waystone&r that you have discovered. If the distance between Waystones is large enough, there may also be an &aXP cost&r associated with the destination."
+				"&aRight clicking&r a Waystone will mark it as discovered for you, and from there, you can teleport to &aany other Waystone&r that you have discovered."
 				""
 				"&6Waystones work across dimensions&r, and you can pick up and move Waystones as long as you have a pickaxe on hand."
 			]

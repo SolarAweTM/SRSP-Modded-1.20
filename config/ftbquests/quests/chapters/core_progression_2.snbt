@@ -66,6 +66,95 @@
 			x: 1.0d
 			y: 1.0d
 		}
+		{
+			dependencies: ["1969E3A133A34850"]
+			description: [
+				"By throwing down some &6Demon's Dream Fruit&r, and setting it on fire, you can create &5Spiritfire&r."
+				""
+				"Spiritfire does not deal damage, but can be used to &6transform resources into others&r, making them easier to obtain."
+				""
+				"For example, you can throw in &6Andesite&r to get &5Otherstone&r, and &6Oak Saplings&r to get &5Otherworld Saplings&r &7(will still appear like Oak Saplings)&r."
+				""
+				"You may also throw in &6Otherworld Wood&r to get &5Otherworld Ashes&r, and a &6Diamond&r to get a &5Spirit Attuned Gem&r."
+			]
+			icon: "occultism:spirit_fire"
+			id: "0C5ED1A1B0FDB204"
+			tasks: [{
+				id: "3430CC1FBEE5DFAB"
+				item: "occultism:spirit_attuned_gem"
+				type: "item"
+			}]
+			title: "Spiritfire"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0C5ED1A1B0FDB204"]
+			description: [
+				"The &5Divination Rod&r serves as a way to locate &6nearby Otherworld resources&r within the world."
+				""
+				"To use, you must first attune a block to search for, by sneak-right-clicking a compatible block:"
+				"- Andesite for Otherstone"
+				"- Oak Logs and Leaves for Otherworld Wood and Leaves"
+				"- Netherrack for Iesnium Ore"
+			]
+			id: "762D25E23317A22A"
+			tasks: [{
+				id: "683D988008D6BCDA"
+				item: {
+					Count: 1
+					id: "occultism:divination_rod"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Divination"
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0C5ED1A1B0FDB204"]
+			id: "4FC6B82C56937755"
+			tasks: [
+				{
+					id: "1E19CB20D5C7F005"
+					item: {
+						Count: 1
+						id: "occultism:chalk_white"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2450217FE46BDFFD"
+					item: "occultism:golden_sacrificial_bowl"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "1CB7D3EFE7EC6234"
+					item: { Count: 4, id: "occultism:sacrificial_bowl" }
+					type: "item"
+				}
+				{
+					id: "60287AE40E156A50"
+					item: {
+						Count: 1
+						id: "occultism:book_of_binding_bound_foliot"
+						tag: {
+							spiritName: "Fehdemon"
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "Ritual Preparations"
+			x: 3.0d
+			y: -1.0d
+		}
 	]
 	title: "Core Progression"
 }
