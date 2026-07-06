@@ -727,10 +727,34 @@ ServerEvents.customCommand('8ball', event => {
         "Magic 8 Ball left the game",
         "you should TOTALLY try it and see what happens",
         "weak ass question",
-        "Yeah!!!!!!!!"
+        "Yeah!!!!!!!!",
+        "a",
+        "jump for the beef",
+        "play unbeatable",
+        "find my pages",
+        "throw grappling hook into nether portal",
+        "Yes.",
+        "No.",
+        "grok is this true",
+        "please do better",
+        "seek the Framed Extended Inner Double Slope Panel Corner",
+        "eat 3 weetbix",
+        "dude wtf",
+        "check inventory",
+        "<!> Navigation failed",
+        "woe, 70 thousand shulker bullets be upon ye",
+        "Welcome!",
+        "Your dad's my best friend.",
+        "San Frandisco!",
+        "Sorry to keep you waiting!",
+        "With your powers combined...",
+        "Jarona!",
+        "You owe me $5",
+        "We're all gonna beat you with hammers for your crimes",
+        "hold alt and freecam"
     ]
-    let number = (Math.round(Math.random()*100) % 35)
-    if(number == 32) {
+    let number = (Math.round(Math.random()*100) % 59)
+    if(number == 31) {
     	event.server.runCommandSilent('/tellraw @a {"text":"Magic 8 Ball ", "color":"blue", "extra":[{"text":"left the game", "color":"yellow"}]}');
     }
     else {
@@ -741,6 +765,17 @@ ServerEvents.customCommand('8ball', event => {
     }
     else {
         event.server.runCommandSilent('/execute at ' + event.player.username + ' run playsound minecraft:entity.experience_orb.pickup master @p ~ ~ ~')
+    }
+})
+
+ServerEvents.customCommand('countitems', event => {
+    if(event.player.username == "SolarAweTM"){
+        event.server.runCommandSilent('/execute at @e[type=item] run scoreboard players add DroppedItems Data 1')
+        event.server.runCommandSilent('/tellraw ' + event.player.username + ' {"text":"Total item entities in world: ", "extra":[{"score":{"name":"DroppedItems","objective":"Data"}}]}')
+        event.server.runCommandSilent('/scoreboard players reset DroppedItems Data')
+    }
+    else{
+        event.server.runCommandSilent('/tellraw ' + event.player.username + '"Insufficient permissions"')
     }
 })
 
