@@ -186,7 +186,7 @@ ServerEvents.recipes(event => {
 		true
 	)
 	
-	event.remove({id:'ars_nouveau:glyph_leap'}) //re-enable and rebalance in a later phase
+	//event.remove({id:'ars_nouveau:glyph_leap'}) //re-enable and rebalance in a later phase
 	/* TODO: FUTURE PHASE
 	event.recipes.ars_nouveau.glyph(
 		'ars_nouveau:glyph_leap', //glyph output (must be a glyph)
@@ -196,15 +196,13 @@ ServerEvents.recipes(event => {
 	*/
 	
 	event.remove({id:'ars_nouveau:shapers_focus'}) //make shapers focus harder to obtain (actually in a later phase)
-	/* TODO: FUTURE PHASE
 	event.recipes.ars_nouveau.enchanting_apparatus(
-		['minecraft:netherite_block', 'botania:manasteel_block', 'crittersandcompanions:sea_bunny_slime_block', 'minecraft:piston'], //reagents
+		['minecraft:netherite_block', 'crittersandcompanions:sea_bunny_slime_block', 'ars_elemental:mark_of_mastery', '#iceandfire:dragon_hearts'], //reagents
 		'ars_nouveau:manipulation_essence', //input item
 		'ars_nouveau:shapers_focus', //output item
 		1000, //source cost
 		false //keep nbt of input item?
 	)
-	*/
 	
 	event.remove({id:'ars_nouveau:thread_life_drain'}) //remove the thread of life drain
 	//event.remove({id:'ars_nouveau:thread_magic_capacity'}) //remove the thread of magic capacity

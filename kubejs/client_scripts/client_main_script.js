@@ -67,11 +67,6 @@ ItemEvents.tooltip(event => {
 		}
 	})
 	
-	//lock leap
-	event.addAdvanced('ars_nouveau:glyph_leap', (item, advanced, text) => {
-		text.add(2, Text.red('Disabled in current phase.'))
-	})
-	
 	//notify of focus adjustment
 	/* TODO: FUTURE PHASE
 	event.addAdvanced('ars_nouveau:shapers_focus', (item, advanced, text) => {
