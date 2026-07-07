@@ -729,6 +729,99 @@
 			x: 6.5d
 			y: 1.0d
 		}
+		{
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "create:super_glue"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0C3CF2470CB1FC18"
+			rewards: [{
+				id: "06F606BBFBD0594D"
+				item: {
+					Count: 1
+					id: "botania:cacophonium"
+					tag: {
+						sound: "tconstruct:crossbow_reload"
+						soundName: "Hey guys, I think I found a glue!"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "78683E02445ECCF8"
+				item: "botania:cacophonium"
+				match_nbt: false
+				title: "Any Cacophonium"
+				type: "item"
+			}]
+			title: "\"Hey guys, I think I found a glue!\""
+			x: 5.5d
+			y: -2.0d
+		}
+		{
+			hide_until_deps_complete: true
+			icon: "artifacts:power_glove"
+			id: "1FFD164C0B2940DC"
+			rewards: [{
+				id: "4C5F5749CFBF8414"
+				item: {
+					Count: 1
+					id: "botania:cacophonium"
+					tag: {
+						sound: "tconstruct:charged"
+						soundName: "Jarona!"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "0665B88008ED30EF"
+				item: "botania:cacophonium"
+				match_nbt: false
+				title: "Any Cacophonium"
+				type: "item"
+			}]
+			title: "\"Jarona!\""
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			hide_until_deps_complete: true
+			icon: "minecraft:paper"
+			id: "497D5F01BCC57DD7"
+			rewards: [{
+				id: "6D6EFFBF91AA74E8"
+				item: {
+					Count: 1
+					id: "botania:cacophonium"
+					tag: {
+						sound: "tconstruct:discharge"
+						soundName: "Sorry about that, guys!"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "03BBABC9629BBE77"
+				item: "botania:cacophonium"
+				match_nbt: false
+				title: "Any Cacophonium"
+				type: "item"
+			}]
+			title: "\"Sorry about that, guys!\""
+			x: 5.5d
+			y: 2.0d
+		}
 	]
 	title: "Cacophonium Compound"
 }

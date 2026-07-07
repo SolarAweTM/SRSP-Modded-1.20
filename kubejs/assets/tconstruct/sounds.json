@@ -3,5 +3,20 @@
 		"replace": true,
 		"subtitle": "Bell tolls",
 		"sounds": ["undertaker_bell"]
+	},
+	"crossbow_reload": {
+		"replace": true,
+		"subtitle": "Hey guys, I think I found a glue!",
+		"sounds": ["flowery1"]
+	},
+	"charged": {
+		"replace": true,
+		"subtitle": "Jarona!",
+		"sounds": ["jarona1", "jarona2", "jarona3", "jarona4"]
+	},
+	"discharge": {
+		"replace": true,
+		"subtitle": "Sorry about that, guys!",
+		"sounds": ["flowery2"]
 	}
 }
