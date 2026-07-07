@@ -28,7 +28,7 @@
 				type: "item"
 			}]
 			title: "Glyphs"
-			x: 0.0d
+			x: -2.0d
 			y: 0.0d
 		}
 		{
@@ -53,7 +53,7 @@
 				title: "Form Glyphs"
 				type: "dimension"
 			}]
-			x: 0.0d
+			x: -2.0d
 			y: 2.0d
 		}
 		{
@@ -74,7 +74,7 @@
 				type: "dimension"
 			}]
 			title: "Projectile"
-			x: -0.5d
+			x: -2.5d
 			y: 3.0d
 		}
 		{
@@ -95,7 +95,7 @@
 				type: "dimension"
 			}]
 			title: "Self"
-			x: -1.5d
+			x: -3.5d
 			y: 3.0d
 		}
 		{
@@ -120,7 +120,7 @@
 				type: "dimension"
 			}]
 			title: "Touch"
-			x: 0.5d
+			x: -1.5d
 			y: 3.0d
 		}
 		{
@@ -138,7 +138,7 @@
 				type: "item"
 			}]
 			title: "Underfoot"
-			x: 1.5d
+			x: -0.5d
 			y: 3.0d
 		}
 		{
@@ -178,7 +178,7 @@
 				type: "item"
 			}]
 			title: "Tier 1 Glyphs"
-			x: -3.5d
+			x: -4.0d
 			y: -2.0d
 		}
 		{
@@ -224,7 +224,7 @@
 				type: "dimension"
 			}]
 			title: "Break"
-			x: -3.5d
+			x: -4.0d
 			y: -3.0d
 		}
 		{
@@ -251,7 +251,7 @@
 				type: "dimension"
 			}]
 			title: "Harm"
-			x: -4.5d
+			x: -5.0d
 			y: -3.0d
 		}
 		{
@@ -274,7 +274,7 @@
 				type: "item"
 			}]
 			title: "Amplify"
-			x: -2.5d
+			x: -3.0d
 			y: -3.0d
 		}
 		{
@@ -297,7 +297,7 @@
 				type: "item"
 			}]
 			title: "Bounce"
-			x: -4.5d
+			x: -5.0d
 			y: -5.0d
 		}
 		{
@@ -315,7 +315,7 @@
 				type: "item"
 			}]
 			title: "Randomize"
-			x: -4.0d
+			x: -4.5d
 			y: -4.0d
 		}
 		{
@@ -340,7 +340,7 @@
 				type: "item"
 			}]
 			title: "Sensitive"
-			x: -3.0d
+			x: -3.5d
 			y: -4.0d
 		}
 		{
@@ -363,7 +363,7 @@
 				type: "item"
 			}]
 			title: "Conjure Mageblock"
-			x: -3.5d
+			x: -4.0d
 			y: -5.0d
 		}
 		{
@@ -385,7 +385,7 @@
 				type: "item"
 			}]
 			title: "Dispel"
-			x: -2.5d
+			x: -3.0d
 			y: -5.0d
 		}
 		{
@@ -403,7 +403,7 @@
 				type: "item"
 			}]
 			title: "Craft"
-			x: -4.0d
+			x: -4.5d
 			y: -6.0d
 		}
 		{
@@ -426,7 +426,7 @@
 				type: "item"
 			}]
 			title: "Cut"
-			x: -3.0d
+			x: -3.5d
 			y: -6.0d
 		}
 		{
@@ -450,7 +450,7 @@
 				type: "item"
 			}]
 			title: "Delay"
-			x: -4.5d
+			x: -5.0d
 			y: -7.0d
 		}
 		{
@@ -473,7 +473,7 @@
 				type: "item"
 			}]
 			title: "Evaporate"
-			x: -3.5d
+			x: -4.0d
 			y: -7.0d
 		}
 		{
@@ -497,7 +497,7 @@
 				type: "item"
 			}]
 			title: "Fell"
-			x: -2.5d
+			x: -3.0d
 			y: -7.0d
 		}
 		{
@@ -522,7 +522,7 @@
 				type: "item"
 			}]
 			title: "Freeze"
-			x: -4.0d
+			x: -4.5d
 			y: -8.0d
 		}
 		{
@@ -540,7 +540,7 @@
 				type: "item"
 			}]
 			title: "Harvest"
-			x: -3.0d
+			x: -3.5d
 			y: -8.0d
 		}
 		{
@@ -563,7 +563,7 @@
 				type: "item"
 			}]
 			title: "Ignite"
-			x: -4.5d
+			x: -5.0d
 			y: -9.0d
 		}
 		{
@@ -586,7 +586,7 @@
 				type: "item"
 			}]
 			title: "Interact"
-			x: -3.5d
+			x: -4.0d
 			y: -9.0d
 		}
 		{
@@ -609,7 +609,7 @@
 				type: "item"
 			}]
 			title: "Item Pickup"
-			x: -2.5d
+			x: -3.0d
 			y: -9.0d
 		}
 		{
@@ -632,7 +632,7 @@
 				type: "item"
 			}]
 			title: "Knockback"
-			x: -4.0d
+			x: -4.5d
 			y: -10.0d
 		}
 		{
@@ -657,7 +657,7 @@
 				type: "item"
 			}]
 			title: "Launch"
-			x: -3.0d
+			x: -3.5d
 			y: -10.0d
 		}
 		{
@@ -679,7 +679,7 @@
 				type: "item"
 			}]
 			title: "Place Block"
-			x: -4.5d
+			x: -5.0d
 			y: -11.0d
 		}
 		{
@@ -702,7 +702,7 @@
 				type: "item"
 			}]
 			title: "Pull"
-			x: -3.5d
+			x: -4.0d
 			y: -11.0d
 		}
 		{
@@ -727,7 +727,7 @@
 				type: "item"
 			}]
 			title: "Redstone Signal"
-			x: -2.5d
+			x: -3.0d
 			y: -11.0d
 		}
 		{
@@ -745,7 +745,7 @@
 				type: "item"
 			}]
 			title: "Reset"
-			x: -4.0d
+			x: -4.5d
 			y: -12.0d
 		}
 		{
@@ -769,7 +769,7 @@
 				type: "item"
 			}]
 			title: "Rotate"
-			x: -3.0d
+			x: -3.5d
 			y: -12.0d
 		}
 		{
@@ -792,7 +792,7 @@
 				type: "item"
 			}]
 			title: "Rune"
-			x: -3.5d
+			x: -4.0d
 			y: -13.0d
 		}
 		{
@@ -816,7 +816,7 @@
 				type: "item"
 			}]
 			title: "Summon Steed"
-			x: -4.5d
+			x: -5.0d
 			y: -13.0d
 		}
 		{
@@ -839,7 +839,7 @@
 				type: "item"
 			}]
 			title: "Summon Wolves"
-			x: -2.5d
+			x: -3.0d
 			y: -13.0d
 		}
 		{
@@ -862,7 +862,7 @@
 				type: "item"
 			}]
 			title: "Snare"
-			x: -4.0d
+			x: -4.5d
 			y: -14.0d
 		}
 		{
@@ -889,7 +889,7 @@
 				type: "item"
 			}]
 			title: "Toss"
-			x: -3.0d
+			x: -3.5d
 			y: -14.0d
 		}
 		{
@@ -907,7 +907,7 @@
 				type: "item"
 			}]
 			title: "Wololo"
-			x: -3.5d
+			x: -4.0d
 			y: -15.0d
 		}
 		{
@@ -1809,6 +1809,845 @@
 			title: "Wither"
 			x: 4.0d
 			y: -8.0d
+		}
+		{
+			dependencies: ["5E7C61951AA23312"]
+			description: [
+				"Spells with an &aArc Projectile glyph&r will fire the Spell as a &dprojectile&r, however, this projectile is affected by gravity."
+				""
+				"Augmenting this glyph with &dPierce&r allows it to bounce."
+			]
+			id: "272A35CC576768A0"
+			rewards: [{
+				id: "7653AC49B9F5B903"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "35EF579AEE8B9608"
+				item: "ars_elemental:glyph_arc_projectile"
+				type: "item"
+			}]
+			title: "Arc Projectile"
+			x: -3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5E7C61951AA23312"]
+			description: [
+				"Spells with a &aHoming Projectile glyph&r will fire the Spell as a &dprojectile&r. This projectile is also homing."
+				""
+				"When augmented with &dSensitive&r, the projectile will also home in on players."
+			]
+			id: "0EE13B1FCCA8EE63"
+			rewards: [{
+				id: "21A16F9419663F19"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "5D389CDDA55DFF31"
+				item: "ars_elemental:glyph_homing_projectile"
+				type: "item"
+			}]
+			title: "Homing Projectile"
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7D5474294C0F03DC"]
+			description: ["&aFilter Glyphs&r can be used to &dprevent a spell's effects&r from applying to &dcertain targets&r."]
+			hide_dependency_lines: false
+			hide_dependent_lines: true
+			id: "1B250D4DA2D85644"
+			rewards: [{
+				id: "660453B8EEA41D9A"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				icon: "ars_nouveau:blank_glyph"
+				id: "51A1D642ADB584A1"
+				title: "Filter Glyphs"
+				type: "dimension"
+			}]
+			x: -7.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["272A35CC576768A0"]
+			description: [
+				"The &aPropagate Arc&r glyph will cause the spell to &dcreate a new spell with the respective Form&r upon dissipating."
+				""
+				"&6More glyphs will need to be added&r after this glyph for the resulting spell to have effects."
+			]
+			id: "46CE2DA0EE16B57A"
+			rewards: [{
+				id: "738DA201FC2075C9"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "43E192560E5DA28A"
+				item: "ars_elemental:glyph_propagator_arc"
+				type: "item"
+			}]
+			title: "Propagate Arc"
+			x: -3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0EE13B1FCCA8EE63"]
+			description: [
+				"The &aPropagate Homing&r glyph will cause the spell to &dcreate a new spell with the respective Form&r upon dissipating."
+				""
+				"&6More glyphs will need to be added&r after this glyph for the resulting spell to have effects."
+			]
+			id: "743E8F43B5D3E0F1"
+			rewards: [{
+				id: "21154DE49E223095"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "70878F709FE6248E"
+				item: "ars_elemental:glyph_propagator_homing"
+				type: "item"
+			}]
+			title: "Propagate Homing"
+			x: -2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1B250D4DA2D85644"]
+			description: ["This Glyph will &aprevent a spell from resolving&r if the target happens to be an &daerial creature&r."]
+			id: "19E33D1A065DD25F"
+			rewards: [{
+				id: "3D1037AB03A435C7"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "5DB378D65B16DDB2"
+				item: "ars_elemental:glyph_aerial_filter"
+				type: "item"
+			}]
+			title: "Aerial"
+			x: -6.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1B250D4DA2D85644"]
+			description: ["This Glyph will &aprevent a spell from resolving&r if the target happens to be an &daquatic creature&r &7(such as a mob affected by Impaling)&r."]
+			id: "538D3B3A7C2C4349"
+			rewards: [{
+				id: "050992C7C8E4F3AC"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "60E5D00FB16DA17F"
+				item: "ars_elemental:glyph_aquatic_filter"
+				type: "item"
+			}]
+			title: "Aquatic"
+			x: -8.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1B250D4DA2D85644"]
+			description: ["This Glyph will &aprevent a spell from resolving&r if the target is &dimmune to fire&r."]
+			id: "32573ECFB5814033"
+			rewards: [{
+				id: "291E0F72F746B774"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "29C7E22C03DC9C18"
+				item: "ars_elemental:glyph_fiery_filter"
+				type: "item"
+			}]
+			title: "Fireproof"
+			x: -7.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1B250D4DA2D85644"]
+			description: ["This Glyph will &aprevent a spell from resolving&r if the target is &cnot&r &dimmune to fire&r."]
+			id: "30C91D465B054C5C"
+			rewards: [{
+				id: "0AEA811E3C7984B6"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "62A962A7C196CA8D"
+				item: "ars_elemental:glyph_not_fiery_filter"
+				type: "item"
+			}]
+			title: "Flammable"
+			x: -7.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1B250D4DA2D85644"]
+			description: ["This Glyph will &aprevent a spell from resolving&r if the target happens to be an &darthropod&r &7(such as a mob affected by Bane of Arthropods)&r."]
+			id: "08F5C8032982726E"
+			rewards: [{
+				id: "6D6989DD997528F4"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "2947F72F82115CF7"
+				item: "ars_elemental:glyph_insect_filter"
+				type: "item"
+			}]
+			title: "Insect"
+			x: -6.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1B250D4DA2D85644"]
+			description: ["This Glyph will &aprevent a spell from resolving&r if the target happens to &cnot&r be an &daerial creature&r."]
+			id: "49F3177CE5658A97"
+			rewards: [{
+				id: "32DEE978C4C44506"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "6EE626DC601793BF"
+				item: "ars_elemental:glyph_not_aerial_filter"
+				type: "item"
+			}]
+			title: "Not Aerial"
+			x: -7.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1B250D4DA2D85644"]
+			description: ["This Glyph will &aprevent a spell from resolving&r if the target happens to &cnot&r be an &daquatic creature&r &7(such as a mob affected by Impaling)&r."]
+			id: "6ED34997746010DB"
+			rewards: [{
+				id: "7AE9EC897386CCFD"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "73E1E93A1E56FB6D"
+				item: "ars_elemental:glyph_not_aquatic_filter"
+				type: "item"
+			}]
+			title: "Not Aquatic"
+			x: -8.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1B250D4DA2D85644"]
+			description: ["This Glyph will &aprevent a spell from resolving&r if the target happens to &cnot&r be an &darthropod&r &7(such as a mob affected by Bane of Arthropods)&r."]
+			id: "5E229A1BEBA76B6A"
+			rewards: [{
+				id: "3FAC45F9FA314BDC"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "13E218ED50804787"
+				item: "ars_elemental:glyph_not_insect_filter"
+				type: "item"
+			}]
+			title: "Not Insect"
+			x: -6.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1B250D4DA2D85644"]
+			description: ["This Glyph will &aprevent a spell from resolving&r if the target happens to &cnot&r be an &dsummoned creature&r &7(mobs spawned from Summon glyphs such as Vexes, Wolves, etc.)&r."]
+			id: "31B5688FBEA3CAB6"
+			rewards: [{
+				id: "6636B83650E4AF72"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "6156006ACD89A3EC"
+				item: "ars_elemental:glyph_not_summon_filter"
+				type: "item"
+			}]
+			title: "Not Summon"
+			x: -8.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1B250D4DA2D85644"]
+			description: ["This Glyph will &aprevent a spell from resolving&r if the target happens to &cnot&r be an &dundead creature&r &7(such as mobs affected by Smite)&r."]
+			id: "6791233C22B80479"
+			rewards: [{
+				id: "0D29D1AB766BDA8A"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "41A9C93632CF6844"
+				item: "ars_elemental:glyph_not_undead_filter"
+				type: "item"
+			}]
+			title: "Not Undead"
+			x: -7.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["1B250D4DA2D85644"]
+			description: ["This Glyph will &aprevent a spell from resolving&r if the target happens to be an &dsummoned creature&r &7(mobs spawned from Summon glyphs such as Vexes, Wolves, etc.)&r."]
+			id: "11909EA77B581C66"
+			rewards: [{
+				id: "578EFB9C28C1432C"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "15B1F3F8BAB0AEF9"
+				item: "ars_elemental:glyph_summon_filter"
+				type: "item"
+			}]
+			title: "Summon"
+			x: -8.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1B250D4DA2D85644"]
+			description: ["This Glyph will &aprevent a spell from resolving&r if the target happens to be an &dundead creature&r &7(such as mobs affected by Smite)&r."]
+			id: "1AA8E8F8A89DE42C"
+			rewards: [{
+				id: "3F704BC47598FD8C"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "5B13BC4FD0EFBE3F"
+				item: "ars_elemental:glyph_undead_filter"
+				type: "item"
+			}]
+			title: "Undead"
+			x: -7.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5A8559F63EBA6E2B"]
+			description: [
+				"&aConjure Terrain&r is a glyph that can be used to &dcreate blocks and terrain&r."
+				""
+				"For more information, check the &dglyph's description&r."
+			]
+			id: "15B8CB5B5B685947"
+			rewards: [{
+				id: "0263004644422F5D"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "0202C6FA43993834"
+				item: "ars_elemental:glyph_conjure_terrain"
+				type: "item"
+			}]
+			title: "Conjure Terrain"
+			x: -5.0d
+			y: -15.0d
+		}
+		{
+			dependencies: ["5A8559F63EBA6E2B"]
+			description: ["&aSpark&r is a glyph that will &ddeal lightning-based damage&r to the target. It also deals &dmore damage to wet entities&r."]
+			id: "294F0A0BA993BE31"
+			rewards: [{
+				id: "372EFBD4E5960257"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "18639891E755D54E"
+				item: "ars_elemental:glyph_spark"
+				type: "item"
+			}]
+			title: "Spark"
+			x: -3.0d
+			y: -15.0d
+		}
+		{
+			dependencies: ["1DF1A3282A8EE394"]
+			description: [
+				"&aCharm&r is a glyph that attempts to cause the target to fight for you for a time."
+				""
+				"For more information, see this&d glyph's description&r."
+			]
+			id: "79D9EC7CC18EDC4B"
+			rewards: [{
+				id: "2574EC11A5AD4E98"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "47547FFCFC5121E1"
+				item: "ars_elemental:glyph_charm"
+				type: "item"
+			}]
+			title: "Charm"
+			x: -0.5d
+			y: -14.0d
+		}
+		{
+			dependencies: ["1DF1A3282A8EE394"]
+			description: [
+				"&aWatery Grave&r is a glyph that will cause the target to &dbegin drowning&r for a time."
+				""
+				"If the target is in water, they will begin to sink."
+				""
+				"This glyph can be augmented with &dExtend Time&r to increase the duration of the effect."
+			]
+			id: "74ED2AD587973B8C"
+			rewards: [{
+				id: "10799342456AFE3C"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "6095AE202CC6763B"
+				item: "ars_elemental:glyph_watery_grave"
+				type: "item"
+			}]
+			title: "Watery Grave"
+			x: 0.5d
+			y: -14.0d
+		}
+		{
+			dependencies: ["1DF1A3282A8EE394"]
+			description: [
+				"&aDischarge&r is a glyph that will damage targets that have been &dshocked&r, and also deal damage in a nearby area."
+				""
+				"For more information, see this &dglyph's description&r."
+			]
+			id: "66F3735C3D4E2281"
+			rewards: [{
+				id: "0CE688F8CE8B07FB"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "382D5E40A5564724"
+				item: "ars_elemental:glyph_discharge"
+				type: "item"
+			}]
+			title: "Discharge"
+			x: -1.0d
+			y: -15.0d
+		}
+		{
+			dependencies: ["1DF1A3282A8EE394"]
+			description: [
+				"&aEnvenom&r is a glyph that will &dpoison&r the target. If the target is &dalready poisoned&r, it becomes a &dvenom&r effect."
+				""
+				"Targets afflicted with venom will take more damage from &dpoison spores&r."
+			]
+			id: "7BF07DCA386E152B"
+			rewards: [{
+				id: "35C7E74004462E2D"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "6542639255F3156B"
+				item: "ars_elemental:glyph_envenom"
+				type: "item"
+			}]
+			title: "Envenom"
+			x: 0.5d
+			y: -16.0d
+		}
+		{
+			dependencies: ["1DF1A3282A8EE394"]
+			description: [
+				"&aMana Bubble&r is a glyph that will protect you in a &dmagical bubble&r."
+				""
+				"For more information, see this &dglyph's description&r."
+			]
+			id: "68D3B92B9F57CB89"
+			rewards: [{
+				id: "2ED2858334E7AAD4"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "4A33311CC1AED06A"
+				item: "ars_elemental:glyph_bubble_shield"
+				type: "item"
+			}]
+			title: "Mana Bubble"
+			x: 1.0d
+			y: -15.0d
+		}
+		{
+			dependencies: ["1DF1A3282A8EE394"]
+			description: [
+				"&aPhantom Grasp&r is a glyph that &ddeals damage&r using an effect similar to the &dPotion of Harming&r &7(heals undead, hurts living)&r."
+				""
+				"If a player is hit, it will also remove some of their hunger."
+			]
+			id: "609D77BD397A9472"
+			rewards: [{
+				id: "335C0AAC8C405D4E"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "6DFEB2D442181745"
+				item: "ars_elemental:glyph_phantom_grasp"
+				type: "item"
+			}]
+			title: "Phantom Grasp"
+			x: -0.5d
+			y: -16.0d
+		}
+		{
+			dependencies: ["1DF1A3282A8EE394"]
+			description: ["&aPoison Spores&r is a glyph that will cause a target afflicted with &dPoison or Hunger&r to &derput into spores&r that will propagate Poison and Hunger to nearby entities."]
+			id: "2FC7878E23EB7FA6"
+			rewards: [{
+				id: "208038C5EB77BA6D"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "18DED08AB82EEBF1"
+				item: "ars_elemental:glyph_poison_spores"
+				type: "item"
+			}]
+			title: "Poison Spores"
+			x: 0.0d
+			y: -15.0d
+		}
+		{
+			dependencies: ["1DF1A3282A8EE394"]
+			description: [
+				"&aSpike&r is a glyph that will create a &dDripstone Spike&r under its target that deals damage."
+				""
+				"&dAOE and Pierce&r can modify its size, &dExtend Time&r increases its lifespan, and &dAmplify&r increases damage."
+			]
+			id: "63E366436882ACBA"
+			rewards: [{
+				id: "0C5EFF07D109B421"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "08373E8E92EB3E6E"
+				item: "ars_elemental:glyph_spike"
+				type: "item"
+			}]
+			title: "Spike"
+			x: 0.0d
+			y: -17.0d
+		}
+		{
+			dependencies: ["0AB8680A6E3C5FA0"]
+			description: [
+				"&aLife Link&r is a glyph that will cause damage and healing dealt to either you or the target to be applied to &dboth&r you and the target."
+				""
+				"This link can be &dsevered by a spell with Cut&r."
+			]
+			id: "716692B531292150"
+			rewards: [{
+				id: "5502E9F8AD85C267"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "4DEF0DA7C67C344D"
+				item: "ars_elemental:glyph_life_link"
+				type: "item"
+			}]
+			title: "Life Link"
+			x: 3.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["5A8559F63EBA6E2B"]
+			description: [
+				"&aCarve&r is a glyph that will &dcraft dropped items&r into Stairs, if possible."
+				""
+				"&dAmplify&r will cause it to craft into walls, and &dDampen&r will cause it to craft into slabs."
+				""
+				"This behaves similarly to &6Create's Mechanical Saw&r."
+			]
+			id: "3B1C4062D97C5E7A"
+			rewards: [{
+				id: "7CAFCC8D84ED1277"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "2F452F81C65E13C2"
+				item: "ars_technica:glyph_carve"
+				type: "item"
+			}]
+			title: "Carve"
+			x: -4.5d
+			y: -16.0d
+		}
+		{
+			dependencies: ["5A8559F63EBA6E2B"]
+			description: [
+				"&aFuse&r is a glyph that will simulate recipes from &6Create's Mechanical Mixer&r."
+				""
+				"Combining this glyph with &dSmelt&r will allow it to perform heated mixing, and &dSuperheat&r will allow for superheated mixing."
+			]
+			id: "147B6A8C4E3C9F93"
+			rewards: [{
+				id: "768243A6B8AE44BB"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "3E193337C1A766E7"
+				item: "ars_technica:glyph_fuse"
+				type: "item"
+			}]
+			title: "Fuse"
+			x: -3.5d
+			y: -16.0d
+		}
+		{
+			dependencies: ["5A8559F63EBA6E2B"]
+			description: ["&aInsert&r is a glyph that will take nearby items and &dplace them in nearby containers&r."]
+			id: "40DB44FC7B076574"
+			rewards: [{
+				id: "62A5B449A0259DD5"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "248EE9652BD1A8F6"
+				item: "ars_technica:glyph_insert"
+				type: "item"
+			}]
+			title: "Insert"
+			x: -5.0d
+			y: -17.0d
+		}
+		{
+			dependencies: ["5A8559F63EBA6E2B"]
+			description: [
+				"&aPack&r is a glyph that will &dcompress dropped items&r into their 2x2 recipe result, if possible."
+				""
+				"For 3x3, augment with &dAmplify&r."
+				""
+				"For 1x1, augment with &dDampen&r."
+			]
+			id: "2C77097E747DB027"
+			rewards: [{
+				id: "42236B76F7133D7C"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "31E6E9E0BD299587"
+				item: "ars_technica:glyph_pack"
+				type: "item"
+			}]
+			title: "Pack"
+			x: -3.0d
+			y: -17.0d
+		}
+		{
+			dependencies: ["1DF1A3282A8EE394"]
+			description: [
+				"&aPolish&r is a glyph that will perform &6Create Sand Paper&r recipes on dropped items."
+				""
+				"There is a small chance to lose some of what you polish, however."
+				""
+				"&oPolish is also a language.&r"
+			]
+			id: "4147C3B10B8EB8DC"
+			rewards: [{
+				id: "0CDE9DC65D46D02D"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "27646D929AC21894"
+				item: "ars_technica:glyph_polish"
+				type: "item"
+			}]
+			title: "Polish"
+			x: 1.0d
+			y: -17.0d
+		}
+		{
+			dependencies: ["1DF1A3282A8EE394"]
+			description: ["&aPress&r is a glyph that will perform actions on dropped items similarly to &6Create's Mechanical Press&r."]
+			id: "3D514186A39A825C"
+			rewards: [{
+				id: "12076683FADCB4C9"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "297D4A168C475A6D"
+				item: "ars_technica:glyph_press"
+				type: "item"
+			}]
+			title: "Press"
+			x: -1.0d
+			y: -17.0d
+		}
+		{
+			dependencies: ["1DF1A3282A8EE394"]
+			description: [
+				"&aTelefeast&r is a glyph. &7(It sure is.)&r"
+				""
+				"When the target is a &dcontainer&r, it will make you &dconsume the first edible item&r it can find."
+				""
+				"For more information, see this &dglyph's description&r."
+			]
+			id: "34A30E960F9EFA27"
+			rewards: [{
+				id: "7962699D7F36E756"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "44D97A5DFA54BC76"
+				item: "ars_technica:glyph_telefeast"
+				type: "item"
+			}]
+			title: "Telefeast"
+			x: 0.5d
+			y: -18.0d
+		}
+		{
+			dependencies: ["1DF1A3282A8EE394"]
+			description: [
+				"&aWhirl&r is a glyph that will cause dropped items to &dwhirl around&r."
+				""
+				"If augmented with various glyphs, it can mimic &6Create's Encased Fan&r recipes:"
+				""
+				"- &dConjure Water&r: Washing"
+				"- &dFlare&r: Smoking"
+				"- &dSmelt&r: Blasting"
+				"- &dHex&r: Haunting"
+			]
+			id: "4302FA384F0F15E1"
+			rewards: [{
+				id: "5DF43AADE7E5BA6A"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "190892BD54405AE6"
+				item: "ars_technica:glyph_whirl"
+				type: "item"
+			}]
+			title: "Whirl"
+			x: -0.5d
+			y: -18.0d
+		}
+		{
+			dependencies: ["0AB8680A6E3C5FA0"]
+			description: ["&aSuperheat&r is a glyph that is only used to &daugment Fuse&r, despite not being an augment."]
+			id: "586DFA0A1D5AE674"
+			rewards: [{
+				id: "659994608DED97EB"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "1A93EF3339E5BF81"
+				item: "ars_technica:glyph_superheat"
+				type: "item"
+			}]
+			title: "Superheat"
+			x: 2.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["0AB8680A6E3C5FA0"]
+			description: [
+				"&aObliterate&r is a glyph that will summon a &dMassive Hammer&r to &dbeat your foes to death&r with."
+				""
+				"Augment with &dSensitive&r to perform actions on dropped items similar to &6Create's Crushing Wheel&r."
+			]
+			id: "31240E36FBA0B27F"
+			rewards: [{
+				id: "3E72E8044CF6BD1C"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "745612C298FD12D6"
+				item: "ars_technica:glyph_obliterate"
+				type: "item"
+			}]
+			title: "Obliterate"
+			x: 4.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["5A8559F63EBA6E2B"]
+			description: ["&aLeap&r is a glyph that will move the target in &dthe direction they are looking&r."]
+			id: "3F32BB35A9DB82DC"
+			rewards: [{
+				id: "7B9DB950B5FDC6B3"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "7EAA27F143645D50"
+				item: "ars_nouveau:glyph_leap"
+				type: "item"
+			}]
+			title: "Leap"
+			x: -4.0d
+			y: -17.0d
 		}
 	]
 	title: "Glyphs"

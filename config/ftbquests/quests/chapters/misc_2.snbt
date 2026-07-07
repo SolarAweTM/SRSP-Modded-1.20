@@ -406,7 +406,7 @@
 			}]
 			title: "Rings of Discount"
 			x: -4.0d
-			y: -0.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["0B0589E73F8ECE09"]
@@ -429,7 +429,7 @@
 				type: "item"
 			}]
 			x: -4.0d
-			y: 0.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["0B0589E73F8ECE09"]
@@ -653,6 +653,23 @@
 			}]
 			x: 1.0d
 			y: -3.5d
+		}
+		{
+			dependencies: ["0B0589E73F8ECE09"]
+			description: [
+				"&7&o(Worn Notebook: \"Focus of Block Shaping\")&r"
+				""
+				"The &aFocus of Block Shaping&r allows spells to affect blocks created from them. This can be used to create &ddamaging, moving blocks&r."
+			]
+			id: "229E3DD094180418"
+			shape: "diamond"
+			tasks: [{
+				id: "6FCC2953FA5A2200"
+				item: "ars_nouveau:shapers_focus"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
 		}
 	]
 	title: "Misc"

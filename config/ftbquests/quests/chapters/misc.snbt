@@ -1965,6 +1965,25 @@
 			x: -6.5d
 			y: -6.5d
 		}
+		{
+			description: [
+				"The &aRunic Spanner&r can do everything the &6Wrench&r can do and more."
+				""
+				"&6Right-click&r to set cooldowns on &dRunes and Relays&r."
+				""
+				"It can also rotate and dismantle &dSpell Turrets, Pedestals, and Containment Jars&r."
+			]
+			id: "2FA691D10BB83639"
+			shape: "diamond"
+			subtitle: "Legally Distinct Wrench"
+			tasks: [{
+				id: "63394B0D5B2DB3B9"
+				item: "ars_technica:runic_spanner"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.0d
+		}
 	]
 	title: "Misc"
 }
