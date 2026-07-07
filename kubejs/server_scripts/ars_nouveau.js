@@ -262,9 +262,20 @@ ServerEvents.recipes(event => {
 	event.remove({output:'ars_nouveau:stable_warp_scroll'})
 	event.remove({output:'ars_nouveau:potion_melder'})
 	*/
+	
+	event.remove({id:"ars_additions:apparatus/unstable_reliquary"})
+	event.remove({id:"ars_additions:glyph_recall"})
+	event.remove({id:"ars_additions:glyph_mark"})
+	event.remove({id:"ars_additions:ritual/ritual_locate_structure"})
+	event.remove({id:"ars_additions:apparatus/stabilized_warp_index"})
+	event.remove({id:"ars_additions:apparatus/undying_charm"})
+	event.remove({id:"ars_additions:wayfinder"})
+	event.remove({output:"ars_additions:xp_jar"})
+	event.remove({output:"ars_additions:source_spawner"})
 })
-/*
+
 LootJS.modifiers((event) => {
+	/*
 	event.addLootTableModifier("minecraft:chests/simple_dungeon").removeLoot("ars_nouveau:warp_scroll"); //TODO: RE-ENABLE IN FUTURE PHASE
 	event.addLootTableModifier("minecraft:chests/abandoned_mineshaft").removeLoot("ars_nouveau:warp_scroll");
 	event.addLootTableModifier("minecraft:chests/bastion_treasure").removeLoot("ars_nouveau:warp_scroll");
@@ -280,11 +291,17 @@ LootJS.modifiers((event) => {
 	event.addLootTableModifier("minecraft:chests/underwater_ruin_big").removeLoot("ars_nouveau:warp_scroll");
 	event.addLootTableModifier("minecraft:chests/woodland_mansion").removeLoot("ars_nouveau:warp_scroll");
 	event.addLootTableModifier("minecraft:chests/desert_pyramid").removeLoot("ars_nouveau:warp_scroll");
+	*/
+	event.addLootTableModifier("ars_additions:chests/arcane_library").removeLoot("ars_additions:ancient_codex_entry")
+	event.addLootTableModifier("ars_additions:chests/nexus_tower").removeLoot("ars_additions:ancient_codex_entry")
+	event.addLootTableModifier("ars_additions:chests/ruined_portal").removeLoot("ars_additions:ancient_codex_entry")
+	event.addLootTableModifier("ars_additions:chests/arcane_library").removeLoot("ars_additions:ritual_chunk_loading")
+	event.addLootTableModifier("ars_additions:chests/nexus_tower").removeLoot("ars_additions:ritual_chunk_loading")
+	event.addLootTableModifier("ars_additions:chests/ruined_portal").removeLoot("ars_additions:ritual_chunk_loading")
 });
 
-MoreJSEvents.updateVillagerOffers((event) => { //forgot this
+MoreJSEvents.updateVillagerOffers((event) => {
 	event.getOffers().forEach(offer => {
-			if(offer.getOutput() == 'ars_nouveau:warp_scroll'){offer.setDisabled(true)}
+			if(offer.getOutput() == 'ars_additions:ritual_locate_structure'){offer.setDisabled(true)}
 	})
 })
-*/
