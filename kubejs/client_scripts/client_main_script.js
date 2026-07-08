@@ -701,6 +701,66 @@ ItemEvents.tooltip(event => {
 		text.add(3, Text.gray('Use ['+Text.keybind('key.next_image').getString()+'] and ['+Text.keybind('key.previous_image').getString()+'] to'))
 		text.add(4, Text.gray('move between photos.'))
 	})
+	
+	const SPECIAL_ARTIFACTS = [
+		'kubejs:newest_artifact',
+		'kubejs:yaoi_artifact',
+		'kubejs:yuri_artifact'
+	]
+	SPECIAL_ARTIFACTS.forEach(i => {
+		event.addAdvanced(i, (item, advanced, text) => {
+			if(!event.shift) {
+				text.add(1, Text.darkGray('Hold [').append(Text.gray('Shift')).append(Text.darkGray('] for Summary')))
+			}
+			else {
+				text.add(1, Text.darkGray('Hold [').append(Text.white('Shift')).append(Text.darkGray('] for Summary')))
+			}
+		})
+	})
+	
+	//tooltips for rainbow furnace artifacts
+	event.addAdvanced('kubejs:newest_artifact', (item, advanced, text) => {
+		if(event.shift) {
+			text.add(2, Text.gray('A ritualistic artifact, once hidden underground'))
+			text.add(3, Text.gray('within ').append(Text.yellow('Newest Home')).append(Text.gray('. Can be used to create')))
+			text.add(4, Text.gray('something amazing when combined with other'))
+			text.add(5, Text.gray('artifacts.'))
+			text.add(6, Text.gray(''))
+			text.add(7, Text.gray('Looking through the shard, you see'))
+			text.add(8, Text.gray('a chunk of resplendent stone.'))
+		}
+	})
+	event.addAdvanced('kubejs:yaoi_artifact', (item, advanced, text) => {
+		if(event.shift) {
+			text.add(2, Text.gray('A ritualistic artifact, once sealed deep'))
+			text.add(3, Text.gray('within ').append(Text.blue('The Grand Design')).append(Text.gray('. Can be used to create')))
+			text.add(4, Text.gray('something amazing when combined with other'))
+			text.add(5, Text.gray('artifacts.'))
+			text.add(6, Text.gray(''))
+			text.add(7, Text.gray('This chunk of brass feels calamitous,'))
+			text.add(8, Text.gray('maybe even downright evil to the touch.'))
+		}
+	})
+	event.addAdvanced('kubejs:yuri_artifact', (item, advanced, text) => {
+		if(event.shift) {
+			text.add(2, Text.gray('A ritualistic artifact, once misplaced'))
+			text.add(3, Text.gray('within ').append(Text.lightPurple('your house')).append(Text.gray('. Can be used to create')))
+			text.add(4, Text.gray('something amazing when combined with other'))
+			text.add(5, Text.gray('artifacts.'))
+			text.add(6, Text.gray(''))
+			text.add(7, Text.gray('Skimming the pages, you find many'))
+			text.add(8, Text.gray('bookmarks, in various shades of'))
+			text.add(9, Text.gold('orange').append(Text.gray(', ')).append(Text.white('white')).append(Text.gray(', and ')).append(Text.lightPurple('pink')).append(Text.gray('.')))
+		}
+	})
+	
+	//mending tooltip for ars charms
+	event.addAdvanced('#kubejs:ars_additions_charms', (item, advanced, text) => {
+		if(item.nbt.Enchantments != null && (item.nbt.Enchantments.indexOf({id:"minecraft:mending",lvl:1}) >= 0))
+		{
+			text.add(1, Text.red('Mending has no effect.'))
+		}
+	})
 })
 
 JEIEvents.hideItems(event => {

@@ -33,6 +33,11 @@ StartupEvents.registry('item', event => {
 	//tier 4 and 5 grader catalysts
 	event.create('catalyst_4').texture('kubejs:item/example_item') //TODO: Give proper texture
 	event.create('catalyst_5').texture('kubejs:item/example_item') //TODO: Give proper texture
+	//rainbow furnace components
+	event.create('newest_artifact').texture('srsp:item/shadow_crystal') //TODO: Give proper texture
+	event.create('yaoi_artifact').texture('kubejs:item/example_item') //TODO: Give proper texture
+	event.create('yuri_artifact').texture('kubejs:item/example_item') //TODO: Give proper texture
+	
 })
 
 StartupEvents.registry('fluid', event => { //molten fluids for tconstruct/silent gear
