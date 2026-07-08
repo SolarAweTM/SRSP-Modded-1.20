@@ -110,7 +110,17 @@ ItemEvents.tooltip(event => {
 		'ae2:crafting_card',
 		'ae2:cable_pattern_provider',
 		'ae2:pattern_access_terminal',
-		'ae2:pattern_encoding_terminal'
+		'ae2:pattern_encoding_terminal',
+		'ars_additions:ritual_chunk_loading',
+		'ars_additions:ritual_locate_structure',
+		'ars_additions:stabilized_warp_index',
+		'ars_additions:unstable_reliquary',
+		'ars_additions:wayfinder',
+		'ars_additions:undying_charm',
+		'ars_additions:glyph_recall',
+		'ars_additions:glyph_mark',
+		'ars_additions:xp_jar',
+		'ars_additions:source_spawner'
 	]
 	disabled_items.forEach(item => {
 		event.add(item, [
@@ -1260,7 +1270,17 @@ JEIEvents.hideItems(event => {
 		'webdisplays:craftcomp_backlight',
 		'webdisplays:craftcomp_extcard',
 		'webdisplays:craftcomp_badextcard',
-		'createaddition:redstone_relay'
+		'createaddition:redstone_relay',
+		'ars_additions:ritual_chunk_loading',
+		'ars_additions:ritual_locate_structure',
+		'ars_additions:stabilized_warp_index',
+		'ars_additions:unstable_reliquary',
+		'ars_additions:wayfinder',
+		'ars_additions:undying_charm',
+		'ars_additions:glyph_recall',
+		'ars_additions:glyph_mark',
+		'ars_additions:xp_jar',
+		'ars_additions:source_spawner'
 	]
 	hidden_items.forEach(item => {
 		event.hide(item) // noted: this also removes them from creative menus

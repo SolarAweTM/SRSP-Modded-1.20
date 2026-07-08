@@ -1966,14 +1966,21 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["50FF774BEF232E50"]
 			description: [
-				"The &aRunic Spanner&r can do everything the &6Wrench&r can do and more."
+				"The &aRunic Spanner&r can do everything the &6Wrench&r does, with some added functions for &dArs Nouveau&r."
 				""
 				"&6Right-click&r to set cooldowns on &dRunes and Relays&r."
 				""
 				"It can also rotate and dismantle &dSpell Turrets, Pedestals, and Containment Jars&r."
 			]
+			hide_dependency_lines: true
 			id: "2FA691D10BB83639"
+			rewards: [{
+				id: "3AF461E8060E2F5E"
+				type: "xp"
+				xp: 20
+			}]
 			shape: "diamond"
 			subtitle: "Legally Distinct Wrench"
 			tasks: [{
@@ -1981,8 +1988,62 @@
 				item: "ars_technica:runic_spanner"
 				type: "item"
 			}]
+			x: -1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["50FF774BEF232E50"]
+			description: [
+				"The &aSource Motor&r can convert &dSource&r into &6rotational force&r."
+				""
+				"&6Right click the top&r to set the motor's &6RPM&r."
+				""
+				"&6Right click the front or back&r to change its &6SU to RPM Ratio&r."
+				""
+				"Increasing either of these values will cost more &dSource&r per second to maintain."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			hide_dependency_lines: true
+			id: "1EF46B5D88901E1A"
+			rewards: [{
+				id: "23E9993A279AC078"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			subtitle: "Source Units"
+			tasks: [{
+				id: "3A84F040B747B388"
+				item: "ars_technica:source_engine"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["50FF774BEF232E50"]
+			description: [
+				"The &aStarbuncle Wheel&r is a block added by &dArs Creo&r that harnesses the power of a &dStarbuncle&r to generate &6rotational force&r."
+				""
+				"It will always generate &6256su&r at &616 RPM&r."
+			]
+			hide_dependency_lines: true
+			id: "61A4B17FB1A85FC8"
+			rewards: [{
+				id: "31AF225D95627629"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			subtitle: "The invention of the Wheel"
+			tasks: [{
+				id: "5BDB329A91F805E3"
+				item: "ars_creo:starbuncle_wheel"
+				type: "item"
+			}]
 			x: -1.0d
-			y: -3.0d
+			y: -4.0d
 		}
 	]
 	title: "Misc"

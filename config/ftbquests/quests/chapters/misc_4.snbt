@@ -1,4 +1,5 @@
 {
+	autofocus_id: "5D05305190476EE2"
 	default_hide_dependency_lines: false
 	default_quest_shape: "diamond"
 	filename: "misc_4"
@@ -7,6 +8,80 @@
 	id: "387836EBE572F868"
 	order_index: 2
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			id: "5D05305190476EE2"
+			size: 2.0d
+			tasks: [{
+				id: "1CBE9A738BEE1486"
+				type: "checkmark"
+			}]
+			title: "Occultism: Misc"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5D05305190476EE2"]
+			description: [
+				"The &aPhlogiport&r can be used to &6transport Create's Cardboard Packages&r over &6short distances&r."
+				""
+				"Similiar to the &6Frogport&r, the Phlogiport should have its Address set by &6right-clicking it&r."
+				""
+				"Packages given to the Plogiport that &6do not match the set Address&r will transmit the Package to a Phlogiport with the &6correct Address&r within range."
+				""
+				"Phlogiports can output packages onto a &6Belt&r or other inventory."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			id: "71DCB20409AB50C8"
+			min_width: 250
+			tasks: [{
+				id: "03A96312AB93E296"
+				item: "occultengineering:phlogiport"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5D05305190476EE2"]
+			description: [
+				"The &5Otherworld Goggles&r allows you to see into the Otherworld. "
+				""
+				"Note that this will &cnot allow you to harvest Otherworld resources&r. You will still need to &5consume Demon's Dream and obtain Third Eye&r to obtain resources."
+			]
+			id: "402A0DB37FEC548A"
+			tasks: [{
+				id: "0633ED26643E4082"
+				item: {
+					Count: 1
+					id: "occultism:otherworld_goggles"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["402A0DB37FEC548A"]
+			description: [
+				"The&5 Otherworldly Engineer's Goggles&r combine the effects of &6Engineer's Goggles&r with &5Otherworld Goggles&r."
+				""
+				"You can &6right-click while holding&r the item to toggle Otherworld vision."
+			]
+			id: "1C12B142A4721CB8"
+			subtitle: "Legally Distinct Engineer's Goggles"
+			tasks: [{
+				id: "071D18E0C75DE291"
+				item: "occultengineering:combined_goggles"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+	]
 	title: "Misc"
 }

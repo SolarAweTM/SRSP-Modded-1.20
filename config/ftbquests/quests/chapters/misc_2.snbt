@@ -662,6 +662,11 @@
 				"The &aFocus of Block Shaping&r allows spells to affect blocks created from them. This can be used to create &ddamaging, moving blocks&r."
 			]
 			id: "229E3DD094180418"
+			rewards: [{
+				id: "237F2451D4C0D629"
+				type: "xp"
+				xp: 20
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "6FCC2953FA5A2200"
@@ -670,6 +675,445 @@
 			}]
 			x: -4.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["0B0589E73F8ECE09"]
+			description: [
+				"&7&o(Worn Notebook: \"Charms\")&r"
+				""
+				"&aCharms&r have various effects and will work both &din inventory&r and &dwhen equipped&r in the approprate Curio slots. "
+				""
+				"When their effect triggers, they will &duse up some of their charge&r."
+				""
+				"To recharge the charms, insert in an &dImbuement Chamber&r."
+			]
+			id: "054EE8603F7BBDBC"
+			rewards: [{
+				id: "2F07DDC2DF57DD15"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "3AF2EE8D81EAF981"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "kubejs:ars_additions_charms"
+					}
+				}
+				match_nbt: false
+				title: "Ars Additons Charms"
+				type: "item"
+			}]
+			title: "Charms"
+			x: -6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0B0589E73F8ECE09"]
+			description: [
+				"&aElemental Current Elevators&r let entities &dfloat upwards&r or &dslowly descend&r while sneaking."
+				""
+				"&aSlipstream Current Elevator&r: Only works when &dSource&r is provided."
+				""
+				"&aBubble Current Elevator&r: Only works in water while restoring air bubbles."
+				""
+				"&aMagmatic Current Elevator&r: Only works in lava while applying fire resistance."
+			]
+			id: "2720EDE2026077B6"
+			rewards: [{
+				id: "3EE3F975B9C74292"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "403455529E9B0710"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Elemental Current Elevators\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "ars_elemental:water_upstream"
+							}
+							{
+								Count: 1b
+								id: "ars_elemental:magma_upstream"
+							}
+							{
+								Count: 1b
+								id: "ars_elemental:air_upstream"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: -6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0B0589E73F8ECE09"]
+			description: [
+				"&7&o(Worn Notebook: \"Magical Equipment\")&r"
+				""
+				"The &aEnchanter's Bangle&r can be used to create &dElemental Bangles&r."
+				""
+				"Elemental Bangles &dboost damage of spells&r from that element, among some extra effects."
+				"Each Elemental Bangle will also provide some &dsmall stat bonuses&r while equipped."
+			]
+			id: "15E0D10FD48C3E25"
+			rewards: [{
+				id: "76BB875935FB4F93"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "7EDF46FBA938A734"
+				item: "ars_elemental:base_bangle"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4FBC16335ED20252"]
+			description: [
+				"&aPrism Lenses&r can be applied onto &dAdvanced Prisms&r to change how redirected projectiles act."
+				""
+				"&aArc and Homing&r changes the behaviour of the projectile to the respective Form."
+				""
+				"&aAcceleration&r and &aDecceleration&r can be used to adjust speed."
+				""
+				"&aPierce&r allows projectiles to &dpierce through blocks and entities&r."
+				""
+				"&aRainbow&r makes projectiles cycle through &dcolors&r."
+				""
+				"Some of these lenses require &dSource&r in order to operate."
+			]
+			id: "4FDAB4B61B91DA63"
+			rewards: [{
+				id: "3F97BCB775B411C5"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "5B11326E1BF3E5FD"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Prism Lens\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "ars_elemental:homing_prism_lens"
+							}
+							{
+								Count: 1b
+								id: "ars_elemental:arc_prism_lens"
+							}
+							{
+								Count: 1b
+								id: "ars_elemental:rainbow_prism_lens"
+							}
+							{
+								Count: 1b
+								id: "ars_elemental:acceleration_prism_lens"
+							}
+							{
+								Count: 1b
+								id: "ars_elemental:deceleration_prism_lens"
+							}
+							{
+								Count: 1b
+								id: "ars_elemental:piercing_prism_lens"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Prism Lenses"
+			x: -1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["2BCA59F5BA607F29"]
+			description: [
+				"&7&o(Worn Notebook: \"Advanced Spell Prism\")&r"
+				""
+				"With a &dDominion Wand&r, the &aAdvanced Spell Prism&r can be adjusted to aim at a specific block and any &dProjectile spell&r that hits it will be &dredirected&r to the block it's set to."
+			]
+			id: "4FBC16335ED20252"
+			rewards: [{
+				id: "0D36A22B567A65A4"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "41A42628BF814396"
+				item: "ars_elemental:advanced_prism"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0B0589E73F8ECE09"]
+			description: [
+				"The &aSpellcaster Bag&r and &aTrinket Pouch&r allows for extra storage for specific items."
+				""
+				"&dSpellcaster Bag&r can hold:"
+				"- Enchanter's Items"
+				"- Ars Magic Armor"
+				"- Augment Arrows"
+				""
+				"&dTrinket Pouch&r can hold:"
+				"- Curios"
+				"- Potion Flasks"
+				"- Charms"
+				"- Other Small Items"
+			]
+			id: "2674D0BECA48F287"
+			rewards: [{
+				id: "59689D689B23F438"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "1393EF2F2C3F1FB7"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Magical Bags\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "ars_elemental:caster_bag"
+							}
+							{
+								Count: 1b
+								id: "ars_additions:handy_haversack"
+								tag: { }
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2BCA59F5BA607F29"]
+			description: ["The &aSpell Mirror&r works similarly to the &dSpell Prism&r, but can be placed on &dwalls, floors, and ceilings&r."]
+			id: "561F0F532C1474BC"
+			rewards: [{
+				id: "3E6813AC07F396A8"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "17AE85F988B6ED2B"
+				item: "ars_elemental:spell_mirror"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0A70659B5413AA60"]
+			description: [
+				"&7&o(Worn Notebook: \"Magical Equipment\")&r"
+				""
+				"&dLesser Spell Foci&r can be upgraded to a &aSpell Foci&r which grants stronger bonuses and no longer weaken glyphs from other schools of magic."
+			]
+			id: "30B0736251B61B1E"
+			rewards: [{
+				id: "470585540521B909"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "1DCCD2E10810775D"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Elemental Foci\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "ars_elemental:air_focus"
+							}
+							{
+								Count: 1b
+								id: "ars_elemental:earth_focus"
+							}
+							{
+								Count: 1b
+								id: "ars_elemental:fire_focus"
+							}
+							{
+								Count: 1b
+								id: "ars_elemental:water_focus"
+							}
+							{
+								Count: 1b
+								id: "ars_elemental:necrotic_focus"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: -6.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0B0589E73F8ECE09"]
+			description: [
+				"&7&o(Worn Notebook: \"Magical Equipment\")&r"
+				""
+				"&aLesser Spell Foci&r can be crafted to &damplify and discount glyphs&r from that school of magic, at the cost of &cweakening glyphs&r from other schools of magic."
+			]
+			id: "0A70659B5413AA60"
+			rewards: [{
+				id: "3F3FB2A7116A8E54"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "1AD3CEAE2FC5116E"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Lesser Elemental Foci\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "ars_elemental:lesser_fire_focus"
+							}
+							{
+								Count: 1b
+								id: "ars_elemental:lesser_water_focus"
+							}
+							{
+								Count: 1b
+								id: "ars_elemental:lesser_air_focus"
+							}
+							{
+								Count: 1b
+								id: "ars_elemental:lesser_earth_focus"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: -6.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["58B82E30E8EF0BA5"]
+			description: ["&dSpells&r cast by &aElemental Infused Turrets&r trigger matching &dfocus&r combos, and cost 65% less &dSource&r with matching &dglyphs&r."]
+			id: "7FE8260B10DCFB74"
+			rewards: [{
+				id: "6D30748FE2743F1C"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "4D13995CB0E850DA"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Elemental Turrets\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "ars_elemental:fire_turret"
+							}
+							{
+								Count: 1b
+								id: "ars_elemental:water_turret"
+							}
+							{
+								Count: 1b
+								id: "ars_elemental:air_turret"
+							}
+							{
+								Count: 1b
+								id: "ars_elemental:earth_turret"
+							}
+							{
+								Count: 1b
+								id: "ars_elemental:manipulation_turret"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0B0589E73F8ECE09"]
+			description: [
+				"&aEnder Source Jars&r allow you to store &dSource&r in an &dEnder-connected Source Jar&r."
+				""
+				"Each jar placed will be linked to the &dsame pool of Source&r, allowing you to access the Source from anywhere."
+			]
+			id: "653A26AD11A56F10"
+			rewards: [{
+				id: "540EC199B94DCB9E"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "4C6341DF46C24294"
+				item: "ars_additions:ender_source_jar"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
 		}
 	]
 	title: "Misc"

@@ -2649,6 +2649,20 @@
 			x: -4.0d
 			y: -17.0d
 		}
+		{
+			dependencies: ["16EDD608E5A104CB"]
+			description: ["Spells with a &aRetaliate glyph&r will &dtarget the last entity that dealt damage to you&r (within the last 5 seconds) with the Spell."]
+			id: "4ECA556BDC03289A"
+			shape: "diamond"
+			tasks: [{
+				id: "68EFF682CF3BF356"
+				item: "ars_additions:glyph_retaliate"
+				type: "item"
+			}]
+			title: "Retaliate"
+			x: -4.0d
+			y: 4.0d
+		}
 	]
 	title: "Glyphs"
 }

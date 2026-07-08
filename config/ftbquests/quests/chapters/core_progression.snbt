@@ -700,9 +700,9 @@
 				""
 				"The &aEnchanter's Tools&r can prove useful in combat and exploration."
 				""
-				"The &dBow, Crossbow, Sword, Mirror, Eye, and Wand&r can all have a &dSpell inscribed onto them&r, just as you would with a parchment."
+				"The &dBow, Crossbow, Sword, Mirror, Eye, Horn, and Wand&r can all have a &dSpell inscribed onto them&r, just as you would with a parchment."
 				""
-				"For the &dSword, Mirror, and Wand&r, the inscribed spell &dmust NOT have a Form glyph&r. For the &dBow and Crossbow&r, you can use special &dAugment Arrows&r to give additional effects to the Spells."
+				"For the &dSword, Mirror, Horn, and Wand&r, the inscribed spell &dmust NOT have a Form glyph&r. For the &dBow and Crossbow&r, you can use special &dAugment Arrows&r to give additional effects to the Spells."
 				""
 				"The &dShield&r will give a small amount of &dMana Regeneration and Spell Power&r upon blocking an attack."
 			]
@@ -720,7 +720,7 @@
 				xp: 10
 			}]
 			tasks: [{
-				id: "455D5B4A359018C6"
+				id: "716A8E3F9D61C604"
 				item: {
 					Count: 1
 					id: "itemfilters:or"
@@ -730,11 +730,6 @@
 							Name: "{\"text\":\"Any Enchanter's Tool\"}"
 						}
 						items: [
-							{
-								Count: 1b
-								id: "ars_nouveau:wand"
-								tag: { }
-							}
 							{
 								Count: 1b
 								id: "ars_nouveau:spell_bow"
@@ -749,6 +744,26 @@
 							}
 							{
 								Count: 1b
+								id: "ars_nouveau:wand"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "ars_elemental:spell_horn"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:enchanters_eye"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:spell_crossbow"
+								tag: { }
+							}
+							{
+								Count: 1b
 								id: "ars_nouveau:enchanters_shield"
 								tag: {
 									Damage: 0
@@ -759,20 +774,9 @@
 								id: "ars_nouveau:enchanters_mirror"
 								tag: { }
 							}
-							{
-								Count: 1b
-								id: "ars_nouveau:spell_crossbow"
-								tag: { }
-							}
-							{
-								Count: 1b
-								id: "ars_nouveau:enchanters_eye"
-								tag: { }
-							}
 						]
 					}
 				}
-				match_nbt: false
 				type: "item"
 			}]
 			title: "Enchanter's Tools"
@@ -1006,7 +1010,7 @@
 				item: "ars_nouveau:storage_lectern"
 				type: "item"
 			}]
-			x: -1.0d
+			x: -2.0d
 			y: 15.0d
 		}
 		{
@@ -1066,7 +1070,7 @@
 				}
 			]
 			title: "Farming Amethyst"
-			x: -2.0d
+			x: -3.0d
 			y: 15.0d
 		}
 		{
@@ -1926,6 +1930,258 @@
 			title: "Your Spell Book's Final Upgrade"
 			x: 1.0d
 			y: 17.0d
+		}
+		{
+			dependencies: ["1670F24070A5D8AB"]
+			description: [
+				"&7&o(Worn Notebook: \"Armor and Perks\")&r"
+				""
+				"Your magical armor itself can also be &aupgraded even further&r, which further increases their &dMana Regen, Max Mana and Thread Slots&r. There are 5 sets of armor to pick from which enhances their own school of magic."
+			]
+			id: "2A4905E5E6D8172B"
+			shape: "diamond"
+			tasks: [{
+				id: "71C7DF3E98131817"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Elemental Armor\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "ars_elemental:fire_hat"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "ars_elemental:fire_robes"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "ars_elemental:fire_leggings"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "ars_elemental:fire_boots"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "ars_elemental:air_hat"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "ars_elemental:air_robes"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "ars_elemental:air_leggings"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "ars_elemental:air_boots"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "ars_elemental:earth_hat"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "ars_elemental:earth_robes"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "ars_elemental:earth_leggings"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "ars_elemental:earth_boots"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "ars_elemental:aqua_hat"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "ars_elemental:aqua_robes"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "ars_elemental:aqua_leggings"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "ars_elemental:aqua_boots"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "ars_technica:technomancer_helmet"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "ars_technica:technomancer_chestplate"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "ars_technica:technomancer_leggings"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "ars_technica:technomancer_boots"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				match_nbt: false
+				title: "Any Elemental Armor"
+				type: "item"
+			}]
+			title: "Elemental Armor"
+			x: -4.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["58200E0F6F2F6171"]
+			description: [
+				"&7&o(Worn Notebook: search \"charm\" in the Entry Index)&r"
+				""
+				"In addition, there are &6more creatures&r from &dArs Elemental&r that have some use:"
+				""
+				"- &dSirens&r will generate fishing loot items at the cost of Source."
+				"- &dFlarecannons&r will patrol in assigned area shooting enemies with homing projeticles."
+			]
+			id: "4CD1893998141EEA"
+			shape: "diamond"
+			tasks: [{
+				id: "3E15929A98DF2D7C"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Elemental Charms\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "ars_elemental:siren_charm"
+							}
+							{
+								Count: 1b
+								id: "ars_elemental:firenando_charm"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Elemental Automation"
+			x: -1.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["2C424184DFC9523B"]
+			description: ["The &aWarp Index&r allows remote access to a &dStorage Lectern&r."]
+			id: "17277E0746C50606"
+			shape: "diamond"
+			tasks: [{
+				id: "676495D1561DBB21"
+				item: "ars_additions:warp_index"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["1312DBA1BBBD0602"]
+			description: [
+				"By placing any &dSpell Parchment&r next to an &dImbuement Chamber&r, any other Spell Parchment can be turned into an &aImbued Spell Parchment&r by putting it into the Chamber."
+				""
+				"&dImbued Parchments&r are &csingle-use&r versions of spells that &ddo not consume mana&r, however have a &dscaling source cost to obtain&r and take longer to use with the spell's complexity"
+			]
+			id: "47EA9C9FBAC2CBC9"
+			rewards: [{
+				id: "75566044ED310F65"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "2F70131FAD559A5C"
+				item: {
+					Count: 1
+					id: "ars_additions:imbued_spell_parchment"
+					tag: { }
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			title: "Imbuing Parchments"
+			x: 2.5d
+			y: 8.0d
 		}
 	]
 	title: "Core Progression"

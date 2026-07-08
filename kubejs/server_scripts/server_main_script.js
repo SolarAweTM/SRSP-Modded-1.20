@@ -608,6 +608,26 @@ ServerEvents.tags('item', event => {
 		event.remove('tconstruct:casts/single_use/maille', item)
 		event.remove('tconstruct:casts/single_use/coin', item)
 	})
+	
+	event.add('ars_nouveau:ritual_trade_blacklist', 'ars_additions:ritual_locate_structure')
+	event.add('ars_nouveau:ritual_loot_blacklist', 'ars_additions:ritual_locate_structure')
+	
+	const ARS_CHARMS = [
+		'ars_additions:fire_resistance_charm',
+		'ars_additions:dispel_protection_charm',
+		'ars_additions:fall_prevention_charm',
+		'ars_additions:water_breathing_charm',
+		'ars_additions:ender_mask_charm',
+		'ars_additions:void_protection_charm',
+		'ars_additions:sonic_boom_protection_charm',
+		'ars_additions:wither_protection_charm',
+		'ars_additions:golden_charm',
+		'ars_additions:night_vision_charm',
+		'ars_additions:powdered_snow_walk_charm'
+	]
+	ARS_CHARMS.forEach(item => {
+		event.add('kubejs:ars_additions_charms', item)
+	})
 })
 
 LootJS.modifiers((event) => {
