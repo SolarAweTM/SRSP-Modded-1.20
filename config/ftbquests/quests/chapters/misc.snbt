@@ -2045,6 +2045,54 @@
 			x: -1.0d
 			y: -4.0d
 		}
+		{
+			dependencies: ["50FF774BEF232E50"]
+			description: [
+				"The &aMechanical Pulverizer&r allows you to &6process ores into dust&r using rotational force."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			hide_dependency_lines: true
+			id: "19A712D71EF97BA9"
+			rewards: [{
+				id: "2E2FFF88BCBDBA17"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "66EAFD2C85FA2E88"
+				item: "occultengineering:mechanical_pulverizer"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["50FF774BEF232E50"]
+			description: [
+				"The &aDisenchanter&r can &6disenchant items&r that pass by it, and can also &6drain experience from players&r standing on top and turn it into &6Liquid Experience&r."
+				""
+				"This block functions similarly to an &6Item Drain&r."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			hide_dependency_lines: true
+			id: "493D0039DDFAD521"
+			rewards: [{
+				id: "07AF6E191D8E8327"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "75B4448BA692D91E"
+				item: "create_enchantment_industry:disenchanter"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.0d
+		}
 	]
 	title: "Misc"
 }
