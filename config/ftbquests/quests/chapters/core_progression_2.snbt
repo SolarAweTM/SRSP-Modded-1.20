@@ -22,8 +22,16 @@
 				"This quest chapter will help you get started with the mod."
 				""
 				"Start by getting your hands on a &5Dictionary of Spirits&r - you can get &5Demon's Dream Seeds&r from breaking grass. One can also be found in your &6Eccentric Tome&r."
+				""
+				"In cases where this questline may not provide enough information, you can look to the &5Dictionary of Spirits&r for more info."
 			]
 			id: "19F0D6BE6B83B60E"
+			min_width: 250
+			rewards: [{
+				id: "23080CD7E750E916"
+				type: "xp"
+				xp: 20
+			}]
 			size: 2.0d
 			subtitle: "Join the Occult, Dad!"
 			tasks: [{
@@ -56,6 +64,11 @@
 			]
 			id: "1969E3A133A34850"
 			min_width: 250
+			rewards: [{
+				id: "738C8235F21159E5"
+				type: "xp"
+				xp: 20
+			}]
 			subtitle: "Minecraft: Otherworld"
 			tasks: [{
 				id: "74A075281335BA43"
@@ -79,6 +92,12 @@
 			]
 			icon: "occultism:spirit_fire"
 			id: "0C5ED1A1B0FDB204"
+			min_width: 250
+			rewards: [{
+				id: "569627764C70E7BC"
+				type: "xp"
+				xp: 20
+			}]
 			tasks: [{
 				id: "3430CC1FBEE5DFAB"
 				item: "occultism:spirit_attuned_gem"
@@ -99,6 +118,11 @@
 				"- Netherrack for Iesnium Ore"
 			]
 			id: "762D25E23317A22A"
+			rewards: [{
+				id: "709FA75E1A6A4790"
+				type: "xp"
+				xp: 20
+			}]
 			tasks: [{
 				id: "683D988008D6BCDA"
 				item: {
@@ -114,7 +138,33 @@
 		}
 		{
 			dependencies: ["0C5ED1A1B0FDB204"]
+			description: [
+				"&5Rituals&r are the main way to work with most of &6Occultism's content&r."
+				""
+				"A &6few things&r are necessary in order to perform one:"
+				"- Valid &5chalk&r"
+				"- Some &5Sacrificial Bowls&r"
+				"- A &5Golden Sacrificial Bowl&r or better"
+				"- A &5Bound Book of Binding&r"
+				""
+				"Other rituals may also require more than what's necessary, and have their own specific requirements."
+				""
+				"For more information, see the &6Dictionary of Spirits&r."
+			]
+			icon: {
+				Count: 1
+				id: "occultism:book_of_binding_bound_foliot"
+				tag: {
+					spiritName: "Geirzerdor"
+				}
+			}
 			id: "4FC6B82C56937755"
+			min_width: 250
+			rewards: [{
+				id: "05DDDA71E9AF5E78"
+				type: "xp"
+				xp: 20
+			}]
 			tasks: [
 				{
 					id: "1E19CB20D5C7F005"
@@ -153,6 +203,216 @@
 			]
 			title: "Ritual Preparations"
 			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4FC6B82C56937755"]
+			id: "6887363D63082C3E"
+			rewards: [{
+				id: "7F33C28C638137A3"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "0780275DB3A2E4B5"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Better Chalk\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "occultism:chalk_gold"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "occultism:chalk_purple"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "occultism:chalk_red"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["402A0DB37FEC548A"]
+			description: [
+				"&5Iesnium&r is a resource that is vital to later parts of Occultism that can be found &6in the Nether&r."
+				""
+				"To the naked eye, it just looks like &6Netherrack&r, but with the &5Otherworld Goggles&r, you can see it in full clarity."
+				"{ \"text\": \"[Otherworld Goggles Quest]\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"402A0DB37FEC548A\" } }"
+				""
+				"In order to mine the ore, however, you will need an &5Infused Pickaxe&r."
+				"{ \"text\": \"[Go to Ritual: Craft Infused Pickaxe]\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"7A0221CFB72ADC82\" } }"
+				""
+				"Once mined, it will remain visible, and can then be &6re-mined with a different pickaxe&r if you wish to use effects like Fortune."
+			]
+			id: "2E040E4187114F8F"
+			rewards: [
+				{
+					count: 4
+					id: "11915C63C9DF589D"
+					item: "occultism:iesnium_ore"
+					type: "item"
+				}
+				{
+					id: "2E756AF74BDDDE2B"
+					type: "xp"
+					xp: 20
+				}
+			]
+			tasks: [{
+				id: "66A3AACA422053B5"
+				item: "occultism:iesnium_ore"
+				type: "item"
+			}]
+			title: "Mining Iesnium"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2E040E4187114F8F"]
+			description: [
+				"By using Iesnium, you can create an &5Empty Magic Lamp&r. This can be used in a ritual to create a &6Miner Foliot&r:"
+				"{ \"text\": \"[Go to Ritual: Summon Foliot Miner]\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"6A5CEC2FEB6FA5BB\" } }"
+				""
+				"In order to do anything with the Miner, you will need"
+			]
+			id: "0273BAF8302120EA"
+			rewards: [{
+				id: "517AB8E340D96ED5"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "49F213FD0289EC45"
+				item: {
+					Count: 1
+					id: "occultism:miner_foliot_unspecialized"
+					tag: {
+						Damage: 0
+						maxMiningTime: 400
+						rollsPerOperation: 1
+						spiritName: "Madloridrin"
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4FC6B82C56937755"]
+			description: [
+				"In Occultism, there are generally four &6\"tiers\"&r of Spirits. Each one is generally &6more powerful than the last&r:"
+				""
+				"- Foliot"
+				"- Djinn"
+				"- Afrit"
+				"- Marid"
+				""
+				"For more information, see your Dictionary of Spirits."
+			]
+			id: "185310CDA2DB178F"
+			tasks: [{
+				id: "5FA66FB5A98300CA"
+				type: "checkmark"
+			}]
+			title: "Spirit Ranking"
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6887363D63082C3E"]
+			description: [
+				"The &5Otherworld Goggles&r allows you to see into the Otherworld. "
+				""
+				"In order to craft, you will need to obtain &5Infused Lenses&r:"
+				"{ \"text\": \"[Go to Ritual: Craft Infused Lenses]\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"65092F9D855D701D\" } }"
+				""
+				"Note that this will &cnot allow you to harvest Otherworld Stone and Trees&r. You will still need to &5consume Demon's Dream and obtain Third Eye&r to obtain resources."
+			]
+			id: "402A0DB37FEC548A"
+			rewards: [{
+				id: "36F0CE72133DA123"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "0633ED26643E4082"
+				item: {
+					Count: 1
+					id: "occultism:otherworld_goggles"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["402A0DB37FEC548A"]
+			description: [
+				"The&5 Otherworldly Engineer's Goggles&r combine the effects of &6Engineer's Goggles&r with &5Otherworld Goggles&r."
+				""
+				"You can &6right-click while holding&r the item to toggle Otherworld vision."
+			]
+			id: "1C12B142A4721CB8"
+			rewards: [{
+				id: "0230935C1E2CEB21"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Legally Distinct Engineer's Goggles"
+			tasks: [{
+				id: "071D18E0C75DE291"
+				item: "occultengineering:combined_goggles"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6887363D63082C3E"]
+			description: [
+				"&5Dimensional Storage&r is a handy way to &6store a bunch of items&r at once."
+				""
+				"For more information, check out the &6Magic Storage&r section of your Dictionary of Spirits."
+			]
+			id: "0DB27A478F2A6974"
+			rewards: [{
+				id: "645569E17FDE296E"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "1B18921EB5F8BABC"
+				item: "occultism:storage_controller"
+				type: "item"
+			}]
+			title: "Dimensional Storage"
+			x: 5.0d
 			y: -1.0d
 		}
 	]

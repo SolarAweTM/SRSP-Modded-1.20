@@ -1,4 +1,5 @@
 {
+	autofocus_id: "6548D42B5051C5F0"
 	default_hide_dependency_lines: false
 	default_quest_shape: "diamond"
 	filename: "rituals"
@@ -7,6 +8,880 @@
 	id: "2430DA21B15D1777"
 	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["36D7125916B76E75"]
+			description: [
+				"In order to perform this Ritual, you will need the following:"
+				""
+				"- 2 Sticks"
+				"- 2 Silver Ingots"
+				"- a Spirit Attuned Pickaxe Head"
+				""
+				"This pickaxe is able to collect &5Iesnium Ore&r."
+			]
+			icon: {
+				Count: 1
+				id: "occultism:infused_pickaxe"
+				tag: {
+					Damage: 0
+					spiritName: "Azakjyrvine"
+				}
+			}
+			id: "7A0221CFB72ADC82"
+			rewards: [{
+				id: "6472621810C824A2"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [
+				{
+					id: "4BBD7C62A6F2873F"
+					item: {
+						Count: 1
+						id: "occultism:infused_pickaxe"
+						tag: {
+							Damage: 0
+							spiritName: "Azakjyrvine"
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "42FBCA473F69E94A"
+					item: "occultism:spirit_attuned_pickaxe_head"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Craft Infused Pickaxe"
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"&5Pentacles&r are drawings, created from &6Chalk&r, for &6Rituals&r."
+				""
+				"This questline serves to catalog &6every Ritual&r one can perform."
+			]
+			icon: "occultism:ritual_dummy/summon_demonic_wife"
+			id: "6548D42B5051C5F0"
+			size: 2.0d
+			tasks: [{
+				id: "15ED7F4B7FAF0E16"
+				type: "checkmark"
+			}]
+			title: "Pentacles"
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6548D42B5051C5F0"]
+			description: ["This Pentacle is used for binding &5Djinn&r spirits into objects."]
+			id: "36D7125916B76E75"
+			tasks: [{
+				id: "5BD65602EA3DAB38"
+				type: "checkmark"
+			}]
+			title: "Striegor's Higher Binding"
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1E95E33D6B4395D9"]
+			description: [
+				"In order to perform this Ritual, you will need the following:"
+				""
+				"- an Iesnium Pickaxe"
+				"- 1 Raw Iron"
+				"- Stone "
+				"- an Empty Magic Lamp"
+				""
+				"The Foliot Miner will mine random blocks out of the Mining Dimension, when placed inside a Dimensional Mineshaft."
+			]
+			id: "6A5CEC2FEB6FA5BB"
+			rewards: [{
+				id: "0F9032F8D0F91FE4"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "48D68ED5BB4B6066"
+				item: {
+					Count: 1
+					id: "occultism:miner_foliot_unspecialized"
+					tag: {
+						Damage: 0
+						maxMiningTime: 400
+						rollsPerOperation: 1
+						spiritName: "Madloridrin"
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			title: "Summon Foliot Miner"
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6548D42B5051C5F0"]
+			description: [
+				"Rituals featuring Pentacles in this line often have effects regarding binding spirits to objects."
+				""
+				"This Pentacle in particular is meant for binding a Foliot to an object."
+			]
+			id: "1E95E33D6B4395D9"
+			tasks: [{
+				id: "78BDE6E3C8B79E7A"
+				type: "checkmark"
+			}]
+			title: "Eziveus' Spectral Compulsion"
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1E95E33D6B4395D9"]
+			description: [
+				"In order to perform this Ritual, you will need the following:"
+				""
+				"- Glass Lenses"
+				"- 2 Silver Ingots"
+				"- a Gold Ingot"
+				""
+				"These Infused Lenses are used in the creation of &5Otherworld Goggles&r."
+			]
+			id: "65092F9D855D701D"
+			rewards: [{
+				id: "1EFC0978949168ED"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "6C2D154E1015C966"
+				item: "occultism:infused_lenses"
+				type: "item"
+			}]
+			title: "Craft Infused Lenses"
+			x: 1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1E95E33D6B4395D9"]
+			description: [
+				"In order to perform this Ritual, you will need the following:"
+				""
+				"- a Silver Ingot"
+				"- a String"
+				"- any Chest"
+				"- 2 Leather"
+				""
+				"This Satchel functions similarly to a &6Backpack&r."
+			]
+			id: "134C8A6E29264CB6"
+			rewards: [{
+				id: "7B9BC02C3BF612F7"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "63D1285EB770E209"
+				item: {
+					Count: 1
+					id: "occultism:satchel"
+					tag: {
+						spiritName: "Drakarklorne"
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			title: "Craft Surprisingly Substantial Satchel"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1E95E33D6B4395D9"]
+			description: [
+				"In order to perform this Ritual, you will need the following:"
+				""
+				"- 3 Gold Ingots"
+				"- an Otherstone Pedestal"
+				""
+				"The Storage Actuator Base allows for &5Spirits&r to interact with &6Dimensional Storage&r."
+			]
+			id: "3D17324004A1C368"
+			rewards: [{
+				id: "76E52351230104D5"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "57A501CA35787444"
+				item: "occultism:storage_controller_base"
+				type: "item"
+			}]
+			title: "Craft Storage Actuator Base"
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1E95E33D6B4395D9"]
+			description: [
+				"In order to perform this Ritual, you will need the following:"
+				""
+				"- a Wormhole Frame"
+				"- 2 Nether Quartz"
+				"- an Ender Pearl"
+				""
+				"The Stable Wormhole allows access to &6Dimensional Storage&r from a remote location."
+				"To link, &6sneak-right-click&r a &6Dimensional Storage Actuator&r."
+			]
+			id: "680C45964F548E4A"
+			rewards: [{
+				id: "638D34A187B44E95"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "141419126907BB81"
+				item: {
+					Count: 1
+					id: "occultism:stable_wormhole"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Craft Stable Wormhole"
+			x: 0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1E95E33D6B4395D9"]
+			description: [
+				"In order to perform this Ritual, you will need the following:"
+				""
+				"- an Otherstone Pedestal"
+				"- a Spirit Attuned Gem"
+				"- a Block of Copper"
+				"- Blaze Powder"
+				""
+				"This Stabilizer will grant &6256 slots&r to a &6Dimensional Storage&r setup."
+			]
+			id: "6F16C0603318B1A4"
+			rewards: [{
+				id: "653303E79B27BD25"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "605E83EB03A98A53"
+				item: "occultism:storage_stabilizer_tier1"
+				type: "item"
+			}]
+			title: "Craft Storage Stabilizer Tier 1"
+			x: -0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["36D7125916B76E75"]
+			description: [
+				"In order to perform this Ritual, you will need the following:"
+				""
+				"- 2 Silver Ingots"
+				"- 2 Gold Ingots"
+				"- a Tablet of Containment"
+				""
+				"The Familiar Ring allows you to &6store a Familiar&r, turning its effects into &6an equippable ring&r."
+				""
+				"Of note, the Demonic Spouses &ccannot&r be put into the Ring."
+			]
+			id: "225E78FFD8A0863B"
+			rewards: [{
+				id: "2BB711032DE461B7"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "679B1C6562304FF0"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							hasFamiliar: 0b
+						}
+					}
+					id: "occultism:familiar_ring"
+					tag: {
+						spiritName: "Crowynnth"
+					}
+				}
+				type: "item"
+			}]
+			title: "Craft Familiar Ring"
+			x: -0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["36D7125916B76E75"]
+			description: [
+				"In order to perform this Ritual, you will need the following:"
+				""
+				"- 3 Quartz Blocks"
+				"- an Ender Pearl"
+				""
+				"This Matrix is used to craft the &6Dimensional Storage Actuator&r."
+			]
+			id: "2B526E555B2E247F"
+			rewards: [{
+				id: "4A8899F84746F0C9"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "5ED41C53DD7F7ABE"
+				item: {
+					Count: 1
+					id: "occultism:dimensional_matrix"
+					tag: {
+						spiritName: "Holjord"
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			title: "Craft Dimensional Matrix"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"36D7125916B76E75"
+				"6F16C0603318B1A4"
+			]
+			description: [
+				"In order to perform this Ritual, you will need the following:"
+				""
+				"- The previous tier of Stabilizer"
+				"- 2 Spirit Attuned Gems"
+				"- a Block of Silver"
+				"- a Ghast Tear"
+				""
+				"This Stabilizer provides &5512 slots&r to your &6Dimensional Storage&r."
+			]
+			id: "0C1D77A273EA1C95"
+			rewards: [{
+				id: "16F1A7434BFC69F3"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "1BF06A86D477AD89"
+				item: "occultism:storage_stabilizer_tier2"
+				type: "item"
+			}]
+			title: "Craft Storage Stabilizer Tier 2"
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["36D7125916B76E75"]
+			description: [
+				"In order to perform this Ritual, you will need the following:"
+				""
+				"- 4 Otherstone"
+				"- a Gold Ingot"
+				"- a Block of Iesnium"
+				"- a Spirit Attuned Crystal"
+				""
+				"You may insert &5Spirits within lamps&r in order to send them into the &6Mining Dimension&r to gather resources."
+			]
+			id: "45B5052A75F6868F"
+			rewards: [{
+				id: "06CE2A2C7413664E"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "7215D735B1483B75"
+				item: "occultism:dimensional_mineshaft"
+				type: "item"
+			}]
+			title: "Craft Dimensional Mineshaft"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"6A5CEC2FEB6FA5BB"
+				"36D7125916B76E75"
+			]
+			description: [
+				"In order to perform this Ritual, you will need the following:"
+				""
+				"- The previous tier of Miner"
+				"- a Spirit Attuned Crystal"
+				"- an Iesnium Pickaxe"
+				"- a piece of Raw Gold"
+				"- a Block of Lapis Lazuli"
+				""
+				"This miner harvests &6ores more effectively&r compared to the Foliot, but to compensate, has &cless durability&r."
+			]
+			id: "7D856464DC2A1517"
+			rewards: [{
+				id: "5B7F1C2D6386CF8E"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "2F3CEFCE920643E3"
+				item: {
+					Count: 1
+					id: "occultism:miner_djinni_ores"
+					tag: {
+						Damage: 0
+						maxMiningTime: 300
+						rollsPerOperation: 1
+						spiritName: "Yngfirkyn"
+					}
+				}
+				type: "item"
+			}]
+			title: "Summon Djinni Ore Miner"
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6548D42B5051C5F0"]
+			description: ["This Pentacle is used for binding &5Afrit&r spirits into objects."]
+			id: "57060E9C40609CF6"
+			tasks: [{
+				id: "13A5737FFE768D48"
+				type: "checkmark"
+			}]
+			title: "Sevira's Permanent Confinement"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"57060E9C40609CF6"
+				"0C1D77A273EA1C95"
+			]
+			description: [
+				"In order to perform this Ritual, you will need the following:"
+				""
+				"- The previous tier of Stabilizer"
+				"- a Spirit Attuned Crystal"
+				"- a Block of Gold"
+				"- a Nether Star"
+				""
+				"This Stabilizer provides &51024 slots&r to your &6Dimensional Storage&r."
+			]
+			id: "27D5B5DDD12967FF"
+			rewards: [{
+				id: "61DD0F0B6FD2C42F"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "062883CBD1D2BF9C"
+				item: "occultism:storage_stabilizer_tier3"
+				type: "item"
+			}]
+			title: "Craft Storage Stabilizer Tier 3"
+			x: -1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"57060E9C40609CF6"
+				"7D856464DC2A1517"
+			]
+			description: [
+				"In order to perform this Ritual, you will need the following:"
+				""
+				"- The previous tier of Miner"
+				"- a Spirit Attuned Crystal"
+				"- an Iesnium Pickaxe"
+				"- an Echo Shard"
+				"- an Afrit Essence"
+				"- Crying Obsidian"
+				""
+				"This miner harvests the same ores the &5Djinni&r does, but also includes &6Deepslate&r ore variants, and is &6more efficient and durable&r."
+			]
+			id: "06742C1D3D2ED1D4"
+			rewards: [{
+				id: "2FF8EEEBF399312A"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "7781BB622F61C440"
+				item: {
+					Count: 1
+					id: "occultism:miner_afrit_deeps"
+					tag: {
+						Damage: 0
+						maxMiningTime: 200
+						rollsPerOperation: 1
+						spiritName: "Gorarcvyn"
+					}
+				}
+				type: "item"
+			}]
+			title: "Summon Afrit Deep Ore Miner"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6548D42B5051C5F0"]
+			description: ["This Pentacle is used for binding &5Marid&r spirits into objects."]
+			id: "1150F426A46C1AC1"
+			tasks: [{
+				id: "65586D19C52491B6"
+				type: "checkmark"
+			}]
+			title: "Uphyxes Inverted Tower"
+			x: -0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"1150F426A46C1AC1"
+				"27D5B5DDD12967FF"
+			]
+			description: [
+				"In order to perform this Ritual, you will need the following:"
+				""
+				"- The previous tier of Stabilizer"
+				"- 2 Spirit Attuned Crystals"
+				"- a Block of Iesnium"
+				"- a Dragon head"
+				""
+				"This Stabilizer provides &52048 slots&r to your &6Dimensional Storage&r."
+			]
+			id: "5FD7878A82952BCD"
+			rewards: [{
+				id: "3D1A48AD20CB02C8"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "4C07E4BED8801C50"
+				item: "occultism:storage_stabilizer_tier4"
+				type: "item"
+			}]
+			title: "Craft Storage Stabilizer Tier 4"
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"06742C1D3D2ED1D4"
+				"1150F426A46C1AC1"
+			]
+			description: [
+				"In order to perform this Ritual, you will need the following:"
+				""
+				"- The previous tier of Miner"
+				"- Dragon's Breath"
+				"- a Totem of Undying"
+				"- an Iesnium Pickaxe"
+				"- a Netherite Pickaxe"
+				"- a Nether Star"
+				"- a Spirit Attuned Crystal"
+				""
+				"This miner is the &6most powerful miner&r, being the fastest. Being a master miner, it can also mine rarer minerals, such as &6Iesnium and Debris&r."
+			]
+			id: "5E6C1AA32DB5CD7E"
+			rewards: [{
+				id: "09F4997A48825638"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "The Fasted Speed"
+			tasks: [{
+				id: "0D495D4DCFA298C1"
+				item: {
+					Count: 1
+					id: "occultism:miner_marid_master"
+					tag: {
+						Damage: 0
+						maxMiningTime: 100
+						rollsPerOperation: 1
+						spiritName: "Erlsalmarmur"
+					}
+				}
+				type: "item"
+			}]
+			title: "Summon Marid Master Miner"
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6548D42B5051C5F0"]
+			description: [
+				"Rituals featuring Pentacles in this line often have effects leading to summoning possessed creatures and familiars."
+				""
+				"&5Possessed mobs&r are special variants of mobs that have a significantly higher chance to drop &6certain resources&r."
+				""
+				"&5Familiars&r are spirits that can aid their summoner, providing &6various bonuses&r and sometimes &6defense&r."
+				""
+				"For detailed information on the Pentacle and its results, see the Dictionary of Spirits."
+				""
+				"Here is a list of creatures that can be summoned from this &5Foliot&r Pentacle:"
+				"Endermite, Skeleton, and Phantom as &5Possessed Mobs&r, and Parrot, Greedy, Deer, Blacksmith, and Beaver as &5Familiars&r."
+			]
+			id: "450C8581CD68621D"
+			min_width: 250
+			tasks: [{
+				id: "3E1FC1CD7B2E6A6A"
+				type: "checkmark"
+			}]
+			title: "Hedyrin's Lure"
+			x: 3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["6548D42B5051C5F0"]
+			description: [
+				"For detailed information on the Pentacle and its results, see the Dictionary of Spirits."
+				""
+				"Here is a list of creatures that can be summoned from this &5Djinni&r Pentacle:"
+				"Enderman, Ghast, Weak Shulker, Warden as &5Possessed Mobs&r, and Drikwing, Bar, Cthulhu, Devil, Dragon, Headless Ratman, Chimera, Beholder, and Fairy as &5Familiars&r."
+			]
+			id: "4BF5CA1FC944769E"
+			tasks: [{
+				id: "4C918084876FF8E6"
+				type: "checkmark"
+			}]
+			title: "Ihagan's Enthrallment"
+			x: 3.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["6548D42B5051C5F0"]
+			description: [
+				"For detailed information on the Pentacle and its results, see the Dictionary of Spirits."
+				""
+				"Here is a list of creatures that can be summoned from this &5Afrit&r Pentacle:"
+				"Guardian as &5Familiar&r, and Shulker, Elder Guardian, and Hoglin as &5Possessed Mobs&r."
+			]
+			id: "7CDF65784E4E7983"
+			tasks: [{
+				id: "54A26B2245F25414"
+				type: "checkmark"
+			}]
+			title: "Abras' Commanding Conjure"
+			x: 4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6548D42B5051C5F0"]
+			description: [
+				"Rituals featuring Pentacles in this line often allow you to summon Spirits to do your bidding."
+				""
+				"For more information on each summoned Spirit, check the Dictionary of Spirits."
+				""
+				"The list of Spirits that can be summoned from this &5Foliot&r Pentacle include:"
+				"Crusher, Lumberjack, Transporter, and Janitor."
+				""
+				"In addition, you are also able to summon &5Traders&r for &6Otherstone and Otherworld Saplings&r, as well as &6resurrect fallen Familiars&r."
+			]
+			id: "75FC55EA22C0FCDE"
+			min_width: 250
+			tasks: [{
+				id: "02373DA5A048C882"
+				type: "checkmark"
+			}]
+			title: "Aviar's Circle"
+			x: 1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["6548D42B5051C5F0"]
+			description: [
+				"For more information on each summoned Spirit, check the Dictionary of Spirits."
+				""
+				"The list of Spirits that can be summoned from this &5Djinni&r Pentacle include:"
+				"Machine Operator and Crusher."
+				""
+				"You also gain the ability to &6control time and weather&r via this Pentacle."
+			]
+			id: "4868B066AF8BAB52"
+			tasks: [{
+				id: "1DD348B0D8809C64"
+				type: "checkmark"
+			}]
+			title: "Ophyx' Calling"
+			x: 0.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["6548D42B5051C5F0"]
+			description: ["This Pentacle is solely used to summon an unbound &5Afrit&r, which allows you to obtain &5Afrit Essence&r, for later crafting and rituals."]
+			id: "0F61DD057F2C5B11"
+			tasks: [{
+				id: "1584E7FB4EAAEA10"
+				type: "checkmark"
+			}]
+			title: "Abras' Open Conjure"
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6548D42B5051C5F0"]
+			description: [
+				"For more information on each summoned Spirit, check the Dictionary of Spirits."
+				""
+				"The list of Spirits that can be summoned from this &5Afrit&r Pentacle include:"
+				"Crusher."
+				""
+				"You also gain the ability to &6summon harsher weather&r via this Pentacle."
+			]
+			id: "20D59841C7EE2C25"
+			tasks: [{
+				id: "2A0A17D987915F59"
+				type: "checkmark"
+			}]
+			title: "Abras' Conjure"
+			x: -0.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["6548D42B5051C5F0"]
+			description: [
+				"For more information on each summoned Spirit, check the Dictionary of Spirits."
+				""
+				"The list of Spirits that can be summoned from this &5Marid&r Pentacle include:"
+				"Crusher."
+			]
+			id: "489D4CF1AF181998"
+			tasks: [{
+				id: "58E24920C0C176D1"
+				type: "checkmark"
+			}]
+			title: "Fatma's Invcentivized Attraction"
+			x: -1.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["6548D42B5051C5F0"]
+			description: [
+				"This Pentacle is solely used to summon &6The Wild Hunt&r, an alternative way to obtain &6Wither Skeleton Skulls&r."
+				""
+				"For more information, see the Dictionary of Spirits."
+			]
+			id: "4446D6A949FBD13C"
+			tasks: [{
+				id: "50B2D83B34B904A5"
+				type: "checkmark"
+			}]
+			title: "Osorin's Unbound Calling"
+			x: -1.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["6548D42B5051C5F0"]
+			description: [
+				"This Pentacle is solely used to bind a &5Púca&r into blocks and items."
+				""
+				"It is solely used to craft a few blocks and items related to &6automation&r."
+			]
+			id: "6DB20214E9F48743"
+			tasks: [{
+				id: "132E32D8CA03ED01"
+				type: "checkmark"
+			}]
+			title: "Fionntán's Uncompromising Captivation"
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1E95E33D6B4395D9"]
+			description: [
+				"In order to perform this Ritual, you will need the following:"
+				""
+				"- a Bone Block"
+				"- a Cogwheel"
+				"- a Block of Sterling Silver"
+				"- a Golden Sacrificial Bowl (not just the one in your setup)"
+				""
+				"The &5Mechanical Chamber&r can be used as an &6automatable substitute&r for the Golden Sacrifical Bowl for Rituals that do not consume items or require a sacrifice."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			id: "7CDBC45BD5BB1B0F"
+			rewards: [{
+				id: "4F56AB51760BCFA8"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "326ACC4A698D3FB9"
+				item: "occultengineering:mechanical_chamber"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6DB20214E9F48743"]
+			description: [
+				"The &aPhlogiport&r can be used to &6transport Create's Cardboard Packages&r over &6short distances&r."
+				""
+				"Similiar to the &6Frogport&r, the Phlogiport should have its Address set by &6right-clicking it&r."
+				""
+				"Packages given to the Plogiport that &6do not match the set Address&r will transmit the Package to a Phlogiport with the &6correct Address&r within range."
+				""
+				"Phlogiports can output packages onto a &6Belt&r or other inventory."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			id: "71DCB20409AB50C8"
+			min_width: 250
+			rewards: [{
+				id: "02C9D67158636B1C"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "03A96312AB93E296"
+				item: "occultengineering:phlogiport"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6DB20214E9F48743"]
+			description: [
+				"In order to perform this Ritual, you will need the following:"
+				""
+				"- an Observer"
+				"- Otherstone"
+				"- Otherworld Essence"
+				""
+				"The &5Otherworld Detector&r emits a &6redstone signal&r if a nearby player is &6able to see into&r the Otherworld."
+				""
+				"You can &6Ponder&r this item to learn more about it."
+			]
+			id: "00E81B5797AADDB1"
+			rewards: [{
+				id: "4B95ACE495FC575B"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "0D353862326AE5F7"
+				item: "occultengineering:otherworld_detector"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.5d
+		}
+	]
 	title: "Rituals"
 }

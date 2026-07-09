@@ -766,7 +766,7 @@ ItemEvents.tooltip(event => {
 	
 	//mending tooltip for ars charms
 	event.addAdvanced('#kubejs:ars_additions_charms', (item, advanced, text) => {
-		if(item.nbt.Enchantments != null && (item.nbt.Enchantments.indexOf({id:"minecraft:mending",lvl:1}) >= 0))
+		if(item.nbt.Enchantments != null)
 		{
 			text.add(1, Text.red('Mending has no effect.'))
 		}
