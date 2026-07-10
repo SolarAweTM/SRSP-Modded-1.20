@@ -1,12 +1,875 @@
 {
+	autofocus_id: "36C8B68AFFD51D14"
 	default_hide_dependency_lines: false
-	default_quest_shape: ""
+	default_quest_shape: "diamond"
 	filename: "core_progression_3"
 	group: "4C3727C165FD204E"
 	icon: "iceandfire:dragon_skull_ice"
 	id: "38A04CCDCB46EE90"
+	images: [{
+		alpha: 63
+		height: 7.0d
+		image: "iceandfire:item/dragonegg_white"
+		rotation: 0.0d
+		width: 7.0d
+		x: 0.0d
+		y: -9.5d
+	}]
 	order_index: 0
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			description: [
+				"Welcome to &dIce and Fire&r!"
+				""
+				"This mod is about &dexploring the world&r and defeating &dmythical creatures&r."
+				""
+				"To start, you can obtain a Bestiary, either from your &6Eccentric Tome&r, or by crafting it from &6three Manuscripts&r, found from various structures around the world."
+			]
+			id: "36C8B68AFFD51D14"
+			rewards: [
+				{
+					id: "301FD10E10B36FBE"
+					type: "xp"
+					xp: 20
+				}
+				{
+					id: "16846E6B46FA2F4B"
+					type: "xp"
+					xp: 20
+				}
+			]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "78C3A8F1A4D9797E"
+				item: "iceandfire:bestiary"
+				type: "item"
+			}]
+			title: "Ice and Fire"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["36C8B68AFFD51D14"]
+			description: [
+				"By default, your &dBestiary&r won't have much inside of it. In order to expand your Bestiary and learn more about the mod, you can make &7(or find)&r a &aBestiary Lectern&r."
+				""
+				"This works similarly to an &dEnchanting Table&r, but instead of Lapis, it uses &dManuscripts&r. Click on a result to unlock that entry in your Bestiary."
+			]
+			id: "658ED930F1DC8DCD"
+			rewards: [
+				{
+					id: "1763038595152F8F"
+					type: "xp"
+					xp: 20
+				}
+				{
+					id: "2A98687C9BCBD424"
+					type: "xp"
+					xp: 20
+				}
+			]
+			tasks: [{
+				id: "5DEF018E0C08947F"
+				item: "iceandfire:lectern"
+				type: "item"
+			}]
+			title: "Improving Literacy"
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["46231F6ACEC3430B"]
+			description: [
+				"The &dDragon Horn&r can be used to &6store a Dragon inside&r for safekeeping."
+				""
+				"To release, simply &6use the Horn again&r."
+			]
+			id: "68C7B1C6D996535D"
+			rewards: [{
+				id: "593F9BFD41C13F4F"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "4EF72B8118036590"
+				item: "iceandfire:dragon_horn"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["46231F6ACEC3430B"]
+			description: ["The &dDragon Bone Flute&r can be used to call a tamed Dragon &6toward you&r, and is also useful against a few other tamed fliers."]
+			id: "5D405DE4D97E7452"
+			rewards: [{
+				id: "4CA8F1BA8C37A4EF"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "4C85AD7F51FAA082"
+				item: "iceandfire:dragon_flute"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["46231F6ACEC3430B"]
+			description: [
+				"&dDragon Meal&r can be used to grow your Dragon, increasing its &6size and health&r, and boosting its &6overall growth&r."
+				""
+				"There also exists &dSickly Dragon Meal&r, which allows you to prevent your Dragon from &6growing naturally&r."
+			]
+			icon: "iceandfire:dragon_meal"
+			id: "0B85F76FA251D774"
+			rewards: [{
+				id: "6C05FD850375EA2C"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [
+				{
+					id: "676BA70C6A47298E"
+					item: "iceandfire:dragon_meal"
+					type: "item"
+				}
+				{
+					id: "4480F5AEB22D2222"
+					item: "iceandfire:sickly_dragon_meal"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["74DF632C5032D832"]
+			description: [
+				"If you happened to defeat a &dStage 4 or 5 female Dragon&r, you can acquire her &6Egg&r."
+				""
+				"Depending on the type of Dragon it came from, the Egg will require &6special circumstances&r to hatch:"
+				""
+				"- &dFire Dragon Eggs&r must be &6set on fire&r once placed, ideally on top of Netherrack."
+				""
+				"- &dIce Dragon Eggs&r must be &6submerged underwater&r."
+				""
+				"- &dLightning Dragon Eggs&r must be &6exposed to rain&r."
+				""
+				"Eventually, after being in these conditions long enough, the Egg will hatch, and you will have &dyour very own Dragon&r!"
+			]
+			id: "46231F6ACEC3430B"
+			min_width: 250
+			rewards: [{
+				id: "1BBCF6A4A77FAFF2"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "4CE39284EBCDA888"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Dragon Egg\"}"
+						}
+						value: "kubejs:iaf_dragon_eggs"
+					}
+				}
+				type: "item"
+			}]
+			title: "How to Train Your Dragon"
+			x: 0.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["74DF632C5032D832"]
+			description: [
+				"Using &dDragon Scales&r you harvested from a Dragon, you can make some &6pretty powerful armor&r."
+				""
+				"These pieces of gear will empower you with &6heightened defense&r and some &6additional stats&r, as well as making you more resilient to dragon breath attacks."
+			]
+			id: "38FAC223E2DD37C3"
+			rewards: [{
+				id: "5501790BEF798053"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "134AF79F4D036696"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Dragon Scale Armor\"}"
+						}
+						value: "kubejs:dragonscale_armors"
+					}
+				}
+				type: "item"
+			}]
+			title: "Dragon Scale Armor"
+			x: 1.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["0B85F76FA251D774"]
+			description: [
+				"Your tamed Adult Dragons can be &6bred with another&r by feeding them a &dmixture&r comprised of lilies corresponding to their type."
+				""
+				"The &dresulting Dragon Egg&r will be a &6random color&r for their type."
+			]
+			id: "1ADE679003BF846A"
+			rewards: [{
+				id: "36BF9FEF0A09E76E"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "44AB0EC588DA8008"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Dragon Mixture\"}"
+						}
+						value: "iceandfire:tempt_dragon"
+					}
+				}
+				type: "item"
+			}]
+			title: "Breeding Dragons"
+			x: -1.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["46231F6ACEC3430B"]
+			description: [
+				"This staff allows you to &dcontrol the behaviour&r of your Dragon more precisely."
+				""
+				"By &6right-clicking&r on your Dragon with the Staff, you can cycle between having it &6stay in its current spot&r, &6wander around its home&r, or &6follow you&r."
+				""
+				"By &6sneak-right-clicking&r, you can set its &dhome point&r."
+			]
+			id: "418C35A954A6B672"
+			rewards: [{
+				id: "377F6173A2117AA2"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "306C38BC88F67F86"
+				item: "iceandfire:dragon_stick"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["0B85F76FA251D774"]
+			description: [
+				"The &dDragonforge&r is a &6multiblock structure&r that can be used alongside a &dDragon of the same type&r in order to forge &dDragonsteel&r from the respective Dragon type's &6blood and an Iron Ingot&r."
+				""
+				"To build, you'll need to make some &6Dragonforge bricks&r that go with your Dragon's type, as well as the &6corresponding Core and Aperture&r and some &6blocks of dragon bone&r. For detailed building instructions, see the &dBestiary&r once you have unlocked the &6\"Dragon Forge\" chapter&r."
+				""
+				"To use, put the necessary materials &6within the Dragonforge's Aperture&r, and bring your Dragon nearby. The Dragon will automatically begin breathing onto the Dragonforge, beginning the process."
+			]
+			icon: "iceandfire:dragonforge_ice_core_disabled"
+			id: "4100E16056A89C89"
+			min_width: 250
+			rewards: [{
+				id: "4E2781770854074E"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "17C857F59396473B"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Dragonforge Cores\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "iceandfire:dragonforge_fire_core_disabled"
+							}
+							{
+								Count: 1b
+								id: "iceandfire:dragonforge_ice_core_disabled"
+							}
+							{
+								Count: 1b
+								id: "iceandfire:dragonforge_lightning_core_disabled"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "The Dragonforge"
+			x: 1.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["476DA3D1E22B3245"]
+			description: [
+				"&dDragons&r come in &6five stages&r, with &6Stage 1 to 3&r Dragons being found roaming &6above ground&r, while &6Stages 4 and 5&r can only be found in &6dens underground&r. Generally, higher stage Dragons will give &dmore loot&r, but come with &cadded risk&r."
+				""
+				"Once a Dragon is defeated, it leaves behind its &6corpse&r. &6Right-clicking it with an empty hand&r will alllow you to collect &6scales&r from them, to collect Dragon Blood, hold a empty bottle while right-clicking."
+				""
+				"Once collecting enough scales or blood, the dragon will turn into a skeleton, which can then be further harvested with your hand for Dragon Bones."
+				""
+				"Additionally, Tier 4 or 5 female Dragons will allow you to collect Dragon Eggs with stage 5 dragons having a chance to drop more than 1 Egg. "
+				""
+				"Note that collecting too much blood from a female stage 4 or 5 dragon will Dragon Eggs to not drop."
+			]
+			icon: {
+				Count: 1
+				id: "iceandfire:dragon_skull_lightning"
+				tag: {
+					DragonAge: 75
+					Stage: 4
+				}
+			}
+			id: "74DF632C5032D832"
+			min_width: 300
+			rewards: [{
+				id: "60D5DB23430C1133"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				advancement: "iceandfire:iceandfire/kill_if_dragon"
+				criterion: ""
+				id: "46CAC19F3F0FF61E"
+				title: "Defeat a Dragon"
+				type: "advancement"
+			}]
+			title: "Dragons"
+			x: 0.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["0B85F76FA251D774"]
+			description: [
+				"To ready your Dragons for battle, Dragon Armor can be made with different materials, with &dDragonsteel armor&r providing the most defense."
+				""
+				"&6Sneak-right clicking&r your Dragon with an empty hand will allow you to equip Armor and &7(optionally)&r a Banner on it."
+			]
+			id: "23B1F5044FF89F8A"
+			rewards: [{
+				id: "4F6BBCF703BF41C1"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "732D0E77CED8D9E8"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Dragon Armor\"}"
+						}
+						value: "iceandfire:dragon_armors"
+					}
+				}
+				title: "Any Dragon Armor (except Copper)"
+				type: "item"
+			}]
+			title: "Dragon Armor"
+			x: 0.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["46231F6ACEC3430B"]
+			description: [
+				"&dSummoning Crystals&r can be used to &6quickly teleport a Dragon&r to another location."
+				""
+				"To use, simply &6right-click the Dragon&r you want to move while holding the Crystal, then&6 right-click the destination&r."
+			]
+			id: "35251D850DB850BB"
+			rewards: [{
+				id: "06A6896767A643F7"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "195242CA0BD2703B"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Summoning Crystals\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "iceandfire:summoning_crystal_fire"
+							}
+							{
+								Count: 1b
+								id: "iceandfire:summoning_crystal_lightning"
+							}
+							{
+								Count: 1b
+								id: "iceandfire:summoning_crystal_ice"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["46231F6ACEC3430B"]
+			description: [
+				"&dChain Lines&r allow you to tie mobs to a Wall &7(such as a Cobblestone or Framed Wall)&r, and in the case of Sticky Chain Lines, to other mobs."
+				""
+				"This connection is &6much stronger&r than a Lead."
+			]
+			id: "5C889A7E44C623FA"
+			rewards: [{
+				id: "7B505D1671C809D7"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Ender Pearl Torture"
+			tasks: [{
+				id: "4AFB12441CBC73C5"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Chain Lines\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "iceandfire:chain"
+							}
+							{
+								Count: 1b
+								id: "iceandfire:chain_sticky"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["658ED930F1DC8DCD"]
+			description: [
+				"In this world, creatures from &dIce and Fire&r will begin spawning beyond the &6Phase I border&r &7(at least 5000 blocks out from spawn)&r."
+				""
+				"These creatures are often very strong, and thus you'll want to be &6well prepared&r to take them on."
+			]
+			id: "476DA3D1E22B3245"
+			tasks: [{
+				id: "59FE65505112C756"
+				type: "checkmark"
+			}]
+			title: "Mythical Creatures"
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["476DA3D1E22B3245"]
+			description: [
+				"Found at high altitudes, &dHippogryphs&r are bird-like creatures that fly around and wreak havoc on mobs, especially players."
+				""
+				"They can be tamed by &6dropping many rabbit feet&r near them."
+				""
+				"To command a tamed Hippogryph, you can use a &6Stick&r to toggle between sitting and wandering."
+				""
+				"Tamed Hippogryphs can also be equipped with &6Armor, a Chest, and a Saddle&r, making them useful for exploration."
+				""
+				"They can be bred with rabbit feet."
+			]
+			id: "7DBD2F4E15C7B419"
+			min_width: 250
+			rewards: [{
+				id: "14A9DBCDD5152206"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "The Divine Hybrid"
+			tasks: [{
+				entity: "iceandfire:hippogryph"
+				id: "25EBE1ACACA0F318"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Hippogryph"
+			x: 2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["476DA3D1E22B3245"]
+			description: [
+				"Found within stone temples, &dGorgons&r are extremely dangerous creatures, capable of &6turning all who stare into its gaze into solid Stone&r &7(that means it instantly kills you!!)&r."
+				""
+				"To protect yourself, you can don a &6Blindfold&r. Naturally, this has a downside."
+				""
+				"To break the statues of those turned to Stone, use a Pickaxe."
+			]
+			id: "60A0B695781356D4"
+			rewards: [{
+				id: "61E703FE2C038386"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "The Dreaded One"
+			tasks: [{
+				entity: "iceandfire:gorgon"
+				id: "4C55BA5B4C1F8B1E"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Gorgon"
+			x: 1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["476DA3D1E22B3245"]
+			description: [
+				"Found near beaches, the &dCyclops&r is a formidable foe if unprepared, with strong sight from its one eye."
+				""
+				"It is &6vulnerable to Arrows&r, as one might think."
+				""
+				"To protect yourself, consider making a set of &6Sheep Disguise armor&r, allowing you to blend in with the Cyclops' nearby livestock &6while sneaking&r."
+			]
+			id: "600D70114E9866C4"
+			rewards: [{
+				id: "0CA4DFB4C58A968F"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Polyphemus"
+			tasks: [{
+				entity: "iceandfire:cyclops"
+				id: "0B9197747BF0D07B"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Cyclops"
+			x: 0.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["476DA3D1E22B3245"]
+			description: [
+				"Found within oceans, &dHippocampi&r are docile creatures, and can be &6tamed with Kelp&r."
+				""
+				"They can be equipped with the &6same equipment a Horse can&r, as well as a Chest."
+				""
+				"You can tell them to sit using a &6Stick&r."
+				""
+				"They can be &6bred with Prismarine Crystals&r."
+			]
+			id: "3BCA28EB05B4F3D6"
+			rewards: [{
+				id: "75A2E3964E775B25"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Sea King"
+			tasks: [{
+				advancement: "iceandfire:iceandfire/tame_hippocampus"
+				criterion: ""
+				id: "34C042C0CD3F6BE9"
+				title: "Tame a Hippocampus"
+				type: "advancement"
+			}]
+			title: "Hippocampus"
+			x: 1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["476DA3D1E22B3245"]
+			description: [
+				"Found in savannas, the &dCockatrice&r is not to be messed with. Similarly to the Gorgon, if your eyes meet, you will begin to fade away."
+				""
+				"The &6Blindfold&r can be used to protect yourself from its gaze."
+				""
+				"By staring at it long enough, you can tame it."
+				""
+				"For more information, see its entry in the &6Bestiary&r."
+				""
+				"{ \"text\": \"[Subtitle Context]\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://youtu.be/9YmrGKYeHoc\" } }"
+			]
+			id: "22810B327D4171CD"
+			rewards: [{
+				id: "107CA93C4C72AEFE"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "COCKSURE (IT'S REAL THIS TIME!!!)"
+			tasks: [{
+				entity: "iceandfire:cockatrice"
+				id: "0BF8D1A0D365A4DE"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Cockatrice"
+			x: -1.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["476DA3D1E22B3245"]
+			description: [
+				"Found deep below cold biomes, forests, and hills, &dTrolls&r are powerful and &6will beat you to death with hammers&r."
+				""
+				"When wielding these club-like objects, they are able to destroy terrarin around them."
+				"With their thick hide, they are &6invulnerable to Arrows&r."
+				""
+				"They also &6turn into Stone&r when exposed to daylight."
+			]
+			id: "2D021CD6AEA97205"
+			rewards: [{
+				id: "0D2A2E8847C8E09D"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Ice and Fire killed my grandma, okay?!"
+			tasks: [{
+				entity: "iceandfire:troll"
+				id: "1FB9ED449C1648A8"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Troll"
+			x: 1.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["476DA3D1E22B3245"]
+			description: [
+				"Found within dark and magical forests, Pixies are simply &l&o&n&4annoying&r."
+				""
+				"For more information, see its entry in the &6Bestiary&r."
+			]
+			id: "0A189269F4FF6A50"
+			rewards: [{
+				id: "593589FA36C96C26"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Miniscule Menace"
+			tasks: [{
+				entity: "iceandfire:pixie"
+				id: "37E8AFF6851EFA1E"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Pixie"
+			x: -2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["476DA3D1E22B3245"]
+			description: [
+				"Found on top of rocks within oceans, &dSirens&r are charming fish. &6Or are they?&r Actually, they will lure you in and eat you for lunch."
+				""
+				"You can make yourself resistant to their song by equipping some &6Earplugs&r. Unlike the Blindfold, this has no adverse effects."
+			]
+			id: "19D3D10583494A39"
+			rewards: [{
+				id: "69430AF8EA99CA39"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Coral Crown (Ocean Huzz)"
+			tasks: [{
+				entity: "iceandfire:siren"
+				id: "3C696AFFA7353728"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Siren"
+			x: -1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["476DA3D1E22B3245"]
+			description: [
+				"Found in deserts, &dDeath Worms&r can take you by surprise, and come in various sizes."
+				""
+				"It can use its tongue to attack prey &7(that means you)&r, and can blast damaging sand into the air, sometimes taking you with it."
+				""
+				"Sometimes, they can drop their Egg."
+				""
+				"For more information, see its entry in the &6Bestiary&r."
+			]
+			id: "1F67373FCD075A3E"
+			rewards: [{
+				id: "6F06E7050FB99AFD"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Dried Glutton of the Desert"
+			tasks: [{
+				entity: "iceandfire:deathworm"
+				id: "363D0788D32B090E"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Death Worm"
+			x: 1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["476DA3D1E22B3245"]
+			description: [
+				"Found in swamps, the &dStymphalian Bird&r travels in flocks. &cDon't get shot.&r"
+				""
+				"Their behaviour is better documented within the &6Bestiary&r."
+			]
+			id: "109334BAEFC1A659"
+			rewards: [{
+				id: "560905C79BE085C8"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Prince of The Skies"
+			tasks: [{
+				entity: "iceandfire:stymphalian_bird"
+				id: "214EA244DAA7E69D"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Stymphalian Bird"
+			x: 0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["476DA3D1E22B3245"]
+			description: [
+				"Found within warm oceans, &dSea Serpents&r are fucking &cvile&r and will jump to you from ANYWHERE &7(exaggeration)&r. "
+				""
+				"They are unsympathetic and hostile to everything, even if you're just on the shore."
+				""
+				"At range, it can also fire bubbles at you."
+			]
+			id: "65007F95526DF271"
+			rewards: [{
+				id: "3DA4AA93034E3F8C"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "eheheheheh come back when you're 18, kid."
+			tasks: [{
+				entity: "iceandfire:sea_serpent"
+				id: "674F59B63FC98581"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Sea Serpent"
+			x: -0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["476DA3D1E22B3245"]
+			description: [
+				"&o&6THIS IS A FIGHT YOU CANNOT WIN&r &7(but you can)&r."
+				""
+				"Found in the Jungle, the &dAmphithere&r is a gentle creature, but will attack if you attempt to hitch a ride on them."
+				""
+				"They are &6vulnerable to Arrows&r, and can be tamed by riding one for long enough to withstand its wrath."
+			]
+			id: "3F3DC1ED3452693E"
+			rewards: [{
+				id: "0D6FB0C28C79E904"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "THIS IS MY MESSAGE TO MY MASTER:"
+			tasks: [{
+				entity: "iceandfire:amphithere"
+				id: "78E3F28E7CC7C9AE"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Amphithere"
+			x: -1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["476DA3D1E22B3245"]
+			description: [
+				"Found within Graveyards scattered throughout the world, &dGhosts&r are not too much of a threat, but they are immune to Arrows and Fire."
+				""
+				"&4Fehdison&r will be able to summon Ghosts. "
+			]
+			id: "206095DA0375B2B5"
+			rewards: [{
+				id: "771B413F1463927B"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "i can't believe Luigi is a transgender allegory"
+			tasks: [{
+				entity: "iceandfire:ghost"
+				id: "5AC515B1B199F028"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Ghost"
+			x: -0.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["476DA3D1E22B3245"]
+			description: [
+				"Found in their lairs in the Swamps, &dHydras&r &olay low&r in their lairs."
+				""
+				"It has three heads. &cRUN.&r"
+				""
+				"Its information cannot be found in the &6Bestiary&r. &cYou're on your own for this one!&r"
+				""
+				"All we know is that it is vulnerable to flames."
+			]
+			id: "3C5E141B1E4F6675"
+			rewards: [{
+				id: "036DFBB53A49B1BD"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "We are the Hydralings. Please Feed Us."
+			tasks: [{
+				entity: "iceandfire:hydra"
+				id: "33F594AB866923FE"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Hydra"
+			x: -1.5d
+			y: -4.0d
+		}
+	]
 	title: "Core Progression"
 }

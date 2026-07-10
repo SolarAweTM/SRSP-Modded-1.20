@@ -1,12 +1,512 @@
 {
+	autofocus_id: "3150F7123B42C59C"
 	default_hide_dependency_lines: false
-	default_quest_shape: ""
+	default_quest_shape: "diamond"
 	filename: "misc_5"
 	group: "4C3727C165FD204E"
 	icon: "iceandfire:bestiary"
 	id: "31284A6125812191"
 	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["5C780EC3D7A621BD"]
+			description: ["Using the &dSiren Flute&r, nearby mobs can be charmed, turning them &6passive for 10 seconds&r."]
+			id: "0AEE0B3F4B0ED814"
+			rewards: [{
+				id: "4EFFE66B06538B4E"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "53ADCA023A4CD1FA"
+				item: {
+					Count: 1
+					id: "iceandfire:siren_flute"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3150F7123B42C59C"]
+			id: "5C780EC3D7A621BD"
+			tasks: [{
+				id: "4744C645291AE53E"
+				type: "checkmark"
+			}]
+			title: "Legendary Weapons"
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			description: ["This questline will mainly focus on the additional gear you can obtain from exploring."]
+			id: "3150F7123B42C59C"
+			size: 2.0d
+			tasks: [{
+				id: "0C61BB7D291E6C61"
+				type: "checkmark"
+			}]
+			title: "Ice and Fire: Misc"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5C780EC3D7A621BD"]
+			description: ["By infusing &dDragon's blood&r into a Dragon Bone Sword, a legendary weapon can be made. Each element has it's own effects."]
+			id: "43D06338AFA41B23"
+			rewards: [{
+				id: "5B199823E7E01C13"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "3C865B88600612DA"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Infused Dragon Bone Swords\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "iceandfire:dragonbone_sword_fire"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "iceandfire:dragonbone_sword_ice"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "iceandfire:dragonbone_sword_lightning"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5C780EC3D7A621BD"]
+			description: ["The &dHippogryph Talon Sword&r is a sword that has an innate &6Sweeping Edge&r effect."]
+			id: "4F5FB2D9EB4B534D"
+			rewards: [{
+				id: "717FB6AC50E09929"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "0B92AA02384B4889"
+				item: {
+					Count: 1
+					id: "iceandfire:hippogryph_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5C780EC3D7A621BD"]
+			description: [
+				"By beheading the Gorgon, you can collect &dits head&r as a &csingle-use&r petrification weapon, hold it up to your target to &6turn them into a statue&r."
+				""
+				"As is the standard with stone statues, you can mine them apart with a Pickaxe."
+			]
+			id: "7D6D3F0FC966D7C0"
+			rewards: [{
+				id: "60AA04FDD79D2711"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "0C53CEC11186B3FA"
+				item: {
+					Count: 1
+					id: "iceandfire:gorgon_head"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5C780EC3D7A621BD"]
+			description: ["The &dPixie Wand&r uses &6Pixie Dust&r &7(from Ice and Fire)&r as ammo and fires a projectile that that inflicts &6Levitation&r."]
+			id: "21FC32E67B3018E5"
+			rewards: [{
+				id: "1365EBE210B3B603"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "1A149E5463E59C76"
+				item: {
+					Count: 1
+					id: "iceandfire:pixie_wand"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5C780EC3D7A621BD"]
+			description: [
+				"By gouging and collecting the &deyeball of a Cyclops&r, you can utilize it as a weapon."
+				""
+				"When held, it &6weakens nearby enemies&r."
+			]
+			id: "017FE42A55C8D61C"
+			rewards: [{
+				id: "04DB9A8C561EADBF"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "229A6A42F134FEF0"
+				item: {
+					Count: 1
+					id: "iceandfire:cyclops_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5C780EC3D7A621BD"]
+			description: [
+				"The &dHippocampus Slapper&r, while it doesn't do much damage, does inflict &6Slowness III and Nausea III&r on whatever it hits."
+				""
+				"Ever been slapped with a &6trout&r?"
+			]
+			id: "069C7165046B3C84"
+			rewards: [{
+				id: "71DAD2716F52C32C"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "7C1F55F0E31F946E"
+				item: {
+					Count: 1
+					id: "iceandfire:hippocampus_slapper"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5C780EC3D7A621BD"]
+			description: ["The &dDeath Worm Gauntlet&r allows you to &6pull in targets&r with a retractable tongue, dealing some damage in the process."]
+			id: "24F021B60550FE43"
+			rewards: [{
+				id: "365C73814346A016"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "12AFDB0A9C222958"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Death Worm Gauntlet\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "iceandfire:deathworm_gauntlet_yellow"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "iceandfire:deathworm_gauntlet_white"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "iceandfire:deathworm_gauntlet_red"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Death Worm Gauntlet"
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5C780EC3D7A621BD"]
+			description: ["The &dTroll Weapons&r are slow, bulky, but powerful weapons that can reach entities &6farther than normal&r."]
+			id: "466A060C95B3FBE7"
+			rewards: [{
+				id: "0C84FDD15AC0AA7B"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "14E42E9C1E7F7F4D"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Troll Sticks\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "iceandfire:troll_weapon_axe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "iceandfire:troll_weapon_column"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "iceandfire:troll_weapon_column_forest"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "iceandfire:troll_weapon_column_frost"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "iceandfire:troll_weapon_hammer"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "iceandfire:troll_weapon_trunk"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "iceandfire:troll_weapon_trunk_frost"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Troll Weapons"
+			x: -4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5C780EC3D7A621BD"]
+			description: [
+				"The &6Feather Bundle and Dagger&r can be made from drops of the &dStymphalian Birds&r."
+				""
+				"The Bundle is a &csingle-use&r item that fires feathers in &6eight directions around the player&r. After firing, &conly one&r of the feathers can be collected."
+				""
+				"The Dagger is a &6light and nimble weapon&r, with high attack speed."
+			]
+			id: "030A868B9D2F4471"
+			rewards: [{
+				id: "57660FFEDFEB6A3A"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "4011DDD5B223985F"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Stymphalian Bird Weapons\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "iceandfire:stymphalian_feather_bundle"
+							}
+							{
+								Count: 1b
+								id: "iceandfire:stymphalian_bird_dagger"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5C780EC3D7A621BD"]
+			description: ["Made with the feathers from the protector of the Jungle, the &dAmphithere Macuahuiti&r is a weapon that will knock targets up and back, along with disabling their shields."]
+			id: "49BEA606255679D9"
+			rewards: [{
+				id: "740E953FC5E2E4D7"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "5F84FCFFDB1A2136"
+				item: {
+					Count: 1
+					id: "iceandfire:amphithere_macuahuitl"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5C780EC3D7A621BD"]
+			description: ["The &dTide Trident&r is identical to a normal Trident, but it can &6pierce through multiple targets&r."]
+			id: "3DFED0BC78F39A41"
+			rewards: [{
+				id: "56D4B59D3564A00C"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "0552F98AC236E89F"
+				item: {
+					Count: 1
+					id: "iceandfire:tide_trident"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5C780EC3D7A621BD"]
+			description: ["When in your hotbar, the &dHydra Heart&r will provide &6increasing levels of Regeneration&r as you get hurt, up to &6Regeneration IV&r."]
+			id: "5957C59EA209989F"
+			rewards: [{
+				id: "723431B6DA42511A"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "61D0D16AACF1A3A4"
+				item: "iceandfire:hydra_heart"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3150F7123B42C59C"]
+			description: ["The &dLegendary Dragon Seeker&r will allow you to track the nearest wild living Dragon within 300 blocks."]
+			id: "5EB8ACCD63FE8AF8"
+			rewards: [{
+				id: "02E457D256C71C93"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "6B59D232FAEAE159"
+				item: "iceandfire:legendary_dragon_seeker"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5C780EC3D7A621BD"]
+			description: ["The &dCockatrice Scepter&r, when used, will &6inflict Wither&r on one or more nearby entities."]
+			id: "48526DA56381F832"
+			rewards: [{
+				id: "733177583C6E4C22"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "1CF61E280389CBA0"
+				item: {
+					Count: 1
+					id: "iceandfire:cockatrice_scepter"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.0d
+		}
+	]
 	title: "Misc"
 }
