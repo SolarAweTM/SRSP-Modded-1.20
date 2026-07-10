@@ -365,6 +365,96 @@ ServerEvents.tags('item', event => {
 		})
 	})
 	
+	const DRAGON_EGGS = [
+		'iceandfire:dragonegg_red',
+		'iceandfire:dragonegg_green',
+		'iceandfire:dragonegg_bronze',
+		'iceandfire:dragonegg_gray',
+		'iceandfire:dragonegg_blue',
+		'iceandfire:dragonegg_white',
+		'iceandfire:dragonegg_sapphire',
+		'iceandfire:dragonegg_silver',
+		'iceandfire:dragonegg_electric',
+		'iceandfire:dragonegg_amethyst',
+		'iceandfire:dragonegg_copper',
+		'iceandfire:dragonegg_black'
+	]
+	DRAGON_EGGS.forEach(item => {
+		event.add('kubejs:iaf_dragon_eggs', item)
+	})
+	
+	const IAF_LILIES = [
+		'iceandfire:fire_lily',
+		'iceandfire:frost_lily',
+		'iceandfire:lightning_lily'
+	]
+	IAF_LILIES.forEach(item => {
+		event.add('kubejs:iaf_lilies', item)
+	})
+	
+	const IAF_MIXTURES = [
+		'iceandfire:fire_stew',
+		'iceandfire:frost_stew',
+		'iceandfire:lightning_stew'
+	]
+	IAF_MIXTURES.forEach(item => {
+		event.add('iceandfire:tempt_dragon', item)
+	})
+	
+	const IAF_DRAGONSCALE_ARMORS = [
+		'iceandfire:armor_red_helmet',
+		'iceandfire:armor_bronze_helmet',
+		'iceandfire:armor_green_helmet',
+		'iceandfire:armor_gray_helmet',
+		'iceandfire:armor_blue_helmet',
+		'iceandfire:armor_white_helmet',
+		'iceandfire:armor_sapphire_helmet',
+		'iceandfire:armor_silver_helmet',
+		'iceandfire:armor_electric_helmet',
+		'iceandfire:armor_amethyst_helmet',
+		'iceandfire:armor_copper_helmet',
+		'iceandfire:armor_black_helmet',
+		'iceandfire:armor_red_chestplate',
+		'iceandfire:armor_bronze_chestplate',
+		'iceandfire:armor_green_chestplate',
+		'iceandfire:armor_gray_chestplate',
+		'iceandfire:armor_blue_chestplate',
+		'iceandfire:armor_white_chestplate',
+		'iceandfire:armor_sapphire_chestplate',
+		'iceandfire:armor_silver_chestplate',
+		'iceandfire:armor_electric_chestplate',
+		'iceandfire:armor_amethyst_chestplate',
+		'iceandfire:armor_copper_chestplate',
+		'iceandfire:armor_black_chestplate',
+		'iceandfire:armor_red_leggings',
+		'iceandfire:armor_bronze_leggings',
+		'iceandfire:armor_green_leggings',
+		'iceandfire:armor_gray_leggings',
+		'iceandfire:armor_blue_leggings',
+		'iceandfire:armor_white_leggings',
+		'iceandfire:armor_sapphire_leggings',
+		'iceandfire:armor_silver_leggings',
+		'iceandfire:armor_electric_leggings',
+		'iceandfire:armor_amethyst_leggings',
+		'iceandfire:armor_copper_leggings',
+		'iceandfire:armor_black_leggings',
+		'iceandfire:armor_red_boots',
+		'iceandfire:armor_bronze_boots',
+		'iceandfire:armor_green_boots',
+		'iceandfire:armor_gray_boots',
+		'iceandfire:armor_blue_boots',
+		'iceandfire:armor_white_boots',
+		'iceandfire:armor_sapphire_boots',
+		'iceandfire:armor_silver_boots',
+		'iceandfire:armor_electric_boots',
+		'iceandfire:armor_amethyst_boots',
+		'iceandfire:armor_copper_boots',
+		'iceandfire:armor_black_boots'
+	]
+	IAF_DRAGONSCALE_ARMORS.forEach(item => {
+		event.add('kubejs:dragonscale_armors', item)
+	})
+	
     event.add('fintastic:sugar_glass', 'minecraft:sugar')
     event.add('fintastic:uranium', 'immersiveengineering:raw_uranium')
 	let addToBackSlot = [
