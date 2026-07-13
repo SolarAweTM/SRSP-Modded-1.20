@@ -468,7 +468,7 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["3150F7123B42C59C"]
+			dependencies: ["38127E5C0E3D5625"]
 			description: ["The &dLegendary Dragon Seeker&r will allow you to track the nearest wild living Dragon within 300 blocks."]
 			id: "5EB8ACCD63FE8AF8"
 			rewards: [{
@@ -481,8 +481,8 @@
 				item: "iceandfire:legendary_dragon_seeker"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 0.5d
+			x: 2.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["5C780EC3D7A621BD"]
@@ -506,6 +506,462 @@
 			}]
 			x: -4.0d
 			y: -2.0d
+		}
+		{
+			dependencies: ["3150F7123B42C59C"]
+			description: ["The &dDragon Seeker&r will allow you to track the nearest wild living Dragon within 150 blocks."]
+			id: "1E7F3FD8A33A86B0"
+			rewards: [{
+				id: "7CD0D32F18F56775"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "57EC2E8FDD3BD5A1"
+				item: "iceandfire:dragon_seeker"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1E7F3FD8A33A86B0"]
+			description: ["The &dEpic Dragon Seeker&r will allow you to track the nearest wild living Dragon within 200 blocks."]
+			id: "38127E5C0E3D5625"
+			rewards: [{
+				id: "5BE23CBFF2AAC6CC"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "043A28484C8EF19E"
+				item: "iceandfire:epic_dragon_seeker"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3150F7123B42C59C"]
+			description: [
+				"The following curios add various effects to movement:"
+				""
+				"&dSand Stalkers&r grants &6Invisibility&r and gives &6Speed III while on Sand&r."
+				""
+				"&dFlame, Frozen, and Thunder Treaders&r will cause you to &6leave a damaging trail&r upon pressing your &6sneak key&r. This has a moderate cooldown."
+				""
+				"&dPhantasmal Boots&r grant a &6short dash&r with a cooldown and &6negates fall damage&r."
+			]
+			id: "3429D93ED89BAE78"
+			rewards: [{
+				id: "730C818D1C3191F0"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "1E6696A6BF766C62"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Ice and Fire Special Boots\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "iceandfire_curios:phantasmal_boots"
+							}
+							{
+								Count: 1b
+								id: "iceandfire_curios:sand_stalkers"
+							}
+							{
+								Count: 1b
+								id: "iceandfire_curios:flame_treaders"
+							}
+							{
+								Count: 1b
+								id: "iceandfire_curios:frozen_treaders"
+							}
+							{
+								Count: 1b
+								id: "iceandfire_curios:thunder_treaders"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Accessories: Feet"
+			x: 1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3150F7123B42C59C"]
+			description: [
+				"The following curios enhance your melee combat abilities:"
+				""
+				"The &dAmphithere Anklet&r causes your melee attacks to &6launch targets into the air&r."
+				""
+				"The &dHydra Fangs&r cause your melee attacks to &6inflict Poison&r, and increases your &6damage and attack speed&r slightly."
+				""
+				"The &dDeath Knuckles&r give your melee attacks a chance to &6inflict Slowness IV, Weakness, and Mining Fatigue II&r, and also increases your &6damage&r slightly."
+			]
+			id: "7A90BA27754EEEA3"
+			rewards: [{
+				id: "4DE4C226FC6AE557"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "69E802E6479003DF"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Ice and Fire Hand Accessories\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "iceandfire_curios:amphithere_anklet"
+							}
+							{
+								Count: 1b
+								id: "iceandfire_curios:death_knuckles"
+							}
+							{
+								Count: 1b
+								id: "iceandfire_curios:hydra_fangs"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Accessories: Hands"
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3150F7123B42C59C"]
+			description: ["These curios offer small bonuses to stats."]
+			id: "2309635C6A56092C"
+			rewards: [{
+				id: "3BD53B8FE6BF3646"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "0554CFDE31430C2B"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Ice and Fire Basic Amulets\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "iceandfire_curios:gold_amulet"
+							}
+							{
+								Count: 1b
+								id: "iceandfire_curios:silver_amulet"
+							}
+							{
+								Count: 1b
+								id: "iceandfire_curios:copper_amulet"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Basic Amulets"
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2309635C6A56092C"]
+			description: ["These upgraded curios offer &6stronger bonuses&r compared to their basic counterparts, and also offer some &6conditional buffs&r."]
+			id: "399824E565DC1AAA"
+			rewards: [{
+				id: "76FA99F6D480BEE0"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "72C68EF6E9398BBB"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Ice and Fire Infused Amulets\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "iceandfire_curios:infused_gold_amulet"
+							}
+							{
+								Count: 1b
+								id: "iceandfire_curios:infused_silver_amulet"
+							}
+							{
+								Count: 1b
+								id: "iceandfire_curios:infused_copper_amulet"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Infused Amulets"
+			x: 2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3150F7123B42C59C"]
+			description: [
+				"The following curios offer a variety of passive effects:"
+				""
+				"The &dRing of Festering&r provides &6immunity to hunger&r, and &6feeds the player&r on each mob kill."
+				""
+				"The &dRing of Emaciation&r allows you to deal &6slightly more damage&r to entities the lower their health is."
+				""
+				"The &dRing of Bartering&r will grant you an endless &6Hero of the Village II&r effect."
+				""
+				"The &dRing of Withering&r will give your attacks a &6chance to inflict Wither&r, and &6makes you immune&r to the effect."
+			]
+			id: "34266646B6456DE7"
+			min_width: 225
+			rewards: [{
+				id: "5CE4735F9E79B59B"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "1B98CB6DC94732B7"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Ice and Fire Rings\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "iceandfire_curios:ring_of_emaciation"
+							}
+							{
+								Count: 1b
+								id: "iceandfire_curios:ring_of_festering"
+							}
+							{
+								Count: 1b
+								id: "iceandfire_curios:ring_of_bartering"
+							}
+							{
+								Count: 1b
+								id: "iceandfire_curios:ring_of_withering"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Accessories: Rings"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3150F7123B42C59C"]
+			description: [
+				"The following curios provide a response to being attacked:"
+				""
+				"The &dTroll Leather Coat&r provides &6knockback immunity&r, and provides a &6thorns-like effect&r."
+				""
+				"The &dStymphalian Feather Belt&r causes you to fire a &6burst of feathers&r around you when hit."
+			]
+			id: "64100A7B5F877626"
+			rewards: [{
+				id: "2E36F35948B0EF74"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "5C6987BC60D434E3"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Ice and Fire Counterattacks\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "iceandfire_curios:troll_leather_coat"
+							}
+							{
+								Count: 1b
+								id: "iceandfire_curios:stymphalian_feather_belt"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Accessories: Retaliation Items"
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3150F7123B42C59C"]
+			description: [
+				"The following curios improve your aquatic abilities, among other effects."
+				""
+				"The &dShiny Fins&r provide &6Resistance I at night&r, &6Strength I at day&r, and gives a &6large boost to swim speed&r."
+				""
+				"The &dTide Necklace&r grants &6bonus health and damage&r, a &6moderate boost to swim speed&r, and grants perpetual &6Water Breathing&r and &6Dolphin's Grace&r."
+			]
+			id: "4BF197B084F2A236"
+			rewards: [{
+				id: "57FE4C972FE4153C"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "0B679EC72EFAD43B"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Ice and Fire Aquatic Accessories\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "iceandfire_curios:shiny_fins"
+							}
+							{
+								Count: 1b
+								id: "iceandfire_curios:tide_necklace"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Aquatic Accessories"
+			x: 2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3150F7123B42C59C"]
+			description: [
+				"The following curios provide general stat boosts and effects."
+				""
+				"The &dDragon Heart&r provides &6fire immunity, Resistance I,&r and a &6large boost to max health&r and &6medium boost to damage&r."
+				""
+				"The &dEyeball Locket&r grants some &6armor&r, as well as &6weakening nearby entities&r."
+				""
+				"The &dPixie Core&r will give you a &6random positive tier 1 effect&r every 30 seconds."
+			]
+			id: "317817A34834F092"
+			rewards: [{
+				id: "61CF8669A65D57FE"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "04846178C2F3F5C9"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Ice and Fire Passive Accessories\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "iceandfire_curios:eyeball_locket"
+							}
+							{
+								Count: 1b
+								id: "iceandfire_curios:dragon_heart"
+							}
+							{
+								Count: 1b
+								id: "iceandfire_curios:pixie_core"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Passive Accessories"
+			x: 0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3150F7123B42C59C"]
+			description: [
+				"The following curios have activated effects that come with a cooldown:"
+				""
+				"The &dTorn Dreadbanner&r allows you to press &6R&r &7(default keybind)&r to gain &6Speed II, Strength II, and Resistance II&r for a short time."
+				""
+				"The &dDreaded Candle&r perpetually grants &6Dread&r, which grants a &6very small amount of lifesteal&r, and &6Night Vision&r. It also provides a &6Totem of Undying-like effect&r with a cooldown."
+			]
+			id: "4201F936C27BF188"
+			rewards: [{
+				id: "62CF8A57E17AFF35"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "6C825EA46B45835B"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Ice and Fire Active Accessories\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "iceandfire_curios:torn_dreadbanner"
+							}
+							{
+								Count: 1b
+								id: "iceandfire_curios:dreaded_candle"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Active Accessories"
+			x: 2.5d
+			y: 2.5d
 		}
 	]
 	title: "Misc"
