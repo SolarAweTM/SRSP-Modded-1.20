@@ -37,6 +37,7 @@ StartupEvents.registry('item', event => {
 	event.create('newest_artifact').texture('srsp:item/shadow_crystal')
 	event.create('yaoi_artifact').texture('srsp:item/brutal_brass') // [03]
 	event.create('yuri_artifact').texture('kubejs:item/example_item') //TODO: Give proper texture
+	event.create('sugoi_artifact').texture('kubejs:item/example_item') //TODO: Give proper texture
 	
 })
 

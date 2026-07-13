@@ -708,7 +708,8 @@ ItemEvents.tooltip(event => {
 	const SPECIAL_ARTIFACTS = [
 		'kubejs:newest_artifact',
 		'kubejs:yaoi_artifact',
-		'kubejs:yuri_artifact'
+		'kubejs:yuri_artifact',
+		'kubejs:sugoi_artifact'
 	]
 	SPECIAL_ARTIFACTS.forEach(i => {
 		event.addAdvanced(i, (item, advanced, text) => {
@@ -754,6 +755,18 @@ ItemEvents.tooltip(event => {
 			text.add(7, Text.gray('Skimming the pages, you find many'))
 			text.add(8, Text.gray('bookmarks, in various shades of'))
 			text.add(9, Text.gold('orange').append(Text.gray(', ')).append(Text.white('white')).append(Text.gray(', and ')).append(Text.lightPurple('pink')).append(Text.gray('.')))
+		}
+	})
+	event.addAdvanced('kubejs:sugoi_artifact', (item, advanced, text) => {
+		if(event.shift) {
+			text.add(2, Text.gray('A ritualistic artifact, once forgotten'))
+			text.add(3, Text.gray('within ').append(Text.red('Guys Please What Is Your Area Called')).append(Text.gray('. Can be used to create')))
+			text.add(4, Text.gray('something amazing when combined with other'))
+			text.add(5, Text.gray('artifacts.'))
+			text.add(6, Text.gray(''))
+			text.add(7, Text.gray('Insert a fun description of the object here'))
+			text.add(8, Text.gray('Please I need a description'))
+			text.add(9, Text.gray('requesting description to Crafting'))
 		}
 	})
 	
@@ -1273,7 +1286,10 @@ JEIEvents.hideItems(event => {
 		'ars_additions:glyph_recall',
 		'ars_additions:glyph_mark',
 		'ars_additions:xp_jar',
-		'ars_additions:source_spawner'
+		'ars_additions:source_spawner',
+		'iceandfire_curios:bleeding_heart_of_stone',
+		'iceandfire_curios:ferocious_knuckles',
+		'#iceandfire_curios:pixie_pack'
 	]
 	hidden_items.forEach(item => {
 		event.hide(item) // noted: this also removes them from creative menus
