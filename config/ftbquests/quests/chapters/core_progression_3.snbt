@@ -577,8 +577,8 @@
 				value: 1L
 			}]
 			title: "Cyclops"
-			x: 0.5d
-			y: -6.0d
+			x: 1.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["476DA3D1E22B3245"]
@@ -612,11 +612,11 @@
 		{
 			dependencies: ["476DA3D1E22B3245"]
 			description: [
-				"Found in savannas, the &dCockatrice&r is not to be messed with. Similarly to the Gorgon, if your eyes meet, you will begin to fade away."
+				"Found in savannas, the &dCockatrice&r is not to be messed with. Similarly to the Gorgon, if your eyes meet, you will &6begin to fade away&r."
 				""
 				"The &6Blindfold&r can be used to protect yourself from its gaze."
 				""
-				"By staring at it long enough, you can tame it."
+				"By &6staring at it long enough&r, you can tame it."
 				""
 				"For more information, see its entry in the &6Bestiary&r."
 				""
@@ -663,13 +663,13 @@
 				value: 1L
 			}]
 			title: "Troll"
-			x: 1.5d
-			y: -5.0d
+			x: 0.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["476DA3D1E22B3245"]
 			description: [
-				"Found within dark and magical forests, Pixies are simply &l&o&n&4annoying&r."
+				"Found within dark and magical forests, &dPixies&r are simply &l&o&n&4annoying&r."
 				""
 				"For more information, see its entry in the &6Bestiary&r."
 			]
@@ -693,9 +693,9 @@
 		{
 			dependencies: ["476DA3D1E22B3245"]
 			description: [
-				"Found on top of rocks within oceans, &dSirens&r are charming fish. &6Or are they?&r Actually, they will lure you in and eat you for lunch."
+				"Found on top of rocks within oceans, &dSirens&r are charming fish. &6Or are they?&r Actually, they will &6lure you in&r and eat you for lunch."
 				""
-				"You can make yourself resistant to their song by equipping some &6Earplugs&r. Unlike the Blindfold, this has no adverse effects."
+				"You can make yourself &6resistant to their song&r by equipping some &6Earplugs&r. Unlike the Blindfold, this has &6no adverse effects&r."
 			]
 			id: "19D3D10583494A39"
 			rewards: [{
@@ -771,9 +771,9 @@
 			description: [
 				"Found within warm oceans, &dSea Serpents&r are fucking &cvile&r and will jump to you from ANYWHERE &7(exaggeration)&r. "
 				""
-				"They are unsympathetic and hostile to everything, even if you're just on the shore."
+				"They are unsympathetic and &6hostile to everything&r, even if you're just on the shore."
 				""
-				"At range, it can also fire bubbles at you."
+				"At range, it can also &6fire bubbles&r at you."
 			]
 			id: "65007F95526DF271"
 			rewards: [{
@@ -797,9 +797,9 @@
 			description: [
 				"&o&6THIS IS A FIGHT YOU CANNOT WIN&r &7(but you can)&r."
 				""
-				"Found in the Jungle, the &dAmphithere&r is a gentle creature, but will attack if you attempt to hitch a ride on them."
+				"Found in the Jungle, the &dAmphithere&r is a gentle creature, but will attack if you attempt to &6hitch a ride&r on them."
 				""
-				"They are &6vulnerable to Arrows&r, and can be tamed by riding one for long enough to withstand its wrath."
+				"They are &6vulnerable to Arrows&r, and can be tamed like a &6Horse&r by riding one for long enough to withstand its wrath."
 			]
 			id: "3F3DC1ED3452693E"
 			rewards: [{
@@ -807,7 +807,7 @@
 				type: "xp"
 				xp: 20
 			}]
-			subtitle: "THIS IS MY MESSAGE TO MY MASTER:"
+			subtitle: "&6THIS IS MY MESSAGE TO MY MASTER:"
 			tasks: [{
 				entity: "iceandfire:amphithere"
 				id: "78E3F28E7CC7C9AE"
@@ -821,9 +821,9 @@
 		{
 			dependencies: ["476DA3D1E22B3245"]
 			description: [
-				"Found within Graveyards scattered throughout the world, &dGhosts&r are not too much of a threat, but they are immune to Arrows and Fire."
+				"Found within Graveyards scattered throughout the world, &dGhosts&r are not too much of a threat, but they are &6immune to Arrows and Fire&r."
 				""
-				"&4Fehdison&r will be able to summon Ghosts. "
+				"&4Fehdison&r will be able to summon &6Ghosts&r. As will other PvP-related deaths."
 			]
 			id: "206095DA0375B2B5"
 			rewards: [{
@@ -851,7 +851,7 @@
 				""
 				"Its information cannot be found in the &6Bestiary&r. &cYou're on your own for this one!&r"
 				""
-				"All we know is that it is vulnerable to flames."
+				"All we know is that it is &6vulnerable to flames&r. &6🔥🔥🔥&r"
 			]
 			id: "3C5E141B1E4F6675"
 			rewards: [{
