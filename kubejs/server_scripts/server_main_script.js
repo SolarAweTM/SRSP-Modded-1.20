@@ -22,8 +22,6 @@ ServerEvents.recipes(event => {
 			R: 'quark:rope'
 		}
 	)
-	//elytra is kil (NEVERMIND)
-	// event.remove({ output: 'minecraft:elytra' })
 	//convert BWG crafting tables to vanilla crafting tables
 	event.shapeless(
 		'minecraft:crafting_table', //result
@@ -38,6 +36,66 @@ ServerEvents.recipes(event => {
 	event.remove({output:'waystones:warp_scroll'})
 	event.remove({output:'waystones:warp_plate'})
 	event.remove({output:'waystones:warp_dust'})
+	
+	//silver recipe rewriting
+	event.remove({output:'immersiveengineering:ingot_silver'})
+	event.remove({output:'occultism:silver_ingot'})
+	event.remove({output:'immersiveengineering:nugget_silver'})
+	event.remove({output:'occultism:silver_nugget'})
+	event.remove({output:'occultism:silver_block'})
+	event.remove({output:'immersiveengineering:storage_silver'})
+	event.remove({output:'immersiveengineering:raw_silver'})
+	event.remove({output:'occultism:raw_silver'})
+	event.blasting('#forge:ingots/silver', '#forge:raw_materials/silver').xp(0.7)
+	event.blasting('#forge:ingots/silver', '#forge:ores/silver').xp(0.35)
+	event.blasting('#forge:ingots/silver', '#forge:dusts/silver').xp(0.7)
+	event.smelting('#forge:ingots/silver', '#forge:raw_materials/silver').xp(0.7)
+	event.smelting('#forge:ingots/silver', '#forge:ores/silver').xp(0.35)
+	event.smelting('#forge:ingots/silver', '#forge:dusts/silver').xp(0.7)
+	event.remove({id:'iceandfire:silver_nugget_to_silver_ingot'})
+	event.remove({id:'iceandfire:furnace/silver_ingot'})
+	event.remove({id:'iceandfire:furnace/deepslate_silver_ingot'})
+	event.remove({id:'iceandfire:furnace/silver_ingot_blasting'})
+	event.remove({id:'iceandfire:furnace/deepslate_silver_ingot_blasting'})
+	event.remove({id:'iceandfire:silver_ingot_from_smelting_raw_silver'})
+	event.remove({id:'iceandfire:silver_ingot_from_blasting_raw_silver'})
+	event.remove({id:'iceandfire:raw_silver_block_to_raw_silver'})
+	event.remove({id:'iceandfire:raw_silver_to_raw_silver_block'})
+	event.shaped('#forge:ingots/silver',
+		[
+			'SSS',
+			'SSS',
+			'SSS'
+		],
+		{
+			S: '#forge:nuggets/silver'
+		}
+	)
+	event.shapeless('9x #forge:nuggets/silver', ['#forge:ingots/silver'])
+	event.remove({output:'immersiveengineering:slab_storage_silver'})
+	event.shaped('6x immersiveengineering:slab_storage_silver',
+		['SSS'],
+		{
+			S: '#forge:storage_blocks/silver'
+		}
+	)
+	event.remove({output:'immersiveengineering:raw_block_silver'})
+	event.remove({output:'occultism:raw_silver_block'})
+	event.shaped('iceandfire:raw_silver_block',
+		['SSS','SSS','SSS'],
+		{S:'#forge:raw_materials/silver'}
+	)
+	
+	//old silver to New silver recipes
+	event.shapeless('occultism:silver_dust', ['immersiveengineering:dust_silver'])
+	event.shapeless('iceandfire:silver_block', ['immersiveengineering:storage_silver'])
+	event.shapeless('iceandfire:silver_block', ['occultism:silver_block'])
+	event.shapeless('iceandfire:silver_ingot', ['immersiveengineering:ingot_silver'])
+	event.shapeless('iceandfire:silver_ingot', ['occultism:silver_ingot'])
+	event.shapeless('iceandfire:silver_nugget', ['immersiveengineering:nugget_silver'])
+	event.shapeless('iceandfire:silver_nugget', ['occultism:silver_nugget'])
+	event.shapeless('iceandfire:raw_silver_block', ['immersiveengineering:raw_block_silver'])
+	event.shapeless('iceandfire:raw_silver_block', ['occultism:raw_silver_block'])
 })
 
 ServerEvents.tags('block', event => {
@@ -454,6 +512,49 @@ ServerEvents.tags('item', event => {
 	IAF_DRAGONSCALE_ARMORS.forEach(item => {
 		event.add('kubejs:dragonscale_armors', item)
 	})
+	
+	event.remove('curios:shoes', '@iceandfire_curios')
+	const IAF_CURIOS_SHOES = [
+		'iceandfire_curios:sand_stalkers',
+		'iceandfire_curios:flame_treaders',
+		'iceandfire_curios:frozen_treaders',
+		'iceandfire_curios:thunder_treaders',
+		'iceandfire_curios:phantasmal_boots'
+	]
+	IAF_CURIOS_SHOES.forEach(item => {
+		event.add('curios:feet', item)
+	})
+	// there can only be one silver, and its going to be ice and fire for some reason
+	event.add('forge:raw_materials', 'iceandfire:raw_silver')
+	event.add('forge:raw_materials/silver', 'iceandfire:raw_silver')
+	event.remove('forge:ingots/silver', 'immersiveengineering:ingot_silver')
+	event.remove('forge:ingots/silver', 'occultism:silver_ingot')
+	event.remove('forge:ingots', 'immersiveengineering:ingot_silver')
+	event.remove('forge:ingots', 'occultism:silver_ingot')
+	event.remove('balm:ingots', 'immersiveengineering:ingot_silver')
+	event.remove('balm:ingots', 'occultism:silver_ingot')
+	event.remove('forge:nuggets', 'immersiveengineering:nugget_silver')
+	event.remove('forge:nuggets', 'occultism:silver_nugget')
+	event.remove('forge:nuggets/silver', 'immersiveengineering:nugget_silver')
+	event.remove('forge:nuggets/silver', 'occultism:silver_nugget')
+	event.remove('balm:nuggets', 'immersiveengineering:nugget_silver')
+	event.remove('balm:nuggets', 'occultism:silver_nugget')
+	event.remove('silentgear:gold_digger', 'immersiveengineering:nugget_silver')
+	event.remove('silentgear:gold_digger', 'occultism:silver_nugget')
+	event.add('forge:nuggets', 'iceandfire:silver_nugget')
+	event.add('forge:nuggets/silver', 'iceandfire:silver_nugget')
+	event.add('balm:nuggets', 'iceandfire:silver_nugget')
+	event.add('silentgear:gold_digger', 'iceandfire:silver_nugget')
+	event.remove('forge:storage_blocks', 'immersiveengineering:storage_silver')
+	event.remove('forge:storage_blocks', 'occultism:silver_block')
+	event.remove('forge:storage_blocks/silver', 'immersiveengineering:storage_silver')
+	event.remove('forge:storage_blocks/silver', 'occultism:silver_block')
+	event.add('forge:storage_blocks', 'iceandfire:silver_block')
+	event.add('forge:storage_blocks/silver', 'iceandfire:silver_block')
+	event.add('forge:storage_blocks/raw_silver', 'iceandfire:raw_silver_block')
+	event.add('forge:storage_blocks', 'iceandfire:raw_silver_block')
+	event.remove('forge:dusts', 'immersiveengineering:dust_silver')
+	event.remove('forge:dusts/silver', 'immersiveengineering:dust_silver')
 	
     event.add('fintastic:sugar_glass', 'minecraft:sugar')
     event.add('fintastic:uranium', 'immersiveengineering:raw_uranium')
