@@ -1,12 +1,41 @@
 {
+	autofocus_id: "303D43269075D0DC"
 	default_hide_dependency_lines: false
-	default_quest_shape: ""
+	default_quest_shape: "diamond"
 	filename: "powah"
 	group: "69603B3374115B3D"
 	icon: "powah:capacitor_basic"
 	id: "416C498497BD439E"
 	order_index: 0
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			description: [
+				"&2Powah!&r is a mod about &6Power&r."
+				""
+				"The machines available from this mod will prove &6extremely useful&r in this phase as well as future phases, as they will be your introduction to &6large-scale power generation&r."
+			]
+			id: "303D43269075D0DC"
+			size: 2.0d
+			tasks: [{
+				id: "0501F62C97DF673A"
+				type: "checkmark"
+			}]
+			title: "Powah!"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["303D43269075D0DC"]
+			id: "3517C4738B75FC5F"
+			tasks: [{
+				id: "5F0EAFD547CCF488"
+				type: "checkmark"
+			}]
+			title: "RF? FE?"
+			x: 0.0d
+			y: -2.0d
+		}
+	]
 	title: "Powah!"
 }
