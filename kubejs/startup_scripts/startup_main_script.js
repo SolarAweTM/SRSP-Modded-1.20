@@ -38,6 +38,8 @@ StartupEvents.registry('item', event => {
 	event.create('yaoi_artifact').texture('srsp:item/brutal_brass') // [03]
 	event.create('yuri_artifact').texture('srsp:item/yuri_manga') // Fehdison
 	event.create('sugoi_artifact').texture('kubejs:item/example_item') //TODO: Give proper texture
+	//more socket items
+	event.create('super_socket_sigil').texture('srsp:item/super_socket_sigil')
 	
 })
 

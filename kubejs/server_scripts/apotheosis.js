@@ -225,11 +225,77 @@ ServerEvents.recipes(event => {
 		}]
 	})
 	
+	//limit max sockets to 2 with upgrades
+	event.remove({id:'apotheosis:add_sockets'})
+	event.custom({
+		type: 'apotheosis:add_sockets',
+		conditions: [{
+			type: 'apothesis:module',
+			module: 'adventure'
+		}],
+		group: 'something',
+		input: {item: 'apotheosis:sigil_of_socketing'},
+		max_sockets: 1
+	})
+	event.smithing('kubejs:super_socket_sigil',
+	'kubejs:terrasteel_upgrade_smithing_template',
+	'apotheosis:sigil_of_socketing',
+	'botania:gaia_ingot')
+	event.remove({id:'apotheosis:add_sockets'})
+	event.custom({
+		type: 'apotheosis:add_sockets',
+		conditions: [{
+			type: 'apothesis:module',
+			module: 'adventure'
+		}],
+		group: 'something',
+		input: {item: 'kubejs:super_socket_sigil'},
+		max_sockets: 2
+	})
+	
 	//remove gem related recipes due to gems being disabled in phase 1 (will be reinstated in future phases)
 	event.remove({output:'apotheosis:gem_cutting_table'})
 	event.remove({output:'apotheosis:sigil_of_rebirth'})
-	//event.remove({output:'apotheosis:sigil_of_withdrawal'}) //TODO: ENABLE THIS
+	event.shaped('6x apotheosis:sigil_of_rebirth',
+		[
+			'DDD',
+			'AAA',
+			'DDD'
+		],
+		{
+			D: 'minecraft:deepslate',
+			A: 'minecraft:amethyst_shard'
+		}
+	)
+	event.remove({output:'apotheosis:sigil_of_withdrawal'})
+	event.shaped('4x apotheosis:sigil_of_withdrawal',
+		[
+			'DRD',
+			'ELE',
+			'DGD'
+		],
+		{
+			D: 'minecraft:deepslate',
+			R: 'minecraft:blaze_rod',
+			E: 'minecraft:ender_pearl',
+			L: 'minecraft:lava_bucket',
+			G: 'minecraft:tripwire_hook'
+		}
+	)
 	event.remove({output:'apotheosis:sigil_of_socketing'})
+	event.shaped('3x apotheosis:sigil_of_socketing',
+		[
+			'IBI',
+			'DDD',
+			'IAI'
+		],
+		{
+			I: 'minecraft:diamond',
+			B: 'minecraft:dragon_breath',
+			D: 'minecraft:deepslate',
+			A: 'minecraft:amethyst_shard'
+		}
+	)
 	event.remove({output:'apotheosis:gem_fused_slate'})
 	event.remove({output:'apotheosis:sigil_of_enhancement'})
 	event.remove({output:'apotheosis:sigil_of_unnaming'})
