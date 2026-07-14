@@ -347,13 +347,7 @@ ServerEvents.recipes(event => {
 			G: 'minecraft:iron_ingot'
 		}
 	)
-	//artificially clamp enchanting to max level 45
-	event.remove({output:'apotheosis:infused_hellshelf'})
-	event.remove({output:'apotheosis:blazing_hellshelf'})
-	event.remove({output:'apotheosis:glowing_hellshelf'})
-	event.remove({output:'apotheosis:infused_seashelf'})
-	event.remove({output:'apotheosis:crystal_seashelf'})
-	event.remove({output:'apotheosis:heart_seashelf'})
+	//artificially clamp enchanting to max level 60
 	event.remove({output:'apotheosis:deepshelf'})
 	event.remove({output:'apotheosis:echoing_deepshelf'})
 	event.remove({output:'apotheosis:soul_touched_deepshelf'})
@@ -362,10 +356,8 @@ ServerEvents.recipes(event => {
 	event.remove({output:'apotheosis:endshelf'})
 	event.remove({output:'apotheosis:pearl_endshelf'})
 	event.remove({output:'apotheosis:draconic_endshelf'})
-	event.remove({output:'apotheosis:rectifier'})
 	event.remove({output:'apotheosis:rectifier_t2'})
 	event.remove({output:'apotheosis:rectifier_t3'})
-	event.remove({output:'apotheosis:sightshelf'})
 	event.remove({output:'apotheosis:sightshelf_t2'})
 	event.remove({output:'apotheosis:treasure_shelf'})
 	event.remove({output:'apotheosis:filtering_shelf'})
