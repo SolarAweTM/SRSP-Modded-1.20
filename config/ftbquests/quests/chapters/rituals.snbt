@@ -770,7 +770,7 @@
 		{
 			dependencies: ["6548D42B5051C5F0"]
 			description: [
-				"This Pentacle is solely used to summon &6The Wild Hunt&r, an alternative way to obtain &6Wither Skeleton Skulls&r."
+				"This Pentacle is used to summon &6The Wild Hunt&r, an alternative way to obtain &6Wither Skeleton Skulls&r. It can also be used to summon &dvery strong enemies&r."
 				""
 				"For more information, see the Dictionary of Spirits."
 			]
@@ -881,6 +881,360 @@
 			}]
 			x: 3.5d
 			y: -2.5d
+		}
+		{
+			dependencies: ["4446D6A949FBD13C"]
+			description: [
+				"In order to summon a Dragon, you'll need the following to complete this &5Marid&r ritual:"
+				""
+				"- Four &6Nether Stars&r"
+				"- Three &6Lilies&r corresponding to the desired Dragon's type"
+				"- Two &6Wilden Wings&r"
+				"- A &6Tablet of Awakening&r"
+				"- One &6Anima Essence&r"
+				"- A &6Dragon Scale&r"
+				""
+				"Note that this will always summon a Stage 5 Female Dragon. &cBe sure you are ready for the fight!&r"
+			]
+			icon: "iceandfire:dragonegg_white"
+			id: "47288DFDACB5DD3E"
+			tasks: [{
+				id: "10DAD40F28CB5C16"
+				title: "How to Summon Your Dragon"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["4868B066AF8BAB52"]
+			description: [
+				"In order to summon a &dTroll&r, you'll need to complete a &5Djinni&r ritual."
+				""
+				"You will need:"
+				""
+				"- 2 &6Cobblestone Walls&r"
+				"- A patch of &6Leather&r"
+				"- A &6Shield&r"
+			]
+			icon: {
+				Count: 1
+				id: "iceandfire:troll_weapon_column"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "72062577360D08D1"
+			tasks: [{
+				id: "45E62E4E7515CC99"
+				type: "checkmark"
+			}]
+			title: "Summon Troll"
+			x: 1.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["75FC55EA22C0FCDE"]
+			description: [
+				"In order to summon a &dGhost&r, you'll need to complete a &5Foilot&r ritual."
+				""
+				"You will need:"
+				""
+				"- 2 &6Ghostweave&r"
+				"- A &6Silver Ingot&r"
+				"- 1 &6Mossy Cobblestone&r"
+			]
+			icon: "iceandfire:ectoplasm"
+			id: "4D5E8305724EC0E5"
+			tasks: [{
+				id: "3CD2FE640D423F04"
+				type: "checkmark"
+			}]
+			title: "Summon Ghost"
+			x: 1.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["0F61DD057F2C5B11"]
+			description: [
+				"In order to summon a &dSiren&r, you'll need to complete a &5Afrit&r ritual."
+				""
+				"You will need:"
+				""
+				"- 2 &6Prismarine Shards&r"
+				"- A &6Raw Cod&r"
+				"- A pair of &6Earplugs&r"
+				"- A &6Water Essence&r"
+				"- A &6Siren Token&r &7(from Ars Elemental)&r"
+			]
+			icon: "iceandfire:siren_tear"
+			id: "0789C15F9CA32986"
+			tasks: [{
+				id: "50E1C8DE35E5DA9C"
+				type: "checkmark"
+			}]
+			title: "Summon Siren"
+			x: 0.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["489D4CF1AF181998"]
+			description: [
+				"In order to summon a &dHydra&r, you'll need to complete a &5Marid&r ritual."
+				""
+				"You will need:"
+				""
+				"- 3 &6Wither Skeleton Skulls&r"
+				"- 2 &6Abjuration Essences&r"
+				"- 2 &6Earth Essences&r"
+				"- A &6Poisonous Potato&r"
+			]
+			icon: "iceandfire:hydra_fang"
+			id: "4BFC39BD25326759"
+			tasks: [{
+				id: "143800A9DE2D89B3"
+				type: "checkmark"
+			}]
+			title: "Summon Hydra"
+			x: -0.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["20D59841C7EE2C25"]
+			description: [
+				"In order to summon a &dCyclops&r, you'll need to complete a &5Afrit&r ritual."
+				""
+				"You will need:"
+				""
+				"- An &6Eye of Ender&r"
+				"- An &6Arrow&r"
+				"- A &6Raw Mutton&r"
+				"- A &6White Wool&r"
+				"- An &6Abjuration Essence&r"
+				"- An &6Earth Essence&r"
+			]
+			icon: {
+				Count: 1
+				id: "iceandfire:cyclops_eye"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0162DD9622801A98"
+			tasks: [{
+				id: "56E26F484EF97455"
+				type: "checkmark"
+			}]
+			title: "Summon Cyclops"
+			x: 0.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["75FC55EA22C0FCDE"]
+			description: [
+				"In order to summon a &dAmphithere&r, you'll need to complete a &5Foilot&r ritual."
+				""
+				"You will need:"
+				""
+				"- A &6Feather&r"
+				"- &6Vines&r"
+				"- An &6Arrow&r"
+				"- An &6Air Essence&r"
+			]
+			icon: "iceandfire:amphithere_feather"
+			id: "62C3F9B4164404D7"
+			tasks: [{
+				id: "577DBD4B696ED34D"
+				type: "checkmark"
+			}]
+			title: "Summon Amphithere"
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0F61DD057F2C5B11"]
+			description: [
+				"In order to summon a &dCockatrice&r, you'll need to complete a &5Afrit&r ritual."
+				""
+				"You will need:"
+				""
+				"- Two &6Air Essences&r"
+				"- Two &6Feathers&r"
+				"- An &6Eye of Ender&r"
+				"- A &6Wither Skeleton Skull&r"
+			]
+			icon: "iceandfire:cockatrice_eye"
+			id: "23A6D8281ACBA8ED"
+			tasks: [{
+				id: "47EC11875F60EDB3"
+				type: "checkmark"
+			}]
+			title: "Summon Cockatrice"
+			x: 1.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["489D4CF1AF181998"]
+			description: [
+				"In order to summon a &dSea Serpent&r, you'll need to complete a &5Marid&r ritual."
+				""
+				"You will need:"
+				""
+				"- Two &6Prismarine Bricks&r"
+				"- Two &6Water Essences&r"
+				"- Two &6Abjuration Essences&r"
+				"- A &6Trident&r"
+				"- A &6Pufferfish&r"
+			]
+			icon: "iceandfire:sea_serpent_fang"
+			id: "4BB39B70C6A2AC19"
+			tasks: [{
+				id: "7D06D5935480811C"
+				type: "checkmark"
+			}]
+			title: "Summon Sea Serpent"
+			x: 0.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["75FC55EA22C0FCDE"]
+			description: [
+				"In order to summon a &dHippocampus&r, you'll need to complete a &5Foilot&r ritual."
+				""
+				"You will need:"
+				""
+				"- &6Prismarine Crystals&r"
+				"- A &6Saddle&r"
+				"- A &6Tropical Fish&r"
+				"- A &6Water Essence&r"
+			]
+			icon: "iceandfire:hippocampus_fin"
+			id: "59E8AF6A22F1BEC1"
+			tasks: [{
+				id: "6AE4CF3BF126D1B8"
+				type: "checkmark"
+			}]
+			title: "Summon Hippocampus"
+			x: 2.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["0F61DD057F2C5B11"]
+			description: [
+				"In order to summon a &dHippogryph&r, you'll need to complete a &5Afrit&r ritual."
+				""
+				"You will need:"
+				""
+				"- Two &6Rabbit's Feet&r"
+				"- A &6Skyweave&r"
+				"- A &6Feather&r"
+				"- An &6Emerald&r"
+				"- An &6Air Essence&r"
+			]
+			icon: "iceandfire:hippogryph_talon"
+			id: "614C833FB0A5B1B2"
+			tasks: [{
+				id: "28E6C9FA3B99B306"
+				type: "checkmark"
+			}]
+			title: "Summon Hippogryph"
+			x: 1.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["4868B066AF8BAB52"]
+			description: [
+				"In order to summon a &dStymphalian Bird&r, you'll need to complete a &5Djinni&r ritual."
+				""
+				"You will need:"
+				""
+				"- An &6Acacia Sapling&r"
+				"- A &6Feather&r"
+				"- An &6Iron Fillet Knife&r"
+				"- An &6Air Essence&r"
+			]
+			icon: "iceandfire:stymphalian_bird_feather"
+			id: "3B44A9660DBEF0FE"
+			tasks: [{
+				id: "01D775B65339DDF6"
+				type: "checkmark"
+			}]
+			title: "Summon Stymphalian Bird"
+			x: 1.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["4868B066AF8BAB52"]
+			description: [
+				"In order to summon a &dPixie&r, you'll need to complete a &5Djinni&r ritual."
+				""
+				"You will need:"
+				""
+				"- Two &6Pixie Dust&r &7(from Botania)&r"
+				"- A &6Jar&r &7(from Ice and Fire)&r"
+				"- A &6Whirlisprig Token&r"
+				""
+				"Note that this ritual will result in a &dspawn egg&r."
+			]
+			icon: "iceandfire:pixie_jar_0"
+			id: "3D1F4C00F27D9A3D"
+			tasks: [{
+				id: "34579A2346CABBFC"
+				type: "checkmark"
+			}]
+			title: "Summon Pixie"
+			x: 2.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["0F61DD057F2C5B11"]
+			description: [
+				"In order to summon a &dDeath Worm&r, you'll need to complete a &5Afrit&r ritual."
+				""
+				"You will need:"
+				""
+				"- Two &6Rotten Flesh&r"
+				"- Two &6Sand&r"
+				"- A &6Worm&r &7(from Aquaculture)&r"
+			]
+			icon: "iceandfire:deathworm_chitin_white"
+			id: "7EE61B5E8814B735"
+			tasks: [{
+				id: "5B87B0E961258A13"
+				type: "checkmark"
+			}]
+			title: "Summon Death Worm"
+			x: 2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["20D59841C7EE2C25"]
+			description: [
+				"In order to summon a &dGorgon&r, you'll need to complete a &5Afrit&r ritual."
+				""
+				"You will need:"
+				""
+				"- Two &6Mirrorweave&r"
+				"- &6Stone&r"
+				"- A &6Blindfold&r"
+				"- An &6Anima Essence&r"
+				"- An &6Earth Essence&r"
+			]
+			icon: {
+				Count: 1
+				id: "iceandfire:gorgon_head"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "355DF037B343F18D"
+			tasks: [{
+				id: "485148054A61675D"
+				type: "checkmark"
+			}]
+			title: "Summon Gorgon"
+			x: 0.5d
+			y: -7.5d
 		}
 	]
 	title: "Rituals"

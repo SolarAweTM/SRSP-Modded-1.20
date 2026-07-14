@@ -591,6 +591,7 @@
 				""
 				"They can be &6bred with Prismarine Crystals&r."
 			]
+			icon: "iceandfire:spawn_egg_hippocampus"
 			id: "3BCA28EB05B4F3D6"
 			rewards: [{
 				id: "75A2E3964E775B25"
