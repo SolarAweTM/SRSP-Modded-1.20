@@ -743,6 +743,7 @@ ItemEvents.tooltip(event => {
 			text.add(6, Text.gray(''))
 			text.add(7, Text.gray('This chunk of brass feels calamitous,'))
 			text.add(8, Text.gray('maybe even downright evil to the touch.'))
+			text.add(9, Text.darkGray('Sprite by [03]'))
 		}
 	})
 	event.addAdvanced('kubejs:yuri_artifact', (item, advanced, text) => {
@@ -755,6 +756,7 @@ ItemEvents.tooltip(event => {
 			text.add(7, Text.gray('Skimming the pages, you find many'))
 			text.add(8, Text.gray('bookmarks, in various shades of'))
 			text.add(9, Text.gold('orange').append(Text.gray(', ')).append(Text.white('white')).append(Text.gray(', and ')).append(Text.lightPurple('pink')).append(Text.gray('.')))
+			text.add(10, Text.darkGray('Sprite by Fehdison'))
 		}
 	})
 	event.addAdvanced('kubejs:sugoi_artifact', (item, advanced, text) => {
