@@ -652,16 +652,133 @@
 		}
 		{
 			dependencies: ["289160D96A34F9BB"]
-			description: ["In &bfuture phases&r, you'll be able to increase the enchanting level even further. "]
+			description: [
+				"By putting one of your existing normal &bHellshelves&r or &bSeashelves&r into an Enchanting Table, you can &bimprove its capabilities&r, allowing you to enchant up to &alevel 54&r."
+				""
+				"For &bHellshelves&r, you'll need at least &c30% Quanta&r."
+				""
+				"For &bSeashelves&r, you'll need at least &c15% Quanta&r and &510% Arcana&r."
+			]
 			id: "69B774D9430DE055"
+			rewards: [{
+				id: "7E013DF75715854B"
+				type: "xp"
+				xp: 20
+			}]
 			shape: "diamond"
 			tasks: [{
-				id: "696695FD20C26F06"
+				id: "286F56EA24153FC1"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Infused Shelves\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "apotheosis:infused_hellshelf"
+							}
+							{
+								Count: 1b
+								id: "apotheosis:infused_seashelf"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Infused Shelves"
+			x: 8.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["69B774D9430DE055"]
+			description: [
+				"By crafting some of your new Infused shelves with some additional materials, you can make &benhanced shelves&r capable of letting you enchant at &alevel 60&r."
+				""
+				"Do note that some of these shelves also &creduce other stats&r."
+			]
+			id: "4D7245050738E45C"
+			rewards: [{
+				id: "315033FCAC3D5BA6"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "6C234F190C41A67D"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Level 60 Bookshelves\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "apotheosis:blazing_hellshelf"
+							}
+							{
+								Count: 1b
+								id: "apotheosis:glowing_hellshelf"
+							}
+							{
+								Count: 1b
+								id: "apotheosis:heart_seashelf"
+							}
+							{
+								Count: 1b
+								id: "apotheosis:crystal_seashelf"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Reaching Level 60"
+			x: 10.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["69B774D9430DE055"]
+			description: [
+				"Using your new &bInfused Hellshelves&r, you can finally create bookshelves that grant you the ability to &bsee more enchanting results&r, or &bClues&r."
+				""
+				"Note that these shelves offer &cno other stats&r."
+			]
+			id: "2EE360430F03C394"
+			rewards: [{
+				id: "49C7DEF1AC8EA584"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "0B0C2247723A6F42"
+				item: "apotheosis:sightshelf"
+				type: "item"
+			}]
+			title: "More Enchanting Clues"
+			x: 9.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["4D7245050738E45C"]
+			description: ["In &bfuture phases&r, you'll be able to increase the enchanting level even further."]
+			id: "1ED6AE39991B26C5"
+			shape: "square"
+			tasks: [{
+				id: "42A45852A1B15C11"
 				item: "kubejs:intentionally_unobtainable"
 				type: "item"
 			}]
 			title: "Coming Soon!"
-			x: 8.0d
+			x: 12.0d
 			y: -6.5d
 		}
 	]

@@ -15,6 +15,15 @@
 		}
 	}
 	id: "3851880A23AA1547"
+	images: [{
+		alpha: 127
+		height: 5.0d
+		image: "apotheosis:items/gems/guardian"
+		rotation: 0.0d
+		width: 5.0d
+		x: 3.5d
+		y: 0.5d
+	}]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
@@ -33,7 +42,7 @@
 			}]
 			title: "World Domination with Apotheosis"
 			x: 0.0d
-			y: 0.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["4110D540DD554E6F"]
@@ -95,7 +104,7 @@
 			}]
 			title: "Spawners"
 			x: 0.0d
-			y: 3.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["4110D540DD554E6F"]
@@ -117,7 +126,7 @@
 			}]
 			title: "Wandering Trader"
 			x: 1.5d
-			y: 3.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["4110D540DD554E6F"]
@@ -147,14 +156,14 @@
 			}]
 			title: "Fletching"
 			x: -1.5d
-			y: 3.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["4110D540DD554E6F"]
 			description: [
 				"Sometimes, you may find &bspecial gear&r with &bspecial names&r and &bstats&r. These are called &bAffix Items/Loot&r. "
 				""
-				"Currently, in &bPhase I&r, only &bAffix Loot with a Common rarity&r &oshould&r be obtainable."
+				"Currently, in &bPhase II&r, only &bAffix Loot up to Rare rarity&r &oshould&r be obtainable."
 				""
 				"You can use a &bSigil of Unnaming&r in a Smithing Table if you wish to &bremove a name&r from an Affix Item."
 			]
@@ -173,25 +182,27 @@
 			}]
 			title: "Affix Items"
 			x: 2.5d
-			y: 0.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["2EE04DB77BCC5A01"]
 			description: [
 				"Using materials from salvaged Affix Loot, you can make a &bSimple Reforging Table&r. This allows you to &bre-roll the stats&r of an Affix Item, or &aturn a piece of gear into an Affix Item&r."
 				""
-				"Currently in &bPhase I&r, you will &bonly be able to reforge up to Common Affix Loot&r."
+				"Currently in &bPhase II&r, you will &bonly be able to reforge up to Rare Affix Loot&r."
 				""
-				"Put the item you want to reforge in the &bmiddle slot&r, and some &bMysterious Scrap Metal&r in the &btop-left slot&r. "
+				"Put the item you want to reforge in the &bmiddle slot&r, and some of the &bcorresponding rarity material&r in the &btop-left slot&r. If reforging beyond Common rarity, you will also need to provide &bSigils of Rebirth&r in the &bbottom-right slot&r."
 				""
 				"From there, you will have &bthree options at the bottom&r. Hover over each to see what you will get. In the &btop-left corner&r, you will see the cost of that reforge."
 			]
 			id: "19980084CF0536E5"
+			min_width: 250
 			rewards: [{
 				id: "64A1F5CC82A2B5C4"
 				type: "xp"
 				xp: 10
 			}]
+			shape: "diamond"
 			subtitle: "A goblin army has arrived!"
 			tasks: [{
 				id: "148F46C6F482D6A7"
@@ -200,7 +211,7 @@
 			}]
 			title: "Reforging"
 			x: 4.5d
-			y: 0.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["54338324ED62BCC1"]
@@ -218,7 +229,7 @@
 			}]
 			title: "Salvaging Affix Items"
 			x: 3.5d
-			y: 0.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["4110D540DD554E6F"]
@@ -252,7 +263,92 @@
 			}]
 			title: "Potion Charms"
 			x: -2.5d
-			y: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["54338324ED62BCC1"]
+			description: [
+				"Sometimes, the &bAffix Loot&r you create or loot will come with &bGem Sockets&r, found near the bottom of the armor stats."
+				""
+				"You can insert various special &bGems&r you find around the world into these &bSockets&r in order to provide their stats."
+				""
+				"&cUnique gems cannot stack&r, whereas other normal gems will."
+			]
+			id: "556128258067C0C7"
+			rewards: [{
+				id: "2BCF532450DB732B"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "38917CAAFB7883C7"
+				item: "apotheosis:gem"
+				match_nbt: false
+				title: "Any Apotheosis Gem"
+				type: "item"
+			}]
+			title: "Gems"
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["556128258067C0C7"]
+			description: ["By using a &bSigil of Socketing&r in a Smithing Table, you can &badd a gem socket&r to an existing item, without affecting its other stats."]
+			id: "19E0C86EE8F84821"
+			rewards: [{
+				id: "49F420FA6D2D4310"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "129EAF2F37598DEB"
+				item: "apotheosis:sigil_of_socketing"
+				type: "item"
+			}]
+			title: "Adding Sockets"
+			x: 3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["19E0C86EE8F84821"]
+			description: ["Like the previous sigil, the &bLiving Sigil of Socketing&r is able to add &banother gem socket&r to your gear."]
+			id: "594B3012B800B80D"
+			rewards: [{
+				id: "460DBA1594E1F0C3"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "43734589F88688DB"
+				item: "kubejs:super_socket_sigil"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["54338324ED62BCC1"]
+			description: ["Rarely, an &bApothic Boss&r will spawn near you. These Bosses are &bbuffed versions of existing mobs&r, and are guaranteed to drop &bAffix Loot&r, and also have a small chance to drop a &bGem&r."]
+			id: "19717E9415705CA1"
+			rewards: [{
+				id: "3060292AA47C6164"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				advancement: "apotheosis:affix/boss"
+				criterion: ""
+				id: "090B18B127C40010"
+				title: "Slay an Apothic Boss"
+				type: "advancement"
+			}]
+			title: "Apothic Bosses"
+			x: 3.5d
+			y: -1.5d
 		}
 	]
 	title: "World"
