@@ -105,4 +105,38 @@ ServerEvents.recipes(event => {
 	{output:'iceandfire_curios:dreaded_candle'},
 	'iceandfire:dread_stone_bricks',
 	'minecraft:obsidian')
+	
+	event.shaped('iceandfire:fire_lily',
+		[
+			'BBB',
+			'BLB',
+			'BBB'
+		],
+		{
+			B: 'minecraft:blaze_powder',
+			L: 'botania:thermalily'
+		}
+	)
+	event.shaped('iceandfire:frost_lily',
+		[
+			'BBB',
+			'BLB',
+			'BBB'
+		],
+		{
+			B: 'minecraft:packed_ice',
+			L: 'biomesoplenty:waterlily'
+		}
+	)
+	event.shaped('iceandfire:lightning_lily',
+		[
+			'BBB',
+			'BLB',
+			'BBB'
+		],
+		{
+			B: 'immersiveengineering:wire_copper',
+			L: 'biomeswevegone:incan_lily'
+		}
+	)
 })
