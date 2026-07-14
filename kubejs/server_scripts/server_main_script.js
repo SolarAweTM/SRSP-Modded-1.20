@@ -98,6 +98,73 @@ ServerEvents.recipes(event => {
 	event.shapeless('iceandfire:raw_silver_block', ['occultism:raw_silver_block'])
 })
 
+ServerEvents.tags('entity_type', event => {
+	const ARS_DRYGMY_BLACKLIST = [
+		'occultism:afrit_wild',
+		'occultism:possessed_elder_guardian',
+		'occultism:possessed_enderman',
+		'occultism:possessed_endermite',
+		'occultism:possessed_ghast',
+		'occultism:possessed_hoglin',
+		'occultism:possessed_phantom',
+		'occultism:possessed_shulker',
+		'occultism:possessed_skeleton',
+		'occultism:possessed_warden',
+		'occultism:possessed_weak_shulker',
+		'occultism:wild_hunt_skeleton',
+		'occultism:wild_hunt_wither_skeleton',
+		'iceandfire:amphithere',
+		'iceandfire:cyclops',
+		'iceandfire:cockatrice',
+		'iceandfire:deathworm',
+		'iceandfire:dragon_egg',
+		'iceandfire:dragon_skull',
+		'iceandfire:dread_beast',
+		'iceandfire:dread_ghoul',
+		'iceandfire:dread_horse',
+		'iceandfire:dread_knight',
+		'iceandfire:dread_lich',
+		'iceandfire:dread_lich_skull',
+		'iceandfire:dread_scuttler',
+		'iceandfire:dread_thrall',
+		'iceandfire:fire_dragon',
+		'iceandfire:ice_dragon',
+		'iceandfire:lightning_dragon',
+		'iceandfire:ghost',
+		'iceandfire:gorgon',
+		'iceandfire:hippocampus',
+		'iceandfire:hippogryph',
+		'iceandfire:hydra',
+		'iceandfire:mob_skull',
+		'iceandfire:pixie',
+		'iceandfire:sea_serpent',
+		'iceandfire:siren',
+		'iceandfire:stymphalian_bird',
+		'iceandfire:troll',
+		'occultism:bat_familiar',
+		'occultism:beaver_familiar',
+		'occultism:beholder_familiar',
+		'occultism:blacksmith_familiar',
+		'occultism:chimera_familiar',
+		'occultism:cthulhu_familiar',
+		'occultism:deer_familiar',
+		'occultism:demonic_husband',
+		'occultism:demonic_wife',
+		'occultism:devil_familiar',
+		'occultism:dragon_familiar',
+		'occultism:fairy_familiar',
+		'occultism:goat_familiar',
+		'occultism:greedy_familiar',
+		'occultism:guardian_familiar',
+		'occultism:headless_familiar',
+		'occultism:mummy_familiar',
+		'occultism:shub_niggurath_familiar'
+	]
+	ARS_DRYGMY_BLACKLIST.forEach(mob => {
+		event.add('ars_nouveau:drygmy_blacklist', mob)
+	})
+})
+
 ServerEvents.tags('block', event => {
 	event.add('framedblocks:frameable', 'ars_nouveau:source_gem_block')
 	event.add('framedblocks:frameable', 'immersiveengineering:steel_scaffolding_standard')
