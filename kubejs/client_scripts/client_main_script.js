@@ -777,6 +777,15 @@ ItemEvents.tooltip(event => {
 			text.add(1, Text.red('Mending has no effect.'))
 		}
 	})
+	
+	//tooltip for socket sigils
+	event.addAdvanced('apotheosis:sigil_of_socketing', (item, advanced, text) => {
+		text.add(2, Text.red('Max of 1 socket.'))
+	})
+	event.addAdvanced('kubejs:super_socket_sigil', (item, advanced, text) => {
+		text.add(1, Text.gray('Adds one socket to an item'))
+		text.add(2, Text.red('Max of 2 sockets.'))
+	})
 })
 
 JEIEvents.hideItems(event => {
@@ -949,8 +958,6 @@ JEIEvents.hideItems(event => {
 		'apotheosis:gem_cutting_table',
 		'apotheosis:reforging_table',
 		'apotheosis:gem_fused_slate',
-		'apotheosis:sigil_of_socketing',
-		'apotheosis:sigil_of_rebirth',
 		'apotheosis:sigil_of_enhancement',
 		'apotheosis:augmenting_table',
 		'apotheosis:ancient_material',

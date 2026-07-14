@@ -2,8 +2,8 @@
     "ordinal": 2,
     "color": "#5555FF",
     "material": "apotheosis:rare_material",
-	"weight": 0,
-	"quality": 0,
+	"weight": 150,
+	"quality": 10,
 	"rules": [{
 			"type": "stat",
 			"chance": 1.0
@@ -27,10 +27,6 @@
 		{
 			"type": "socket",
 			"chance": 0.85
-		},
-		{
-			"type": "socket",
-			"chance": 0.65
 		},
 		{
 			"type": "durability",
