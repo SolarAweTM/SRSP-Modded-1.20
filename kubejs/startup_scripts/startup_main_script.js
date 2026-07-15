@@ -32,7 +32,7 @@ StartupEvents.registry('item', event => {
 	event.create('flower_token').texture('kubejs:item/example_item') //TODO: Give proper texture
 	//tier 4 and 5 grader catalysts
 	event.create('catalyst_4').texture('srsp:item/catalyst_4') // Fehdison
-	event.create('catalyst_5').texture('kubejs:item/example_item') //TODO: Give proper texture
+	event.create('catalyst_5').texture('srsp:item/catalyst_5')
 	//rainbow furnace components
 	event.create('newest_artifact').texture('srsp:item/shadow_crystal')
 	event.create('yaoi_artifact').texture('srsp:item/brutal_brass') // [03]
