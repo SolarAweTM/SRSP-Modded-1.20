@@ -22,11 +22,20 @@
 				type: "checkmark"
 			}]
 			title: "Powah!"
-			x: 0.0d
-			y: 0.0d
+			x: -1.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["303D43269075D0DC"]
+			description: [
+				"Sometimes, in other mods, and this mod, you'll notice energy being referred to as &6FE&r, or &6RF&r."
+				""
+				"Note that both FE and RF are the &6exact same unit&r, and are &6interchangeable&r with one another."
+				""
+				"FE stands for &6Forge Energy&r, and RF stands for &6Redstone Flux&r."
+				""
+				"As an aside, Applied Energistics 2 uses AE, which is &6equivalent to 2 FE/RF&r."
+			]
 			id: "3517C4738B75FC5F"
 			tasks: [{
 				id: "5F0EAFD547CCF488"
@@ -35,6 +44,856 @@
 			title: "RF? FE?"
 			x: 0.0d
 			y: -2.0d
+		}
+		{
+			dependencies: ["54CF074AAAE31AA0"]
+			description: [
+				"By &6sneak-right-clicking&r while holding this Wrench, you can switch between three modes: &2Link&r, &2Rotate&r, and &2Config&r."
+				""
+				"In &2Link mode&r, you can connect linkable objects together."
+				""
+				"In &2Rotate mode&r, you can rotate blocks around."
+				""
+				"In &2Config mode&r, you can configure the sided connections of cables."
+			]
+			id: "2660D0D42BA2979E"
+			rewards: [{
+				id: "6B9DD0CFBB200CE9"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Another Legally Distinct Wrench"
+			tasks: [{
+				id: "652F69FF1839A1DB"
+				item: {
+					Count: 1
+					id: "powah:wrench"
+					tag: {
+						PowahWrenchNBT: { }
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3517C4738B75FC5F"]
+			description: ["In order to make just about everything from this mod, you'll need to craft some &2Dielectric Paste&r."]
+			id: "54CF074AAAE31AA0"
+			rewards: [{
+				id: "5AD63079F0D76A90"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "151B5E9C3A635C1D"
+				item: "powah:dielectric_paste"
+				type: "item"
+			}]
+			title: "Getting Started"
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6CE064768CF3D2EF"]
+			description: [
+				"&2Uraninite Ore&r can be found underground in &2three variants&r: poor, normal, and dense. Based on the concentration of the ore, you'll get more Uraninite when mined."
+				""
+				"Uraninite is used for &2reactors&r."
+			]
+			id: "60784AF61B8DCD93"
+			rewards: [{
+				id: "45BBA597D91139C7"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "This is NOT edible"
+			tasks: [{
+				id: "34865570DE06AC75"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Uraninite\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "powah:uraninite_raw"
+							}
+							{
+								Count: 1b
+								id: "powah:uraninite"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 3.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["54CF074AAAE31AA0"]
+			description: ["These blocks will allow you to generate energy."]
+			id: "6CE064768CF3D2EF"
+			tasks: [{
+				id: "3600665B8CF6002B"
+				type: "checkmark"
+			}]
+			title: "Generators"
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["54CF074AAAE31AA0"]
+			description: ["These blocks allow you to move energy around."]
+			id: "7A2B7915A56FDDC3"
+			tasks: [{
+				id: "4DD717BE2A193DD1"
+				type: "checkmark"
+			}]
+			title: "Storage and Transfer"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["54CF074AAAE31AA0"]
+			description: ["These blocks and items allow you to do things with energy."]
+			id: "07E58C721B08C662"
+			tasks: [{
+				id: "0C952078C15784EF"
+				type: "checkmark"
+			}]
+			title: "Functional Blocks"
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["54CF074AAAE31AA0"]
+			description: [
+				"&2Powah!&r is split up into multiple tiers, with each machine and component having its own version for each tier."
+				""
+				"The Starter tier is the first one."
+			]
+			id: "355AF3E028B39B0A"
+			rewards: [{
+				id: "7D8BCC7E87DB8A53"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "644D13BED69C80D2"
+				item: "powah:capacitor_basic"
+				type: "item"
+			}]
+			title: "Tiers"
+			x: 2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["355AF3E028B39B0A"]
+			description: ["The &2Basic&r tier is just a cut above the Starter tier, and generally only requires &6more of the same resources&r necessary to craft."]
+			id: "31D3F061B01D5FCF"
+			rewards: [{
+				id: "13D9E431F6EADECE"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "3E0C6766A9EF4374"
+				item: "powah:capacitor_basic_large"
+				type: "item"
+			}]
+			title: "Tier: Basic"
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["31D3F061B01D5FCF"]
+			description: ["The &2Hardened&r tier is the first tier to introduce a new material: &6Energized Steel&r, made from energizing &6Iron and Gold together&r in an &2Energizing Orb&r."]
+			id: "6E27B1F135BB42EE"
+			rewards: [{
+				id: "75DF567AD56DD046"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "1466B551DABDCA07"
+				item: "powah:steel_energized"
+				type: "item"
+			}]
+			title: "Tier: &eHardened&r"
+			x: 5.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6E27B1F135BB42EE"]
+			description: ["The &2Blazing&r tier introduces another new material: &6Blazing Crystals&r, made from energizing &6a Blaze Rod or 4 Blaze Powder&r in an &2Energizing Orb&r."]
+			id: "1B59B4B41EACB147"
+			rewards: [{
+				id: "1D14EA34A13BC38A"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "3159D861C08D2684"
+				item: "powah:crystal_blazing"
+				type: "item"
+			}]
+			title: "Tier: &6Blazing&r"
+			x: 7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7A2B7915A56FDDC3"]
+			description: [
+				"&2Energy Cells&r have the sole purpose of &6storing energy&r for later use."
+				""
+				"Each tier increases the &6amount it can store&r, and how fast energy can be &6transferred in/out&r."
+			]
+			id: "5430BC0BDBB766B2"
+			rewards: [{
+				id: "1568A69506194A30"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "76104CFF8DB5AC51"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Energy Cells\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "powah:energy_cell_starter"
+							}
+							{
+								Count: 1b
+								id: "powah:energy_cell_basic"
+							}
+							{
+								Count: 1b
+								id: "powah:energy_cell_hardened"
+							}
+							{
+								Count: 1b
+								id: "powah:energy_cell_blazing"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7A2B7915A56FDDC3"]
+			description: [
+				"&2Energy Cables&r are used to &6transfer power&r between machines."
+				""
+				"Higher tiers increase the &6transfer rate&r."
+			]
+			id: "05F4AE6E7A4466F3"
+			rewards: [{
+				id: "7984088901F5A6B2"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "6D0506C3F68B0F4F"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Energy Cables\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "powah:energy_cable_starter"
+							}
+							{
+								Count: 1b
+								id: "powah:energy_cable_basic"
+							}
+							{
+								Count: 1b
+								id: "powah:energy_cable_hardened"
+							}
+							{
+								Count: 1b
+								id: "powah:energy_cable_blazing"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["07E58C721B08C662"]
+			description: [
+				"The &2Energizing Orb&r is a crafting station that can be used to &6craft various materials&r by infusing them with energy."
+				""
+				"In order to function, you need to place &2Energizing Rods&r nearby. These should be placed directly attached to a Cable."
+				""
+				"Higher tiers will &6increase processing speed&r."
+			]
+			icon: "powah:energizing_orb"
+			id: "016AFBB2F3A1EF33"
+			rewards: [{
+				id: "30A45F810258B82F"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [
+				{
+					id: "1E6AF262C8343554"
+					item: "powah:energizing_orb"
+					type: "item"
+				}
+				{
+					id: "4F1E9B716F7E928F"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Energizing Rods\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "powah:energizing_rod_starter"
+								}
+								{
+									Count: 1b
+									id: "powah:energizing_rod_basic"
+								}
+								{
+									Count: 1b
+									id: "powah:energizing_rod_hardened"
+								}
+								{
+									Count: 1b
+									id: "powah:energizing_rod_blazing"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["07E58C721B08C662"]
+			description: [
+				"&2Energy Hoppers&r can be attached to a container &7(such as a Chest)&r, and when given power, will begin charging &6any compatible items&r within the container."
+				""
+				"Higher tiers &6increase charging speed&r and &6buffer capacity&r."
+			]
+			id: "67CE6DCCB643C675"
+			rewards: [{
+				id: "7BF7EC778579BFFF"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "03012BBA1A855146"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Energy Hoppers\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "powah:energy_hopper_starter"
+							}
+							{
+								Count: 1b
+								id: "powah:energy_hopper_basic"
+							}
+							{
+								Count: 1b
+								id: "powah:energy_hopper_hardened"
+							}
+							{
+								Count: 1b
+								id: "powah:energy_hopper_blazing"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["07E58C721B08C662"]
+			description: [
+				"&2Energy Dischargers&r will begin to &6discharge items inserted&r into them, storing their energy within an&6 internal buffer&r, which can then be transferred elsewhere."
+				""
+				"Higher tiers &6increase discharging speed&r and &6buffer capacity&r."
+			]
+			id: "3FD626D668D1250C"
+			rewards: [{
+				id: "593F8BD774A28199"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "208865798381C8DC"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Energy Dischargers\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "powah:energy_discharger_starter"
+							}
+							{
+								Count: 1b
+								id: "powah:energy_discharger_basic"
+							}
+							{
+								Count: 1b
+								id: "powah:energy_discharger_hardened"
+							}
+							{
+								Count: 1b
+								id: "powah:energy_discharger_blazing"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["07E58C721B08C662"]
+			description: [
+				"The &2Player Transmitter&r will wirelessly &6charge compatible items&r in a bound player's inventory, within the &6same dimension&r."
+				""
+				"In order to bind, you will need a &2Binding Card&r. &6Right-click&r the Binding Card in your hand to bind it to yourself, then &6insert into&r the Player Transmitter to link."
+				""
+				"Higher tiers &6increase charging speed&r."
+			]
+			id: "7C1216A85038610C"
+			rewards: [{
+				id: "7A44FBF17868B7C0"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [
+				{
+					id: "312D97B34BD34947"
+					item: "powah:binding_card"
+					type: "item"
+				}
+				{
+					id: "32BDFE1382B8FF85"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Player Transmitters\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "powah:player_transmitter_starter"
+								}
+								{
+									Count: 1b
+									id: "powah:player_transmitter_basic"
+								}
+								{
+									Count: 1b
+									id: "powah:player_transmitter_hardened"
+								}
+								{
+									Count: 1b
+									id: "powah:player_transmitter_blazing"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Player Transmitter"
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6CE064768CF3D2EF"]
+			description: [
+				"The &2Furnator&r is &6really quite simple&r. It works like a &6Furnace&r, but instead of smelting items, it &6uses fuel to generate power&r."
+				""
+				"Higher tiers increase the &6generation rate and buffer capacity&r."
+			]
+			id: "1532F5A004AED08D"
+			rewards: [{
+				id: "04AA94BD9D011640"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "4311F5DEE87852A9"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Furnators\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "powah:furnator_starter"
+							}
+							{
+								Count: 1b
+								id: "powah:furnator_basic"
+							}
+							{
+								Count: 1b
+								id: "powah:furnator_hardened"
+							}
+							{
+								Count: 1b
+								id: "powah:furnator_blazing"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["6CE064768CF3D2EF"]
+			description: [
+				"&2Magmators&r will generate power off of &6Lava&r."
+				""
+				"Higher tiers increase &6generation rate and buffer capacity&r."
+			]
+			id: "2698F78B2E2C5EBE"
+			rewards: [{
+				id: "6BFBC73F83866E47"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "07C53EF6595CB251"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Magmators\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "powah:magmator_starter"
+							}
+							{
+								Count: 1b
+								id: "powah:magmator_basic"
+							}
+							{
+								Count: 1b
+								id: "powah:magmator_hardened"
+							}
+							{
+								Count: 1b
+								id: "powah:magmator_blazing"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6CE064768CF3D2EF"]
+			description: [
+				"&2Thermo Generators&r generate energy when placed &6on top of hot materials&r, such as magma blocks or lava, but &6require a liquid coolant&r, such as Water to generate power."
+				""
+				"Higher tiers increase &6generation rate and buffer capacity&r."
+			]
+			id: "5E37565584EA8586"
+			rewards: [{
+				id: "00F1B4E5A678D027"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "2EB9791E4298F428"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Thermo Generators\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "powah:thermo_generator_starter"
+							}
+							{
+								Count: 1b
+								id: "powah:thermo_generator_basic"
+							}
+							{
+								Count: 1b
+								id: "powah:thermo_generator_hardened"
+							}
+							{
+								Count: 1b
+								id: "powah:thermo_generator_blazing"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6CE064768CF3D2EF"]
+			description: [
+				"&2Solar Panels&r are also &6really quite simple&r. They generate energy when &6exposed to sunlight&r."
+				""
+				"Higher tiers increase &6generation rate and buffer capacity&r."
+			]
+			id: "0F3EE0F3C53A621F"
+			rewards: [{
+				id: "572B41B05C66EBFF"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "408A617ED28DB838"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Solar Panels\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "powah:solar_panel_starter"
+							}
+							{
+								Count: 1b
+								id: "powah:solar_panel_basic"
+							}
+							{
+								Count: 1b
+								id: "powah:solar_panel_hardened"
+							}
+							{
+								Count: 1b
+								id: "powah:solar_panel_blazing"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["0F3EE0F3C53A621F"]
+			description: ["The &2Lens of Ender&r allows a Solar Panel to &6see through blocks&r in order to gather sunlight."]
+			id: "0601CED1D2A00BFC"
+			rewards: [{
+				id: "6479ED9A1EACD7B0"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "It's actually not that simple."
+			tasks: [{
+				id: "46C82CDA09B23414"
+				item: "powah:lens_of_ender"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["60784AF61B8DCD93"]
+			description: [
+				"The &2Reactor&r is a multiblock structure that &6generates energy&r when given Uraninite."
+				""
+				"Holding &636 Reactor blocks&r in your hand and placing it will &6automatically build&r the &63x4x3&r Reactor."
+				""
+				"In order to &6function at full efficiency&r, you would have to provide the Reactor with &6Uraninite&r, a &6solid fuel&r, &6Redstone&r, a &6liquid coolant&r, and a &6solid coolant&r."
+				""
+				"Liquid coolants include &6Water&r, and solid coolants include &6Dry Ice&r."
+				""
+				"For more information, check the &6mod's manual&r."
+				""
+				"Higher tiers increase &6generation rate and buffer capacity&r."
+			]
+			id: "71B61D5D4F3C010E"
+			min_width: 250
+			rewards: [{
+				id: "481CA50FE794CB15"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 36L
+				id: "62CB2E2957A9C9D7"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Reactors\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "powah:reactor_starter"
+							}
+							{
+								Count: 1b
+								id: "powah:reactor_basic"
+							}
+							{
+								Count: 1b
+								id: "powah:reactor_hardened"
+							}
+							{
+								Count: 1b
+								id: "powah:reactor_blazing"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Reactors"
+			x: 4.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["7A2B7915A56FDDC3"]
+			description: [
+				"&2Batteries&r can be used to store energy for use &6on the go&r."
+				""
+				"You can equip them in &6any Curio slot&r, and they will provide energy to your compatible items."
+				""
+				"Higher tiers increase &6capacity and transfer rates&r."
+			]
+			id: "25F114B8E39124C0"
+			rewards: [{
+				id: "0DA979C94E46EAA9"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "397D59AE2A0CEC1A"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Batteries\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "powah:battery_starter"
+								tag: {
+									powah_tile_data: {
+										energy_stored_main_energy: 0L
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "powah:battery_basic"
+								tag: {
+									powah_tile_data: {
+										energy_stored_main_energy: 0L
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "powah:battery_hardened"
+								tag: {
+									powah_tile_data: {
+										energy_stored_main_energy: 0L
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "powah:battery_blazing"
+								tag: {
+									powah_tile_data: {
+										energy_stored_main_energy: 0L
+									}
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: -0.5d
 		}
 	]
 	title: "Powah!"
