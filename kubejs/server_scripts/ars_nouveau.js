@@ -272,6 +272,234 @@ ServerEvents.recipes(event => {
 	event.remove({id:"ars_additions:wayfinder"})
 	event.remove({output:"ars_additions:xp_jar"})
 	event.remove({output:"ars_additions:source_spawner"})
+	
+	//rewrite recipes for ars armor
+	//fire
+	event.remove({id:'ars_elemental:fire_hat'})
+	event.custom({
+		type: 'ars_elemental:armor_upgrade',
+		output: {item: 'ars_elemental:fire_hat'},
+		pedestalItems: [
+			{item:{item:'ars_elemental:mark_of_mastery'}},
+			{item:{tag:'iceandfire:scales/dragon/fire'}},
+			{item:{tag:'iceandfire:scales/dragon/fire'}},
+			{item:{item:'ars_nouveau:fire_essence'}}
+		],
+		reagent: [{tag: 'ars_nouveau:hood'}],
+		sourceCost: 7000,
+		tier: 3
+	})
+	event.remove({id:'ars_elemental:fire_robes'})
+	event.custom({
+		type: 'ars_elemental:armor_upgrade',
+		output: {item: 'ars_elemental:fire_robes'},
+		pedestalItems: [
+			{item:{item:'ars_elemental:mark_of_mastery'}},
+			{item:{tag:'iceandfire:scales/dragon/fire'}},
+			{item:{tag:'iceandfire:scales/dragon/fire'}},
+			{item:{item:'ars_nouveau:fire_essence'}}
+		],
+		reagent: [{tag: 'ars_nouveau:robe'}],
+		sourceCost: 7000,
+		tier: 3
+	})
+	event.remove({id:'ars_elemental:fire_leggings'})
+	event.custom({
+		type: 'ars_elemental:armor_upgrade',
+		output: {item: 'ars_elemental:fire_leggings'},
+		pedestalItems: [
+			{item:{item:'ars_elemental:mark_of_mastery'}},
+			{item:{tag:'iceandfire:scales/dragon/fire'}},
+			{item:{tag:'iceandfire:scales/dragon/fire'}},
+			{item:{item:'ars_nouveau:fire_essence'}}
+		],
+		reagent: [{tag: 'ars_nouveau:legs'}],
+		sourceCost: 7000,
+		tier: 3
+	})
+	event.remove({id:'ars_elemental:fire_boots'})
+	event.custom({
+		type: 'ars_elemental:armor_upgrade',
+		output: {item: 'ars_elemental:fire_boots'},
+		pedestalItems: [
+			{item:{item:'ars_elemental:mark_of_mastery'}},
+			{item:{tag:'iceandfire:scales/dragon/fire'}},
+			{item:{tag:'iceandfire:scales/dragon/fire'}},
+			{item:{item:'ars_nouveau:fire_essence'}}
+		],
+		reagent: [{tag: 'ars_nouveau:boot'}],
+		sourceCost: 7000,
+		tier: 3
+	})
+	event.remove({id:'ars_elemental:air_hat'})
+	event.custom({
+		type: 'ars_elemental:armor_upgrade',
+		output: {item: 'ars_elemental:air_hat'},
+		pedestalItems: [
+			{item:{item:'ars_elemental:mark_of_mastery'}},
+			{item:{tag:'iceandfire:scales/dragon/ice'}},
+			{item:{tag:'iceandfire:scales/dragon/ice'}},
+			{item:{item:'ars_nouveau:air_essence'}}
+		],
+		reagent: [{tag: 'ars_nouveau:hood'}],
+		sourceCost: 7000,
+		tier: 3
+	})
+	event.remove({id:'ars_elemental:air_robes'})
+	event.custom({
+		type: 'ars_elemental:armor_upgrade',
+		output: {item: 'ars_elemental:air_robes'},
+		pedestalItems: [
+			{item:{item:'ars_elemental:mark_of_mastery'}},
+			{item:{tag:'iceandfire:scales/dragon/ice'}},
+			{item:{tag:'iceandfire:scales/dragon/ice'}},
+			{item:{item:'ars_nouveau:air_essence'}}
+		],
+		reagent: [{tag: 'ars_nouveau:robe'}],
+		sourceCost: 7000,
+		tier: 3
+	})
+	event.remove({id:'ars_elemental:air_leggings'})
+	event.custom({
+		type: 'ars_elemental:armor_upgrade',
+		output: {item: 'ars_elemental:air_leggings'},
+		pedestalItems: [
+			{item:{item:'ars_elemental:mark_of_mastery'}},
+			{item:{tag:'iceandfire:scales/dragon/ice'}},
+			{item:{tag:'iceandfire:scales/dragon/ice'}},
+			{item:{item:'ars_nouveau:air_essence'}}
+		],
+		reagent: [{tag: 'ars_nouveau:legs'}],
+		sourceCost: 7000,
+		tier: 3
+	})
+	event.remove({id:'ars_elemental:air_boots'})
+	event.custom({
+		type: 'ars_elemental:armor_upgrade',
+		output: {item: 'ars_elemental:air_boots'},
+		pedestalItems: [
+			{item:{item:'ars_elemental:mark_of_mastery'}},
+			{item:{tag:'iceandfire:scales/dragon/ice'}},
+			{item:{tag:'iceandfire:scales/dragon/ice'}},
+			{item:{item:'ars_nouveau:air_essence'}}
+		],
+		reagent: [{tag: 'ars_nouveau:boot'}],
+		sourceCost: 7000,
+		tier: 3
+	})
+	event.remove({id:'ars_elemental:earth_hat'})
+	event.custom({
+		type: 'ars_elemental:armor_upgrade',
+		output: {item: 'ars_elemental:earth_hat'},
+		pedestalItems: [
+			{item:{item:'ars_elemental:mark_of_mastery'}},
+			{item:{tag:'iceandfire:scales/dragon/lightning'}},
+			{item:{tag:'iceandfire:scales/dragon/lightning'}},
+			{item:{item:'ars_nouveau:earth_essence'}}
+		],
+		reagent: [{tag: 'ars_nouveau:hood'}],
+		sourceCost: 7000,
+		tier: 3
+	})
+	event.remove({id:'ars_elemental:earth_robes'})
+	event.custom({
+		type: 'ars_elemental:armor_upgrade',
+		output: {item: 'ars_elemental:earth_robes'},
+		pedestalItems: [
+			{item:{item:'ars_elemental:mark_of_mastery'}},
+			{item:{tag:'iceandfire:scales/dragon/lightning'}},
+			{item:{tag:'iceandfire:scales/dragon/lightning'}},
+			{item:{item:'ars_nouveau:earth_essence'}}
+		],
+		reagent: [{tag: 'ars_nouveau:robe'}],
+		sourceCost: 7000,
+		tier: 3
+	})
+	event.remove({id:'ars_elemental:earth_leggings'})
+	event.custom({
+		type: 'ars_elemental:armor_upgrade',
+		output: {item: 'ars_elemental:earth_leggings'},
+		pedestalItems: [
+			{item:{item:'ars_elemental:mark_of_mastery'}},
+			{item:{tag:'iceandfire:scales/dragon/lightning'}},
+			{item:{tag:'iceandfire:scales/dragon/lightning'}},
+			{item:{item:'ars_nouveau:earth_essence'}}
+		],
+		reagent: [{tag: 'ars_nouveau:legs'}],
+		sourceCost: 7000,
+		tier: 3
+	})
+	event.remove({id:'ars_elemental:earth_boots'})
+	event.custom({
+		type: 'ars_elemental:armor_upgrade',
+		output: {item: 'ars_elemental:earth_boots'},
+		pedestalItems: [
+			{item:{item:'ars_elemental:mark_of_mastery'}},
+			{item:{tag:'iceandfire:scales/dragon/lightning'}},
+			{item:{tag:'iceandfire:scales/dragon/lightning'}},
+			{item:{item:'ars_nouveau:earth_essence'}}
+		],
+		reagent: [{tag: 'ars_nouveau:boot'}],
+		sourceCost: 7000,
+		tier: 3
+	})
+	event.remove({id:'ars_elemental:aqua_hat'})
+	event.custom({
+		type: 'ars_elemental:armor_upgrade',
+		output: {item: 'ars_elemental:aqua_hat'},
+		pedestalItems: [
+			{item:{item:'ars_elemental:mark_of_mastery'}},
+			{item:{tag:'iceandfire:scales/dragon'}},
+			{item:{tag:'iceandfire:scales/sea_serpent'}},
+			{item:{item:'ars_nouveau:water_essence'}}
+		],
+		reagent: [{tag: 'ars_nouveau:hood'}],
+		sourceCost: 7000,
+		tier: 3
+	})
+	event.remove({id:'ars_elemental:aqua_robes'})
+	event.custom({
+		type: 'ars_elemental:armor_upgrade',
+		output: {item: 'ars_elemental:aqua_robes'},
+		pedestalItems: [
+			{item:{item:'ars_elemental:mark_of_mastery'}},
+			{item:{tag:'iceandfire:scales/dragon'}},
+			{item:{tag:'iceandfire:scales/sea_serpent'}},
+			{item:{item:'ars_nouveau:water_essence'}}
+		],
+		reagent: [{tag: 'ars_nouveau:robe'}],
+		sourceCost: 7000,
+		tier: 3
+	})
+	event.remove({id:'ars_elemental:aqua_leggings'})
+	event.custom({
+		type: 'ars_elemental:armor_upgrade',
+		output: {item: 'ars_elemental:aqua_leggings'},
+		pedestalItems: [
+			{item:{item:'ars_elemental:mark_of_mastery'}},
+			{item:{tag:'iceandfire:scales/dragon'}},
+			{item:{tag:'iceandfire:scales/sea_serpent'}},
+			{item:{item:'ars_nouveau:water_essence'}}
+		],
+		reagent: [{tag: 'ars_nouveau:legs'}],
+		sourceCost: 7000,
+		tier: 3
+	})
+	event.remove({id:'ars_elemental:aqua_boots'})
+	event.custom({
+		type: 'ars_elemental:armor_upgrade',
+		output: {item: 'ars_elemental:aqua_boots'},
+		pedestalItems: [
+			{item:{item:'ars_elemental:mark_of_mastery'}},
+			{item:{tag:'iceandfire:scales/dragon'}},
+			{item:{tag:'iceandfire:scales/sea_serpent'}},
+			{item:{item:'ars_nouveau:water_essence'}}
+		],
+		reagent: [{tag: 'ars_nouveau:boot'}],
+		sourceCost: 7000,
+		tier: 3
+	})
+	
 })
 
 LootJS.modifiers((event) => {
