@@ -1,5 +1,5 @@
 {
-	autofocus_id: "624C464E295EF6D1"
+	autofocus_id: "5D4A637C4D9E8ABE"
 	consume_items: true
 	default_hide_dependency_lines: false
 	default_quest_shape: "diamond"
@@ -36,12 +36,17 @@
 				title: "Cacophonium Compound"
 				type: "checkmark"
 			}]
-			x: -4.0d
+			x: -3.5d
 			y: 0.0d
 		}
 		{
 			id: "5D4A637C4D9E8ABE"
 			invisible: true
+			rewards: [{
+				id: "7FC4DB4E4B6B0F70"
+				item: "botania:cacophonium"
+				type: "item"
+			}]
 			tasks: [{
 				consume_items: true
 				disable_toast: true
@@ -51,8 +56,8 @@
 				title: "Any Cacophonium"
 				type: "item"
 			}]
-			x: -5.0d
-			y: -1.0d
+			x: 0.5d
+			y: 0.0d
 		}
 		{
 			description: [
@@ -730,6 +735,7 @@
 			y: 1.0d
 		}
 		{
+			description: ["Overwrites existing sound &otconstruct:crossbow_reload&r"]
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -765,6 +771,7 @@
 			y: -2.0d
 		}
 		{
+			description: ["Overwrites existing sound &otconstruct:charged&r"]
 			hide_until_deps_complete: true
 			icon: "artifacts:power_glove"
 			id: "1FFD164C0B2940DC"
@@ -794,6 +801,7 @@
 			y: 0.0d
 		}
 		{
+			description: ["Overwrites existing sound &otconstruct:discharge&r"]
 			hide_until_deps_complete: true
 			icon: "minecraft:paper"
 			id: "497D5F01BCC57DD7"
