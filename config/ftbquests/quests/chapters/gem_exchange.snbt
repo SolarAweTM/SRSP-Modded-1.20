@@ -66,7 +66,7 @@
 			description: [
 				"Do &cYOU&r need a &6specific Apotheosis Gem&r for your gear? Have &cYOU&r run out of wizard towers in the world to search for gems in? Well we have a solution for you: the &aRock Shop&r, brought to you by &bFurnox Gem Cutting&r*! &aIt rocks!&r"
 				""
-				"Simply hand over some of your hard-earned &6[ITEM TBD]&r and we'll give you some &6Gem Dust&r to get some Gems with, provided you get us some &6necessary reagents&r to work with!"
+				"Simply hand over some of your hard-earned &6Dragon Scales&r and we'll give you some &6Gem Dust&r to get some Gems with, provided you get us some &6necessary reagents&r to work with!"
 				""
 				"&7&o*Furnox Gem Cutting is not responsible for any loss of habitat, environmental destruction, nuclear wars, or other unsavory circumstances as a result of the Rock Shop.&r"
 			]
@@ -92,7 +92,22 @@
 				type: "item"
 			}]
 			size: 2.0d
-			title: "Sell [TBD]"
+			tasks: [{
+				id: "727F1886AADE7143"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Dragon Scales\"}"
+						}
+						value: "iceandfire:scales/dragon"
+					}
+				}
+				type: "item"
+			}]
+			title: "Sell Dragon Scales"
 			x: -4.0d
 			y: 0.0d
 		}
@@ -107,7 +122,23 @@
 				item: "apotheosis:gem_dust"
 				type: "item"
 			}]
-			title: "Sell [TBD] (x10)"
+			tasks: [{
+				count: 10L
+				id: "14CE95C019ED700F"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Dragon Scales\"}"
+						}
+						value: "iceandfire:scales/dragon"
+					}
+				}
+				type: "item"
+			}]
+			title: "Sell Dragon Scales (x10)"
 			x: -5.0d
 			y: -1.0d
 		}
@@ -122,7 +153,23 @@
 				item: "apotheosis:gem_dust"
 				type: "item"
 			}]
-			title: "Sell [TBD] (x64)"
+			tasks: [{
+				count: 64L
+				id: "3BF946A174D7F150"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Dragon Scales\"}"
+						}
+						value: "iceandfire:scales/dragon"
+					}
+				}
+				type: "item"
+			}]
+			title: "Sell Dragon Scales (x64)"
 			x: -5.0d
 			y: 1.0d
 		}
@@ -1883,7 +1930,7 @@
 				}
 			]
 			title: "Flawed Gem of the Earth"
-			x: 5.5d
+			x: 4.5d
 			y: 4.5d
 		}
 		{
@@ -1927,7 +1974,7 @@
 				}
 			]
 			title: "Flawed Gem of the Royal Family"
-			x: 6.5d
+			x: 5.5d
 			y: 4.5d
 		}
 		{
@@ -1972,6 +2019,50 @@
 			]
 			title: "Flawed Gem of the Incandescent Inferno"
 			x: 7.5d
+			y: 4.5d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:rare"
+					}
+					gem: "apotheosis:the_nether/blood_lord"
+				}
+			}
+			id: "3B3B1A3995603462"
+			rewards: [{
+				id: "3655F390778D0700"
+				item: {
+					Count: 1
+					id: "apotheosis:gem"
+					tag: {
+						affix_data: {
+							rarity: "apotheosis:rare"
+						}
+						gem: "apotheosis:the_nether/blood_lord"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 15L
+					id: "41A1BD6AB97AAF4C"
+					item: { Count: 15, id: "apotheosis:gem_dust" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "2EE968C9DB7F8BEB"
+					item: { Count: 5, id: "apotheosis:rare_material" }
+					type: "item"
+				}
+			]
+			title: "Flawed Gem of the Ravenous Blood Lord"
+			x: 8.5d
 			y: 4.5d
 		}
 	]
