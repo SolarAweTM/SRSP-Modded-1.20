@@ -34,6 +34,22 @@ ServerEvents.recipes(event => {
 	
 	//recipe for new catalysts
 	event.shapeless('kubejs:catalyst_4', ['silentgear:diamond_shard', 'silentgear:diamond_shard', 'apotheosis:warden_tendril', 'silentgear:golden_nether_banana'])
+	
+	// remove silent compat materials
+	const COMPAT_ITEMS = [
+		'silentcompat:sculk_alloy_ingot',
+		'silentcompat:midnight_iron_ingot',
+		'silentcompat:dark_chocolate_ingot',
+		'silentcompat:outback_leather',
+		'silentcompat:crystalline_alloy',
+		'silentcompat:bunny_steel_ingot',
+		'silentcompat:capsid_alloy_ingot',
+		'silentcompat:source_steel_ingot'
+	]
+	COMPAT_ITEMS.forEach(item => {
+		event.remove({output: item})
+		event.remove({input: item})
+	})
 })
 
 ServerEvents.tags('item', event => {
