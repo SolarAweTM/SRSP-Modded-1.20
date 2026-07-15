@@ -117,6 +117,87 @@ ItemEvents.modification(event => {
 			food.effect('minecraft:instant_damage', -1, 100, 1.0)
 		}
 	})
+	//buff dragonscale armor
+	const IAF_DRAGONSCALE_HELMETS = [
+		'iceandfire:armor_red_helmet',
+		'iceandfire:armor_bronze_helmet',
+		'iceandfire:armor_green_helmet',
+		'iceandfire:armor_gray_helmet',
+		'iceandfire:armor_blue_helmet',
+		'iceandfire:armor_white_helmet',
+		'iceandfire:armor_sapphire_helmet',
+		'iceandfire:armor_silver_helmet',
+		'iceandfire:armor_electric_helmet',
+		'iceandfire:armor_amethyst_helmet',
+		'iceandfire:armor_copper_helmet',
+		'iceandfire:armor_black_helmet'
+	]
+	IAF_DRAGONSCALE_HELMETS.forEach(armor => {
+		event.modify(armor, item => {
+			item.armorProtection = 6
+			item.addAttribute('minecraft:generic.max_health', '567b6f6b-2d9e-4c6d-8d2c-fe2f7f973f19', '567b6f6b-2d9e-4c6d-8d2c-fe2f7f973f19', 2, 'ADDITION')
+		})
+	})
+	const IAF_DRAGONSCALE_CHESTPLATES = [
+		'iceandfire:armor_red_chestplate',
+		'iceandfire:armor_bronze_chestplate',
+		'iceandfire:armor_green_chestplate',
+		'iceandfire:armor_gray_chestplate',
+		'iceandfire:armor_blue_chestplate',
+		'iceandfire:armor_white_chestplate',
+		'iceandfire:armor_sapphire_chestplate',
+		'iceandfire:armor_silver_chestplate',
+		'iceandfire:armor_electric_chestplate',
+		'iceandfire:armor_amethyst_chestplate',
+		'iceandfire:armor_copper_chestplate',
+		'iceandfire:armor_black_chestplate'
+	]
+	IAF_DRAGONSCALE_CHESTPLATES.forEach(armor => {
+		event.modify(armor, item => {
+			item.armorProtection = 10
+			item.addAttribute('minecraft:generic.max_health', '567b6f6b-2d9e-4c6d-8d2c-fe2f7f973f1a', '567b6f6b-2d9e-4c6d-8d2c-fe2f7f973f1a', 2, 'ADDITION')
+		})
+	})
+	const IAF_DRAGONSCALE_LEGGINGS = [
+		'iceandfire:armor_red_leggings',
+		'iceandfire:armor_bronze_leggings',
+		'iceandfire:armor_green_leggings',
+		'iceandfire:armor_gray_leggings',
+		'iceandfire:armor_blue_leggings',
+		'iceandfire:armor_white_leggings',
+		'iceandfire:armor_sapphire_leggings',
+		'iceandfire:armor_silver_leggings',
+		'iceandfire:armor_electric_leggings',
+		'iceandfire:armor_amethyst_leggings',
+		'iceandfire:armor_copper_leggings',
+		'iceandfire:armor_black_leggings'
+	]
+	IAF_DRAGONSCALE_LEGGINGS.forEach(armor => {
+		event.modify(armor, item => {
+			item.armorProtection = 8
+			item.addAttribute('minecraft:generic.max_health', '567b6f6b-2d9e-4c6d-8d2c-fe2f7f973f1b', '567b6f6b-2d9e-4c6d-8d2c-fe2f7f973f1b', 2, 'ADDITION')
+		})
+	})
+	const IAF_DRAGONSCALE_BOOTS = [
+		'iceandfire:armor_red_boots',
+		'iceandfire:armor_bronze_boots',
+		'iceandfire:armor_green_boots',
+		'iceandfire:armor_gray_boots',
+		'iceandfire:armor_blue_boots',
+		'iceandfire:armor_white_boots',
+		'iceandfire:armor_sapphire_boots',
+		'iceandfire:armor_silver_boots',
+		'iceandfire:armor_electric_boots',
+		'iceandfire:armor_amethyst_boots',
+		'iceandfire:armor_copper_boots',
+		'iceandfire:armor_black_boots'
+	]
+	IAF_DRAGONSCALE_BOOTS.forEach(armor => {
+		event.modify(armor, item => {
+			item.armorProtection = 6
+			item.addAttribute('minecraft:generic.max_health', '567b6f6b-2d9e-4c6d-8d2c-fe2f7f973f1c', '567b6f6b-2d9e-4c6d-8d2c-fe2f7f973f1c', 2, 'ADDITION')
+		})
+	})
 })
 
 MoreJSEvents.registerPotionBrewing((event) => {
