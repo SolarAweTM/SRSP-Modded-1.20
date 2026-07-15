@@ -3,6 +3,9 @@
 console.info('-KubeJS- Occultism server script loaded.')
 
 ServerEvents.recipes(event => {
+	//remove higher tier crushers
+	event.remove({id: 'occultism:ritual/summon_afrit_crusher'})
+	event.remove({id: 'occultism:ritual/summon_marid_crusher'})
 	//remove soul gems
 	event.remove({output: 'occultism:soul_gem'})
 	event.replaceInput({id: 'occultism:ritual/craft_familiar_ring'},
