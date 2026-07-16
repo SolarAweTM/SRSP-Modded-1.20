@@ -29,7 +29,7 @@ StartupEvents.registry('item', event => {
 	//sapling exchange token
 	event.create('trizzco_point').texture('srsp:item/trizzco_point')
 	//flower shop token
-	event.create('flower_token').texture('kubejs:item/example_item') //TODO: Give proper texture
+	event.create('flower_token').texture('srsp:item/flower_token')
 	//tier 4 and 5 grader catalysts
 	event.create('catalyst_4').texture('srsp:item/catalyst_4') // Fehdison
 	event.create('catalyst_5').texture('srsp:item/catalyst_5')
