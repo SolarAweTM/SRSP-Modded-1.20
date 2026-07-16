@@ -331,6 +331,7 @@ ServerEvents.recipes(event => {
 		sourceCost: 7000,
 		tier: 3
 	})
+	//air
 	event.remove({id:'ars_elemental:air_hat'})
 	event.custom({
 		type: 'ars_elemental:armor_upgrade',
@@ -387,6 +388,7 @@ ServerEvents.recipes(event => {
 		sourceCost: 7000,
 		tier: 3
 	})
+	//earth
 	event.remove({id:'ars_elemental:earth_hat'})
 	event.custom({
 		type: 'ars_elemental:armor_upgrade',
@@ -443,6 +445,7 @@ ServerEvents.recipes(event => {
 		sourceCost: 7000,
 		tier: 3
 	})
+	//aqua (uuu, knives!)
 	event.remove({id:'ars_elemental:aqua_hat'})
 	event.custom({
 		type: 'ars_elemental:armor_upgrade',
@@ -494,6 +497,71 @@ ServerEvents.recipes(event => {
 			{item:{tag:'iceandfire:scales/dragon'}},
 			{item:{tag:'iceandfire:scales/sea_serpent'}},
 			{item:{item:'ars_nouveau:water_essence'}}
+		],
+		reagent: [{tag: 'ars_nouveau:boot'}],
+		sourceCost: 7000,
+		tier: 3
+	})
+	//technomancer
+	event.remove({id:'ars_technica:technomancer_helmet'})
+	event.custom({
+		type: 'ars_elemental:armor_upgrade',
+		output: {item: 'ars_technica:technomancer_helmet'},
+		pedestalItems: [
+			{item:{item:'ars_elemental:mark_of_mastery'}},
+			{item:{item:'ae2:logic_processor_press'}},
+			{item:{item:'ae2:calculation_processor_press'}},
+			{item:{item:'ae2:engineering_processor_press'}},
+			{item:{item:'ae2:silicon_press'}},
+			{item:{item:'create:goggles'}}
+		],
+		reagent: [{tag: 'ars_nouveau:hood'}],
+		sourceCost: 7000,
+		tier: 3
+	})
+	event.remove({id:'ars_technica:technomancer_chestplate'})
+	event.custom({
+		type: 'ars_elemental:armor_upgrade',
+		output: {item: 'ars_technica:technomancer_chestplate'},
+		pedestalItems: [
+			{item:{item:'ars_elemental:mark_of_mastery'}},
+			{item:{item:'ae2:logic_processor_press'}},
+			{item:{item:'ae2:calculation_processor_press'}},
+			{item:{item:'ae2:engineering_processor_press'}},
+			{item:{item:'ae2:silicon_press'}},
+			{item:{item:'create:goggles'}}
+		],
+		reagent: [{tag: 'ars_nouveau:robe'}],
+		sourceCost: 7000,
+		tier: 3
+	})
+	event.remove({id:'ars_technica:technomancer_leggings'})
+	event.custom({
+		type: 'ars_elemental:armor_upgrade',
+		output: {item: 'ars_technica:technomancer_leggings'},
+		pedestalItems: [
+			{item:{item:'ars_elemental:mark_of_mastery'}},
+			{item:{item:'ae2:logic_processor_press'}},
+			{item:{item:'ae2:calculation_processor_press'}},
+			{item:{item:'ae2:engineering_processor_press'}},
+			{item:{item:'ae2:silicon_press'}},
+			{item:{item:'create:goggles'}}
+		],
+		reagent: [{tag: 'ars_nouveau:legs'}],
+		sourceCost: 7000,
+		tier: 3
+	})
+	event.remove({id:'ars_technica:technomancer_boots'})
+	event.custom({
+		type: 'ars_elemental:armor_upgrade',
+		output: {item: 'ars_technica:technomancer_boots'},
+		pedestalItems: [
+			{item:{item:'ars_elemental:mark_of_mastery'}},
+			{item:{item:'ae2:logic_processor_press'}},
+			{item:{item:'ae2:calculation_processor_press'}},
+			{item:{item:'ae2:engineering_processor_press'}},
+			{item:{item:'ae2:silicon_press'}},
+			{item:{item:'create:goggles'}}
 		],
 		reagent: [{tag: 'ars_nouveau:boot'}],
 		sourceCost: 7000,
