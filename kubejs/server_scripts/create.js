@@ -186,6 +186,11 @@ ServerEvents.recipes(event => {
 	
 	//definitely didnt forget this
 	event.remove({output:'createaddition:redstone_relay'})
+	
+	//create enchantment industry -> create industry
+	event.remove({id: 'create_enchantment_industry:mixing/hyper_experience'})
+	event.remove({id: 'create_enchantment_industry:crafting/printer'})
+	event.remove({id: 'create_enchantment_industry:filling/hyper_experience_bottle_filling'})
 })
 
 ServerEvents.tags('item', event => {
