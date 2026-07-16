@@ -103,12 +103,12 @@
   },
   "seaSerpent": {
     "spawnChance": 0.004,
-    "griefing": true,
+    "griefing": false,
     "baseHealth": 20.0,
     "attackDamage": 4.0
   },
   "lich": {
-    "spawn": true,
+    "spawn": false,
     "spawnWeight": 4,
     "spawnChance": 0.03333333333333333
   },
@@ -138,7 +138,7 @@
     "dragonLightningMaxSearchCount": 10
   },
   "worldgen": {
-    "dangerousDistanceLimit": 1000.0,
+    "dangerousDistanceLimit": 5000.0,
     "generateFireDragonCaveChance": 1.0,
     "generateFireDragonRoostChance": 1.0,
     "generateIceDragonCaveChance": 1.0,
