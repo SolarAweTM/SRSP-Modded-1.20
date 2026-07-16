@@ -113,7 +113,65 @@ ItemEvents.tooltip(event => {
 		'ars_additions:glyph_recall',
 		'ars_additions:glyph_mark',
 		'ars_additions:xp_jar',
-		'ars_additions:source_spawner'
+		'ars_additions:source_spawner',
+		'powah:binding_card_dim',
+		'powah:ender_core',
+		'powah:ender_cell_starter',
+		'powah:ender_cell_basic',
+		'powah:ender_cell_hardened',
+		'powah:ender_cell_blazing',
+		'powah:ender_cell_niotic',
+		'powah:ender_cell_spirited',
+		'powah:ender_cell_nitro',
+		'powah:ender_gate_starter',
+		'powah:ender_gate_basic',
+		'powah:ender_gate_hardened',
+		'powah:ender_gate_blazing',
+		'powah:ender_gate_niotic',
+		'powah:ender_gate_spirited',
+		'powah:ender_gate_nitro',
+		'powah:crystal_niotic',
+		'powah:crystal_spirited',
+		'powah:crystal_nitro',
+		'powah:capacitor_niotic',
+		'powah:capacitor_spirited',
+		'powah:capacitor_nitro',
+		'powah:battery_niotic',
+		'powah:battery_spirited',
+		'powah:battery_nitro',
+		'powah:energy_cell_niotic',
+		'powah:energy_cell_spirited',
+		'powah:energy_cell_nitro',
+		'powah:energy_cable_niotic',
+		'powah:energy_cable_spirited',
+		'powah:energy_cable_nitro',
+		'powah:energizing_rod_niotic',
+		'powah:energizing_rod_spirited',
+		'powah:energizing_rod_nitro',
+		'powah:furnator_niotic',
+		'powah:furnator_spirited',
+		'powah:furnator_nitro',
+		'powah:magmator_niotic',
+		'powah:magmator_spirited',
+		'powah:magmator_nitro',
+		'powah:thermo_generator_niotic',
+		'powah:thermo_generator_spirited',
+		'powah:thermo_generator_nitro',
+		'powah:solar_panel_niotic',
+		'powah:solar_panel_spirited',
+		'powah:solar_panel_nitro',
+		'powah:reactor_niotic',
+		'powah:reactor_spirited',
+		'powah:reactor_nitro',
+		'powah:player_transmitter_niotic',
+		'powah:player_transmitter_spirited',
+		'powah:player_transmitter_nitro',
+		'powah:energy_hopper_niotic',
+		'powah:energy_hopper_spirited',
+		'powah:energy_hopper_nitro',
+		'powah:energy_discharger_niotic',
+		'powah:energy_discharger_spirited',
+		'powah:energy_discharger_nitro'
 	]
 	disabled_items.forEach(item => {
 		event.add(item, [
@@ -1379,7 +1437,16 @@ JEIEvents.hideItems(event => {
 		'silentcompat:sculk_alloy_block',
 		'silentcompat:bunny_steel_block',
 		'silentcompat:capsid_alloy_block',
-		'silentcompat:source_steel_block'
+		'silentcompat:source_steel_block',
+		'create_enchantment_industry:printer',
+		'create_enchantment_industry:hyper_experience_bottle',
+		'waystones:warp_plate',
+		'waystones:return_scroll',
+		'waystones:bound_scroll',
+		'waystones:warp_scroll',
+		'waystones:warp_dust',
+		'waystones:attuned_shard',
+		'waystones:crumbling_attuned_shard'
 	]
 	hidden_items.forEach(item => {
 		event.hide(item) // noted: this also removes them from creative menus
@@ -1388,7 +1455,8 @@ JEIEvents.hideItems(event => {
 
 JEIEvents.hideFluids(event => {
 	let hidden_fluids = [
-		'estrogen:molten_amethyst'
+		'estrogen:molten_amethyst',
+		'create_enchantment_industry:hyper_experience'
 	]
 	hidden_fluids.forEach(item => {
 		event.hide(item)
