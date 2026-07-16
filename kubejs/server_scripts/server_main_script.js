@@ -30,12 +30,15 @@ ServerEvents.recipes(event => {
 		]
 	)
 	//waystone stuff
-	event.remove({output:'waystones:warp_stone'})
 	event.remove({output:'waystones:return_scroll'})
 	event.remove({output:'waystones:bound_scroll'})
 	event.remove({output:'waystones:warp_scroll'})
 	event.remove({output:'waystones:warp_plate'})
 	event.remove({output:'waystones:warp_dust'})
+	event.replaceInput({output: 'waystones:warp_stone'},
+		'minecraft:emerald',
+		'ars_nouveau:stable_warp_scroll'
+	)
 	
 	//silver recipe rewriting
 	event.remove({output:'immersiveengineering:ingot_silver'})
