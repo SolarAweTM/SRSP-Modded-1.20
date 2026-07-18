@@ -48,24 +48,24 @@
   "cyclops": {
     "spawnWanderingChance": 0.0011111111111111111,
     "sheepSearchLength": 17,
-    "maxHealth": 150.0,
-    "attackDamage": 15.0,
-    "biteDamage": 40.0,
-    "griefing": true
+    "maxHealth": 200.0,
+    "attackDamage": 20.0,
+    "biteDamage": 67.0,
+    "griefing": false
   },
   "siren": {
-    "maxHealth": 50.0,
+    "maxHealth": 150.0,
     "maxSingTime": 12000,
-    "timeBetweenSongs": 2000
+    "timeBetweenSongs": 600
   },
   "gorgon": {
-    "maxHealth": 100.0
+    "maxHealth": 120.0
   },
   "deathworm": {
     "spawnChance": 0.03333333333333333,
     "targetSearchLength": 48,
-    "maxHealth": 10.0,
-    "attackDamage": 3.0,
+    "maxHealth": 175.0,
+    "attackDamage": 20.0,
     "attackMonsters": true
   },
   "cockatrice": {
@@ -73,15 +73,15 @@
     "spawnWeight": 4,
     "chickenSearchLength": 32,
     "eggChance": 0.03333333333333333,
-    "maxHealth": 40.0,
+    "maxHealth": 120.0,
     "chickensLayRottenEggs": true
   },
   "bird": {
     "spawnChance": 0.0125,
-    "targetSearchLength": 48,
+    "targetSearchLength": 96,
     "featherDropChance": 0.04,
-    "featherAttackDamage": 1.0,
-    "flockLength": 40,
+    "featherAttackDamage": 5.0,
+    "flockLength": 100,
     "flightHeight": 80,
     "attackAnimals": false
   },
@@ -89,8 +89,8 @@
     "spawn": true,
     "spawnWeight": 60,
     "dropWeapon": true,
-    "maxHealth": 50.0,
-    "attackDamage": 10.0
+    "maxHealth": 250.0,
+    "attackDamage": 15.0
   },
   "amphithere": {
     "spawn": true,
@@ -98,14 +98,14 @@
     "villagerSearchLength": 48.0,
     "tameTime": 400,
     "flightSpeed": 1.75,
-    "maxHealth": 50.0,
-    "attackDamage": 7.0
+    "maxHealth": 100.0,
+    "attackDamage": 15.0
   },
   "seaSerpent": {
     "spawnChance": 0.004,
     "griefing": false,
-    "baseHealth": 20.0,
-    "attackDamage": 4.0
+    "baseHealth": 400.0,
+    "attackDamage": 2.5
   },
   "lich": {
     "spawn": false,
@@ -117,7 +117,7 @@
   },
   "hippocampus": {
     "spawnChance": 0.025,
-    "swimSpeedMod": 1.0
+    "swimSpeedMod": 1.2
   },
   "ghost": {
     "maxHealth": 30.0,
