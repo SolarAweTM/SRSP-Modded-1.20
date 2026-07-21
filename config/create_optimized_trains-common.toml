@@ -218,11 +218,11 @@
 		#Ativar logging de diagnóstico de comboios
 		#true = ativo por padrão para diagnosticar engasgos
 		#false = desativar quando o problema estiver resolvido
-		enabled = true
+		enabled = false
 		#Intervalo (em ticks) entre logs de comboios SMOOTH (a funcionar bem)
 		#Anomalias (STUTTER) são sempre registadas imediatamente e depois
 		#repetidas a cada 20 ticks (1 segundo) enquanto persistirem.
 		#200 = log de estado normal a cada 10 segundos por comboio
 		#Range: 20 ~ 2000
-		logInterval = 200
+		logInterval = 2000
 
