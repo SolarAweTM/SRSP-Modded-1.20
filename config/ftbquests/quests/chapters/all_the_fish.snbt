@@ -139,49 +139,201 @@
 				{
 					disable_toast: true
 					id: "5F8AFC919121CEB7"
-					item: "fintastic:artemia_bucket"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Fairy Shrimp\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "fintastic:fairy_shrimp"
+								}
+								{
+									Count: 1b
+									id: "fintastic:artemia_bucket"
+								}
+							]
+						}
+					}
 					type: "item"
 				}
 				{
 					disable_toast: true
 					id: "32608B2A9314B692"
-					item: "fintastic:minnow_bucket"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Fintastic Minnow\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "fintastic:minnow"
+								}
+								{
+									Count: 1b
+									id: "fintastic:minnow_bucket"
+								}
+							]
+						}
+					}
 					type: "item"
 				}
 				{
 					disable_toast: true
 					id: "480C6282577C0DB5"
-					item: "fintastic:catfish_bucket"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Fintastic Catfish\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "fintastic:catfish"
+								}
+								{
+									Count: 1b
+									id: "fintastic:catfish_bucket"
+								}
+							]
+						}
+					}
 					type: "item"
 				}
 				{
 					disable_toast: true
 					id: "37A76FB2D0E15D03"
-					item: "fintastic:daphnia_bucket"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Daphnia\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "fintastic:daphnia"
+								}
+								{
+									Count: 1b
+									id: "fintastic:daphnia_bucket"
+								}
+							]
+						}
+					}
 					type: "item"
 				}
 				{
 					disable_toast: true
 					id: "6FD83B380C78FF90"
-					item: "fintastic:featherback_bucket"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Featherback\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "fintastic:featherback"
+								}
+								{
+									Count: 1b
+									id: "fintastic:featherback_bucket"
+								}
+							]
+						}
+					}
 					type: "item"
 				}
 				{
 					disable_toast: true
 					id: "345A84861F06ED57"
-					item: "fintastic:freshwater_shark_bucket"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Sharkminnow\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "fintastic:sharkminnow"
+								}
+								{
+									Count: 1b
+									id: "fintastic:freshwater_shark_bucket"
+								}
+							]
+						}
+					}
 					type: "item"
 				}
 				{
 					disable_toast: true
 					id: "7804ED37621B1D76"
-					item: "fintastic:guppy_bucket"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Guppy\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "fintastic:guppy"
+								}
+								{
+									Count: 1b
+									id: "fintastic:guppy_bucket"
+								}
+							]
+						}
+					}
 					type: "item"
 				}
 				{
 					disable_toast: true
 					id: "2EC68BD3494C5573"
-					item: "fintastic:pleco_bucket"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Pleco\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "fintastic:pleco"
+								}
+								{
+									Count: 1b
+									id: "fintastic:pleco_bucket"
+								}
+							]
+						}
+					}
 					type: "item"
 				}
 				{
@@ -191,7 +343,26 @@
 				}
 				{
 					id: "49144A5C34C06B8B"
-					item: "fintastic:gourami_bucket"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Gourami\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "fintastic:gourami"
+								}
+								{
+									Count: 1b
+									id: "fintastic:gourami_bucket"
+								}
+							]
+						}
+					}
 					type: "item"
 				}
 				{
@@ -201,17 +372,108 @@
 				}
 				{
 					id: "66DEBAA6C7FC5E02"
-					item: "fintastic:moony_bucket"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Moony\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "fintastic:moony"
+								}
+								{
+									Count: 1b
+									id: "fintastic:moony_bucket"
+								}
+							]
+						}
+					}
 					type: "item"
 				}
 				{
 					id: "5F51C11021EA0ABF"
-					item: "fintastic:arapaima_fishnet"
+					item: "fintastic:arapaima"
 					type: "item"
 				}
 				{
 					id: "25DECB8D2E41DA43"
-					item: "fintastic:coelacanth_fishnet"
+					item: "fintastic:coelacanth"
+					type: "item"
+				}
+				{
+					id: "5CDFB217FABDAF04"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Copepod\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "fintastic:copepod"
+								}
+								{
+									Count: 1b
+									id: "fintastic:copepod_bucket"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "06FDB361742D8039"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Dwarf Frog\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "fintastic:dwarf_frog"
+								}
+								{
+									Count: 1b
+									id: "fintastic:dwarf_frog_bucket"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "31A22BA483435D28"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Small Catfish\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "fintastic:small_catfish"
+								}
+								{
+									Count: 1b
+									id: "fintastic:small_catfish_bucket"
+								}
+							]
+						}
+					}
 					type: "item"
 				}
 			]
