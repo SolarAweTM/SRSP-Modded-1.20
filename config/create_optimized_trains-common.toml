@@ -22,6 +22,7 @@
 	#Agrupamento / Abstração de Carruagens
 	[general.grouping]
 		#Ativar agrupamento de carruagens em entidades lógicas
+		#DESATIVADO por padrão: experimental. Pode causar comportamento inesperado.
 		enabled = false
 		#Número mínimo de carruagens para agrupar
 		#Range: 2 ~ 100
@@ -60,10 +61,22 @@
 		#0 = sem warmup, 1 = mínimo recomendado, 3+ = mais suave para PCs fracos
 		#Range: 0 ~ 10
 		warmupFrames = 1
+		#Ativar perfil agressivo quando shader pack está ativo (Oculus/Iris)
+		#Reduz animações/atualizações visuais de comboios distantes para estabilizar FPS
+		shaderBoostEnabled = false
+		#Quantos níveis de LOD degradar com shader ativo (0-2)
+		#0 = sem degradação extra, 1 = recomendado, 2 = muito agressivo
+		#Range: 0 ~ 2
+		shaderLodShift = 0
+		#Frames a saltar para comboios parados e não ocupados com shader ativo
+		#4 = 75% skip, 6 = 83% skip, 8 = 87.5% skip
+		#Range: 2 ~ 12
+		shaderStationarySkipFrames = 6
 
 	#Proxy Entities
 	[general.proxy]
 		#Usar entidades proxy leves para comboios distantes
+		#DESATIVADO por padrão: experimental. Ativar apenas se quiseres testar.
 		enabled = true
 
 	#Gestão Inteligente de Chunk Loading
@@ -71,11 +84,54 @@
 		#Ativar gestão inteligente de chunks
 		enabled = true
 		#Chunks mínimos a pré-carregar à frente do comboio (adaptativo por velocidade)
+		#Recomendado: 6 para comboios rápidos (>20 bl/s), 4 para comboios lentos
 		#Range: 0 ~ 16
 		lookahead = 4
 		#Chunks a manter atrás do comboio antes de descarregar
 		#Range: 0 ~ 4
 		trailKeep = 1
+		#[LEGADO] Raio de chunks por carruagem — substituído por lod_radius abaixo.
+		#Mantido para compatibilidade com configs antigas. Ignorado se lod_radius ativo.
+		#Range: 0 ~ 3
+		carriageChunkRadius = 0
+
+		#Raio de chunks carregadas à volta de cada carruagem, por nível LOD.
+		#Permite carregar mais chunks em redor de comboios próximos (FULL) e menos para distantes.
+		#  0 = apenas a chunk da carruagem  (1×1)
+		#  1 = área 3×3  |  2 = 5×5  |  3 = 7×7  |  4 = 9×9  |  5 = 11×11
+		#Valores altos aumentam o custo de chunk loading — usar com cuidado em servidores.
+		#Padrão: 0 para todos os níveis (comportamento idêntico à versão anterior)
+		[general.chunks.lod_radius]
+			#Raio para comboios FULL LOD (< fullDistance blocos do jogador)
+			#Range: 0 ~ 5
+			radiusFull = 0
+			#Raio para comboios MEDIUM LOD
+			#Range: 0 ~ 5
+			radiusMedium = 0
+			#Raio para comboios LOW LOD
+			#Range: 0 ~ 5
+			radiusLow = 0
+			#Raio para comboios GHOST LOD (muito distantes)
+			#Range: 0 ~ 5
+			radiusGhost = 0
+
+		#Distância de Simulação do Comboio.
+		#Define quantos chunks à frente do comboio são pré-carregados para manter o comboio a andar.
+		#Com Distant Horizons: aumenta este valor para o teu DH LOD range (ex: 32-64).
+		#O comboio 'anda no vazio' mas com DH o terreno aparece como LOD — efeito visual suave.
+		#  16 = pré-carregar 16 chunks à frente (~256 blocos)
+		#  32 = adequado para DH com 32 chunks de LOD distance
+		#  0  = desativado (usa apenas o lookahead automático por velocidade)
+		#ATENÇÃO: valores altos aumentam o cap de chunks forçados — ajusta maxForcedChunks também.
+		[general.chunks.simulation]
+			#Chunks máximos a pré-carregar à frente do comboio (distância de simulação)
+			#Range: 0 ~ 128
+			simulationDistance = 16
+			#Cap máximo de chunks force-loaded em simultâneo (todos os comboios combinados)
+			#Com ghost mode, apenas comboios próximos do jogador usam este cap.
+			#300 cobre o comboio do jogador (11 carr. + 16 lookahead) + 5-6 comboios vizinhos.
+			#Range: 20 ~ 1000
+			maxForcedChunks = 300
 
 	#Carregamento Direcional de Chunks
 	#Quando o jogador está num comboio, redistribui as chunks visuais
@@ -100,6 +156,15 @@
 		enabled = true
 		#Desativar colisões entre carruagens distantes
 		disableDistantCollisions = true
+		#Quando o jogador está dentro de um comboio, reduzir drasticamente
+		#a física (colisões, entity-ticking) dos OUTROS comboios na mesma zona.
+		#Ideal para estações com múltiplos comboios longos. Sem efeito negativo
+		#visível — os comboios continuam a andar, apenas colisões são throttleadas.
+		reduceOtherTrainsPhysics = true
+		#Ativar throttle agressivo da física de outros comboios (perfil 1.3)
+		#Desativado por padrão para manter estabilidade/movimento suave estilo 1.2.
+		#Ativa apenas se precisares de FPS extra em estações muito densas.
+		aggressiveOtherTrainsThrottle = false
 
 	#Otimização de Sincronização/Networking
 	[general.networking]
@@ -130,4 +195,34 @@
 		#Mostrar informações do mod no ecrã de debug (F3)
 		#Inclui memória, threads, TPS/MSPT, FPS, chunks forçados
 		enabled = false
+
+	#Compatibilidade com Distant Horizons
+	#Quando DH está instalado, otimiza chunk loading para libertar CPU/IO.
+	#Sem DH instalado, estas opções são ignoradas.
+	[general.distant_horizons]
+		#Reduzir render distance vanilla enquanto num comboio rápido
+		#DH cobre o terreno distante, libertando IO para chunks da rota
+		reduceViewDistance = true
+		#Render distance mínimo quando a redução DH está ativa (em chunks)
+		#Range: 4 ~ 16
+		minViewDistance = 6
+		#Reduzir número de chunks force-loaded quando DH cobre o visual
+		reduceForceLoad = true
+
+	#Logging de diagnóstico de movimento de comboios.
+	#Regista no log do servidor (latest.log) o estado de cada comboio,
+	#indicando porque certos comboios têm engasgos e outros não.
+	#Procura por linhas [COT] STUTTER para encontrar comboios problemáticos.
+	#Linhas [COT] SMOOTH indicam comboios a funcionar normalmente.
+	[general.diagnostics]
+		#Ativar logging de diagnóstico de comboios
+		#true = ativo por padrão para diagnosticar engasgos
+		#false = desativar quando o problema estiver resolvido
+		enabled = true
+		#Intervalo (em ticks) entre logs de comboios SMOOTH (a funcionar bem)
+		#Anomalias (STUTTER) são sempre registadas imediatamente e depois
+		#repetidas a cada 20 ticks (1 segundo) enquanto persistirem.
+		#200 = log de estado normal a cada 10 segundos por comboio
+		#Range: 20 ~ 2000
+		logInterval = 200
 
