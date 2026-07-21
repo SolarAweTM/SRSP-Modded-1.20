@@ -99,6 +99,9 @@ ServerEvents.recipes(event => {
 	event.shapeless('iceandfire:silver_nugget', ['occultism:silver_nugget'])
 	event.shapeless('iceandfire:raw_silver_block', ['immersiveengineering:raw_block_silver'])
 	event.shapeless('iceandfire:raw_silver_block', ['occultism:raw_silver_block'])
+	
+	//there can only be one copper nugget
+	event.remove({id:'iceandfire:copper_ingot_to_nuggets'})
 })
 
 ServerEvents.tags('entity_type', event => {
