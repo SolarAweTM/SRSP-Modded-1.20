@@ -820,13 +820,14 @@ ItemEvents.tooltip(event => {
 	event.addAdvanced('kubejs:sugoi_artifact', (item, advanced, text) => {
 		if(event.shift) {
 			text.add(2, Text.gray('A ritualistic artifact, once forgotten'))
-			text.add(3, Text.gray('within ').append(Text.red('Guys Please What Is Your Area Called')).append(Text.gray('. Can be used to create')))
+			text.add(3, Text.gray('within ').append(Text.red('Sugoi Land')).append(Text.gray('. Can be used to create')))
 			text.add(4, Text.gray('something amazing when combined with other'))
 			text.add(5, Text.gray('artifacts.'))
 			text.add(6, Text.gray(''))
-			text.add(7, Text.gray('Insert a fun description of the object here'))
-			text.add(8, Text.gray('Please I need a description'))
-			text.add(9, Text.gray('requesting description to Crafting'))
+			text.add(7, Text.gray('A uniquely pink apple, eaten down'))
+			text.add(8, Text.gray('to its core. It appears that'))
+			text.add(9, Text.gray('three sparkling seeds remain.'))
+			text.add(10, Text.darkGray('Sprite by Clayisfruity'))
 		}
 	})
 	
