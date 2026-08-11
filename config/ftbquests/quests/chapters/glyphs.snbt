@@ -2035,8 +2035,8 @@
 				type: "item"
 			}]
 			title: "Not Aerial"
-			x: -7.5d
-			y: -5.0d
+			x: -6.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["1B250D4DA2D85644"]
@@ -2092,7 +2092,7 @@
 				type: "item"
 			}]
 			title: "Not Summon"
-			x: -8.0d
+			x: -8.5d
 			y: -6.0d
 		}
 		{
@@ -2112,7 +2112,7 @@
 			}]
 			title: "Not Undead"
 			x: -7.5d
-			y: -7.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["1B250D4DA2D85644"]
@@ -2149,8 +2149,8 @@
 				type: "item"
 			}]
 			title: "Undead"
-			x: -7.0d
-			y: -6.0d
+			x: -7.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["5A8559F63EBA6E2B"]
