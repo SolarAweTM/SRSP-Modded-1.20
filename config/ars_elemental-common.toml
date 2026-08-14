@@ -34,10 +34,10 @@
 ["Mermaid Fishing"]
 	#How much source mermaids consume per generation
 	#Range: 0 ~ 10000
-	mermaidManaCost = 1000
+	mermaidManaCost = 2000
 	#How many channels must occur before a siren produces loot.
 	#Range: 0 ~ 300
-	mermaidMaxProgress = 30
+	mermaidMaxProgress = 15
 	#Max number of extra item rolls a shrine produces if the mood is high.
 	#Range: 0 ~ 10
 	mermaidScoreBonus = 2

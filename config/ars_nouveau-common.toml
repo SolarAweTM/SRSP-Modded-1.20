@@ -7,10 +7,10 @@
 	spawnBook = false
 	#How much mana whirlisprigs consume per generation
 	#Range: 0 ~ 10000
-	sylphManaCost = 250
+	sylphManaCost = 500
 	#How much progress whirlisprigs must accumulate before creating resources
 	#Range: 0 ~ 10000
-	whirlisprigProgress = 250
+	whirlisprigProgress = 125
 	#Should the Wilden Hunter attack animals?
 	hunterHuntsAnimals = false
 	#Should the Wilden Stalker attack animals?
@@ -29,10 +29,10 @@
 [drygmy_production]
 	#How much source drygmys consume per generation
 	#Range: 0 ~ 10000
-	drygmyManaCost = 2000
+	drygmyManaCost = 4000
 	#How many channels must occur before a drygmy produces loot
 	#Range: 0 ~ 300
-	drygmyMaxProgress = 20
+	drygmyMaxProgress = 10
 	#Bonus number of items a drygmy produces per unique mob
 	#Range: 0 ~ 300
 	drygmyUniqueBonus = 2
