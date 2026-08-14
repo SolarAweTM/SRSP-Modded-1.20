@@ -1035,9 +1035,11 @@ ServerEvents.customCommand('8ball', event => {
         "Jarona!",
         "You owe me $5",
         "We're all gonna beat you with hammers for your crimes",
-        "hold alt and freecam"
+        "hold alt and freecam",
+        "whatever, freak",
+        "oh banana..."
     ]
-    let number = (Math.round(Math.random()*100) % 59)
+    let number = (Math.round(Math.random()*100) % 61)
     if(number == 31) {
     	event.server.runCommandSilent('/tellraw @a {"text":"Magic 8 Ball ", "color":"blue", "extra":[{"text":"left the game", "color":"yellow"}]}');
     }
