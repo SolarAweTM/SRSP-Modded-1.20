@@ -1,7 +1,14 @@
 [
 	{
 		"mob":"crittersandcompanions:dragonfly",
-		"when": "onjoin",
+		"when":"onjoin",
+		"spawntype":"natural",
+		"result": "deny"
+	},
+	{
+		"mob":"minecraft:iron_golem",
+		"when":"onjoin",
+		"spawntype":"mob_summoned",
 		"result": "deny"
 	}
 ]
