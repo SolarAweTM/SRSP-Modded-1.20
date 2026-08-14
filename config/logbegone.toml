@@ -1,0 +1,5 @@
+
+[logbegone]
+	regex = []
+	phrases = ["Disconnecting VANILLA connection attempt", "[COT]", "ArsTechnicaMod"]
+
