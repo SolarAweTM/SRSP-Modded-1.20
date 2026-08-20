@@ -77,3 +77,6 @@ fancymenu_data/fancymenu_temp/web/videoplayer/player.html
 fancymenu_data/last_world.fmdata
 config/chunky/config.json
 config/chunky/tasks/minecraft/overworld.properties
+config/camera-client.toml
+config/pipeorgans-client.toml
+config/silentgear-client.toml

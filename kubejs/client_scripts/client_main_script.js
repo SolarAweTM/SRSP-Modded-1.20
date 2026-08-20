@@ -847,6 +847,19 @@ ItemEvents.tooltip(event => {
 		text.add(1, Text.gray('Adds one socket to an item'))
 		text.add(2, Text.red('Max of 2 sockets.'))
 	})
+	
+	//show drawer contents
+	event.addAdvanced('#storagedrawers:drawers', (item, advanced, text) => {
+		if(item.nbt)
+		{
+			if(item.nbt.tile.Drawers) //pretty sure this nesting has to be done otherwise kubejs can spam the logs
+			{
+				for(let i = 0; i < item.nbt.tile.Drawers.length; i++) {
+					text.add(3, Text.gray((item.nbt.tile.Drawers[i].Count).toFixed(0)).append(' ').append(Item.of(item.nbt.tile.Drawers[i].Item.id).hoverName))
+				}
+			}
+		}
+	})
 })
 
 JEIEvents.hideItems(event => {

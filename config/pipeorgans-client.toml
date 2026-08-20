@@ -9,7 +9,7 @@ showOctaveBrackets = false
 	whistleChiffVolume = 1.0
 	#How far away you can hear pipes
 	#Range: 1.0 ~ 256.0
-	pipeAttenuationDistance = 64.0
+	pipeAttenuationDistance = 128.0
 	#How fast pipe sounds fade out per tick (higher = faster)
 	#Range: 0.01 ~ 0.5
 	pipeFadeSpeed = 0.25

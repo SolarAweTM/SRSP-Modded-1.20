@@ -77,7 +77,7 @@
 	[general.proxy]
 		#Usar entidades proxy leves para comboios distantes
 		#DESATIVADO por padrão: experimental. Ativar apenas se quiseres testar.
-		enabled = true
+		enabled = false
 
 	#Gestão Inteligente de Chunk Loading
 	[general.chunks]
