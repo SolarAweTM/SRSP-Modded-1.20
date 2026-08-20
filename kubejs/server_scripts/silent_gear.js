@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
 	event.remove({output:'silentgear:fishing_reel_and_hook'})
 	
 	//recipe for new catalysts
-	event.shapeless('kubejs:catalyst_4', ['silentgear:diamond_shard', 'silentgear:diamond_shard', 'apotheosis:warden_tendril', 'silentgear:golden_nether_banana'])
+	event.shapeless('16x kubejs:catalyst_4', ['silentgear:diamond_shard', 'silentgear:diamond_shard', 'apotheosis:warden_tendril', 'silentgear:golden_nether_banana'])
 	
 	// remove silent compat materials
 	const COMPAT_ITEMS = [
