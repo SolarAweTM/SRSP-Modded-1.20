@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
 		},
 		ritual_dummy: {item: 'occultism:ritual_dummy/custom_ritual'},
 		ingredients: [
-			{item: 'quark:dragon_scale'},
+			{tag: 'iceandfire:storage_blocks/scales/dragon/fire'},
 			{item: 'ars_nouveau:wilden_wing'},
 			{item: 'ars_nouveau:wilden_wing'},
 			{item: 'iceandfire:fire_lily'},
@@ -56,7 +56,7 @@ ServerEvents.recipes(event => {
 		},
 		ritual_dummy: {item: 'occultism:ritual_dummy/custom_ritual'},
 		ingredients: [
-			{item: 'quark:dragon_scale'},
+			{tag: 'iceandfire:storage_blocks/scales/dragon/ice'},
 			{item: 'ars_nouveau:wilden_wing'},
 			{item: 'ars_nouveau:wilden_wing'},
 			{item: 'iceandfire:frost_lily'},
@@ -86,7 +86,7 @@ ServerEvents.recipes(event => {
 		},
 		ritual_dummy: {item: 'occultism:ritual_dummy/custom_ritual'},
 		ingredients: [
-			{item: 'quark:dragon_scale'},
+			{tag: 'iceandfire:storage_blocks/scales/dragon/lightning'},
 			{item: 'ars_nouveau:wilden_wing'},
 			{item: 'ars_nouveau:wilden_wing'},
 			{item: 'iceandfire:lightning_lily'},
