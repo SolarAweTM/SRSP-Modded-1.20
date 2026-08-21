@@ -140,3 +140,8 @@ ServerEvents.recipes(event => {
 		}
 	)
 })
+
+LootJS.modifiers((event) => {
+    event.addBlockLootModifier("iceandfire:dreadwood_leaves")
+		.addLoot("iceandfire:dreadwood_leaves");
+});
