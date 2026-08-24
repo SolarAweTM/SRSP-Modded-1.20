@@ -849,15 +849,22 @@ ItemEvents.tooltip(event => {
 	})
 	
 	//show drawer contents
-	event.addAdvanced('#storagedrawers:drawers', (item, advanced, text) => {
+	event.addAdvanced(Ingredient.of('#storagedrawers:drawers').and(Ingredient.of('@storagedrawers').or('@everycomp')), (item, advanced, text) => {
 		if(item.nbt)
 		{
 			if(item.nbt.tile.Drawers) //pretty sure this nesting has to be done otherwise kubejs can spam the logs
 			{
 				for(let i = 0; i < item.nbt.tile.Drawers.length; i++) {
-					text.add(3, Text.gray((item.nbt.tile.Drawers[i].Count).toFixed(0)).append(' ').append(Item.of(item.nbt.tile.Drawers[i].Item.id).hoverName))
+					if(item.nbt.tile.Drawers[i].Count) { //this check is also required in order to not spam the logs
+						text.add(3, Text.gray((item.nbt.tile.Drawers[i].Count).toFixed(0)).append(' ').append(Item.of(item.nbt.tile.Drawers[i].Item.id).hoverName))
+					}
 				}
 			}
+		}
+	})
+	event.addAdvanced(Ingredient.of('#storagedrawers:drawers').and('@fluiddrawerslegacy'), (item, advanced, text) => {
+		if(!event.shift) {
+			text.add(1, Text.gray('Hold Shift to view contents'))
 		}
 	})
 })
