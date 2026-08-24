@@ -1037,9 +1037,16 @@ ServerEvents.customCommand('8ball', event => {
         "We're all gonna beat you with hammers for your crimes",
         "hold alt and freecam",
         "whatever, freak",
-        "oh banana..."
+        "oh banana...",
+        "Cannot find dragon",
+        "Find dragon",
+        "you hate me",
+        "Error: not enough TPS",
+        "among us is the answer... 'No' is among us...",
+        "among us is the answer... 'Yes' is among us...",
+        "Six Seven!"
     ]
-    let number = (Math.round(Math.random()*100) % 61)
+    let number = (Math.round(Math.random()*100) % 68)
     if(number == 31) {
     	event.server.runCommandSilent('/tellraw @a {"text":"Magic 8 Ball ", "color":"blue", "extra":[{"text":"left the game", "color":"yellow"}]}');
     }
