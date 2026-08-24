@@ -182,7 +182,7 @@
 [starlightCharger]
 	#The rate at which the starlight charger gathers energy during the night
 	#Range: > 0
-	chargeRate = 50
+	chargeRate = 250
 	#The maximum amount of energy the starlight charger can store
 	#Range: > 0
 	maxCharge = 1000000
