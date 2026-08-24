@@ -139,6 +139,46 @@ ServerEvents.recipes(event => {
 			L: 'biomeswevegone:incan_lily'
 		}
 	)
+	
+	event.remove({id:'iceandfire:dragonforge_fire_brick'})
+	event.remove({id:'iceandfire:dragonforge_ice_brick'})
+	event.remove({id:'iceandfire:dragonforge_lightning_brick'})
+	event.shaped('4x iceandfire:dragonforge_fire_brick',
+		[
+			'SRS',
+			'RBR',
+			'SRS'
+		],
+		{
+			S: '#iceandfire:scales/dragon/fire',
+			B: '#iceandfire:storage_blocks/scales/dragon/fire',
+			R: 'minecraft:stone_bricks'
+		}
+	)
+	event.shaped('4x iceandfire:dragonforge_ice_brick',
+		[
+			'SRS',
+			'RBR',
+			'SRS'
+		],
+		{
+			S: '#iceandfire:scales/dragon/ice',
+			B: '#iceandfire:storage_blocks/scales/dragon/ice',
+			R: 'minecraft:stone_bricks'
+		}
+	)
+	event.shaped('4x iceandfire:dragonforge_lightning_brick',
+		[
+			'SRS',
+			'RBR',
+			'SRS'
+		],
+		{
+			S: '#iceandfire:scales/dragon/lightning',
+			B: '#iceandfire:storage_blocks/scales/dragon/lightning',
+			R: 'minecraft:stone_bricks'
+		}
+	)
 })
 
 LootJS.modifiers((event) => {
