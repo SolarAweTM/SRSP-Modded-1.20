@@ -169,6 +169,17 @@ ServerEvents.tags('entity_type', event => {
 	ARS_DRYGMY_BLACKLIST.forEach(mob => {
 		event.add('ars_nouveau:drygmy_blacklist', mob)
 	})
+	const ARS_JAR_RELEASE_BLACKLIST = [
+		'iceandfire:hippocampus',
+		'iceandfire:hippogryph',
+		'iceandfire:fire_dragon',
+		'iceandfire:ice_dragon',
+		'iceandfire:lightning_dragon'
+	]
+	ARS_JAR_RELEASE_BLACKLIST.forEach(mob => {
+		event.add('ars_nouveau:jar_release_blacklist', mob)
+		event.add('ars_nouveau:jar_blacklist', mob)
+	})
 })
 
 ServerEvents.tags('block', event => {
