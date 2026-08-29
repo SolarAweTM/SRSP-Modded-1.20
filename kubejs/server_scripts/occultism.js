@@ -346,7 +346,7 @@ ServerEvents.recipes(event => {
 			{item: 'minecraft:pufferfish'},
 			{item: 'ars_nouveau:water_essence'},
 			{item: 'ars_nouveau:abjuration_essence'},
-			{item: 'minecraft:trident'}
+			{tag: 'iceandfire:scales/sea_serpent'}
 		],
 		result: {item: 'occultism:jei_dummy/none'}
 	})
