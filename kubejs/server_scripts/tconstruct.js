@@ -170,6 +170,20 @@ ServerEvents.recipes(event => {
 	//fix duplicate copper ingots
 	event.remove({input:'tconstruct:copper_nugget'})
 	
+	event.custom({ //somehow re-add the ingot cast recipe
+		type: 'tconstruct:casting_table',
+		cast: {tag:'forge:ingots'},
+        cast_consumed: true,
+		cooling_time: 60,
+		fluid: {
+			amount: 90,
+			fluid: 'tconstruct:molten_gold'
+		},
+		result: {
+			tag: 'tconstruct:casts/multi_use/ingot'
+		}
+	})
+	
 	event.custom({ //crimson steel tconstruct alloying recipe
 		type: 'tconstruct:alloy',
 		inputs: [
