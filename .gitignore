@@ -80,3 +80,4 @@ config/chunky/tasks/minecraft/overworld.properties
 config/camera-client.toml
 config/pipeorgans-client.toml
 config/silentgear-client.toml
+moddata/cynosure/estrogen/memorial
