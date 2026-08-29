@@ -184,4 +184,19 @@ ServerEvents.recipes(event => {
 LootJS.modifiers((event) => {
     event.addBlockLootModifier("iceandfire:dreadwood_leaves")
 		.addLoot("iceandfire:dreadwood_leaves");
+    // ice and fire ce is a functional mod
+    event.addBlockLootModifier("iceandfire:sea_serpent_scale_block_blue")
+        .addLoot("iceandfire:sea_serpent_scale_block_blue");
+    event.addBlockLootModifier("iceandfire:sea_serpent_scale_block_bronze")
+        .addLoot("iceandfire:sea_serpent_scale_block_bronze");
+    event.addBlockLootModifier("iceandfire:sea_serpent_scale_block_deepblue")
+        .addLoot("iceandfire:sea_serpent_scale_block_deepblue");
+    event.addBlockLootModifier("iceandfire:sea_serpent_scale_block_green")
+        .addLoot("iceandfire:sea_serpent_scale_block_green");
+    event.addBlockLootModifier("iceandfire:sea_serpent_scale_block_purple")
+        .addLoot("iceandfire:sea_serpent_scale_block_purple");
+    event.addBlockLootModifier("iceandfire:sea_serpent_scale_block_red")
+        .addLoot("iceandfire:sea_serpent_scale_block_red");
+    event.addBlockLootModifier("iceandfire:sea_serpent_scale_block_teal")
+        .addLoot("iceandfire:sea_serpent_scale_block_teal");
 });
