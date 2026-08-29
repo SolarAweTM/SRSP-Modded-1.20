@@ -224,6 +224,40 @@ ServerEvents.recipes(event => {
 			max: 24
 		}]
 	})
+	//ignore players and inverse
+	event.custom({
+		type: 'apotheosis:spawner_modifier',
+		conditions: [{
+			type: 'apotheosis:module',
+			module: 'spawner'
+		}],
+		mainhand: {
+			tag: 'iceandfire:dragon_hearts'
+		},
+		consumes_offhand: false,
+		stat_changes: [{
+			id: 'ignore_players',
+			value: true
+		}]
+	})
+	event.custom({
+		type: 'apotheosis:spawner_modifier',
+		conditions: [{
+			type: 'apotheosis:module',
+			module: 'spawner'
+		}],
+		mainhand: {
+			tag: 'iceandfire:dragon_hearts'
+		},
+		offhand: {
+			item: 'minecraft:quartz'
+		},
+		consumes_offhand: false,
+		stat_changes: [{
+			id: 'ignore_players',
+			value: false
+		}]
+	})
 	
 	//limit max sockets to 2 with upgrades
 	event.remove({id:'apotheosis:add_sockets'})
@@ -254,6 +288,7 @@ ServerEvents.recipes(event => {
 	})
 	
 	//remove gem related recipes due to gems being disabled in phase 1 (will be reinstated in future phases)
+	//lmao
 	event.remove({output:'apotheosis:gem_cutting_table'})
 	event.remove({output:'apotheosis:sigil_of_rebirth'})
 	event.shaped('6x apotheosis:sigil_of_rebirth',
