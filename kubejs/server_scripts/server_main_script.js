@@ -913,6 +913,8 @@ ServerEvents.tags('item', event => {
 	PIXIE_HOVELS.forEach(item => {
 		event.add('kubejs:wooden_pixie_hovels', item)
 	})
+    
+    event.add('minecraft:arrows', '#iceandfire:dragon_arrows')
 })
 
 LootJS.modifiers((event) => {
