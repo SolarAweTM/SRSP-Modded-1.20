@@ -903,6 +903,16 @@ ServerEvents.tags('item', event => {
 	ARS_CHARMS.forEach(item => {
 		event.add('kubejs:ars_additions_charms', item)
 	})
+    
+    const PIXIE_HOVELS = [
+        'iceandfire:pixie_house_oak',
+        'iceandfire:pixie_house_birch',
+        'iceandfire:pixie_house_spruce',
+        'iceandfire:pixie_house_dark_oak'
+    ]
+	PIXIE_HOVELS.forEach(item => {
+		event.add('kubejs:wooden_pixie_hovels', item)
+	})
 })
 
 LootJS.modifiers((event) => {
