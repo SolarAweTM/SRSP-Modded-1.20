@@ -184,6 +184,161 @@ ServerEvents.recipes(event => {
     event.shapeless('iceandfire:pixie_house_spruce', ['#kubejs:wooden_pixie_hovels', '#minecraft:spruce_logs'])
     event.shapeless('iceandfire:pixie_house_dark_oak', ['#kubejs:wooden_pixie_hovels', '#minecraft:dark_oak_logs'])
     
+    //crackled blocks
+    event.custom({
+        type: "iceandfire:dragonforge",
+        dragon_type: "lightning",
+        cook_time: 1,
+        input: {item:"minecraft:dirt"},
+        blood: {item:"minecraft:dirt"},
+        result: {item:"iceandfire:crackled_dirt", count:2}
+    })
+    event.custom({
+        type: "iceandfire:dragonforge",
+        dragon_type: "lightning",
+        cook_time: 1,
+        input: {item:"minecraft:grass_block"},
+        blood: {item:"minecraft:grass_block"},
+        result: {item:"iceandfire:crackled_grass", count:2}
+    })
+    event.custom({
+        type: "iceandfire:dragonforge",
+        dragon_type: "lightning",
+        cook_time: 1,
+        input: {item:"minecraft:stone"},
+        blood: {item:"minecraft:stone"},
+        result: {item:"iceandfire:crackled_stone", count:2}
+    })
+    event.custom({
+        type: "iceandfire:dragonforge",
+        dragon_type: "lightning",
+        cook_time: 1,
+        input: {item:"minecraft:cobblestone"},
+        blood: {item:"minecraft:cobblestone"},
+        result: {item:"iceandfire:crackled_cobblestone", count:2}
+    })
+    event.custom({
+        type: "iceandfire:dragonforge",
+        dragon_type: "lightning",
+        cook_time: 1,
+        input: {item:"minecraft:gravel"},
+        blood: {item:"minecraft:gravel"},
+        result: {item:"iceandfire:crackled_gravel", count:2}
+    })
+    event.custom({
+        type: "iceandfire:dragonforge",
+        dragon_type: "lightning",
+        cook_time: 1,
+        input: {item:"minecraft:dirt_path"},
+        blood: {item:"minecraft:dirt_path"},
+        result: {item:"iceandfire:crackled_dirt_path", count:2}
+    })
+	//charred blocks
+    event.custom({
+        type: "iceandfire:dragonforge",
+        dragon_type: "fire",
+        cook_time: 1,
+        input: {item:"minecraft:dirt"},
+        blood: {item:"minecraft:dirt"},
+        result: {item:"iceandfire:chared_dirt", count:2}
+    })
+    event.custom({
+        type: "iceandfire:dragonforge",
+        dragon_type: "fire",
+        cook_time: 1,
+        input: {item:"minecraft:grass_block"},
+        blood: {item:"minecraft:grass_block"},
+        result: {item:"iceandfire:chared_grass", count:2}
+    })
+    event.custom({
+        type: "iceandfire:dragonforge",
+        dragon_type: "fire",
+        cook_time: 1,
+        input: {item:"minecraft:stone"},
+        blood: {item:"minecraft:stone"},
+        result: {item:"iceandfire:chared_stone", count:2}
+    })
+    event.custom({
+        type: "iceandfire:dragonforge",
+        dragon_type: "fire",
+        cook_time: 1,
+        input: {item:"minecraft:cobblestone"},
+        blood: {item:"minecraft:cobblestone"},
+        result: {item:"iceandfire:chared_cobblestone", count:2}
+    })
+    event.custom({
+        type: "iceandfire:dragonforge",
+        dragon_type: "fire",
+        cook_time: 1,
+        input: {item:"minecraft:gravel"},
+        blood: {item:"minecraft:gravel"},
+        result: {item:"iceandfire:chared_gravel", count:2}
+    })
+    event.custom({
+        type: "iceandfire:dragonforge",
+        dragon_type: "fire",
+        cook_time: 1,
+        input: {item:"minecraft:dirt_path"},
+        blood: {item:"minecraft:dirt_path"},
+        result: {item:"iceandfire:chared_dirt_path", count:2}
+    })
+	//frozen blocks
+    event.custom({
+        type: "iceandfire:dragonforge",
+        dragon_type: "ice",
+        cook_time: 1,
+        input: {item:"minecraft:dirt"},
+        blood: {item:"minecraft:dirt"},
+        result: {item:"iceandfire:frozen_dirt", count:2}
+    })
+    event.custom({
+        type: "iceandfire:dragonforge",
+        dragon_type: "ice",
+        cook_time: 1,
+        input: {item:"minecraft:grass_block"},
+        blood: {item:"minecraft:grass_block"},
+        result: {item:"iceandfire:frozen_grass", count:2}
+    })
+    event.custom({
+        type: "iceandfire:dragonforge",
+        dragon_type: "ice",
+        cook_time: 1,
+        input: {item:"minecraft:stone"},
+        blood: {item:"minecraft:stone"},
+        result: {item:"iceandfire:frozen_stone", count:2}
+    })
+    event.custom({
+        type: "iceandfire:dragonforge",
+        dragon_type: "ice",
+        cook_time: 1,
+        input: {item:"minecraft:cobblestone"},
+        blood: {item:"minecraft:cobblestone"},
+        result: {item:"iceandfire:frozen_cobblestone", count:2}
+    })
+    event.custom({
+        type: "iceandfire:dragonforge",
+        dragon_type: "ice",
+        cook_time: 1,
+        input: {item:"minecraft:gravel"},
+        blood: {item:"minecraft:gravel"},
+        result: {item:"iceandfire:frozen_gravel", count:2}
+    })
+    event.custom({
+        type: "iceandfire:dragonforge",
+        dragon_type: "ice",
+        cook_time: 1,
+        input: {item:"minecraft:dirt_path"},
+        blood: {item:"minecraft:dirt_path"},
+        result: {item:"iceandfire:frozen_dirt_path", count:2}
+    })
+    event.custom({
+        type: "iceandfire:dragonforge",
+        dragon_type: "ice",
+        cook_time: 1,
+        input: {tag:"minecraft:leaves"},
+        blood: {tag:"minecraft:leaves"},
+        result: {item:"iceandfire:frozen_splinters", count:2}
+    })
 })
 
 LootJS.modifiers((event) => {
