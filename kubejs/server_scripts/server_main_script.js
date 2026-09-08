@@ -1002,6 +1002,26 @@ ServerEvents.customCommand('head', event => {
 })
 */
 
+ServerEvents.customCommand('lamp_helper', event => {
+    let LAMP_ITEM = event.player.getHeldItem(0);
+    if(LAMP_ITEM.nbt && (LAMP_ITEM.item == 'miner_marid_master')) {
+        let LAMP_NBT = LAMP_ITEM.nbt;
+        if(LAMP_NBT.Damage == 0){
+            let DAMAGE_INDEX = LAMP_NBT.toString().indexOf('Damage:');
+            let NEW_DATA = LAMP_NBT.toString().slice(0, DAMAGE_INDEX+7) + '1599' + LAMP_NBT.toString().slice(DAMAGE_INDEX+8);
+            event.player.setHeldItem(0, Item.of('occultism:miner_marid_master', 1, NEW_DATA));
+            event.player.tell(Text.green('Successfully obliterated your lamp.'))
+        }
+        else {
+            event.player.tell(Text.red('The lamp must be at full durability!'))
+        }
+    }
+    else {
+        event.player.tell(Text.red("Failed to convert lamp. Are you holding a Master Miner Marid lamp?"));
+    }
+})
+
+
 ServerEvents.customCommand('coinflip', event => {
     event.server.runCommandSilent('/tellraw @a "' + event.player.username + ' flipped a coin: ' + (Math.round(Math.random()*100) % 2 == 0 ? '§9Heads§r' : '§cTails§r') + '"')
     event.server.runCommandSilent('/execute at ' + event.player.username + ' run playsound minecraft:item.trident.return master @p ~ ~ ~')
