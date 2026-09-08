@@ -17,6 +17,10 @@ drainSpeed = 144
 # Range: 0 ~ 1000
 # Default: 100
 fallDamageReduction = 0
+# The chance for the Pride Thigh Highs to spawn in chests (in % per container)
+# Range: 0 ~ 100
+# Default: 10
+prideThighHighsChance = 10
 
 # Settings for the dream block
 

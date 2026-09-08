@@ -81,3 +81,4 @@ config/camera-client.toml
 config/pipeorgans-client.toml
 config/silentgear-client.toml
 moddata/cynosure/estrogen/memorial
+output/silentgear/material_export.tsv

@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
 		}
 	)
 	// the actual smithing recipes for terrasteel
-	/* TO BE ENABLED IN A FUTURE PHASE
+	/* ENABLED IN PHASE II */
 	event.smithing(
 	'botania:terrasteel_helmet',
 	'kubejs:terrasteel_upgrade_smithing_template',
@@ -58,7 +58,6 @@ ServerEvents.recipes(event => {
 	'kubejs:terrasteel_upgrade_smithing_template',
 	'minecraft:netherite_boots',
 	'botania:gaia_ingot')
-	*/
 	event.smithing(
 	'botania:terra_sword',
 	'kubejs:terrasteel_upgrade_smithing_template',
