@@ -179,6 +179,11 @@ ServerEvents.recipes(event => {
 			R: 'minecraft:stone_bricks'
 		}
 	)
+    event.shapeless('iceandfire:pixie_house_oak', ['#kubejs:wooden_pixie_hovels', '#minecraft:oak_logs'])
+    event.shapeless('iceandfire:pixie_house_birch', ['#kubejs:wooden_pixie_hovels', '#minecraft:birch_logs'])
+    event.shapeless('iceandfire:pixie_house_spruce', ['#kubejs:wooden_pixie_hovels', '#minecraft:spruce_logs'])
+    event.shapeless('iceandfire:pixie_house_dark_oak', ['#kubejs:wooden_pixie_hovels', '#minecraft:dark_oak_logs'])
+    
 })
 
 LootJS.modifiers((event) => {
