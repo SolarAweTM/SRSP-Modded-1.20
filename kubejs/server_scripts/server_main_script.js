@@ -915,6 +915,20 @@ ServerEvents.tags('item', event => {
 	})
     
     event.add('minecraft:arrows', '#iceandfire:dragon_arrows')
+	
+	const IAF_ORES = [
+		'iceandfire:silver_ore',
+		'iceandfire:deepslate_silver_ore',
+		'iceandfire:sapphire_ore'
+	]
+	IAF_ORES.forEach(item => {
+		event.add('forge:ores', item)
+		event.add('balm:ores', item)
+		event.add('forge:ore_rates/singular', item)
+	})
+	event.add('forge:ores/silver', 'iceandfire:silver_ore')
+	event.add('forge:ores/silver', 'iceandfire:deepslate_silver_ore')
+	event.add('forge:ores/sapphire', 'iceandfire:sapphire_ore')
 })
 
 LootJS.modifiers((event) => {
